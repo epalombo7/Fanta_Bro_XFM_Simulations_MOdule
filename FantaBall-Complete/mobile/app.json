@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "FantaBall",
+    "slug": "fantaball-mobile",
+    "version": "0.2.1",
+    "userInterfaceStyle": "automatic",
+    "orientation": "portrait"
+  }
+}
