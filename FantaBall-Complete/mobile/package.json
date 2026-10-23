@@ -4,7 +4,8 @@
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start"
+    "build:webview": "node scripts/build-webview.js",
+    "start": "npm run build:webview && expo start"
   },
   "dependencies": {
     "expo": "~54.0.0",
