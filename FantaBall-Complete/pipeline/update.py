@@ -6,7 +6,7 @@
                                         downloaded pages are cached, so an interrupted run resumes)
 """
 import subprocess, sys, pathlib
-import fetch_matches, fetch_understat, fetch_fantacalcio
+import fetch_matches, fetch_understat, fetch_fantacalcio, fetch_fotmob
 from common import SEASONS, CURRENT
 
 HERE = pathlib.Path(__file__).parent
@@ -18,6 +18,7 @@ def main():
     ids, active = fetch_understat.league()
     fetch_understat.player_logs(ids, active)
     fetch_fantacalcio.run(SEASONS[::-1] if history else [CURRENT])
+    fetch_fotmob.run(range(fetch_fotmob.LAST, fetch_fotmob.FIRST - 1, -1) if history else [fetch_fotmob.LAST])
     fetch_fantacalcio.injuries_snapshot(); fetch_fantacalcio.lineups_snapshot()
     subprocess.run([sys.executable, str(HERE / 'calibrate_injuries.py')], check=True, cwd=HERE)
 
