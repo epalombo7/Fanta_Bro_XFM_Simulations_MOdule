@@ -1,0 +1,680 @@
+season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_mantra,qa_mantra,fvm_mantra
+2024-25,6228,Retegui,atalanta,retegui,ATA,A,pc,20.0,40.0,500.0,19.0,40.0,500.0
+2024-25,2167,Orsolini,bologna,orsolini,BOL,C,w,21.0,36.0,245.0,21.0,36.0,245.0
+2024-25,2097,Kean,fiorentina,kean,FIO,A,pc,21.0,34.0,436.0,21.0,34.0,436.0
+2024-25,4730,Lookman,atalanta,lookman,ATA,A,a,28.0,33.0,391.0,29.0,33.0,391.0
+2024-25,4661,Osimhen,napoli,osimhen,NAP,A,pc,35.0,33.0,155.0,36.0,34.0,155.0
+2024-25,4871,Thuram,inter,thuram,INT,A,pc,31.0,30.0,360.0,30.0,30.0,360.0
+2024-25,2531,Lukaku,napoli,lukaku,NAP,A,pc,33.0,30.0,427.0,33.0,30.0,427.0
+2024-25,4777,McTominay,napoli,mctominay,NAP,C,m|c,16.0,30.0,217.0,19.0,29.0,232.0
+2024-25,2423,Pulisic,milan,pulisic,MIL,C,t|a,30.0,28.0,231.0,29.0,28.0,231.0
+2024-25,5564,Ndoye,bologna,ndoye,BOL,C,w,10.0,26.0,97.0,9.0,26.0,97.0
+2024-25,2764,Martinez L.,inter,martinez-l,INT,A,pc,41.0,26.0,357.0,42.0,26.0,357.0
+2024-25,5839,Kvaratskhelia,napoli,kvaratskhelia,NAP,A,a,29.0,26.0,171.0,30.0,26.0,171.0
+2024-25,2489,Pedro,lazio,pedro,LAZ,A,a,3.0,25.0,57.0,3.0,25.0,57.0
+2024-25,6224,Reijnders,milan,reijnders,MIL,C,c,12.0,25.0,186.0,11.0,25.0,186.0
+2024-25,7008,Gimenez,milan,gimenez,MIL,A,pc,30.0,25.0,130.0,30.0,25.0,130.0
+2024-25,2841,Vlahovic,juventus,vlahovic,JUV,A,pc,37.0,24.0,163.0,38.0,24.0,163.0
+2024-25,632,Zaccagni,lazio,zaccagni,LAZ,C,w|a,27.0,23.0,170.0,26.0,23.0,170.0
+2024-25,6675,Dovbyk,roma,dovbyk,ROM,A,pc,32.0,23.0,260.0,31.0,23.0,260.0
+2024-25,6434,Yildiz,juventus,yildiz,JUV,A,a,15.0,22.0,83.0,16.0,22.0,83.0
+2024-25,6226,Castellanos,lazio,castellanos,LAZ,A,pc,21.0,22.0,192.0,21.0,22.0,192.0
+2024-25,4892,Saelemaekers,roma,saelemaekers,ROM,C,w,5.0,22.0,72.0,5.0,22.0,72.0
+2024-25,4510,Leao,milan,leao,MIL,A,a,25.0,22.0,174.0,26.0,22.0,174.0
+2024-25,4220,Zambo Anguissa,napoli,zambo-anguissa,NAP,C,m|c,10.0,22.0,92.0,11.0,22.0,102.0
+2024-25,5734,Soule',roma,soule,ROM,A,w|a,20.0,22.0,97.0,22.0,22.0,102.0
+2024-25,6875,Paz N.,como,paz-n,COM,C,t|a,7.0,22.0,100.0,6.0,22.0,100.0
+2024-25,5995,De Ketelaere,atalanta,de-ketelaere,ATA,A,a,21.0,21.0,81.0,21.0,21.0,81.0
+2024-25,4486,Strefezza,como,strefezza,COM,C,w,12.0,21.0,66.0,11.0,20.0,63.0
+2024-25,4463,Esposito Se.,empoli,esposito-se,EMP,A,a,3.0,21.0,43.0,3.0,21.0,43.0
+2024-25,5800,Gudmundsson A.,fiorentina,gudmundsson-a,FIO,A,a,27.0,21.0,42.0,28.0,21.0,42.0
+2024-25,254,Dimarco,inter,dimarco,INT,D,e,24.0,21.0,98.0,23.0,21.0,98.0
+2024-25,6215,Lucca,udinese,lucca,UDI,A,pc,14.0,21.0,100.0,13.0,21.0,100.0
+2024-25,5672,Dia,lazio,dia,LAZ,A,pc,15.0,21.0,89.0,14.0,21.0,86.0
+2024-25,2194,Calhanoglu,inter,calhanoglu,INT,C,m|c,28.0,20.0,116.0,30.0,20.0,126.0
+2024-25,6435,Krstovic,lecce,krstovic,LEC,A,pc,17.0,20.0,107.0,16.0,20.0,107.0
+2024-25,313,Morata,milan,morata,MIL,A,pc,26.0,20.0,118.0,26.0,20.0,118.0
+2024-25,309,Dybala,roma,dybala,ROM,A,a,34.0,20.0,141.0,35.0,20.0,141.0
+2024-25,6646,Adams C.,torino,adams-c,TOR,A,a,14.0,20.0,73.0,15.0,20.0,73.0
+2024-25,5951,Kolo Muani,juventus,kolo-muani,JUV,A,pc,16.0,20.0,178.0,16.0,20.0,178.0
+2024-25,4359,Piccoli,cagliari,piccoli,CAG,A,pc,13.0,19.0,85.0,12.0,19.0,82.0
+2024-25,5513,Dumfries,inter,dumfries,INT,D,e,16.0,19.0,105.0,15.0,19.0,105.0
+2024-25,1870,Barella,inter,barella,INT,C,c,20.0,19.0,55.0,19.0,19.0,55.0
+2024-25,5562,Thuram K.,juventus,thuram-k,JUV,C,m|c,10.0,19.0,53.0,12.0,19.0,63.0
+2024-25,2002,Chiesa,juventus,chiesa,JUV,A,a,20.0,19.0,65.0,20.0,19.0,65.0
+2024-25,572,Meret,napoli,meret,NAP,P,por,15.0,19.0,118.0,15.0,19.0,118.0
+2024-25,4371,Raspadori,napoli,raspadori,NAP,A,a,11.0,19.0,50.0,12.0,19.0,50.0
+2024-25,5079,Pohjanpalo,venezia,pohjanpalo,VEN,A,pc,16.0,19.0,52.0,15.0,18.0,52.0
+2024-25,2038,Pinamonti,genoa,pinamonti,GEN,A,pc,18.0,19.0,85.0,17.0,18.0,82.0
+2024-25,5311,Shomurodov,roma,shomurodov,ROM,A,pc,3.0,19.0,25.0,3.0,19.0,22.0
+2024-25,6895,Dominguez B.,bologna,dominguez-b,BOL,A,a,5.0,19.0,17.0,5.0,19.0,17.0
+2024-25,2765,Odgaard,bologna,odgaard,BOL,A,a,10.0,18.0,46.0,11.0,18.0,46.0
+2024-25,6572,Castro S.,bologna,castro-s,BOL,A,pc,8.0,18.0,64.0,7.0,18.0,61.0
+2024-25,4433,Zortea,cagliari,zortea,CAG,D,dd|ds|e,7.0,18.0,83.0,8.0,18.0,88.0
+2024-25,4662,Weah,juventus,weah,JUV,C,w,5.0,18.0,20.0,4.0,18.0,17.0
+2024-25,2369,Thauvin,udinese,thauvin,UDI,A,a,10.0,18.0,38.0,10.0,18.0,38.0
+2024-25,2155,Cutrone,como,cutrone,COM,A,pc,9.0,17.0,26.0,8.0,16.0,23.0
+2024-25,1933,Mandragora,fiorentina,mandragora,FIO,C,m|c,8.0,17.0,43.0,9.0,17.0,53.0
+2024-25,5877,Carlos Augusto,inter,carlos-augusto,INT,D,e,9.0,17.0,33.0,8.0,17.0,33.0
+2024-25,4349,Nicolussi Caviglia,venezia,nicolussi-caviglia,VEN,C,m|c,1.0,17.0,46.0,1.0,17.0,56.0
+2024-25,6669,Bonny,parma,bonny,PAR,A,pc,8.0,17.0,46.0,7.0,16.0,43.0
+2024-25,5687,Vlasic,torino,vlasic,TOR,C,t,15.0,17.0,48.0,14.0,16.0,45.0
+2024-25,6831,Neres,napoli,neres,NAP,C,w|a,20.0,17.0,38.0,19.0,17.0,38.0
+2024-25,22,De Roon,atalanta,de-roon,ATA,C,m|c,8.0,16.0,43.0,9.0,16.0,53.0
+2024-25,5792,Ederson D.s.,atalanta,ederson-d-s,ATA,C,m|c,15.0,16.0,58.0,18.0,16.0,68.0
+2024-25,6010,Fazzini,empoli,fazzini,EMP,C,c|t,4.0,16.0,61.0,4.0,16.0,61.0
+2024-25,2120,Bastoni,inter,bastoni,INT,D,dc,16.0,16.0,86.0,16.0,16.0,86.0
+2024-25,5875,Adli,fiorentina,adli,FIO,C,m|c,5.0,16.0,32.0,6.0,16.0,42.0
+2024-25,5841,Svilar,roma,svilar,ROM,P,por,13.0,16.0,94.0,13.0,16.0,94.0
+2024-25,2170,Milinkovic-Savic V.,torino,milinkovic-savic-v,TOR,P,por,10.0,16.0,66.0,10.0,16.0,66.0
+2024-25,2521,De Gea,fiorentina,de-gea,FIO,P,por,11.0,16.0,69.0,11.0,16.0,69.0
+2024-25,2160,Gosens,fiorentina,gosens,FIO,D,e,13.0,16.0,74.0,12.0,16.0,74.0
+2024-25,4431,Carnesecchi,atalanta,carnesecchi,ATA,P,por,13.0,15.0,74.0,13.0,15.0,74.0
+2024-25,4436,Cambiaghi,bologna,cambiaghi,BOL,A,a,12.0,15.0,23.0,12.0,15.0,23.0
+2024-25,6409,Beltran L.,fiorentina,beltran-l,FIO,A,a,11.0,15.0,18.0,11.0,15.0,18.0
+2024-25,2428,Sommer,inter,sommer,INT,P,por,18.0,15.0,83.0,18.0,15.0,83.0
+2024-25,2848,Frattesi,inter,frattesi,INT,C,c|t,18.0,15.0,27.0,17.0,15.0,27.0
+2024-25,2816,Di Lorenzo,napoli,di-lorenzo,NAP,D,b|dd|e,18.0,15.0,66.0,20.0,15.0,76.0
+2024-25,536,Politano,napoli,politano,NAP,C,w,24.0,15.0,70.0,23.0,16.0,70.0
+2024-25,5393,Man,parma,man,PAR,C,w|a,19.0,15.0,30.0,18.0,15.0,30.0
+2024-25,779,Cristante,roma,cristante,ROM,C,m|c,9.0,15.0,32.0,10.0,15.0,42.0
+2024-25,795,El Shaarawy,roma,el-shaarawy,ROM,C,w,8.0,15.0,16.0,7.0,15.0,16.0
+2024-25,6218,Oristanio,venezia,oristanio,VEN,C,w|t|a,9.0,15.0,26.0,10.0,15.0,29.0
+2024-25,4947,Brescianini,atalanta,brescianini,ATA,C,m|c,4.0,15.0,23.0,5.0,15.0,28.0
+2024-25,5589,Kone' M.,roma,kone-m,ROM,C,m|c,8.0,15.0,41.0,9.0,15.0,51.0
+2024-25,6967,Diao,como,diao,COM,C,w|a,8.0,15.0,102.0,7.0,14.0,102.0
+2024-25,554,Zappacosta,atalanta,zappacosta,ATA,D,e,9.0,14.0,33.0,8.0,14.0,33.0
+2024-25,5685,Koopmeiners,juventus,koopmeiners,JUV,C,t,29.0,14.0,35.0,28.0,14.0,32.0
+2024-25,2137,Scamacca,atalanta,scamacca,ATA,A,pc,28.0,14.0,70.0,27.0,13.0,70.0
+2024-25,5559,Da Cunha,como,da-cunha,COM,C,w|t,12.0,14.0,36.0,12.0,14.0,41.0
+2024-25,2593,Martin,genoa,martin,GEN,D,ds|e,4.0,14.0,52.0,4.0,14.0,52.0
+2024-25,4268,Arnautovic,inter,arnautovic,INT,A,pc,8.0,14.0,30.0,7.0,14.0,27.0
+2024-25,5876,Di Gregorio,juventus,di-gregorio,JUV,P,por,17.0,14.0,83.0,17.0,14.0,83.0
+2024-25,5520,Cambiaso,juventus,cambiaso,JUV,D,dd|ds|e,9.0,14.0,36.0,10.0,14.0,41.0
+2024-25,4312,Maignan,milan,maignan,MIL,P,por,15.0,14.0,67.0,15.0,14.0,67.0
+2024-25,4923,Colombo,empoli,colombo,EMP,A,pc,12.0,14.0,15.0,11.0,14.0,12.0
+2024-25,4360,Caprile,cagliari,caprile,CAG,P,por,2.0,14.0,27.0,2.0,14.0,27.0
+2024-25,2296,Mancini,roma,mancini,ROM,D,dc,10.0,14.0,33.0,10.0,14.0,33.0
+2024-25,4772,Angelino,roma,angelino,ROM,D,ds|e,10.0,14.0,50.0,10.0,14.0,50.0
+2024-25,6801,Tengstedt,verona,tengstedt,VER,A,pc,12.0,14.0,21.0,11.0,14.0,18.0
+2024-25,6884,Conceicao,juventus,conceicao,JUV,C,w|a,11.0,14.0,25.0,10.0,14.0,25.0
+2024-25,133,Skorupski,bologna,skorupski,BOL,P,por,11.0,13.0,40.0,11.0,13.0,40.0
+2024-25,788,Freuler,bologna,freuler,BOL,C,m|c,9.0,13.0,28.0,10.0,13.0,38.0
+2024-25,4965,Marin,cagliari,marin,CAG,C,m|c,6.0,13.0,12.0,6.0,13.0,15.0
+2024-25,5885,Dodo',fiorentina,dodo,FIO,D,dd|e,9.0,13.0,46.0,9.0,13.0,46.0
+2024-25,4179,Gonzalez N.,juventus,gonzalez-n,JUV,A,a,25.0,13.0,37.0,26.0,13.0,37.0
+2024-25,188,Leali,genoa,leali,GEN,P,por,1.0,13.0,30.0,1.0,13.0,30.0
+2024-25,827,Locatelli,juventus,locatelli,JUV,C,m|c,8.0,13.0,34.0,9.0,13.0,44.0
+2024-25,6398,Isaksen,lazio,isaksen,LAZ,A,w|a,11.0,13.0,31.0,12.0,13.0,34.0
+2024-25,4292,Hernandez T.,milan,hernandez-t,MIL,D,ds|e,20.0,13.0,53.0,20.0,13.0,53.0
+2024-25,4896,Maldini,atalanta,maldini,ATA,C,t|a,9.0,13.0,34.0,8.0,13.0,34.0
+2024-25,5471,Djuric,parma,djuric,PAR,A,pc,12.0,13.0,18.0,12.0,13.0,15.0
+2024-25,5862,Valeri,parma,valeri,PAR,D,ds|e,6.0,13.0,31.0,6.0,13.0,31.0
+2024-25,4423,Hernani,parma,hernani,PAR,C,c,6.0,13.0,23.0,5.0,13.0,23.0
+2024-25,5319,Sohm,parma,sohm,PAR,C,c,5.0,13.0,28.0,4.0,13.0,28.0
+2024-25,608,Zapata D.,torino,zapata-d,TOR,A,pc,25.0,13.0,90.0,25.0,13.0,90.0
+2024-25,6020,Ellertsson,venezia,ellertsson,VEN,C,c|w,2.0,13.0,18.0,2.0,13.0,21.0
+2024-25,6630,Mosquera,verona,mosquera,VER,A,pc,8.0,13.0,13.0,7.0,13.0,10.0
+2024-25,495,Correa,inter,correa,INT,A,a,3.0,13.0,18.0,3.0,13.0,18.0
+2024-25,6159,Sarr A.,verona,sarr-a,VER,A,a,4.0,13.0,20.0,4.0,13.0,20.0
+2024-25,6889,Anjorin,empoli,anjorin,EMP,C,w|t,2.0,13.0,27.0,2.0,13.0,30.0
+2024-25,5036,Caqueret,como,caqueret,COM,C,c,8.0,13.0,31.0,7.0,13.0,31.0
+2024-25,4479,Elmas,torino,elmas,TOR,C,w|t,11.0,13.0,71.0,11.0,13.0,74.0
+2024-25,6206,Fabbian,bologna,fabbian,BOL,C,c|t,13.0,12.0,16.0,13.0,12.0,16.0
+2024-25,5858,Ferguson,bologna,ferguson,BOL,C,c|t,18.0,12.0,18.0,18.0,12.0,18.0
+2024-25,6643,Dallinga,bologna,dallinga,BOL,A,pc,22.0,12.0,31.0,21.0,12.0,28.0
+2024-25,6217,Bisseck,inter,bisseck,INT,D,dc,5.0,12.0,25.0,5.0,12.0,25.0
+2024-25,2525,Darmian,inter,darmian,INT,D,b|dd|e,8.0,12.0,15.0,9.0,12.0,18.0
+2024-25,2529,Mkhitaryan,inter,mkhitaryan,INT,C,c,15.0,12.0,26.0,14.0,12.0,26.0
+2024-25,4973,McKennie,juventus,mckennie,JUV,C,m|c,7.0,12.0,26.0,8.0,12.0,36.0
+2024-25,6482,Mandas,lazio,mandas,LAZ,P,por,1.0,12.0,41.0,1.0,12.0,41.0
+2024-25,5620,Tavares N.,lazio,tavares-n,LAZ,D,ds|e,6.0,12.0,36.0,6.0,12.0,36.0
+2024-25,333,Cataldi,fiorentina,cataldi,FIO,C,m|c,3.0,12.0,15.0,3.0,12.0,20.0
+2024-25,6629,Dele-Bashiru,lazio,dele-bashiru,LAZ,C,c|t,5.0,12.0,17.0,5.0,12.0,18.0
+2024-25,4856,Chukwueze,milan,chukwueze,MIL,C,w|a,11.0,12.0,10.0,10.0,11.0,10.0
+2024-25,2438,Jovic,milan,jovic,MIL,A,pc,10.0,12.0,23.0,9.0,12.0,20.0
+2024-25,5838,Birindelli,monza,birindelli,MON,D,dd|ds|e,5.0,12.0,8.0,5.0,12.0,10.0
+2024-25,5882,Mota,monza,mota,MON,A,a,10.0,12.0,18.0,10.0,12.0,18.0
+2024-25,4409,Rrahmani,napoli,rrahmani,NAP,D,dc,11.0,12.0,54.0,11.0,12.0,54.0
+2024-25,4364,Gaetano,cagliari,gaetano,CAG,C,t,9.0,12.0,16.0,8.0,12.0,13.0
+2024-25,6664,Delprato,parma,delprato,PAR,D,b|dd|e,6.0,12.0,22.0,7.0,12.0,27.0
+2024-25,468,Paredes,roma,paredes,ROM,C,m|c,7.0,12.0,24.0,8.0,13.0,29.0
+2024-25,4887,Bellanova,atalanta,bellanova,ATA,D,e,13.0,12.0,55.0,12.0,12.0,55.0
+2024-25,6684,Ekkelenkamp,udinese,ekkelenkamp,UDI,C,c|t,6.0,12.0,24.0,6.0,12.0,24.0
+2024-25,4686,Fofana Y.,milan,fofana-y,MIL,C,m|c,8.0,12.0,21.0,9.0,12.0,26.0
+2024-25,6833,Mbangula,juventus,mbangula,JUV,A,a,1.0,12.0,10.0,1.0,12.0,10.0
+2024-25,6984,Ondrejka,parma,ondrejka,PAR,C,w|a,7.0,12.0,38.0,6.0,11.0,38.0
+2024-25,4811,Joao Felix,milan,joao-felix,MIL,A,a,12.0,12.0,22.0,12.0,12.0,22.0
+2024-25,2077,Pasalic,atalanta,pasalic,ATA,C,c|t,15.0,11.0,27.0,15.0,11.0,27.0
+2024-25,6229,Toure' E.,atalanta,toure-e,ATA,A,pc,11.0,11.0,39.0,9.0,9.0,35.0
+2024-25,393,Luperto,cagliari,luperto,CAG,D,dc,8.0,11.0,21.0,8.0,11.0,21.0
+2024-25,5878,Colpani,fiorentina,colpani,FIO,C,t,23.0,11.0,10.0,22.0,11.0,10.0
+2024-25,5514,Vasquez,genoa,vasquez,GEN,D,ds|dc,9.0,11.0,38.0,10.0,11.0,43.0
+2024-25,322,De Vrij,inter,de-vrij,INT,D,dc,8.0,11.0,25.0,8.0,11.0,25.0
+2024-25,5813,Miretti,genoa,miretti,GEN,C,c|t,4.0,11.0,25.0,4.0,11.0,25.0
+2024-25,2188,Marusic,lazio,marusic,LAZ,D,dd|ds|e,6.0,11.0,29.0,7.0,11.0,34.0
+2024-25,181,Vecino,lazio,vecino,LAZ,C,m|c,7.0,11.0,11.0,8.0,11.0,14.0
+2024-25,4186,Guendouzi,lazio,guendouzi,LAZ,C,c,10.0,11.0,21.0,9.0,11.0,21.0
+2024-25,2134,Falcone,lecce,falcone,LEC,P,por,9.0,11.0,24.0,9.0,11.0,24.0
+2024-25,6257,Dorgu,lecce,dorgu,LEC,D,ds|e,8.0,11.0,35.0,8.0,11.0,35.0
+2024-25,4530,Kyriakopoulos,monza,kyriakopoulos,MON,D,ds|e,6.0,11.0,18.0,6.0,11.0,18.0
+2024-25,1958,Caprari,monza,caprari,MON,A,a,9.0,11.0,20.0,9.0,11.0,20.0
+2024-25,2724,Buongiorno,napoli,buongiorno,NAP,D,dc,16.0,11.0,57.0,16.0,11.0,57.0
+2024-25,1852,Spinazzola,napoli,spinazzola,NAP,D,e,13.0,11.0,22.0,12.0,11.0,22.0
+2024-25,6641,Suzuki,parma,suzuki,PAR,P,por,7.0,11.0,32.0,7.0,11.0,32.0
+2024-25,530,Pellegrini Lo.,roma,pellegrini-lo,ROM,C,c|t,22.0,11.0,15.0,22.0,11.0,15.0
+2024-25,6170,Gineitis,torino,gineitis,TOR,C,c,4.0,11.0,16.0,4.0,11.0,16.0
+2024-25,5119,Samardzic,atalanta,samardzic,ATA,C,t,17.0,11.0,10.0,16.0,11.0,10.0
+2024-25,6674,Andersen M.K.,venezia,andersen-m-k,VEN,C,m|c,2.0,11.0,12.0,2.0,11.0,14.0
+2024-25,5998,Zerbin,venezia,zerbin,VEN,C,e|w,2.0,11.0,20.0,2.0,11.0,23.0
+2024-25,5899,Gigot,lazio,gigot,LAZ,D,dc,8.0,11.0,13.0,8.0,11.0,13.0
+2024-25,5888,Casadei,torino,casadei,TOR,C,c|t,10.0,11.0,24.0,11.0,12.0,24.0
+2024-25,7017,Douvikas,como,douvikas,COM,A,pc,8.0,11.0,26.0,8.0,11.0,23.0
+2024-25,4734,Miranda J.,bologna,miranda-j,BOL,D,ds|e,8.0,10.0,30.0,8.0,10.0,30.0
+2024-25,4421,Augello,cagliari,augello,CAG,D,ds|e,5.0,10.0,31.0,5.0,10.0,31.0
+2024-25,5297,Luvumbo,cagliari,luvumbo,CAG,A,a,12.0,10.0,17.0,12.0,10.0,17.0
+2024-25,441,Belotti,como,belotti,COM,A,pc,17.0,10.0,9.0,16.0,11.0,9.0
+2024-25,6125,Vasquez D.,empoli,vasquez-d,EMP,P,por,5.0,10.0,9.0,5.0,10.0,9.0
+2024-25,5010,Ismajli,empoli,ismajli,EMP,D,dc,6.0,10.0,21.0,6.0,10.0,21.0
+2024-25,5804,Cacace,empoli,cacace,EMP,D,ds|e,3.0,10.0,14.0,3.0,10.0,14.0
+2024-25,770,Pezzella Giu.,empoli,pezzella-giu,EMP,D,ds|e,5.0,10.0,19.0,5.0,10.0,19.0
+2024-25,5449,Parisi,fiorentina,parisi,FIO,D,ds|e,8.0,10.0,13.0,8.0,10.0,13.0
+2024-25,4658,Ikone',como,ikone,COM,C,w,5.0,10.0,17.0,5.0,10.0,17.0
+2024-25,5791,Frendrup,genoa,frendrup,GEN,C,e|m,11.0,10.0,20.0,13.0,10.0,25.0
+2024-25,5506,Ekuban,genoa,ekuban,GEN,A,a,9.0,10.0,12.0,9.0,10.0,12.0
+2024-25,5719,Asllani,inter,asllani,INT,C,m|c,5.0,10.0,24.0,6.0,10.0,29.0
+2024-25,5831,Gatti,juventus,gatti,JUV,D,dc,7.0,10.0,15.0,7.0,10.0,15.0
+2024-25,4911,Douglas Luiz,juventus,douglas-luiz,JUV,C,c,20.0,10.0,10.0,19.0,9.0,10.0
+2024-25,6556,Noslin,lazio,noslin,LAZ,A,a,16.0,10.0,10.0,16.0,10.0,10.0
+2024-25,5835,Baschirotto,lecce,baschirotto,LEC,D,dd|dc,9.0,10.0,18.0,10.0,10.0,18.0
+2024-25,6634,Tete Morente,lecce,tete-morente,LEC,C,w,9.0,10.0,25.0,8.0,10.0,22.0
+2024-25,6549,Pierotti,lecce,pierotti,LEC,A,w|a,4.0,10.0,19.0,4.0,10.0,22.0
+2024-25,4401,Gabbia,milan,gabbia,MIL,D,dc,4.0,10.0,12.0,4.0,10.0,12.0
+2024-25,5298,Pobega,bologna,pobega,BOL,C,m|c,2.0,10.0,19.0,3.0,10.0,24.0
+2024-25,6666,Bernabe',parma,bernabe,PAR,C,c|t,14.0,10.0,22.0,14.0,10.0,22.0
+2024-25,4317,N'Dicka,roma,n-dicka,ROM,D,dc,8.0,10.0,27.0,8.0,10.0,27.0
+2024-25,2544,Abraham,milan,abraham,MIL,A,pc,13.0,10.0,39.0,13.0,10.0,36.0
+2024-25,5850,Lovric,udinese,lovric,UDI,C,c,10.0,10.0,23.0,10.0,10.0,23.0
+2024-25,5504,Coulibaly L.,lecce,coulibaly-l,LEC,C,m|c,5.0,10.0,20.0,5.0,10.0,25.0
+2024-25,4867,Turati,monza,turati,MON,P,por,8.0,10.0,7.0,8.0,10.0,7.0
+2024-25,6966,Butez,como,butez,COM,P,por,2.0,10.0,28.0,2.0,10.0,28.0
+2024-25,6024,Sulemana I.,atalanta,sulemana-i,ATA,C,m|c,2.0,9.0,7.0,3.0,9.0,10.0
+2024-25,4210,Mina,cagliari,mina,CAG,D,dc,8.0,9.0,23.0,8.0,9.0,23.0
+2024-25,4870,Adopo,cagliari,adopo,CAG,C,m|c,2.0,9.0,14.0,2.0,9.0,17.0
+2024-25,440,Viola,cagliari,viola,CAG,C,c|t,6.0,9.0,20.0,6.0,9.0,20.0
+2024-25,4378,Ranieri L.,fiorentina,ranieri-l,FIO,D,ds|dc,7.0,9.0,16.0,8.0,9.0,18.0
+2024-25,5739,De Winter,genoa,de-winter,GEN,D,dd|dc,6.0,9.0,22.0,6.0,9.0,25.0
+2024-25,152,Zielinski,inter,zielinski,INT,C,c|t,11.0,9.0,16.0,11.0,9.0,16.0
+2024-25,5833,Gila,lazio,gila,LAZ,D,dc,5.0,9.0,22.0,5.0,9.0,22.0
+2024-25,4459,Rovella,lazio,rovella,LAZ,C,m|c,7.0,9.0,23.0,7.0,9.0,28.0
+2024-25,6632,Gaspar K.,lecce,gaspar-k,LEC,D,dc,3.0,9.0,22.0,3.0,9.0,22.0
+2024-25,4976,Kalulu,juventus,kalulu,JUV,D,dd|dc,4.0,9.0,23.0,5.0,9.0,26.0
+2024-25,4199,Loftus-Cheek,milan,loftus-cheek,MIL,C,c|t,19.0,9.0,8.0,19.0,9.0,8.0
+2024-25,5840,Olivera,napoli,olivera,NAP,D,b|ds|e,7.0,9.0,20.0,8.0,10.0,23.0
+2024-25,4287,Lobotka,napoli,lobotka,NAP,C,m|c,9.0,9.0,21.0,10.0,9.0,26.0
+2024-25,4385,Lazaro,torino,lazaro,TOR,D,e,4.0,9.0,23.0,4.0,9.0,23.0
+2024-25,5453,Ricci S.,torino,ricci-s,TOR,C,m|c,8.0,9.0,21.0,9.0,9.0,26.0
+2024-25,5555,Kamara H.,udinese,kamara-h,UDI,D,ds|e,5.0,9.0,14.0,5.0,9.0,14.0
+2024-25,6672,Idzes,venezia,idzes,VEN,D,dc,4.0,9.0,18.0,4.0,9.0,18.0
+2024-25,5507,Busio,venezia,busio,VEN,C,c,7.0,9.0,14.0,7.0,9.0,14.0
+2024-25,5881,Gytkjaer,venezia,gytkjaer,VEN,A,pc,5.0,9.0,12.0,4.0,9.0,10.0
+2024-25,236,Lazovic,verona,lazovic,VER,C,w,10.0,9.0,8.0,9.0,10.0,8.0
+2024-25,5022,Pavlovic,milan,pavlovic,MIL,D,dc,10.0,9.0,16.0,10.0,9.0,16.0
+2024-25,6815,Fadera,como,fadera,COM,C,w|a,6.0,9.0,13.0,5.0,9.0,13.0
+2024-25,6956,Solet,udinese,solet,UDI,D,dc,5.0,9.0,42.0,5.0,9.0,42.0
+2024-25,6994,Perez K.,venezia,perez-k,VEN,C,c|t,6.0,9.0,23.0,6.0,9.0,23.0
+2024-25,345,Keita B.,monza,keita-b,MON,A,a,8.0,9.0,24.0,8.0,9.0,24.0
+2024-25,787,Djimsiti,atalanta,djimsiti,ATA,D,dc,8.0,8.0,23.0,8.0,8.0,23.0
+2024-25,5354,Ruggeri,atalanta,ruggeri,ATA,D,e,11.0,8.0,10.0,10.0,8.0,10.0
+2024-25,6202,Beukema,bologna,beukema,BOL,D,dc,7.0,8.0,24.0,7.0,8.0,24.0
+2024-25,4461,Zappa,cagliari,zappa,CAG,D,b|dd|e,6.0,8.0,16.0,7.0,8.0,20.0
+2024-25,1871,Deiola,cagliari,deiola,CAG,C,m|c,4.0,8.0,11.0,5.0,8.0,14.0
+2024-25,1976,Mazzitelli,como,mazzitelli,COM,C,m|c,8.0,8.0,9.0,9.0,8.0,12.0
+2024-25,5718,Viti,empoli,viti,EMP,D,dc,5.0,8.0,12.0,5.0,8.0,12.0
+2024-25,4498,Henderson L.,empoli,henderson-l,EMP,C,c|t,4.0,8.0,14.0,4.0,8.0,14.0
+2024-25,4992,Gyasi,empoli,gyasi,EMP,C,w,5.0,8.0,17.0,5.0,8.0,14.0
+2024-25,5516,Bianco,monza,bianco,MON,C,m|c,2.0,8.0,12.0,2.0,8.0,15.0
+2024-25,6164,Vitinha O.,genoa,vitinha-o,GEN,A,pc,12.0,8.0,22.0,11.0,8.0,19.0
+2024-25,5116,Martinez Jo.,inter,martinez-jo,INT,P,por,2.0,8.0,1.0,2.0,8.0,1.0
+2024-25,513,Acerbi,inter,acerbi,INT,D,dc,10.0,8.0,28.0,10.0,8.0,28.0
+2024-25,2788,Bremer,juventus,bremer,JUV,D,dc,16.0,8.0,39.0,16.0,8.0,39.0
+2024-25,4465,Fagioli,fiorentina,fagioli,FIO,C,c|t,10.0,8.0,22.0,9.0,8.0,22.0
+2024-25,460,Romagnoli,lazio,romagnoli,LAZ,D,dc,10.0,8.0,27.0,10.0,8.0,27.0
+2024-25,2728,Pellegrini Lu.,lazio,pellegrini-lu,LAZ,D,ds|e,3.0,8.0,13.0,3.0,8.0,13.0
+2024-25,6439,Cheddira,napoli,cheddira,NAP,A,pc,9.0,8.0,20.0,8.0,7.0,20.0
+2024-25,5307,Valenti,parma,valenti,PAR,D,dc,3.0,8.0,12.0,3.0,8.0,12.0
+2024-25,4994,Vojvoda,como,vojvoda,COM,D,b|dd|e,6.0,8.0,17.0,7.0,8.0,22.0
+2024-25,49,Masina,torino,masina,TOR,D,b|ds|e,6.0,8.0,12.0,7.0,8.0,15.0
+2024-25,6462,Okoye,udinese,okoye,UDI,P,por,7.0,8.0,17.0,7.0,8.0,17.0
+2024-25,5847,Bijol,udinese,bijol,UDI,D,dc,8.0,8.0,23.0,8.0,8.0,23.0
+2024-25,5677,Perez N.,udinese,perez-n,UDI,D,dc,7.0,8.0,15.0,7.0,8.0,15.0
+2024-25,6653,Bravo,udinese,bravo,UDI,A,a,4.0,8.0,11.0,4.0,8.0,11.0
+2024-25,4957,Montipo',verona,montipo,VER,P,por,7.0,8.0,17.0,7.0,8.0,17.0
+2024-25,6480,Tchatchoua,verona,tchatchoua,VER,D,dd|e,6.0,8.0,16.0,6.0,8.0,16.0
+2024-25,4342,Duda,verona,duda,VER,C,m|c,7.0,8.0,17.0,8.0,8.0,22.0
+2024-25,6190,Pisilli,roma,pisilli,ROM,C,c,1.0,8.0,12.0,1.0,8.0,12.0
+2024-25,6802,Savona,juventus,savona,JUV,D,b|dd|e,1.0,8.0,9.0,1.0,8.0,12.0
+2024-25,4522,Amrabat,fiorentina,amrabat,FIO,C,m|c,8.0,8.0,15.0,8.0,8.0,15.0
+2024-25,6248,Stankovic F.,venezia,stankovic-f,VEN,P,por,1.0,8.0,1.0,1.0,8.0,1.0
+2024-25,5872,Helgason,lecce,helgason,LEC,C,c|t,1.0,8.0,22.0,1.0,8.0,22.0
+2024-25,697,Cuadrado,atalanta,cuadrado,ATA,D,e,4.0,8.0,15.0,4.0,8.0,15.0
+2024-25,4665,Maripan,torino,maripan,TOR,D,dc,7.0,8.0,21.0,7.0,8.0,21.0
+2024-25,6904,Yeboah J.,venezia,yeboah-j,VEN,C,w|t,3.0,8.0,17.0,3.0,8.0,20.0
+2024-25,5131,Gilmour,napoli,gilmour,NAP,C,m|c,7.0,8.0,17.0,8.0,8.0,22.0
+2024-25,6917,Masini,genoa,masini,GEN,C,c,1.0,8.0,18.0,1.0,8.0,18.0
+2024-25,2515,Walker,milan,walker,MIL,D,b|dd|e,10.0,8.0,13.0,11.0,9.0,16.0
+2024-25,7016,Coman F.,cagliari,coman-f,CAG,A,a,8.0,8.0,11.0,8.0,8.0,11.0
+2024-25,1843,Radu I.,venezia,radu-i,VEN,P,por,3.0,8.0,21.0,3.0,8.0,21.0
+2024-25,7022,Fila,venezia,fila,VEN,A,pc,9.0,8.0,16.0,8.0,8.0,13.0
+2024-25,7023,Pellegrino M.,parma,pellegrino-m,PAR,A,pc,3.0,8.0,28.0,3.0,8.0,25.0
+2024-25,2766,Zaniolo,fiorentina,zaniolo,FIO,C,t|a,13.0,7.0,11.0,12.0,7.0,11.0
+2024-25,5678,Holm,bologna,holm,BOL,D,dd|e,9.0,7.0,12.0,9.0,7.0,12.0
+2024-25,2653,Lykogiannis,bologna,lykogiannis,BOL,D,ds|e,4.0,7.0,13.0,4.0,7.0,13.0
+2024-25,2602,Varane,como,varane,COM,D,dc,9.0,7.0,10.0,9.0,7.0,10.0
+2024-25,6495,Comuzzo,fiorentina,comuzzo,FIO,D,dc,1.0,7.0,14.0,1.0,7.0,14.0
+2024-25,5323,Martinez Quarta,fiorentina,martinez-quarta,FIO,D,dc,11.0,7.0,8.0,11.0,7.0,8.0
+2024-25,252,Biraghi,torino,biraghi,TOR,D,b|ds|e,7.0,7.0,18.0,8.0,7.0,23.0
+2024-25,2839,Sottil,milan,sottil,MIL,C,w,9.0,7.0,12.0,9.0,7.0,9.0
+2024-25,791,Sabelli,genoa,sabelli,GEN,D,dd|ds|e,6.0,7.0,9.0,7.0,7.0,12.0
+2024-25,4970,Messias,genoa,messias,GEN,C,c|w,9.0,7.0,12.0,9.0,7.0,15.0
+2024-25,4177,Pavard,inter,pavard,INT,D,dd|dc,14.0,7.0,20.0,15.0,7.0,23.0
+2024-25,6628,Taremi,inter,taremi,INT,A,pc,15.0,7.0,8.0,14.0,7.0,8.0
+2024-25,4237,Danilo,juventus,danilo,JUV,D,b|dd|ds,14.0,7.0,10.0,16.0,8.0,13.0
+2024-25,2814,Provedel,lazio,provedel,LAZ,P,por,12.0,7.0,1.0,12.0,7.0,1.0
+2024-25,6394,Ramadani,lecce,ramadani,LEC,C,m|c,5.0,7.0,10.0,6.0,7.0,13.0
+2024-25,4751,Tomori,milan,tomori,MIL,D,dc,14.0,7.0,18.0,14.0,7.0,18.0
+2024-25,5880,Ciurria,monza,ciurria,MON,C,e|w,5.0,7.0,10.0,6.0,7.0,13.0
+2024-25,2061,Simeone,napoli,simeone,NAP,A,pc,11.0,7.0,7.0,10.0,7.0,7.0
+2024-25,4245,Smalling,roma,smalling,ROM,D,dc,8.0,7.0,12.0,8.0,7.0,12.0
+2024-25,5423,Bove,fiorentina,bove,FIO,C,m|c,5.0,7.0,20.0,6.0,7.0,25.0
+2024-25,5422,Zalewski,inter,zalewski,INT,C,w,2.0,7.0,15.0,2.0,7.0,12.0
+2024-25,5823,Baldanzi,roma,baldanzi,ROM,C,t|a,8.0,7.0,14.0,8.0,7.0,14.0
+2024-25,5637,Davis K.,udinese,davis-k,UDI,A,pc,6.0,7.0,14.0,5.0,8.0,11.0
+2024-25,5764,Coppola D.,verona,coppola-d,VER,D,dc,4.0,7.0,12.0,4.0,7.0,11.0
+2024-25,6683,Doumbia I.,venezia,doumbia-i,VEN,C,m|c,1.0,7.0,9.0,1.0,7.0,12.0
+2024-25,6821,Hainaut,parma,hainaut,PAR,C,e|c,1.0,7.0,11.0,1.0,7.0,14.0
+2024-25,5695,Haps,venezia,haps,VEN,D,ds|e,1.0,7.0,9.0,1.0,7.0,9.0
+2024-25,6015,Berisha M.,lecce,berisha-m,LEC,C,c|t,1.0,7.0,9.0,1.0,7.0,9.0
+2024-25,6531,Jimenez A.,milan,jimenez-a,MIL,D,dd|ds|e,1.0,7.0,21.0,1.0,7.0,24.0
+2024-25,6151,Perrone,como,perrone,COM,C,m|c,4.0,7.0,18.0,4.0,7.0,23.0
+2024-25,6908,Atta,udinese,atta,UDI,C,m|c,1.0,7.0,13.0,1.0,7.0,18.0
+2024-25,4677,Cornet,genoa,cornet,GEN,C,w|a,8.0,7.0,13.0,7.0,7.0,13.0
+2024-25,6761,Veiga R.,juventus,veiga-r,JUV,C,m|c,3.0,7.0,15.0,3.0,7.0,18.0
+2024-25,2640,Kolasinac,atalanta,kolasinac,ATA,D,b|ds|e,9.0,6.0,21.0,10.0,6.0,26.0
+2024-25,2130,Hateboer,atalanta,hateboer,ATA,D,e,6.0,6.0,11.0,5.0,5.0,9.0
+2024-25,2722,Ravaglia F.,bologna,ravaglia-f,BOL,P,por,1.0,6.0,1.0,1.0,6.0,1.0
+2024-25,6459,Karlsson,lecce,karlsson,LEC,C,w|a,7.0,6.0,14.0,6.0,5.0,14.0
+2024-25,5701,Obert,cagliari,obert,CAG,D,dc,2.0,6.0,10.0,2.0,6.0,13.0
+2024-25,6232,Makoumbou,cagliari,makoumbou,CAG,C,m|c,4.0,6.0,13.0,5.0,6.0,16.0
+2024-25,247,Pavoletti,cagliari,pavoletti,CAG,A,pc,3.0,6.0,14.0,3.0,6.0,11.0
+2024-25,418,Goldaniga,como,goldaniga,COM,D,dc,3.0,6.0,13.0,3.0,6.0,13.0
+2024-25,27,Grassi,empoli,grassi,EMP,C,m|c,3.0,6.0,12.0,4.0,6.0,15.0
+2024-25,5336,Nzola,fiorentina,nzola,FIO,A,pc,6.0,6.0,12.0,5.0,5.0,10.0
+2024-25,5527,Zanoli,genoa,zanoli,GEN,D,dd|e,6.0,6.0,16.0,6.0,6.0,16.0
+2024-25,170,Badelj,genoa,badelj,GEN,C,m|c,6.0,6.0,13.0,6.0,6.0,18.0
+2024-25,4427,Malinovskyi,genoa,malinovskyi,GEN,C,c|t,11.0,6.0,20.0,11.0,6.0,20.0
+2024-25,4377,Castrovilli,monza,castrovilli,MON,C,c|t,10.0,6.0,15.0,10.0,6.0,15.0
+2024-25,5500,Cancellieri,parma,cancellieri,PAR,A,w|a,4.0,6.0,12.0,4.0,6.0,15.0
+2024-25,5867,Gendrey,lecce,gendrey,LEC,D,dd|e,6.0,6.0,12.0,6.0,6.0,12.0
+2024-25,4904,Mari',fiorentina,mari,FIO,D,dc,7.0,6.0,17.0,7.0,6.0,17.0
+2024-25,6642,Coco,torino,coco,TOR,D,dc,8.0,6.0,20.0,8.0,6.0,20.0
+2024-25,4263,Kabasele,udinese,kabasele,UDI,D,dc,3.0,6.0,7.0,3.0,6.0,7.0
+2024-25,6047,Ehizibue,udinese,ehizibue,UDI,D,dd|e,5.0,6.0,11.0,5.0,6.0,11.0
+2024-25,6481,Payero,udinese,payero,UDI,C,c,8.0,6.0,15.0,7.0,6.0,15.0
+2024-25,5492,Tessmann,venezia,tessmann,VEN,C,m|c,7.0,6.0,13.0,8.0,7.0,15.0
+2024-25,6458,Serdar,verona,serdar,VER,C,m|c,5.0,6.0,12.0,6.0,6.0,12.0
+2024-25,6486,Suslov,verona,suslov,VER,C,w|t,13.0,6.0,18.0,13.0,6.0,21.0
+2024-25,6680,Karlstrom,udinese,karlstrom,UDI,C,m|c,5.0,6.0,21.0,5.0,6.0,26.0
+2024-25,4816,Emerson Royal,milan,emerson-royal,MIL,D,b|dd|ds,12.0,6.0,9.0,12.0,6.0,12.0
+2024-25,6804,Richardson,fiorentina,richardson,FIO,C,m|c,8.0,6.0,9.0,8.0,6.0,12.0
+2024-25,6822,Ekhator,genoa,ekhator,GEN,A,pc,1.0,6.0,8.0,1.0,6.0,8.0
+2024-25,2325,Karamoh,torino,karamoh,TOR,A,a,1.0,6.0,9.0,1.0,6.0,9.0
+2024-25,6887,Leoni,parma,leoni,PAR,D,dc,2.0,6.0,13.0,2.0,6.0,13.0
+2024-25,6893,Kempf,como,kempf,COM,D,dc,3.0,6.0,14.0,3.0,6.0,14.0
+2024-25,6900,Rui Modesto,udinese,rui-modesto,UDI,C,e|w,3.0,6.0,14.0,4.0,6.0,15.0
+2024-25,5532,Bradaric,verona,bradaric,VER,D,ds|e,5.0,6.0,12.0,5.0,6.0,12.0
+2024-25,6985,Candè,venezia,cand&#xE8;,VEN,D,ds|dc,1.0,6.0,14.0,1.0,6.0,17.0
+2024-25,6766,Kelly L.,juventus,kelly-l,JUV,D,ds|dc,6.0,6.0,13.0,7.0,6.0,16.0
+2024-25,6046,Hien,atalanta,hien,ATA,D,dc,8.0,5.0,21.0,8.0,5.0,21.0
+2024-25,6042,Lucumi',bologna,lucumi,BOL,D,dc,7.0,5.0,16.0,7.0,5.0,16.0
+2024-25,487,De Silvestri,bologna,de-silvestri,BOL,D,dd|e,3.0,5.0,11.0,3.0,5.0,11.0
+2024-25,6640,Felici,cagliari,felici,CAG,C,e|w,5.0,5.0,13.0,6.0,5.0,16.0
+2024-25,5435,Moreno Alb.,como,moreno-alb,COM,D,ds|e,7.0,5.0,12.0,7.0,5.0,12.0
+2024-25,6537,Goglichidze,empoli,goglichidze,EMP,D,dd|dc,1.0,5.0,14.0,1.0,5.0,17.0
+2024-25,2819,Caputo,empoli,caputo,EMP,A,pc,5.0,5.0,15.0,5.0,5.0,13.0
+2024-25,5603,Pongracic,fiorentina,pongracic,FIO,D,dc,9.0,5.0,13.0,9.0,5.0,13.0
+2024-25,2172,Barak,fiorentina,barak,FIO,C,t,6.0,5.0,14.0,6.0,5.0,12.0
+2024-25,2762,Kouame',empoli,kouame,EMP,A,a,4.0,5.0,11.0,4.0,5.0,11.0
+2024-25,2285,Bani,genoa,bani,GEN,D,dc,7.0,5.0,11.0,7.0,5.0,11.0
+2024-25,294,Rugani,juventus,rugani,JUV,D,dc,5.0,5.0,6.0,5.0,5.0,6.0
+2024-25,2263,Lazzari,lazio,lazzari,LAZ,D,dd|e,5.0,5.0,10.0,5.0,5.0,10.0
+2024-25,140,Hysaj,lazio,hysaj,LAZ,D,dd|ds|e,4.0,5.0,6.0,5.0,5.0,8.0
+2024-25,4502,Gallo,lecce,gallo,LEC,D,ds|e,5.0,5.0,13.0,5.0,5.0,13.0
+2024-25,6633,Pierret,lecce,pierret,LEC,C,m|c,4.0,5.0,12.0,5.0,5.0,15.0
+2024-25,6670,Charpentier,parma,charpentier,PAR,A,pc,1.0,5.0,12.0,1.0,5.0,12.0
+2024-25,4657,Celik,roma,celik,ROM,D,dd|e,3.0,5.0,15.0,3.0,5.0,15.0
+2024-25,479,Sanabria,torino,sanabria,TOR,A,pc,10.0,5.0,10.0,9.0,5.0,10.0
+2024-25,6211,Zemura,udinese,zemura,UDI,D,ds|e,3.0,5.0,11.0,3.0,5.0,11.0
+2024-25,6212,Zarraga,udinese,zarraga,UDI,C,m|c,3.0,5.0,9.0,4.0,5.0,9.0
+2024-25,2117,Kastanos,verona,kastanos,VER,C,c|t,4.0,5.0,9.0,4.0,5.0,9.0
+2024-25,6644,Rocha Livramento,verona,rocha-livramento,VER,A,pc,4.0,5.0,10.0,3.0,5.0,10.0
+2024-25,6676,Engelhardt,como,engelhardt,COM,C,m|c,4.0,5.0,9.0,4.0,5.0,12.0
+2024-25,1978,Sensi,monza,sensi,MON,C,c|t,7.0,5.0,9.0,7.0,5.0,9.0
+2024-25,6207,Almqvist,parma,almqvist,PAR,A,w|a,9.0,5.0,10.0,10.0,5.0,12.0
+2024-25,2181,Palomino,cagliari,palomino,CAG,D,dc,5.0,5.0,10.0,5.0,5.0,10.0
+2024-25,186,Rebic,lecce,rebic,LEC,A,a,4.0,5.0,8.0,4.0,5.0,8.0
+2024-25,6112,Iling Junior,bologna,iling-junior,BOL,C,w,6.0,5.0,10.0,6.0,5.0,10.0
+2024-25,5626,Guilbert,lecce,guilbert,LEC,D,b|dd|ds,5.0,5.0,15.0,6.0,5.0,18.0
+2024-25,6892,Schingtienne,venezia,schingtienne,VEN,D,dd|dc,3.0,5.0,9.0,3.0,5.0,12.0
+2024-25,5578,Kossounou,atalanta,kossounou,ATA,D,dd|dc,10.0,5.0,13.0,10.0,5.0,13.0
+2024-25,6898,Keita M.,parma,keita-m,PAR,C,m|c,6.0,5.0,14.0,7.0,5.0,17.0
+2024-25,6896,Van Der Brempt,como,van-der-brempt,COM,D,dd|e,5.0,5.0,8.0,5.0,5.0,8.0
+2024-25,6975,Alberto Costa,juventus,alberto-costa,JUV,D,dd|e,5.0,5.0,7.0,5.0,5.0,7.0
+2024-25,6980,Venturino,genoa,venturino,GEN,C,w,1.0,5.0,1.0,1.0,5.0,1.0
+2024-25,6986,Rensch,roma,rensch,ROM,D,b|dd|e,5.0,5.0,10.0,6.0,6.0,13.0
+2024-25,6990,Veiga D.,lecce,veiga-d,LEC,D,dd|e,2.0,5.0,7.0,2.0,5.0,7.0
+2024-25,6867,Valle,como,valle,COM,D,ds|e,3.0,5.0,11.0,3.0,5.0,11.0
+2024-25,7028,Bernede,verona,bernede,VER,C,m|c,3.0,5.0,14.0,4.0,6.0,19.0
+2024-25,2792,Musso,atalanta,musso,ATA,P,por,3.0,4.0,20.0,3.0,4.0,20.0
+2024-25,5067,Bakker,atalanta,bakker,ATA,D,e,4.0,4.0,9.0,3.0,3.0,7.0
+2024-25,6054,Moro N.,bologna,moro-n,BOL,C,m|c,2.0,4.0,12.0,2.0,4.0,15.0
+2024-25,5425,Urbanski,monza,urbanski,MON,C,c|w|t,5.0,4.0,14.0,6.0,4.0,17.0
+2024-25,5406,Di Pardo,cagliari,di-pardo,CAG,D,dd|e,4.0,4.0,4.0,4.0,4.0,4.0
+2024-25,6230,Dossena,como,dossena,COM,D,dc,8.0,4.0,10.0,8.0,4.0,10.0
+2024-25,4374,Walukiewicz,torino,walukiewicz,TOR,D,dc,4.0,4.0,12.0,4.0,4.0,12.0
+2024-25,5480,Ebuehi,empoli,ebuehi,EMP,D,dd|e,4.0,4.0,6.0,4.0,4.0,6.0
+2024-25,5450,Stojanovic,empoli,stojanovic,EMP,D,dd|e,4.0,4.0,5.0,4.0,4.0,5.0
+2024-25,6245,Vogliacco,parma,vogliacco,PAR,D,dd|dc,2.0,4.0,13.0,2.0,4.0,15.0
+2024-25,358,De Sciglio,empoli,de-sciglio,EMP,D,dd|ds|e,1.0,4.0,8.0,1.0,4.0,10.0
+2024-25,5286,Akpa Akpro,monza,akpa-akpro,MON,C,m|c,1.0,4.0,6.0,1.0,4.0,8.0
+2024-25,6410,Kaba,lecce,kaba,LEC,C,m|c,1.0,4.0,7.0,1.0,4.0,10.0
+2024-25,357,Calabria,bologna,calabria,BOL,D,dd|e,7.0,4.0,15.0,7.0,4.0,15.0
+2024-25,2818,Bennacer,milan,bennacer,MIL,C,m|c,7.0,4.0,15.0,8.0,4.0,20.0
+2024-25,5295,Musah,milan,musah,MIL,C,c|w,4.0,4.0,14.0,4.0,4.0,16.0
+2024-25,6227,Okafor,napoli,okafor,NAP,A,a,11.0,4.0,5.0,11.0,4.0,5.0
+2024-25,226,Izzo,monza,izzo,MON,D,dc,6.0,4.0,12.0,6.0,4.0,14.0
+2024-25,4925,Carboni A.,monza,carboni-a,MON,D,ds|dc,5.0,4.0,9.0,6.0,4.0,11.0
+2024-25,729,Pereira P.,monza,pereira-p,MON,D,dd|e,5.0,4.0,11.0,5.0,4.0,11.0
+2024-25,6396,Natan,napoli,natan,NAP,D,dc,4.0,4.0,6.0,4.0,4.0,6.0
+2024-25,6252,Folorunsho,fiorentina,folorunsho,FIO,C,c|t,7.0,4.0,14.0,7.0,4.0,14.0
+2024-25,5353,Balogh,parma,balogh,PAR,D,dc,1.0,4.0,10.0,1.0,4.0,10.0
+2024-25,2008,Linetty,torino,linetty,TOR,C,m|c,3.0,4.0,12.0,3.0,4.0,15.0
+2024-25,5007,Ilic,torino,ilic,TOR,C,c,7.0,4.0,9.0,7.0,4.0,9.0
+2024-25,2103,Pellegri,empoli,pellegri,EMP,A,pc,3.0,4.0,29.0,3.0,4.0,29.0
+2024-25,6485,Kristensen T.,udinese,kristensen-t,UDI,D,dc,5.0,4.0,10.0,5.0,4.0,10.0
+2024-25,6256,Ferreira J.,udinese,ferreira-j,UDI,D,b|dd|e,4.0,4.0,8.0,5.0,5.0,10.0
+2024-25,5447,Altare,venezia,altare,VEN,D,dc,3.0,4.0,8.0,3.0,4.0,8.0
+2024-25,1952,Zampano,venezia,zampano,VEN,D,dd|ds|e,5.0,4.0,9.0,6.0,4.0,11.0
+2024-25,1842,Pierini,venezia,pierini,VEN,A,a,3.0,4.0,8.0,3.0,4.0,8.0
+2024-25,4493,Dawidowicz,verona,dawidowicz,VER,D,dc,5.0,4.0,9.0,5.0,4.0,9.0
+2024-25,6631,Ghilardi,verona,ghilardi,VER,D,dc,1.0,4.0,10.0,1.0,4.0,10.0
+2024-25,5688,Harroui,verona,harroui,VER,C,w|t,13.0,4.0,20.0,13.0,4.0,23.0
+2024-25,6558,Tavsan,verona,tavsan,VER,A,w|a,4.0,4.0,4.0,4.0,4.0,5.0
+2024-25,4982,Erlic,bologna,erlic,BOL,D,dc,6.0,4.0,7.0,6.0,4.0,7.0
+2024-25,6809,Marianucci,empoli,marianucci,EMP,D,dc,1.0,4.0,10.0,1.0,4.0,10.0
+2024-25,6814,Norton-Cuffy,genoa,norton-cuffy,GEN,D,dd|e,4.0,4.0,6.0,4.0,4.0,6.0
+2024-25,6011,Ekong,empoli,ekong,EMP,A,a,1.0,4.0,5.0,1.0,4.0,5.0
+2024-25,6826,Dembele' A.,torino,dembele-a,TOR,D,e,1.0,4.0,3.0,1.0,4.0,3.0
+2024-25,6842,Sava,udinese,sava,UDI,P,por,1.0,4.0,1.0,1.0,4.0,1.0
+2024-25,6883,Jean,lecce,jean,LEC,D,dc,2.0,4.0,10.0,2.0,4.0,10.0
+2024-25,6914,Haj Mohamed,parma,haj-mohamed,PAR,A,a,1.0,4.0,7.0,1.0,4.0,7.0
+2024-25,6957,Valentini N.,verona,valentini-n,VER,D,dc,3.0,4.0,10.0,3.0,4.0,10.0
+2024-25,6969,Billing,napoli,billing,NAP,C,c|t,5.0,4.0,13.0,5.0,4.0,13.0
+2024-25,6538,Onana J.,genoa,onana-j,GEN,C,m|c,5.0,4.0,11.0,6.0,5.0,13.0
+2024-25,7001,N'Dri,lecce,n-dri,LEC,A,w|a,3.0,4.0,7.0,4.0,4.0,10.0
+2024-25,7002,Ganvoula,monza,ganvoula,MON,A,pc,7.0,4.0,9.0,7.0,4.0,9.0
+2024-25,7018,Nelsson,roma,nelsson,ROM,D,dc,4.0,4.0,8.0,4.0,4.0,8.0
+2024-25,695,Toloi,atalanta,toloi,ATA,D,dc,4.0,3.0,12.0,4.0,3.0,12.0
+2024-25,6424,Prati,cagliari,prati,CAG,C,m|c,4.0,3.0,12.0,5.0,3.0,15.0
+2024-25,1939,Lapadula,cagliari,lapadula,CAG,A,pc,9.0,3.0,5.0,8.0,3.0,5.0
+2024-25,387,Reina,como,reina,COM,P,por,2.0,3.0,1.0,2.0,3.0,1.0
+2024-25,6395,Shpendi S.,empoli,shpendi-s,EMP,A,a,3.0,3.0,5.0,3.0,3.0,5.0
+2024-25,219,Sommariva,genoa,sommariva,GEN,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2024-25,6660,Marcandalli,venezia,marcandalli,VEN,D,dc,1.0,3.0,7.0,1.0,3.0,7.0
+2024-25,4404,Thorsby,genoa,thorsby,GEN,C,c,5.0,3.0,10.0,4.0,3.0,13.0
+2024-25,4711,Kostic,juventus,kostic,JUV,C,e|w,4.0,3.0,5.0,5.0,4.0,5.0
+2024-25,5498,Casale,bologna,casale,BOL,D,dc,8.0,3.0,9.0,8.0,3.0,9.0
+2024-25,5919,Tchaouna,lazio,tchaouna,LAZ,C,w,9.0,3.0,12.0,9.0,3.0,10.0
+2024-25,5457,Maleh,empoli,maleh,EMP,C,c,3.0,3.0,10.0,3.0,3.0,10.0
+2024-25,6055,Thiaw,milan,thiaw,MIL,D,dc,4.0,3.0,12.0,4.0,3.0,12.0
+2024-25,6524,Zeroli,monza,zeroli,MON,C,c|t,1.0,3.0,11.0,1.0,3.0,11.0
+2024-25,5992,Bondo,milan,bondo,MIL,C,m|c,3.0,3.0,11.0,3.0,3.0,14.0
+2024-25,256,Juan Jesus,napoli,juan-jesus,NAP,D,ds|dc,5.0,3.0,9.0,5.0,3.0,11.0
+2024-25,6402,Cajuste,napoli,cajuste,NAP,C,m|c,3.0,3.0,8.0,3.0,3.0,8.0
+2024-25,6665,Coulibaly W.,parma,coulibaly-w,PAR,D,dd|ds|e,2.0,3.0,11.0,2.0,3.0,13.0
+2024-25,5421,Camara D.,parma,camara-d,PAR,C,c|t,1.0,3.0,8.0,1.0,3.0,8.0
+2024-25,5322,Mihaila,parma,mihaila,PAR,A,w|a,8.0,3.0,7.0,9.0,3.0,10.0
+2024-25,6299,Le Fee,roma,le-fee,ROM,C,c|t,10.0,3.0,8.0,10.0,3.0,8.0
+2024-25,4890,Tameze,torino,tameze,TOR,C,m|c,5.0,3.0,8.0,6.0,2.0,10.0
+2024-25,5848,Ebosele,udinese,ebosele,UDI,D,dd|e,3.0,3.0,4.0,3.0,3.0,4.0
+2024-25,6213,Brenner,udinese,brenner,UDI,A,a,7.0,3.0,5.0,7.0,3.0,5.0
+2024-25,5676,Success,udinese,success,UDI,A,a,3.0,3.0,3.0,3.0,3.0,3.0
+2024-25,2769,Magnani,verona,magnani,VER,D,dc,3.0,3.0,6.0,3.0,3.0,6.0
+2024-25,1891,Ceccherini,verona,ceccherini,VER,D,dd|dc,3.0,3.0,5.0,3.0,3.0,5.0
+2024-25,6191,Belahyane,lazio,belahyane,LAZ,C,m|c,1.0,3.0,11.0,1.0,3.0,14.0
+2024-25,2475,Sanchez,udinese,sanchez,UDI,A,a,16.0,3.0,7.0,16.0,3.0,7.0
+2024-25,6250,Maric,venezia,maric,VEN,A,pc,1.0,3.0,9.0,1.0,3.0,9.0
+2024-25,6832,Palestra,atalanta,palestra,ATA,D,e,1.0,3.0,4.0,1.0,3.0,4.0
+2024-25,6021,Abankwah,udinese,abankwah,UDI,D,dd|dc,1.0,3.0,5.0,1.0,3.0,5.0
+2024-25,6426,Pedersen,torino,pedersen,TOR,D,e,6.0,3.0,9.0,5.0,3.0,9.0
+2024-25,2406,Hummels,roma,hummels,ROM,D,dc,8.0,3.0,14.0,8.0,3.0,14.0
+2024-25,6916,Ahanor,genoa,ahanor,GEN,D,b|ds|e,1.0,3.0,5.0,1.0,3.0,5.0
+2024-25,6920,Martins K.,monza,martins-k,MON,C,e|w,1.0,3.0,5.0,1.0,3.0,5.0
+2024-25,7014,Smolcic I.,como,smolcic-i,COM,D,b|dd|e,2.0,3.0,10.0,3.0,3.0,12.0
+2024-25,6294,Ndour,fiorentina,ndour,FIO,C,m|c,4.0,3.0,12.0,5.0,3.0,17.0
+2024-25,7019,Gourna-Douath,roma,gourna-douath,ROM,C,m|c,4.0,3.0,10.0,5.0,4.0,13.0
+2024-25,5324,Godfrey,atalanta,godfrey,ATA,D,b|dd|ds,7.0,2.0,4.0,9.0,1.0,6.0
+2024-25,6066,Posch,atalanta,posch,ATA,D,dd|dc,8.0,2.0,13.0,9.0,2.0,15.0
+2024-25,5784,Aebischer,bologna,aebischer,BOL,C,c|t,10.0,2.0,13.0,10.0,2.0,13.0
+2024-25,6464,Wieteska,cagliari,wieteska,CAG,D,dc,3.0,2.0,4.0,3.0,2.0,4.0
+2024-25,6438,Hatzidiakos,cagliari,hatzidiakos,CAG,D,dd|dc,3.0,2.0,4.0,3.0,2.0,4.0
+2024-25,6231,Azzi,cagliari,azzi,CAG,D,dd|ds|e,4.0,2.0,5.0,5.0,2.0,5.0
+2024-25,6598,Mutandwa,cagliari,mutandwa,CAG,A,pc,1.0,2.0,3.0,1.0,2.0,3.0
+2024-25,761,Audero,como,audero,COM,P,por,9.0,2.0,1.0,9.0,2.0,1.0
+2024-25,134,Barba,como,barba,COM,D,ds|dc,1.0,2.0,5.0,1.0,2.0,7.0
+2024-25,6656,Braunoder,como,braunoder,COM,C,m|c,3.0,2.0,5.0,4.0,1.0,8.0
+2024-25,376,Verdi,como,verdi,COM,C,w|t,9.0,2.0,5.0,9.0,2.0,7.0
+2024-25,6657,Gabrielloni,como,gabrielloni,COM,A,pc,2.0,2.0,8.0,1.0,2.0,8.0
+2024-25,2161,Haas,empoli,haas,EMP,C,m|c,2.0,2.0,3.0,2.0,2.0,3.0
+2024-25,2815,Terracciano,fiorentina,terracciano,FIO,P,por,11.0,2.0,1.0,11.0,2.0,1.0
+2024-25,6244,Matturro,genoa,matturro,GEN,D,dc,1.0,2.0,6.0,1.0,2.0,6.0
+2024-25,5798,Bohinen,genoa,bohinen,GEN,C,m|c,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,218,Perin,juventus,perin,JUV,P,por,2.0,2.0,1.0,2.0,2.0,1.0
+2024-25,6039,Cabal,juventus,cabal,JUV,D,b|ds|e,5.0,2.0,8.0,6.0,2.0,8.0
+2024-25,6061,Oudin,lecce,oudin,LEC,C,w|t,7.0,2.0,8.0,7.0,2.0,10.0
+2024-25,6001,Banda,lecce,banda,LEC,A,w|a,9.0,2.0,9.0,10.0,2.0,9.0
+2024-25,6418,Burnete,lecce,burnete,LEC,A,pc,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,4,Sportiello,milan,sportiello,MIL,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,6519,Camarda,milan,camarda,MIL,A,pc,1.0,2.0,6.0,1.0,2.0,6.0
+2024-25,2737,Bettella,monza,bettella,MON,D,dc,2.0,2.0,3.0,2.0,2.0,3.0
+2024-25,4958,Caldirola,monza,caldirola,MON,D,ds|dc,5.0,2.0,4.0,5.0,2.0,6.0
+2024-25,801,Gagliardini,monza,gagliardini,MON,C,m|c,5.0,2.0,4.0,6.0,2.0,6.0
+2024-25,2741,Pessina,monza,pessina,MON,C,m|c,12.0,2.0,12.0,13.0,2.0,12.0
+2024-25,666,Machin,monza,machin,MON,C,c,2.0,2.0,3.0,2.0,2.0,3.0
+2024-25,6592,Forson O.,monza,forson-o,MON,C,w|t,6.0,2.0,5.0,6.0,2.0,7.0
+2024-25,6638,Marin R.,napoli,marin-r,NAP,D,dc,8.0,2.0,5.0,8.0,2.0,5.0
+2024-25,6145,Ngonge,napoli,ngonge,NAP,A,w|a,9.0,2.0,9.0,10.0,2.0,11.0
+2024-25,6663,Circati,parma,circati,PAR,D,dc,5.0,2.0,9.0,5.0,2.0,9.0
+2024-25,5290,Estevez,parma,estevez,PAR,C,m|c,4.0,2.0,8.0,5.0,2.0,11.0
+2024-25,6667,Benedyczak,parma,benedyczak,PAR,A,a,10.0,2.0,5.0,10.0,2.0,5.0
+2024-25,6668,Partipilo,parma,partipilo,PAR,A,a,2.0,2.0,2.0,2.0,2.0,2.0
+2024-25,4495,Kumbulla,roma,kumbulla,ROM,D,dc,2.0,2.0,2.0,2.0,2.0,2.0
+2024-25,6647,Dahl,roma,dahl,ROM,D,ds|e,3.0,2.0,5.0,3.0,2.0,5.0
+2024-25,6533,Giannetti L.,udinese,giannetti-l,UDI,D,dc,4.0,2.0,7.0,4.0,2.0,7.0
+2024-25,4425,Joronen,venezia,joronen,VEN,P,por,6.0,2.0,1.0,6.0,2.0,1.0
+2024-25,5484,Svoboda,venezia,svoboda,VEN,D,dc,4.0,2.0,9.0,4.0,2.0,9.0
+2024-25,6673,Sverko,venezia,sverko,VEN,D,b|ds|e,4.0,2.0,10.0,5.0,2.0,13.0
+2024-25,4458,Candela,venezia,candela,VEN,D,dd|e,5.0,2.0,4.0,5.0,2.0,4.0
+2024-25,526,Duncan,venezia,duncan,VEN,C,c,8.0,2.0,5.0,8.0,2.0,5.0
+2024-25,5485,Bjarkason,venezia,bjarkason,VEN,C,c|w,4.0,2.0,6.0,4.0,2.0,6.0
+2024-25,511,Perilli,verona,perilli,VER,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,6639,Frese,verona,frese,VER,D,ds|e,5.0,2.0,5.0,5.0,2.0,5.0
+2024-25,6562,Dani Silva,verona,dani-silva,VER,C,m|c,3.0,2.0,7.0,3.0,2.0,10.0
+2024-25,6579,Mitrovic S.,verona,mitrovic-s,VER,C,w,3.0,2.0,6.0,3.0,2.0,5.0
+2024-25,4376,Zurkowski,empoli,zurkowski,EMP,C,c|t,10.0,2.0,9.0,10.0,2.0,9.0
+2024-25,6532,Buchanan T.,inter,buchanan-t,INT,C,e|w,1.0,2.0,7.0,1.0,2.0,7.0
+2024-25,6679,Esteves G.,udinese,esteves-g,UDI,D,dd|ds|e,2.0,2.0,3.0,2.0,2.0,3.0
+2024-25,6682,Pizzignacco,monza,pizzignacco,MON,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,6119,Solbakken,empoli,solbakken,EMP,A,a,3.0,2.0,9.0,3.0,2.0,9.0
+2024-25,6820,Sosa B.,torino,sosa-b,TOR,D,e,8.0,2.0,8.0,7.0,2.0,8.0
+2024-25,306,Cerri,como,cerri,COM,A,pc,1.0,2.0,3.0,1.0,2.0,3.0
+2024-25,4284,Sergi Roberto,como,sergi-roberto,COM,D,e|m,9.0,2.0,10.0,9.0,2.0,15.0
+2024-25,6874,Palacios T.,monza,palacios-t,MON,D,dc,3.0,2.0,5.0,3.0,2.0,5.0
+2024-25,5856,Sambia,empoli,sambia,EMP,D,dd|e,2.0,2.0,3.0,2.0,2.0,3.0
+2024-25,6496,Bartesaghi,milan,bartesaghi,MIL,D,ds|e,1.0,2.0,5.0,1.0,2.0,5.0
+2024-25,4807,Hermoso,roma,hermoso,ROM,D,dc,10.0,2.0,4.0,10.0,2.0,4.0
+2024-25,6912,Vlahovic V.,atalanta,vlahovic-v,ATA,A,pc,1.0,2.0,5.0,1.0,2.0,5.0
+2024-25,6913,Lambourde,verona,lambourde,VER,A,a,1.0,2.0,3.0,1.0,2.0,3.0
+2024-25,6922,Kasa,genoa,kasa,GEN,C,m|c,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,4886,Pereiro,genoa,pereiro,GEN,C,w|t,4.0,2.0,5.0,4.0,2.0,5.0
+2024-25,696,Balotelli,genoa,balotelli,GEN,A,pc,10.0,2.0,5.0,10.0,2.0,5.0
+2024-25,6965,Lovik,parma,lovik,PAR,D,ds|e,3.0,2.0,5.0,3.0,2.0,5.0
+2024-25,6963,Condè,venezia,cond&#xE8;,VEN,C,m|c,2.0,2.0,8.0,2.0,2.0,10.0
+2024-25,6977,Otoa,genoa,otoa,GEN,D,dc,3.0,2.0,5.0,3.0,2.0,5.0
+2024-25,6978,Lekovic,monza,lekovic,MON,D,dc,1.0,2.0,7.0,1.0,2.0,7.0
+2024-25,6991,Siegrist,genoa,siegrist,GEN,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,6989,Tiago Gabriel,lecce,tiago-gabriel,LEC,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,6993,Brorsson,monza,brorsson,MON,D,dc,2.0,2.0,5.0,2.0,2.0,5.0
+2024-25,5540,Niasse,verona,niasse,VER,C,m|c,2.0,2.0,11.0,2.0,2.0,14.0
+2024-25,5397,Kovalenko,empoli,kovalenko,EMP,C,c|t,2.0,2.0,5.0,2.0,4.0,5.0
+2024-25,7052,Perciun,torino,perciun,TOR,C,t,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,7060,Cacciamani,torino,cacciamani,TOR,C,w|a,1.0,2.0,1.0,1.0,2.0,1.0
+2024-25,2297,Rossi F.,atalanta,rossi-f,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5526,Scalvini,atalanta,scalvini,ATA,D,dc,8.0,1.0,7.0,8.0,1.0,7.0
+2024-25,5822,Bagnolini,bologna,bagnolini,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6551,Ilic M.,bologna,ilic-m,BOL,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6407,Corazza,bologna,corazza,BOL,D,dd|ds|e,1.0,1.0,3.0,1.0,1.0,3.0
+2024-25,6225,El Azzouzi,bologna,el-azzouzi,BOL,C,m|c,4.0,1.0,6.0,5.0,1.0,9.0
+2024-25,3,Radunovic,cagliari,radunovic,CAG,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,574,Scuffet,napoli,scuffet,NAP,P,por,7.0,1.0,1.0,7.0,1.0,1.0
+2024-25,6650,Sherri,cagliari,sherri,CAG,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6636,Veroli,cagliari,veroli,CAG,D,ds|dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,1987,Jankto,cagliari,jankto,CAG,C,e|c,3.0,1.0,6.0,4.0,1.0,7.0
+2024-25,2809,Vigorito,como,vigorito,COM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6654,Iovine,como,iovine,COM,D,dd|e,3.0,1.0,5.0,3.0,1.0,5.0
+2024-25,6637,Kovacik,como,kovacik,COM,D,dd|e,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,4386,Sala M.,lecce,sala-m,LEC,D,ds|e,2.0,1.0,5.0,2.0,1.0,5.0
+2024-25,4438,Cassandro,como,cassandro,COM,D,dd|ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6162,Abildgaard,como,abildgaard,COM,C,m|c,1.0,1.0,2.0,1.0,1.0,2.0
+2024-25,556,Baselli,como,baselli,COM,C,m|c,3.0,1.0,7.0,3.0,1.0,9.0
+2024-25,6655,Bellemo,como,bellemo,COM,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5725,Kone B.,como,kone-b,COM,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6648,Jasim,como,jasim,COM,A,w|a,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6658,Gioacchini,como,gioacchini,COM,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6651,Chiorra,empoli,chiorra,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,673,Perisan,empoli,perisan,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6203,Belardinelli,empoli,belardinelli,EMP,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6009,Degli Innocenti,empoli,degli-innocenti,EMP,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6403,Christensen O.,fiorentina,christensen-o,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6184,Martinelli T.,fiorentina,martinelli-t,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6659,Lucchesi,venezia,lucchesi,VEN,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6235,Kayode,fiorentina,kayode,FIO,D,dd|ds|e,5.0,1.0,5.0,6.0,1.0,7.0
+2024-25,610,Gollini,roma,gollini,ROM,P,por,10.0,1.0,1.0,10.0,1.0,1.0
+2024-25,6565,Ankeye,genoa,ankeye,GEN,A,pc,1.0,1.0,2.0,1.0,1.0,2.0
+2024-25,1926,Di Gennaro,inter,di-gennaro,INT,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,1930,Pinsoglio,juventus,pinsoglio,JUV,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5533,Djalo',juventus,djalo,JUV,D,dd|dc,2.0,1.0,4.0,3.0,2.0,5.0
+2024-25,2012,Milik,juventus,milik,JUV,A,pc,12.0,1.0,3.0,10.0,1.0,3.0
+2024-25,6417,Furlanetto,lazio,furlanetto,LAZ,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,327,Patric,lazio,patric,LAZ,D,dd|dc,5.0,1.0,5.0,5.0,1.0,5.0
+2024-25,2401,Fruchtl,lecce,fruchtl,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6523,Samooja,lecce,samooja,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6222,Rafia,lecce,rafia,LEC,C,c|t,4.0,1.0,10.0,4.0,1.0,10.0
+2024-25,5873,Listkowski,lecce,listkowski,LEC,C,w,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6645,Marchwinski,lecce,marchwinski,LEC,C,t,8.0,1.0,5.0,7.0,1.0,5.0
+2024-25,6505,Nava,milan,nava,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5812,Terracciano F.,milan,terracciano-f,MIL,D,dd|e,1.0,1.0,9.0,1.0,1.0,9.0
+2024-25,2178,Cragno,monza,cragno,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5853,Sorrentino A.,monza,sorrentino-a,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,253,D'Ambrosio,monza,d-ambrosio,MON,D,b|dd|ds,3.0,1.0,11.0,4.0,2.0,13.0
+2024-25,2274,Valoti,monza,valoti,MON,C,c|t,6.0,1.0,5.0,6.0,1.0,5.0
+2024-25,5879,Vignato S.,monza,vignato-s,MON,C,t|a,2.0,1.0,9.0,2.0,1.0,9.0
+2024-25,383,Petagna,monza,petagna,MON,A,pc,5.0,1.0,6.0,3.0,1.0,6.0
+2024-25,2845,Contini,napoli,contini,NAP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,142,Mario Rui,napoli,mario-rui,NAP,D,e,3.0,1.0,4.0,3.0,1.0,4.0
+2024-25,5481,Mazzocchi,napoli,mazzocchi,NAP,D,e,4.0,1.0,8.0,4.0,1.0,8.0
+2024-25,6661,Chichizola,parma,chichizola,PAR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6662,Corvi,parma,corvi,PAR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5338,Rinaldi,parma,rinaldi,PAR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5327,Osorio,parma,osorio,PAR,D,dc,4.0,1.0,6.0,4.0,1.0,6.0
+2024-25,2203,Di Chiara,parma,di-chiara,PAR,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,2357,Cyprien,parma,cyprien,PAR,C,m|c,2.0,1.0,2.0,2.0,1.0,2.0
+2024-25,5304,Boer,roma,boer,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5384,Ryan,roma,ryan,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6649,Sangare' B.,roma,sangare-b,ROM,D,dd|e,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6603,Joao Costa,roma,joao-costa,ROM,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5320,Paleari,torino,paleari,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6210,Popa,torino,popa,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6474,Sazonov,empoli,sazonov,EMP,D,dc,1.0,1.0,4.0,1.0,1.0,4.0
+2024-25,6041,Schuurs,torino,schuurs,TOR,D,dc,7.0,1.0,7.0,7.0,1.0,7.0
+2024-25,543,Padelli,udinese,padelli,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5994,Ebosse,udinese,ebosse,UDI,D,ds|dc,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,6635,Pizarro,udinese,pizarro,UDI,A,pc,3.0,1.0,3.0,3.0,1.0,3.0
+2024-25,5521,Bertinato,venezia,bertinato,VEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6671,Grandi,venezia,grandi,VEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,434,Jajalo,venezia,jajalo,VEN,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5486,Crnigoj,venezia,crnigoj,VEN,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6233,Lella,venezia,lella,VEN,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,4491,Berardi A.,verona,berardi-a,VER,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6284,Okou,verona,okou,VER,D,dc,2.0,1.0,3.0,2.0,1.0,3.0
+2024-25,581,Faraoni,verona,faraoni,VER,D,dd|e,3.0,1.0,8.0,3.0,1.0,8.0
+2024-25,6490,Cruz,verona,cruz,VER,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6677,Adzic,juventus,adzic,JUV,C,t,1.0,1.0,3.0,1.0,1.0,3.0
+2024-25,6678,Liberali,milan,liberali,MIL,C,w|t,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,6681,Sagrado,venezia,sagrado,VEN,D,dd|e,1.0,1.0,2.0,1.0,1.0,2.0
+2024-25,4351,Brancolini,empoli,brancolini,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5436,Raimondo,venezia,raimondo,VEN,A,pc,1.0,1.0,4.0,1.0,1.0,4.0
+2024-25,6803,Rouhi,juventus,rouhi,JUV,D,ds|e,1.0,1.0,6.0,1.0,1.0,6.0
+2024-25,6806,Pelmard,lecce,pelmard,LEC,D,dd|ds|dc,3.0,1.0,2.0,5.0,1.0,4.0
+2024-25,4929,Ciocci,cagliari,ciocci,CAG,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6813,Torriani,milan,torriani,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,216,Donnarumma An.,torino,donnarumma-an,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,2211,Silvestri,empoli,silvestri,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6818,Mazza,monza,mazza,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6819,El Haddad,venezia,el-haddad,VEN,C,t,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,6824,Marin Re.,roma,marin-re,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6612,Dellavalle,torino,dellavalle,TOR,D,dd|dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6827,Njie,torino,njie,TOR,A,a,1.0,1.0,6.0,1.0,1.0,6.0
+2024-25,6834,Cassa,atalanta,cassa,ATA,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6839,Byar,bologna,byar,BOL,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6618,Cisse' A.,verona,cisse-a,VER,C,w|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6048,Alidou,verona,alidou,VER,C,w,3.0,1.0,5.0,3.0,1.0,5.0
+2024-25,6872,Manzoni,atalanta,manzoni,ATA,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6885,Abdulhamid,roma,abdulhamid,ROM,D,dd|e,5.0,1.0,5.0,5.0,1.0,5.0
+2024-25,4270,Rui Patricio,atalanta,rui-patricio,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6149,Carboni F.,venezia,carboni-f,VEN,D,ds|e,2.0,1.0,5.0,2.0,1.0,5.0
+2024-25,6897,Kouda,parma,kouda,PAR,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6890,Moreno M.,fiorentina,moreno-m,FIO,D,dc,4.0,1.0,5.0,4.0,1.0,5.0
+2024-25,6891,Vos,milan,vos,MIL,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,2192,Bonifazi,lecce,bonifazi,LEC,D,dc,2.0,1.0,6.0,2.0,1.0,6.0
+2024-25,6903,Hasa,napoli,hasa,NAP,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5554,Daniliuc,verona,daniliuc,VER,D,dd|dc,5.0,1.0,6.0,5.0,1.0,8.0
+2024-25,5900,Toure' I.s.,udinese,toure-i-s,UDI,D,dc,3.0,1.0,7.0,3.0,1.0,7.0
+2024-25,2091,Plizzari,venezia,plizzari,VEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6910,Kowalski,parma,kowalski,PAR,A,a,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,464,Florenzi,milan,florenzi,MIL,D,dd|ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,4285,Arthur Melo,juventus,arthur-melo,JUV,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5674,Basic,lazio,basic,LAZ,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6919,Seghetti,empoli,seghetti,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,2121,Melegoni,genoa,melegoni,GEN,C,c|t,1.0,1.0,6.0,1.0,1.0,6.0
+2024-25,537,Sansone,lecce,sansone,LEC,A,a,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,6944,Jack,como,jack,COM,D,ds|dc,1.0,1.0,7.0,1.0,1.0,7.0
+2024-25,5707,Piana,udinese,piana,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,5824,Pafundi,udinese,pafundi,UDI,C,t|a,1.0,1.0,5.0,1.0,1.0,5.0
+2024-25,6970,Selvik,udinese,selvik,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,797,Marcone,parma,marcone,PAR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6492,Ibrahimovic A.,lazio,ibrahimovic-a,LAZ,C,w|t,4.0,1.0,6.0,3.0,1.0,8.0
+2024-25,2553,Alli,como,alli,COM,C,t,3.0,1.0,8.0,3.0,1.0,8.0
+2024-25,6569,Stolz,genoa,stolz,GEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,6992,Oyegoke,verona,oyegoke,VER,D,b|dd|e,2.0,1.0,4.0,3.0,1.0,6.0
+2024-25,7012,Provstgaard,lazio,provstgaard,LAZ,D,dc,2.0,1.0,5.0,2.0,1.0,5.0
+2024-25,7015,Pedrola,bologna,pedrola,BOL,A,w|a,2.0,1.0,5.0,2.0,1.0,5.0
+2024-25,7011,Slotsager,verona,slotsager,VER,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,7025,Cuenca H.,genoa,cuenca-h,GEN,C,w|t,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,7026,Salama,torino,salama,TOR,A,pc,4.0,1.0,3.0,4.0,1.0,3.0
+2024-25,7027,Azon,como,azon,COM,A,pc,3.0,1.0,5.0,3.0,1.0,5.0
+2024-25,7020,Salah-Eddine,roma,salah-eddine,ROM,D,ds|e,2.0,1.0,6.0,2.0,1.0,6.0
+2024-25,7031,Scott,lecce,scott,LEC,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,7042,Calligaris,inter,calligaris,INT,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,7045,Luan Patrick,verona,luan-patrick,VER,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2024-25,7048,De Marzi,roma,de-marzi,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
