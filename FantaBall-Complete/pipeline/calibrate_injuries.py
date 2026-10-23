@@ -62,8 +62,8 @@ def fit(expo, sp, upto):
     for role, g in per.groupby('role'):
         m = g.spells.sum() / g.exposure.sum()
         big = g[g.exposure >= 10]
-        between = max(np.var(big.spells / big.exposure) - m * np.mean(1 / big.exposure), (0.3 * m) ** 2)   # Poisson noise removed
-        a = m * m / between
+        between = np.var(big.spells / big.exposure) - m * np.mean(1 / big.exposure) if len(big) > 20 else np.nan   # Poisson noise removed
+        a = m * m / max(between, (0.3 * m) ** 2) if np.isfinite(between) else 2.0     # weak prior when data are thin
         dl = done[done.player_id.isin(g.index)]
         roles[role] = {'hazard': m, 'prior_a': a, 'prior_b': a / m, 'mean_games': float((dl.length * dl.w).sum() / dl.w.sum())}
     per['injuryRisk'] = [(roles[r]['prior_a'] + sp_) / (roles[r]['prior_b'] + ex) if r in roles else np.nan for r, sp_, ex in zip(per.role, per.spells, per.exposure)]
@@ -75,7 +75,7 @@ def backtest(expo, sp, md):
     """For each season, fit on earlier seasons and score that season's injury starts (log-loss per at-risk matchday)."""
     out = []
     for season in SEASONS[3:]:
-        if season not in set(expo.season):
+        if season not in set(expo.season) or not (expo.season < season).any():
             continue
         per, roles, _ = fit(expo, sp, season)
         e = expo[expo.season == season].set_index('player_id')
@@ -103,7 +103,9 @@ def current_injuries(per):
     inj['key'] = inj.team.str.lower().str.replace(' ', '-') + '|' + inj.name.str.lower()
     inj = inj.merge(prices[['key', 'player_id']], on='key', how='left')
     cal = pd.read_csv(RAW / 'openfootball' / 'matches.csv')
-    cal = pd.to_datetime(cal[(cal.season == CURRENT) & cal.home_goals.isna()].groupby('round').date.min()).sort_values()
+    # Matchdays still to come (by date: the calendar's results can lag) and before the expected return
+    cal = pd.to_datetime(cal[cal.season == CURRENT].groupby('round').date.max())
+    cal = cal[cal > pd.Timestamp(datetime.date.today())]
     def missed(ret):
         if pd.isna(ret):
             return np.nan
