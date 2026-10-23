@@ -1,0 +1,26 @@
+"""One command to bring FantaBall's data up to date.
+
+  python pipeline/update.py             weekly refresh: current season from every source, today's injury and
+                                        probable-lineup snapshots, then re-calibration
+  python pipeline/update.py --history   also (re)download every past season (first run takes a few hours;
+                                        downloaded pages are cached, so an interrupted run resumes)
+"""
+import subprocess, sys, pathlib
+import fetch_matches, fetch_understat, fetch_fantacalcio
+from common import SEASONS, CURRENT
+
+HERE = pathlib.Path(__file__).parent
+
+
+def main():
+    history = '--history' in sys.argv
+    fetch_matches.football_data(); fetch_matches.openfootball()
+    ids, active = fetch_understat.league()
+    fetch_understat.player_logs(ids, active)
+    fetch_fantacalcio.run(SEASONS[::-1] if history else [CURRENT])
+    fetch_fantacalcio.injuries_snapshot(); fetch_fantacalcio.lineups_snapshot()
+    subprocess.run([sys.executable, str(HERE / 'calibrate_injuries.py')], check=True, cwd=HERE)
+
+
+if __name__ == '__main__':
+    main()

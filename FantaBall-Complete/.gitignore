@@ -4,3 +4,4 @@ node_modules/
 __pycache__/
 .env
 mobile/assets/webview.html
+data/cache/

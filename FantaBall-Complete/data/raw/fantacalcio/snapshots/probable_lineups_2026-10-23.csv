@@ -1,0 +1,463 @@
+date,team_slug,player_id,name,role,list,start_pct
+2026-10-23,torino,6534,Perri,P,starters,90.0
+2026-10-23,torino,6495,Comuzzo,D,starters,90.0
+2026-10-23,torino,5010,Ismajli,D,starters,80.0
+2026-10-23,torino,6642,Coco,D,starters,90.0
+2026-10-23,torino,7220,Belghali,D,starters,90.0
+2026-10-23,torino,1933,Mandragora,C,starters,90.0
+2026-10-23,torino,7535,Fitz-Jim,C,starters,55.0
+2026-10-23,torino,7060,Cacciamani,C,starters,90.0
+2026-10-23,torino,5687,Vlasic,C,starters,90.0
+2026-10-23,torino,6646,Adams C.,A,starters,90.0
+2026-10-23,torino,2061,Simeone,A,starters,90.0
+2026-10-23,monza,7301,Tornqvist,P,starters,90.0
+2026-10-23,monza,7238,Kouadio,D,starters,90.0
+2026-10-23,monza,6537,Goglichidze,D,starters,85.0
+2026-10-23,monza,4925,Carboni A.,D,starters,75.0
+2026-10-23,monza,5838,Birindelli,D,starters,90.0
+2026-10-23,monza,6593,Akinsanmiro,C,starters,90.0
+2026-10-23,monza,7574,Foe Ondoa,C,starters,60.0
+2026-10-23,monza,7485,Mangas,D,starters,90.0
+2026-10-23,monza,5882,Mota,A,starters,60.0
+2026-10-23,monza,7546,Robinson J.,A,starters,80.0
+2026-10-23,monza,7523,Varela G.,A,starters,90.0
+2026-10-23,cagliari,4360,Caprile,P,starters,90.0
+2026-10-23,cagliari,7274,Zè Pedro,D,starters,80.0
+2026-10-23,cagliari,4210,Mina,D,starters,60.0
+2026-10-23,cagliari,7268,Rodriguez Ju.,D,starters,55.0
+2026-10-23,cagliari,5701,Obert,D,starters,90.0
+2026-10-23,cagliari,4870,Adopo,C,starters,90.0
+2026-10-23,cagliari,4260,Winks,C,starters,90.0
+2026-10-23,cagliari,7311,Romano,C,starters,90.0
+2026-10-23,cagliari,6815,Fadera,C,starters,55.0
+2026-10-23,cagliari,4896,Maldini,A,starters,90.0
+2026-10-23,cagliari,7374,Mendy P.,A,starters,80.0
+2026-10-23,bologna,133,Skorupski,P,starters,75.0
+2026-10-23,bologna,2525,Darmian,D,starters,90.0
+2026-10-23,bologna,5498,Casale,D,starters,75.0
+2026-10-23,bologna,5675,Theate,D,starters,90.0
+2026-10-23,bologna,4433,Zortea,D,starters,90.0
+2026-10-23,bologna,5298,Pobega,C,starters,90.0
+2026-10-23,bologna,5858,Ferguson,C,starters,80.0
+2026-10-23,bologna,4734,Miranda J.,D,starters,90.0
+2026-10-23,bologna,184,Bernardeschi,C,starters,90.0
+2026-10-23,bologna,4436,Cambiaghi,C,starters,90.0
+2026-10-23,bologna,7627,Enem,A,starters,55.0
+2026-10-23,como,6966,Butez,P,starters,55.0
+2026-10-23,como,7014,Smolcic I.,D,starters,80.0
+2026-10-23,como,6893,Kempf,D,starters,70.0
+2026-10-23,como,6869,Ramon,D,starters,60.0
+2026-10-23,como,7414,Kaiki,D,starters,80.0
+2026-10-23,como,5559,Da Cunha,C,starters,55.0
+2026-10-23,como,6151,Perrone,C,starters,90.0
+2026-10-23,como,6727,Couto,D,starters,85.0
+2026-10-23,como,6875,Paz N.,C,starters,70.0
+2026-10-23,como,7126,Baturina,C,starters,90.0
+2026-10-23,como,7017,Douvikas,A,starters,60.0
+2026-10-23,sassuolo,4236,Muric,P,starters,80.0
+2026-10-23,sassuolo,7573,Cinquegrano,D,starters,55.0
+2026-10-23,sassuolo,4147,Caleta-Car,D,starters,90.0
+2026-10-23,sassuolo,7154,Odenthal,D,starters,90.0
+2026-10-23,sassuolo,5851,Doig,D,starters,80.0
+2026-10-23,sassuolo,5844,Thorstvedt,C,starters,70.0
+2026-10-23,sassuolo,2528,Matic,C,starters,90.0
+2026-10-23,sassuolo,6677,Adzic,C,starters,55.0
+2026-10-23,sassuolo,531,Berardi,A,starters,90.0
+2026-10-23,sassuolo,4463,Esposito Se.,A,starters,65.0
+2026-10-23,sassuolo,6060,Laurientè,A,starters,80.0
+2026-10-23,napoli,572,Meret,P,starters,90.0
+2026-10-23,napoli,2816,Di Lorenzo,D,starters,90.0
+2026-10-23,napoli,6638,Marin R.,D,starters,75.0
+2026-10-23,napoli,4664,Badiashile,D,starters,60.0
+2026-10-23,napoli,5840,Olivera,D,starters,60.0
+2026-10-23,napoli,2517,De Bruyne,C,starters,90.0
+2026-10-23,napoli,4287,Lobotka,C,starters,80.0
+2026-10-23,napoli,4777,McTominay,C,starters,90.0
+2026-10-23,napoli,536,Politano,C,starters,80.0
+2026-10-23,napoli,6052,Hojlund,A,starters,90.0
+2026-10-23,napoli,7120,Lang,A,starters,55.0
+2026-10-23,roma,610,Gollini,P,starters,90.0
+2026-10-23,roma,2296,Mancini,D,starters,90.0
+2026-10-23,roma,4317,N'Dicka,D,starters,60.0
+2026-10-23,roma,4807,Hermoso,D,starters,85.0
+2026-10-23,roma,4998,Molina N.,D,starters,60.0
+2026-10-23,roma,22,De Roon,C,starters,80.0
+2026-10-23,roma,6190,Pisilli,C,starters,80.0
+2026-10-23,roma,7181,Wesley,D,starters,90.0
+2026-10-23,roma,5734,Soulè,A,starters,90.0
+2026-10-23,roma,7556,Mora,C,starters,60.0
+2026-10-23,roma,5585,Malen,A,starters,90.0
+2026-10-23,lazio,6482,Mandas,P,starters,90.0
+2026-10-23,lazio,7131,Floriani Mussolini,D,starters,90.0
+2026-10-23,lazio,7580,Sutalo J.,D,starters,90.0
+2026-10-23,lazio,7012,Provstgaard,D,starters,90.0
+2026-10-23,lazio,5620,Tavares N.,D,starters,90.0
+2026-10-23,lazio,2848,Frattesi,C,starters,90.0
+2026-10-23,lazio,6191,Belahyane,C,starters,85.0
+2026-10-23,lazio,7314,Taylor K.,C,starters,65.0
+2026-10-23,lazio,6398,Isaksen,C,starters,90.0
+2026-10-23,lazio,6556,Noslin,A,starters,60.0
+2026-10-23,lazio,632,Zaccagni,C,starters,90.0
+2026-10-23,parma,6662,Corvi,P,starters,70.0
+2026-10-23,parma,6664,Delprato,D,starters,90.0
+2026-10-23,parma,7235,Troilo,D,starters,80.0
+2026-10-23,parma,4137,Diego Carlos,D,starters,60.0
+2026-10-23,parma,7255,Britschgi,D,starters,80.0
+2026-10-23,parma,6206,Fabbian,C,starters,55.0
+2026-10-23,parma,6898,Keita M.,C,starters,85.0
+2026-10-23,parma,6666,Bernabè,C,starters,90.0
+2026-10-23,parma,5862,Valeri,D,starters,90.0
+2026-10-23,parma,6229,Tourè E.,A,starters,60.0
+2026-10-23,parma,7554,Romero D.,A,starters,90.0
+2026-10-23,inter,5116,Martinez Jo.,P,starters,70.0
+2026-10-23,inter,6217,Bisseck,D,starters,90.0
+2026-10-23,inter,4159,Akanji,D,starters,70.0
+2026-10-23,inter,2120,Bastoni,D,starters,80.0
+2026-10-23,inter,6274,Diouf,C,starters,90.0
+2026-10-23,inter,1870,Barella,C,starters,60.0
+2026-10-23,inter,2194,Calhanoglu,C,starters,90.0
+2026-10-23,inter,152,Zielinski,C,starters,80.0
+2026-10-23,inter,254,Dimarco,D,starters,55.0
+2026-10-23,inter,7071,Esposito F.P.,A,starters,80.0
+2026-10-23,inter,4871,Thuram,A,starters,60.0
+2026-10-23,fiorentina,2521,De Gea,P,starters,90.0
+2026-10-23,fiorentina,6531,Jimenez A.,D,starters,60.0
+2026-10-23,fiorentina,5365,Dragusin,D,starters,90.0
+2026-10-23,fiorentina,5603,Pongracic,D,starters,60.0
+2026-10-23,fiorentina,7410,Viery,D,starters,85.0
+2026-10-23,fiorentina,6294,Ndour,C,starters,90.0
+2026-10-23,fiorentina,4465,Fagioli,C,starters,90.0
+2026-10-23,fiorentina,4947,Brescianini,C,starters,55.0
+2026-10-23,fiorentina,7078,Mastantuono,C,starters,90.0
+2026-10-23,fiorentina,6827,Njie,C,starters,75.0
+2026-10-23,fiorentina,7023,Pellegrino M.,A,starters,55.0
+2026-10-23,atalanta,4431,Carnesecchi,P,starters,90.0
+2026-10-23,atalanta,4887,Bellanova,D,starters,60.0
+2026-10-23,atalanta,6485,Kristensen T.,D,starters,90.0
+2026-10-23,atalanta,7633,Obric,D,starters,85.0
+2026-10-23,atalanta,7219,Bernasconi,D,starters,80.0
+2026-10-23,atalanta,4364,Gaetano,C,starters,60.0
+2026-10-23,atalanta,5792,Ederson D.S.,C,starters,80.0
+2026-10-23,atalanta,4479,Elmas,C,starters,60.0
+2026-10-23,atalanta,5995,De Ketelaere,A,starters,80.0
+2026-10-23,atalanta,6844,Rowe,C,starters,90.0
+2026-10-23,atalanta,6435,Krstovic,A,starters,75.0
+2026-10-23,frosinone,6415,Palmisani,P,starters,90.0
+2026-10-23,frosinone,6238,Oyono A.,D,starters,90.0
+2026-10-23,frosinone,7467,Calvani,D,starters,70.0
+2026-10-23,frosinone,5757,Cittadini,D,starters,55.0
+2026-10-23,frosinone,7469,Bracaglia,D,starters,90.0
+2026-10-23,frosinone,7472,Calò,C,starters,90.0
+2026-10-23,frosinone,6917,Masini,C,starters,90.0
+2026-10-23,frosinone,6530,Ghedjemis,A,starters,90.0
+2026-10-23,frosinone,7551,Schmid,C,starters,90.0
+2026-10-23,frosinone,6204,Kvernadze,A,starters,90.0
+2026-10-23,frosinone,5436,Raimondo,A,starters,90.0
+2026-10-23,genoa,7332,Bijlow,P,starters,90.0
+2026-10-23,genoa,6660,Marcandalli,D,starters,80.0
+2026-10-23,genoa,5750,Ostigard,D,starters,90.0
+2026-10-23,genoa,5514,Vasquez,D,starters,90.0
+2026-10-23,genoa,6047,Ehizibue,D,starters,60.0
+2026-10-23,genoa,5791,Frendrup,C,starters,90.0
+2026-10-23,genoa,2857,Traorè Hj.,C,starters,90.0
+2026-10-23,genoa,6020,Ellertsson,C,starters,90.0
+2026-10-23,genoa,4970,Messias,C,starters,90.0
+2026-10-23,genoa,795,El Shaarawy,C,starters,90.0
+2026-10-23,genoa,7600,Osmajic,A,starters,90.0
+2026-10-23,venezia,6248,Stankovic F.,P,starters,90.0
+2026-10-23,venezia,6890,Moreno M.,D,starters,55.0
+2026-10-23,venezia,256,Juan Jesus,D,starters,90.0
+2026-10-23,venezia,7538,Halhal,D,starters,80.0
+2026-10-23,venezia,6821,Hainaut,D,starters,90.0
+2026-10-23,venezia,6994,Perez K.,C,starters,90.0
+2026-10-23,venezia,5319,Sohm,C,starters,90.0
+2026-10-23,venezia,5674,Basic,C,starters,90.0
+2026-10-23,venezia,5695,Haps,D,starters,80.0
+2026-10-23,venezia,6904,Yeboah J.,A,starters,90.0
+2026-10-23,venezia,7484,Adams A.,A,starters,90.0
+2026-10-23,lecce,2134,Falcone,P,starters,90.0
+2026-10-23,lecce,6990,Veiga D.,D,starters,90.0
+2026-10-23,lecce,6632,Gaspar K.,D,starters,55.0
+2026-10-23,lecce,6989,Tiago Gabriel,D,starters,90.0
+2026-10-23,lecce,4502,Gallo,D,starters,90.0
+2026-10-23,lecce,6410,Kaba,C,starters,85.0
+2026-10-23,lecce,7322,Ngom,C,starters,90.0
+2026-10-23,lecce,5457,Maleh,C,starters,85.0
+2026-10-23,lecce,7001,N'Dri,A,starters,80.0
+2026-10-23,lecce,5029,Geubbels,A,starters,90.0
+2026-10-23,lecce,7602,Fatah,A,starters,60.0
+2026-10-23,juventus,4964,Vicario,P,starters,90.0
+2026-10-23,juventus,5831,Gatti,D,starters,75.0
+2026-10-23,juventus,2788,Bremer,D,starters,60.0
+2026-10-23,juventus,6042,Lucumì,D,starters,90.0
+2026-10-23,juventus,4976,Kalulu,D,starters,90.0
+2026-10-23,juventus,4973,McKennie,C,starters,75.0
+2026-10-23,juventus,4911,Douglas Luiz,C,starters,60.0
+2026-10-23,juventus,5680,Sarr P.,C,starters,90.0
+2026-10-23,juventus,5520,Cambiaso,D,starters,90.0
+2026-10-23,juventus,6752,Woltemade,A,starters,60.0
+2026-10-23,juventus,5951,Kolo Muani,A,starters,85.0
+2026-10-23,udinese,6462,Okoye,P,starters,90.0
+2026-10-23,udinese,6925,Palma,D,starters,60.0
+2026-10-23,udinese,6956,Solet,D,starters,90.0
+2026-10-23,udinese,5994,Ebosse,D,starters,80.0
+2026-10-23,udinese,4994,Vojvoda,D,starters,90.0
+2026-10-23,udinese,6680,Karlstrom,C,starters,90.0
+2026-10-23,udinese,7198,Piotrowski,C,starters,55.0
+2026-10-23,udinese,5555,Kamara H.,D,starters,90.0
+2026-10-23,udinese,6684,Ekkelenkamp,C,starters,90.0
+2026-10-23,udinese,7418,Chakvetadze,C,starters,60.0
+2026-10-23,udinese,5637,Davis K.,A,starters,90.0
+2026-10-23,milan,4312,Maignan,P,starters,90.0
+2026-10-23,milan,5833,Gila,D,starters,90.0
+2026-10-23,milan,5739,De Winter,D,starters,80.0
+2026-10-23,milan,5022,Pavlovic,D,starters,80.0
+2026-10-23,milan,6372,Moreira,C,starters,85.0
+2026-10-23,milan,5295,Musah,C,starters,55.0
+2026-10-23,milan,2606,Modric,C,starters,90.0
+2026-10-23,milan,5273,Estupinan,D,starters,60.0
+2026-10-23,milan,2379,Rabiot,C,starters,90.0
+2026-10-23,milan,2423,Pulisic,C,starters,90.0
+2026-10-23,milan,6397,Ramos G.,A,starters,70.0
+2026-10-23,torino,7457,Mascardi,P,reserves,5.0
+2026-10-23,torino,7363,Siviero,P,reserves,1.0
+2026-10-23,torino,7526,Comert,D,reserves,40.0
+2026-10-23,torino,5751,Patterson,D,reserves,30.0
+2026-10-23,torino,252,Biraghi,D,reserves,20.0
+2026-10-23,torino,7624,Braganca,C,reserves,60.0
+2026-10-23,torino,6218,Oristanio,C,reserves,55.0
+2026-10-23,torino,6170,Gineitis,C,reserves,60.0
+2026-10-23,torino,5888,Casadei,C,reserves,55.0
+2026-10-23,torino,7183,Aboukhlal,C,reserves,30.0
+2026-10-23,torino,608,Zapata D.,A,reserves,40.0
+2026-10-23,torino,2103,Pellegri,A,reserves,15.0
+2026-10-23,torino,7349,Kulenovic,A,reserves,60.0
+2026-10-23,monza,4485,Thiam,P,reserves,5.0
+2026-10-23,monza,7475,Strajnar,P,reserves,1.0
+2026-10-23,monza,6659,Lucchesi,D,reserves,50.0
+2026-10-23,monza,7476,Bakoune,D,reserves,40.0
+2026-10-23,monza,5399,Antov,D,reserves,20.0
+2026-10-23,monza,6252,Folorunsho,C,reserves,60.0
+2026-10-23,monza,7477,Colombo L.,C,reserves,25.0
+2026-10-23,monza,7575,Mout,C,reserves,30.0
+2026-10-23,monza,5878,Colpani,C,reserves,50.0
+2026-10-23,monza,7146,Tourè I.,C,reserves,30.0
+2026-10-23,monza,5880,Ciurria,C,reserves,25.0
+2026-10-23,monza,6592,Forson O.,C,reserves,40.0
+2026-10-23,monza,2155,Cutrone,A,reserves,60.0
+2026-10-23,monza,6145,Ngonge,A,reserves,55.0
+2026-10-23,monza,7620,Zeballos,A,reserves,60.0
+2026-10-23,cagliari,3,Radunovic,P,reserves,5.0
+2026-10-23,cagliari,6650,Sherri,P,reserves,1.0
+2026-10-23,cagliari,7548,Aurelio,D,reserves,25.0
+2026-10-23,cagliari,7621,Sugawara,D,reserves,55.0
+2026-10-23,cagliari,7532,Kofler,D,reserves,30.0
+2026-10-23,cagliari,1871,Deiola,C,reserves,60.0
+2026-10-23,cagliari,5462,Ciervo,C,reserves,30.0
+2026-10-23,cagliari,6010,Fazzini,C,reserves,60.0
+2026-10-23,cagliari,801,Gagliardini,C,reserves,40.0
+2026-10-23,cagliari,7579,Massolin,C,reserves,40.0
+2026-10-23,cagliari,7165,Liteta,C,reserves,25.0
+2026-10-23,cagliari,7634,Sulev,C,reserves,15.0
+2026-10-23,cagliari,5336,Nzola,A,reserves,55.0
+2026-10-23,cagliari,7317,Trepy,A,reserves,10.0
+2026-10-23,cagliari,7547,Kevin Carlos,A,reserves,60.0
+2026-10-23,bologna,7172,Pessina Mas.,P,reserves,5.0
+2026-10-23,bologna,7533,Happonen,P,reserves,1.0
+2026-10-23,bologna,7483,Alhassane,D,reserves,25.0
+2026-10-23,bologna,7326,Helland,D,reserves,40.0
+2026-10-23,bologna,7212,Heggem,D,reserves,55.0
+2026-10-23,bologna,7068,Vitik,D,reserves,30.0
+2026-10-23,bologna,487,De Silvestri,D,reserves,30.0
+2026-10-23,bologna,6054,Moro N.,C,reserves,60.0
+2026-10-23,bologna,7528,Amondarain,C,reserves,35.0
+2026-10-23,bologna,6225,El Azzouzi O.,C,reserves,55.0
+2026-10-23,bologna,6833,Mbangula,C,reserves,35.0
+2026-10-23,bologna,7629,Libra,C,reserves,20.0
+2026-10-23,bologna,2765,Odgaard,C,reserves,55.0
+2026-10-23,bologna,6675,Dovbyk,A,reserves,60.0
+2026-10-23,como,6344,Sanchez Ro.,P,reserves,45.0
+2026-10-23,como,2809,Vigorito,P,reserves,1.0
+2026-10-23,como,418,Goldaniga,D,reserves,20.0
+2026-10-23,como,6867,Valle,D,reserves,60.0
+2026-10-23,como,6601,Kambwala,D,reserves,35.0
+2026-10-23,como,6230,Dossena,D,reserves,15.0
+2026-10-23,como,5036,Caqueret,C,reserves,60.0
+2026-10-23,como,7412,Milla,C,reserves,60.0
+2026-10-23,como,5453,Ricci S.,C,reserves,55.0
+2026-10-23,como,7357,Lahdo,C,reserves,10.0
+2026-10-23,como,7127,Addai,C,reserves,60.0
+2026-10-23,sassuolo,4867,Turati,P,reserves,5.0
+2026-10-23,sassuolo,2127,Satalino,P,reserves,1.0
+2026-10-23,sassuolo,6896,Van Der Brempt,D,reserves,60.0
+2026-10-23,sassuolo,7329,Obrador,D,reserves,40.0
+2026-10-23,sassuolo,6985,Candè,D,reserves,35.0
+2026-10-23,sassuolo,7156,Pieragnolo,D,reserves,10.0
+2026-10-23,sassuolo,4374,Walukiewicz,D,reserves,30.0
+2026-10-23,sassuolo,7036,Bakola,C,reserves,60.0
+2026-10-23,sassuolo,6246,Lipani,C,reserves,55.0
+2026-10-23,sassuolo,6895,Dominguez B.,C,reserves,40.0
+2026-10-23,sassuolo,4930,Ghion,C,reserves,25.0
+2026-10-23,sassuolo,6024,Sulemana I.,C,reserves,35.0
+2026-10-23,sassuolo,5735,Volpato,C,reserves,55.0
+2026-10-23,sassuolo,7347,Bowie,A,reserves,60.0
+2026-10-23,sassuolo,7159,Skjellerup,A,reserves,30.0
+2026-10-23,napoli,2170,Milinkovic-Savic V.,P,reserves,5.0
+2026-10-23,napoli,2845,Contini,P,reserves,1.0
+2026-10-23,napoli,6809,Marianucci,D,reserves,20.0
+2026-10-23,napoli,4409,Rrahmani,D,reserves,50.0
+2026-10-23,napoli,1852,Spinazzola,D,reserves,60.0
+2026-10-23,napoli,6202,Beukema,D,reserves,35.0
+2026-10-23,napoli,5131,Gilmour,C,reserves,55.0
+2026-10-23,napoli,4220,Zambo Anguissa,C,reserves,60.0
+2026-10-23,napoli,7223,Vergara,C,reserves,40.0
+2026-10-23,napoli,7162,Giovane,A,reserves,60.0
+2026-10-23,napoli,6215,Lucca,A,reserves,55.0
+2026-10-23,roma,7048,De Marzi,P,reserves,5.0
+2026-10-23,roma,6125,Vasquez D.,P,reserves,1.0
+2026-10-23,roma,4705,Balerdi,D,reserves,60.0
+2026-10-23,roma,7529,Koulierakis,D,reserves,40.0
+2026-10-23,roma,7599,Lulli,D,reserves,60.0
+2026-10-23,roma,6986,Rensch,D,reserves,60.0
+2026-10-23,roma,6631,Ghilardi,D,reserves,35.0
+2026-10-23,roma,779,Cristante,C,reserves,55.0
+2026-10-23,roma,7277,Arena A.,A,reserves,20.0
+2026-10-23,roma,6572,Castro S.,A,reserves,55.0
+2026-10-23,lazio,7337,Motta,P,reserves,5.0
+2026-10-23,lazio,7534,Renzetti,P,reserves,1.0
+2026-10-23,lazio,4817,Pedraza,D,reserves,50.0
+2026-10-23,lazio,6320,Doekhi,D,reserves,55.0
+2026-10-23,lazio,6319,Leite,D,reserves,30.0
+2026-10-23,lazio,2263,Lazzari,D,reserves,40.0
+2026-10-23,lazio,2728,Pellegrini Lu.,D,reserves,15.0
+2026-10-23,lazio,333,Cataldi,C,reserves,60.0
+2026-10-23,lazio,7345,Przyborek,C,reserves,15.0
+2026-10-23,lazio,6629,Dele-Bashiru,C,reserves,60.0
+2026-10-23,lazio,5500,Cancellieri,C,reserves,40.0
+2026-10-23,lazio,2038,Pinamonti,A,reserves,60.0
+2026-10-23,parma,7411,Daffara,P,reserves,30.0
+2026-10-23,parma,2874,Ghidotti,P,reserves,1.0
+2026-10-23,parma,7615,Drobnic,D,reserves,55.0
+2026-10-23,parma,6149,Carboni F.,D,reserves,40.0
+2026-10-23,parma,7202,Ndiaye,D,reserves,35.0
+2026-10-23,parma,7628,Sierro,C,reserves,60.0
+2026-10-23,parma,7276,Cremaschi,C,reserves,30.0
+2026-10-23,parma,7581,Konate A.,C,reserves,25.0
+2026-10-23,parma,7138,Ordonez C.,C,reserves,55.0
+2026-10-23,parma,7536,Diallo O.,C,reserves,30.0
+2026-10-23,parma,7561,Lontani,A,reserves,60.0
+2026-10-23,parma,7568,De Martis,A,reserves,10.0
+2026-10-23,parma,7213,Frigan,A,reserves,55.0
+2026-10-23,inter,2814,Provedel,P,reserves,30.0
+2026-10-23,inter,1926,Di Gennaro,P,reserves,1.0
+2026-10-23,inter,5877,Carlos Augusto,D,reserves,60.0
+2026-10-23,inter,2514,Stones,D,reserves,10.0
+2026-10-23,inter,5982,Spence,D,reserves,55.0
+2026-10-23,inter,7070,Sucic P.,C,reserves,60.0
+2026-10-23,inter,6503,Stankovic A.,C,reserves,35.0
+2026-10-23,inter,2529,Mkhitaryan,C,reserves,55.0
+2026-10-23,inter,6669,Bonny,A,reserves,60.0
+2026-10-23,fiorentina,6403,Christensen O.,P,reserves,5.0
+2026-10-23,fiorentina,158,Lezzerini,P,reserves,1.0
+2026-10-23,fiorentina,7175,Joao Mario,D,reserves,35.0
+2026-10-23,fiorentina,7294,Valdepenas,D,reserves,40.0
+2026-10-23,fiorentina,5885,Dodò,D,reserves,55.0
+2026-10-23,fiorentina,7464,Oulai,C,reserves,60.0
+2026-10-23,fiorentina,7625,Goncalves P.,C,reserves,55.0
+2026-10-23,fiorentina,7623,Gnonto,A,reserves,60.0
+2026-10-23,fiorentina,5694,Beto,A,reserves,60.0
+2026-10-23,atalanta,4,Sportiello,P,reserves,5.0
+2026-10-23,atalanta,554,Zappacosta,D,reserves,60.0
+2026-10-23,atalanta,1850,Kessiè,C,reserves,20.0
+2026-10-23,atalanta,2077,Pasalic,C,reserves,60.0
+2026-10-23,atalanta,5119,Samardzic,C,reserves,55.0
+2026-10-23,atalanta,5422,Zalewski,C,reserves,55.0
+2026-10-23,atalanta,2137,Scamacca,A,reserves,60.0
+2026-10-23,frosinone,7463,Desplanches,P,reserves,5.0
+2026-10-23,frosinone,7560,Pisseri,P,reserves,1.0
+2026-10-23,frosinone,4952,Monterisi,D,reserves,60.0
+2026-10-23,frosinone,7605,Tchato,D,reserves,30.0
+2026-10-23,frosinone,7553,Omar Fayed,D,reserves,20.0
+2026-10-23,frosinone,5424,Amey,D,reserves,40.0
+2026-10-23,frosinone,4375,Terzic,D,reserves,40.0
+2026-10-23,frosinone,7540,Akpoguma,D,reserves,20.0
+2026-10-23,frosinone,6506,Fini,C,reserves,55.0
+2026-10-23,frosinone,7473,Cichella,C,reserves,55.0
+2026-10-23,frosinone,6903,Hasa,C,reserves,35.0
+2026-10-23,frosinone,7456,El Azzouzi A.,C,reserves,20.0
+2026-10-23,frosinone,5998,Zerbin,C,reserves,60.0
+2026-10-23,frosinone,7610,Birligea,A,reserves,40.0
+2026-10-23,frosinone,7612,Bobcek,A,reserves,60.0
+2026-10-23,genoa,6569,Stolz,P,reserves,5.0
+2026-10-23,genoa,219,Sommariva,P,reserves,1.0
+2026-10-23,genoa,7537,Mitaj,D,reserves,35.0
+2026-10-23,genoa,6977,Otoa,D,reserves,40.0
+2026-10-23,genoa,7413,Puczka,D,reserves,60.0
+2026-10-23,genoa,791,Sabelli,D,reserves,35.0
+2026-10-23,genoa,5742,Drameh,D,reserves,30.0
+2026-10-23,genoa,7608,Wiafe,C,reserves,60.0
+2026-10-23,genoa,5823,Baldanzi,C,reserves,30.0
+2026-10-23,genoa,7341,Amorim,C,reserves,55.0
+2026-10-23,genoa,7409,Meichtry,C,reserves,50.0
+2026-10-23,genoa,7622,Robinho Junior,A,reserves,30.0
+2026-10-23,genoa,6164,Vitinha O.,A,reserves,60.0
+2026-10-23,venezia,4957,Montipò,P,reserves,5.0
+2026-10-23,venezia,6671,Grandi,P,reserves,1.0
+2026-10-23,venezia,6892,Schingtienne,D,reserves,60.0
+2026-10-23,venezia,7454,Gomes,D,reserves,20.0
+2026-10-23,venezia,6681,Sagrado,D,reserves,55.0
+2026-10-23,venezia,5481,Mazzocchi,D,reserves,60.0
+2026-10-23,venezia,7632,Panada,C,reserves,25.0
+2026-10-23,venezia,7481,Dagasso,C,reserves,30.0
+2026-10-23,venezia,5872,Helgason,C,reserves,60.0
+2026-10-23,venezia,7635,Fanne,C,reserves,15.0
+2026-10-23,venezia,7232,Fernandez T.,C,reserves,50.0
+2026-10-23,venezia,7449,Rrahmani Al.,A,reserves,60.0
+2026-10-23,venezia,7482,Lauberbach,A,reserves,40.0
+2026-10-23,venezia,7408,Lisman,A,reserves,20.0
+2026-10-23,lecce,4468,Bleve,P,reserves,5.0
+2026-10-23,lecce,6406,Borbei,P,reserves,1.0
+2026-10-23,lecce,7182,Ndaba,D,reserves,35.0
+2026-10-23,lecce,6826,Dembelè A.,D,reserves,30.0
+2026-10-23,lecce,7240,Siebert,D,reserves,55.0
+2026-10-23,lecce,6883,Jean,D,reserves,25.0
+2026-10-23,lecce,7318,Gandelman,C,reserves,60.0
+2026-10-23,lecce,7248,Gorter,C,reserves,40.0
+2026-10-23,lecce,7319,Fofana Sa.,C,reserves,25.0
+2026-10-23,lecce,7619,Monteiro J.,C,reserves,60.0
+2026-10-23,lecce,7252,Stulic,A,reserves,50.0
+2026-10-23,lecce,7647,Esteban,A,reserves,60.0
+2026-10-23,juventus,283,Neto,P,reserves,5.0
+2026-10-23,juventus,1930,Pinsoglio,P,reserves,1.0
+2026-10-23,juventus,6766,Kelly L.,D,reserves,55.0
+2026-10-23,juventus,6039,Cabal,D,reserves,35.0
+2026-10-23,juventus,294,Rugani,D,reserves,25.0
+2026-10-23,juventus,5685,Koopmeiners,C,reserves,60.0
+2026-10-23,juventus,5761,Zhegrova,C,reserves,55.0
+2026-10-23,juventus,7436,Alajbegovic,C,reserves,60.0
+2026-10-23,juventus,2832,Boga,A,reserves,50.0
+2026-10-23,udinese,7611,Mrozek,P,reserves,5.0
+2026-10-23,udinese,543,Padelli,P,reserves,1.0
+2026-10-23,udinese,5820,Bertola,D,reserves,35.0
+2026-10-23,udinese,6021,Abankwah,D,reserves,40.0
+2026-10-23,udinese,5527,Zanoli,D,reserves,60.0
+2026-10-23,udinese,4263,Kabasele,D,reserves,35.0
+2026-10-23,udinese,7312,Arizala,D,reserves,55.0
+2026-10-23,udinese,5850,Lovric,C,reserves,35.0
+2026-10-23,udinese,6212,Zarraga,C,reserves,60.0
+2026-10-23,udinese,7092,Jovanovic,C,reserves,25.0
+2026-10-23,udinese,7208,Miller L.,C,reserves,50.0
+2026-10-23,udinese,6783,Unai Gomez,C,reserves,55.0
+2026-10-23,udinese,2766,Zaniolo,C,reserves,60.0
+2026-10-23,milan,2815,Terracciano,P,reserves,5.0
+2026-10-23,milan,6813,Torriani,P,reserves,1.0
+2026-10-23,milan,4751,Tomori,D,reserves,25.0
+2026-10-23,milan,6496,Bartesaghi,D,reserves,60.0
+2026-10-23,milan,5812,Terracciano F.,D,reserves,30.0
+2026-10-23,milan,7525,Diawara S.,D,reserves,20.0
+2026-10-23,milan,7203,Jashari,C,reserves,60.0
+2026-10-23,milan,7572,Comotto,C,reserves,10.0
+2026-10-23,milan,7618,Hutchinson,C,reserves,40.0
+2026-10-23,milan,4199,Loftus-Cheek,C,reserves,50.0
+2026-10-23,milan,6618,Cissè A.,C,reserves,60.0
+2026-10-23,milan,6519,Camarda,A,reserves,55.0
