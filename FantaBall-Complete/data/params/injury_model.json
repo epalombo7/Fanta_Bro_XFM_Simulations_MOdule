@@ -1,37 +1,96 @@
 {
   "fitted": "2026-10-23",
   "seasons": [
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26",
     "2026-27"
   ],
   "decay": 0.75,
   "prior_spells": 3,
-  "injuryDispersion": 715976.331,
+  "injuryDispersion": 1.259,
   "roles": {
     "A": {
-      "hazard": 0.03758169934640523,
-      "prior_a": 2.0,
-      "prior_b": 53.21739130434783,
-      "mean_games": 2.111111111111111
+      "hazard": 0.002469804889546855,
+      "prior_a": 11.11111111111111,
+      "prior_b": 4498.780919147711,
+      "mean_games": 1.9545219638242894
     },
     "C": {
-      "hazard": 0.03410981697171381,
-      "prior_a": 2.0,
-      "prior_b": 58.63414634146342,
-      "mean_games": 2.1052631578947367
+      "hazard": 0.0024951693382776457,
+      "prior_a": 11.111111111111112,
+      "prior_b": 4453.04891361836,
+      "mean_games": 1.9622210953346857
     },
     "D": {
-      "hazard": 0.02868217054263566,
-      "prior_a": 2.0,
-      "prior_b": 69.72972972972973,
-      "mean_games": 1.5454545454545454
+      "hazard": 0.0020940008579338953,
+      "prior_a": 11.11111111111111,
+      "prior_b": 5306.163590627274,
+      "mean_games": 1.5695247674126225
     },
     "P": {
-      "hazard": 0.010101010101010102,
-      "prior_a": 2.0,
-      "prior_b": 197.99999999999997,
-      "mean_games": 1.5
+      "hazard": 0.0009702049703689944,
+      "prior_a": 11.111111111111112,
+      "prior_b": 11452.333734061645,
+      "mean_games": 2.0926829268292684
     }
   },
-  "spells_used": 106,
-  "backtest": []
+  "spells_used": 184,
+  "backtest": [
+    {
+      "season": "2018-19",
+      "player_seasons": 641,
+      "injury_starts": 0,
+      "logloss_model": 0.00010000500033334732,
+      "logloss_role_average": 0.00010000500033334732
+    },
+    {
+      "season": "2019-20",
+      "player_seasons": 684,
+      "injury_starts": 0,
+      "logloss_model": 0.00010000500033334732,
+      "logloss_role_average": 0.00010000500033334732
+    },
+    {
+      "season": "2022-23",
+      "player_seasons": 672,
+      "injury_starts": 37,
+      "logloss_model": 0.014119212404402231,
+      "logloss_role_average": 0.014119212404402231
+    },
+    {
+      "season": "2023-24",
+      "player_seasons": 664,
+      "injury_starts": 41,
+      "logloss_model": 0.013154704649472916,
+      "logloss_role_average": 0.013199128815640821
+    },
+    {
+      "season": "2024-25",
+      "player_seasons": 677,
+      "injury_starts": 0,
+      "logloss_model": 0.0010512306457557824,
+      "logloss_role_average": 0.0010446991400438678
+    },
+    {
+      "season": "2025-26",
+      "player_seasons": 647,
+      "injury_starts": 0,
+      "logloss_model": 0.0007086581515652454,
+      "logloss_role_average": 0.000707232662488704
+    },
+    {
+      "season": "2026-27",
+      "player_seasons": 574,
+      "injury_starts": 106,
+      "logloss_model": 0.22382916865505464,
+      "logloss_role_average": 0.22387626257388693
+    }
+  ]
 }
