@@ -1,0 +1,673 @@
+season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_mantra,qa_mantra,fvm_mantra
+2022-23,4661,Osimhen,napoli,osimhen,NAP,A,pc,35.0,44.0,496.0,35.0,44.0,496.0
+2022-23,2764,Martinez L.,inter,martinez-l,INT,A,pc,34.0,36.0,412.0,34.0,36.0,412.0
+2022-23,309,Dybala,roma,dybala,ROM,A,a,29.0,33.0,259.0,29.0,33.0,259.0
+2022-23,531,Berardi,sassuolo,berardi,SAS,A,a,35.0,33.0,249.0,35.0,33.0,249.0
+2022-23,5839,Kvaratskhelia,napoli,kvaratskhelia,NAP,C,w|a,18.0,33.0,238.0,18.0,33.0,238.0
+2022-23,4510,Leao,milan,leao,MIL,A,a,31.0,32.0,268.0,31.0,32.0,268.0
+2022-23,4730,Lookman,atalanta,lookman,ATA,A,w|a,13.0,31.0,117.0,15.0,31.0,117.0
+2022-23,5672,Dia,salernitana,dia,SAL,A,pc,17.0,30.0,181.0,16.0,30.0,181.0
+2022-23,479,Sanabria,torino,sanabria,TOR,A,pc,21.0,28.0,133.0,21.0,28.0,133.0
+2022-23,632,Zaccagni,lazio,zaccagni,LAZ,C,w|a,20.0,28.0,180.0,20.0,28.0,180.0
+2022-23,785,Immobile,lazio,immobile,LAZ,A,pc,42.0,28.0,237.0,42.0,28.0,237.0
+2022-23,2137,Scamacca,sassuolo,scamacca,SAS,A,pc,28.0,28.0,0.0,28.0,28.0,0.0
+2022-23,2531,Lukaku,inter,lukaku,INT,A,pc,39.0,28.0,252.0,39.0,28.0,252.0
+2022-23,4200,Giroud,milan,giroud,MIL,A,pc,28.0,26.0,176.0,28.0,26.0,176.0
+2022-23,5336,Nzola,spezia,nzola,SPE,A,pc,14.0,26.0,146.0,13.0,26.0,146.0
+2022-23,645,MILINKOVIC-SAVIC,lazio,milinkovic-savic,LAZ,C,c|t,29.0,25.0,193.0,29.0,25.0,193.0
+2022-23,4268,Arnautovic,bologna,arnautovic,BOL,A,pc,27.0,25.0,66.0,26.0,25.0,66.0
+2022-23,335,Felipe Anderson,lazio,felipe-anderson,LAZ,C,w|a,19.0,23.0,96.0,19.0,23.0,96.0
+2022-23,795,El Shaarawy,roma,el-shaarawy,ROM,C,w|a,9.0,23.0,44.0,9.0,23.0,44.0
+2022-23,2379,Rabiot,juventus,rabiot,JUV,C,c,7.0,23.0,78.0,7.0,23.0,78.0
+2022-23,2841,Vlahovic,juventus,vlahovic,JUV,A,pc,40.0,23.0,132.0,40.0,23.0,132.0
+2022-23,5786,Cabral,fiorentina,cabral,FIO,A,pc,19.0,23.0,90.0,18.0,22.0,90.0
+2022-23,6060,Lauriente',sassuolo,lauriente,SAS,A,a,14.0,23.0,72.0,14.0,23.0,72.0
+2022-23,647,DZEKO,inter,dzeko,INT,A,pc,16.0,22.0,48.0,15.0,22.0,48.0
+2022-23,2085,Luis Alberto,lazio,luis-alberto,LAZ,C,t,18.0,22.0,88.0,17.0,22.0,88.0
+2022-23,2167,Orsolini,bologna,orsolini,BOL,C,w|a,15.0,22.0,92.0,15.0,22.0,92.0
+2022-23,4486,Strefezza,lecce,strefezza,LEC,C,w,13.0,22.0,78.0,13.0,22.0,78.0
+2022-23,5685,Koopmeiners,atalanta,koopmeiners,ATA,C,c|t,15.0,22.0,70.0,15.0,22.0,70.0
+2022-23,6052,Hojlund,atalanta,hojlund,ATA,A,pc,8.0,22.0,126.0,7.0,22.0,126.0
+2022-23,1870,Barella,inter,barella,INT,C,c,20.0,21.0,73.0,19.0,21.0,73.0
+2022-23,5687,Vlasic,torino,vlasic,TOR,C,w|t,15.0,21.0,68.0,15.0,21.0,68.0
+2022-23,5694,Beto,udinese,beto,UDI,A,pc,24.0,21.0,68.0,24.0,21.0,68.0
+2022-23,152,Zielinski,napoli,zielinski,NAP,C,c|t,19.0,20.0,61.0,19.0,20.0,61.0
+2022-23,302,Pereyra,udinese,pereyra,UDI,C,w|t,18.0,20.0,64.0,18.0,20.0,67.0
+2022-23,332,Candreva,salernitana,candreva,SAL,C,w,17.0,20.0,62.0,17.0,20.0,62.0
+2022-23,2544,Abraham,roma,abraham,ROM,A,pc,33.0,20.0,78.0,33.0,20.0,78.0
+2022-23,2848,Frattesi,sassuolo,frattesi,SAS,C,c,16.0,20.0,68.0,16.0,20.0,68.0
+2022-23,4436,Cambiaghi,empoli,cambiaghi,EMP,A,a,6.0,20.0,24.0,6.0,20.0,24.0
+2022-23,4825,Diaz B.,milan,diaz-b,MIL,C,w|t,11.0,20.0,54.0,11.0,20.0,56.0
+2022-23,5001,Miranchuk,torino,miranchuk,TOR,C,t|a,8.0,20.0,42.0,8.0,20.0,42.0
+2022-23,5858,Ferguson,bologna,ferguson,BOL,C,c|t,5.0,20.0,54.0,5.0,20.0,54.0
+2022-23,5880,Ciurria,monza,ciurria,MON,C,t|a,3.0,20.0,34.0,3.0,20.0,32.0
+2022-23,212,CIOFANI D.,cremonese,ciofani-d,CRE,A,pc,1.0,19.0,18.0,1.0,19.0,16.0
+2022-23,236,Lazovic,verona,lazovic,VER,C,e|w,13.0,19.0,41.0,13.0,19.0,41.0
+2022-23,2012,Milik,juventus,milik,JUV,A,pc,21.0,19.0,51.0,20.0,19.0,51.0
+2022-23,2194,Calhanoglu,inter,calhanoglu,INT,C,t,19.0,19.0,61.0,18.0,19.0,61.0
+2022-23,2382,DI MARIA,juventus,di-maria,JUV,A,a,26.0,19.0,46.0,26.0,19.0,46.0
+2022-23,4479,Elmas,napoli,elmas,NAP,C,c|t,11.0,19.0,38.0,11.0,19.0,38.0
+2022-23,5850,Lovric,udinese,lovric,UDI,C,c|t,6.0,19.0,58.0,6.0,19.0,58.0
+2022-23,5877,Carlos Augusto,monza,carlos-augusto,MON,D,ds|e,8.0,19.0,58.0,8.0,19.0,58.0
+2022-23,254,Dimarco,inter,dimarco,INT,D,ds|dc|e,8.0,18.0,53.0,9.0,18.0,58.0
+2022-23,2775,Ruiz,napoli,ruiz,NAP,C,c|t,19.0,18.0,0.0,19.0,18.0,0.0
+2022-23,2832,Boga,atalanta,boga,ATA,A,w|a,13.0,18.0,13.0,15.0,17.0,16.0
+2022-23,4179,Gonzalez N.,fiorentina,gonzalez-n,FIO,A,a,20.0,18.0,36.0,20.0,18.0,36.0
+2022-23,4220,Zambo Anguissa,napoli,zambo-anguissa,NAP,C,m|c,11.0,18.0,40.0,12.0,18.0,40.0
+2022-23,5119,Samardzic,udinese,samardzic,UDI,C,t,8.0,18.0,22.0,8.0,18.0,20.0
+2022-23,6066,Posch,bologna,posch,BOL,D,dd|dc,8.0,18.0,56.0,9.0,18.0,56.0
+2022-23,572,Meret,napoli,meret,NAP,P,por,14.0,17.0,71.0,14.0,17.0,71.0
+2022-23,2061,Simeone,napoli,simeone,NAP,A,pc,25.0,17.0,27.0,25.0,17.0,27.0
+2022-23,2489,Pedro,lazio,pedro,LAZ,A,a,19.0,17.0,40.0,19.0,17.0,40.0
+2022-23,2814,Provedel,lazio,provedel,LAZ,P,por,7.0,17.0,78.0,7.0,17.0,78.0
+2022-23,2816,Di Lorenzo,napoli,di-lorenzo,NAP,D,dd|e,15.0,17.0,67.0,15.0,17.0,67.0
+2022-23,5823,Baldanzi,empoli,baldanzi,EMP,C,t|a,1.0,17.0,37.0,1.0,17.0,37.0
+2022-23,367,Bonaventura,fiorentina,bonaventura,FIO,C,c|w|t,14.0,16.0,41.0,16.0,16.0,41.0
+2022-23,554,Zappacosta,atalanta,zappacosta,ATA,D,e,11.0,16.0,24.0,10.0,16.0,24.0
+2022-23,608,Zapata D.,atalanta,zapata-d,ATA,A,pc,32.0,16.0,62.0,32.0,16.0,62.0
+2022-23,2741,Pessina,monza,pessina,MON,C,c|t,13.0,16.0,43.0,13.0,16.0,43.0
+2022-23,4237,Danilo,juventus,danilo,JUV,D,dd|ds|e,12.0,16.0,40.0,14.0,15.0,42.0
+2022-23,4245,Smalling,roma,smalling,ROM,D,dc,14.0,16.0,42.0,14.0,16.0,42.0
+2022-23,4312,Maignan,milan,maignan,MIL,P,por,18.0,16.0,62.0,18.0,16.0,62.0
+2022-23,4449,Tonali,milan,tonali,MIL,C,m|c,16.0,16.0,50.0,16.0,16.0,56.0
+2022-23,4711,Kostic,juventus,kostic,JUV,C,e|w,15.0,16.0,64.0,18.0,17.0,64.0
+2022-23,5836,Ceesay,lecce,ceesay,LEC,A,pc,10.0,16.0,15.0,10.0,16.0,15.0
+2022-23,5882,Mota,monza,mota,MON,A,pc,10.0,16.0,21.0,10.0,16.0,21.0
+2022-23,265,BROZOVIC,inter,brozovic,INT,C,m|c,15.0,15.0,27.0,15.0,15.0,30.0
+2022-23,376,Verdi,verona,verdi,VER,C,w|t,13.0,15.0,22.0,13.0,15.0,22.0
+2022-23,383,Petagna,monza,petagna,MON,A,pc,15.0,15.0,22.0,14.0,15.0,22.0
+2022-23,1958,Caprari,monza,caprari,MON,A,a,26.0,15.0,34.0,26.0,15.0,34.0
+2022-23,2002,Chiesa,juventus,chiesa,JUV,C,w|a,25.0,15.0,35.0,25.0,15.0,35.0
+2022-23,2325,Karamoh,torino,karamoh,TOR,A,a,4.0,15.0,17.0,4.0,15.0,17.0
+2022-23,2762,Kouame',fiorentina,kouame,FIO,A,a,9.0,15.0,7.0,9.0,15.0,7.0
+2022-23,4287,Lobotka,napoli,lobotka,NAP,C,m|c,11.0,15.0,50.0,12.0,15.0,50.0
+2022-23,4465,Fagioli,juventus,fagioli,JUV,C,c|t,3.0,15.0,29.0,3.0,15.0,29.0
+2022-23,4964,Vicario,empoli,vicario,EMP,P,por,9.0,15.0,27.0,9.0,15.0,27.0
+2022-23,4998,Molina N.,udinese,molina-n,UDI,D,e,15.0,15.0,0.0,15.0,15.0,0.0
+2022-23,5892,Kim,napoli,kim,NAP,D,dc,13.0,15.0,49.0,13.0,15.0,49.0
+2022-23,407,GABBIADINI,sampdoria,gabbiadini,SAM,A,a,15.0,14.0,20.0,15.0,14.0,20.0
+2022-23,453,Szczesny,juventus,szczesny,JUV,P,por,16.0,14.0,53.0,16.0,14.0,53.0
+2022-23,460,Romagnoli,lazio,romagnoli,LAZ,D,dc,11.0,14.0,32.0,11.0,14.0,32.0
+2022-23,537,Sansone,bologna,sansone,BOL,A,a,6.0,14.0,9.0,6.0,14.0,9.0
+2022-23,2119,Deulofeu,udinese,deulofeu,UDI,A,a,24.0,14.0,8.0,24.0,14.0,8.0
+2022-23,2719,Barrow,bologna,barrow,BOL,A,a,17.0,14.0,23.0,17.0,14.0,23.0
+2022-23,4292,Hernandez T.,milan,hernandez-t,MIL,D,ds|e,20.0,14.0,59.0,22.0,14.0,59.0
+2022-23,4427,Malinovskyi,atalanta,malinovskyi,ATA,C,t,22.0,14.0,0.0,21.0,14.0,0.0
+2022-23,4517,Lozano,napoli,lozano,NAP,A,a,18.0,14.0,22.0,18.0,14.0,22.0
+2022-23,4970,Messias,milan,messias,MIL,C,w,14.0,14.0,20.0,14.0,14.0,18.0
+2022-23,5355,Udogie,udinese,udogie,UDI,D,ds|e,13.0,14.0,42.0,13.0,14.0,42.0
+2022-23,5480,Ebuehi,empoli,ebuehi,EMP,D,dd|e,3.0,14.0,12.0,3.0,14.0,12.0
+2022-23,5481,Mazzocchi,salernitana,mazzocchi,SAL,D,dd|e,7.0,14.0,28.0,7.0,14.0,28.0
+2022-23,5515,Okereke,cremonese,okereke,CRE,A,a,13.0,14.0,16.0,13.0,14.0,16.0
+2022-23,5862,Valeri,cremonese,valeri,CRE,D,ds|e,5.0,14.0,16.0,5.0,14.0,16.0
+2022-23,5878,Colpani,monza,colpani,MON,C,c|t,4.0,14.0,12.0,4.0,14.0,12.0
+2022-23,6026,Dessers,cremonese,dessers,CRE,A,pc,17.0,14.0,20.0,16.0,13.0,20.0
+2022-23,133,Skorupski,bologna,skorupski,BOL,P,por,11.0,13.0,32.0,11.0,13.0,32.0
+2022-23,507,Muriel,atalanta,muriel,ATA,A,pc,26.0,13.0,22.0,26.0,13.0,22.0
+2022-23,530,Pellegrini Lo.,roma,pellegrini-lo,ROM,C,t,27.0,13.0,64.0,26.0,13.0,64.0
+2022-23,536,Politano,napoli,politano,NAP,C,w|a,15.0,13.0,28.0,15.0,13.0,28.0
+2022-23,2077,Pasalic,atalanta,pasalic,ATA,C,t,22.0,13.0,40.0,21.0,13.0,36.0
+2022-23,2134,Falcone,lecce,falcone,LEC,P,por,5.0,13.0,32.0,5.0,13.0,32.0
+2022-23,2211,Silvestri,udinese,silvestri,UDI,P,por,10.0,13.0,29.0,10.0,13.0,29.0
+2022-23,2369,Thauvin,udinese,thauvin,UDI,A,a,18.0,13.0,10.0,18.0,13.0,10.0
+2022-23,2528,Matic,roma,matic,ROM,C,m,7.0,13.0,21.0,7.0,13.0,21.0
+2022-23,2529,Mkhitaryan,inter,mkhitaryan,INT,C,t|a,16.0,13.0,33.0,16.0,13.0,30.0
+2022-23,2638,Wijnaldum,roma,wijnaldum,ROM,C,c|t,17.0,13.0,47.0,17.0,13.0,47.0
+2022-23,2756,Piatek,salernitana,piatek,SAL,A,pc,15.0,13.0,32.0,14.0,13.0,32.0
+2022-23,2818,Bennacer,milan,bennacer,MIL,C,m|c,10.0,13.0,28.0,10.0,13.0,31.0
+2022-23,2819,Caputo,empoli,caputo,EMP,A,pc,21.0,13.0,41.0,21.0,13.0,41.0
+2022-23,4270,Rui Patricio,roma,rui-patricio,ROM,P,por,14.0,13.0,42.0,14.0,13.0,42.0
+2022-23,4409,Rrahmani,napoli,rrahmani,NAP,D,dc,14.0,13.0,44.0,14.0,13.0,44.0
+2022-23,4658,Ikone',fiorentina,ikone,FIO,C,w|a,14.0,13.0,30.0,14.0,13.0,30.0
+2022-23,4869,Dominguez,bologna,dominguez,BOL,C,m|c,8.0,13.0,33.0,9.0,13.0,35.0
+2022-23,4978,Damsgaard,sampdoria,damsgaard,SAM,C,w|t,13.0,13.0,0.0,14.0,14.0,0.0
+2022-23,5063,Radonjic,torino,radonjic,TOR,C,w,7.0,13.0,21.0,7.0,13.0,21.0
+2022-23,5527,Zanoli,sampdoria,zanoli,SAM,D,dd|e,3.0,13.0,20.0,3.0,13.0,20.0
+2022-23,5851,Doig,verona,doig,VER,D,ds|e,6.0,13.0,24.0,6.0,13.0,26.0
+2022-23,5876,Di Gregorio,monza,di-gregorio,MON,P,por,1.0,13.0,40.0,1.0,13.0,40.0
+2022-23,6054,Moro N.,bologna,moro-n,BOL,C,m|c,5.0,13.0,13.0,6.0,12.0,14.0
+2022-23,22,De Roon,atalanta,de-roon,ATA,C,m,7.0,12.0,22.0,7.0,12.0,25.0
+2022-23,150,Saponara,fiorentina,saponara,FIO,C,w|t,11.0,12.0,17.0,11.0,12.0,19.0
+2022-23,303,Pogba,juventus,pogba,JUV,C,c|t,24.0,12.0,10.0,24.0,12.0,10.0
+2022-23,2009,Lukic,torino,lukic,TOR,C,c|t,13.0,12.0,0.0,13.0,12.0,0.0
+2022-23,2160,Gosens,inter,gosens,INT,D,e,19.0,12.0,20.0,18.0,12.0,20.0
+2022-23,2170,Milinkovic-Savic V.,torino,milinkovic-savic-v,TOR,P,por,1.0,12.0,32.0,1.0,12.0,32.0
+2022-23,2438,Jovic,fiorentina,jovic,FIO,A,pc,24.0,12.0,40.0,24.0,12.0,40.0
+2022-23,2475,Sanchez,inter,sanchez,INT,A,a,12.0,12.0,0.0,12.0,12.0,0.0
+2022-23,2724,Buongiorno,torino,buongiorno,TOR,D,ds|dc,4.0,12.0,36.0,5.0,12.0,40.0
+2022-23,2788,Bremer,juventus,bremer,JUV,D,dc,18.0,12.0,55.0,18.0,12.0,55.0
+2022-23,5007,Ilic,torino,ilic,TOR,C,c|t,13.0,12.0,28.0,13.0,12.0,28.0
+2022-23,5086,Zirkzee,bologna,zirkzee,BOL,A,pc,7.0,12.0,10.0,7.0,12.0,10.0
+2022-23,5453,Ricci S.,torino,ricci-s,TOR,C,m|c,7.0,12.0,37.0,7.0,12.0,37.0
+2022-23,5504,Coulibaly L.,salernitana,coulibaly-l,SAL,C,m|c,6.0,12.0,18.0,6.0,12.0,18.0
+2022-23,5511,Matheus Henrique,sassuolo,matheus-henrique,SAS,C,m|c,6.0,12.0,20.0,7.0,12.0,23.0
+2022-23,5830,Onana,inter,onana,INT,P,por,1.0,12.0,42.0,1.0,12.0,42.0
+2022-23,5835,Baschirotto,lecce,baschirotto,LEC,D,dd|ds|dc,2.0,12.0,34.0,2.0,12.0,39.0
+2022-23,5854,TSADJOUT,cremonese,tsadjout,CRE,A,pc,8.0,12.0,13.0,7.0,12.0,13.0
+2022-23,6041,Schuurs,torino,schuurs,TOR,D,dc,9.0,12.0,51.0,9.0,12.0,51.0
+2022-23,495,Correa,inter,correa,INT,A,a,16.0,11.0,10.0,16.0,11.0,10.0
+2022-23,1852,Spinazzola,roma,spinazzola,ROM,D,ds|e,12.0,11.0,25.0,13.0,11.0,26.0
+2022-23,1933,Mandragora,fiorentina,mandragora,FIO,C,m|c,9.0,11.0,22.0,9.0,11.0,25.0
+2022-23,1978,Sensi,monza,sensi,MON,C,c|t,12.0,11.0,14.0,12.0,11.0,14.0
+2022-23,2097,Kean,juventus,kean,JUV,A,pc,15.0,11.0,21.0,14.0,11.0,21.0
+2022-23,2172,Barak,fiorentina,barak,FIO,C,t,22.0,11.0,21.0,21.0,10.0,18.0
+2022-23,2215,Veretout,roma,veretout,ROM,C,c,11.0,11.0,0.0,11.0,11.0,0.0
+2022-23,2296,Mancini,roma,mancini,ROM,D,dc,10.0,11.0,29.0,10.0,11.0,30.0
+2022-23,4184,Brekalo,fiorentina,brekalo,FIO,A,a,16.0,11.0,8.0,16.0,11.0,8.0
+2022-23,4751,Tomori,milan,tomori,MIL,D,dc,15.0,11.0,43.0,15.0,11.0,43.0
+2022-23,4923,Colombo,lecce,colombo,LEC,A,pc,7.0,11.0,18.0,6.0,11.0,18.0
+2022-23,5449,Parisi,empoli,parisi,EMP,D,ds|e,8.0,11.0,27.0,8.0,11.0,26.0
+2022-23,5840,Olivera,napoli,olivera,NAP,D,ds|e,7.0,11.0,22.0,7.0,11.0,22.0
+2022-23,6001,Banda,lecce,banda,LEC,A,a,5.0,11.0,8.0,5.0,11.0,8.0
+2022-23,6061,Oudin,lecce,oudin,LEC,C,w|a,5.0,11.0,14.0,5.0,11.0,14.0
+2022-23,4,Sportiello,atalanta,sportiello,ATA,P,por,1.0,10.0,23.0,1.0,10.0,23.0
+2022-23,140,Hysaj,lazio,hysaj,LAZ,D,dd|ds|e,6.0,10.0,20.0,6.0,10.0,23.0
+2022-23,177,Ilicic,atalanta,ilicic,ATA,A,a,11.0,10.0,0.0,11.0,10.0,0.0
+2022-23,186,Rebic,milan,rebic,MIL,A,a,14.0,10.0,12.0,14.0,10.0,12.0
+2022-23,215,VERDE,spezia,verde,SPE,A,a,18.0,10.0,16.0,18.0,10.0,16.0
+2022-23,252,Biraghi,fiorentina,biraghi,FIO,D,ds|e,13.0,10.0,33.0,13.0,10.0,33.0
+2022-23,393,Luperto,empoli,luperto,EMP,D,ds|dc,5.0,10.0,22.0,6.0,10.0,24.0
+2022-23,695,Toloi,atalanta,toloi,ATA,D,dc,8.0,10.0,12.0,8.0,10.0,12.0
+2022-23,827,Locatelli,juventus,locatelli,JUV,C,m|c,14.0,10.0,29.0,14.0,10.0,33.0
+2022-23,1857,Di Francesco F.,lecce,di-francesco-f,LEC,A,a,12.0,10.0,12.0,12.0,10.0,12.0
+2022-23,1917,DRAGOWSKI,spezia,dragowski,SPE,P,por,7.0,10.0,24.0,7.0,10.0,24.0
+2022-23,1943,NESTOROVSKI,udinese,nestorovski,UDI,A,pc,11.0,10.0,4.0,10.0,10.0,4.0
+2022-23,2117,Kastanos,salernitana,kastanos,SAL,C,c|t,5.0,10.0,11.0,5.0,10.0,11.0
+2022-23,2120,Bastoni,inter,bastoni,INT,D,dc,15.0,10.0,32.0,15.0,10.0,32.0
+2022-23,2141,Depaoli,verona,depaoli,VER,D,dd|e,4.0,10.0,10.0,4.0,10.0,10.0
+2022-23,2432,Zakaria,juventus,zakaria,JUV,C,m,10.0,10.0,0.0,10.0,10.0,0.0
+2022-23,2525,Darmian,inter,darmian,INT,D,e,9.0,10.0,18.0,8.0,11.0,17.0
+2022-23,2815,Terracciano,fiorentina,terracciano,FIO,P,por,1.0,10.0,38.0,1.0,10.0,38.0
+2022-23,4371,Raspadori,napoli,raspadori,NAP,A,a,20.0,10.0,26.0,20.0,10.0,26.0
+2022-23,4377,Castrovilli,fiorentina,castrovilli,FIO,C,c|t,9.0,10.0,25.0,9.0,10.0,25.0
+2022-23,4421,Augello,sampdoria,augello,SAM,D,ds|e,7.0,10.0,17.0,7.0,10.0,17.0
+2022-23,4431,Carnesecchi,cremonese,carnesecchi,CRE,P,por,1.0,10.0,13.0,1.0,10.0,13.0
+2022-23,4459,Rovella,monza,rovella,MON,C,m|c,3.0,10.0,16.0,3.0,10.0,17.0
+2022-23,4892,Saelemaekers,milan,saelemaekers,MIL,C,w,8.0,10.0,20.0,8.0,10.0,18.0
+2022-23,4957,Montipo',verona,montipo,VER,P,por,11.0,10.0,19.0,11.0,10.0,19.0
+2022-23,4965,Marin,empoli,marin,EMP,C,m|c,7.0,10.0,13.0,8.0,10.0,15.0
+2022-23,5332,Bastoni S.,spezia,bastoni-s,SPE,D,e|c,12.0,10.0,14.0,13.0,10.0,18.0
+2022-23,5375,Maehle,atalanta,maehle,ATA,D,e,8.0,10.0,18.0,7.0,10.0,17.0
+2022-23,5422,Zalewski,roma,zalewski,ROM,C,e|w,7.0,10.0,16.0,7.0,10.0,17.0
+2022-23,5451,Bajrami,sassuolo,bajrami,SAS,C,t,18.0,10.0,16.0,17.0,10.0,16.0
+2022-23,5498,Casale,lazio,casale,LAZ,D,dd|dc,9.0,10.0,27.0,10.0,10.0,30.0
+2022-23,5513,Dumfries,inter,dumfries,INT,D,e,20.0,10.0,14.0,19.0,10.0,14.0
+2022-23,5526,Scalvini,atalanta,scalvini,ATA,D,dc,6.0,10.0,23.0,6.0,10.0,23.0
+2022-23,5675,Theate,bologna,theate,BOL,D,dc,10.0,10.0,0.0,10.0,10.0,0.0
+2022-23,5677,Perez N.,udinese,perez-n,UDI,D,dc,8.0,10.0,15.0,8.0,10.0,16.0
+2022-23,5792,Ederson D.s.,atalanta,ederson-d-s,ATA,C,c|t,13.0,10.0,21.0,13.0,10.0,21.0
+2022-23,5847,Bijol,udinese,bijol,UDI,D,dc,5.0,10.0,33.0,5.0,10.0,33.0
+2022-23,5870,Hjulmand,lecce,hjulmand,LEC,C,m|c,6.0,10.0,22.0,7.0,10.0,26.0
+2022-23,5995,De Ketelaere,milan,de-ketelaere,MIL,C,t|a,21.0,10.0,12.0,20.0,10.0,12.0
+2022-23,6025,Vilhena,salernitana,vilhena,SAL,C,e|c,8.0,10.0,21.0,9.0,10.0,24.0
+2022-23,6112,Iling Junior,juventus,iling-junior,JUV,C,w|a,1.0,10.0,3.0,1.0,10.0,3.0
+2022-23,6120,Ochoa,salernitana,ochoa,SAL,P,por,2.0,10.0,36.0,2.0,10.0,36.0
+2022-23,142,Mario Rui,napoli,mario-rui,NAP,D,ds|e,9.0,9.0,27.0,9.0,9.0,27.0
+2022-23,181,Vecino,lazio,vecino,LAZ,C,m|c,6.0,9.0,10.0,7.0,9.0,11.0
+2022-23,218,Perin,juventus,perin,JUV,P,por,1.0,9.0,4.0,1.0,9.0,4.0
+2022-23,505,Bonazzoli,salernitana,bonazzoli,SAL,A,pc,14.0,9.0,8.0,14.0,9.0,8.0
+2022-23,513,Acerbi,inter,acerbi,INT,D,dc,8.0,9.0,22.0,8.0,9.0,22.0
+2022-23,581,Faraoni,verona,faraoni,VER,D,dd|e,13.0,9.0,21.0,13.0,9.0,21.0
+2022-23,788,Freuler,atalanta,freuler,ATA,C,m|c,9.0,9.0,0.0,10.0,10.0,0.0
+2022-23,2038,Pinamonti,sassuolo,pinamonti,SAS,A,pc,23.0,9.0,25.0,23.0,9.0,25.0
+2022-23,2164,Milenkovic,fiorentina,milenkovic,FIO,D,dd|dc,11.0,9.0,16.0,12.0,9.0,19.0
+2022-23,2169,Rodriguez R.,torino,rodriguez-r,TOR,D,ds|dc|e,7.0,9.0,22.0,8.0,9.0,25.0
+2022-23,2294,Cerofolini,fiorentina,cerofolini,FIO,P,por,1.0,9.0,1.0,1.0,9.0,1.0
+2022-23,2739,RECA,spezia,reca,SPE,D,ds|e,5.0,9.0,14.0,5.0,9.0,14.0
+2022-23,2766,Zaniolo,roma,zaniolo,ROM,C,w|a,19.0,9.0,0.0,19.0,9.0,0.0
+2022-23,2792,Musso,atalanta,musso,ATA,P,por,13.0,9.0,5.0,13.0,9.0,5.0
+2022-23,2825,Bourabia,spezia,bourabia,SPE,C,m|c,4.0,9.0,12.0,4.0,9.0,12.0
+2022-23,2857,Traore' Hj.,sassuolo,traore-hj,SAS,C,w|t,18.0,9.0,0.0,18.0,9.0,0.0
+2022-23,4530,Kyriakopoulos,bologna,kyriakopoulos,BOL,D,ds|e,6.0,9.0,12.0,6.0,9.0,12.0
+2022-23,4896,Maldini,spezia,maldini,SPE,C,t|a,2.0,9.0,2.0,2.0,9.0,2.0
+2022-23,4899,Singo,torino,singo,TOR,D,e,14.0,9.0,20.0,13.0,9.0,20.0
+2022-23,4904,Mari',monza,mari,MON,D,dc,11.0,9.0,18.0,11.0,9.0,18.0
+2022-23,5423,Bove,roma,bove,ROM,C,c,1.0,9.0,5.0,1.0,9.0,5.0
+2022-23,5520,Cambiaso,bologna,cambiaso,BOL,D,dd|ds|e,9.0,9.0,12.0,10.0,9.0,12.0
+2022-23,5676,Success,udinese,success,UDI,A,a,13.0,9.0,21.0,13.0,9.0,21.0
+2022-23,5844,Thorstvedt,sassuolo,thorstvedt,SAS,C,c|t,9.0,9.0,8.0,9.0,9.0,8.0
+2022-23,5885,Dodo',fiorentina,dodo,FIO,D,dd|e,14.0,9.0,32.0,14.0,9.0,32.0
+2022-23,6119,Solbakken,roma,solbakken,ROM,A,a,10.0,9.0,8.0,10.0,9.0,8.0
+2022-23,49,Masina,udinese,masina,UDI,D,ds|dc|e,6.0,8.0,6.0,7.0,8.0,6.0
+2022-23,159,Sepe,salernitana,sepe,SAL,P,por,8.0,8.0,1.0,8.0,8.0,1.0
+2022-23,226,Izzo,monza,izzo,MON,D,dd|dc,3.0,8.0,21.0,3.0,8.0,21.0
+2022-23,250,HANDANOVIC,inter,handanovic,INT,P,por,16.0,8.0,4.0,16.0,8.0,4.0
+2022-23,357,Calabria,milan,calabria,MIL,D,dd|e,13.0,8.0,38.0,13.0,8.0,38.0
+2022-23,779,Cristante,roma,cristante,ROM,C,m|c,9.0,8.0,20.0,9.0,8.0,22.0
+2022-23,798,Skriniar,inter,skriniar,INT,D,dc,17.0,8.0,5.0,16.0,8.0,5.0
+2022-23,2253,Bandinelli,empoli,bandinelli,EMP,C,c,6.0,8.0,10.0,5.0,8.0,10.0
+2022-23,2392,Walace,udinese,walace,UDI,C,m,7.0,8.0,12.0,7.0,8.0,12.0
+2022-23,2625,SORIANO,bologna,soriano,BOL,C,c|t,12.0,8.0,3.0,12.0,8.0,4.0
+2022-23,2847,SERNICOLA,cremonese,sernicola,CRE,D,ds|dc|e,3.0,8.0,12.0,4.0,8.0,16.0
+2022-23,4359,Piccoli,empoli,piccoli,EMP,A,pc,13.0,8.0,7.0,12.0,8.0,7.0
+2022-23,4375,Terzic,fiorentina,terzic,FIO,D,ds|e,2.0,8.0,7.0,2.0,8.0,7.0
+2022-23,4393,Schouten,bologna,schouten,BOL,C,m|c,8.0,8.0,14.0,9.0,8.0,16.0
+2022-23,4412,RODRIGO BECAO,udinese,rodrigo-becao,UDI,D,dc,10.0,8.0,24.0,10.0,8.0,24.0
+2022-23,4515,AGUDELO,spezia,agudelo,SPE,C,t|a,9.0,8.0,13.0,8.0,7.0,12.0
+2022-23,4897,Pirola,salernitana,pirola,SAL,D,dc,4.0,8.0,12.0,4.0,8.0,12.0
+2022-23,4958,Caldirola,monza,caldirola,MON,D,ds|dc,4.0,8.0,8.0,4.0,8.0,9.0
+2022-23,5286,Akpa Akpro,empoli,akpa-akpro,EMP,C,m|c,2.0,8.0,9.0,3.0,7.0,9.0
+2022-23,5292,Lammers,sampdoria,lammers,SAM,A,pc,15.0,8.0,8.0,14.0,8.0,8.0
+2022-23,5329,Makengo,udinese,makengo,UDI,C,m|c,8.0,8.0,0.0,8.0,8.0,0.0
+2022-23,5460,SATRIANO,empoli,satriano,EMP,A,pc,14.0,8.0,13.0,13.0,8.0,13.0
+2022-23,5471,Djuric,verona,djuric,VER,A,pc,11.0,8.0,10.0,10.0,8.0,8.0
+2022-23,5688,Harroui,sassuolo,harroui,SAS,C,m|c,2.0,8.0,10.0,2.0,8.0,10.0
+2022-23,5842,Botheim,salernitana,botheim,SAL,A,pc,13.0,8.0,4.0,12.0,7.0,3.0
+2022-23,5869,Blin,lecce,blin,LEC,C,m|c,2.0,8.0,10.0,2.0,8.0,10.0
+2022-23,256,Juan Jesus,napoli,juan-jesus,NAP,D,ds|dc,7.0,7.0,8.0,7.0,7.0,8.0
+2022-23,286,Bonucci,juventus,bonucci,JUV,D,dc,15.0,7.0,10.0,15.0,7.0,10.0
+2022-23,322,De Vrij,inter,de-vrij,INT,D,dc,10.0,7.0,12.0,10.0,7.0,12.0
+2022-23,333,Cataldi,lazio,cataldi,LAZ,C,m|c,8.0,7.0,12.0,8.0,7.0,13.0
+2022-23,509,Consigli,sassuolo,consigli,SAS,P,por,11.0,7.0,24.0,11.0,7.0,24.0
+2022-23,526,Duncan,fiorentina,duncan,FIO,C,m|c,7.0,7.0,7.0,7.0,7.0,7.0
+2022-23,643,Defrel,sassuolo,defrel,SAS,A,a,8.0,7.0,14.0,8.0,7.0,14.0
+2022-23,697,Cuadrado,juventus,cuadrado,JUV,C,e|w,15.0,7.0,22.0,15.0,7.0,22.0
+2022-23,761,Audero,sampdoria,audero,SAM,P,por,10.0,7.0,5.0,10.0,7.0,5.0
+2022-23,787,Djimsiti,atalanta,djimsiti,ATA,D,dc,7.0,7.0,12.0,7.0,7.0,12.0
+2022-23,2008,Linetty,torino,linetty,TOR,C,c,5.0,7.0,11.0,4.0,7.0,11.0
+2022-23,2144,Coulibaly M.,salernitana,coulibaly-m,SAL,C,m|c,7.0,7.0,0.0,7.0,7.0,0.0
+2022-23,2188,Marusic,lazio,marusic,LAZ,D,dd|ds|e,7.0,7.0,18.0,8.0,8.0,21.0
+2022-23,2466,Origi,milan,origi,MIL,A,pc,17.0,7.0,12.0,17.0,7.0,10.0
+2022-23,2778,Stulac,empoli,stulac,EMP,C,m|c,7.0,7.0,0.0,7.0,7.0,0.0
+2022-23,2839,Sottil,fiorentina,sottil,FIO,C,w|a,8.0,7.0,10.0,8.0,7.0,10.0
+2022-23,2869,Djidji,torino,djidji,TOR,D,dd|ds|dc,5.0,7.0,8.0,6.0,7.0,8.0
+2022-23,4178,ASCACIBAR,cremonese,ascacibar,CRE,C,m|c,6.0,7.0,0.0,7.0,7.0,0.0
+2022-23,4331,Ibanez,roma,ibanez,ROM,D,dc,9.0,7.0,12.0,9.0,7.0,12.0
+2022-23,4973,McKennie,juventus,mckennie,JUV,C,c|w,11.0,7.0,0.0,11.0,7.0,0.0
+2022-23,4976,Kalulu,milan,kalulu,MIL,D,dd|dc,14.0,7.0,18.0,15.0,7.0,20.0
+2022-23,4992,Gyasi,spezia,gyasi,SPE,C,w|a,10.0,7.0,10.0,10.0,7.0,10.0
+2022-23,4994,Vojvoda,torino,vojvoda,TOR,D,e,9.0,7.0,9.0,9.0,7.0,8.0
+2022-23,5071,Jese',sampdoria,jese,SAM,A,a,8.0,7.0,7.0,8.0,7.0,7.0
+2022-23,5239,Llorente D.,roma,llorente-d,ROM,D,dc,8.0,7.0,10.0,8.0,7.0,10.0
+2022-23,5287,ARSLAN,udinese,arslan,UDI,C,m|c,6.0,7.0,8.0,6.0,7.0,8.0
+2022-23,5323,Martinez Quarta,fiorentina,martinez-quarta,FIO,D,dc,4.0,7.0,13.0,4.0,7.0,13.0
+2022-23,5394,Gaich,verona,gaich,VER,A,pc,4.0,7.0,21.0,3.0,6.0,21.0
+2022-23,5693,Kiwior,spezia,kiwior,SPE,D,dc,6.0,7.0,0.0,6.0,7.0,0.0
+2022-23,5705,Galdames,cremonese,galdames,CRE,C,m|c,3.0,7.0,8.0,3.0,7.0,8.0
+2022-23,5734,Soule',juventus,soule,JUV,A,a,1.0,7.0,7.0,1.0,7.0,7.0
+2022-23,5813,Miretti,juventus,miretti,JUV,C,c|t,2.0,7.0,8.0,2.0,7.0,8.0
+2022-23,5863,CASTAGNETTI,cremonese,castagnetti,CRE,C,m|c,4.0,7.0,5.0,5.0,7.0,5.0
+2022-23,5864,BUONAIUTO,cremonese,buonaiuto,CRE,A,a,7.0,7.0,4.0,7.0,7.0,4.0
+2022-23,5867,Gendrey,lecce,gendrey,LEC,D,dd|dc,4.0,7.0,10.0,4.0,7.0,12.0
+2022-23,5999,Gonzalez J.,lecce,gonzalez-j,LEC,C,c,2.0,7.0,8.0,2.0,7.0,8.0
+2022-23,6046,Hien,verona,hien,VER,D,dc,6.0,7.0,18.0,6.0,7.0,18.0
+2022-23,6145,Ngonge,verona,ngonge,VER,A,a,3.0,7.0,18.0,3.0,7.0,18.0
+2022-23,27,Grassi,empoli,grassi,EMP,C,m|c,6.0,6.0,3.0,7.0,6.0,4.0
+2022-23,148,Krunic,milan,krunic,MIL,C,c|t,7.0,6.0,13.0,6.0,6.0,13.0
+2022-23,327,Patric,lazio,patric,LAZ,D,dd|dc,5.0,6.0,8.0,5.0,6.0,8.0
+2022-23,441,Belotti,roma,belotti,ROM,A,pc,16.0,6.0,14.0,15.0,6.0,14.0
+2022-23,568,QUAGLIARELLA,sampdoria,quagliarella,SAM,A,pc,10.0,6.0,10.0,10.0,6.0,10.0
+2022-23,610,Gollini,napoli,gollini,NAP,P,por,12.0,6.0,8.0,12.0,6.0,8.0
+2022-23,660,Gyomber,salernitana,gyomber,SAL,D,dc,4.0,6.0,14.0,4.0,6.0,14.0
+2022-23,673,Perisan,empoli,perisan,EMP,P,por,1.0,6.0,1.0,1.0,6.0,1.0
+2022-23,2103,Pellegri,torino,pellegri,TOR,A,pc,12.0,6.0,12.0,11.0,6.0,10.0
+2022-23,2161,Haas,empoli,haas,EMP,C,c,3.0,6.0,6.0,3.0,6.0,6.0
+2022-23,2318,Rogerio,sassuolo,rogerio,SAS,D,ds|e,5.0,6.0,15.0,5.0,6.0,15.0
+2022-23,2334,LERIS,sampdoria,leris,SAM,C,w,3.0,6.0,9.0,3.0,6.0,9.0
+2022-23,2391,EKDAL,spezia,ekdal,SPE,C,m|c,7.0,6.0,12.0,7.0,6.0,12.0
+2022-23,2583,Umtiti,lecce,umtiti,LEC,D,dc,7.0,6.0,21.0,7.0,6.0,21.0
+2022-23,2789,Meite',cremonese,meite,CRE,C,m|c,7.0,6.0,7.0,8.0,6.0,8.0
+2022-23,2870,Troost-Ekong,salernitana,troost-ekong,SAL,D,dc,5.0,6.0,12.0,5.0,6.0,12.0
+2022-23,4329,NIKOLAOU,spezia,nikolaou,SPE,D,dc,4.0,6.0,8.0,4.0,6.0,8.0
+2022-23,4332,Demiral,atalanta,demiral,ATA,D,dc,13.0,6.0,8.0,13.0,6.0,8.0
+2022-23,4342,Duda,verona,duda,VER,C,t,9.0,6.0,13.0,8.0,6.0,13.0
+2022-23,4364,Gaetano,napoli,gaetano,NAP,C,c|t,4.0,6.0,5.0,4.0,6.0,5.0
+2022-23,4385,Lazaro,torino,lazaro,TOR,D,e,7.0,6.0,6.0,6.0,6.0,7.0
+2022-23,4408,Esposito Sa.,spezia,esposito-sa,SPE,C,m|c,5.0,6.0,12.0,6.0,6.0,12.0
+2022-23,4433,Zortea,sassuolo,zortea,SAS,D,dd|ds|e,2.0,6.0,7.0,3.0,6.0,8.0
+2022-23,4681,Lopez M.,sassuolo,lopez-m,SAS,C,m|c,9.0,6.0,23.0,10.0,6.0,25.0
+2022-23,4719,Ampadu,spezia,ampadu,SPE,D,dc,6.0,6.0,18.0,6.0,6.0,18.0
+2022-23,4890,Tameze,verona,tameze,VER,C,m|c,14.0,6.0,12.0,14.0,6.0,13.0
+2022-23,5298,Pobega,milan,pobega,MIL,C,c|t,9.0,6.0,10.0,9.0,6.0,10.0
+2022-23,5311,Shomurodov,spezia,shomurodov,SPE,A,pc,12.0,6.0,11.0,11.0,6.0,11.0
+2022-23,5439,Kallon,verona,kallon,VER,A,a,2.0,6.0,3.0,2.0,6.0,3.0
+2022-23,5514,Vasquez,cremonese,vasquez,CRE,D,ds|dc,6.0,6.0,8.0,6.0,6.0,8.0
+2022-23,5532,Bradaric,salernitana,bradaric,SAL,D,ds|e,7.0,6.0,17.0,7.0,6.0,17.0
+2022-23,5718,Viti,empoli,viti,EMP,D,dc,6.0,6.0,0.0,6.0,6.0,0.0
+2022-23,5784,Aebischer,bologna,aebischer,BOL,C,c,4.0,6.0,7.0,3.0,6.0,7.0
+2022-23,5798,Bohinen,salernitana,bohinen,SAL,C,m|c,7.0,6.0,8.0,7.0,6.0,9.0
+2022-23,5812,Terracciano F.,verona,terracciano-f,VER,C,e|m,1.0,6.0,3.0,1.0,6.0,3.0
+2022-23,5834,Marcos Antonio,lazio,marcos-antonio,LAZ,C,m|c,10.0,6.0,8.0,11.0,6.0,10.0
+2022-23,5845,Alvarez A.,sassuolo,alvarez-a,SAS,A,pc,14.0,6.0,7.0,13.0,6.0,6.0
+2022-23,5884,Ranocchia F.,monza,ranocchia-f,MON,C,m|c,2.0,6.0,6.0,2.0,6.0,6.0
+2022-23,6027,Lochoshvili,cremonese,lochoshvili,CRE,D,dc,3.0,6.0,8.0,3.0,6.0,8.0
+2022-23,6033,Normann,lecce,normann,LEC,C,m|c,6.0,6.0,0.0,7.0,7.0,0.0
+2022-23,6047,Ehizibue,udinese,ehizibue,UDI,D,dd|e,4.0,6.0,12.0,4.0,6.0,12.0
+2022-23,6055,Thiaw,milan,thiaw,MIL,D,dc,6.0,6.0,16.0,6.0,6.0,6.0
+2022-23,90,Lasagna,verona,lasagna,VER,A,pc,11.0,5.0,10.0,10.0,5.0,8.0
+2022-23,160,TATARUSANU,milan,tatarusanu,MIL,P,por,1.0,5.0,1.0,1.0,5.0,1.0
+2022-23,253,D'Ambrosio,inter,d-ambrosio,INT,D,dd|ds|dc,8.0,5.0,11.0,9.0,5.0,11.0
+2022-23,272,MEDEL,bologna,medel,BOL,D,dc,7.0,5.0,6.0,7.0,5.0,6.0
+2022-23,468,Paredes,juventus,paredes,JUV,C,m|c,13.0,5.0,8.0,15.0,5.0,8.0
+2022-23,487,De Silvestri,bologna,de-silvestri,BOL,D,dd|e,9.0,5.0,2.0,9.0,5.0,2.0
+2022-23,557,Benassi,cremonese,benassi,CRE,C,c,3.0,5.0,7.0,3.0,5.0,7.0
+2022-23,666,Machin,monza,machin,MON,C,c|t,4.0,5.0,8.0,4.0,5.0,8.0
+2022-23,1891,Ceccherini,verona,ceccherini,VER,D,dd|dc,6.0,5.0,13.0,6.0,5.0,14.0
+2022-23,1895,Ferrari G.,sassuolo,ferrari-g,SAS,D,dc,8.0,5.0,11.0,8.0,5.0,11.0
+2022-23,2154,Vignato,empoli,vignato,EMP,C,w|t,3.0,5.0,5.0,3.0,5.0,5.0
+2022-23,2653,Lykogiannis,bologna,lykogiannis,BOL,D,ds|e,4.0,5.0,8.0,4.0,5.0,8.0
+2022-23,2784,COLLEY,sampdoria,colley,SAM,D,dc,9.0,5.0,0.0,8.0,5.0,0.0
+2022-23,2842,ZANIMACCHIA,cremonese,zanimacchia,CRE,A,w|a,9.0,5.0,0.0,10.0,5.0,0.0
+2022-23,2865,AINA,torino,aina,TOR,D,e,5.0,5.0,9.0,5.0,5.0,8.0
+2022-23,4260,Winks,sampdoria,winks,SAM,C,m|c,6.0,5.0,8.0,7.0,5.0,8.0
+2022-23,4378,Ranieri L.,fiorentina,ranieri-l,FIO,D,ds|dc|e,1.0,5.0,1.0,1.0,5.0,1.0
+2022-23,4426,Toljan,sassuolo,toljan,SAS,D,dd|e,5.0,5.0,12.0,5.0,5.0,12.0
+2022-23,4502,Gallo,lecce,gallo,LEC,D,ds|e,2.0,5.0,8.0,2.0,5.0,8.0
+2022-23,4522,Amrabat,fiorentina,amrabat,FIO,C,m|c,8.0,5.0,14.0,8.0,5.0,16.0
+2022-23,4887,Bellanova,inter,bellanova,INT,D,e,8.0,5.0,2.0,7.0,5.0,2.0
+2022-23,4891,Soumaoro,bologna,soumaoro,BOL,D,dc,5.0,5.0,12.0,5.0,5.0,12.0
+2022-23,5010,Ismajli,empoli,ismajli,EMP,D,dc,3.0,5.0,9.0,3.0,5.0,9.0
+2022-23,5017,Ballo-Toure',milan,ballo-toure,MIL,D,ds|e,2.0,5.0,3.0,2.0,5.0,3.0
+2022-23,5316,Amione,sampdoria,amione,SAM,D,ds|dc,2.0,5.0,9.0,3.0,5.0,9.0
+2022-23,5457,Maleh,lecce,maleh,LEC,C,c,3.0,5.0,8.0,3.0,5.0,8.0
+2022-23,5494,Di Mariano,lecce,di-mariano,LEC,A,a,5.0,5.0,0.0,5.0,5.0,0.0
+2022-23,5529,Henry,verona,henry,VER,A,pc,18.0,5.0,1.0,16.0,5.0,1.0
+2022-23,5674,Basic,lazio,basic,LAZ,C,c,5.0,5.0,6.0,4.0,5.0,6.0
+2022-23,5678,Holm,spezia,holm,SPE,D,dd|e,2.0,5.0,8.0,3.0,6.0,8.0
+2022-23,5714,Gondo,cremonese,gondo,CRE,A,pc,5.0,5.0,0.0,3.0,3.0,0.0
+2022-23,5735,Volpato,roma,volpato,ROM,C,t,1.0,5.0,1.0,1.0,5.0,1.0
+2022-23,5831,Gatti,juventus,gatti,JUV,D,dc,5.0,5.0,16.0,5.0,5.0,16.0
+2022-23,5838,Birindelli,monza,birindelli,MON,D,dd|ds|e,3.0,5.0,7.0,4.0,5.0,7.0
+2022-23,5848,Ebosele,udinese,ebosele,UDI,D,dd|e,2.0,5.0,4.0,2.0,5.0,4.0
+2022-23,5856,Sambia,salernitana,sambia,SAL,D,dd|e,7.0,5.0,8.0,7.0,5.0,8.0
+2022-23,5879,Vignato S.,monza,vignato-s,MON,C,t|a,1.0,5.0,1.0,1.0,5.0,1.0
+2022-23,6010,Fazzini,empoli,fazzini,EMP,C,c|t,1.0,5.0,8.0,1.0,5.0,8.0
+2022-23,6042,Lucumi',bologna,lucumi,BOL,D,dc,9.0,5.0,17.0,10.0,5.0,17.0
+2022-23,45,Ferrari A.,cremonese,ferrari-a,CRE,D,dd|dc,5.0,4.0,5.0,5.0,4.0,5.0
+2022-23,238,RINCON,sampdoria,rincon,SAM,C,m,6.0,4.0,6.0,6.0,4.0,6.0
+2022-23,261,RANOCCHIA,monza,ranocchia,MON,D,dc,6.0,4.0,0.0,6.0,4.0,0.0
+2022-23,315,Zaza,torino,zaza,TOR,A,pc,5.0,4.0,0.0,3.0,2.0,0.0
+2022-23,600,Verre,sampdoria,verre,SAM,C,c|t,7.0,4.0,0.0,7.0,4.0,0.0
+2022-23,640,CHIRICHES,cremonese,chiriches,CRE,D,dc,5.0,4.0,8.0,5.0,4.0,8.0
+2022-23,729,Pereira P.,monza,pereira-p,MON,D,dd|e,4.0,4.0,0.0,4.0,4.0,0.0
+2022-23,1889,CORDAZ,inter,cordaz,INT,P,por,1.0,4.0,1.0,1.0,4.0,1.0
+2022-23,1995,Djuricic,sampdoria,djuricic,SAM,C,w|t,13.0,4.0,10.0,13.0,4.0,10.0
+2022-23,2181,Palomino,atalanta,palomino,ATA,D,dc,10.0,4.0,10.0,10.0,4.0,10.0
+2022-23,2192,Bonifazi,bologna,bonifazi,BOL,D,dc,4.0,4.0,4.0,4.0,4.0,4.0
+2022-23,2263,Lazzari,lazio,lazzari,LAZ,D,dd|e,10.0,4.0,12.0,10.0,4.0,12.0
+2022-23,2280,NUYTINCK,sampdoria,nuytinck,SAM,D,dc,7.0,4.0,11.0,7.0,4.0,11.0
+2022-23,2758,Gunter,sampdoria,gunter,SAM,D,dc,5.0,4.0,8.0,5.0,4.0,8.0
+2022-23,2769,Magnani,verona,magnani,VER,D,dc,3.0,4.0,8.0,3.0,4.0,8.0
+2022-23,4143,Ndombele',napoli,ndombele,NAP,C,c|t,11.0,4.0,14.0,11.0,4.0,14.0
+2022-23,4285,Arthur Melo,juventus,arthur-melo,JUV,C,m|c,5.0,4.0,0.0,5.0,4.0,0.0
+2022-23,4323,Zeegelaar,udinese,zeegelaar,UDI,D,ds|e,2.0,4.0,4.0,2.0,4.0,4.0
+2022-23,4349,Nicolussi Caviglia,salernitana,nicolussi-caviglia,SAL,C,m|c,3.0,4.0,6.0,3.0,4.0,6.0
+2022-23,4407,Igor,fiorentina,igor,FIO,D,ds|dc,9.0,4.0,15.0,10.0,4.0,16.0
+2022-23,4475,Majer,lecce,majer,LEC,C,c|t,4.0,4.0,0.0,4.0,4.0,0.0
+2022-23,4493,Dawidowicz,verona,dawidowicz,VER,D,dc,4.0,4.0,8.0,4.0,4.0,8.0
+2022-23,4498,Henderson L.,empoli,henderson-l,EMP,C,c|t,8.0,4.0,6.0,8.0,4.0,6.0
+2022-23,4657,Celik,roma,celik,ROM,D,dd|e,7.0,4.0,6.0,7.0,4.0,6.0
+2022-23,4701,Cuisance,sampdoria,cuisance,SAM,C,c|t,4.0,4.0,6.0,4.0,4.0,6.0
+2022-23,4884,Carles Perez,roma,carles-perez,ROM,C,w|a,4.0,4.0,0.0,4.0,4.0,0.0
+2022-23,4885,Villar,sampdoria,villar,SAM,C,m|c,7.0,4.0,0.0,7.0,4.0,0.0
+2022-23,5005,ZOET,spezia,zoet,SPE,P,por,1.0,4.0,1.0,1.0,4.0,1.0
+2022-23,5450,Stojanovic,empoli,stojanovic,EMP,D,dd|e,7.0,4.0,4.0,7.0,4.0,4.0
+2022-23,5475,AMIAN,spezia,amian,SPE,D,dd|dc,6.0,4.0,9.0,6.0,4.0,10.0
+2022-23,5554,Daniliuc,salernitana,daniliuc,SAL,D,dd|dc,7.0,4.0,12.0,8.0,4.0,12.0
+2022-23,5690,Strelec,spezia,strelec,SPE,A,pc,6.0,4.0,0.0,5.0,4.0,0.0
+2022-23,5776,Ceide,sassuolo,ceide,SAS,C,w|a,2.0,4.0,2.0,2.0,4.0,2.0
+2022-23,5793,Kasius,bologna,kasius,BOL,D,dd|e,2.0,4.0,0.0,2.0,4.0,0.0
+2022-23,5806,Seck,torino,seck,TOR,A,w|a,3.0,4.0,6.0,3.0,4.0,7.0
+2022-23,5841,Svilar,roma,svilar,ROM,P,por,1.0,4.0,1.0,1.0,4.0,1.0
+2022-23,5857,Pickel,cremonese,pickel,CRE,C,m,4.0,4.0,7.0,4.0,4.0,7.0
+2022-23,5886,Bistrovic,lecce,bistrovic,LEC,C,c|t,5.0,4.0,0.0,5.0,4.0,0.0
+2022-23,6002,Aiwu,cremonese,aiwu,CRE,D,dc,5.0,4.0,4.0,5.0,4.0,4.0
+2022-23,6117,Tahirovic,roma,tahirovic,ROM,C,c,1.0,4.0,3.0,1.0,4.0,3.0
+2022-23,6153,Wisniewski,spezia,wisniewski,SPE,D,dc,3.0,4.0,8.0,3.0,4.0,8.0
+2022-23,244,GHIGLIONE,cremonese,ghiglione,CRE,D,dd|e,5.0,3.0,7.0,5.0,3.0,7.0
+2022-23,294,Rugani,juventus,rugani,JUV,D,dc,5.0,3.0,5.0,5.0,3.0,5.0
+2022-23,358,De Sciglio,juventus,de-sciglio,JUV,D,dd|ds|e,6.0,3.0,10.0,7.0,3.0,11.0
+2022-23,612,BIANCHETTI,cremonese,bianchetti,CRE,D,dd|dc,4.0,3.0,7.0,4.0,3.0,7.0
+2022-23,662,Alex Sandro,juventus,alex-sandro,JUV,D,ds|e,8.0,3.0,13.0,8.0,3.0,13.0
+2022-23,1843,RADU I.,cremonese,radu-i,CRE,P,por,5.0,3.0,0.0,5.0,3.0,0.0
+2022-23,1868,MURRU,sampdoria,murru,SAM,D,ds|e,5.0,3.0,4.0,5.0,3.0,4.0
+2022-23,1898,Sampirisi,monza,sampirisi,MON,D,dd|dc|e,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,1976,Mazzitelli,monza,mazzitelli,MON,C,m|c,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,2011,MIGUEL VELOSO,verona,miguel-veloso,VER,C,m|c,6.0,3.0,7.0,6.0,3.0,7.0
+2022-23,2104,Bereszynski,napoli,bereszynski,NAP,D,dd|e,6.0,3.0,3.0,6.0,3.0,3.0
+2022-23,2130,Hateboer,atalanta,hateboer,ATA,D,e,9.0,3.0,1.0,8.0,3.0,1.0
+2022-23,2174,Venuti,fiorentina,venuti,FIO,D,dd|ds|e,3.0,3.0,4.0,3.0,3.0,4.0
+2022-23,2184,Gravillon,torino,gravillon,TOR,D,dd|dc,5.0,3.0,12.0,5.0,3.0,13.0
+2022-23,2195,Ounas,napoli,ounas,NAP,A,a,4.0,3.0,0.0,4.0,3.0,0.0
+2022-23,2300,Leverbe,sampdoria,leverbe,SAM,D,dc,4.0,3.0,0.0,4.0,3.0,0.0
+2022-23,2312,Hristov,spezia,hristov,SPE,D,dc,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,2355,Marlon,monza,marlon,MON,D,dc,7.0,3.0,9.0,7.0,3.0,9.0
+2022-23,2409,RIBERY,salernitana,ribery,SAL,A,a,5.0,3.0,0.0,5.0,3.0,0.0
+2022-23,2530,IBRAHIMOVIC,milan,ibrahimovic,MIL,A,pc,13.0,3.0,9.0,13.0,3.0,9.0
+2022-23,2633,Kjaer,milan,kjaer,MIL,D,dc,5.0,3.0,23.0,5.0,3.0,23.0
+2022-23,2728,Pellegrini Lu.,lazio,pellegrini-lu,LAZ,D,ds|e,7.0,3.0,7.0,7.0,3.0,7.0
+2022-23,2745,Calabresi,lecce,calabresi,LEC,D,dd|dc,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,4374,Walukiewicz,empoli,walukiewicz,EMP,D,dc,4.0,3.0,2.0,4.0,3.0,2.0
+2022-23,4376,Zurkowski,spezia,zurkowski,SPE,C,c,8.0,3.0,8.0,8.0,3.0,8.0
+2022-23,4432,Okoli,atalanta,okoli,ATA,D,dc,5.0,3.0,2.0,5.0,3.0,2.0
+2022-23,4501,Obiang,sassuolo,obiang,SAS,C,m|c,2.0,3.0,10.0,2.0,3.0,11.0
+2022-23,4758,Benkovic,udinese,benkovic,UDI,D,dc,4.0,3.0,0.0,4.0,3.0,0.0
+2022-23,4921,ASKILDSEN,lecce,askildsen,LEC,C,c,3.0,3.0,4.0,3.0,3.0,4.0
+2022-23,4934,Lovato,salernitana,lovato,SAL,D,dc,6.0,3.0,5.0,6.0,3.0,5.0
+2022-23,4946,Frabotta,lecce,frabotta,LEC,D,ds|e,4.0,3.0,0.0,4.0,3.0,0.0
+2022-23,4975,Escalante,cremonese,escalante,CRE,C,m|c,4.0,3.0,0.0,4.0,3.0,0.0
+2022-23,4979,Ayhan,sassuolo,ayhan,SAS,D,dd|dc,5.0,3.0,0.0,6.0,3.0,0.0
+2022-23,4982,Erlic,sassuolo,erlic,SAS,D,dc,9.0,3.0,14.0,9.0,3.0,14.0
+2022-23,5397,Kovalenko,spezia,kovalenko,SPE,C,c|t,7.0,3.0,5.0,7.0,3.0,5.0
+2022-23,5479,Ceccaroni,lecce,ceccaroni,LEC,D,ds|dc,5.0,3.0,4.0,5.0,3.0,6.0
+2022-23,5486,Crnigoj,salernitana,crnigoj,SAL,C,c,5.0,3.0,6.0,5.0,3.0,6.0
+2022-23,5673,Antiste,sassuolo,antiste,SAS,A,a,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,5728,AFENA-GYAN,cremonese,afena-gyan,CRE,A,a,8.0,3.0,6.0,8.0,3.0,6.0
+2022-23,5764,Coppola D.,verona,coppola-d,VER,D,dc,2.0,3.0,8.0,2.0,3.0,8.0
+2022-23,5772,Pyyhtia,bologna,pyyhtia,BOL,C,c|t,1.0,3.0,1.0,1.0,3.0,1.0
+2022-23,5804,Cacace,empoli,cacace,EMP,D,ds|e,3.0,3.0,3.0,3.0,3.0,3.0
+2022-23,5860,Ravanelli,cremonese,ravanelli,CRE,D,dc,3.0,3.0,0.0,3.0,3.0,0.0
+2022-23,5881,Gytkjaer,monza,gytkjaer,MON,A,pc,4.0,3.0,6.0,4.0,3.0,6.0
+2022-23,5891,Quagliata,cremonese,quagliata,CRE,D,ds|e,3.0,3.0,3.0,3.0,3.0,3.0
+2022-23,6021,Abankwah,udinese,abankwah,UDI,D,dc|dd,1.0,3.0,1.0,1.0,3.0,1.0
+2022-23,6023,Guessand A.,udinese,guessand-a,UDI,D,dc,1.0,3.0,1.0,1.0,3.0,1.0
+2022-23,6024,Sulemana I.,verona,sulemana-i,VER,C,m|c,1.0,3.0,4.0,1.0,3.0,4.0
+2022-23,6039,Cabal,verona,cabal,VER,D,ds|dc,3.0,3.0,2.0,3.0,3.0,2.0
+2022-23,6058,Camara Ma.,roma,camara-ma,ROM,C,m|c,7.0,3.0,3.0,8.0,3.0,3.0
+2022-23,6162,Abildgaard,verona,abildgaard,VER,C,m,3.0,3.0,4.0,3.0,3.0,4.0
+2022-23,42,SARR M.,cremonese,sarr-m,CRE,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,52,Oikonomou,sampdoria,oikonomou,SAM,D,dc,2.0,2.0,2.0,2.0,2.0,2.0
+2022-23,73,Gagliolo,salernitana,gagliolo,SAL,D,ds|dc,2.0,2.0,0.0,2.0,2.0,0.0
+2022-23,118,RADOVANOVIC,salernitana,radovanovic,SAL,D,dc,5.0,2.0,0.0,5.0,2.0,0.0
+2022-23,139,Dermaku,lecce,dermaku,LEC,D,dc,4.0,2.0,2.0,4.0,2.0,2.0
+2022-23,144,Tonelli,empoli,tonelli,EMP,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,259,MURILLO,sampdoria,murillo,SAM,D,dc,3.0,2.0,4.0,3.0,2.0,4.0
+2022-23,434,Jajalo,udinese,jajalo,UDI,C,m|c,3.0,2.0,0.0,3.0,2.0,0.0
+2022-23,472,Destro,empoli,destro,EMP,A,pc,18.0,2.0,8.0,16.0,2.0,5.0
+2022-23,510,Pegolo,sassuolo,pegolo,SAS,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,770,Pezzella Giu.,lecce,pezzella-giu,LEC,D,ds|e,6.0,2.0,5.0,6.0,2.0,5.0
+2022-23,801,Gagliardini,inter,gagliardini,INT,C,m|c,8.0,2.0,4.0,8.0,2.0,5.0
+2022-23,1998,Pjaca,empoli,pjaca,EMP,A,a,9.0,2.0,4.0,9.0,2.0,4.0
+2022-23,2016,Fazio,salernitana,fazio,SAL,D,dc,6.0,2.0,5.0,6.0,2.0,5.0
+2022-23,2180,Karsdorp,roma,karsdorp,ROM,D,dd|e,10.0,2.0,3.0,10.0,2.0,3.0
+2022-23,2252,Marchizza,sassuolo,marchizza,SAS,D,ds|dc,2.0,2.0,4.0,2.0,2.0,4.0
+2022-23,2274,Valoti,monza,valoti,MON,C,c|t,5.0,2.0,6.0,5.0,2.0,6.0
+2022-23,2279,ROMAGNA,sassuolo,romagna,SAS,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,2446,Donati,monza,donati,MON,D,dd|dc,4.0,2.0,5.0,4.0,2.0,5.0
+2022-23,2639,BAKAYOKO,milan,bakayoko,MIL,C,m,2.0,2.0,2.0,2.0,2.0,2.0
+2022-23,2668,Retsos,verona,retsos,VER,D,dd|ds|dc,1.0,2.0,0.0,1.0,2.0,0.0
+2022-23,2746,Dijks,bologna,dijks,BOL,D,ds|e,3.0,2.0,0.0,3.0,2.0,0.0
+2022-23,4401,Gabbia,milan,gabbia,MIL,D,dc,1.0,2.0,2.0,1.0,2.0,2.0
+2022-23,4500,Di Carmine,cremonese,di-carmine,CRE,A,pc,1.0,2.0,0.0,1.0,2.0,0.0
+2022-23,4960,TUIA,lecce,tuia,LEC,D,dc,3.0,2.0,4.0,3.0,2.0,4.0
+2022-23,4977,RAVAGLIA,sampdoria,ravaglia,SAM,P,por,1.0,2.0,3.0,1.0,2.0,3.0
+2022-23,4983,FERRER,spezia,ferrer,SPE,D,dd|ds|e,3.0,2.0,3.0,4.0,1.0,4.0
+2022-23,4988,Maggiore,salernitana,maggiore,SAL,C,c|t,10.0,2.0,8.0,10.0,2.0,8.0
+2022-23,5313,Dest,milan,dest,MIL,D,dd|ds|e,5.0,2.0,5.0,6.0,1.0,5.0
+2022-23,5354,Ruggeri,atalanta,ruggeri,ATA,D,ds|e,1.0,2.0,8.0,1.0,2.0,8.0
+2022-23,5399,Antov,monza,antov,MON,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,5603,Pongracic,lecce,pongracic,LEC,D,dc,6.0,2.0,3.0,6.0,2.0,3.0
+2022-23,5686,Soppy,atalanta,soppy,ATA,D,dd|e,7.0,2.0,4.0,7.0,2.0,4.0
+2022-23,5719,Asllani,inter,asllani,INT,C,m|c,8.0,2.0,4.0,8.0,2.0,5.0
+2022-23,5747,Tressoldi,sassuolo,tressoldi,SAS,D,dc,3.0,2.0,12.0,3.0,2.0,12.0
+2022-23,5750,Ostigard,napoli,ostigard,NAP,D,dc,7.0,2.0,6.0,7.0,2.0,6.0
+2022-23,5788,Sabiri,sampdoria,sabiri,SAM,C,t|a,15.0,2.0,4.0,15.0,2.0,3.0
+2022-23,5814,Cisse',atalanta,cisse,ATA,A,pc,2.0,2.0,0.0,1.0,1.0,0.0
+2022-23,5833,Gila,lazio,gila,LAZ,D,dc,4.0,2.0,2.0,4.0,2.0,2.0
+2022-23,5843,Valencia D.,salernitana,valencia-d,SAL,A,a,2.0,2.0,1.0,2.0,2.0,1.0
+2022-23,5846,Bayeye,torino,bayeye,TOR,D,e,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,5865,Strizzolo,cremonese,strizzolo,CRE,A,a,2.0,2.0,0.0,2.0,2.0,0.0
+2022-23,5998,Zerbin,napoli,zerbin,NAP,C,w|a,1.0,2.0,3.0,1.0,2.0,3.0
+2022-23,6005,Ilkhan,sampdoria,ilkhan,SAM,C,c|t,3.0,2.0,3.0,3.0,2.0,3.0
+2022-23,6013,Barbieri,juventus,barbieri,JUV,D,dd|ds|e,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,6028,Bronn,salernitana,bronn,SAL,D,dd|dc,5.0,2.0,6.0,5.0,2.0,6.0
+2022-23,6064,Hendry,cremonese,hendry,CRE,D,dc,4.0,2.0,0.0,4.0,2.0,0.0
+2022-23,6131,Paoletti,sampdoria,paoletti,SAM,C,m,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,6135,Turk,sampdoria,turk,SAM,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,6142,Cipot,spezia,cipot,SPE,C,c|w|t,1.0,2.0,2.0,1.0,2.0,2.0
+2022-23,6157,Malagrida,sampdoria,malagrida,SAM,C,w|t|a,1.0,2.0,1.0,1.0,2.0,1.0
+2022-23,11,CONTI,sampdoria,conti,SAM,D,dd|e,3.0,1.0,1.0,3.0,1.0,1.0
+2022-23,21,D'Alessandro,monza,d-alessandro,MON,C,e|w,1.0,1.0,1.0,2.0,1.0,1.0
+2022-23,41,Mirante,milan,mirante,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,50,Mbaye,bologna,mbaye,BOL,D,dd|ds|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,58,Diawara,roma,diawara,ROM,C,m|c,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,76,Romagnoli S.,lecce,romagnoli-s,LEC,D,dc,3.0,1.0,4.0,3.0,1.0,4.0
+2022-23,84,MARRONE,monza,marrone,MON,D,dc,4.0,1.0,1.0,4.0,1.0,1.0
+2022-23,173,CAPEZZI,salernitana,capezzi,SAL,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,217,Lamanna,monza,lamanna,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,220,Ujkani,empoli,ujkani,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,316,Berisha,torino,berisha,TOR,P,por,11.0,1.0,1.0,11.0,1.0,1.0
+2022-23,318,Marchetti,spezia,marchetti,SPE,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,329,RADU,lazio,radu,LAZ,D,ds|dc,2.0,1.0,1.0,2.0,1.0,1.0
+2022-23,360,Paletta,monza,paletta,MON,D,dc,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,454,Capradossi,spezia,capradossi,SPE,D,dc,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,464,Florenzi,milan,florenzi,MIL,D,dd|e,7.0,1.0,2.0,7.0,1.0,2.0
+2022-23,511,Perilli,verona,perilli,VER,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,543,Padelli,udinese,padelli,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,630,SALA,spezia,sala,SPE,D,e|c,5.0,1.0,3.0,6.0,1.0,4.0
+2022-23,633,Fares,lazio,fares,LAZ,D,ds|e,2.0,1.0,1.0,2.0,1.0,1.0
+2022-23,694,Baez,cremonese,baez,CRE,C,e|w,4.0,1.0,0.0,5.0,1.0,0.0
+2022-23,799,BARDI,bologna,bardi,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,1839,EDERA,torino,edera,TOR,A,w|a,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,1847,CALDARA,spezia,caldara,SPE,D,dc,6.0,1.0,8.0,6.0,1.0,8.0
+2022-23,1851,Molina S.,monza,molina-s,MON,C,e,4.0,1.0,0.0,4.0,1.0,0.0
+2022-23,1901,BARBERIS,monza,barberis,MON,C,m|c,7.0,1.0,1.0,7.0,1.0,1.0
+2022-23,1930,Pinsoglio,juventus,pinsoglio,JUV,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,1947,Fiorillo,salernitana,fiorillo,SAL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,2064,Veseli,salernitana,veseli,SAL,D,dd|ds|dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2127,Satalino,sassuolo,satalino,SAS,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2178,Cragno,monza,cragno,MON,P,por,11.0,1.0,1.0,11.0,1.0,1.0
+2022-23,2179,Sirigu,fiorentina,sirigu,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,2208,Jaroszynski,salernitana,jaroszynski,SAL,D,ds|dc|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2286,Crociata,empoli,crociata,EMP,C,c|t,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2297,Rossi F.,atalanta,rossi-f,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,2453,Nastasic,fiorentina,nastasic,FIO,D,dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2722,Ravaglia F.,bologna,ravaglia-f,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,2737,Bettella,monza,bettella,MON,D,dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2742,Valzania,cremonese,valzania,CRE,C,m|c,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,2790,Rosati,fiorentina,rosati,FIO,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2804,Scozzarella,monza,scozzarella,MON,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2826,Pussetto,sampdoria,pussetto,SAM,A,w|a,5.0,1.0,1.0,6.0,2.0,1.0
+2022-23,2835,Kingsley,bologna,kingsley,BOL,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2845,Contini,sampdoria,contini,SAM,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,2855,Vieira,torino,vieira,TOR,C,m|c,4.0,1.0,4.0,4.0,1.0,4.0
+2022-23,4351,Brancolini,lecce,brancolini,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4411,Agoume,inter,agoume,INT,C,m|c,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,4438,Cassandro,lecce,cassandro,LEC,D,dd|ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4468,Bleve,lecce,bleve,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4491,Berardi A.,verona,berardi-a,VER,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4495,Kumbulla,roma,kumbulla,ROM,D,dc,4.0,1.0,4.0,4.0,1.0,4.0
+2022-23,4518,RUSSO A.,sassuolo,russo-a,SAS,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4519,Cetin,lecce,cetin,LEC,D,dc,5.0,1.0,0.0,5.0,1.0,0.0
+2022-23,4521,Muldur,sassuolo,muldur,SAS,D,dd|e,5.0,1.0,2.0,5.0,1.0,2.0
+2022-23,4525,Gemello,torino,gemello,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,4725,Demme,napoli,demme,NAP,C,m,4.0,1.0,2.0,4.0,1.0,2.0
+2022-23,4870,Adopo,torino,adopo,TOR,D,dc,1.0,1.0,4.0,1.0,1.0,4.0
+2022-23,4925,Carboni A.,monza,carboni-a,MON,D,ds|dc,5.0,1.0,0.0,6.0,1.0,0.0
+2022-23,4938,Moro,lazio,moro,LAZ,A,a,1.0,1.0,1.0,1.0,1.0,0.0
+2022-23,4943,Horvath,torino,horvath,TOR,C,t|a,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,4945,Calafiori,roma,calafiori,ROM,D,ds|e,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,4985,Vignali,spezia,vignali,SPE,D,dd|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,4987,Bartolomei,cremonese,bartolomei,CRE,C,c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5304,Boer,roma,boer,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5312,Leo' Sena,spezia,leo-sena,SPE,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5333,Gasparini,udinese,gasparini,UDI,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5378,Oddei,sassuolo,oddei,SAS,A,a,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5391,Kokorin,fiorentina,kokorin,FIO,A,pc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5395,Braaf,verona,braaf,VER,A,w|a,1.0,1.0,6.0,2.0,1.0,7.0
+2022-23,5420,DARBOE,roma,darboe,ROM,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5424,Amey,bologna,amey,BOL,D,dd|dc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5425,Urbanski,bologna,urbanski,BOL,C,t,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5436,Raimondo,bologna,raimondo,BOL,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5442,Bertini,lazio,bertini,LAZ,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5444,CORTINOVIS,verona,cortinovis,VER,C,c|t,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,5448,Furlan,empoli,furlan,EMP,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5456,Ferrarini,monza,ferrarini,MON,D,dd|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5461,KAMENOVIC,lazio,kamenovic,LAZ,D,ds|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5468,Cavion,salernitana,cavion,SAL,C,c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5472,Kristoffersen,salernitana,kristoffersen,SAL,A,pc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5476,Kornvig,spezia,kornvig,SPE,C,c,2.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5499,Hongla,verona,hongla,VER,C,m|c,3.0,1.0,0.0,3.0,1.0,0.0
+2022-23,5500,Cancellieri,lazio,cancellieri,LAZ,A,a,7.0,1.0,4.0,7.0,1.0,4.0
+2022-23,5502,Adamonis,lazio,adamonis,LAZ,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5503,Kechrida,salernitana,kechrida,SAL,D,dd|e,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5505,Kaio Jorge,juventus,kaio-jorge,JUV,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5509,Vina,roma,vina,ROM,D,ds|e,3.0,1.0,0.0,3.0,1.0,0.0
+2022-23,5510,Romero L.,lazio,romero-l,LAZ,C,w|a,2.0,1.0,4.0,2.0,1.0,4.0
+2022-23,5512,DE LUCA,sampdoria,de-luca,SAM,A,pc,4.0,1.0,1.0,4.0,1.0,1.0
+2022-23,5516,Bianco,fiorentina,bianco,FIO,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5517,YEPES,sampdoria,yepes,SAM,C,m,3.0,1.0,1.0,3.0,1.0,1.0
+2022-23,5518,MARFELLA,napoli,marfella,NAP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5519,SHER,spezia,sher,SPE,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5528,ZOVKO,spezia,zovko,SPE,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5610,Vranckx,milan,vranckx,MIL,C,m|c,6.0,1.0,3.0,7.0,1.0,3.0
+2022-23,5682,Molla,bologna,molla,BOL,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5691,Zima,torino,zima,TOR,D,dc,5.0,1.0,4.0,5.0,1.0,4.0
+2022-23,5704,Russo,salernitana,russo,SAL,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5707,Piana,udinese,piana,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5716,Podgoreanu,spezia,podgoreanu,SPE,A,a,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5722,NGUIAMBA,spezia,nguiamba,SPE,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5739,De Winter,empoli,de-winter,EMP,D,dd|dc,4.0,1.0,8.0,5.0,1.0,8.0
+2022-23,5740,ZANOTTI,inter,zanotti,INT,D,dd|e,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5762,Motoc,salernitana,motoc,SAL,D,dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5785,Lazetic,milan,lazetic,MIL,A,pc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5789,Praszelik,verona,praszelik,VER,C,t,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5802,Mikael,salernitana,mikael,SAL,A,pc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5810,Trimboli,sampdoria,trimboli,SAM,C,c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5820,Bertola,spezia,bertola,SPE,D,dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5822,Bagnolini,bologna,bagnolini,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5824,Pafundi,udinese,pafundi,UDI,C,t|a,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5829,MILANESE,cremonese,milanese,CRE,C,c|t,7.0,1.0,0.0,7.0,1.0,0.0
+2022-23,5832,Luis Maximiano,lazio,luis-maximiano,LAZ,P,por,12.0,1.0,1.0,12.0,1.0,1.0
+2022-23,5837,Voelkerling Persson,lecce,voelkerling-persson,LEC,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5849,Buta,udinese,buta,UDI,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5853,Sorrentino A.,monza,sorrentino-a,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5855,Tenkorang,cremonese,tenkorang,CRE,C,c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5859,Ndiaye,cremonese,ndiaye,CRE,D,dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5861,Fiordaliso,cremonese,fiordaliso,CRE,D,dd|dc,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5868,BJORKENGREN,lecce,bjorkengren,LEC,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5872,Helgason,lecce,helgason,LEC,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5873,Listkowski,lecce,listkowski,LEC,C,w,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5874,Rodriguez P.,lecce,rodriguez-p,LEC,A,a,2.0,1.0,0.0,2.0,1.0,0.0
+2022-23,5875,Adli,milan,adli,MIL,C,t,7.0,1.0,3.0,6.0,1.0,2.0
+2022-23,5887,Ciezkowski,cremonese,ciezkowski,CRE,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,5888,Casadei,inter,casadei,INT,C,c|t,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5889,MICAI,salernitana,micai,SAL,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5890,Chiesa M.,verona,chiesa-m,VER,P,por,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5947,Hrustic,verona,hrustic,VER,C,c,4.0,1.0,1.0,3.0,1.0,1.0
+2022-23,5992,Bondo,monza,bondo,MON,C,c|t,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,5994,Ebosse,udinese,ebosse,UDI,D,ds|e,4.0,1.0,1.0,4.0,1.0,1.0
+2022-23,5996,Samek,lecce,samek,LEC,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6009,Degli Innocenti,empoli,degli-innocenti,EMP,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6012,ACELLA,cremonese,acella,CRE,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6017,Tripi,roma,tripi,ROM,C,m|c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,6019,D'Andrea,sassuolo,d-andrea,SAS,C,t|a,1.0,1.0,2.0,1.0,1.0,2.0
+2022-23,6020,Ellertsson,spezia,ellertsson,SPE,C,c|w,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,6029,SARO,cremonese,saro,CRE,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6043,Sosa,bologna,sosa,BOL,D,dc,2.0,1.0,1.0,2.0,1.0,1.0
+2022-23,6056,Guarino,empoli,guarino,EMP,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6057,Garbett,torino,garbett,TOR,C,c,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,6063,Sanca,spezia,sanca,SPE,A,a,1.0,1.0,0.0,1.0,1.0,0.0
+2022-23,6106,Carboni V.,inter,carboni-v,INT,C,t|a,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6113,Montevago,sampdoria,montevago,SAM,A,pc,1.0,1.0,2.0,1.0,1.0,2.0
+2022-23,6118,Moutinho J.,spezia,moutinho-j,SPE,D,ds|e,2.0,1.0,3.0,2.0,1.0,3.0
+2022-23,6125,Vasquez D.,milan,vasquez-d,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6139,Zeefuik,verona,zeefuik,VER,D,dd|e,4.0,1.0,2.0,4.0,1.0,2.0
+2022-23,6143,Krollis,spezia,krollis,SPE,A,pc,1.0,1.0,2.0,1.0,1.0,2.0
+2022-23,6149,Carboni F.,monza,carboni-f,MON,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6160,Vivaldo,udinese,vivaldo,UDI,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6168,Faticanti,roma,faticanti,ROM,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6170,Gineitis,torino,gineitis,TOR,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6172,Vorlicky,atalanta,vorlicky,ATA,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2022-23,6175,Barrenechea,juventus,barrenechea,JUV,C,m|c,1.0,1.0,4.0,1.0,1.0,4.0
+2022-23,6184,Martinelli T.,fiorentina,martinelli-t,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
