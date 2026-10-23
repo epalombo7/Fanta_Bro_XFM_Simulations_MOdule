@@ -1,0 +1,665 @@
+season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_mantra,qa_mantra,fvm_mantra
+2023-24,2764,Martinez L.,inter,martinez-l,INT,A,pc,37.0,41.0,450.0,37.0,41.0,450.0
+2023-24,309,Dybala,roma,dybala,ROM,A,a,30.0,35.0,330.0,30.0,35.0,330.0
+2023-24,2137,Scamacca,atalanta,scamacca,ATA,A,pc,25.0,32.0,330.0,25.0,32.0,330.0
+2023-24,4200,Giroud,milan,giroud,MIL,A,pc,24.0,31.0,320.0,24.0,31.0,320.0
+2023-24,4661,Osimhen,napoli,osimhen,NAP,A,pc,43.0,31.0,340.0,43.0,31.0,340.0
+2023-24,4871,Thuram,inter,thuram,INT,A,pc,23.0,31.0,320.0,23.0,31.0,320.0
+2023-24,2194,Calhanoglu,inter,calhanoglu,INT,C,m|c,16.0,30.0,330.0,18.0,30.0,330.0
+2023-24,5800,Gudmundsson A.,genoa,gudmundsson-a,GEN,C,t|a,14.0,30.0,330.0,13.0,30.0,330.0
+2023-24,2423,Pulisic,milan,pulisic,MIL,C,t|a,18.0,29.0,300.0,17.0,29.0,300.0
+2023-24,4730,Lookman,atalanta,lookman,ATA,A,a,26.0,29.0,250.0,26.0,29.0,250.0
+2023-24,5685,Koopmeiners,atalanta,koopmeiners,ATA,C,c|t,24.0,29.0,300.0,24.0,29.0,300.0
+2023-24,2841,Vlahovic,juventus,vlahovic,JUV,A,pc,28.0,27.0,350.0,28.0,27.0,350.0
+2023-24,4510,Leao,milan,leao,MIL,A,a,31.0,27.0,200.0,31.0,27.0,200.0
+2023-24,608,Zapata D.,torino,zapata-d,TOR,A,pc,19.0,26.0,210.0,19.0,26.0,210.0
+2023-24,4179,Gonzalez N.,fiorentina,gonzalez-n,FIO,A,a,15.0,26.0,125.0,15.0,26.0,125.0
+2023-24,5086,Zirkzee,bologna,zirkzee,BOL,A,pc,11.0,26.0,230.0,10.0,25.0,230.0
+2023-24,5995,De Ketelaere,atalanta,de-ketelaere,ATA,C,t,7.0,26.0,270.0,7.0,26.0,270.0
+2023-24,2002,Chiesa,juventus,chiesa,JUV,A,a,17.0,25.0,100.0,17.0,25.0,100.0
+2023-24,5839,Kvaratskhelia,napoli,kvaratskhelia,NAP,A,a,31.0,25.0,190.0,31.0,25.0,190.0
+2023-24,254,Dimarco,inter,dimarco,INT,D,e,19.0,24.0,150.0,18.0,24.0,150.0
+2023-24,531,Berardi,sassuolo,berardi,SAS,A,a,30.0,24.0,50.0,30.0,24.0,50.0
+2023-24,5734,Soule',frosinone,soule,FRO,A,w|a,4.0,24.0,85.0,5.0,24.0,85.0
+2023-24,2167,Orsolini,bologna,orsolini,BOL,C,w,21.0,23.0,200.0,20.0,23.0,200.0
+2023-24,2531,Lukaku,roma,lukaku,ROM,A,pc,31.0,23.0,260.0,31.0,23.0,260.0
+2023-24,536,Politano,napoli,politano,NAP,C,w,14.0,22.0,85.0,13.0,22.0,85.0
+2023-24,5878,Colpani,monza,colpani,MON,C,c|t,9.0,22.0,105.0,9.0,22.0,105.0
+2023-24,332,Candreva,salernitana,candreva,SAL,C,w,15.0,21.0,60.0,14.0,20.0,60.0
+2023-24,530,Pellegrini Lo.,roma,pellegrini-lo,ROM,C,c|t,16.0,21.0,175.0,16.0,21.0,175.0
+2023-24,2848,Frattesi,inter,frattesi,INT,C,c,17.0,21.0,55.0,17.0,21.0,55.0
+2023-24,5786,Cabral,fiorentina,cabral,FIO,A,pc,21.0,21.0,138.0,21.0,21.0,127.0
+2023-24,6227,Okafor,milan,okafor,MIL,A,pc,16.0,21.0,35.0,15.0,21.0,25.0
+2023-24,367,Bonaventura,fiorentina,bonaventura,FIO,C,c|t,14.0,20.0,90.0,14.0,20.0,95.0
+2023-24,2077,Pasalic,atalanta,pasalic,ATA,C,t,14.0,20.0,130.0,13.0,20.0,130.0
+2023-24,2085,Luis Alberto,lazio,luis-alberto,LAZ,C,c|t,21.0,20.0,80.0,22.0,20.0,80.0
+2023-24,5694,Beto,udinese,beto,UDI,A,pc,21.0,20.0,138.0,21.0,20.0,128.0
+2023-24,5858,Ferguson,bologna,ferguson,BOL,C,c|t,17.0,20.0,50.0,18.0,20.0,50.0
+2023-24,6228,Retegui,genoa,retegui,GEN,A,pc,23.0,20.0,65.0,23.0,20.0,55.0
+2023-24,441,Belotti,fiorentina,belotti,FIO,A,pc,9.0,19.0,60.0,8.0,20.0,50.0
+2023-24,2038,Pinamonti,sassuolo,pinamonti,SAS,A,pc,13.0,19.0,110.0,12.0,19.0,110.0
+2023-24,2529,Mkhitaryan,inter,mkhitaryan,INT,C,c|t,13.0,19.0,40.0,13.0,19.0,40.0
+2023-24,5119,Samardzic,udinese,samardzic,UDI,C,c|t,16.0,19.0,55.0,16.0,19.0,55.0
+2023-24,6145,Ngonge,napoli,ngonge,NAP,A,a,12.0,19.0,23.0,12.0,19.0,23.0
+2023-24,6206,Fabbian,bologna,fabbian,BOL,C,c,5.0,19.0,45.0,5.0,19.0,45.0
+2023-24,6215,Lucca,udinese,lucca,UDI,A,pc,6.0,19.0,80.0,5.0,19.0,70.0
+2023-24,181,Vecino,lazio,vecino,LAZ,C,m|c,6.0,18.0,27.0,7.0,18.0,30.0
+2023-24,5001,Miranchuk,atalanta,miranchuk,ATA,C,t|a,10.0,18.0,40.0,10.0,18.0,40.0
+2023-24,5297,Luvumbo,cagliari,luvumbo,CAG,A,a,8.0,18.0,41.0,8.0,18.0,41.0
+2023-24,5471,Djuric,monza,djuric,MON,A,pc,9.0,18.0,55.0,8.0,18.0,55.0
+2023-24,5792,Ederson D.s.,atalanta,ederson-d-s,ATA,C,c|t,10.0,18.0,51.0,10.0,18.0,51.0
+2023-24,6409,Beltran L.,fiorentina,beltran-l,FIO,A,pc,16.0,18.0,60.0,16.0,18.0,50.0
+2023-24,6439,Cheddira,frosinone,cheddira,FRO,A,pc,11.0,18.0,42.0,11.0,18.0,32.0
+2023-24,335,Felipe Anderson,lazio,felipe-anderson,LAZ,C,w|a,23.0,17.0,49.0,23.0,17.0,49.0
+2023-24,1870,Barella,inter,barella,INT,C,c,20.0,17.0,57.0,20.0,17.0,57.0
+2023-24,2428,Sommer,inter,sommer,INT,P,por,15.0,17.0,120.0,15.0,17.0,120.0
+2023-24,6061,Oudin,lecce,oudin,LEC,C,w|t,6.0,17.0,30.0,5.0,17.0,30.0
+2023-24,453,Szczesny,juventus,szczesny,JUV,P,por,15.0,16.0,100.0,15.0,16.0,100.0
+2023-24,632,Zaccagni,lazio,zaccagni,LAZ,C,w|a,28.0,16.0,120.0,28.0,16.0,120.0
+2023-24,785,Immobile,lazio,immobile,LAZ,A,pc,32.0,16.0,150.0,32.0,16.0,150.0
+2023-24,1976,Mazzitelli,frosinone,mazzitelli,FRO,C,m|c,4.0,16.0,33.0,5.0,16.0,38.0
+2023-24,2369,Thauvin,udinese,thauvin,UDI,A,a,11.0,16.0,41.0,11.0,16.0,41.0
+2023-24,2475,Sanchez,inter,sanchez,INT,A,a,15.0,16.0,21.0,15.0,16.0,21.0
+2023-24,4199,Loftus-Cheek,milan,loftus-cheek,MIL,C,c,13.0,16.0,65.0,13.0,16.0,65.0
+2023-24,4268,Arnautovic,inter,arnautovic,INT,A,pc,23.0,16.0,35.0,23.0,16.0,25.0
+2023-24,4364,Gaetano,cagliari,gaetano,CAG,C,c|t,3.0,16.0,44.0,3.0,16.0,44.0
+2023-24,4433,Zortea,frosinone,zortea,FRO,D,dd|ds|e,3.0,16.0,55.0,4.0,16.0,60.0
+2023-24,5513,Dumfries,inter,dumfries,INT,D,e,12.0,16.0,85.0,11.0,15.0,85.0
+2023-24,5791,Frendrup,genoa,frendrup,GEN,C,e|m,5.0,16.0,35.0,7.0,15.0,40.0
+2023-24,5841,Svilar,roma,svilar,ROM,P,por,1.0,16.0,70.0,1.0,16.0,70.0
+2023-24,5876,Di Gregorio,monza,di-gregorio,MON,P,por,12.0,16.0,80.0,12.0,16.0,80.0
+2023-24,133,Skorupski,bologna,skorupski,BOL,P,por,10.0,15.0,65.0,10.0,15.0,65.0
+2023-24,302,Pereyra,udinese,pereyra,UDI,C,c|w,13.0,15.0,40.0,14.0,15.0,40.0
+2023-24,440,Viola,cagliari,viola,CAG,C,c,2.0,15.0,24.0,2.0,15.0,26.0
+2023-24,779,Cristante,roma,cristante,ROM,C,m|c,9.0,15.0,34.0,10.0,14.0,40.0
+2023-24,2379,Rabiot,juventus,rabiot,JUV,C,c,22.0,15.0,65.0,22.0,15.0,65.0
+2023-24,2724,Buongiorno,torino,buongiorno,TOR,D,dc,11.0,15.0,90.0,11.0,15.0,90.0
+2023-24,2815,Terracciano,fiorentina,terracciano,FIO,P,por,10.0,15.0,65.0,10.0,15.0,65.0
+2023-24,4292,Hernandez T.,milan,hernandez-t,MIL,D,ds|e,17.0,15.0,100.0,17.0,15.0,100.0
+2023-24,4431,Carnesecchi,atalanta,carnesecchi,ATA,P,por,11.0,15.0,65.0,11.0,15.0,65.0
+2023-24,4947,Brescianini,frosinone,brescianini,FRO,C,m|c,5.0,15.0,24.0,6.0,15.0,29.0
+2023-24,5919,Tchaouna,salernitana,tchaouna,SAL,C,w,3.0,15.0,45.0,2.0,15.0,45.0
+2023-24,6060,Lauriente',sassuolo,lauriente,SAS,A,a,21.0,15.0,40.0,21.0,15.0,40.0
+2023-24,507,Muriel,atalanta,muriel,ATA,A,pc,14.0,14.0,28.0,13.0,14.0,18.0
+2023-24,513,Acerbi,inter,acerbi,INT,D,dc,11.0,14.0,90.0,11.0,14.0,90.0
+2023-24,2120,Bastoni,inter,bastoni,INT,D,dc,13.0,14.0,85.0,13.0,14.0,85.0
+2023-24,2170,Milinkovic-Savic V.,torino,milinkovic-savic-v,TOR,P,por,10.0,14.0,65.0,10.0,14.0,65.0
+2023-24,2741,Pessina,monza,pessina,MON,C,c|t,14.0,14.0,43.0,14.0,14.0,43.0
+2023-24,2788,Bremer,juventus,bremer,JUV,D,dc,13.0,14.0,80.0,13.0,14.0,80.0
+2023-24,4359,Piccoli,lecce,piccoli,LEC,A,pc,7.0,14.0,22.0,6.0,14.0,12.0
+2023-24,4360,Caprile,empoli,caprile,EMP,P,por,7.0,14.0,25.0,7.0,14.0,25.0
+2023-24,4371,Raspadori,napoli,raspadori,NAP,A,a,10.0,14.0,25.0,10.0,14.0,25.0
+2023-24,4887,Bellanova,torino,bellanova,TOR,D,dd|e,8.0,14.0,65.0,8.0,14.0,65.0
+2023-24,4892,Saelemaekers,bologna,saelemaekers,BOL,C,w,5.0,14.0,42.0,5.0,14.0,42.0
+2023-24,4896,Maldini,monza,maldini,MON,C,t|a,5.0,14.0,35.0,5.0,14.0,35.0
+2023-24,5506,Ekuban,genoa,ekuban,GEN,A,a,1.0,14.0,21.0,1.0,14.0,11.0
+2023-24,5795,Azmoun,roma,azmoun,ROM,A,pc,13.0,14.0,27.0,12.0,13.0,17.0
+2023-24,5877,Carlos Augusto,inter,carlos-augusto,INT,D,e,17.0,14.0,27.0,17.0,14.0,27.0
+2023-24,6106,Carboni V.,monza,carboni-v,MON,C,t|a,2.0,14.0,24.0,2.0,14.0,24.0
+2023-24,6224,Reijnders,milan,reijnders,MIL,C,m|c,12.0,14.0,28.0,13.0,14.0,35.0
+2023-24,6556,Noslin,verona,noslin,VER,A,w|a,4.0,14.0,55.0,5.0,14.0,65.0
+2023-24,382,Niang,empoli,niang,EMP,A,pc,6.0,13.0,55.0,6.0,13.0,45.0
+2023-24,572,Meret,napoli,meret,NAP,P,por,17.0,13.0,55.0,17.0,13.0,55.0
+2023-24,795,El Shaarawy,roma,el-shaarawy,ROM,C,w|a,16.0,13.0,39.0,15.0,13.0,39.0
+2023-24,2438,Jovic,milan,jovic,MIL,A,pc,14.0,13.0,28.0,13.0,12.0,18.0
+2023-24,2525,Darmian,inter,darmian,INT,D,dd|dc,11.0,13.0,48.0,13.0,13.0,52.0
+2023-24,2719,Barrow,bologna,barrow,BOL,A,a,14.0,13.0,11.0,14.0,13.0,11.0
+2023-24,2818,Bennacer,milan,bennacer,MIL,C,m|c,10.0,13.0,30.0,11.0,13.0,35.0
+2023-24,4427,Malinovskyi,genoa,malinovskyi,GEN,C,t,17.0,13.0,23.0,16.0,13.0,23.0
+2023-24,4436,Cambiaghi,empoli,cambiaghi,EMP,A,a,12.0,13.0,27.0,12.0,13.0,27.0
+2023-24,4945,Calafiori,bologna,calafiori,BOL,D,ds|e,4.0,13.0,75.0,4.0,13.0,75.0
+2023-24,4957,Montipo',verona,montipo,VER,P,por,7.0,13.0,20.0,7.0,13.0,20.0
+2023-24,4973,McKennie,juventus,mckennie,JUV,C,c,8.0,13.0,45.0,7.0,13.0,45.0
+2023-24,5323,Martinez Quarta,fiorentina,martinez-quarta,FIO,D,dc,6.0,13.0,50.0,6.0,13.0,45.0
+2023-24,5365,Dragusin,genoa,dragusin,GEN,D,dd|dc,6.0,13.0,38.0,7.0,13.0,45.0
+2023-24,5514,Vasquez,genoa,vasquez,GEN,D,ds|dc,4.0,13.0,17.0,5.0,13.0,20.0
+2023-24,5672,Dia,salernitana,dia,SAL,A,pc,26.0,13.0,10.0,26.0,13.0,10.0
+2023-24,5687,Vlasic,torino,vlasic,TOR,C,w|t,18.0,13.0,50.0,19.0,13.0,55.0
+2023-24,5688,Harroui,frosinone,harroui,FRO,C,m|c,4.0,13.0,25.0,5.0,13.0,30.0
+2023-24,5836,Ceesay,lecce,ceesay,LEC,A,pc,13.0,13.0,20.0,13.0,13.0,15.0
+2023-24,5844,Thorstvedt,sassuolo,thorstvedt,SAS,C,c|t,6.0,13.0,43.0,6.0,13.0,43.0
+2023-24,5882,Mota,monza,mota,MON,A,a,11.0,13.0,33.0,11.0,13.0,33.0
+2023-24,6164,Vitinha O.,genoa,vitinha-o,GEN,A,pc,14.0,13.0,20.0,14.0,13.0,10.0
+2023-24,6217,Bisseck,inter,bisseck,INT,D,dc,4.0,13.0,27.0,4.0,13.0,27.0
+2023-24,6226,Castellanos,lazio,castellanos,LAZ,A,pc,13.0,13.0,50.0,12.0,14.0,50.0
+2023-24,6486,Suslov,verona,suslov,VER,C,c|w|t,3.0,13.0,40.0,5.0,14.0,45.0
+2023-24,479,Sanabria,torino,sanabria,TOR,A,pc,24.0,12.0,50.0,24.0,12.0,50.0
+2023-24,526,Duncan,fiorentina,duncan,FIO,C,c,5.0,12.0,31.0,4.0,12.0,31.0
+2023-24,2012,Milik,juventus,milik,JUV,A,pc,18.0,12.0,30.0,17.0,12.0,20.0
+2023-24,2134,Falcone,lecce,falcone,LEC,P,por,8.0,12.0,25.0,8.0,12.0,25.0
+2023-24,2169,Rodriguez R.,torino,rodriguez-r,TOR,D,ds|dc,8.0,12.0,25.0,9.0,11.0,27.0
+2023-24,2814,Provedel,lazio,provedel,LAZ,P,por,16.0,12.0,55.0,16.0,12.0,55.0
+2023-24,2816,Di Lorenzo,napoli,di-lorenzo,NAP,D,dd|e,18.0,12.0,55.0,18.0,12.0,55.0
+2023-24,4285,Arthur Melo,fiorentina,arthur-melo,FIO,C,m|c,7.0,12.0,26.0,8.0,12.0,31.0
+2023-24,4751,Tomori,milan,tomori,MIL,D,dc,13.0,12.0,75.0,13.0,12.0,75.0
+2023-24,4869,Dominguez,bologna,dominguez,BOL,C,m|c,12.0,12.0,26.0,14.0,14.0,30.0
+2023-24,5116,Martinez Jo.,genoa,martinez-jo,GEN,P,por,8.0,12.0,40.0,8.0,12.0,40.0
+2023-24,5311,Shomurodov,cagliari,shomurodov,CAG,A,pc,13.0,12.0,22.0,13.0,12.0,12.0
+2023-24,5500,Cancellieri,empoli,cancellieri,EMP,A,a,5.0,12.0,25.0,5.0,12.0,25.0
+2023-24,5526,Scalvini,atalanta,scalvini,ATA,D,dc,9.0,12.0,40.0,9.0,12.0,40.0
+2023-24,6229,Toure' E.,atalanta,toure-e,ATA,A,pc,16.0,12.0,30.0,15.0,12.0,20.0
+2023-24,6252,Folorunsho,verona,folorunsho,VER,C,c|t,2.0,12.0,41.0,2.0,12.0,41.0
+2023-24,6398,Isaksen,lazio,isaksen,LAZ,A,a,12.0,12.0,25.0,12.0,12.0,25.0
+2023-24,6434,Yildiz,juventus,yildiz,JUV,A,a,1.0,12.0,30.0,1.0,12.0,30.0
+2023-24,6435,Krstovic,lecce,krstovic,LEC,A,pc,11.0,12.0,47.0,11.0,12.0,47.0
+2023-24,6462,Okoye,udinese,okoye,UDI,P,por,1.0,12.0,20.0,1.0,12.0,20.0
+2023-24,152,Zielinski,napoli,zielinski,NAP,C,c|t,20.0,11.0,30.0,20.0,11.0,30.0
+2023-24,170,Badelj,genoa,badelj,GEN,C,m|c,5.0,11.0,23.0,6.0,11.0,28.0
+2023-24,393,Luperto,empoli,luperto,EMP,D,dc,8.0,11.0,40.0,8.0,11.0,40.0
+2023-24,495,Correa,inter,correa,INT,A,a,11.0,11.0,25.0,11.0,11.0,27.0
+2023-24,1933,Mandragora,fiorentina,mandragora,FIO,C,m|c,9.0,11.0,14.0,10.0,11.0,19.0
+2023-24,2172,Barak,fiorentina,barak,FIO,C,t,12.0,11.0,20.0,11.0,10.0,15.0
+2023-24,2296,Mancini,roma,mancini,ROM,D,dc,11.0,11.0,60.0,11.0,11.0,60.0
+2023-24,2762,Kouame',fiorentina,kouame,FIO,A,a,9.0,11.0,13.0,9.0,11.0,13.0
+2023-24,4186,Guendouzi,lazio,guendouzi,LAZ,C,c|t,13.0,11.0,29.0,12.0,11.0,29.0
+2023-24,4210,Mina,cagliari,mina,CAG,D,dc,8.0,11.0,25.0,8.0,11.0,25.0
+2023-24,4404,Thorsby,genoa,thorsby,GEN,C,m|c,9.0,11.0,15.0,11.0,11.0,20.0
+2023-24,4479,Elmas,napoli,elmas,NAP,C,c|w|t,15.0,11.0,25.0,17.0,11.0,30.0
+2023-24,4514,Nandez,cagliari,nandez,CAG,C,e|c,7.0,11.0,27.0,8.0,11.0,30.0
+2023-24,4517,Lozano,napoli,lozano,NAP,A,a,12.0,11.0,21.0,12.0,11.0,23.0
+2023-24,5007,Ilic,torino,ilic,TOR,C,c,12.0,11.0,20.0,12.0,11.0,20.0
+2023-24,5063,Radonjic,torino,radonjic,TOR,C,w,11.0,11.0,20.0,10.0,10.0,15.0
+2023-24,5375,Maehle,atalanta,maehle,ATA,D,e,11.0,11.0,23.0,10.0,10.0,19.0
+2023-24,5719,Asllani,inter,asllani,INT,C,m|c,4.0,11.0,13.0,5.0,11.0,15.0
+2023-24,5867,Gendrey,lecce,gendrey,LEC,D,dd|e,6.0,11.0,26.0,6.0,11.0,30.0
+2023-24,6066,Posch,bologna,posch,BOL,D,dd|dc,16.0,11.0,35.0,18.0,11.0,40.0
+2023-24,6207,Almqvist,lecce,almqvist,LEC,A,a,10.0,11.0,20.0,10.0,11.0,20.0
+2023-24,6482,Mandas,lazio,mandas,LAZ,P,por,1.0,11.0,1.0,1.0,11.0,1.0
+2023-24,6573,Alcaraz,juventus,alcaraz,JUV,C,c|t,14.0,11.0,27.0,14.0,11.0,27.0
+2023-24,236,Lazovic,verona,lazovic,VER,C,e|w,15.0,10.0,25.0,15.0,10.0,25.0
+2023-24,322,De Vrij,inter,de-vrij,INT,D,dc,6.0,10.0,22.0,6.0,10.0,22.0
+2023-24,468,Paredes,roma,paredes,ROM,C,m|c,7.0,10.0,33.0,8.0,10.0,38.0
+2023-24,537,Sansone,lecce,sansone,LEC,A,a,7.0,10.0,18.0,7.0,10.0,18.0
+2023-24,554,Zappacosta,atalanta,zappacosta,ATA,D,e,15.0,10.0,33.0,14.0,10.0,33.0
+2023-24,788,Freuler,bologna,freuler,BOL,C,m|c,7.0,10.0,27.0,8.0,10.0,32.0
+2023-24,1852,Spinazzola,roma,spinazzola,ROM,D,e,10.0,10.0,20.0,9.0,10.0,20.0
+2023-24,1939,Lapadula,cagliari,lapadula,CAG,A,pc,15.0,10.0,27.0,15.0,10.0,17.0
+2023-24,4142,Aouar,roma,aouar,ROM,C,c|t,15.0,10.0,23.0,15.0,10.0,23.0
+2023-24,4177,Pavard,inter,pavard,INT,D,dd|dc,14.0,10.0,70.0,15.0,10.0,75.0
+2023-24,4237,Danilo,juventus,danilo,JUV,D,dd|ds|dc,15.0,10.0,42.0,18.0,10.0,45.0
+2023-24,4312,Maignan,milan,maignan,MIL,P,por,17.0,10.0,75.0,17.0,10.0,75.0
+2023-24,4377,Castrovilli,fiorentina,castrovilli,FIO,C,c|t,10.0,10.0,20.0,9.0,10.0,20.0
+2023-24,4502,Gallo,lecce,gallo,LEC,D,ds|e,5.0,10.0,23.0,5.0,10.0,23.0
+2023-24,4923,Colombo,monza,colombo,MON,A,pc,10.0,10.0,15.0,9.0,10.0,10.0
+2023-24,4970,Messias,genoa,messias,GEN,C,w,9.0,10.0,23.0,8.0,10.0,23.0
+2023-24,5354,Ruggeri,atalanta,ruggeri,ATA,D,ds|e,3.0,10.0,42.0,4.0,11.0,42.0
+2023-24,5520,Cambiaso,juventus,cambiaso,JUV,D,dd|ds|e,5.0,10.0,46.0,6.0,10.0,55.0
+2023-24,5555,Kamara H.,udinese,kamara-h,UDI,D,ds|e,6.0,10.0,26.0,6.0,10.0,26.0
+2023-24,5823,Baldanzi,roma,baldanzi,ROM,C,t|a,15.0,10.0,25.0,14.0,11.0,25.0
+2023-24,5831,Gatti,juventus,gatti,JUV,D,dc,6.0,10.0,52.0,6.0,10.0,52.0
+2023-24,5870,Hjulmand,lecce,hjulmand,LEC,C,m|c,10.0,10.0,10.0,12.0,12.0,14.0
+2023-24,6001,Banda,lecce,banda,LEC,A,a,8.0,10.0,20.0,8.0,10.0,20.0
+2023-24,6042,Lucumi',bologna,lucumi,BOL,D,dc,7.0,10.0,23.0,7.0,10.0,23.0
+2023-24,6218,Oristanio,cagliari,oristanio,CAG,C,w|t|a,4.0,10.0,26.0,7.0,10.0,30.0
+2023-24,6235,Kayode,fiorentina,kayode,FIO,D,dd|ds|e,1.0,10.0,25.0,2.0,11.0,30.0
+2023-24,6580,Swiderski,verona,swiderski,VER,A,pc,8.0,10.0,26.0,8.0,10.0,16.0
+2023-24,247,Pavoletti,cagliari,pavoletti,CAG,A,pc,4.0,9.0,23.0,3.0,9.0,13.0
+2023-24,252,Biraghi,fiorentina,biraghi,FIO,D,ds|e,10.0,9.0,29.0,10.0,9.0,29.0
+2023-24,327,Patric,lazio,patric,LAZ,D,dd|dc,5.0,9.0,20.0,6.0,9.0,20.0
+2023-24,357,Calabria,milan,calabria,MIL,D,dd|e,9.0,9.0,25.0,9.0,9.0,25.0
+2023-24,464,Florenzi,milan,florenzi,MIL,D,dd|ds|e,3.0,9.0,5.0,4.0,9.0,7.0
+2023-24,643,Defrel,sassuolo,defrel,SAS,A,a,9.0,9.0,10.0,9.0,9.0,10.0
+2023-24,827,Locatelli,juventus,locatelli,JUV,C,m|c,12.0,9.0,28.0,13.0,9.0,33.0
+2023-24,1857,Di Francesco F.,lecce,di-francesco-f,LEC,A,a,8.0,9.0,8.0,8.0,9.0,8.0
+2023-24,2006,Lirola,frosinone,lirola,FRO,D,dd|e,3.0,9.0,13.0,3.0,9.0,13.0
+2023-24,2117,Kastanos,salernitana,kastanos,SAL,C,c|t,7.0,9.0,13.0,7.0,9.0,13.0
+2023-24,2160,Gosens,inter,gosens,INT,D,e,9.0,9.0,20.0,8.0,8.0,14.0
+2023-24,2392,Walace,udinese,walace,UDI,C,m|c,7.0,9.0,22.0,8.0,9.0,25.0
+2023-24,2528,Matic,roma,matic,ROM,C,m|c,9.0,9.0,10.0,10.0,10.0,12.0
+2023-24,2640,Kolasinac,atalanta,kolasinac,ATA,D,ds|dc,9.0,9.0,33.0,10.0,9.0,38.0
+2023-24,2722,Ravaglia F.,bologna,ravaglia-f,BOL,P,por,1.0,9.0,1.0,1.0,9.0,1.0
+2023-24,4184,Brekalo,fiorentina,brekalo,FIO,A,w|a,11.0,9.0,18.0,13.0,9.0,23.0
+2023-24,4342,Duda,verona,duda,VER,C,c|t,6.0,9.0,24.0,6.0,9.0,24.0
+2023-24,4409,Rrahmani,napoli,rrahmani,NAP,D,dc,14.0,9.0,38.0,14.0,9.0,38.0
+2023-24,4486,Strefezza,lecce,strefezza,LEC,C,w,18.0,9.0,25.0,17.0,8.0,25.0
+2023-24,4772,Angelino,roma,angelino,ROM,D,ds|e,8.0,9.0,33.0,8.0,9.0,33.0
+2023-24,4856,Chukwueze,milan,chukwueze,MIL,C,w|a,19.0,9.0,35.0,18.0,9.0,35.0
+2023-24,4988,Maggiore,salernitana,maggiore,SAL,C,c,3.0,9.0,18.0,3.0,9.0,18.0
+2023-24,5564,Ndoye,bologna,ndoye,BOL,C,w|a,12.0,9.0,29.0,11.0,9.0,29.0
+2023-24,6112,Iling Junior,juventus,iling-junior,JUV,C,w,4.0,9.0,23.0,3.0,9.0,23.0
+2023-24,6148,Kristiansen,bologna,kristiansen,BOL,D,ds|e,6.0,9.0,24.0,6.0,9.0,24.0
+2023-24,6225,El Azzouzi,bologna,el-azzouzi,BOL,C,m|c,1.0,9.0,23.0,1.0,9.0,28.0
+2023-24,22,De Roon,atalanta,de-roon,ATA,C,m|c,11.0,8.0,28.0,12.0,8.0,33.0
+2023-24,294,Rugani,juventus,rugani,JUV,D,dc,3.0,8.0,14.0,3.0,8.0,14.0
+2023-24,376,Verdi,torino,verdi,TOR,C,w|t,8.0,8.0,8.0,8.0,8.0,8.0
+2023-24,487,De Silvestri,bologna,de-silvestri,BOL,D,dd|e,2.0,8.0,8.0,2.0,8.0,8.0
+2023-24,505,Bonazzoli,verona,bonazzoli,VER,A,a,7.0,8.0,26.0,7.0,8.0,16.0
+2023-24,787,Djimsiti,atalanta,djimsiti,ATA,D,dc,7.0,8.0,33.0,7.0,8.0,33.0
+2023-24,801,Gagliardini,monza,gagliardini,MON,C,m|c,6.0,8.0,25.0,7.0,8.0,30.0
+2023-24,1997,Simy,salernitana,simy,SAL,A,pc,1.0,8.0,18.0,1.0,8.0,10.0
+2023-24,2285,Bani,genoa,bani,GEN,D,dc,3.0,8.0,24.0,3.0,8.0,24.0
+2023-24,2544,Abraham,roma,abraham,ROM,A,pc,15.0,8.0,45.0,15.0,8.0,45.0
+2023-24,2765,Odgaard,bologna,odgaard,BOL,A,pc,4.0,8.0,22.0,4.0,8.0,12.0
+2023-24,2839,Sottil,fiorentina,sottil,FIO,C,w,8.0,8.0,21.0,8.0,8.0,21.0
+2023-24,4287,Lobotka,napoli,lobotka,NAP,C,m|c,13.0,8.0,30.0,14.0,8.0,40.0
+2023-24,4332,Demiral,atalanta,demiral,ATA,D,dc,8.0,8.0,11.0,8.0,8.0,11.0
+2023-24,4376,Zurkowski,empoli,zurkowski,EMP,C,c,7.0,8.0,30.0,7.0,8.0,30.0
+2023-24,4385,Lazaro,torino,lazaro,TOR,D,e,4.0,8.0,24.0,4.0,8.0,24.0
+2023-24,4393,Schouten,bologna,schouten,BOL,C,m|c,8.0,8.0,11.0,9.0,9.0,14.0
+2023-24,4401,Gabbia,milan,gabbia,MIL,D,dc,2.0,8.0,18.0,2.0,8.0,18.0
+2023-24,4426,Toljan,sassuolo,toljan,SAS,D,dd|e,6.0,8.0,24.0,6.0,8.0,24.0
+2023-24,4461,Zappa,cagliari,zappa,CAG,D,dd|e,6.0,8.0,21.0,6.0,8.0,21.0
+2023-24,4658,Ikone',fiorentina,ikone,FIO,C,w,13.0,8.0,27.0,12.0,8.0,27.0
+2023-24,4711,Kostic,juventus,kostic,JUV,C,e|w,15.0,8.0,25.0,15.0,8.0,25.0
+2023-24,4899,Singo,torino,singo,TOR,D,e,8.0,8.0,20.0,7.0,7.0,20.0
+2023-24,4904,Mari',monza,mari,MON,D,dc,9.0,8.0,26.0,9.0,8.0,26.0
+2023-24,4965,Marin,empoli,marin,EMP,C,m|c,8.0,8.0,17.0,9.0,8.0,20.0
+2023-24,5336,Nzola,fiorentina,nzola,FIO,A,pc,23.0,8.0,15.0,23.0,8.0,10.0
+2023-24,5451,Bajrami,sassuolo,bajrami,SAS,C,t,13.0,8.0,20.0,12.0,8.0,20.0
+2023-24,5511,Matheus Henrique,sassuolo,matheus-henrique,SAS,C,c,9.0,8.0,26.0,8.0,9.0,26.0
+2023-24,5788,Sabiri,fiorentina,sabiri,FIO,C,t|a,9.0,8.0,7.0,9.0,8.0,5.0
+2023-24,5838,Birindelli,monza,birindelli,MON,D,dd|ds|e,5.0,8.0,13.0,6.0,8.0,15.0
+2023-24,5847,Bijol,udinese,bijol,UDI,D,dc,9.0,8.0,27.0,9.0,8.0,27.0
+2023-24,5850,Lovric,udinese,lovric,UDI,C,c|t,15.0,8.0,25.0,15.0,8.0,25.0
+2023-24,5856,Sambia,salernitana,sambia,SAL,D,dd|e,4.0,8.0,10.0,4.0,8.0,10.0
+2023-24,5948,Kamada,lazio,kamada,LAZ,C,c|t,15.0,8.0,37.0,15.0,8.0,37.0
+2023-24,6202,Beukema,bologna,beukema,BOL,D,dc,6.0,8.0,40.0,6.0,8.0,40.0
+2023-24,6212,Zarraga,udinese,zarraga,UDI,C,c,3.0,8.0,15.0,3.0,8.0,15.0
+2023-24,6230,Dossena,cagliari,dossena,CAG,D,dc,6.0,8.0,25.0,6.0,8.0,25.0
+2023-24,6458,Serdar,verona,serdar,VER,C,c|t,5.0,8.0,15.0,5.0,8.0,15.0
+2023-24,76,Romagnoli S.,frosinone,romagnoli-s,FRO,D,dc,5.0,7.0,13.0,5.0,7.0,13.0
+2023-24,306,Cerri,empoli,cerri,EMP,A,pc,7.0,7.0,13.0,7.0,7.0,10.0
+2023-24,470,Strootman,genoa,strootman,GEN,C,m|c,6.0,7.0,15.0,7.0,7.0,15.0
+2023-24,509,Consigli,sassuolo,consigli,SAS,P,por,5.0,7.0,14.0,5.0,7.0,14.0
+2023-24,574,Scuffet,cagliari,scuffet,CAG,P,por,1.0,7.0,15.0,1.0,7.0,15.0
+2023-24,791,Sabelli,genoa,sabelli,GEN,D,dd|ds|e,4.0,7.0,18.0,5.0,7.0,22.0
+2023-24,2489,Pedro,lazio,pedro,LAZ,A,a,12.0,7.0,21.0,12.0,7.0,21.0
+2023-24,2653,Lykogiannis,bologna,lykogiannis,BOL,D,ds|e,5.0,7.0,12.0,5.0,7.0,12.0
+2023-24,2769,Magnani,verona,magnani,VER,D,dc,3.0,7.0,10.0,3.0,7.0,10.0
+2023-24,2819,Caputo,empoli,caputo,EMP,A,pc,15.0,7.0,20.0,15.0,7.0,10.0
+2023-24,4220,Zambo Anguissa,napoli,zambo-anguissa,NAP,C,m|c,14.0,7.0,22.0,15.0,7.0,25.0
+2023-24,4245,Smalling,roma,smalling,ROM,D,dc,15.0,7.0,20.0,15.0,7.0,20.0
+2023-24,4270,Rui Patricio,roma,rui-patricio,ROM,P,por,14.0,7.0,5.0,14.0,7.0,5.0
+2023-24,4331,Ibanez,roma,ibanez,ROM,D,dc,7.0,7.0,13.0,7.0,7.0,13.0
+2023-24,4421,Augello,cagliari,augello,CAG,D,ds|e,5.0,7.0,11.0,5.0,7.0,11.0
+2023-24,4867,Turati,frosinone,turati,FRO,P,por,5.0,7.0,12.0,5.0,7.0,12.0
+2023-24,4952,Monterisi,frosinone,monterisi,FRO,D,dc,1.0,7.0,22.0,1.0,7.0,22.0
+2023-24,5093,Reinier,frosinone,reinier,FRO,C,w|t,8.0,7.0,22.0,8.0,7.0,25.0
+2023-24,5239,Llorente D.,roma,llorente-d,ROM,D,dc,6.0,7.0,22.0,6.0,7.0,22.0
+2023-24,5267,Racic,sassuolo,racic,SAS,C,m|c,4.0,7.0,8.0,5.0,7.0,10.0
+2023-24,5397,Kovalenko,empoli,kovalenko,EMP,C,c|t,4.0,7.0,12.0,4.0,7.0,12.0
+2023-24,5423,Bove,roma,bove,ROM,C,c,5.0,7.0,23.0,5.0,7.0,23.0
+2023-24,5453,Ricci S.,torino,ricci-s,TOR,C,m|c,13.0,7.0,24.0,14.0,7.0,29.0
+2023-24,5505,Kaio Jorge,frosinone,kaio-jorge,FRO,A,pc,1.0,7.0,21.0,1.0,7.0,11.0
+2023-24,5603,Pongracic,lecce,pongracic,LEC,D,dc,5.0,7.0,23.0,5.0,7.0,23.0
+2023-24,5637,Davis K.,udinese,davis-k,UDI,A,pc,10.0,7.0,20.0,10.0,7.0,20.0
+2023-24,5677,Perez N.,udinese,perez-n,UDI,D,dc,9.0,7.0,23.0,9.0,7.0,23.0
+2023-24,5678,Holm,atalanta,holm,ATA,D,e,10.0,7.0,25.0,9.0,7.0,25.0
+2023-24,5784,Aebischer,bologna,aebischer,BOL,C,c|w|t,5.0,7.0,16.0,5.0,7.0,16.0
+2023-24,5807,Jovane,salernitana,jovane,SAL,A,a,5.0,7.0,14.0,5.0,7.0,14.0
+2023-24,5875,Adli,milan,adli,MIL,C,t,1.0,7.0,10.0,1.0,7.0,5.0
+2023-24,5982,Spence,genoa,spence,GEN,D,dd|e,5.0,7.0,13.0,5.0,7.0,13.0
+2023-24,5999,Gonzalez J.,lecce,gonzalez-j,LEC,C,c,7.0,7.0,17.0,7.0,7.0,17.0
+2023-24,6041,Schuurs,torino,schuurs,TOR,D,dc,14.0,7.0,10.0,14.0,7.0,10.0
+2023-24,6047,Ehizibue,udinese,ehizibue,UDI,D,dd|e,5.0,7.0,6.0,5.0,7.0,6.0
+2023-24,6054,Moro N.,bologna,moro-n,BOL,C,m|c,6.0,7.0,16.0,6.0,7.0,20.0
+2023-24,6119,Solbakken,roma,solbakken,ROM,A,a,8.0,7.0,6.0,8.0,7.0,6.0
+2023-24,6250,Maric,monza,maric,MON,A,pc,1.0,7.0,1.0,1.0,7.0,1.0
+2023-24,6257,Dorgu,lecce,dorgu,LEC,D,ds|e,1.0,7.0,26.0,1.0,7.0,26.0
+2023-24,6424,Prati,cagliari,prati,CAG,C,m|c,2.0,7.0,15.0,3.0,7.0,15.0
+2023-24,6481,Payero,udinese,payero,UDI,C,c|t,5.0,7.0,34.0,5.0,7.0,34.0
+2023-24,4,Sportiello,milan,sportiello,MIL,P,por,1.0,6.0,2.0,1.0,6.0,2.0
+2023-24,459,Manolas,salernitana,manolas,SAL,D,dc,6.0,6.0,12.0,6.0,6.0,12.0
+2023-24,460,Romagnoli,lazio,romagnoli,LAZ,D,dc,13.0,6.0,32.0,13.0,6.0,32.0
+2023-24,761,Audero,inter,audero,INT,P,por,1.0,6.0,1.0,1.0,6.0,1.0
+2023-24,2104,Bereszynski,empoli,bereszynski,EMP,D,dd|e,3.0,6.0,11.0,3.0,6.0,11.0
+2023-24,2188,Marusic,lazio,marusic,LAZ,D,dd|ds|e,7.0,6.0,21.0,8.0,6.0,24.0
+2023-24,2263,Lazzari,lazio,lazzari,LAZ,D,dd|e,5.0,6.0,24.0,5.0,6.0,24.0
+2023-24,2318,Rogerio,sassuolo,rogerio,SAS,D,ds|e,6.0,6.0,10.0,6.0,6.0,10.0
+2023-24,2593,Martin,genoa,martin,GEN,D,ds|e,8.0,6.0,20.0,8.0,6.0,20.0
+2023-24,4317,N'Dicka,roma,n-dicka,ROM,D,dc,9.0,6.0,35.0,9.0,6.0,35.0
+2023-24,4378,Ranieri L.,fiorentina,ranieri-l,FIO,D,ds|dc,5.0,6.0,23.0,6.0,6.0,28.0
+2023-24,4459,Rovella,lazio,rovella,LAZ,C,m|c,5.0,6.0,23.0,6.0,6.0,28.0
+2023-24,4522,Amrabat,fiorentina,amrabat,FIO,C,m|c,7.0,6.0,17.0,8.0,7.0,20.0
+2023-24,4530,Kyriakopoulos,monza,kyriakopoulos,MON,D,ds|e,9.0,6.0,17.0,9.0,6.0,17.0
+2023-24,4982,Erlic,sassuolo,erlic,SAS,D,dc,5.0,6.0,15.0,5.0,6.0,15.0
+2023-24,4992,Gyasi,empoli,gyasi,EMP,C,w|a,8.0,6.0,18.0,8.0,6.0,18.0
+2023-24,4994,Vojvoda,torino,vojvoda,TOR,D,e,6.0,6.0,13.0,5.0,6.0,13.0
+2023-24,5067,Bakker,atalanta,bakker,ATA,D,e,12.0,6.0,10.0,11.0,3.0,10.0
+2023-24,5481,Mazzocchi,napoli,mazzocchi,NAP,D,dd|ds|e,12.0,6.0,20.0,14.0,7.0,25.0
+2023-24,5527,Zanoli,salernitana,zanoli,SAL,D,dd|e,4.0,6.0,15.0,4.0,6.0,15.0
+2023-24,5735,Volpato,sassuolo,volpato,SAS,C,t,3.0,6.0,14.0,3.0,6.0,14.0
+2023-24,5750,Ostigard,napoli,ostigard,NAP,D,dc,4.0,6.0,14.0,4.0,6.0,14.0
+2023-24,5764,Coppola D.,verona,coppola-d,VER,D,dc,2.0,6.0,13.0,2.0,6.0,13.0
+2023-24,5833,Gila,lazio,gila,LAZ,D,dc,1.0,6.0,23.0,1.0,6.0,23.0
+2023-24,5851,Doig,sassuolo,doig,SAS,D,ds|e,11.0,6.0,23.0,11.0,6.0,23.0
+2023-24,5862,Valeri,frosinone,valeri,FRO,D,ds|e,6.0,6.0,15.0,6.0,6.0,15.0
+2023-24,5869,Blin,lecce,blin,LEC,C,m|c,6.0,6.0,11.0,6.0,6.0,11.0
+2023-24,5992,Bondo,monza,bondo,MON,C,c|t,1.0,6.0,1.0,1.0,6.0,1.0
+2023-24,6010,Fazzini,empoli,fazzini,EMP,C,c|t,6.0,6.0,12.0,6.0,6.0,12.0
+2023-24,6024,Sulemana I.,cagliari,sulemana-i,CAG,C,m|c,3.0,6.0,20.0,2.0,6.0,10.0
+2023-24,6046,Hien,atalanta,hien,ATA,D,dc,8.0,6.0,28.0,8.0,6.0,28.0
+2023-24,6219,Boloca,sassuolo,boloca,SAS,C,m|c,6.0,6.0,21.0,7.0,6.0,25.0
+2023-24,6245,Vogliacco,genoa,vogliacco,GEN,D,dd|dc,5.0,6.0,4.0,6.0,6.0,4.0
+2023-24,6432,Pierozzi,salernitana,pierozzi,SAL,D,dd|ds|e,1.0,6.0,8.0,2.0,6.0,10.0
+2023-24,6485,Kristensen T.,udinese,kristensen-t,UDI,D,dc,2.0,6.0,18.0,2.0,6.0,18.0
+2023-24,6532,Buchanan T.,inter,buchanan-t,INT,C,e,5.0,6.0,15.0,7.0,7.0,15.0
+2023-24,6579,Mitrovic S.,verona,mitrovic-s,VER,C,w,5.0,6.0,9.0,5.0,6.0,9.0
+2023-24,49,Masina,torino,masina,TOR,D,ds|dc,6.0,5.0,11.0,7.0,5.0,14.0
+2023-24,90,Lasagna,verona,lasagna,VER,A,pc,5.0,5.0,4.0,4.0,4.0,4.0
+2023-24,150,Saponara,verona,saponara,VER,C,w|t,11.0,5.0,15.0,11.0,5.0,15.0
+2023-24,333,Cataldi,lazio,cataldi,LAZ,C,m|c,7.0,5.0,20.0,8.0,5.0,25.0
+2023-24,697,Cuadrado,inter,cuadrado,INT,D,e,9.0,5.0,12.0,8.0,5.0,12.0
+2023-24,1871,Deiola,cagliari,deiola,CAG,C,m|c,4.0,5.0,9.0,4.0,5.0,10.0
+2023-24,1895,Ferrari G.,sassuolo,ferrari-g,SAS,D,dc,4.0,5.0,12.0,4.0,5.0,12.0
+2023-24,1987,Jankto,cagliari,jankto,CAG,C,e|c,7.0,5.0,12.0,8.0,4.0,15.0
+2023-24,2008,Linetty,torino,linetty,TOR,C,m|c,5.0,5.0,19.0,6.0,5.0,19.0
+2023-24,2103,Pellegri,torino,pellegri,TOR,A,pc,8.0,5.0,14.0,7.0,5.0,10.0
+2023-24,2154,Vignato,salernitana,vignato,SAL,C,w|t,2.0,5.0,3.0,2.0,5.0,3.0
+2023-24,2180,Karsdorp,roma,karsdorp,ROM,D,dd|e,2.0,5.0,25.0,2.0,5.0,25.0
+2023-24,2190,Coda M.,genoa,coda-m,GEN,A,pc,5.0,5.0,5.0,4.0,4.0,5.0
+2023-24,2405,Boateng J.,salernitana,boateng-j,SAL,D,dc,7.0,5.0,13.0,7.0,5.0,13.0
+2023-24,2792,Musso,atalanta,musso,ATA,P,por,3.0,5.0,5.0,3.0,5.0,5.0
+2023-24,2857,Traore' Hj.,napoli,traore-hj,NAP,C,w|t,7.0,5.0,21.0,6.0,5.0,25.0
+2023-24,4374,Walukiewicz,empoli,walukiewicz,EMP,D,dc,3.0,5.0,11.0,3.0,5.0,11.0
+2023-24,4662,Weah,juventus,weah,JUV,C,e|w,10.0,5.0,23.0,10.0,5.0,23.0
+2023-24,4890,Tameze,torino,tameze,TOR,C,m|c,8.0,5.0,15.0,9.0,5.0,15.0
+2023-24,4925,Carboni A.,monza,carboni-a,MON,D,ds|dc,3.0,5.0,16.0,4.0,5.0,17.0
+2023-24,4958,Caldirola,monza,caldirola,MON,D,ds|dc,7.0,5.0,16.0,8.0,5.0,18.0
+2023-24,5010,Ismajli,empoli,ismajli,EMP,D,dc,5.0,5.0,16.0,5.0,5.0,16.0
+2023-24,5295,Musah,milan,musah,MIL,C,c,9.0,5.0,21.0,9.0,5.0,21.0
+2023-24,5332,Bastoni S.,empoli,bastoni-s,EMP,D,ds|e,8.0,5.0,13.0,8.0,5.0,13.0
+2023-24,5425,Urbanski,bologna,urbanski,BOL,C,c|t,1.0,5.0,22.0,1.0,5.0,22.0
+2023-24,5457,Maleh,empoli,maleh,EMP,C,c,5.0,5.0,15.0,4.0,5.0,15.0
+2023-24,5499,Hongla,verona,hongla,VER,C,m|c,4.0,5.0,15.0,5.0,5.0,15.0
+2023-24,5504,Coulibaly L.,salernitana,coulibaly-l,SAL,C,m|c,8.0,5.0,19.0,9.0,5.0,22.0
+2023-24,5515,Okereke,torino,okereke,TOR,A,pc,8.0,5.0,24.0,8.0,5.0,24.0
+2023-24,5529,Henry,verona,henry,VER,A,pc,12.0,5.0,15.0,11.0,5.0,10.0
+2023-24,5532,Bradaric,salernitana,bradaric,SAL,D,ds|e,7.0,5.0,21.0,7.0,5.0,21.0
+2023-24,5695,Haps,genoa,haps,GEN,D,ds|e,2.0,5.0,8.0,2.0,5.0,8.0
+2023-24,5718,Viti,sassuolo,viti,SAS,D,dc,6.0,5.0,7.0,6.0,5.0,7.0
+2023-24,5739,De Winter,genoa,de-winter,GEN,D,dd|dc,3.0,5.0,15.0,3.0,5.0,19.0
+2023-24,5804,Cacace,empoli,cacace,EMP,D,ds|e,3.0,5.0,14.0,3.0,5.0,14.0
+2023-24,5835,Baschirotto,lecce,baschirotto,LEC,D,dd|dc,10.0,5.0,25.0,11.0,5.0,27.0
+2023-24,5840,Olivera,napoli,olivera,NAP,D,ds|e,7.0,5.0,25.0,7.0,5.0,25.0
+2023-24,5998,Zerbin,monza,zerbin,MON,C,w,1.0,5.0,22.0,1.0,5.0,22.0
+2023-24,6039,Cabal,verona,cabal,VER,D,ds|dc,3.0,5.0,10.0,4.0,5.0,10.0
+2023-24,6175,Barrenechea,frosinone,barrenechea,FRO,C,m|c,2.0,5.0,21.0,3.0,6.0,25.0
+2023-24,6211,Zemura,udinese,zemura,UDI,D,ds|e,5.0,5.0,19.0,5.0,5.0,19.0
+2023-24,6222,Rafia,lecce,rafia,LEC,C,c|t,3.0,5.0,13.0,3.0,5.0,13.0
+2023-24,6394,Ramadani,lecce,ramadani,LEC,C,m|c,6.0,5.0,23.0,7.0,6.0,28.0
+2023-24,6433,Huijsen,roma,huijsen,ROM,D,dc,1.0,5.0,23.0,1.0,5.0,23.0
+2023-24,6480,Tchatchoua,verona,tchatchoua,VER,C,w,4.0,5.0,15.0,3.0,5.0,15.0
+2023-24,6549,Pierotti,lecce,pierotti,LEC,A,a,2.0,5.0,7.0,2.0,5.0,7.0
+2023-24,6572,Castro S.,bologna,castro-s,BOL,A,pc,4.0,5.0,9.0,4.0,5.0,9.0
+2023-24,6584,Weissman,salernitana,weissman,SAL,A,pc,4.0,5.0,19.0,4.0,5.0,10.0
+2023-24,27,Grassi,empoli,grassi,EMP,C,m,5.0,4.0,6.0,5.0,4.0,8.0
+2023-24,140,Hysaj,lazio,hysaj,LAZ,D,dd|ds|e,7.0,4.0,15.0,8.0,4.0,20.0
+2023-24,218,Perin,juventus,perin,JUV,P,por,1.0,4.0,2.0,1.0,4.0,2.0
+2023-24,226,Izzo,monza,izzo,MON,D,dc,8.0,4.0,18.0,8.0,4.0,18.0
+2023-24,253,D'Ambrosio,monza,d-ambrosio,MON,D,dd|ds|dc,7.0,4.0,20.0,9.0,4.0,20.0
+2023-24,256,Juan Jesus,napoli,juan-jesus,NAP,D,ds|dc,5.0,4.0,20.0,6.0,4.0,22.0
+2023-24,286,Bonucci,juventus,bonucci,JUV,D,dc,4.0,4.0,5.0,4.0,4.0,5.0
+2023-24,383,Petagna,cagliari,petagna,CAG,A,pc,13.0,4.0,15.0,13.0,4.0,10.0
+2023-24,418,Goldaniga,cagliari,goldaniga,CAG,D,dc,3.0,4.0,8.0,3.0,4.0,8.0
+2023-24,662,Alex Sandro,juventus,alex-sandro,JUV,D,ds|dc,6.0,4.0,16.0,7.0,4.0,20.0
+2023-24,695,Toloi,atalanta,toloi,ATA,D,dc,9.0,4.0,13.0,9.0,4.0,13.0
+2023-24,729,Pereira P.,monza,pereira-p,MON,D,dd|e,1.0,4.0,14.0,1.0,4.0,14.0
+2023-24,1891,Ceccherini,verona,ceccherini,VER,D,dd|dc,4.0,4.0,7.0,5.0,5.0,8.0
+2023-24,1980,Aramu,genoa,aramu,GEN,C,w|t,4.0,4.0,9.0,5.0,4.0,10.0
+2023-24,2016,Fazio,salernitana,fazio,SAL,D,dc,2.0,4.0,12.0,2.0,4.0,12.0
+2023-24,2083,Biraschi,genoa,biraschi,GEN,D,dd|dc,3.0,4.0,6.0,4.0,5.0,6.0
+2023-24,2097,Kean,juventus,kean,JUV,A,pc,11.0,4.0,15.0,10.0,4.0,10.0
+2023-24,2130,Hateboer,atalanta,hateboer,ATA,D,e,7.0,4.0,15.0,6.0,4.0,10.0
+2023-24,2164,Milenkovic,fiorentina,milenkovic,FIO,D,dc,10.0,4.0,23.0,10.0,4.0,23.0
+2023-24,2252,Marchizza,frosinone,marchizza,FRO,D,ds|dc,5.0,4.0,17.0,6.0,4.0,20.0
+2023-24,2294,Cerofolini,frosinone,cerofolini,FRO,P,por,1.0,4.0,1.0,1.0,4.0,1.0
+2023-24,2325,Karamoh,torino,karamoh,TOR,A,a,10.0,4.0,6.0,10.0,4.0,6.0
+2023-24,2543,Renato Sanches,roma,renato-sanches,ROM,C,c,13.0,4.0,14.0,13.0,4.0,14.0
+2023-24,2633,Kjaer,milan,kjaer,MIL,D,dc,4.0,4.0,18.0,4.0,4.0,18.0
+2023-24,2728,Pellegrini Lu.,lazio,pellegrini-lu,LAZ,D,ds|e,4.0,4.0,12.0,4.0,4.0,12.0
+2023-24,4432,Okoli,frosinone,okoli,FRO,D,dc,2.0,4.0,17.0,2.0,4.0,17.0
+2023-24,4465,Fagioli,juventus,fagioli,JUV,C,c|t,13.0,4.0,10.0,13.0,4.0,10.0
+2023-24,4493,Dawidowicz,verona,dawidowicz,VER,D,dc,4.0,4.0,14.0,4.0,4.0,14.0
+2023-24,4657,Celik,roma,celik,ROM,D,dd|e,3.0,4.0,7.0,3.0,4.0,5.0
+2023-24,4802,Vinagre,verona,vinagre,VER,D,ds|e,4.0,4.0,10.0,4.0,4.0,10.0
+2023-24,4897,Pirola,salernitana,pirola,SAL,D,dc,5.0,4.0,13.0,5.0,4.0,13.0
+2023-24,5286,Akpa Akpro,monza,akpa-akpro,MON,C,m|c,3.0,4.0,17.0,3.0,4.0,17.0
+2023-24,5422,Zalewski,roma,zalewski,ROM,C,e,8.0,4.0,18.0,9.0,4.0,18.0
+2023-24,5449,Parisi,fiorentina,parisi,FIO,D,ds|e,8.0,4.0,18.0,8.0,4.0,18.0
+2023-24,5509,Vina,sassuolo,vina,SAS,D,ds|e,4.0,4.0,13.0,4.0,4.0,13.0
+2023-24,5676,Success,udinese,success,UDI,A,a,7.0,4.0,13.0,7.0,4.0,13.0
+2023-24,5812,Terracciano F.,milan,terracciano-f,MIL,D,dd|e,3.0,4.0,14.0,3.0,4.0,14.0
+2023-24,5813,Miretti,juventus,miretti,JUV,C,c|t,5.0,4.0,23.0,5.0,4.0,23.0
+2023-24,5834,Marcos Antonio,lazio,marcos-antonio,LAZ,C,m|c,5.0,4.0,7.0,6.0,6.0,7.0
+2023-24,5848,Ebosele,udinese,ebosele,UDI,D,dd|e,4.0,4.0,22.0,4.0,4.0,22.0
+2023-24,5880,Ciurria,monza,ciurria,MON,C,e|w,14.0,4.0,20.0,15.0,4.0,22.0
+2023-24,5884,Ranocchia F.,empoli,ranocchia-f,EMP,C,c,5.0,4.0,8.0,4.0,4.0,10.0
+2023-24,6120,Ochoa,salernitana,ochoa,SAL,P,por,9.0,4.0,10.0,9.0,4.0,10.0
+2023-24,6214,Cuni,frosinone,cuni,FRO,A,pc,4.0,4.0,10.0,3.0,4.0,5.0
+2023-24,6216,Mboula,verona,mboula,VER,C,w,10.0,4.0,20.0,9.0,3.0,15.0
+2023-24,6231,Azzi,cagliari,azzi,CAG,D,ds|e,5.0,4.0,9.0,5.0,4.0,9.0
+2023-24,6232,Makoumbou,cagliari,makoumbou,CAG,C,m|c,5.0,4.0,22.0,6.0,4.0,25.0
+2023-24,6241,Gelli,frosinone,gelli,FRO,C,c|w|t,1.0,4.0,20.0,1.0,4.0,20.0
+2023-24,6256,Ferreira J.,udinese,ferreira-j,UDI,D,dd|e,1.0,4.0,12.0,1.0,4.0,12.0
+2023-24,6402,Cajuste,napoli,cajuste,NAP,C,m|c,7.0,4.0,17.0,8.0,4.0,20.0
+2023-24,6423,Legowski,salernitana,legowski,SAL,C,m|c,1.0,4.0,13.0,1.0,4.0,13.0
+2023-24,6425,Ikwuemesi,salernitana,ikwuemesi,SAL,A,pc,1.0,4.0,14.0,1.0,4.0,14.0
+2023-24,6479,Kutlu,genoa,kutlu,GEN,C,m|c,4.0,4.0,6.0,5.0,4.0,7.0
+2023-24,6492,Ibrahimovic A.,frosinone,ibrahimovic-a,FRO,C,c|w|t,1.0,4.0,15.0,1.0,4.0,20.0
+2023-24,6562,Dani Silva,verona,dani-silva,VER,C,m|c,3.0,4.0,5.0,3.0,4.0,5.0
+2023-24,6576,Centonze,verona,centonze,VER,D,dd|e,4.0,4.0,6.0,4.0,4.0,6.0
+2023-24,142,Mario Rui,napoli,mario-rui,NAP,D,ds|e,10.0,3.0,25.0,10.0,3.0,25.0
+2023-24,148,Krunic,milan,krunic,MIL,C,m|c,6.0,3.0,15.0,7.0,3.0,15.0
+2023-24,316,Berisha,empoli,berisha,EMP,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,511,Perilli,verona,perilli,VER,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,770,Pezzella Giu.,empoli,pezzella-giu,EMP,D,ds|e,5.0,3.0,5.0,5.0,3.0,5.0
+2023-24,1926,Di Gennaro,inter,di-gennaro,INT,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,1930,Pinsoglio,juventus,pinsoglio,JUV,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,1978,Sensi,inter,sensi,INT,C,c|t,7.0,3.0,10.0,7.0,3.0,10.0
+2023-24,2061,Simeone,napoli,simeone,NAP,A,pc,13.0,3.0,18.0,12.0,3.0,10.0
+2023-24,2161,Haas,empoli,haas,EMP,C,m|c,4.0,3.0,4.0,5.0,4.0,3.0
+2023-24,2192,Bonifazi,frosinone,bonifazi,FRO,D,dc,3.0,3.0,12.0,3.0,3.0,12.0
+2023-24,2297,Rossi F.,atalanta,rossi-f,ATA,P,por,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,2466,Origi,milan,origi,MIL,A,pc,3.0,3.0,1.0,3.0,3.0,1.0
+2023-24,2869,Djidji,torino,djidji,TOR,D,dc,6.0,3.0,16.0,6.0,3.0,16.0
+2023-24,4182,Klaassen,inter,klaassen,INT,C,c|t,9.0,3.0,18.0,9.0,3.0,18.0
+2023-24,4463,Esposito Se.,inter,esposito-se,INT,A,pc,3.0,3.0,6.0,3.0,3.0,6.0
+2023-24,4498,Henderson L.,empoli,henderson-l,EMP,C,c|t,3.0,3.0,5.0,3.0,3.0,5.0
+2023-24,4681,Lopez M.,fiorentina,lopez-m,FIO,C,m|c,8.0,3.0,17.0,9.0,3.0,20.0
+2023-24,4976,Kalulu,milan,kalulu,MIL,D,dd|dc,7.0,3.0,12.0,8.0,3.0,12.0
+2023-24,5446,Van Hooijdonk,bologna,van-hooijdonk,BOL,A,pc,3.0,3.0,12.0,3.0,3.0,10.0
+2023-24,5447,Altare,cagliari,altare,CAG,D,dc,3.0,3.0,4.0,3.0,3.0,4.0
+2023-24,5450,Stojanovic,empoli,stojanovic,EMP,D,dd|e,3.0,3.0,5.0,3.0,3.0,5.0
+2023-24,5498,Casale,lazio,casale,LAZ,D,dc,10.0,3.0,18.0,10.0,3.0,18.0
+2023-24,5782,Kourfalidis,cagliari,kourfalidis,CAG,C,c,3.0,3.0,4.0,2.0,2.0,3.0
+2023-24,5798,Bohinen,genoa,bohinen,GEN,C,m|c,4.0,3.0,10.0,4.0,3.0,14.0
+2023-24,5806,Seck,frosinone,seck,FRO,A,a,3.0,3.0,16.0,3.0,3.0,20.0
+2023-24,5879,Vignato S.,monza,vignato-s,MON,C,t|a,1.0,3.0,10.0,1.0,3.0,10.0
+2023-24,5949,Lindstrom,napoli,lindstrom,NAP,C,w|t,15.0,3.0,20.0,15.0,3.0,25.0
+2023-24,6055,Thiaw,milan,thiaw,MIL,D,dc,10.0,3.0,24.0,10.0,3.0,24.0
+2023-24,6170,Gineitis,torino,gineitis,TOR,C,c,1.0,3.0,4.0,1.0,3.0,4.0
+2023-24,6189,Missori,sassuolo,missori,SAS,D,dd|e,1.0,3.0,1.0,1.0,3.0,1.0
+2023-24,6213,Brenner,udinese,brenner,UDI,A,pc,11.0,3.0,15.0,10.0,3.0,15.0
+2023-24,6220,Kristensen,roma,kristensen,ROM,D,dd|e,9.0,3.0,15.0,9.0,3.0,15.0
+2023-24,6246,Lipani,sassuolo,lipani,SAS,C,m|c,1.0,3.0,5.0,1.0,3.0,5.0
+2023-24,6410,Kaba,lecce,kaba,LEC,C,m|c,5.0,3.0,18.0,6.0,3.0,20.0
+2023-24,6426,Pedersen,sassuolo,pedersen,SAS,D,dd|e,7.0,3.0,17.0,7.0,3.0,17.0
+2023-24,6448,Martegani,salernitana,martegani,SAL,C,t,4.0,3.0,18.0,3.0,3.0,15.0
+2023-24,188,Leali,genoa,leali,GEN,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,472,Destro,empoli,destro,EMP,A,pc,1.0,2.0,4.0,1.0,2.0,4.0
+2023-24,500,Lulic K.,frosinone,lulic-k,FRO,C,c,2.0,2.0,3.0,2.0,2.0,3.0
+2023-24,610,Gollini,napoli,gollini,NAP,P,por,1.0,2.0,5.0,1.0,2.0,5.0
+2023-24,660,Gyomber,salernitana,gyomber,SAL,D,dc,6.0,2.0,11.0,6.0,2.0,11.0
+2023-24,694,Baez,frosinone,baez,FRO,C,w,3.0,2.0,14.0,3.0,2.0,14.0
+2023-24,1946,Aresti,cagliari,aresti,CAG,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,1947,Fiorillo,salernitana,fiorillo,SAL,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,1958,Caprari,monza,caprari,MON,A,a,14.0,2.0,15.0,14.0,2.0,15.0
+2023-24,2144,Coulibaly M.,salernitana,coulibaly-m,SAL,C,c,2.0,2.0,3.0,2.0,2.0,3.0
+2023-24,2174,Venuti,lecce,venuti,LEC,D,dd|ds|e,4.0,2.0,7.0,5.0,2.0,7.0
+2023-24,2178,Cragno,sassuolo,cragno,SAS,P,por,4.0,2.0,1.0,4.0,2.0,1.0
+2023-24,2211,Silvestri,udinese,silvestri,UDI,P,por,9.0,2.0,1.0,9.0,2.0,1.0
+2023-24,2274,Valoti,monza,valoti,MON,C,c|t,2.0,2.0,4.0,2.0,2.0,4.0
+2023-24,4263,Kabasele,udinese,kabasele,UDI,D,dc,5.0,2.0,5.0,5.0,2.0,5.0
+2023-24,4272,Dendoncker,napoli,dendoncker,NAP,C,m,6.0,2.0,14.0,6.0,2.0,14.0
+2023-24,4349,Nicolussi Caviglia,juventus,nicolussi-caviglia,JUV,C,m|c,2.0,2.0,10.0,2.0,2.0,10.0
+2023-24,4501,Obiang,sassuolo,obiang,SAS,C,m|c,3.0,2.0,3.0,3.0,2.0,3.0
+2023-24,4870,Adopo,atalanta,adopo,ATA,C,m|c,2.0,2.0,4.0,2.0,2.0,5.0
+2023-24,4934,Lovato,torino,lovato,TOR,D,dc,4.0,2.0,15.0,4.0,2.0,15.0
+2023-24,5017,Ballo-Toure',milan,ballo-toure,MIL,D,ds|e,2.0,2.0,2.0,2.0,2.0,2.0
+2023-24,5316,Amione,verona,amione,VER,D,ds|dc,3.0,2.0,5.0,4.0,3.0,6.0
+2023-24,5364,Caso,frosinone,caso,FRO,A,a,6.0,2.0,9.0,6.0,2.0,9.0
+2023-24,5406,Di Pardo,cagliari,di-pardo,CAG,D,dd|e,2.0,2.0,3.0,2.0,2.0,3.0
+2023-24,5480,Ebuehi,empoli,ebuehi,EMP,D,dd|e,11.0,2.0,13.0,11.0,2.0,15.0
+2023-24,5533,Djalo',juventus,djalo,JUV,D,dd|ds|dc,5.0,2.0,13.0,7.0,4.0,18.0
+2023-24,5554,Daniliuc,salernitana,daniliuc,SAL,D,dd|dc,3.0,2.0,10.0,3.0,2.0,12.0
+2023-24,5674,Basic,salernitana,basic,SAL,C,c,4.0,2.0,23.0,4.0,2.0,23.0
+2023-24,5686,Soppy,torino,soppy,TOR,D,e,2.0,2.0,3.0,2.0,2.0,3.0
+2023-24,5691,Zima,torino,zima,TOR,D,dc,3.0,2.0,4.0,3.0,2.0,4.0
+2023-24,5701,Obert,cagliari,obert,CAG,D,dc,5.0,2.0,6.0,5.0,2.0,6.0
+2023-24,5747,Tressoldi,sassuolo,tressoldi,SAS,D,dc,5.0,2.0,8.0,5.0,2.0,8.0
+2023-24,5748,Hefti,genoa,hefti,GEN,D,dd|e,3.0,2.0,4.0,3.0,2.0,4.0
+2023-24,5757,Cittadini,genoa,cittadini,GEN,D,dc,3.0,2.0,8.0,3.0,2.0,8.0
+2023-24,5842,Botheim,salernitana,botheim,SAL,A,pc,8.0,2.0,10.0,7.0,1.0,10.0
+2023-24,5853,Sorrentino A.,monza,sorrentino-a,MON,P,por,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,5885,Dodo',fiorentina,dodo,FIO,D,dd|e,8.0,2.0,15.0,8.0,2.0,15.0
+2023-24,6023,Guessand A.,udinese,guessand-a,UDI,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,6191,Belahyane,verona,belahyane,VER,C,m|c,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,6205,Mulattieri,sassuolo,mulattieri,SAS,A,pc,11.0,2.0,10.0,10.0,2.0,5.0
+2023-24,6236,Amatucci,fiorentina,amatucci,FIO,C,m|c,1.0,2.0,1.0,1.0,2.0,2.0
+2023-24,6238,Oyono,frosinone,oyono,FRO,D,dd|ds|dc,1.0,2.0,14.0,1.0,2.0,18.0
+2023-24,6243,Borrelli,frosinone,borrelli,FRO,A,pc,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,6244,Matturro,genoa,matturro,GEN,D,dc,1.0,2.0,2.0,1.0,2.0,2.0
+2023-24,6393,Infantino,fiorentina,infantino,FIO,C,w|t,5.0,2.0,9.0,6.0,2.0,12.0
+2023-24,6395,Shpendi S.,empoli,shpendi-s,EMP,A,pc,1.0,2.0,8.0,1.0,2.0,8.0
+2023-24,6401,Gonzalez F.,juventus,gonzalez-f,JUV,D,dc,2.0,2.0,4.0,2.0,2.0,4.0
+2023-24,6420,Pagano,roma,pagano,ROM,C,c|t,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,6438,Hatzidiakos,cagliari,hatzidiakos,CAG,D,dd|dc,5.0,2.0,7.0,5.0,2.0,7.0
+2023-24,6444,Bonfanti,atalanta,bonfanti,ATA,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
+2023-24,6459,Karlsson,bologna,karlsson,BOL,A,a,11.0,2.0,12.0,11.0,2.0,12.0
+2023-24,6460,Pellegrino,salernitana,pellegrino,SAL,D,dc,1.0,2.0,3.0,1.0,2.0,3.0
+2023-24,6464,Wieteska,cagliari,wieteska,CAG,D,dc,5.0,2.0,9.0,5.0,2.0,9.0
+2023-24,6465,Touba,lecce,touba,LEC,D,ds|dc,3.0,2.0,5.0,3.0,2.0,5.0
+2023-24,6496,Bartesaghi,milan,bartesaghi,MIL,D,ds|e,1.0,2.0,2.0,1.0,2.0,2.0
+2023-24,6533,Giannetti L.,udinese,giannetti-l,UDI,D,dc,4.0,2.0,24.0,4.0,2.0,24.0
+2023-24,6558,Tavsan,verona,tavsan,VER,A,a,3.0,2.0,10.0,3.0,2.0,10.0
+2023-24,6574,Pasalidis,salernitana,pasalidis,SAL,D,dc,3.0,2.0,9.0,3.0,2.0,9.0
+2023-24,6582,Gomis I.,salernitana,gomis-i,SAL,C,c|w,3.0,2.0,5.0,3.0,2.0,5.0
+2023-24,3,Radunovic,cagliari,radunovic,CAG,P,por,8.0,1.0,1.0,8.0,1.0,1.0
+2023-24,21,D'Alessandro,monza,d-alessandro,MON,C,e|w,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,26,Gomez,monza,gomez,MON,C,w|t,12.0,1.0,10.0,11.0,1.0,10.0
+2023-24,41,Mirante,milan,mirante,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,65,Mancosu,cagliari,mancosu,CAG,C,t,7.0,1.0,15.0,6.0,2.0,10.0
+2023-24,139,Dermaku,lecce,dermaku,LEC,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,144,Tonelli,empoli,tonelli,EMP,D,dc,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,159,Sepe,lazio,sepe,LAZ,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,217,Lamanna,monza,lamanna,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,219,Sommariva,genoa,sommariva,GEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,281,Puscas,genoa,puscas,GEN,A,pc,2.0,1.0,5.0,1.0,2.0,5.0
+2023-24,303,Pogba,juventus,pogba,JUV,C,c|t,12.0,1.0,10.0,12.0,1.0,10.0
+2023-24,358,De Sciglio,juventus,de-sciglio,JUV,D,dd|ds|e,3.0,1.0,6.0,3.0,1.0,6.0
+2023-24,454,Capradossi,cagliari,capradossi,CAG,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,510,Pegolo,sassuolo,pegolo,SAS,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,543,Padelli,udinese,padelli,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,557,Benassi,fiorentina,benassi,FIO,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,581,Faraoni,fiorentina,faraoni,FIO,D,dd|e,9.0,1.0,20.0,9.0,1.0,20.0
+2023-24,666,Machin,monza,machin,MON,C,c,5.0,1.0,6.0,4.0,2.0,5.0
+2023-24,673,Perisan,empoli,perisan,EMP,P,por,2.0,1.0,1.0,2.0,1.0,1.0
+2023-24,1876,Pajac,genoa,pajac,GEN,D,ds|e,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,2076,Rog,cagliari,rog,CAG,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2119,Deulofeu,udinese,deulofeu,UDI,A,a,14.0,1.0,12.0,14.0,1.0,12.0
+2023-24,2121,Melegoni,genoa,melegoni,GEN,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2122,Latte Lath,atalanta,latte-lath,ATA,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2181,Palomino,atalanta,palomino,ATA,D,dc,7.0,1.0,8.0,7.0,1.0,8.0
+2023-24,2183,Garritano,frosinone,garritano,FRO,C,w|t,3.0,1.0,11.0,3.0,1.0,15.0
+2023-24,2286,Crociata,empoli,crociata,EMP,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2338,Costil,salernitana,costil,SAL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2446,Donati,monza,donati,MON,D,dd|dc,1.0,1.0,3.0,1.0,1.0,3.0
+2023-24,2692,Castillejo,sassuolo,castillejo,SAS,C,w,5.0,1.0,22.0,4.0,1.0,22.0
+2023-24,2737,Bettella,monza,bettella,MON,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2758,Gunter,verona,gunter,VER,D,dc,4.0,1.0,4.0,4.0,1.0,4.0
+2023-24,2799,Frattali,frosinone,frattali,FRO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,2825,Bourabia,frosinone,bourabia,FRO,C,m|c,4.0,1.0,8.0,5.0,2.0,10.0
+2023-24,2845,Contini,napoli,contini,NAP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,4351,Brancolini,lecce,brancolini,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,4384,Jagiello,genoa,jagiello,GEN,C,c,3.0,1.0,5.0,3.0,1.0,4.0
+2023-24,4468,Bleve,lecce,bleve,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,4491,Berardi A.,verona,berardi-a,VER,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,4495,Kumbulla,sassuolo,kumbulla,SAS,D,dc,3.0,1.0,13.0,3.0,1.0,13.0
+2023-24,4525,Gemello,torino,gemello,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,4725,Demme,napoli,demme,NAP,C,m,1.0,1.0,8.0,1.0,1.0,8.0
+2023-24,4787,Quina,udinese,quina,UDI,C,c|w|t,4.0,1.0,4.0,5.0,1.0,6.0
+2023-24,4891,Soumaoro,bologna,soumaoro,BOL,D,dc,4.0,1.0,5.0,4.0,1.0,5.0
+2023-24,5060,Ake' M.,udinese,ake-m,UDI,A,a,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,5298,Pobega,milan,pobega,MIL,C,c,5.0,1.0,11.0,4.0,1.0,11.0
+2023-24,5304,Boer,roma,boer,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5391,Kokorin,fiorentina,kokorin,FIO,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5395,Braaf,verona,braaf,VER,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5399,Antov,monza,antov,MON,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5415,Traore' C.,milan,traore-c,MIL,A,a,1.0,1.0,5.0,1.0,1.0,5.0
+2023-24,5424,Amey,bologna,amey,BOL,D,dd|dc,1.0,1.0,1.0,1.0,1.0,2.0
+2023-24,5436,Raimondo,bologna,raimondo,BOL,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5439,Kallon,verona,kallon,VER,A,a,2.0,1.0,2.0,2.0,1.0,2.0
+2023-24,5502,Adamonis,lazio,adamonis,LAZ,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5510,Romero L.,milan,romero-l,MIL,C,w,4.0,1.0,8.0,4.0,1.0,8.0
+2023-24,5707,Piana,udinese,piana,UDI,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5772,Pyyhtia,bologna,pyyhtia,BOL,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5776,Ceide,sassuolo,ceide,SAS,A,a,1.0,1.0,5.0,1.0,1.0,5.0
+2023-24,5822,Bagnolini,bologna,bagnolini,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5824,Pafundi,udinese,pafundi,UDI,C,t|a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5832,Luis Maximiano,lazio,luis-maximiano,LAZ,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5837,Voelkerling Persson,lecce,voelkerling-persson,LEC,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5843,Valencia D.,salernitana,valencia-d,SAL,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5845,Alvarez A.,sassuolo,alvarez-a,SAS,A,pc,5.0,1.0,5.0,4.0,1.0,4.0
+2023-24,5872,Helgason,lecce,helgason,LEC,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5874,Rodriguez P.,lecce,rodriguez-p,LEC,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,5947,Hrustic,verona,hrustic,VER,C,c,3.0,1.0,4.0,3.0,1.0,3.0
+2023-24,5994,Ebosse,udinese,ebosse,UDI,D,ds|dc,3.0,1.0,3.0,4.0,1.0,4.0
+2023-24,6005,Ilkhan,torino,ilkhan,TOR,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6009,Degli Innocenti,empoli,degli-innocenti,EMP,C,m|c,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,6011,Ekong,empoli,ekong,EMP,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6021,Abankwah,udinese,abankwah,UDI,D,dd|dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6028,Bronn,salernitana,bronn,SAL,D,dd|dc,2.0,1.0,3.0,2.0,1.0,3.0
+2023-24,6043,Sosa,bologna,sosa,BOL,D,dc,2.0,1.0,2.0,2.0,1.0,2.0
+2023-24,6056,Guarino,empoli,guarino,EMP,D,dc,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,6149,Carboni F.,monza,carboni-f,MON,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6160,Vivaldo,udinese,vivaldo,UDI,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6168,Faticanti,lecce,faticanti,LEC,C,m|c,1.0,1.0,6.0,1.0,1.0,6.0
+2023-24,6184,Martinelli T.,fiorentina,martinelli-t,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6190,Pisilli,roma,pisilli,ROM,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6203,Belardinelli,empoli,belardinelli,EMP,C,m|c,2.0,1.0,3.0,2.0,1.0,3.0
+2023-24,6204,Kvernadze,frosinone,kvernadze,FRO,A,a,3.0,1.0,6.0,3.0,1.0,6.0
+2023-24,6208,Flamingo,sassuolo,flamingo,SAS,D,dc,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,6210,Popa,torino,popa,TOR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6221,Camara E.,udinese,camara-e,UDI,C,m|c,3.0,1.0,4.0,4.0,1.0,5.0
+2023-24,6223,Smajlovic,lecce,smajlovic,LEC,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6233,Lella,cagliari,lella,CAG,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6234,Stubljar,empoli,stubljar,EMP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6237,Szyminski,frosinone,szyminski,FRO,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6239,Klitten,frosinone,klitten,FRO,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6240,Haoudi,frosinone,haoudi,FRO,C,c|t,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6242,Bidaoui,frosinone,bidaoui,FRO,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6247,Yalcin,genoa,yalcin,GEN,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6248,Stankovic F.,inter,stankovic-f,INT,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6249,Diaw,monza,diaw,MON,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6251,Saco,napoli,saco,NAP,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6253,N'Guessan,torino,n-guessan,TOR,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6254,Joselito,verona,joselito,VER,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6255,Gori,monza,gori,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6396,Natan,napoli,natan,NAP,D,dc,9.0,1.0,13.0,9.0,1.0,13.0
+2023-24,6403,Christensen O.,fiorentina,christensen-o,FIO,P,por,3.0,1.0,1.0,3.0,1.0,3.0
+2023-24,6406,Borbei,lecce,borbei,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6407,Corazza,bologna,corazza,BOL,D,dd|ds|e,1.0,1.0,5.0,1.0,1.0,8.0
+2023-24,6411,Mateus Lusuardi,frosinone,mateus-lusuardi,FRO,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6415,Palmisani,frosinone,palmisani,FRO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6418,Burnete,lecce,burnete,LEC,A,pc,1.0,1.0,2.0,1.0,1.0,2.0
+2023-24,6419,Corfitzen,lecce,corfitzen,LEC,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6427,Stewart,salernitana,stewart,SAL,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6430,Kalaj,frosinone,kalaj,FRO,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6474,Sazonov,torino,sazonov,TOR,D,dc,3.0,1.0,7.0,3.0,1.0,7.0
+2023-24,6490,Cruz,verona,cruz,VER,A,pc,3.0,1.0,8.0,3.0,1.0,8.0
+2023-24,6495,Comuzzo,fiorentina,comuzzo,FIO,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6505,Nava,milan,nava,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6507,Nonge,juventus,nonge,JUV,C,c,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6509,Gasperini T.,bologna,gasperini-t,BOL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6519,Camarda,milan,camarda,MIL,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6521,Simic J.,milan,simic-j,MIL,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6523,Samooja,lecce,samooja,LEC,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6530,Ghedjemis,frosinone,ghedjemis,FRO,A,w|a,1.0,1.0,12.0,1.0,1.0,13.0
+2023-24,6531,Jimenez A.,milan,jimenez-a,MIL,D,dd|ds|e,1.0,1.0,5.0,1.0,1.0,5.0
+2023-24,6537,Goglichidze,empoli,goglichidze,EMP,D,dd|dc,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6551,Ilic M.,bologna,ilic-m,BOL,D,dc,3.0,1.0,5.0,3.0,1.0,5.0
+2023-24,6563,Popovic,monza,popovic,MON,C,t,1.0,1.0,5.0,1.0,1.0,5.0
+2023-24,6565,Ankeye,genoa,ankeye,GEN,A,pc,2.0,1.0,5.0,2.0,1.0,5.0
+2023-24,6569,Stolz,genoa,stolz,GEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
+2023-24,6583,Kabic,torino,kabic,TOR,A,a,1.0,1.0,1.0,1.0,1.0,1.0
