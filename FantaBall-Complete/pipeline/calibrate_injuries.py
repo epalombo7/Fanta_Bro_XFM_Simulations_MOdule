@@ -14,7 +14,8 @@ from common import SEASONS, CURRENT, DATA, RAW
 
 DECAY = 0.75          # weight of a season relative to the next one
 PRIOR_SPELLS = 3      # pseudo-spells pulling a player's mean length towards the group mean
-FIRST_RELIABLE = '2020-21'   # FotMob injury lists are sparse before this season
+GROUP_PRIOR = 5000    # pseudo-matches pulling a role x age group's rate towards the league rate
+MIN_LISTED = 0.8      # a season is used only if FotMob lists >= this many injured players per team per match
 AGE_BANDS = [(0, 23, 'U24'), (24, 29, '24-29'), (30, 99, '30+')]
 
 
@@ -31,9 +32,15 @@ def band(age):
 
 
 def load():
-    seasons = [s for s in SEASONS if s >= FIRST_RELIABLE]
-    read = lambda kind: pd.concat([pd.read_csv(f) for s in seasons for f in glob.glob(str(RAW / 'fotmob' / f'{kind}_{s}.csv*'))])
-    return read('matches'), read('squads'), read('unavailable')
+    """FotMob seasons whose injury lists are complete enough (older and live seasons are often sparse)."""
+    read = lambda kind: pd.concat([pd.read_csv(f) for s in SEASONS for f in glob.glob(str(RAW / 'fotmob' / f'{kind}_{s}.csv*'))])
+    matches, squads, unav = read('matches'), read('squads'), read('unavailable')
+    played = matches[matches.finished == True].groupby('season').size() * 2
+    listed = (unav[unav.type == 'injury'].groupby('season').size() / played).fillna(0)
+    keep = sorted(listed[listed >= MIN_LISTED].index)
+    print('injured listed per team-match:', listed.round(2).to_dict(), '-> using', keep)
+    sel = lambda d: d[d.season.isin(keep)]
+    return sel(matches), sel(squads), sel(unav)
 
 
 def fantacalcio_ids(players):
@@ -101,7 +108,7 @@ def spells(matches, squads, unav):
     return pd.DataFrame(expo), pd.DataFrame(sp)
 
 
-def fit(expo, sp, upto=None):
+def fit(expo, sp, upto=None, prior_a=None):
     """Fit on seasons before `upto` (or all). Returns per-player table, group settings and dispersion."""
     idx = {s: i for i, s in enumerate(SEASONS)}
     last = idx[upto] - 1 if upto else max(idx[s] for s in expo.season)
@@ -117,40 +124,49 @@ def fit(expo, sp, upto=None):
     per['len_sum'] = done.assign(wl=done.length * done.w).groupby('player_id').wl.sum().reindex(per.index).fillna(0)
     per['len_n'] = done.groupby('player_id').w.sum().reindex(per.index).fillna(0)
     league_mean_len = float((done.length * done.w).sum() / done.w.sum())
+    # Group means, then one pooled prior strength: how much players really differ beyond Poisson noise
+    league = per.spells.sum() / per.exposure.sum()
+    means = {gname: league if gname.startswith('?') else (g.spells.sum() + GROUP_PRIOR * league) / (g.exposure.sum() + GROUP_PRIOR)
+             for gname, g in per.groupby('group')}                                     # unmatched role: league rate
+    big = per[per.exposure >= 15]
+    m_i = big.group.map(means)
+    rel = ((big.spells / big.exposure - m_i) ** 2 - m_i / big.exposure) / m_i ** 2     # excess variance / mean^2, per player
+    cv2 = float(np.clip(np.average(rel, weights=big.exposure), 1 / 20, 2))
+    a = prior_a or 1 / cv2                                                            # gamma prior shape (in pseudo-injuries)
     groups = {}
     for gname, g in per.groupby('group'):
-        m = g.spells.sum() / g.exposure.sum()
-        big = g[g.exposure >= 10]
-        between = np.var(big.spells / big.exposure) - m * np.mean(1 / big.exposure) if len(big) > 20 else np.nan   # Poisson noise removed
-        a = m * m / max(between, (0.3 * m) ** 2) if np.isfinite(between) and m > 0 else 2.0
-        n_len = g.len_n.sum()
-        groups[gname] = {'players': int(len(g)), 'hazard': float(m), 'prior_a': float(a), 'prior_b': float(a / m) if m > 0 else 1e3,
-                         'mean_games': float((g.len_sum.sum() + PRIOR_SPELLS * league_mean_len) / (n_len + PRIOR_SPELLS))}
+        m = means[gname]
+        groups[gname] = {'players': int(len(g)), 'hazard': float(m), 'prior_a': a, 'prior_b': a / m if m > 0 else 1e3,
+                         'mean_games': float((g.len_sum.sum() + PRIOR_SPELLS * league_mean_len) / (g.len_n.sum() + PRIOR_SPELLS))}
     G = per.group.map(groups)
     per['injuryRisk'] = [(gr['prior_a'] + sp_) / (gr['prior_b'] + ex) for gr, sp_, ex in zip(G, per.spells, per.exposure)]
     per['injuryGames'] = [(PRIOR_SPELLS * gr['mean_games'] + ls) / (PRIOR_SPELLS + n) for gr, ls, n in zip(G, per.len_sum, per.len_n)]
     return per, groups, k, league_mean_len
 
 
-def backtest(expo, sp):
+def backtest(expo, sp, prior_a=None):
     """For each season, fit on earlier seasons and score that season's new injuries (log-loss per match at risk)."""
     rows = []
     for season in sorted(set(expo.season))[1:]:
-        per, groups, _, mean_len = fit(expo, sp, season)
+        per, groups, _, mean_len = fit(expo, sp, season, prior_a)
         e = expo[expo.season == season].groupby('player_id').agg(exposure=('exposure', 'sum'), role=('role', 'last'), age=('age', 'last'))
         e['group'] = e.role.fillna('?') + ' ' + e.age.map(band)
         y = sp[(sp.season == season) & ~sp.left_censored].groupby('player_id').size().reindex(e.index).fillna(0)
         h_group = e.group.map({g: v['hazard'] for g, v in groups.items()})
-        h_league = pd.Series(sum(v['hazard'] * v['players'] for v in groups.values()) / sum(v['players'] for v in groups.values()), index=e.index)
+        h_league = pd.Series(per.spells.sum() / per.exposure.sum(), index=e.index)
         h_model = per.injuryRisk.reindex(e.index).fillna(h_group)
         ok = h_group.notna() & (e.exposure > 0)
-        def ll(h):
-            h = h[ok].clip(1e-4, .5); n, k = e.exposure[ok], y[ok]
+        def ll(h, relevel=False):
+            h = h[ok]; n, k = e.exposure[ok], y[ok]
+            if relevel:                      # rescale to the season's actual count: scores who gets injured, not how many
+                h = h * k.sum() / (h * n).sum()
+            h = h.clip(1e-4, .5)
             return float(-(k * np.log(h) + (n - k) * np.log(1 - h)).sum() / n.sum())
         done = sp[(sp.season == season) & ~sp.left_censored & ~sp.right_censored]
         pl = per.injuryGames.reindex(done.player_id).fillna(mean_len).values
         rows.append({'season': season, 'players': int(ok.sum()), 'new_injuries': int(y[ok].sum()),
                      'logloss_model': ll(h_model), 'logloss_group_avg': ll(h_group), 'logloss_league_avg': ll(h_league),
+                     'relevel_model': ll(h_model, True), 'relevel_group_avg': ll(h_group, True), 'relevel_league_avg': ll(h_league, True),
                      'length_mae_model': float(np.mean(np.abs(done.length.values - pl))) if len(done) else None,
                      'length_mae_league_avg': float(np.mean(np.abs(done.length.values - mean_len))) if len(done) else None})
     return pd.DataFrame(rows)
@@ -179,7 +195,11 @@ if __name__ == '__main__':
     ids = fantacalcio_ids(expo)
     expo['fc_id'] = [ids.get((s, p), (None, None))[0] for s, p in zip(expo.season, expo.player_id)]
     expo['role'] = [ids.get((s, p), (None, None))[1] for s, p in zip(expo.season, expo.player_id)]
-    per, groups, k, mean_len = fit(expo, sp)
+    # Prior strength chosen by backtest: the value with the best average level-adjusted score
+    scores = {a: backtest(expo, sp, a).relevel_model.mean() for a in (0.5, 1, 2, 3, 5, 8, 12)}
+    best_a = min(scores, key=scores.get)
+    print('prior strength (pseudo-injuries) -> backtest score:', {a: round(v, 5) for a, v in scores.items()}, '-> using', best_a)
+    per, groups, k, mean_len = fit(expo, sp, prior_a=best_a)
     per['fc_id'] = expo.sort_values('season').groupby('player_id').fc_id.last().reindex(per.index)
     now = current_injuries()
     per['injuredFor'] = per.fc_id.map(now)
@@ -187,9 +207,9 @@ if __name__ == '__main__':
     cols = ['fc_id', 'name', 'team', 'role', 'age', 'group', 'injuryRisk', 'injuryGames', 'injuredFor', 'spells', 'exposure']
     per.index.name = 'fotmob_id'
     per[cols].round(4).to_csv(DATA / 'params' / 'injuries.csv')
-    bt = backtest(expo, sp)
+    bt = backtest(expo, sp, best_a)
     json.dump({'fitted': str(datetime.date.today()), 'source': 'FotMob unavailable lists (history), Fantacalcio.it injury list (current)',
-               'seasons': sorted(set(expo.season)), 'decay': DECAY, 'prior_spells': PRIOR_SPELLS, 'injuryDispersion': round(k, 3),
+               'seasons': sorted(set(expo.season)), 'decay': DECAY, 'prior_spells': PRIOR_SPELLS, 'prior_strength': best_a, 'prior_strength_scores': scores, 'injuryDispersion': round(k, 3),
                'mean_games_league': round(mean_len, 3), 'groups': groups, 'spells_used': int((~sp.left_censored).sum()),
                'fantacalcio_id_match_rate': round(float(expo.fc_id.notna().mean()), 3), 'backtest': bt.to_dict('records')},
               open(DATA / 'params' / 'injury_model.json', 'w'), indent=2, default=float)

@@ -21,6 +21,8 @@ def run(years):
         matches, squads, unavailable = [], [], []
         for m in fx:
             st = m['status']
+            if not str(m.get('round', '')).isdigit():      # play-off matches (e.g. relegation 'final') are not league rounds
+                continue
             matches.append({'season': season, 'match_id': m['id'], 'round': int(m['round']), 'utc': st.get('utcTime'),
                             'home': m['home']['name'], 'away': m['away']['name'], 'score': st.get('scoreStr'), 'finished': st.get('finished')})
             if not st.get('finished'):
