@@ -33,6 +33,8 @@ def run(years):
                 t = lu.get(side) or {}
                 for kind in ('starters', 'subs'):
                     for p in t.get(kind) or []:
+                        if 'id' not in p:
+                            continue
                         ev = (p.get('performance') or {}).get('substitutionEvents') or []
                         squads.append({'season': season, 'match_id': m['id'], 'round': int(m['round']), 'team': t.get('name'), 'formation': t.get('formation'),
                                        'player_id': p['id'], 'name': p.get('name'), 'age': p.get('age'), 'starter': kind == 'starters',
@@ -40,6 +42,8 @@ def run(years):
                                        'sub_out': next((e['time'] for e in ev if e.get('type') == 'subOut'), None),
                                        'rating': (p.get('performance') or {}).get('rating'), 'market_value': p.get('marketValue')})
                 for p in t.get('unavailable') or []:
+                    if 'id' not in p:                 # a few old entries have no player id
+                        continue
                     u = p.get('unavailability') or {}
                     unavailable.append({'season': season, 'match_id': m['id'], 'round': int(m['round']), 'utc': st.get('utcTime'), 'team': t.get('name'),
                                         'player_id': p['id'], 'name': p.get('name'), 'age': p.get('age'), 'type': u.get('type'),

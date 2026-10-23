@@ -54,7 +54,7 @@ const MODEL={
   subRatedMin:25,          // a substitute below this gets no vote unless scoring/assisting/sent off
   red:.008,                // straight red card probability per 90 minutes
   yellowBanEvery:5,        // one-match ban every N yellow cards
-  injuryDispersion:.8,     // shape of the injury-length distribution (lower = heavier tail of long injuries)
+  injuryDispersion:0.28,    // shape of the injury-length distribution (lower = heavier tail); calibrated, data/params/injury_model.json
   // Vote = base + result + goal difference + team performance + individual noise + events
   vote:{win:.3,draw:0,loss:-.3,goalDiff:.1,teamSd:.25,indivSd:.4,goal:.5,assist:.25,red:-1,penMissed:-.5,penSaved:.5,ownGoal:-.5,
         gkConceded:-.25,gkClean:.3,defConceded:-.1,defClean:.2,min:3,max:10}

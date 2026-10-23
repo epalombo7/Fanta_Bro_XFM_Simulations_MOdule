@@ -2,6 +2,8 @@
   "fitted": "2026-10-23",
   "source": "FotMob unavailable lists (history), Fantacalcio.it injury list (current)",
   "seasons": [
+    "2020-21",
+    "2021-22",
     "2022-23",
     "2023-24",
     "2024-25",
@@ -9,166 +11,192 @@
   ],
   "decay": 0.75,
   "prior_spells": 3,
-  "prior_strength": 2,
+  "prior_strength": 1,
   "prior_strength_scores": {
-    "0.5": 0.094104453381111,
-    "1": 0.09269319117447238,
-    "2": 0.09231983743812448,
-    "3": 0.09240363333320366,
-    "5": 0.09265728448715654,
-    "8": 0.09293028221573678,
-    "12": 0.0931466688202387
+    "0.5": 0.08534445238756572,
+    "1": 0.08527017527183223,
+    "2": 0.08622828569195207,
+    "3": 0.0870930196643025,
+    "5": 0.088289027618464,
+    "8": 0.08933705240168263,
+    "12": 0.09012003783223073
   },
-  "injuryDispersion": 0.307,
-  "mean_games_league": 2.429,
+  "injuryDispersion": 0.282,
+  "mean_games_league": 2.315,
   "groups": {
     "? 24-29": {
-      "players": 60,
-      "hazard": 0.018039457381685376,
-      "prior_a": 2,
-      "prior_b": 110.86807976998838,
-      "mean_games": 3.0671958069305805
+      "players": 71,
+      "hazard": 0.018552077372695007,
+      "prior_a": 1,
+      "prior_b": 53.902319395875445,
+      "mean_games": 2.743651088235508
     },
     "? 30+": {
-      "players": 9,
-      "hazard": 0.018039457381685376,
-      "prior_a": 2,
-      "prior_b": 110.86807976998838,
-      "mean_games": 2.3299129825979845
+      "players": 12,
+      "hazard": 0.018552077372695007,
+      "prior_a": 1,
+      "prior_b": 53.902319395875445,
+      "mean_games": 2.121622402802952
     },
     "? U24": {
-      "players": 368,
-      "hazard": 0.018039457381685376,
-      "prior_a": 2,
-      "prior_b": 110.86807976998838,
-      "mean_games": 1.7965546518400695
+      "players": 525,
+      "hazard": 0.018552077372695007,
+      "prior_a": 1,
+      "prior_b": 53.902319395875445,
+      "mean_games": 1.698659885765872
     },
     "A 24-29": {
-      "players": 123,
-      "hazard": 0.019308441323979558,
-      "prior_a": 2,
-      "prior_b": 103.58163905836139,
-      "mean_games": 2.1998360471555425
+      "players": 143,
+      "hazard": 0.0203543383157537,
+      "prior_a": 1,
+      "prior_b": 49.129575449083866,
+      "mean_games": 2.1148906456105787
     },
     "A 30+": {
-      "players": 50,
-      "hazard": 0.022029284747203736,
-      "prior_a": 2,
-      "prior_b": 90.78824042409583,
-      "mean_games": 2.92821440036527
+      "players": 80,
+      "hazard": 0.021880436281666405,
+      "prior_a": 1,
+      "prior_b": 45.702927817664175,
+      "mean_games": 2.7484404417955735
     },
     "A U24": {
-      "players": 89,
-      "hazard": 0.018957908106473072,
-      "prior_a": 2,
-      "prior_b": 105.49687174172509,
-      "mean_games": 2.5127877304524118
+      "players": 121,
+      "hazard": 0.020010678840785615,
+      "prior_a": 1,
+      "prior_b": 49.973317145133905,
+      "mean_games": 2.367102636660214
     },
     "C 24-29": {
-      "players": 195,
-      "hazard": 0.01983451077426343,
-      "prior_a": 2,
-      "prior_b": 100.83434992483556,
-      "mean_games": 2.495237423705265
+      "players": 240,
+      "hazard": 0.02067207299757851,
+      "prior_a": 1,
+      "prior_b": 48.37444218183335,
+      "mean_games": 2.387549852844559
     },
     "C 30+": {
-      "players": 78,
-      "hazard": 0.01817336990715371,
-      "prior_a": 2,
-      "prior_b": 110.05113582224098,
-      "mean_games": 2.523606497902095
+      "players": 109,
+      "hazard": 0.017267411650746543,
+      "prior_a": 1,
+      "prior_b": 57.912559231583835,
+      "mean_games": 2.4412233903111598
     },
     "C U24": {
-      "players": 129,
-      "hazard": 0.018102485813029215,
-      "prior_a": 2,
-      "prior_b": 110.48206421244674,
-      "mean_games": 2.084824808554188
+      "players": 156,
+      "hazard": 0.01987919848226475,
+      "prior_a": 1,
+      "prior_b": 50.3038390049856,
+      "mean_games": 2.060014526449691
     },
     "D 24-29": {
-      "players": 183,
-      "hazard": 0.020418610993570105,
-      "prior_a": 2,
-      "prior_b": 97.94985567969375,
-      "mean_games": 2.175628399500089
+      "players": 219,
+      "hazard": 0.02142819233472782,
+      "prior_a": 1,
+      "prior_b": 46.66749226342064,
+      "mean_games": 2.036651145430432
     },
     "D 30+": {
-      "players": 103,
-      "hazard": 0.021877239210640876,
-      "prior_a": 2,
-      "prior_b": 91.41921339998053,
-      "mean_games": 2.4897428923788456
+      "players": 146,
+      "hazard": 0.02037720583738829,
+      "prior_a": 1,
+      "prior_b": 49.07444170609449,
+      "mean_games": 2.4849893300050794
     },
     "D U24": {
-      "players": 142,
-      "hazard": 0.016230466906080362,
-      "prior_a": 2,
-      "prior_b": 123.22504408365154,
-      "mean_games": 2.360872189568436
+      "players": 174,
+      "hazard": 0.017413287659788945,
+      "prior_a": 1,
+      "prior_b": 57.42740943223586,
+      "mean_games": 2.2159702918103545
     },
     "P 24-29": {
-      "players": 43,
-      "hazard": 0.015093213416639027,
-      "prior_a": 2,
-      "prior_b": 132.50988671472467,
-      "mean_games": 2.359396150235587
+      "players": 55,
+      "hazard": 0.015373032529437985,
+      "prior_a": 1,
+      "prior_b": 65.04897443527094,
+      "mean_games": 2.355556068272077
     },
     "P 30+": {
-      "players": 57,
-      "hazard": 0.014346436603701227,
-      "prior_a": 2,
-      "prior_b": 139.40743999691335,
-      "mean_games": 3.4448382081094726
+      "players": 68,
+      "hazard": 0.013677213576146824,
+      "prior_a": 1,
+      "prior_b": 73.11430756217834,
+      "mean_games": 3.2286274090394804
     },
     "P U24": {
-      "players": 40,
-      "hazard": 0.014647003401949231,
-      "prior_a": 2,
-      "prior_b": 136.54670140472822,
-      "mean_games": 4.442079195252948
+      "players": 54,
+      "hazard": 0.014830571415243805,
+      "prior_a": 1,
+      "prior_b": 67.4282852629762,
+      "mean_games": 3.694720039498448
     }
   },
-  "spells_used": 1516,
-  "fantacalcio_id_match_rate": 0.777,
+  "spells_used": 2440,
+  "fantacalcio_id_match_rate": 0.754,
   "backtest": [
+    {
+      "season": "2021-22",
+      "players": 866,
+      "new_injuries": 474,
+      "logloss_model": 0.0852766596747879,
+      "logloss_group_avg": 0.10192729810044425,
+      "logloss_league_avg": 0.10408942313156601,
+      "relevel_model": 0.08484855827904814,
+      "relevel_group_avg": 0.10123413910660417,
+      "relevel_league_avg": 0.10403542036322978,
+      "length_mae_model": 1.1513639680343295,
+      "length_mae_league_avg": 1.159493670886076
+    },
+    {
+      "season": "2022-23",
+      "players": 789,
+      "new_injuries": 336,
+      "logloss_model": 0.06455599698047337,
+      "logloss_group_avg": 0.07888940794259686,
+      "logloss_league_avg": 0.08125868001562397,
+      "relevel_model": 0.06417858039823542,
+      "relevel_group_avg": 0.07887126178474407,
+      "relevel_league_avg": 0.08051194097206452,
+      "length_mae_model": 1.0335632082514532,
+      "length_mae_league_avg": 0.9130564248352426
+    },
     {
       "season": "2023-24",
       "players": 766,
       "new_injuries": 407,
-      "logloss_model": 0.10041376025602353,
-      "logloss_group_avg": 0.10007649651582176,
-      "logloss_league_avg": 0.09956882979896682,
-      "relevel_model": 0.09933412423370877,
-      "relevel_group_avg": 0.0988479192916426,
+      "logloss_model": 0.1046127857831323,
+      "logloss_group_avg": 0.1002385053078691,
+      "logloss_league_avg": 0.099003948424045,
+      "relevel_model": 0.10461109032733747,
+      "relevel_group_avg": 0.09956372792623538,
       "relevel_league_avg": 0.09893926980204741,
-      "length_mae_model": 1.709412682781646,
-      "length_mae_league_avg": 1.717053842813721
+      "length_mae_model": 1.7551938755154612,
+      "length_mae_league_avg": 1.693454818269129
     },
     {
       "season": "2024-25",
       "players": 782,
       "new_injuries": 488,
-      "logloss_model": 0.10501034287641842,
-      "logloss_group_avg": 0.10972965807739933,
-      "logloss_league_avg": 0.10977768042878995,
-      "relevel_model": 0.10443518290253528,
-      "relevel_group_avg": 0.10897015202871586,
+      "logloss_model": 0.0979863994893803,
+      "logloss_group_avg": 0.10949952140121676,
+      "logloss_league_avg": 0.10954109871835732,
+      "relevel_model": 0.09798640242735032,
+      "relevel_group_avg": 0.10877076182671988,
       "relevel_league_avg": 0.10919720286220765,
-      "length_mae_model": 1.1066698372082773,
-      "length_mae_league_avg": 1.1873065682733175
+      "length_mae_model": 0.9887338239457407,
+      "length_mae_league_avg": 1.0779528409238746
     },
     {
       "season": "2025-26",
       "players": 773,
       "new_injuries": 285,
-      "logloss_model": 0.07432908034567644,
-      "logloss_group_avg": 0.0747520636580808,
-      "logloss_league_avg": 0.07496643742016804,
-      "relevel_model": 0.07319020517812938,
-      "relevel_group_avg": 0.07364429670321257,
+      "logloss_model": 0.07660096253398094,
+      "logloss_group_avg": 0.0750211616132154,
+      "logloss_league_avg": 0.07501842995809743,
+      "relevel_model": 0.07472624492718982,
+      "relevel_group_avg": 0.07384630892858256,
       "relevel_league_avg": 0.0738780040423497,
-      "length_mae_model": 2.3606314023193233,
-      "length_mae_league_avg": 2.3445823812961595
+      "length_mae_model": 2.3743113718782576,
+      "length_mae_league_avg": 2.3508521311275317
     }
   ]
 }
