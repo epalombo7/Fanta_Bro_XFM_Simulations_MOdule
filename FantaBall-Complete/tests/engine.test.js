@@ -61,6 +61,14 @@ assert.equal(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(S)),c)[5].ma
  assert.equal(JSON.stringify(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(Sx)),c)),JSON.stringify(E.scoreMatchdays(Sx,c)))}
 // Burn-in: those seasons are simulated but not recorded
 assert.equal(E.runSeason(c,{N:30,burnIn:10}).N,30);
+// Keeper succession: with the first-choice keeper out, the second keeper starts every match; without the rule
+// the starting place would be shared among the backups
+{const lg=E.demoLeague(),gks=lg.players.filter(p=>p.team===0&&p.role==='P').sort((x,y)=>y.start-x.start);
+ lg.players.push({...gks[1],id:'T1P3',name:'Third keeper',start:gks[1].start*.9,injuredFor:0});   // a close third choice
+ gks[0].injuredFor=99;gks[0].injuryRisk=0;gks[1].injuryRisk=0;
+ const run=succ=>E.runSeason({rounds:10},{N:200,league:lg,model:{keeperSuccession:succ},outcomes:false}),pct=(S,id)=>{let i=S.players.findIndex(p=>p.id===id),k=S.mdFields.indexOf('starts');let t=0;for(let r=0;r<S.rounds.length;r++)t+=S.md[(i*S.rounds.length+r)*S.mdFields.length+k];return t/(S.N*S.rounds.length)};
+ const on=run(true),off=run(false);
+ assert(pct(on,gks[1].id)>0.99,'second keeper starts every match');assert(pct(off,gks[1].id)<0.8,'without the rule the backups share')}
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));
 console.log('Team-based simulation and ledger tests passed');

@@ -173,21 +173,35 @@ def backtest(expo, sp, prior_a=None):
 
 
 def current_injuries():
-    """Matches still to miss now, from the latest Fantacalcio.it injury list (expected return dates)."""
+    """Matchdays still to miss now, from the latest Fantacalcio.it injury list. The note is re-parsed so older
+    snapshots benefit from parser fixes: a return matchday ('dalla 9a giornata'), a return date ('dalla metà di
+    novembre'), or the next match only; notes with no estimate get NaN (the model's expected length is used)."""
+    import fetch_fantacalcio as FC
     snaps = sorted(glob.glob(str(RAW / 'fantacalcio' / 'snapshots' / 'injuries_*.csv')))
     if not snaps:
         return pd.Series(dtype=float)
     inj = pd.read_csv(snaps[-1])
+    snap_day = datetime.date.fromisoformat(str(inj.date.iloc[0]))
     prices = pd.read_csv(RAW / 'fantacalcio' / f'prices_{CURRENT}.csv')
     prices['key'] = prices.team_slug + '|' + prices.name.str.lower()
     inj['key'] = inj.team.str.lower().str.replace(' ', '-') + '|' + inj.name.str.lower()
     inj = inj.merge(prices[['key', 'player_id']], on='key', how='left')
     cal = pd.read_csv(RAW / 'openfootball' / 'matches.csv')
-    cal = pd.to_datetime(cal[cal.season == CURRENT].groupby('round').date.max())
-    cal = cal[cal > pd.Timestamp(datetime.date.today())]          # matchdays still to come
-    inj['injuredFor'] = inj.expected_return.map(lambda r: np.nan if pd.isna(r) else int((cal < pd.Timestamp(r)).sum()))
+    rd = pd.to_datetime(cal[cal.season == CURRENT].groupby('round').date.max())
+    rd.index = [int(re.search(r'\d+', str(x)).group(0)) for x in rd.index]
+    upcoming = rd[rd >= pd.Timestamp(snap_day)].sort_index()          # rounds not finished when the note was written
+    first = int(upcoming.index.min()) if len(upcoming) else 38
+    def missed(text):
+        kind, val = FC.parse_return(str(text), snap_day)
+        if kind == 'round':
+            return max(0, val - first)
+        if kind == 'date':
+            return int((upcoming < pd.Timestamp(val)).sum())
+        if kind == 'next':
+            return 1
+        return np.nan
+    inj['injuredFor'] = inj.text.map(missed)
     return inj.dropna(subset=['player_id']).set_index('player_id').injuredFor
-
 
 if __name__ == '__main__':
     matches, squads, unav = load()

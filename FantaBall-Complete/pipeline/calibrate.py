@@ -350,7 +350,8 @@ def injuries_for(season, as_of_round, roster, teams, dates):
     # Injured now: preseason/backtest from FotMob's list before the next round, live season from Fantacalcio's list
     if season == CURRENT:
         for pid, n in INJ.current_injuries().items():
-            out.setdefault(int(pid), {})['injuredFor'] = int(n) if pd.notna(n) else 2
+            known = out.get(int(pid), {}).get('injuryGames', mean_len)
+            out.setdefault(int(pid), {})['injuredFor'] = int(n) if pd.notna(n) else int(round(known))   # no estimate: expected length
     else:
         un_s = un[(un.season == season) & (un.type == 'injury') & (un['round'] == as_of_round + 1)]
         ids_s = INJ.fantacalcio_ids(un_s.assign(season=season)[['season', 'team', 'player_id', 'name']].drop_duplicates())

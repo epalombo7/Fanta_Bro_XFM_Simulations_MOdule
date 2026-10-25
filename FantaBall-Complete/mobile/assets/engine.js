@@ -54,6 +54,7 @@ const MODEL={
   subRatedMin:25,          // a substitute below this gets no vote unless scoring/assisting/sent off
   red:.008,                // straight red card probability per 90 minutes
   yellowBanEvery:5,        // one-match ban every N yellow cards
+  keeperSuccession:true,   // first-choice keeper unavailable: the next keeper in the pecking order starts
   injuryDispersion:0.28,    // shape of the injury-length distribution (lower = heavier tail); calibrated, data/params/injury_model.json
   // Vote = base + result + goal difference + team performance + individual noise + events
   vote:{win:.3,draw:0,loss:-.3,goalDiff:.1,teamSd:.25,indivSd:.4,goal:.5,assist:.25,red:-1,penMissed:-.5,penSaved:.5,ownGoal:-.5,
@@ -167,6 +168,7 @@ function runSeason(c,opts={}){
   let D=Math.min(N,255,opts.detailWorlds??100),detail=new Uint8Array(D?1<<20:0),nRows=0,ri=0,w=0,ws=0,rec=false;
   const mdA=i=>(i*R+ri)*MF,row16=()=>{if((nRows+1)*DETAIL_BYTES>detail.length){let d=new Uint8Array(detail.length*2);d.set(detail);detail=d}return nRows++*DETAIL_BYTES};
   let roster=teams.map(()=>[]);players.forEach((p,i)=>roster[p.team].push(i));
+  let gkOrder=roster.map(ix=>ix.filter(i=>players[i].role==='P').sort((x,y)=>players[y].start-players[x].start)); // keeper pecking order
   // Per-world state
   let injured=new Int16Array(P),banned=new Int8Array(P),yellows=new Int16Array(P),q=new Float64Array(P),att=new Float64Array(T),def=new Float64Array(T);
   let mins=new Float64Array(P),g=new Int16Array(P),a=new Int16Array(P),yel=new Int8Array(P),red=new Int8Array(P),starter=new Int8Array(P);
@@ -182,7 +184,11 @@ function runSeason(c,opts={}){
       if(rec)md[mdA(i)+mFit]++;if(banned[i]>0){banned[i]--;continue}
       if(rec)md[mdA(i)+mAv]++;ready.push(i)}
     let byRole={P:[],D:[],C:[],A:[]};for(let i of ready)byRole[players[i].role].push(i);
-    let Fm=teams[t].slots||M.formation,xi=[];for(let role of ROLES)for(let i of pick(byRole[role],Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
+    let Fm=teams[t].slots||M.formation,xi=[];
+    for(let role of ROLES){let pool=byRole[role];
+      // Keeper succession: if the club's first-choice keeper is out, the best available keeper is the de facto first choice
+      if(role==='P'&&M.keeperSuccession&&pool.length&&!pool.includes(gkOrder[t][0]))pool=[pool.reduce((x,y)=>players[y].start>players[x].start?y:x)];
+      for(let i of pick(pool,Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
     xi.forEach(i=>{mins[i]=90;if(rec)md[mdA(i)+mSt]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),out=xi.filter(i=>players[i].role!=='P'),played=xi.slice();

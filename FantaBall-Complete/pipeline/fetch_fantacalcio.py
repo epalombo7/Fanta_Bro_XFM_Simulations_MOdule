@@ -90,16 +90,46 @@ def player_season(team_slug, player_slug, pid, season):
 
 MONTHS = {m: i + 1 for i, m in enumerate(['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'])}
 PART = {'inizio': 5, 'primi giorni': 5, 'prima metà': 8, 'metà': 15, 'seconda metà': 22, 'fine': 28}
+MONTH_RE = '(gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre)'
+PART_RE = r'(?:(inizio|primi giorni|prima metà|seconda metà|metà|fine)\s+(?:di\s+|del\s+mese\s+di\s+)?)?'
+DAYS = r'(lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica)'
+
+
+def parse_return(desc, today):
+    """Expected return from a Fantacalcio injury note. Returns ('round', n): available from matchday n;
+    ('date', d): available from date d; ('next', 1): misses only the next match; or (None, None) if unknown.
+    Examples: 'recuperabile dalla 9a giornata', 'rientro dalla seconda metà di novembre', 'ai box fino alla
+    fine di ottobre', 'possibilità di rivederlo in campo da febbraio', 'out nel prossimo turno di campionato'."""
+    t = re.sub(r'\s+', ' ', desc.lower().replace('ª', 'a').replace('°', 'a'))
+    m = re.search(r"(?:dalla|dall'|nella|per la|alla|la)\s*(\d{1,2})\s*a\s+giornata", t) or re.search(r'(\d{1,2})a\s+giornata', t)
+    if m and re.search(r'recuper|rientr|torn|convocabil|disponibil|esserci|punta', t):
+        return 'round', int(m.group(1))
+    # Month phrases only after a return word, so injury dates ('fermo da inizio ottobre') are not read as returns:
+    # 'recuperabile dalla metà di novembre', 'rivederlo in campo da febbraio', 'ai box fino alla fine di ottobre'
+    kw = re.search(r'recuperabil|recupero|rientr|ritorn|torn|arruolabil|rivederlo|rivedremo|riaverlo|disponibil|convocabil|a disposizione|ai box fino|fino alla|fino al ', t)
+    for m in re.finditer(r"\b(da|dalla|dall'|dal|a|ad|entro|fino a|fino alla|fino al|verso)\s*" + PART_RE + MONTH_RE, t):
+        if not kw or m.start() < kw.start():
+            continue
+        tail = t[m.end():m.end() + 40]
+        if re.match(r'\s*(nuovi controlli|controlli|esami|per valutare)', tail):      # a check-up date, not a return
+            continue
+        part, month = m.group(2) or ('fine' if m.group(1).startswith('fino') else 'metà'), MONTHS[m.group(3)]
+        if m.group(1).startswith('fino'):                           # out until the end of a month: back just after
+            part = 'fine'
+        year = today.year + (1 if month < today.month - 1 else 0)
+        if re.search(r'20\d\d', t[max(0, m.start() - 60):m.end() + 20]):
+            year = int(re.search(r'20\d\d', t[max(0, m.start() - 60):m.end() + 20]).group(0))
+        return 'date', datetime.date(year, month, PART[part])
+    # Only the next match: 'out nel prossimo turno', 'non ci sarà neppure venerdì', 'forfait anche domenica', 'out sabato'
+    if re.search(r'prossimo turno|successivo turno|' + r'(out|assente|forfait|non ci sarà|salterà)[^.]{0,40}' + DAYS, t):
+        return 'next', 1
+    return None, None
 
 
 def expected_return(desc, today):
-    """Turn phrases like 'recuperabile dalla seconda metà di novembre' into a date estimate (None if absent)."""
-    m = re.search(r"(?:recuperabil\w*|rientro|rientrare|torn\w*|disponibil\w*)[^.]*?(?:(inizio|primi giorni|prima metà|seconda metà|metà|fine)\s+(?:di\s+|del\s+mese\s+di\s+)?)?(gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre)", desc.lower())
-    if not m:
-        return None
-    month, day = MONTHS[m.group(2)], PART.get(m.group(1) or 'metà', 15)
-    year = today.year + (1 if month < today.month - 1 else 0)
-    return datetime.date(year, month, day)
+    """Return date estimate (kept for the snapshot's expected_return column); None if not a date."""
+    kind, val = parse_return(desc, today)
+    return val if kind == 'date' else None
 
 
 def injuries_snapshot():
@@ -111,9 +141,10 @@ def injuries_snapshot():
             label = text(col.split('</header>')[0])
             for name, desc in re.findall(r'class="item-name">(.*?)</strong>\s*<div class="item-description">(.*?)</div>', col, re.S):
                 d = text(desc)
-                ret = expected_return(d, today) if 'nfortun' in label else None
+                kind, val = parse_return(d, today) if 'nfortun' in label else (None, None)
                 rows.append({'date': str(today), 'team': team, 'category': label, 'name': text(name), 'text': d,
-                             'expected_return': str(ret) if ret else None})
+                             'expected_return': str(val) if kind == 'date' else None,
+                             'return_round': val if kind == 'round' else None, 'next_match_only': kind == 'next'})
     df = pd.DataFrame(rows)
     df.to_csv(out('fantacalcio', 'snapshots', f'injuries_{today}.csv'), index=False)
     return df
