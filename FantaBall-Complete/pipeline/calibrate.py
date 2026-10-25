@@ -162,6 +162,20 @@ def league_settings(v, md):
     roles = prices().drop_duplicates(['season', 'player_id'], keep='last')[['season', 'player_id', 'role']]
     st = md[md.status == 'started'].merge(roles, on=['season', 'player_id'])
     s['offRate'] = {r: round(float(np.average(g.sub_out_min.notna(), weights=g.w)), 3) for r, g in st.groupby('role')}
+    # Who comes on for whom: role in given role out, from moments with a single substitution (the pairing is then certain)
+    k = ['season', 'round', 'team', 'm']
+    tm_ = v.drop_duplicates(['season', 'round', 'player_id'])[['season', 'round', 'player_id', 'team']]
+    x = md.merge(tm_, on=['season', 'round', 'player_id']).merge(roles, on=['season', 'player_id'])
+    o = x[(x.status == 'started') & x.sub_out_min.notna()].assign(m=lambda d: d.sub_out_min)
+    i_ = x[(x.status == 'sub_in') & x.sub_in_min.notna()].assign(m=lambda d: d.sub_in_min)
+    o = o[o.groupby(k).m.transform('size') == 1]; i_ = i_[i_.groupby(k).m.transform('size') == 1]
+    pr_ = o[k + ['role', 'w']].merge(i_[k + ['role']], on=k, suffixes=('_off', '_on'))
+    pr_ = pr_[(pr_.role_off != 'P') & (pr_.role_on != 'P')]
+    # Number of substitutions per team-match (0..5)
+    n_off = x[x.status == 'started'].groupby(['season', 'round', 'team']).apply(lambda g: pd.Series({'n': int(g.sub_out_min.notna().sum()), 'w': g.w.iloc[0]}))
+    s['subsCount'] = [round(float(n_off[n_off.n.clip(upper=5) == c].w.sum() / n_off.w.sum()), 4) for c in range(6)]
+    s['subAffinity'] = {a: {b: round(float(g[g.role_on == b].w.sum() / g.w.sum()), 3) for b in ['D', 'C', 'A']}
+                        for a, g in pr_.groupby('role_off')}
     sr = subs.merge(roles, on=['season', 'player_id'])
     s['subMinutesQ'] = {r: [int(max(1, x)) for x in np.percentile(g.minutes.clip(lower=1), range(0, 101, 10))] for r, g in sr.groupby('role') if len(g) > 30}
     # Minutes below which a substitute usually gets no vote (Fantacalcio provider)
@@ -253,7 +267,9 @@ def build_league(season, as_of_round=0, verbose=False):
     md['on'] = md.status.isin(['started', 'sub_in', 'unused', 'injured', 'suspended']).astype(float)
     md['st'] = (md.status == 'started').astype(float)
     md['off'] = ((md.status == 'started') & md.sub_out_min.notna()).astype(float)
-    a = md.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum(), 'minutes': (g.minutes * g.w).sum(), 'offs': (g.off * g.w).sum()}))
+    md['subin'] = (md.status == 'sub_in').astype(float)
+    a = md.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum(), 'minutes': (g.minutes * g.w).sum(),
+                                                           'offs': (g.off * g.w).sum(), 'subins': (g.subin * g.w).sum()}))
     # Keepers: a pecking order belongs to a club, so their start share counts only seasons at their current club
     # (a new signing who started elsewhere is not assumed to be the club's second choice)
     club = pr.drop_duplicates(['season', 'player_id'], keep='last').set_index(['season', 'player_id']).team_slug
@@ -275,6 +291,10 @@ def build_league(season, as_of_round=0, verbose=False):
     sp = {}
     for role, g in agg[(agg.rounds >= 10) & agg.qi.notna()].groupby('role'):
         sp[role] = np.polyfit(g.qi, g.starts / g.rounds, 1, w=np.sqrt(g.rounds))
+
+    # Chance of coming on when on the bench, per role (prior for each player's own rate)
+    bench_ = agg[agg.role != 'P'].assign(b=lambda d: (d.rounds - d.starts).clip(lower=0))
+    sub_role = {r: float(g.subins.sum() / max(g.b.sum(), 1e-9)) for r, g in bench_.groupby('role')}
 
     # Vote model per provider
     vote_coef, bases = {}, {}
@@ -328,8 +348,10 @@ def build_league(season, as_of_round=0, verbose=False):
         ij = inj.get(pid, {})
         role_off = s['offRate'].get(role, 0.5)
         off_rate = ((h.offs if h is not None else 0) + 8 * role_off) / ((h.starts if h is not None else 0) + 8)   # shrunk to the role's rate
+        benched = max(0.0, (h.rounds - h.starts) if h is not None else 0.0)
+        sub_w = ((h.subins if h is not None else 0) + 8 * sub_role.get(role, 0.3)) / (benched + 8)                  # shrunk to the role's rate
         players.append({'id': str(pid), 'name': r.name, 'team': tix[r.club], 'role': role, 'qi': r.qi, 'offRate': round(float(off_rate), 3) if role != 'P' else 0,
-                        'start': round(share / (1 - share), 4),
+                        'start': round(share / (1 - share), 4), 'subW': round(float(sub_w), 4) if role != 'P' else 0,
                         'base': base['fantacalcio'], 'baseByProvider': base,
                         'goalW': round(rate('goals'), 5), 'assistW': round(rate('assists'), 5), 'penW': round(rate('pens', 5), 5),
                         'yellow': round(rate('yellow'), 4),

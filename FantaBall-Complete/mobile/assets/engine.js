@@ -50,11 +50,12 @@ const MODEL={
   penaltySavedShare:.7,    // share of missed penalties saved by the keeper (the rest miss the target)
   assisted:.7,             // share of credited goals that carry an assist
   // Substitutions: each outfield starter goes off with his role's (or his own, players[].offRate) chance, up
-  // to maxSubs; a bench player of the same role comes on for minutes drawn from the role's real distribution
+  // to maxSubs; a bench player comes on (his role from subAffinity, then by his own subW) for minutes drawn from the role's real distribution
   // (subMinutesQ: minutes at the 0th, 10th, ..., 100th percentile).
   offRate:{P:0,D:.29,C:.55,A:.68},
   maxSubs:5,
-  subAffinity:{D:{D:1,C:.02,A:.01},C:{D:.02,C:1,A:.03},A:{D:.01,C:.03,A:1}}, // who comes on for whom: same role, others only as a fallback
+  subsCount:[0,.001,.016,.075,.226,.682], // chance of 0..5 substitutions in a match (default; calibrated per league)
+  subAffinity:{D:{D:.73,C:.16,A:.11},C:{D:.13,C:.63,A:.24},A:{D:.09,C:.29,A:.62}}, // role coming on for a role going off (real single substitutions)
   subMinutesQ:{D:[1,3,6,10,14,18,22,27,32,44,60],C:[1,5,8,12,16,20,24,27,32,44,60],A:[1,4,7,10,14,18,21,25,30,37,60],P:[1,2,7,20,32,40,49,60,79,82,90]},
   subRatedMin:25,          // a substitute below this gets no vote unless scoring/assisting/sent off
   red:.008,                // straight red card probability per 90 minutes
@@ -197,10 +198,16 @@ function runSeason(c,opts={}){
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
     xi.forEach(i=>{mins[i]=90;if(rec)md[mdA(i)+mSt]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),played=xi.slice();
-    let offs=xi.filter(i=>players[i].role!=='P'&&r()<(players[i].offRate??M.offRate[players[i].role]));
-    while(offs.length>M.maxSubs)offs.splice(Math.floor(r()*offs.length),1);
+    // how many go off: the real distribution of substitutions per match (subsCount), else each by his own chance;
+    // who goes off: by the odds of his chance of being subbed off
+    let offR=i=>players[i].offRate??M.offRate[players[i].role],out=xi.filter(i=>players[i].role!=='P'),offs;
+    if(M.subsCount){let x=r(),n=0;while(n<M.subsCount.length-1&&(x-=M.subsCount[n])>0)n++;
+      offs=pick(out,Math.min(n,M.maxSubs),i=>offR(i)/(1.02-offR(i)),r)}
+    else{offs=out.filter(i=>r()<offR(i));while(offs.length>M.maxSubs)offs.splice(Math.floor(r()*offs.length),1)}
     for(let off of offs){if(!bench.length)break;
-      let aff=M.subAffinity[players[off].role]||{},on=pick(bench,1,i=>players[i].start*(aff[players[i].role]??.01),r)[0];
+      // role of the substitute from the affinity (among roles on the bench), then the player by his chance of coming on
+      let aff=M.subAffinity[players[off].role]||{},sw=i=>players[i].subW??players[i].start,tot={D:0,C:0,A:0};for(let i of bench)tot[players[i].role]+=sw(i);
+      let on=pick(bench,1,i=>(aff[players[i].role]??.01)*sw(i)/(tot[players[i].role]||1),r)[0];
       bench.splice(bench.indexOf(on),1);
       let m=subMinute(players[on].role);mins[on]=m;mins[off]=90-m;played.push(on)}
     return played}
