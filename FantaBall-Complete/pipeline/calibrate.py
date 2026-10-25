@@ -252,6 +252,14 @@ def build_league(season, as_of_round=0, verbose=False):
     md['on'] = md.status.isin(['started', 'sub_in', 'unused', 'injured', 'suspended']).astype(float)
     md['st'] = (md.status == 'started').astype(float)
     a = md.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum(), 'minutes': (g.minutes * g.w).sum()}))
+    # Keepers: a pecking order belongs to a club, so their start share counts only seasons at their current club
+    # (a new signing who started elsewhere is not assumed to be the club's second choice)
+    club = pr.drop_duplicates(['season', 'player_id'], keep='last').set_index(['season', 'player_id']).team_slug
+    now_club = roster.set_index('player_id').team_slug
+    gk_ids = set(roster[roster.role == 'P'].player_id)
+    gk = md[md.player_id.isin(gk_ids)].copy()
+    gk = gk[[club.get((se, pi)) == now_club.get(pi) for se, pi in zip(gk.season, gk.player_id)]]
+    gk_a = gk.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum()}))
     ev = v.assign(pens=v.pen_scored + v.pen_missed)
     for c in ['goals', 'assists', 'pens', 'yellow']:
         ev[c + '_w'] = ev[c] * ev.w
@@ -301,9 +309,11 @@ def build_league(season, as_of_round=0, verbose=False):
         def rate(col, n0=10):
             pri = max(0.0, float(np.polyval(priors[col].get(role, [0, 0]), q))) if role in priors[col] else 0.0
             return float(((h[col] if h is not None else 0) + n0 * pri) / (mins90 + n0))
-        rounds_ = h.rounds if h is not None else 0
+        rounds_, starts_ = (h.rounds, h.starts) if h is not None else (0, 0)
+        if role == 'P':
+            rounds_, starts_ = (gk_a.loc[pid, 'rounds'], gk_a.loc[pid, 'starts']) if pid in gk_a.index else (0, 0)
         s_pri = float(np.clip(np.polyval(sp.get(role, [0, 0.4]), q), 0.02, 0.95))
-        share = float(np.clip(((h.starts if h is not None else 0) + 5 * s_pri) / (rounds_ + 5), 0.01, 0.97))
+        share = float(np.clip((starts_ + 5 * s_pri) / (rounds_ + 5), 0.01, 0.97))
         base = {}
         for prov in PROVIDERS:
             eff, prior = bases[prov]
