@@ -76,7 +76,7 @@ def run_season(league, season_file, summary=None, n=None, burn_in=0, detail=None
     with tempfile.TemporaryDirectory() as d:
         lf = pathlib.Path(d) / 'league.json'; lf.write_text(json.dumps(league))
         extra = (['--summary', str(summary)] if summary else []) + ['--burn-in', str(burn_in)] + (['--detail', str(detail)] if detail else [])
-        out = subprocess.run(['node', '--max-old-space-size=8192', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(n or N), str(season_file), *extra],
+        out = subprocess.run(['node', '--max-old-space-size=12000', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(n or N), str(season_file), *extra],
                              check=True, capture_output=True, text=True)
         print(out.stdout.strip())
 
@@ -88,7 +88,7 @@ def score_season(season_file, config=None, corr_prefix=None, matchdays=None):
         cf, of = pathlib.Path(d) / 'config.json', pathlib.Path(d) / 'out.json'
         cf.write_text(json.dumps(config or CONFIG))
         extra = (['--corr', str(corr_prefix)] if corr_prefix else []) + (['--matchdays', str(matchdays)] if matchdays else [])
-        subprocess.run(['node', '--max-old-space-size=8192', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
+        subprocess.run(['node', '--max-old-space-size=12000', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
         return pd.DataFrame(json.loads(of.read_text())['players'])
 
 

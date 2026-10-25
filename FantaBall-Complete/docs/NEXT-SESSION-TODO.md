@@ -4,12 +4,7 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 
 ## 1. Finish what was started
 
-- [ ] **Run 20,000 simulated seasons, discard the first 5,000.** The engine supports it (`runSeason(..., {N: 15000, burnIn: 5000})`,
-  `run_season.js ... --burn-in 5000 --detail 200`, Brotli `.fbsim.br`, season file format v4), but `pipeline/forecast.py`
-  and `pipeline/backtest.py` were not switched over (the run was stopped). Wire them, run once, and record run time and file
-  size (estimate: about 5 minutes and 25–40 MB) before letting the Friday task use it.
-- [ ] **Regenerate `data/sim/` and `data/forecasts/` with the new engine.** The committed season files are format v3, which the
-  new scoring module refuses; `matchday_xfm_latest.csv.gz` still has the old P10–P90 columns. The next forecast run fixes both.
+- [x] **Run 20,000 simulated seasons, discard the first 5,000** — done; matchday intervals use all 15,000 (outcome counts).
 - [ ] **Check the first Friday run (30 October, 07:38 Rome)**: that the scheduled session can clone and push the repo, and how long
   it takes once it runs 20,000 seasons.
 - [ ] **Update the diagram and the workbook** for the two-module engine, correlations, matchday scoring and middle-50% bands.

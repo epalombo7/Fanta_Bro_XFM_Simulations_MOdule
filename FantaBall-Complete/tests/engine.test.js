@@ -53,6 +53,14 @@ for(const rules of [{},{goal:{A:4.5},voteProvider:'italia',noVoteYellow:5.5}]){
   md.forEach((p,i)=>{assert(Math.abs(p.matchdays.reduce((t,r)=>t+r.expected,0)-season[i].expected)<1e-6,'matchday sum = season');
     p.matchdays.forEach(r=>{if(r.median!==null)assert(r.low<=r.median&&r.median<=r.high);if(r.medianVote!==null)assert(r.medianVote>=3&&r.medianVote<=10)})})}
 assert.equal(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(S)),c)[5].matchdays[3].xfm,E.scoreMatchdays(S,c)[5].matchdays[3].xfm);
+// Outcome counts give exactly the same matchday quantiles as scoring every simulated season match by match
+{const Sx=E.runSeason(c,{N:120,detailWorlds:120});
+ for(const rules of [{},{goal:{A:4.5},voteProvider:'italia',noVoteYellow:5.5}]){const cc={...c,rules},a=E.scoreMatchdays(Sx,cc),b=E.scoreMatchdays({...Sx,outcomes:null},cc);
+   a.forEach((p,i)=>p.matchdays.forEach((r,j)=>{const q=b[i].matchdays[j];assert.deepEqual([r.median,r.low,r.high],[q.median,q.low,q.high])}))}
+ const o=E.unpackOutcome(E.packOutcome([7,7.5,6.5],2,1,0,0,0,1,1,0,3));assert.deepEqual([o.vote2,o.goals,o.penScored,o.assists,o.yellow,o.ga],[[14,15,13],2,1,1,1,3]);
+ assert.equal(JSON.stringify(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(Sx)),c)),JSON.stringify(E.scoreMatchdays(Sx,c)))}
+// Burn-in: those seasons are simulated but not recorded
+assert.equal(E.runSeason(c,{N:30,burnIn:10}).N,30);
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));
 console.log('Team-based simulation and ledger tests passed');

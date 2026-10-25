@@ -39,7 +39,7 @@ weekly run adds one; backtests of the probable-lineup and injury-list inputs can
 |---|---|
 | `xfm_<date>.csv`, `xfm_latest.csv` | per player: xFM and P10–P90, rated games and P10–P90, expected season points, vote, goals, assists, penalties, integrità, titolarità, matchdays still injured |
 | `matchday_simulation_latest.csv.gz` | module 1's matchday table, no league rules: per player per remaining round the median vote per provider, chance to be fit / available / start / play / get a vote, and expected goals, penalties, own goals, assists, cards, goals conceded and clean sheets |
-| `matchday_xfm_latest.csv.gz` | module 2's matchday-by-matchday scoring under the standard rules: chance of a fantavoto, expected fantavoto if he gets one, the round's expected points, and the median with an 80% interval (P10–P90) |
+| `matchday_xfm_latest.csv.gz` | module 2's matchday-by-matchday scoring under the standard rules: chance of a fantavoto, expected fantavoto if he gets one, the round's expected points, and the median with the middle-50% interval (P25–P75) over all 15,000 recorded seasons |
 | `correlation_matchday.csv.gz` | player-by-player correlation of fantavoto in the same round (players expected to get ≥ 5 votes, sorted by club and role). Positive = rise and fall together: risk if started together. Pairs need ≥ 100 shared simulated rounds |
 | `correlation_head_to_head.csv.gz` | as above, but for players of different clubs only the rounds where the clubs meet (≥ 60 shared): the hedge, e.g. a keeper vs the striker he faces |
 | `correlation_season.csv.gz` | correlation of each simulated season's xFM: do whole seasons go well together (auction squad building) |
@@ -57,22 +57,29 @@ recomputes them for any league's rules.
 
 ## `sim/` — simulated seasons (committed, last 10 kept)
 
-`pipeline/forecast.py` saves module 1's output as `sim/season_<season>_after_round_<n>.fbsim.gz` and
-`sim/season_latest.fbsim.gz` (about 4 MB). It holds, for every simulated season and player: rated games, vote
-totals for all three providers, goals, penalties scored / missed / saved, own goals, assists, cards, goals
-conceded and clean sheets in rated games, bookings / red cards without a vote, appearances, starts, matchdays fit
-and available; and for every team-match the score and the defence-modifier inputs. No league rules are applied.
-Module 2 turns it into xFM for any rules:
+`pipeline/forecast.py` runs module 1 for 20,000 simulated seasons, discards the first 5,000 (burn-in) and saves the
+other 15,000 as `sim/season_<season>_after_round_<n>.fbsim.br` (Brotli; copy in `sim/season_latest.fbsim.br`). No
+league rules are applied. The file (format v4) holds:
+
+- for every recorded season and player: rated games, vote totals for all three providers, goals, penalties scored /
+  missed / saved, own goals, assists, cards, goals conceded and clean sheets in rated games, bookings / red cards
+  without a vote — everything season xFM and its middle-50% band need under any rules;
+- a matchday table per player per remaining round (chance to be fit / available / start / play / get a vote,
+  expected events, vote histogram per provider for the median vote);
+- outcome counts: per player per round, how many of the 15,000 seasons produced each exact match outcome (votes,
+  events, cards, goals conceded). Module 2 scores each outcome under the rules, so matchday medians and intervals
+  use every recorded season, exactly;
+- per-match detail for 255 seasons (the correlation matrices);
+- per club: goals for / against and the defence-modifier inputs.
 
 ```bash
-node pipeline/run_season.js league.json <rounds_left> <N> season.fbsim.gz     # module 1 (rules-independent)
-node pipeline/score_season.js season.fbsim.gz config.json xfm.json           # module 2 (your league rules)
+node pipeline/run_season.js league.json <rounds_left> 15000 season.fbsim.br --burn-in 5000 --detail 255   # module 1
+node pipeline/score_season.js season.fbsim.br config.json xfm.json --matchdays md.csv.gz --corr corr       # module 2
 ```
 
-Each weekly run commits its file (about 7.5 MB, including per-match detail for 100 simulated seasons that
-the correlation matrices use). Only the 10 most recent are kept in `sim/`; older ones are listed in
+Each weekly run commits its file. Only the 10 most recent are kept in `sim/`; older ones are listed in
 `sim/archive.csv` and removed from the folder, but stay in git history (`git log --all -- <path>` finds the
-commit, `git show <commit>:<path> > file` restores it). `season_latest.fbsim.gz` is an identical copy of the
+commit, `git show <commit>:<path> > file` restores it). `season_latest.fbsim.br` is an identical copy of the
 newest file, which git stores only once. The simulation is seeded, so module 1 on the same league gives the
 same file.
 

@@ -37,7 +37,7 @@ def prune_season_files(sim_dir):
     print('archived', len(old), 'old season files')
 
 
-SIMULATIONS, BURN_IN, DETAIL = 15000, 5000, 200   # 20,000 simulated seasons, the first 5,000 discarded
+SIMULATIONS, BURN_IN, DETAIL = 15000, 5000, 255   # 20,000 simulated seasons, the first 5,000 discarded
 
 
 def main(n=SIMULATIONS):
