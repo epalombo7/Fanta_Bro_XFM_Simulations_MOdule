@@ -93,8 +93,10 @@ function validate(c){for(let k of ['teams','budget','min','rounds','P','D','C','
 function calendar(nTeams,r=rng(11)){let order=Array.from({length:nTeams},(_,i)=>i);for(let i=order.length-1;i>0;i--){let j=Math.floor(r()*(i+1));[order[i],order[j]]=[order[j],order[i]]}let first=[];for(let k=0;k<nTeams-1;k++){let round=[];for(let m=0;m<nTeams/2;m++){let a=order[m],b=order[nTeams-1-m];round.push((k+m)%2?[a,b]:[b,a])}first.push(round);order.splice(1,0,order.pop())}return first.concat(first.map(round=>round.map(([h,a])=>[a,h])))}
 
 // Synthetic league in the same shape real data must take:
-//  teams[]:   {name, att, def}  (att/def are goal multipliers; def < 1 is a good defence)
-//  players[]: {id, name, team (index), role, start (lineup weight), base (vote when rated),
+//  teams[]:   {name, att, def, slots?}  (att/def are goal multipliers, def < 1 is a good defence;
+//             slots {P,D,C,A} = starters per role, default MODEL.formation)
+//  players[]: {id, name, team (index), role, start (lineup weight), base (vote when rated; or
+//              baseByProvider {fantacalcio, statistico, italia}),
 //              goalW, assistW (shares of team goals/assists per 90), yellow (per 90),
 //              penW (penalty-taker weight), injuryRisk (per match), injuryGames (mean length),
 //              injuredFor, yellows}
@@ -116,7 +118,7 @@ function simulate(c,opts={},legacyLeague){
   let {teams,players}=league,rounds=league.fixtures||calendar(teams.length);
   if(c.rounds>rounds.length)throw Error(`Maximum ${rounds.length} fixtures in this calendar`);
   let first=rounds.length-c.rounds+1;rounds=rounds.slice(first-1); // remaining fixtures
-  let r=rng(M.seed),V=M.vote,P=players.length,R=rounds.length;
+  let r=rng(M.seed),V=merge(M.vote,(M.voteByProvider||{})[RU.voteProvider]||{}),P=players.length,R=rounds.length;
   let roster=teams.map(()=>[]);players.forEach((p,i)=>roster[p.team].push(i));
   // Accumulators: per player per world, and per player totals
   let ratedW=players.map(()=>new Float64Array(N)),pointsW=players.map(()=>new Float64Array(N));
@@ -139,7 +141,7 @@ function simulate(c,opts={},legacyLeague){
       fit[i]++;if(banned[i]>0){banned[i]--;continue}
       avail[i]++;ready.push(i)}
     let byRole={P:[],D:[],C:[],A:[]};for(let i of ready)byRole[players[i].role].push(i);
-    let xi=[];for(let role of ROLES)for(let i of pick(byRole[role],M.formation[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
+    let F=teams[t].slots||M.formation,xi=[];for(let role of ROLES)for(let i of pick(byRole[role],F[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
     xi.forEach(i=>{mins[i]=90;starts[i]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),out=xi.filter(i=>players[i].role!=='P'),played=xi.slice();
@@ -181,7 +183,7 @@ function simulate(c,opts={},legacyLeague){
         let fv=yel[i]&&RU.noVoteYellow!==null?RU.noVoteYellow:null;
         if(fv!==null){ratedW[i][w]++;pointsW[i][w]+=fv}
         continue}
-      let v=p.base+res+V.goalDiff*gd+perf+normal(r)*V.indivSd+V.goal*(g[i]+ps[i])+V.assist*a[i]+V.penMissed*pm[i]+V.penSaved*psv[i]+V.ownGoal*og[i]+(red[i]?V.red:0);
+      let v=(p.baseByProvider?p.baseByProvider[RU.voteProvider]:p.base)+res+V.goalDiff*gd+perf+normal(r)*V.indivSd+V.goal*(g[i]+ps[i])+V.assist*a[i]+V.penMissed*pm[i]+V.penSaved*psv[i]+V.ownGoal*og[i]+(red[i]?V.red:0);
       if(p.role==='P')v+=V.gkConceded*ga+(ga?0:V.gkClean);
       if(p.role==='D')v+=V.defConceded*ga+(ga?0:V.defClean);
       v=clamp(Math.round(v*2)/2,V.min,V.max);

@@ -1,7 +1,8 @@
 """One command to bring FantaBall's data up to date.
 
   python pipeline/update.py             weekly refresh: current season from every source, today's injury and
-                                        probable-lineup snapshots, then re-calibration
+                                        probable-lineup snapshots, re-calibration and a new xFM forecast
+                                        (no backtest; run pipeline/backtest.py separately when wanted)
   python pipeline/update.py --history   also (re)download every past season (first run takes a few hours;
                                         downloaded pages are cached, so an interrupted run resumes)
 """
@@ -20,7 +21,8 @@ def main():
     fetch_fantacalcio.run(SEASONS[::-1] if history else [CURRENT])
     fetch_fotmob.run(range(fetch_fotmob.LAST, fetch_fotmob.FIRST - 1, -1) if history else [fetch_fotmob.LAST])
     fetch_fantacalcio.injuries_snapshot(); fetch_fantacalcio.lineups_snapshot()
-    subprocess.run([sys.executable, str(HERE / 'calibrate_injuries.py')], check=True, cwd=HERE)
+    subprocess.run([sys.executable, str(HERE / 'calibrate_injuries.py'), '--no-backtest'], check=True, cwd=HERE)
+    subprocess.run([sys.executable, str(HERE / 'forecast.py')], check=True, cwd=HERE)
 
 
 if __name__ == '__main__':

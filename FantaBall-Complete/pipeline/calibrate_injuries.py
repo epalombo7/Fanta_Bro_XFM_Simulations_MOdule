@@ -195,9 +195,14 @@ if __name__ == '__main__':
     ids = fantacalcio_ids(expo)
     expo['fc_id'] = [ids.get((s, p), (None, None))[0] for s, p in zip(expo.season, expo.player_id)]
     expo['role'] = [ids.get((s, p), (None, None))[1] for s, p in zip(expo.season, expo.player_id)]
-    # Prior strength chosen by backtest: the value with the best average level-adjusted score
-    scores = {a: backtest(expo, sp, a).relevel_model.mean() for a in (0.5, 1, 2, 3, 5, 8, 12)}
-    best_a = min(scores, key=scores.get)
+    # Prior strength chosen by backtest; weekly runs (--no-backtest) reuse the stored value
+    import sys
+    stored = DATA / 'params' / 'injury_model.json'
+    if '--no-backtest' in sys.argv and stored.exists():
+        old = json.load(open(stored)); best_a, scores = old['prior_strength'], old.get('prior_strength_scores', {})
+    else:
+        scores = {a: backtest(expo, sp, a).relevel_model.mean() for a in (0.5, 1, 2, 3, 5, 8, 12)}
+        best_a = min(scores, key=scores.get)
     print('prior strength (pseudo-injuries) -> backtest score:', {a: round(v, 5) for a, v in scores.items()}, '-> using', best_a)
     per, groups, k, mean_len = fit(expo, sp, prior_a=best_a)
     per['fc_id'] = expo.sort_values('season').groupby('player_id').fc_id.last().reindex(per.index)
@@ -207,7 +212,7 @@ if __name__ == '__main__':
     cols = ['fc_id', 'name', 'team', 'role', 'age', 'group', 'injuryRisk', 'injuryGames', 'injuredFor', 'spells', 'exposure']
     per.index.name = 'fotmob_id'
     per[cols].round(4).to_csv(DATA / 'params' / 'injuries.csv')
-    bt = backtest(expo, sp, best_a)
+    bt = backtest(expo, sp, best_a) if '--no-backtest' not in sys.argv else pd.DataFrame(old.get('backtest', []))
     json.dump({'fitted': str(datetime.date.today()), 'source': 'FotMob unavailable lists (history), Fantacalcio.it injury list (current)',
                'seasons': sorted(set(expo.season)), 'decay': DECAY, 'prior_spells': PRIOR_SPELLS, 'prior_strength': best_a, 'prior_strength_scores': scores, 'injuryDispersion': round(k, 3),
                'mean_games_league': round(mean_len, 3), 'groups': groups, 'spells_used': int((~sp.left_censored).sum()),
