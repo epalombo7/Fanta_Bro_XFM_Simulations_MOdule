@@ -126,6 +126,12 @@ const PROVIDERS=['fantacalcio','statistico','italia'];
 // world, player (2 bytes), round, flags (1 rated, 2 yellow, 4 red), vote x2 per provider (3), goals, penalties
 // scored / missed / saved, own goals, assists, goals conceded, spare. Feeds the correlation matrices.
 const DETAIL_BYTES=16;
+// Matchday table (all N simulated seasons): per player per remaining round, counts over the simulated
+// seasons of the fields below, plus a histogram of the vote per provider (3.0 to 10.0 in half points,
+// 15 bins) from which the median vote is read. Expected counts / N = per-round expectations.
+const MD_FIELDS=['played','rated','starts','fit','avail','goals','penScored','penMissed','penSaved','ownGoals','assists',
+  'yellow','red','conceded','clean','yellowNoVote','redNoVote'];
+const VOTE_BINS=15;
 
 function runSeason(c,opts={}){
   if(!Number.isInteger(c.rounds)||c.rounds<1)throw Error('Positive whole numbers required: rounds');
@@ -136,6 +142,8 @@ function runSeason(c,opts={}){
   let r=rng(M.seed),P=players.length,F=SEASON_FIELDS.length,TF=TEAM_FIELDS.length,nM=rounds.reduce((s,x)=>s+x.length,0);
   let VP=PROVIDERS.map(pr=>merge(M.vote,(M.voteByProvider||{})[pr]||{}));
   let stats=new Uint16Array(P*N*F),teamStats=new Uint8Array(N*nM*2*TF);
+  let R=rounds.length,MF=MD_FIELDS.length,md=new Uint16Array(P*R*MF),hist=new Uint16Array(P*R*3*VOTE_BINS);
+  const mdA=i=>(i*R+ri)*MF,[mPl,mR,mSt,mFit,mAv,mG,mPS,mPM,mPSV,mOG,mA,mY,mRd,mC,mCS,mYN,mRN]=MD_FIELDS.map((_,k)=>k);
   let D=Math.min(N,255,opts.detailWorlds??100),detail=new Uint8Array(D?1<<20:0),nRows=0,ri=0;
   const row16=()=>{if((nRows+1)*DETAIL_BYTES>detail.length){let d=new Uint8Array(detail.length*2);d.set(detail);detail=d}return nRows++*DETAIL_BYTES};
   const at=(i,w)=>(i*N+w)*F,f=k=>SEASON_FIELDS.indexOf(k);
@@ -154,12 +162,12 @@ function runSeason(c,opts={}){
       if(injured[i]>0){injured[i]--;continue}
       // New injury: matches missed = 1 + negative binomial with mean injuryGames-1 (heavy tail)
       if(r()<p.injuryRisk){let k=M.injuryDispersion,extra=Math.max(0,p.injuryGames-1);injured[i]=extra?Math.min(60,poisson(gamma(k,extra/k,r),r)):0;continue}
-      stats[at(i,w)+fFit]++;if(banned[i]>0){banned[i]--;continue}
-      stats[at(i,w)+fAv]++;ready.push(i)}
+      stats[at(i,w)+fFit]++;md[mdA(i)+mFit]++;if(banned[i]>0){banned[i]--;continue}
+      stats[at(i,w)+fAv]++;md[mdA(i)+mAv]++;ready.push(i)}
     let byRole={P:[],D:[],C:[],A:[]};for(let i of ready)byRole[players[i].role].push(i);
     let Fm=teams[t].slots||M.formation,xi=[];for(let role of ROLES)for(let i of pick(byRole[role],Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
-    xi.forEach(i=>{mins[i]=90;stats[at(i,w)+fSt]++});
+    xi.forEach(i=>{mins[i]=90;stats[at(i,w)+fSt]++;md[mdA(i)+mSt]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),out=xi.filter(i=>players[i].role!=='P'),played=xi.slice();
     let nSubs=Math.min(bench.length,M.subs[0]+Math.floor(r()*(M.subs[1]-M.subs[0]+1)));
     for(let s=0;s<nSubs;s++){
@@ -194,21 +202,23 @@ function runSeason(c,opts={}){
       if(r()<p.yellow*mins[i]/90){yel[i]=1;yellows[i]++;if(yellows[i]%M.yellowBanEvery===0)banned[i]=1}
       if(r()<M.red*mins[i]/90){red[i]=1;banned[i]=1}
       stats[o+fPl]++;stats[o+fG]+=g[i];stats[o+fPS]+=ps[i];stats[o+fPM]+=pm[i];stats[o+fPSV]+=psv[i];stats[o+fOG]+=og[i];stats[o+fA]+=a[i];
+      let q2=mdA(i);md[q2+mPl]++;md[q2+mG]+=g[i];md[q2+mPS]+=ps[i];md[q2+mPM]+=pm[i];md[q2+mPSV]+=psv[i];md[q2+mOG]+=og[i];md[q2+mA]+=a[i];
       let d=w<D?row16():-1;
       if(d>=0){detail[d]=w;detail[d+1]=i&255;detail[d+2]=i>>8;detail[d+3]=ri;detail[d+4]=(yel[i]?2:0)|(red[i]?4:0);
         detail[d+8]=g[i];detail[d+9]=ps[i];detail[d+10]=pm[i];detail[d+11]=psv[i];detail[d+12]=og[i];detail[d+13]=a[i];detail[d+14]=ga}
       if(!starter[i]&&mins[i]<M.subRatedMin&&!(g[i]||a[i]||ps[i]||pm[i]||psv[i]||og[i])){ // no vote (s.v.)
-        if(red[i])stats[o+fRN]++;else if(yel[i])stats[o+fYN]++;
+        if(red[i]){stats[o+fRN]++;md[q2+mRN]++}else if(yel[i]){stats[o+fYN]++;md[q2+mYN]++}
         continue}
       if(d>=0)detail[d+4]|=1;
       let zInd=normal(r);
       stats[o+fR]++;stats[o+fY]+=yel[i];stats[o+fRd]+=red[i];stats[o+fC]+=ga;stats[o+fCS]+=ga?0:1;
+      md[q2+mR]++;md[q2+mY]+=yel[i];md[q2+mRd]+=red[i];md[q2+mC]+=ga;md[q2+mCS]+=ga?0:1;
       PROVIDERS.forEach((pr,k)=>{let V=VP[k],res=gf>ga?V.win:gf<ga?V.loss:V.draw;
         let v=(p.baseByProvider?p.baseByProvider[pr]:p.base)+res+V.goalDiff*gd+zTeam*V.teamSd+zInd*V.indivSd+V.goal*(g[i]+ps[i])+V.assist*a[i]+V.penMissed*pm[i]+V.penSaved*psv[i]+V.ownGoal*og[i]+(red[i]?V.red:0);
         if(p.role==='P')v+=V.gkConceded*ga+(ga?0:V.gkClean);
         if(p.role==='D')v+=V.defConceded*ga+(ga?0:V.defClean);
         v=clamp(Math.round(v*2)/2,V.min,V.max);
-        stats[o+fV+k]+=v*2;if(d>=0)detail[d+5+k]=v*2;
+        stats[o+fV+k]+=v*2;if(d>=0)detail[d+5+k]=v*2;hist[((i*R+ri)*3+k)*VOTE_BINS+Math.round((v-3)*2)]++;
         if(p.role==='P'&&gk[k]===null)gk[k]=v;
         if(p.role==='D')dv[k].push(v)})}
     teamStats[row]=gf;teamStats[row+1]=ga;teamStats[row+5]=dv[0].length;
@@ -225,21 +235,27 @@ function runSeason(c,opts={}){
       let gh=oh+penalties(ph,pa),ga=oa+penalties(pa,ph),row=((w*nM+m)*2)*TF;
       rate(ph,gh,ga,row);rate(pa,ga,gh,row+TF);m++}ri++}}
 
-  return{format:'fantaball-season',version:2,N,first,rounds,fields:SEASON_FIELDS,teamFields:TEAM_FIELDS,providers:PROVIDERS,
+  return{format:'fantaball-season',version:3,N,first,rounds,fields:SEASON_FIELDS,teamFields:TEAM_FIELDS,providers:PROVIDERS,
     detailWorlds:D,detailRows:nRows,detail:detail.slice(0,nRows*DETAIL_BYTES),
+    mdFields:MD_FIELDS,voteBins:VOTE_BINS,md,hist,
     teams:teams.map(t=>({name:t.name,att:t.att,def:t.def})),
     players:players.map(p=>({id:p.id,name:p.name,team:p.team,role:p.role,qi:p.qi})),
     model:M,created:new Date().toISOString(),stats,teamStats}}
 
 // Season file: 'FBSN' + uint32 header length + JSON header + per-player stats (Uint16, little-endian,
 // layout [player][world][field]) + per team-match stats (Uint8, layout [world][match][home, away][field])
-// + per-match detail rows (DETAIL_BYTES each, see above).
+// + per-match detail rows (DETAIL_BYTES each, see above) + matchday table (Uint16, [player][round][field])
+// + vote histogram (Uint16, [player][round][provider][bin]).
 function serializeSeason(S){
-  let {stats,teamStats,detail,...head}=S,h=new TextEncoder().encode(JSON.stringify(head)),pad=(8+h.length)%2;
-  detail=detail||new Uint8Array(0);
-  let out=new Uint8Array(8+h.length+pad+stats.byteLength+teamStats.byteLength+detail.byteLength),dv=new DataView(out.buffer);
+  let {stats,teamStats,detail,md,hist,...head}=S,h=new TextEncoder().encode(JSON.stringify(head)),pad=(8+h.length)%2;
+  detail=detail||new Uint8Array(0);md=md||new Uint16Array(0);hist=hist||new Uint16Array(0);
+  let tail=(teamStats.byteLength+detail.byteLength)%2; // keep the matchday tables 2-byte aligned
+  let out=new Uint8Array(8+h.length+pad+stats.byteLength+teamStats.byteLength+detail.byteLength+tail+md.byteLength+hist.byteLength),dv=new DataView(out.buffer);
   out.set([70,66,83,78]);dv.setUint32(4,h.length+pad,true);out.set(h,8);if(pad)out[8+h.length]=32; // pad with a space
   let o=8+h.length+pad;out.set(new Uint8Array(stats.buffer,stats.byteOffset,stats.byteLength),o);out.set(teamStats,o+stats.byteLength);out.set(detail,o+stats.byteLength+teamStats.byteLength);
+  let o3=o+stats.byteLength+teamStats.byteLength+detail.byteLength+tail;
+  for(let k=0;k<md.length;k++)dv.setUint16(o3+2*k,md[k],true);o3+=md.byteLength;
+  for(let k=0;k<hist.length;k++)dv.setUint16(o3+2*k,hist[k],true);
   return out}
 function deserializeSeason(bytes){
   let b=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes),dv=new DataView(b.buffer,b.byteOffset,b.byteLength);
@@ -248,7 +264,11 @@ function deserializeSeason(bytes){
   let n=head.players.length*head.N*head.fields.length,o=8+hl,st=new Uint16Array(n);
   for(let k=0;k<n;k++)st[k]=dv.getUint16(o+2*k,true);
   let nT=head.N*head.rounds.reduce((s,x)=>s+x.length,0)*2*head.teamFields.length,o2=o+2*n;
-  return{...head,stats:st,teamStats:b.slice(o2,o2+nT),detail:b.slice(o2+nT,o2+nT+(head.detailRows||0)*DETAIL_BYTES)}}
+  let nD=(head.detailRows||0)*DETAIL_BYTES,res={...head,stats:st,teamStats:b.slice(o2,o2+nT),detail:b.slice(o2+nT,o2+nT+nD)};
+  if(head.mdFields){let R=head.rounds.length,P=head.players.length,o3=o2+nT+nD+(nT+nD)%2,nm=P*R*head.mdFields.length,nh=P*R*3*head.voteBins;
+    res.md=new Uint16Array(nm);for(let k=0;k<nm;k++)res.md[k]=dv.getUint16(o3+2*k,true);o3+=2*nm;
+    res.hist=new Uint16Array(nh);for(let k=0;k<nh;k++)res.hist[k]=dv.getUint16(o3+2*k,true)}
+  return res}
 
 // scoreSeason(season, config): fantavoto under config.rules (over RULES) for every simulated season,
 // then xFM = total fantavoto / total rated games, bands across simulated seasons, and team summaries.
@@ -296,6 +316,33 @@ function matchdayPoints(S,c){
     else continue;
     fv[i*nS+slot]=x}
   return{fv,nS}}
+
+// Matchday-by-matchday scoring (module 2): for each player and remaining round, under the league rules:
+//  pPlay, pVote (chance of a fantavoto, incl. the league's s.v. rules), medianVote (provider's vote, from
+//  the matchday table), xfm (expected fantavoto if he gets one: exact, from expected counts), expected
+//  (pVote x xfm, the round's expected contribution), and median / p10 / p90 of his fantavoto in that round
+//  (80% interval, from the per-match detail of the first detailWorlds simulated seasons).
+function scoreMatchdays(S,c,ids){
+  if(!S.md)throw Error('This season file has no matchday table (made by an older version: re-run module 1)');
+  let RU=leagueRules(c),k=S.providers.indexOf(RU.voteProvider),N=S.N,R=S.rounds.length,MF=S.mdFields.length,B=S.voteBins,f=x=>S.mdFields.indexOf(x);
+  let key=JSON.stringify(RU);if(S.detailRows&&(!S._fv||S._fv.key!==key))S._fv={key,...matchdayPoints(S,c)};
+  let idx=ids?ids.map(id=>S.players.findIndex(p=>p.id===String(id))).filter(i=>i>=0):S.players.map((_,i)=>i),yN=RU.noVoteYellow,rN=RU.noVoteRed;
+  return idx.map(i=>{let p=S.players[i],t=p.team,rows=S.rounds.map((round,ri)=>{
+      let o=(i*R+ri)*MF,m=x=>S.md[o+f(x)],h=((i*R+ri)*3+k)*B;
+      // fantavoto total over the N simulated seasons for this round, and how many of them gave one
+      let rated=m('rated')+(yN!==null?m('yellowNoVote'):0)+(rN!==null?m('redNoVote'):0),vsum=0;
+      for(let b=0;b<B;b++)vsum+=S.hist[h+b]*(3+b/2);
+      let tot=vsum+m('goals')*RU.goal[p.role]+m('penScored')*RU.penaltyScored+m('penMissed')*RU.penaltyMissed+m('penSaved')*RU.penaltySaved
+        +m('ownGoals')*RU.ownGoal+m('assists')*RU.assist+m('yellow')*RU.yellow+m('red')*RU.red+m('clean')*RU.cleanSheet[p.role]
+        +(p.role==='P'?m('conceded')*RU.conceded:0)+(yN!==null?m('yellowNoVote')*yN:0)+(rN!==null?m('redNoVote')*rN:0);
+      let med=null,cum=0,nv=m('rated');for(let b=0;b<B&&nv;b++){cum+=S.hist[h+b];if(cum>=nv/2){med=3+b/2;break}}
+      let fvs=[];if(S._fv){let {fv,nS}=S._fv;for(let w=0;w<S.detailWorlds;w++){let x=fv[i*nS+w*R+ri];if(x===x)fvs.push(x)}}
+      let [h0,a0]=round.find(mm=>mm.includes(t))||[t,t];
+      return{round:S.first+ri,opponent:S.teams[h0===t?a0:h0].name,home:h0===t,pPlay:m('played')/N,pVote:rated/N,pStart:m('starts')/N,pFit:m('fit')/N,
+        medianVote:med,xfm:rated?tot/rated:null,expected:tot/N,
+        median:fvs.length>=10?quantile(fvs,.5):null,p10:fvs.length>=10?quantile(fvs,.1):null,p90:fvs.length>=10?quantile(fvs,.9):null,
+        goals:(m('goals')+m('penScored'))/N,assists:m('assists')/N,cleanSheet:m('rated')?m('clean')/m('rated'):null}});
+    return{id:p.id,name:p.name,team:S.teams[t].name,role:p.role,matchdays:rows}})}
 
 // Fewest shared observations for a correlation to be reported (fewer is mostly noise)
 const MIN_JOINT={matchday:100,head_to_head:60,season:50};
@@ -359,4 +406,4 @@ function simulate(c,opts={},legacyLeague){
 function squad(c,ledger,players){let mine=ledger.filter(e=>e.owner==='me'),spent=mine.reduce((s,e)=>s+e.price,0),slots=Object.fromEntries(ROLES.map(r=>[r,c[r]]));mine.forEach(e=>{let p=players.find(p=>p.id===e.pid);if(p)slots[p.role]--});let empty=Object.values(slots).reduce((a,b)=>a+b,0);return{mine,spent,left:c.budget-spent,slots,legal:Math.max(0,c.budget-spent-c.min*Math.max(0,empty-1))}}
 function purchase(c,ledger,ps,pid,price,owner){let p=ps.find(p=>p.id===pid);if(!p)throw Error('Unknown player');if(ledger.some(e=>e.pid===pid))throw Error('Already purchased');if(!Number.isInteger(price)||price<c.min)throw Error('Invalid price');if(owner==='me'){let s=squad(c,ledger,ps);if(s.slots[p.role]<1||price>s.legal)throw Error('Role full or illegal budget')}return [...ledger,{pid,price,owner,at:new Date().toISOString()}]}
 
-if(typeof module!=="undefined")module.exports={MODEL,RULES,SEASON_FIELDS,TEAM_FIELDS,merge,leagueRules,defenceModifier,runSeason,scoreSeason,matchdayPoints,correlations,correlationRow,serializeSeason,deserializeSeason,simulate,demoLeague,calendar,validate,squad,purchase};
+if(typeof module!=="undefined")module.exports={MODEL,RULES,SEASON_FIELDS,TEAM_FIELDS,merge,leagueRules,defenceModifier,runSeason,scoreSeason,matchdayPoints,scoreMatchdays,correlations,correlationRow,MD_FIELDS,serializeSeason,deserializeSeason,simulate,demoLeague,calendar,validate,squad,purchase};

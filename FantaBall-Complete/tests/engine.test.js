@@ -47,6 +47,12 @@ assert(Cm.matrix[1]>0.2&&Cm.matrix[2]>0.2,'keeper and own defenders correlate');
 assert(Ch.matrix[3]<-0.2,'keeper hedges the opposing striker head-to-head');
 assert(E.correlationRow(S,c,keeper).length>0);
 assert.equal(E.deserializeSeason(E.serializeSeason(S)).detail.length,S.detail.length);
+// Matchday scoring: expected contributions add up to the season expectation under any rules; intervals are ordered
+for(const rules of [{},{goal:{A:4.5},voteProvider:'italia',noVoteYellow:5.5}]){
+  const cc={...c,rules},season=E.scoreSeason(S,cc).players,md=E.scoreMatchdays(S,cc);
+  md.forEach((p,i)=>{assert(Math.abs(p.matchdays.reduce((t,r)=>t+r.expected,0)-season[i].expected)<1e-6,'matchday sum = season');
+    p.matchdays.forEach(r=>{if(r.median!==null)assert(r.p10<=r.median&&r.median<=r.p90);if(r.medianVote!==null)assert(r.medianVote>=3&&r.medianVote<=10)})})}
+assert.equal(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(S)),c)[5].matchdays[3].xfm,E.scoreMatchdays(S,c)[5].matchdays[3].xfm);
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));
 console.log('Team-based simulation and ledger tests passed');

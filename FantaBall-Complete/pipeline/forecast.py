@@ -47,12 +47,12 @@ def main(n=500):
     # Module 1: the simulated season, saved for re-scoring under any rules (data/sim, committed; last 10 kept)
     sim_dir = DATA / 'sim'; sim_dir.mkdir(exist_ok=True)
     season_file = sim_dir / f'season_{CURRENT}_after_round_{played}.fbsim.gz'
-    B.run_season(lg, season_file)
+    d = DATA / 'forecasts'; d.mkdir(exist_ok=True)
+    B.run_season(lg, season_file, summary=d / 'matchday_simulation_latest.csv.gz')   # module 1's matchday table
     (sim_dir / 'season_latest.fbsim.gz').write_bytes(season_file.read_bytes())   # identical content: stored once by git
     prune_season_files(sim_dir)
     # Module 2: xFM under the standard rules (any league's rules: pipeline/score_season.js)
-    d = DATA / 'forecasts'; d.mkdir(exist_ok=True)
-    sim = B.score_season(season_file, corr_prefix=d / 'correlation')     # + player-by-player correlation matrices
+    sim = B.score_season(season_file, corr_prefix=d / 'correlation', matchdays=d / 'matchday_xfm_latest.csv.gz')     # + player-by-player correlation matrices
     meta = pd.DataFrame(lg['players'])[['id', 'qi', 'start', 'injuryRisk', 'injuredFor']]
     out = sim.merge(meta, on='id')[['id', 'name', 'team', 'role', 'qi', 'xfm', 'xfmLow', 'xfmHigh', 'rated', 'glo', 'ghi', 'expected',
                                      'vote', 'goals', 'assists', 'penScored', 'integrita', 'titolarita', 'injuredFor']]

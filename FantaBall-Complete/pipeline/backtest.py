@@ -70,20 +70,22 @@ def benchmarks(season, roster):
     return out
 
 
-def run_season(league, season_file):
-    """Module 1: simulate the season and save the season file (rules-independent)."""
+def run_season(league, season_file, summary=None):
+    """Module 1: simulate the season and save the season file (rules-independent); optionally the
+    per-player per-matchday summary table as CSV."""
     with tempfile.TemporaryDirectory() as d:
         lf = pathlib.Path(d) / 'league.json'; lf.write_text(json.dumps(league))
-        subprocess.run(['node', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(N), str(season_file)], check=True, capture_output=True)
+        extra = ['--summary', str(summary)] if summary else []
+        subprocess.run(['node', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(N), str(season_file), *extra], check=True, capture_output=True)
 
 
-def score_season(season_file, config=None, corr_prefix=None):
+def score_season(season_file, config=None, corr_prefix=None, matchdays=None):
     """Module 2: xFM under the league rules in config (standard rules by default); optionally the
     correlation matrices too (written to corr_prefix_*)."""
     with tempfile.TemporaryDirectory() as d:
         cf, of = pathlib.Path(d) / 'config.json', pathlib.Path(d) / 'out.json'
         cf.write_text(json.dumps(config or CONFIG))
-        extra = ['--corr', str(corr_prefix)] if corr_prefix else []
+        extra = (['--corr', str(corr_prefix)] if corr_prefix else []) + (['--matchdays', str(matchdays)] if matchdays else [])
         subprocess.run(['node', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
         return pd.DataFrame(json.loads(of.read_text())['players'])
 

@@ -38,6 +38,8 @@ weekly run adds one; backtests of the probable-lineup and injury-list inputs can
 | File | Contents |
 |---|---|
 | `xfm_<date>.csv`, `xfm_latest.csv` | per player: xFM and P10–P90, rated games and P10–P90, expected season points, vote, goals, assists, penalties, integrità, titolarità, matchdays still injured |
+| `matchday_simulation_latest.csv.gz` | module 1's matchday table, no league rules: per player per remaining round the median vote per provider, chance to be fit / available / start / play / get a vote, and expected goals, penalties, own goals, assists, cards, goals conceded and clean sheets |
+| `matchday_xfm_latest.csv.gz` | module 2's matchday-by-matchday scoring under the standard rules: chance of a fantavoto, expected fantavoto if he gets one, the round's expected points, and the median with an 80% interval (P10–P90) |
 | `correlation_matchday.csv.gz` | player-by-player correlation of fantavoto in the same round (players expected to get ≥ 5 votes, sorted by club and role). Positive = rise and fall together: risk if started together. Pairs need ≥ 100 shared simulated rounds |
 | `correlation_head_to_head.csv.gz` | as above, but for players of different clubs only the rounds where the clubs meet (≥ 60 shared): the hedge, e.g. a keeper vs the striker he faces |
 | `correlation_season.csv.gz` | correlation of each simulated season's xFM: do whole seasons go well together (auction squad building) |

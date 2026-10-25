@@ -1,9 +1,21 @@
 // Module 1 — season simulation. Plays the remaining season N times and saves everything that happened
 // (no league rules involved) to a compressed season file for score_season.js.
-//   node run_season.js league.json rounds_left N out.fbsim.gz
+//   node run_season.js league.json rounds_left N out.fbsim.gz [--summary matchdays.csv.gz]
+// --summary also writes module 1's matchday table as CSV (no league rules): per player per remaining round the
+// median vote per provider, chance to be fit / available / start / play / get a vote, and expected goals,
+// penalties, own goals, assists, cards, goals conceded and clean sheets.
 const fs=require('fs'),zlib=require('zlib'),E=require('../mobile/assets/engine.js');
-const [lf,rounds,n,of]=process.argv.slice(2),lg=JSON.parse(fs.readFileSync(lf));
+const args=process.argv.slice(2),[lf,rounds,n,of]=args,lg=JSON.parse(fs.readFileSync(lf)),summary=args.includes('--summary')?args[args.indexOf('--summary')+1]:null;
 const S=E.runSeason({rounds:+rounds},{N:+n||500,league:lg,model:lg.model});
 S.league={season:lg.season,as_of_round:lg.as_of_round};
 fs.writeFileSync(of,zlib.gzipSync(E.serializeSeason(S)));
 console.log(`season file ${of}: ${S.players.length} players x ${S.N} simulated seasons, ${S.rounds.length} rounds`);
+if(summary){
+  const R=S.rounds.length,MF=S.mdFields.length,B=S.voteBins,q=x=>/[",]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x;
+  const med=(i,ri,k)=>{let h=((i*R+ri)*3+k)*B,n=0;for(let b=0;b<B;b++)n+=S.hist[h+b];if(!n)return'';let c=0;for(let b=0;b<B;b++){c+=S.hist[h+b];if(c>=n/2)return(3+b/2).toFixed(1)}};
+  const cols=['fit','avail','starts','played','rated'],ev=['goals','penScored','penMissed','penSaved','ownGoals','assists','yellow','red','conceded','clean','yellowNoVote','redNoVote'];
+  const lines=['id,name,team,role,round,opponent,home,'+S.providers.map(p=>'median_vote_'+p).join(',')+','+cols.map(x=>'p_'+x).join(',')+','+ev.map(x=>'exp_'+x).join(',')];
+  S.players.forEach((p,i)=>S.rounds.forEach((round,ri)=>{const t=p.team,[h,a]=round.find(m=>m.includes(t))||[t,t],o=(i*R+ri)*MF,m=x=>S.md[o+S.mdFields.indexOf(x)]/S.N;
+    lines.push([p.id,q(p.name),q(S.teams[t].name),p.role,S.first+ri,q(S.teams[h===t?a:h].name),h===t?1:0,...S.providers.map((_,k)=>med(i,ri,k)),...cols.map(x=>m(x).toFixed(3)),...ev.map(x=>m(x).toFixed(3))].join(','))}));
+  fs.writeFileSync(summary,zlib.gzipSync(lines.join('\n')+'\n'));
+  console.log('matchday summary written to',summary)}
