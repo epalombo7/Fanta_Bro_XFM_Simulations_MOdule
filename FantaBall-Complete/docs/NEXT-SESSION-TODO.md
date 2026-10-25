@@ -54,6 +54,18 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 - [x] Matchday-by-matchday backtest (`pipeline/backtest_matchday.py`, results in `data/backtest/matchday_*`).
 - [x] Matchday 50% interval checked: 26% strictly inside, 44% exactly on an edge (half-point grid, median width 1.0);
   counting edges as half gives 47.5%, close to the 50% target.
+- [ ] **Matchday errors by role** (`data/backtest/matchday_by_role_2026-10-25.csv`): 76–95% of the round-points error is who
+  plays, not how well. Fixes, biggest first:
+  1. Chances of a vote are too extreme in every role: forecast 97% → real 88%, forecast 12% → real 17–21%. Add a late-absence
+     chance for nailed starters (~9%), more random bench cameos, then recalibrate on the backtest; use the weekly probable-lineup
+     snapshots and European-cup congestion for rotation.
+  2. Attackers fantavoto +0.18 (goals +0.10, base vote +0.07, penalties +0.03): too many rated games are starts (model 71% vs
+     real 64%), so cameo players get a starter's goal rate (real cameos 0.11 goals vs model mix 0.21). Fit a per-player sub-in
+     rate; goal shares from Understat xG/90 (goal ranking corr only 0.16); penalty-taker order.
+  3. Base vote ignores the result: real votes 5.6–5.7 in a defeat, 6.2–6.4 in a win (outfield). Tie the team swing to the
+     simulated score (vote ranking corr only 0.16–0.21 now).
+  4. Keepers: goals conceded 1.31 vs 1.25 real, reds 0.008 vs 0.003; sharpen with closing odds / xG in team strength; keeper vote
+     from shots on target faced (vote ranking corr 0.05).
 - [ ] Backtest the correlations against real seasons.
 - [ ] Add a squad-level benchmark (points of a draft built from each forecast) and a price + last-season benchmark.
 
