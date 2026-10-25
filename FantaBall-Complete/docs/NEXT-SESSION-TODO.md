@@ -52,6 +52,9 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 
 - [ ] Re-run the backtest with the 50% band (target coverage 50%).
 - [x] Matchday-by-matchday backtest (`pipeline/backtest_matchday.py`, results in `data/backtest/matchday_*`).
+- [ ] **Matchday 50% interval too wide-looking**: 69% of real fantavoti fall inside P25–P75 (target 50%), partly because
+  fantavoti are on a half-point grid and many land exactly on an edge. Report interval coverage with half-weight on edges and,
+  if still above 50%, shrink vote noise per role.
 - [ ] Backtest the correlations against real seasons.
 - [ ] Add a squad-level benchmark (points of a draft built from each forecast) and a price + last-season benchmark.
 
