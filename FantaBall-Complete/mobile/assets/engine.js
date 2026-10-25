@@ -109,27 +109,37 @@ function demoLeague(nTeams=20,r=rng(7)){let squadSize={P:2,D:6,C:6,A:4},goalW={P
 // Weighted draw of k distinct indices from list.
 function pick(list,k,weight,r){if(k===1){let total=0;for(let i of list)total+=weight(i);let x=r()*total;for(let i of list){x-=weight(i);if(x<=0)return [i]}return list.length?[list[list.length-1]]:[]}let pool=list.slice(),out=[];while(out.length<k&&pool.length){let total=0;for(let i of pool)total+=weight(i);let x=r()*total,j=0;for(;j<pool.length-1;j++){x-=weight(pool[j]);if(x<=0)break}out.push(pool.splice(j,1)[0])}return out}
 
-// simulate(config, {N, league, model}) — or simulate(config, N, league) for short.
-// config.rules overrides RULES; model overrides MODEL (e.g. calibrated values).
-function simulate(c,opts={},legacyLeague){
-  if(typeof opts==='number')opts={N:opts,league:legacyLeague};
-  validate(c);
-  let N=opts.N||1000,league=opts.league||demoLeague(),M=merge(MODEL,opts.model||{}),RU=leagueRules(c);
+// ---------------------------------------------------------------------------------------------
+// Module 1 — runSeason: plays the remaining season N times and records what happened, with no league
+// rules involved. For each simulated season (world) and player it keeps the counts below; for each
+// team-match the score and the defence-modifier inputs. Votes are recorded for all three vote providers
+// (same match, same random draws, each provider's own calibrated coefficients).
+// Module 2 — scoreSeason: turns that record into xFM under any league rules (see below).
+const SEASON_FIELDS=['rated','vote_fantacalcio','vote_statistico','vote_italia', // vote sums are stored x2 (half points)
+  'goals','penScored','penMissed','penSaved','ownGoals','assists',
+  'yellow','red','conceded','clean',            // in matches with a vote: cards, goals conceded, clean sheets
+  'yellowNoVote','redNoVote',                   // booked / sent off in a match without a vote (s.v.)
+  'played','starts','fit','avail'];             // appearances, starts, matchdays fit, matchdays available
+const TEAM_FIELDS=['gf','ga','dm_fantacalcio','dm_statistico','dm_italia','dRated']; // dm = 20 x avg vote of keeper + 3 best defenders (0 = n/a)
+const PROVIDERS=['fantacalcio','statistico','italia'];
+
+function runSeason(c,opts={}){
+  if(!Number.isInteger(c.rounds)||c.rounds<1)throw Error('Positive whole numbers required: rounds');
+  let N=opts.N||1000,league=opts.league||demoLeague(),M=merge(MODEL,opts.model||{});
   let {teams,players}=league,rounds=league.fixtures||calendar(teams.length);
   if(c.rounds>rounds.length)throw Error(`Maximum ${rounds.length} fixtures in this calendar`);
   let first=rounds.length-c.rounds+1;rounds=rounds.slice(first-1); // remaining fixtures
-  let r=rng(M.seed),V=merge(M.vote,(M.voteByProvider||{})[RU.voteProvider]||{}),P=players.length,R=rounds.length;
+  let r=rng(M.seed),P=players.length,F=SEASON_FIELDS.length,TF=TEAM_FIELDS.length,nM=rounds.reduce((s,x)=>s+x.length,0);
+  let VP=PROVIDERS.map(pr=>merge(M.vote,(M.voteByProvider||{})[pr]||{}));
+  let stats=new Uint16Array(P*N*F),teamStats=new Uint8Array(N*nM*2*TF);
+  const at=(i,w)=>(i*N+w)*F,f=k=>SEASON_FIELDS.indexOf(k);
+  const [fR,fV,fG,fPS,fPM,fPSV,fOG,fA,fY,fRd,fC,fCS,fYN,fRN,fPl,fSt,fFit,fAv]=['rated','vote_fantacalcio','goals','penScored','penMissed','penSaved','ownGoals','assists','yellow','red','conceded','clean','yellowNoVote','redNoVote','played','starts','fit','avail'].map(f);
   let roster=teams.map(()=>[]);players.forEach((p,i)=>roster[p.team].push(i));
-  // Accumulators: per player per world, and per player totals
-  let ratedW=players.map(()=>new Float64Array(N)),pointsW=players.map(()=>new Float64Array(N));
-  let fit=new Float64Array(P),avail=new Float64Array(P),starts=new Float64Array(P),votes=new Float64Array(P),goals=new Float64Array(P),assists=new Float64Array(P);
-  let teamGoals=new Float64Array(teams.length),teamConceded=new Float64Array(teams.length);
   // Per-world state
   let injured=new Int16Array(P),banned=new Int8Array(P),yellows=new Int16Array(P),q=new Float64Array(P),att=new Float64Array(teams.length),def=new Float64Array(teams.length);
   let mins=new Float64Array(P),g=new Int16Array(P),a=new Int16Array(P),yel=new Int8Array(P),red=new Int8Array(P),starter=new Int8Array(P);
   let ps=new Int8Array(P),pm=new Int8Array(P),psv=new Int8Array(P),og=new Int8Array(P); // penalties scored/missed/saved, own goals
-  let penScored=new Float64Array(P),penMissed=new Float64Array(P),penSaved=new Float64Array(P),ownGoals=new Float64Array(P);
-  let teamMod=new Float64Array(teams.length);
+  let w=0;
 
   // Availability and lineup for one team; returns indices who played (mins[] filled).
   function lineup(t){
@@ -138,12 +148,12 @@ function simulate(c,opts={},legacyLeague){
       if(injured[i]>0){injured[i]--;continue}
       // New injury: matches missed = 1 + negative binomial with mean injuryGames-1 (heavy tail)
       if(r()<p.injuryRisk){let k=M.injuryDispersion,extra=Math.max(0,p.injuryGames-1);injured[i]=extra?Math.min(60,poisson(gamma(k,extra/k,r),r)):0;continue}
-      fit[i]++;if(banned[i]>0){banned[i]--;continue}
-      avail[i]++;ready.push(i)}
+      stats[at(i,w)+fFit]++;if(banned[i]>0){banned[i]--;continue}
+      stats[at(i,w)+fAv]++;ready.push(i)}
     let byRole={P:[],D:[],C:[],A:[]};for(let i of ready)byRole[players[i].role].push(i);
-    let F=teams[t].slots||M.formation,xi=[];for(let role of ROLES)for(let i of pick(byRole[role],F[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
+    let Fm=teams[t].slots||M.formation,xi=[];for(let role of ROLES)for(let i of pick(byRole[role],Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
-    xi.forEach(i=>{mins[i]=90;starts[i]++});
+    xi.forEach(i=>{mins[i]=90;stats[at(i,w)+fSt]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),out=xi.filter(i=>players[i].role!=='P'),played=xi.slice();
     let nSubs=Math.min(bench.length,M.subs[0]+Math.floor(r()*(M.subs[1]-M.subs[0]+1)));
     for(let s=0;s<nSubs;s++){
@@ -171,58 +181,101 @@ function simulate(c,opts={},legacyLeague){
       else{pm[taker]++;let gk=opp.find(i=>players[i].role==='P');if(gk!==undefined&&r()<M.penaltySavedShare)psv[gk]++}}
     return scored}
 
-  // Votes from the match outcome, then fantavoto from the league rules. Returns the team's defence modifier.
-  function rate(played,gf,ga,w,t){
-    let res=gf>ga?V.win:gf<ga?V.loss:V.draw,gd=clamp(gf-ga,-3,3),perf=normal(r)*V.teamSd,gkVote=null,defVotes=[];
-    for(let i of played){let p=players[i];
+  // Cards, then votes from the match outcome for every provider; records the team-match row.
+  function rate(played,gf,ga,row){
+    let gd=clamp(gf-ga,-3,3),zTeam=normal(r),gk=PROVIDERS.map(()=>null),dv=PROVIDERS.map(()=>[]);
+    for(let i of played){let p=players[i],o=at(i,w);
       if(r()<p.yellow*mins[i]/90){yel[i]=1;yellows[i]++;if(yellows[i]%M.yellowBanEvery===0)banned[i]=1}
       if(r()<M.red*mins[i]/90){red[i]=1;banned[i]=1}
-      goals[i]+=g[i]+ps[i];assists[i]+=a[i];penScored[i]+=ps[i];penMissed[i]+=pm[i];penSaved[i]+=psv[i];ownGoals[i]+=og[i];
-      let decisive=g[i]||a[i]||ps[i]||pm[i]||psv[i]||og[i]||red[i];
-      if(!starter[i]&&mins[i]<M.subRatedMin&&!decisive){ // no vote (s.v.): only the league's s.v. rules can still score it
-        let fv=yel[i]&&RU.noVoteYellow!==null?RU.noVoteYellow:null;
-        if(fv!==null){ratedW[i][w]++;pointsW[i][w]+=fv}
+      stats[o+fPl]++;stats[o+fG]+=g[i];stats[o+fPS]+=ps[i];stats[o+fPM]+=pm[i];stats[o+fPSV]+=psv[i];stats[o+fOG]+=og[i];stats[o+fA]+=a[i];
+      if(!starter[i]&&mins[i]<M.subRatedMin&&!(g[i]||a[i]||ps[i]||pm[i]||psv[i]||og[i])){ // no vote (s.v.)
+        if(red[i])stats[o+fRN]++;else if(yel[i])stats[o+fYN]++;
         continue}
-      let v=(p.baseByProvider?p.baseByProvider[RU.voteProvider]:p.base)+res+V.goalDiff*gd+perf+normal(r)*V.indivSd+V.goal*(g[i]+ps[i])+V.assist*a[i]+V.penMissed*pm[i]+V.penSaved*psv[i]+V.ownGoal*og[i]+(red[i]?V.red:0);
-      if(p.role==='P')v+=V.gkConceded*ga+(ga?0:V.gkClean);
-      if(p.role==='D')v+=V.defConceded*ga+(ga?0:V.defClean);
-      v=clamp(Math.round(v*2)/2,V.min,V.max);
-      if(red[i]&&!starter[i]&&mins[i]<M.subRatedMin&&!(g[i]||a[i]||ps[i]||pm[i]||psv[i]||og[i])&&RU.noVoteRed!==null){ratedW[i][w]++;pointsW[i][w]+=RU.noVoteRed;continue}
-      let fm=v+g[i]*RU.goal[p.role]+ps[i]*RU.penaltyScored+pm[i]*RU.penaltyMissed+psv[i]*RU.penaltySaved+og[i]*RU.ownGoal
-        +a[i]*RU.assist+yel[i]*RU.yellow+red[i]*RU.red+(ga?0:RU.cleanSheet[p.role]);
-      if(p.role==='P'){fm+=ga*RU.conceded;if(gkVote===null)gkVote=v}
-      if(p.role==='D')defVotes.push(v);
-      votes[i]+=v;ratedW[i][w]++;pointsW[i][w]+=fm}
-    return defenceModifier(gkVote,defVotes,RU)}
+      let zInd=normal(r);
+      stats[o+fR]++;stats[o+fY]+=yel[i];stats[o+fRd]+=red[i];stats[o+fC]+=ga;stats[o+fCS]+=ga?0:1;
+      PROVIDERS.forEach((pr,k)=>{let V=VP[k],res=gf>ga?V.win:gf<ga?V.loss:V.draw;
+        let v=(p.baseByProvider?p.baseByProvider[pr]:p.base)+res+V.goalDiff*gd+zTeam*V.teamSd+zInd*V.indivSd+V.goal*(g[i]+ps[i])+V.assist*a[i]+V.penMissed*pm[i]+V.penSaved*psv[i]+V.ownGoal*og[i]+(red[i]?V.red:0);
+        if(p.role==='P')v+=V.gkConceded*ga+(ga?0:V.gkClean);
+        if(p.role==='D')v+=V.defConceded*ga+(ga?0:V.defClean);
+        v=clamp(Math.round(v*2)/2,V.min,V.max);
+        stats[o+fV+k]+=v*2;
+        if(p.role==='P'&&gk[k]===null)gk[k]=v;
+        if(p.role==='D')dv[k].push(v)})}
+    teamStats[row]=gf;teamStats[row+1]=ga;teamStats[row+5]=dv[0].length;
+    PROVIDERS.forEach((_,k)=>{if(gk[k]!==null&&dv[k].length>=3){let best=dv[k].sort((x,y)=>y-x).slice(0,3);teamStats[row+2+k]=Math.round(20*(gk[k]+best[0]+best[1]+best[2])/4)}})}
 
-  for(let w=0;w<N;w++){
+  for(w=0;w<N;w++){
     teams.forEach((t,k)=>{att[k]=t.att*Math.exp(normal(r)*M.teamSd);def[k]=t.def*Math.exp(normal(r)*M.teamSd)});
     players.forEach((p,i)=>{q[i]=Math.exp(normal(r)*M.playerSd);injured[i]=p.injuredFor||0;yellows[i]=p.yellows||0;banned[i]=0});
+    let m=0;
     for(let round of rounds)for(let [h,aw] of round){
       let ph=lineup(h),pa=lineup(aw);
       let oh=poisson(M.baseGoals*att[h]*def[aw]*M.home,r),oa=poisson(M.baseGoals*att[aw]*def[h]/M.home,r);
       credit(ph,pa,oh);credit(pa,ph,oa);
-      let gh=oh+penalties(ph,pa),ga=oa+penalties(pa,ph);
-      teamGoals[h]+=gh;teamGoals[aw]+=ga;teamConceded[h]+=ga;teamConceded[aw]+=gh;
-      teamMod[h]+=rate(ph,gh,ga,w,h);teamMod[aw]+=rate(pa,ga,gh,w,aw)}}
+      let gh=oh+penalties(ph,pa),ga=oa+penalties(pa,ph),row=((w*nM+m)*2)*TF;
+      rate(ph,gh,ga,row);rate(pa,ga,gh,row+TF);m++}}
 
-  let mean=x=>x.reduce((s,v)=>s+v,0)/x.length;
-  let out=players.map((p,i)=>{
-    let rated=mean(ratedW[i]),pts=mean(pointsW[i]),perWorld=[];
-    for(let w=0;w<N;w++)if(ratedW[i][w])perWorld.push(pointsW[i][w]/ratedW[i][w]);
-    return{id:p.id,name:p.name,team:teams[p.team].name,role:p.role,
-      fixtures:rounds.map((round,k)=>{let [h,aw]=round.find(m=>m.includes(p.team)),opp=h===p.team?aw:h;return{round:first+k,home:h===p.team,opponent:teams[opp].name,attack:teams[opp].att,def:teams[opp].def}}),
+  return{format:'fantaball-season',version:1,N,first,rounds,fields:SEASON_FIELDS,teamFields:TEAM_FIELDS,providers:PROVIDERS,
+    teams:teams.map(t=>({name:t.name,att:t.att,def:t.def})),
+    players:players.map(p=>({id:p.id,name:p.name,team:p.team,role:p.role,qi:p.qi})),
+    model:M,created:new Date().toISOString(),stats,teamStats}}
+
+// Season file: 'FBSN' + uint32 header length + JSON header + per-player stats (Uint16, little-endian,
+// layout [player][world][field]) + per team-match stats (Uint8, layout [world][match][home, away][field]).
+function serializeSeason(S){
+  let {stats,teamStats,...head}=S,h=new TextEncoder().encode(JSON.stringify(head)),pad=(8+h.length)%2;
+  let out=new Uint8Array(8+h.length+pad+stats.byteLength+teamStats.byteLength),dv=new DataView(out.buffer);
+  out.set([70,66,83,78]);dv.setUint32(4,h.length+pad,true);out.set(h,8);if(pad)out[8+h.length]=32; // pad with a space
+  let o=8+h.length+pad;out.set(new Uint8Array(stats.buffer,stats.byteOffset,stats.byteLength),o);out.set(teamStats,o+stats.byteLength);
+  return out}
+function deserializeSeason(bytes){
+  let b=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes),dv=new DataView(b.buffer,b.byteOffset,b.byteLength);
+  if(String.fromCharCode(...b.subarray(0,4))!=='FBSN')throw Error('Not a FantaBall season file');
+  let hl=dv.getUint32(4,true),head=JSON.parse(new TextDecoder().decode(b.subarray(8,8+hl)).trim());
+  let n=head.players.length*head.N*head.fields.length,o=8+hl,st=new Uint16Array(n);
+  for(let k=0;k<n;k++)st[k]=dv.getUint16(o+2*k,true);
+  return{...head,stats:st,teamStats:b.slice(o+2*n)}}
+
+// scoreSeason(season, config): fantavoto under config.rules (over RULES) for every simulated season,
+// then xFM = total fantavoto / total rated games, bands across simulated seasons, and team summaries.
+// Everything rules-dependent happens here, so changing the rules never needs a new season run.
+function scoreSeason(S,c){
+  let RU=leagueRules(c),N=S.N,F=S.fields.length,TF=S.teamFields.length,R=S.rounds.length,nM=S.teamStats.length/(N*2*TF);
+  const f=k=>S.fields.indexOf(k),k=S.providers.indexOf(RU.voteProvider);
+  const [fR,fG,fPS,fPM,fPSV,fOG,fA,fY,fRd,fC,fCS,fYN,fRN,fSt,fFit,fAv]=['rated','goals','penScored','penMissed','penSaved','ownGoals','assists','yellow','red','conceded','clean','yellowNoVote','redNoVote','starts','fit','avail'].map(f),fV=f('vote_'+RU.voteProvider);
+  let yN=RU.noVoteYellow,rN=RU.noVoteRed,sum=(i,fi)=>{let t=0;for(let w=0;w<N;w++)t+=S.stats[(i*N+w)*F+fi];return t};
+  let players=S.players.map((p,i)=>{
+    let ratedW=new Float64Array(N),ptsW=new Float64Array(N),perWorld=[],votes=0,voted=0;
+    for(let w=0;w<N;w++){let o=(i*N+w)*F,s=S.stats;
+      let rated=s[o+fR]+(yN!==null?s[o+fYN]:0)+(rN!==null?s[o+fRN]:0);
+      let pts=s[o+fV]/2+s[o+fG]*RU.goal[p.role]+s[o+fPS]*RU.penaltyScored+s[o+fPM]*RU.penaltyMissed+s[o+fPSV]*RU.penaltySaved
+        +s[o+fOG]*RU.ownGoal+s[o+fA]*RU.assist+s[o+fY]*RU.yellow+s[o+fRd]*RU.red+s[o+fCS]*RU.cleanSheet[p.role]
+        +(p.role==='P'?s[o+fC]*RU.conceded:0)+(yN!==null?s[o+fYN]*yN:0)+(rN!==null?s[o+fRN]*rN:0);
+      ratedW[w]=rated;ptsW[w]=pts;votes+=s[o+fV]/2;voted+=s[o+fR];if(rated)perWorld.push(pts/rated)}
+    let rated=ratedW.reduce((x,y)=>x+y,0)/N,pts=ptsW.reduce((x,y)=>x+y,0)/N,t=p.team;
+    return{id:p.id,name:p.name,team:S.teams[t].name,role:p.role,
+      fixtures:S.rounds.map((round,j)=>{let [h,aw]=round.find(m=>m.includes(t)),opp=h===t?aw:h;return{round:S.first+j,home:h===t,opponent:S.teams[opp].name,attack:S.teams[opp].att,def:S.teams[opp].def}}),
       xfm:rated?pts/rated:0,xfmLow:quantile(perWorld,.1),xfmHigh:quantile(perWorld,.9),
-      rated,glo:quantile(ratedW[i],.1),ghi:quantile(ratedW[i],.9),expected:pts,
-      vote:votes[i]/(rated*N||1),goals:goals[i]/N,assists:assists[i]/N,
-      penScored:penScored[i]/N,penMissed:penMissed[i]/N,penSaved:penSaved[i]/N,ownGoals:ownGoals[i]/N,
-      integrita:fit[i]/(N*R),titolarita:avail[i]?starts[i]/avail[i]:0}});
-  return{players:out,teams:teams.map((t,k)=>({name:t.name,att:t.att,def:t.def,goals:teamGoals[k]/N,conceded:teamConceded[k]/N,
-    defenceModifier:teamMod[k]/(N*R)})),rules:RU,model:M};
-}
+      rated,glo:quantile(ratedW,.1),ghi:quantile(ratedW,.9),expected:pts,
+      vote:voted?votes/voted:0,goals:(sum(i,fG)+sum(i,fPS))/N,assists:sum(i,fA)/N,
+      penScored:sum(i,fPS)/N,penMissed:sum(i,fPM)/N,penSaved:sum(i,fPSV)/N,ownGoals:sum(i,fOG)/N,
+      integrita:sum(i,fFit)/(N*R),titolarita:sum(i,fAv)?sum(i,fSt)/sum(i,fAv):0}});
+  // Team summaries: goals, conceded and the club's average defence modifier under these rules
+  let tg=S.teams.map(()=>({gf:0,ga:0,mod:0,n:0})),D=RU.defenceModifier,bands=[...D.bands].sort((x,y)=>x[0]-y[0]);
+  for(let w=0;w<N;w++){let m=0;for(let round of S.rounds)for(let [h,aw] of round){[h,aw].forEach((t,side)=>{let o=((w*nM+m)*2+side)*TF,T=tg[t],avg=S.teamStats[o+2+k]/20;
+      T.gf+=S.teamStats[o];T.ga+=S.teamStats[o+1];T.n++;
+      if(D.enabled&&avg>0&&S.teamStats[o+5]>=D.minDefenders){let bonus=0;for(let [th,bb] of bands)if(avg>=th)bonus=bb;T.mod+=bonus}});m++}}
+  return{players,teams:S.teams.map((t,j)=>({...t,goals:tg[j].gf/N,conceded:tg[j].ga/N,defenceModifier:tg[j].n?tg[j].mod/tg[j].n:0})),rules:RU,model:S.model}}
+
+// simulate(config, {N, league, model}) — or simulate(config, N, league) for short: both modules in one go.
+// config.rules overrides RULES; model overrides MODEL (e.g. calibrated values).
+function simulate(c,opts={},legacyLeague){
+  if(typeof opts==='number')opts={N:opts,league:legacyLeague};
+  validate(c);
+  return scoreSeason(runSeason(c,opts),c)}
 
 // Auction ledger bookkeeping (not part of the simulation).
 function squad(c,ledger,players){let mine=ledger.filter(e=>e.owner==='me'),spent=mine.reduce((s,e)=>s+e.price,0),slots=Object.fromEntries(ROLES.map(r=>[r,c[r]]));mine.forEach(e=>{let p=players.find(p=>p.id===e.pid);if(p)slots[p.role]--});let empty=Object.values(slots).reduce((a,b)=>a+b,0);return{mine,spent,left:c.budget-spent,slots,legal:Math.max(0,c.budget-spent-c.min*Math.max(0,empty-1))}}
 function purchase(c,ledger,ps,pid,price,owner){let p=ps.find(p=>p.id===pid);if(!p)throw Error('Unknown player');if(ledger.some(e=>e.pid===pid))throw Error('Already purchased');if(!Number.isInteger(price)||price<c.min)throw Error('Invalid price');if(owner==='me'){let s=squad(c,ledger,ps);if(s.slots[p.role]<1||price>s.legal)throw Error('Role full or illegal budget')}return [...ledger,{pid,price,owner,at:new Date().toISOString()}]}
 
-if(typeof module!=="undefined")module.exports={MODEL,RULES,merge,leagueRules,defenceModifier,simulate,demoLeague,calendar,validate,squad,purchase};
+if(typeof module!=="undefined")module.exports={MODEL,RULES,SEASON_FIELDS,TEAM_FIELDS,merge,leagueRules,defenceModifier,runSeason,scoreSeason,serializeSeason,deserializeSeason,simulate,demoLeague,calendar,validate,squad,purchase};

@@ -1,5 +1,6 @@
 """Weekly forecast: build the current league from the data (rounds played so far count), simulate the rest of
-the season, save the forecast table, and hand the league to the app (mobile/assets/league.js). No backtest."""
+the season (module 1, saved to data/sim/), score it under the standard rules (module 2), save the forecast
+table, and hand the league to the app (mobile/assets/league.js). No backtest."""
 import datetime, json, pathlib
 import pandas as pd
 import calibrate as C
@@ -23,7 +24,13 @@ def main(n=500):
                    f'const LEAGUE_DATA={json.dumps(lg, separators=(",", ":"))};\n')
     B.N = n
     B.CONFIG = {**B.CONFIG, 'season': CURRENT, 'rounds': 38 - played}
-    sim = B.simulate(lg)
+    # Module 1: the simulated season, saved for re-scoring under any rules (data/sim, not committed)
+    sim_dir = DATA / 'sim'; sim_dir.mkdir(exist_ok=True)
+    season_file = sim_dir / f'season_{CURRENT}_after_round_{played}.fbsim.gz'
+    B.run_season(lg, season_file)
+    (sim_dir / 'season_latest.fbsim.gz').write_bytes(season_file.read_bytes())
+    # Module 2: xFM under the standard rules (any league's rules: pipeline/score_season.js)
+    sim = B.score_season(season_file)
     meta = pd.DataFrame(lg['players'])[['id', 'qi', 'start', 'injuryRisk', 'injuredFor']]
     out = sim.merge(meta, on='id')[['id', 'name', 'team', 'role', 'qi', 'xfm', 'xfmLow', 'xfmHigh', 'rated', 'glo', 'ghi', 'expected',
                                      'vote', 'goals', 'assists', 'penScored', 'integrita', 'titolarita', 'injuredFor']]

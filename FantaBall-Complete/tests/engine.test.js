@@ -28,6 +28,15 @@ const avg=a=>a.reduce((s,x)=>s+x[1],0)/a.length;assert(avg(gk.slice(0,5))>avg(gk
 // Each team plays every remaining round once
 assert(ps.every(p=>p.fixtures.length===c.rounds));
 assert.throws(()=>E.simulate({...c,rounds:39},10));
+// Two modules: the season record is rules-independent; scoring it equals simulate(); the file round-trips
+const S=E.runSeason(c,{N:200});
+assert.equal(JSON.stringify(E.scoreSeason(S,c).players),JSON.stringify(ps));
+const S2=E.deserializeSeason(E.serializeSeason(S));
+assert.equal(JSON.stringify(E.scoreSeason(S2,c).players),JSON.stringify(ps));
+assert.deepEqual(E.scoreSeason(S,{...c,rules:{goal:{A:4.5}}}).players.map(p=>p.rated),ps.map(p=>p.rated)); // rules move xFM, not games
+const booked=E.scoreSeason(S,{...c,rules:{noVoteYellow:5.5}}).players;
+assert(sum(booked,'rated')>=sum(ps,'rated'));
+assert.throws(()=>E.deserializeSeason(new Uint8Array([1,2,3,4,0,0,0,0])),/season file/);
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));
 console.log('Team-based simulation and ledger tests passed');
