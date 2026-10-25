@@ -59,7 +59,11 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
   1. Chances of a vote are too extreme in every role: forecast 97% → real 88%, forecast 12% → real 17–21%. Add a late-absence
      chance for nailed starters (~9%), more random bench cameos, then recalibrate on the backtest; use the weekly probable-lineup
      snapshots and European-cup congestion for rotation.
-  2. Attackers fantavoto +0.18 (goals +0.10, base vote +0.07, penalties +0.03): too many rated games are starts (model 71% vs
+  2. *(25 Oct, done: real substitution counts, cross-role replacements from single-sub pairs, per-player chance of coming
+     on. Sub apps D 1.22 / C 1.92 / A 1.43 vs real 1.23 / 1.90 / 1.38. Matchday Brier 0.169 → 0.165, points RMSE 2.69 → 2.66,
+     attacker points bias −0.16 → +0.02, attacker fantavoto bias +0.18 → +0.15; points MAE 1.98 → 2.06 because MAE rewards
+     extreme probabilities. Remaining attacker fantavoto bias: goal rates from Understat xG/90, penalty takers.)*
+     Attackers fantavoto +0.18 (goals +0.10, base vote +0.07, penalties +0.03): too many rated games are starts (model 71% vs
      real 64%), so cameo players get a starter's goal rate (real cameos 0.11 goals vs model mix 0.21). Fit a per-player sub-in
      rate; goal shares from Understat xG/90 (goal ranking corr only 0.16); penalty-taker order.
   3. Base vote ignores the result: real votes 5.6–5.7 in a defeat, 6.2–6.4 in a win (outfield). Tie the team swing to the
