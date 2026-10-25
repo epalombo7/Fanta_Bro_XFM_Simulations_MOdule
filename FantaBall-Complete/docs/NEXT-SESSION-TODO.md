@@ -21,6 +21,12 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 
 ## 3. Model improvements (from the backtest, biggest gain first)
 
+- [ ] **Role-specific substitutions — cause of the attacker overrating.** The engine takes off a random outfield starter
+  regardless of role; in reality attackers are subbed far more (sub appearances per team-match: A 1.38 real vs 0.72 model,
+  C 1.98 vs 1.58, D 1.16 vs 1.70). Bench attackers then get few cameos, so most of their rated games are 90-minute fill-in
+  starts: 0.21 goals per rated game vs 0.11 real, xFM +0.38 (rotation attackers +0.33, regular starters −0.10). Fix: per-role
+  (then per-player) chance of being subbed off, real sub-minute distribution (median 19, 40% under 15), re-run the backtest.
+
 - [ ] **Use Fantacalcio's price (QI) inside the model** — the price beat the model on season-points ranking (0.62 vs 0.57) and a
   50/50 blend reached 0.63.
 - [ ] **Rated-games band far too narrow** (31% of outcomes inside an 80% band): add per-season uncertainty in a player's role and
