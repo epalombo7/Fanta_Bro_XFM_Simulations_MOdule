@@ -1,5 +1,5 @@
 """Weekly forecast: build the current league from the data (rounds played so far count), simulate the rest of
-the season (module 1, saved to data/sim/), score it under the standard rules (module 2), save the forecast
+the season (module 1, saved to data/sim/, last 10 kept), score it under the standard rules (module 2), save the forecast
 table, and hand the league to the app (mobile/assets/league.js). No backtest."""
 import datetime, json, pathlib
 import pandas as pd
@@ -17,6 +17,26 @@ def rounds_played(season=CURRENT):
     return int(done[done].index.max()) if done.any() else 0
 
 
+KEEP_SEASON_FILES = 10
+
+
+def prune_season_files(sim_dir):
+    """Keep the 10 most recent season files in data/sim; older ones are listed in archive.csv and removed from
+    the working tree (they stay in git history: `git log --all -- data/sim/<file>` then `git show <commit>:<path>`)."""
+    key = lambda f: (f.name.split('_')[1], int(f.name.split('_round_')[1].split('.')[0]), f.stat().st_mtime)
+    files = sorted(sim_dir.glob('season_*_after_round_*.fbsim.gz'), key=key)
+    old = files[:-KEEP_SEASON_FILES]
+    if not old:
+        return
+    log = sim_dir / 'archive.csv'
+    rows = pd.DataFrame([{'file': f.name, 'bytes': f.stat().st_size, 'archived_on': str(datetime.date.today()),
+                          'retrieve': f'git log --all -- FantaBall-Complete/data/sim/{f.name}'} for f in old])
+    rows.to_csv(log, mode='a', header=not log.exists(), index=False)
+    for f in old:
+        f.unlink()
+    print('archived', len(old), 'old season files')
+
+
 def main(n=500):
     played = rounds_played()
     lg = C.build_league(CURRENT, played)
@@ -24,11 +44,12 @@ def main(n=500):
                    f'const LEAGUE_DATA={json.dumps(lg, separators=(",", ":"))};\n')
     B.N = n
     B.CONFIG = {**B.CONFIG, 'season': CURRENT, 'rounds': 38 - played}
-    # Module 1: the simulated season, saved for re-scoring under any rules (data/sim, not committed)
+    # Module 1: the simulated season, saved for re-scoring under any rules (data/sim, committed; last 10 kept)
     sim_dir = DATA / 'sim'; sim_dir.mkdir(exist_ok=True)
     season_file = sim_dir / f'season_{CURRENT}_after_round_{played}.fbsim.gz'
     B.run_season(lg, season_file)
-    (sim_dir / 'season_latest.fbsim.gz').write_bytes(season_file.read_bytes())
+    (sim_dir / 'season_latest.fbsim.gz').write_bytes(season_file.read_bytes())   # identical content: stored once by git
+    prune_season_files(sim_dir)
     # Module 2: xFM under the standard rules (any league's rules: pipeline/score_season.js)
     sim = B.score_season(season_file)
     meta = pd.DataFrame(lg['players'])[['id', 'qi', 'start', 'injuryRisk', 'injuredFor']]

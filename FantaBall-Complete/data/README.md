@@ -40,7 +40,7 @@ weekly run adds one; backtests of the probable-lineup and injury-list inputs can
 | `injuries.csv` | `calibrate_injuries.py` | per player (FotMob id, Fantacalcio id where matched): `injuryRisk` (chance of a new injury per team match), `injuryGames` (mean matches missed per injury), `injuredFor` (matchdays still to miss now), role x age group, spells and exposure used |
 | `injury_model.json` | `calibrate_injuries.py` | role x age-group averages, length dispersion (`injuryDispersion` for the engine), season decay, prior strength chosen by backtest, rolling backtest vs group- and league-average baselines |
 
-## `sim/` — simulated seasons (not committed)
+## `sim/` — simulated seasons (committed, last 10 kept)
 
 `pipeline/forecast.py` saves module 1's output as `sim/season_<season>_after_round_<n>.fbsim.gz` and
 `sim/season_latest.fbsim.gz` (about 4 MB). It holds, for every simulated season and player: rated games, vote
@@ -54,8 +54,11 @@ node pipeline/run_season.js league.json <rounds_left> <N> season.fbsim.gz     # 
 node pipeline/score_season.js season.fbsim.gz config.json xfm.json           # module 2 (your league rules)
 ```
 
-The files are left out of git because they are large and exactly reproducible: the simulation is seeded, so
-re-running module 1 on the committed league (`mobile/assets/league.js`) gives the same file.
+Each weekly run commits its file. Only the 10 most recent are kept in `sim/`; older ones are listed in
+`sim/archive.csv` and removed from the folder, but stay in git history (`git log --all -- <path>` finds the
+commit, `git show <commit>:<path> > file` restores it). `season_latest.fbsim.gz` is an identical copy of the
+newest file, which git stores only once. The simulation is seeded, so module 1 on the same league gives the
+same file.
 
 ## Terms of use
 
