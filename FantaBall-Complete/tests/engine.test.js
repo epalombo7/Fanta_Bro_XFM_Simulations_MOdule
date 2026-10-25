@@ -51,7 +51,7 @@ assert.equal(E.deserializeSeason(E.serializeSeason(S)).detail.length,S.detail.le
 for(const rules of [{},{goal:{A:4.5},voteProvider:'italia',noVoteYellow:5.5}]){
   const cc={...c,rules},season=E.scoreSeason(S,cc).players,md=E.scoreMatchdays(S,cc);
   md.forEach((p,i)=>{assert(Math.abs(p.matchdays.reduce((t,r)=>t+r.expected,0)-season[i].expected)<1e-6,'matchday sum = season');
-    p.matchdays.forEach(r=>{if(r.median!==null)assert(r.p10<=r.median&&r.median<=r.p90);if(r.medianVote!==null)assert(r.medianVote>=3&&r.medianVote<=10)})})}
+    p.matchdays.forEach(r=>{if(r.median!==null)assert(r.low<=r.median&&r.median<=r.high);if(r.medianVote!==null)assert(r.medianVote>=3&&r.medianVote<=10)})})}
 assert.equal(E.scoreMatchdays(E.deserializeSeason(E.serializeSeason(S)),c)[5].matchdays[3].xfm,E.scoreMatchdays(S,c)[5].matchdays[3].xfm);
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));

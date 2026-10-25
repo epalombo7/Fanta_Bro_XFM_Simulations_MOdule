@@ -70,13 +70,15 @@ def benchmarks(season, roster):
     return out
 
 
-def run_season(league, season_file, summary=None):
-    """Module 1: simulate the season and save the season file (rules-independent); optionally the
-    per-player per-matchday summary table as CSV."""
+def run_season(league, season_file, summary=None, n=None, burn_in=0, detail=None):
+    """Module 1: simulate burn_in + n seasons, save the last n to the season file (rules-independent);
+    optionally the per-player per-matchday summary table as CSV."""
     with tempfile.TemporaryDirectory() as d:
         lf = pathlib.Path(d) / 'league.json'; lf.write_text(json.dumps(league))
-        extra = ['--summary', str(summary)] if summary else []
-        subprocess.run(['node', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(N), str(season_file), *extra], check=True, capture_output=True)
+        extra = (['--summary', str(summary)] if summary else []) + ['--burn-in', str(burn_in)] + (['--detail', str(detail)] if detail else [])
+        out = subprocess.run(['node', '--max-old-space-size=8192', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(n or N), str(season_file), *extra],
+                             check=True, capture_output=True, text=True)
+        print(out.stdout.strip())
 
 
 def score_season(season_file, config=None, corr_prefix=None, matchdays=None):
@@ -86,13 +88,13 @@ def score_season(season_file, config=None, corr_prefix=None, matchdays=None):
         cf, of = pathlib.Path(d) / 'config.json', pathlib.Path(d) / 'out.json'
         cf.write_text(json.dumps(config or CONFIG))
         extra = (['--corr', str(corr_prefix)] if corr_prefix else []) + (['--matchdays', str(matchdays)] if matchdays else [])
-        subprocess.run(['node', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
+        subprocess.run(['node', '--max-old-space-size=8192', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
         return pd.DataFrame(json.loads(of.read_text())['players'])
 
 
 def simulate(league):
     with tempfile.TemporaryDirectory() as d:
-        sf = pathlib.Path(d) / 'season.fbsim.gz'
+        sf = pathlib.Path(d) / 'season.fbsim.br'
         run_season(league, sf)
         return score_season(sf)
 
