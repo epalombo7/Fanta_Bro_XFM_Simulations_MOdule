@@ -21,7 +21,10 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 
 ## 3. Model improvements (from the backtest, biggest gain first)
 
-- [ ] **Role-specific substitutions — cause of the attacker overrating.** The engine takes off a random outfield starter
+- [x] **Role-specific substitutions — cause of the attacker overrating** (done 25 Oct: per-role and per-player off rates,
+  real sub-minute deciles, same-role replacements; sub appearances D 1.15 / C 1.92 / A 1.05 vs real 1.16 / 1.98 / 1.38;
+  attacker xFM bias +0.24 → +0.19. Remaining: attacker cameos still too rare, bench attackers 0.20 goals per rated game vs 0.11).
+  Original note: The engine takes off a random outfield starter
   regardless of role; in reality attackers are subbed far more (sub appearances per team-match: A 1.38 real vs 0.72 model,
   C 1.98 vs 1.58, D 1.16 vs 1.70). Bench attackers then get few cameos, so most of their rated games are 90-minute fill-in
   starts: 0.21 goals per rated game vs 0.11 real, xFM +0.38 (rotation attackers +0.33, regular starters −0.10). Fix: per-role
@@ -48,7 +51,8 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 ## 4. Validation
 
 - [ ] Re-run the backtest with the 50% band (target coverage 50%).
-- [ ] Backtest the matchday intervals and the correlations against real seasons.
+- [x] Matchday-by-matchday backtest (`pipeline/backtest_matchday.py`, results in `data/backtest/matchday_*`).
+- [ ] Backtest the correlations against real seasons.
 - [ ] Add a squad-level benchmark (points of a draft built from each forecast) and a price + last-season benchmark.
 
 ## 5. Product

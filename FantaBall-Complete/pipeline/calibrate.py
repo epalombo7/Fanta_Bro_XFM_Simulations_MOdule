@@ -158,11 +158,12 @@ def league_settings(v, md):
     mins = (md.minutes * md.w).sum() / 90
     s['red'] = float((v.red * W).sum() / mins)
     subs = md[md.status == 'sub_in']
-    per_match = subs.groupby(['season', 'round', 'player_id']).size().groupby(level=[0, 1]).size() / 20   # approx subs per team-match
-    n_sub = float(np.clip(per_match.mean(), 2, 5))
-    s['subs'] = [int(max(1, np.floor(n_sub - 1))), int(min(5, np.ceil(n_sub + 1)))]
-    sm = subs.minutes[subs.minutes > 0]
-    s['subMinutes'] = [int(np.percentile(sm, 10)), int(np.percentile(sm, 90))] if len(sm) else [10, 45]
+    # Substitutions by role: chance a starter goes off, and the minutes substitutes play (deciles)
+    roles = prices().drop_duplicates(['season', 'player_id'], keep='last')[['season', 'player_id', 'role']]
+    st = md[md.status == 'started'].merge(roles, on=['season', 'player_id'])
+    s['offRate'] = {r: round(float(np.average(g.sub_out_min.notna(), weights=g.w)), 3) for r, g in st.groupby('role')}
+    sr = subs.merge(roles, on=['season', 'player_id'])
+    s['subMinutesQ'] = {r: [int(max(1, x)) for x in np.percentile(g.minutes.clip(lower=1), range(0, 101, 10))] for r, g in sr.groupby('role') if len(g) > 30}
     # Minutes below which a substitute usually gets no vote (Fantacalcio provider)
     j = subs.merge(v[['season', 'round', 'player_id', 'vote_fantacalcio', 'goals', 'assists', 'pen_scored', 'red']], on=['season', 'round', 'player_id'], how='left')
     j = j[(j.goals.fillna(0) + j.assists.fillna(0) + j.pen_scored.fillna(0) + j.red.fillna(0)) == 0]
@@ -251,7 +252,8 @@ def build_league(season, as_of_round=0, verbose=False):
     # Player-season aggregates, weighted by season
     md['on'] = md.status.isin(['started', 'sub_in', 'unused', 'injured', 'suspended']).astype(float)
     md['st'] = (md.status == 'started').astype(float)
-    a = md.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum(), 'minutes': (g.minutes * g.w).sum()}))
+    md['off'] = ((md.status == 'started') & md.sub_out_min.notna()).astype(float)
+    a = md.groupby('player_id').apply(lambda g: pd.Series({'rounds': (g.on * g.w).sum(), 'starts': (g.st * g.w).sum(), 'minutes': (g.minutes * g.w).sum(), 'offs': (g.off * g.w).sum()}))
     # Keepers: a pecking order belongs to a club, so their start share counts only seasons at their current club
     # (a new signing who started elsewhere is not assumed to be the club's second choice)
     club = pr.drop_duplicates(['season', 'player_id'], keep='last').set_index(['season', 'player_id']).team_slug
@@ -324,7 +326,9 @@ def build_league(season, as_of_round=0, verbose=False):
             else:
                 base[prov] = round(pri, 3)
         ij = inj.get(pid, {})
-        players.append({'id': str(pid), 'name': r.name, 'team': tix[r.club], 'role': role, 'qi': r.qi,
+        role_off = s['offRate'].get(role, 0.5)
+        off_rate = ((h.offs if h is not None else 0) + 8 * role_off) / ((h.starts if h is not None else 0) + 8)   # shrunk to the role's rate
+        players.append({'id': str(pid), 'name': r.name, 'team': tix[r.club], 'role': role, 'qi': r.qi, 'offRate': round(float(off_rate), 3) if role != 'P' else 0,
                         'start': round(share / (1 - share), 4),
                         'base': base['fantacalcio'], 'baseByProvider': base,
                         'goalW': round(rate('goals'), 5), 'assistW': round(rate('assists'), 5), 'penW': round(rate('pens', 5), 5),

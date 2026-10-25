@@ -1,5 +1,5 @@
 method,xfm_mae,xfm_rank_corr,rated_mae,points_rank_corr,points_rank_corr_within_role,top_k_overlap,xfm_band_coverage,rated_band_coverage
 last_season,0.3583,0.5997,9.3501,0.4848,0.4597,0.4192,,
-model,0.3421,0.6639,8.4258,0.5739,0.5617,0.4383,0.7595,0.3071
+model,0.3379,0.6638,8.315,0.583,0.5686,0.445,0.4875,0.1894
 price,0.3102,0.6477,8.7074,0.617,0.6144,0.4408,,
 role_avg,0.357,0.551,10.9616,0.1668,,0.1675,,

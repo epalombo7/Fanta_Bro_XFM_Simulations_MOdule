@@ -49,8 +49,13 @@ const MODEL={
   penaltyConversion:.78,   // share of penalties scored
   penaltySavedShare:.7,    // share of missed penalties saved by the keeper (the rest miss the target)
   assisted:.7,             // share of credited goals that carry an assist
-  subs:[3,5],              // substitutions per team per match (min, max)
-  subMinutes:[10,45],      // minutes played by a substitute (min, max)
+  // Substitutions: each outfield starter goes off with his role's (or his own, players[].offRate) chance, up
+  // to maxSubs; a bench player of the same role comes on for minutes drawn from the role's real distribution
+  // (subMinutesQ: minutes at the 0th, 10th, ..., 100th percentile).
+  offRate:{P:0,D:.29,C:.55,A:.68},
+  maxSubs:5,
+  subAffinity:{D:{D:1,C:.02,A:.01},C:{D:.02,C:1,A:.03},A:{D:.01,C:.03,A:1}}, // who comes on for whom: same role, others only as a fallback
+  subMinutesQ:{D:[1,3,6,10,14,18,22,27,32,44,60],C:[1,5,8,12,16,20,24,27,32,44,60],A:[1,4,7,10,14,18,21,25,30,37,60],P:[1,2,7,20,32,40,49,60,79,82,90]},
   subRatedMin:25,          // a substitute below this gets no vote unless scoring/assisting/sent off
   red:.008,                // straight red card probability per 90 minutes
   yellowBanEvery:5,        // one-match ban every N yellow cards
@@ -191,15 +196,16 @@ function runSeason(c,opts={}){
       for(let i of pick(pool,Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
     xi.forEach(i=>{mins[i]=90;if(rec)md[mdA(i)+mSt]++});
-    let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),out=xi.filter(i=>players[i].role!=='P'),played=xi.slice();
-    let nSubs=Math.min(bench.length,M.subs[0]+Math.floor(r()*(M.subs[1]-M.subs[0]+1)));
-    for(let s=0;s<nSubs;s++){
-      let off=out.splice(Math.floor(r()*out.length),1)[0];
-      let same=bench.filter(i=>players[i].role===players[off].role),on=pick(same.length?same:bench,1,i=>players[i].start,r)[0];
+    let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),played=xi.slice();
+    let offs=xi.filter(i=>players[i].role!=='P'&&r()<(players[i].offRate??M.offRate[players[i].role]));
+    while(offs.length>M.maxSubs)offs.splice(Math.floor(r()*offs.length),1);
+    for(let off of offs){if(!bench.length)break;
+      let aff=M.subAffinity[players[off].role]||{},on=pick(bench,1,i=>players[i].start*(aff[players[i].role]??.01),r)[0];
       bench.splice(bench.indexOf(on),1);
-      let m=M.subMinutes[0]+Math.floor(r()*(M.subMinutes[1]-M.subMinutes[0]+1));
-      mins[on]=m;mins[off]=90-m;played.push(on)}
+      let m=subMinute(players[on].role);mins[on]=m;mins[off]=90-m;played.push(on)}
     return played}
+  // Substitute minutes from the role's distribution (linear between percentiles)
+  function subMinute(role){let Q=M.subMinutesQ[role]||M.subMinutesQ.C,x=r()*10,k=Math.min(9,Math.floor(x));return Math.max(1,Math.round(Q[k]+(Q[k+1]-Q[k])*(x-k)))}
 
   // Hand a team's open-play goals to the players on the pitch (role share x form x minutes);
   // a share are own goals by the opponents on the pitch.
