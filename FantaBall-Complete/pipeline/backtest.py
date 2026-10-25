@@ -77,12 +77,14 @@ def run_season(league, season_file):
         subprocess.run(['node', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(N), str(season_file)], check=True, capture_output=True)
 
 
-def score_season(season_file, config=None):
-    """Module 2: xFM under the league rules in config (standard rules by default)."""
+def score_season(season_file, config=None, corr_prefix=None):
+    """Module 2: xFM under the league rules in config (standard rules by default); optionally the
+    correlation matrices too (written to corr_prefix_*)."""
     with tempfile.TemporaryDirectory() as d:
         cf, of = pathlib.Path(d) / 'config.json', pathlib.Path(d) / 'out.json'
         cf.write_text(json.dumps(config or CONFIG))
-        subprocess.run(['node', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of)], check=True)
+        extra = ['--corr', str(corr_prefix)] if corr_prefix else []
+        subprocess.run(['node', str(HERE / 'score_season.js'), str(season_file), str(cf), str(of), *extra], check=True)
         return pd.DataFrame(json.loads(of.read_text())['players'])
 
 

@@ -1,0 +1,2707 @@
+id,name,team,role,partner,partner_team,partner_role,kind,correlation
+4431,Carnesecchi,Atalanta,P,Kolasinac,Atalanta,D,moves_with,0.36
+4431,Carnesecchi,Atalanta,P,Ahanor,Atalanta,D,moves_with,0.35
+4431,Carnesecchi,Atalanta,P,Djimsiti,Atalanta,D,moves_with,0.33
+4431,Carnesecchi,Atalanta,P,Varela G.,Monza,A,hedge_head_to_head,-0.71
+4431,Carnesecchi,Atalanta,P,Malen,Roma,A,hedge_head_to_head,-0.69
+4431,Carnesecchi,Atalanta,P,Mendy P.,Cagliari,A,hedge_head_to_head,-0.64
+554,Zappacosta,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.24
+554,Zappacosta,Atalanta,D,Kossounou,Atalanta,D,moves_with,0.23
+554,Zappacosta,Atalanta,D,Ahanor,Atalanta,D,moves_with,0.21
+554,Zappacosta,Atalanta,D,Vicario,Juventus,P,hedge_head_to_head,-0.46
+554,Zappacosta,Atalanta,D,Skorupski,Bologna,P,hedge_head_to_head,-0.45
+554,Zappacosta,Atalanta,D,Kaiki,Como,D,hedge_head_to_head,-0.41
+787,Djimsiti,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.33
+787,Djimsiti,Atalanta,D,Bellanova,Atalanta,D,moves_with,0.22
+787,Djimsiti,Atalanta,D,Bernasconi,Atalanta,D,moves_with,0.20
+787,Djimsiti,Atalanta,D,Ismajli,Torino,D,hedge_head_to_head,-0.54
+787,Djimsiti,Atalanta,D,Svilar,Roma,P,hedge_head_to_head,-0.48
+787,Djimsiti,Atalanta,D,Sutalo J.,Lazio,D,hedge_head_to_head,-0.47
+4887,Bellanova,Atalanta,D,Ahanor,Atalanta,D,moves_with,0.30
+4887,Bellanova,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.30
+4887,Bellanova,Atalanta,D,Kossounou,Atalanta,D,moves_with,0.27
+4887,Bellanova,Atalanta,D,Smolcic I.,Como,D,hedge_head_to_head,-0.48
+4887,Bellanova,Atalanta,D,Thiam,Monza,P,hedge_head_to_head,-0.44
+4887,Bellanova,Atalanta,D,Vicario,Juventus,P,hedge_head_to_head,-0.41
+6485,Kristensen T.,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.26
+6485,Kristensen T.,Atalanta,D,Kossounou,Atalanta,D,moves_with,0.23
+6485,Kristensen T.,Atalanta,D,Hien,Atalanta,D,moves_with,0.20
+6485,Kristensen T.,Atalanta,D,Malen,Roma,A,hedge_head_to_head,-0.55
+6485,Kristensen T.,Atalanta,D,Ebosse,Udinese,D,hedge_head_to_head,-0.41
+6485,Kristensen T.,Atalanta,D,Romero D.,Parma,A,hedge_head_to_head,-0.39
+5526,Scalvini,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.27
+5526,Scalvini,Atalanta,D,Kolasinac,Atalanta,D,moves_with,0.21
+5526,Scalvini,Atalanta,D,Ahanor,Atalanta,D,moves_with,0.19
+5526,Scalvini,Atalanta,D,Mandas,Lazio,P,hedge_head_to_head,-0.40
+5526,Scalvini,Atalanta,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.37
+5526,Scalvini,Atalanta,D,Masini,Frosinone,C,hedge_head_to_head,-0.37
+7219,Bernasconi,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.32
+7219,Bernasconi,Atalanta,D,Sulemana K.,Atalanta,A,moves_with,0.26
+7219,Bernasconi,Atalanta,D,Kolasinac,Atalanta,D,moves_with,0.26
+7219,Bernasconi,Atalanta,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.47
+7219,Bernasconi,Atalanta,D,Ramon,Como,D,hedge_head_to_head,-0.45
+7219,Bernasconi,Atalanta,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.39
+6046,Hien,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.30
+6046,Hien,Atalanta,D,Bernasconi,Atalanta,D,moves_with,0.22
+6046,Hien,Atalanta,D,Kristensen T.,Atalanta,D,moves_with,0.20
+6046,Hien,Atalanta,D,Hojlund,Napoli,A,hedge_head_to_head,-0.44
+6046,Hien,Atalanta,D,Bastoni,Inter,D,hedge_head_to_head,-0.42
+6046,Hien,Atalanta,D,Varela G.,Monza,A,hedge_head_to_head,-0.41
+2640,Kolasinac,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.36
+2640,Kolasinac,Atalanta,D,Kossounou,Atalanta,D,moves_with,0.28
+2640,Kolasinac,Atalanta,D,Bernasconi,Atalanta,D,moves_with,0.26
+2640,Kolasinac,Atalanta,D,Tiago Gabriel,Lecce,D,hedge_head_to_head,-0.44
+2640,Kolasinac,Atalanta,D,Thuram,Inter,A,hedge_head_to_head,-0.43
+2640,Kolasinac,Atalanta,D,McTominay,Napoli,C,hedge_head_to_head,-0.43
+5578,Kossounou,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.30
+5578,Kossounou,Atalanta,D,Kolasinac,Atalanta,D,moves_with,0.28
+5578,Kossounou,Atalanta,D,Bellanova,Atalanta,D,moves_with,0.27
+5578,Kossounou,Atalanta,D,Karlstrom,Udinese,C,hedge_head_to_head,-0.25
+5578,Kossounou,Atalanta,D,Okoye,Udinese,P,hedge_head_to_head,-0.21
+5578,Kossounou,Atalanta,D,Vlasic,Torino,C,hedge_head_to_head,-0.19
+6916,Ahanor,Atalanta,D,Carnesecchi,Atalanta,P,moves_with,0.35
+6916,Ahanor,Atalanta,D,Bellanova,Atalanta,D,moves_with,0.30
+6916,Ahanor,Atalanta,D,Sulemana K.,Atalanta,A,moves_with,0.25
+5792,Ederson D.S.,Atalanta,C,Bellanova,Atalanta,D,moves_with,0.16
+5792,Ederson D.S.,Atalanta,C,Sulemana K.,Atalanta,A,moves_with,0.15
+5792,Ederson D.S.,Atalanta,C,Hien,Atalanta,D,moves_with,0.13
+5792,Ederson D.S.,Atalanta,C,Bijlow,Genoa,P,hedge_head_to_head,-0.48
+5792,Ederson D.S.,Atalanta,C,Mandas,Lazio,P,hedge_head_to_head,-0.47
+5792,Ederson D.S.,Atalanta,C,Thiam,Monza,P,hedge_head_to_head,-0.44
+2077,Pasalic,Atalanta,C,Ahanor,Atalanta,D,moves_with,0.19
+2077,Pasalic,Atalanta,C,Kossounou,Atalanta,D,moves_with,0.17
+2077,Pasalic,Atalanta,C,Bernasconi,Atalanta,D,moves_with,0.16
+2077,Pasalic,Atalanta,C,Motta,Lazio,P,hedge_head_to_head,-0.64
+2077,Pasalic,Atalanta,C,Okoye,Udinese,P,hedge_head_to_head,-0.55
+2077,Pasalic,Atalanta,C,Svilar,Roma,P,hedge_head_to_head,-0.49
+1850,Kessiè,Atalanta,C,Bernasconi,Atalanta,D,moves_with,0.17
+1850,Kessiè,Atalanta,C,Zalewski,Atalanta,C,moves_with,0.15
+1850,Kessiè,Atalanta,C,Djimsiti,Atalanta,D,moves_with,0.15
+1850,Kessiè,Atalanta,C,Mandas,Lazio,P,hedge_head_to_head,-0.48
+1850,Kessiè,Atalanta,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+1850,Kessiè,Atalanta,C,Provedel,Inter,P,hedge_head_to_head,-0.45
+6844,Rowe,Atalanta,C,Bellanova,Atalanta,D,moves_with,0.17
+6844,Rowe,Atalanta,C,Scamacca,Atalanta,A,moves_with,0.16
+6844,Rowe,Atalanta,C,Raspadori,Atalanta,A,moves_with,0.15
+6844,Rowe,Atalanta,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.47
+6844,Rowe,Atalanta,C,Thiam,Monza,P,hedge_head_to_head,-0.47
+6844,Rowe,Atalanta,C,Bijlow,Genoa,P,hedge_head_to_head,-0.46
+4479,Elmas,Atalanta,C,Kossounou,Atalanta,D,moves_with,0.27
+4479,Elmas,Atalanta,C,Bernasconi,Atalanta,D,moves_with,0.17
+4479,Elmas,Atalanta,C,Krstovic,Atalanta,A,moves_with,0.15
+4479,Elmas,Atalanta,C,Mandas,Lazio,P,hedge_head_to_head,-0.47
+4479,Elmas,Atalanta,C,Thiam,Monza,P,hedge_head_to_head,-0.46
+4479,Elmas,Atalanta,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.43
+5119,Samardzic,Atalanta,C,Raspadori,Atalanta,A,moves_with,0.19
+5119,Samardzic,Atalanta,C,Kolasinac,Atalanta,D,moves_with,0.19
+5119,Samardzic,Atalanta,C,Ahanor,Atalanta,D,moves_with,0.18
+5119,Samardzic,Atalanta,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+5119,Samardzic,Atalanta,C,Butez,Como,P,hedge_head_to_head,-0.43
+5119,Samardzic,Atalanta,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.38
+5422,Zalewski,Atalanta,C,Scamacca,Atalanta,A,moves_with,0.19
+5422,Zalewski,Atalanta,C,Kristensen T.,Atalanta,D,moves_with,0.19
+5422,Zalewski,Atalanta,C,Sulemana K.,Atalanta,A,moves_with,0.18
+5422,Zalewski,Atalanta,C,Bijlow,Genoa,P,hedge_head_to_head,-0.53
+5422,Zalewski,Atalanta,C,Falcone,Lecce,P,hedge_head_to_head,-0.47
+5422,Zalewski,Atalanta,C,Carboni A.,Monza,D,hedge_head_to_head,-0.42
+4364,Gaetano,Atalanta,C,Sulemana K.,Atalanta,A,moves_with,0.21
+4364,Gaetano,Atalanta,C,Zalewski,Atalanta,C,moves_with,0.18
+4364,Gaetano,Atalanta,C,Bellanova,Atalanta,D,moves_with,0.17
+4364,Gaetano,Atalanta,C,Provedel,Inter,P,hedge_head_to_head,-0.50
+4364,Gaetano,Atalanta,C,Butez,Como,P,hedge_head_to_head,-0.42
+4364,Gaetano,Atalanta,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.42
+6435,Krstovic,Atalanta,A,Bellanova,Atalanta,D,moves_with,0.19
+6435,Krstovic,Atalanta,A,Sulemana K.,Atalanta,A,moves_with,0.18
+6435,Krstovic,Atalanta,A,Bernasconi,Atalanta,D,moves_with,0.17
+6435,Krstovic,Atalanta,A,Skorupski,Bologna,P,hedge_head_to_head,-0.62
+6435,Krstovic,Atalanta,A,Thiam,Monza,P,hedge_head_to_head,-0.58
+6435,Krstovic,Atalanta,A,Butez,Como,P,hedge_head_to_head,-0.57
+5995,De Ketelaere,Atalanta,A,Kolasinac,Atalanta,D,moves_with,0.17
+5995,De Ketelaere,Atalanta,A,Gaetano,Atalanta,C,moves_with,0.17
+5995,De Ketelaere,Atalanta,A,Bellanova,Atalanta,D,moves_with,0.16
+5995,De Ketelaere,Atalanta,A,Muric,Sassuolo,P,hedge_head_to_head,-0.61
+5995,De Ketelaere,Atalanta,A,Mandas,Lazio,P,hedge_head_to_head,-0.60
+5995,De Ketelaere,Atalanta,A,Maignan,Milan,P,hedge_head_to_head,-0.53
+2137,Scamacca,Atalanta,A,Kossounou,Atalanta,D,moves_with,0.21
+2137,Scamacca,Atalanta,A,Zalewski,Atalanta,C,moves_with,0.19
+2137,Scamacca,Atalanta,A,Scalvini,Atalanta,D,moves_with,0.18
+2137,Scamacca,Atalanta,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.59
+2137,Scamacca,Atalanta,A,Butez,Como,P,hedge_head_to_head,-0.57
+2137,Scamacca,Atalanta,A,Bijlow,Genoa,P,hedge_head_to_head,-0.52
+4371,Raspadori,Atalanta,A,Bellanova,Atalanta,D,moves_with,0.26
+4371,Raspadori,Atalanta,A,Kolasinac,Atalanta,D,moves_with,0.20
+4371,Raspadori,Atalanta,A,Samardzic,Atalanta,C,moves_with,0.19
+4371,Raspadori,Atalanta,A,Okoye,Udinese,P,hedge_head_to_head,-0.53
+4371,Raspadori,Atalanta,A,Bijlow,Genoa,P,hedge_head_to_head,-0.47
+4371,Raspadori,Atalanta,A,Gallo,Lecce,D,hedge_head_to_head,-0.41
+5918,Sulemana K.,Atalanta,A,Bernasconi,Atalanta,D,moves_with,0.26
+5918,Sulemana K.,Atalanta,A,Ahanor,Atalanta,D,moves_with,0.25
+5918,Sulemana K.,Atalanta,A,Gaetano,Atalanta,C,moves_with,0.21
+5918,Sulemana K.,Atalanta,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.35
+5918,Sulemana K.,Atalanta,A,Mastantuono,Fiorentina,C,hedge_head_to_head,-0.22
+5918,Sulemana K.,Atalanta,A,Ndour,Fiorentina,C,hedge_head_to_head,-0.18
+133,Skorupski,Bologna,P,Casale,Bologna,D,moves_with,0.44
+133,Skorupski,Bologna,P,Vitik,Bologna,D,moves_with,0.38
+133,Skorupski,Bologna,P,Heggem,Bologna,D,moves_with,0.38
+133,Skorupski,Bologna,P,Thuram,Inter,A,hedge_head_to_head,-0.64
+133,Skorupski,Bologna,P,Davis K.,Udinese,A,hedge_head_to_head,-0.63
+133,Skorupski,Bologna,P,Laurientè,Sassuolo,A,hedge_head_to_head,-0.62
+4734,Miranda J.,Bologna,D,Skorupski,Bologna,P,moves_with,0.29
+4734,Miranda J.,Bologna,D,Alhassane,Bologna,D,moves_with,0.23
+4734,Miranda J.,Bologna,D,Dovbyk,Bologna,A,moves_with,0.22
+4734,Miranda J.,Bologna,D,Norton-Cuffy,Genoa,D,hedge_head_to_head,-0.48
+4734,Miranda J.,Bologna,D,Idzes,Sassuolo,D,hedge_head_to_head,-0.46
+4734,Miranda J.,Bologna,D,Cataldi,Lazio,C,hedge_head_to_head,-0.45
+5675,Theate,Bologna,D,Skorupski,Bologna,P,moves_with,0.29
+5675,Theate,Bologna,D,Casale,Bologna,D,moves_with,0.29
+5675,Theate,Bologna,D,Miranda J.,Bologna,D,moves_with,0.22
+5675,Theate,Bologna,D,Cataldi,Lazio,C,hedge_head_to_head,-0.52
+5675,Theate,Bologna,D,Ghilardi,Roma,D,hedge_head_to_head,-0.49
+5675,Theate,Bologna,D,Gonzalez N.,Juventus,C,hedge_head_to_head,-0.41
+7212,Heggem,Bologna,D,Skorupski,Bologna,P,moves_with,0.38
+7212,Heggem,Bologna,D,Casale,Bologna,D,moves_with,0.30
+7212,Heggem,Bologna,D,Helland,Bologna,D,moves_with,0.27
+7212,Heggem,Bologna,D,Soulè,Roma,A,hedge_head_to_head,-0.49
+7212,Heggem,Bologna,D,Malen,Roma,A,hedge_head_to_head,-0.43
+7212,Heggem,Bologna,D,Pinamonti,Lazio,A,hedge_head_to_head,-0.38
+4433,Zortea,Bologna,D,Skorupski,Bologna,P,moves_with,0.25
+4433,Zortea,Bologna,D,Casale,Bologna,D,moves_with,0.21
+4433,Zortea,Bologna,D,Helland,Bologna,D,moves_with,0.20
+4433,Zortea,Bologna,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+4433,Zortea,Bologna,D,Gallo,Lecce,D,hedge_head_to_head,-0.46
+4433,Zortea,Bologna,D,Britschgi,Parma,D,hedge_head_to_head,-0.44
+7326,Helland,Bologna,D,Skorupski,Bologna,P,moves_with,0.37
+7326,Helland,Bologna,D,Heggem,Bologna,D,moves_with,0.27
+7326,Helland,Bologna,D,Darmian,Bologna,D,moves_with,0.25
+7326,Helland,Bologna,D,Rabiot,Milan,C,hedge_head_to_head,-0.51
+7326,Helland,Bologna,D,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+7326,Helland,Bologna,D,Obert,Cagliari,D,hedge_head_to_head,-0.47
+2525,Darmian,Bologna,D,Alhassane,Bologna,D,moves_with,0.30
+2525,Darmian,Bologna,D,Helland,Bologna,D,moves_with,0.25
+2525,Darmian,Bologna,D,Skorupski,Bologna,P,moves_with,0.24
+2525,Darmian,Bologna,D,Butez,Como,P,hedge_head_to_head,-0.47
+2525,Darmian,Bologna,D,Maignan,Milan,P,hedge_head_to_head,-0.44
+2525,Darmian,Bologna,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.36
+7068,Vitik,Bologna,D,Skorupski,Bologna,P,moves_with,0.38
+7068,Vitik,Bologna,D,De Silvestri,Bologna,D,moves_with,0.30
+7068,Vitik,Bologna,D,Alhassane,Bologna,D,moves_with,0.30
+7068,Vitik,Bologna,D,Okoye,Udinese,P,hedge_head_to_head,-0.48
+7068,Vitik,Bologna,D,Modric,Milan,C,hedge_head_to_head,-0.41
+7068,Vitik,Bologna,D,Malen,Roma,A,hedge_head_to_head,-0.38
+7483,Alhassane,Bologna,D,Skorupski,Bologna,P,moves_with,0.34
+7483,Alhassane,Bologna,D,Vitik,Bologna,D,moves_with,0.30
+7483,Alhassane,Bologna,D,Darmian,Bologna,D,moves_with,0.30
+7483,Alhassane,Bologna,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.43
+7483,Alhassane,Bologna,D,Karlstrom,Udinese,C,hedge_head_to_head,-0.39
+7483,Alhassane,Bologna,D,Dodò,Fiorentina,D,hedge_head_to_head,-0.39
+5498,Casale,Bologna,D,Skorupski,Bologna,P,moves_with,0.44
+5498,Casale,Bologna,D,Heggem,Bologna,D,moves_with,0.30
+5498,Casale,Bologna,D,Theate,Bologna,D,moves_with,0.29
+5498,Casale,Bologna,D,Schmid,Frosinone,C,hedge_head_to_head,-0.47
+5498,Casale,Bologna,D,Bracaglia,Frosinone,D,hedge_head_to_head,-0.42
+5498,Casale,Bologna,D,Maignan,Milan,P,hedge_head_to_head,-0.37
+487,De Silvestri,Bologna,D,Vitik,Bologna,D,moves_with,0.30
+487,De Silvestri,Bologna,D,Skorupski,Bologna,P,moves_with,0.27
+487,De Silvestri,Bologna,D,Miranda J.,Bologna,D,moves_with,0.21
+2167,Orsolini,Bologna,C,Miranda J.,Bologna,D,moves_with,0.20
+2167,Orsolini,Bologna,C,Mbangula,Bologna,C,moves_with,0.16
+2167,Orsolini,Bologna,C,Odgaard,Bologna,C,moves_with,0.15
+2167,Orsolini,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.69
+2167,Orsolini,Bologna,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.61
+2167,Orsolini,Bologna,C,Maignan,Milan,P,hedge_head_to_head,-0.61
+4436,Cambiaghi,Bologna,C,Dallinga,Bologna,A,moves_with,0.21
+4436,Cambiaghi,Bologna,C,Theate,Bologna,D,moves_with,0.18
+4436,Cambiaghi,Bologna,C,Dovbyk,Bologna,A,moves_with,0.18
+4436,Cambiaghi,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+4436,Cambiaghi,Bologna,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+4436,Cambiaghi,Bologna,C,Suzuki,Parma,P,hedge_head_to_head,-0.45
+5858,Ferguson,Bologna,C,Alhassane,Bologna,D,moves_with,0.22
+5858,Ferguson,Bologna,C,Vitik,Bologna,D,moves_with,0.21
+5858,Ferguson,Bologna,C,Pobega,Bologna,C,moves_with,0.15
+5858,Ferguson,Bologna,C,Vicario,Juventus,P,hedge_head_to_head,-0.49
+5858,Ferguson,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.49
+5858,Ferguson,Bologna,C,Suzuki,Parma,P,hedge_head_to_head,-0.43
+2765,Odgaard,Bologna,C,Miranda J.,Bologna,D,moves_with,0.20
+2765,Odgaard,Bologna,C,Zortea,Bologna,D,moves_with,0.19
+2765,Odgaard,Bologna,C,Libra,Bologna,C,moves_with,0.18
+2765,Odgaard,Bologna,C,Okoye,Udinese,P,hedge_head_to_head,-0.53
+2765,Odgaard,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.51
+2765,Odgaard,Bologna,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.50
+184,Bernardeschi,Bologna,C,Vitik,Bologna,D,moves_with,0.16
+184,Bernardeschi,Bologna,C,Dallinga,Bologna,A,moves_with,0.16
+184,Bernardeschi,Bologna,C,Miranda J.,Bologna,D,moves_with,0.15
+184,Bernardeschi,Bologna,C,Wiafe,Genoa,C,hedge_head_to_head,-0.51
+184,Bernardeschi,Bologna,C,Maignan,Milan,P,hedge_head_to_head,-0.51
+184,Bernardeschi,Bologna,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.48
+5298,Pobega,Bologna,C,Miranda J.,Bologna,D,moves_with,0.19
+5298,Pobega,Bologna,C,Casale,Bologna,D,moves_with,0.18
+5298,Pobega,Bologna,C,Vitik,Bologna,D,moves_with,0.17
+5298,Pobega,Bologna,C,Okoye,Udinese,P,hedge_head_to_head,-0.50
+5298,Pobega,Bologna,C,Butez,Como,P,hedge_head_to_head,-0.50
+5298,Pobega,Bologna,C,Suzuki,Parma,P,hedge_head_to_head,-0.46
+6054,Moro N.,Bologna,C,Libra,Bologna,C,moves_with,0.19
+6054,Moro N.,Bologna,C,Skorupski,Bologna,P,moves_with,0.17
+6054,Moro N.,Bologna,C,Alhassane,Bologna,D,moves_with,0.16
+6054,Moro N.,Bologna,C,Muric,Sassuolo,P,hedge_head_to_head,-0.49
+6054,Moro N.,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.44
+6054,Moro N.,Bologna,C,Montipò,Venezia,P,hedge_head_to_head,-0.42
+7528,Amondarain,Bologna,C,Dallinga,Bologna,A,moves_with,0.17
+7528,Amondarain,Bologna,C,Alhassane,Bologna,D,moves_with,0.15
+7528,Amondarain,Bologna,C,Zortea,Bologna,D,moves_with,0.15
+7528,Amondarain,Bologna,C,Butez,Como,P,hedge_head_to_head,-0.42
+7528,Amondarain,Bologna,C,Maignan,Milan,P,hedge_head_to_head,-0.35
+7528,Amondarain,Bologna,C,Kempf,Como,D,hedge_head_to_head,-0.33
+6833,Mbangula,Bologna,C,Libra,Bologna,C,moves_with,0.24
+6833,Mbangula,Bologna,C,Zortea,Bologna,D,moves_with,0.20
+6833,Mbangula,Bologna,C,Darmian,Bologna,D,moves_with,0.19
+6833,Mbangula,Bologna,C,Caprile,Cagliari,P,hedge_head_to_head,-0.53
+6833,Mbangula,Bologna,C,Butez,Como,P,hedge_head_to_head,-0.52
+6833,Mbangula,Bologna,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+7629,Libra,Bologna,C,Mbangula,Bologna,C,moves_with,0.24
+7629,Libra,Bologna,C,Moro N.,Bologna,C,moves_with,0.19
+7629,Libra,Bologna,C,Odgaard,Bologna,C,moves_with,0.18
+7629,Libra,Bologna,C,Kolo Muani,Juventus,A,hedge_head_to_head,-0.24
+7629,Libra,Bologna,C,Butez,Como,P,hedge_head_to_head,-0.22
+7629,Libra,Bologna,C,Solet,Udinese,D,hedge_head_to_head,-0.19
+4359,Piccoli,Bologna,A,Casale,Bologna,D,moves_with,0.19
+4359,Piccoli,Bologna,A,Miranda J.,Bologna,D,moves_with,0.14
+4359,Piccoli,Bologna,A,Cambiaghi,Bologna,C,moves_with,0.13
+4359,Piccoli,Bologna,A,Montipò,Venezia,P,hedge_head_to_head,-0.53
+4359,Piccoli,Bologna,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.53
+4359,Piccoli,Bologna,A,Svilar,Roma,P,hedge_head_to_head,-0.52
+6675,Dovbyk,Bologna,A,Miranda J.,Bologna,D,moves_with,0.22
+6675,Dovbyk,Bologna,A,Alhassane,Bologna,D,moves_with,0.20
+6675,Dovbyk,Bologna,A,Cambiaghi,Bologna,C,moves_with,0.18
+6675,Dovbyk,Bologna,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+6675,Dovbyk,Bologna,A,Caprile,Cagliari,P,hedge_head_to_head,-0.47
+6675,Dovbyk,Bologna,A,Maignan,Milan,P,hedge_head_to_head,-0.41
+6643,Dallinga,Bologna,A,Cambiaghi,Bologna,C,moves_with,0.21
+6643,Dallinga,Bologna,A,Amondarain,Bologna,C,moves_with,0.17
+6643,Dallinga,Bologna,A,Pobega,Bologna,C,moves_with,0.16
+6643,Dallinga,Bologna,A,Caprile,Cagliari,P,hedge_head_to_head,-0.54
+6643,Dallinga,Bologna,A,Maignan,Milan,P,hedge_head_to_head,-0.30
+6643,Dallinga,Bologna,A,Gila,Milan,D,hedge_head_to_head,-0.28
+4360,Caprile,Cagliari,P,Obert,Cagliari,D,moves_with,0.38
+4360,Caprile,Cagliari,P,Zè Pedro,Cagliari,D,moves_with,0.35
+4360,Caprile,Cagliari,P,Kofler,Cagliari,D,moves_with,0.34
+4360,Caprile,Cagliari,P,Raimondo,Frosinone,A,hedge_head_to_head,-0.71
+4360,Caprile,Cagliari,P,Orsolini,Bologna,C,hedge_head_to_head,-0.69
+4360,Caprile,Cagliari,P,Varela G.,Monza,A,hedge_head_to_head,-0.67
+5701,Obert,Cagliari,D,Caprile,Cagliari,P,moves_with,0.38
+5701,Obert,Cagliari,D,Mina,Cagliari,D,moves_with,0.28
+5701,Obert,Cagliari,D,Maldini,Cagliari,A,moves_with,0.24
+5701,Obert,Cagliari,D,Moreira,Milan,C,hedge_head_to_head,-0.50
+5701,Obert,Cagliari,D,Caqueret,Como,C,hedge_head_to_head,-0.47
+5701,Obert,Cagliari,D,Helland,Bologna,D,hedge_head_to_head,-0.47
+4210,Mina,Cagliari,D,Caprile,Cagliari,P,moves_with,0.28
+4210,Mina,Cagliari,D,Obert,Cagliari,D,moves_with,0.28
+4210,Mina,Cagliari,D,Sugawara,Cagliari,D,moves_with,0.22
+4210,Mina,Cagliari,D,Birindelli,Monza,D,hedge_head_to_head,-0.45
+4210,Mina,Cagliari,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.41
+4210,Mina,Cagliari,D,Bijlow,Genoa,P,hedge_head_to_head,-0.41
+4461,Zappa,Cagliari,D,Caprile,Cagliari,P,moves_with,0.31
+4461,Zappa,Cagliari,D,Kofler,Cagliari,D,moves_with,0.27
+4461,Zappa,Cagliari,D,Zè Pedro,Cagliari,D,moves_with,0.23
+4461,Zappa,Cagliari,D,Juan Jesus,Venezia,D,hedge_head_to_head,-0.44
+4461,Zappa,Cagliari,D,Hainaut,Venezia,D,hedge_head_to_head,-0.44
+4461,Zappa,Cagliari,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.40
+7268,Rodriguez Ju.,Cagliari,D,Caprile,Cagliari,P,moves_with,0.34
+7268,Rodriguez Ju.,Cagliari,D,Obert,Cagliari,D,moves_with,0.23
+7268,Rodriguez Ju.,Cagliari,D,Zè Pedro,Cagliari,D,moves_with,0.23
+7268,Rodriguez Ju.,Cagliari,D,Perri,Torino,P,hedge_head_to_head,-0.44
+7268,Rodriguez Ju.,Cagliari,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+7268,Rodriguez Ju.,Cagliari,D,Valdepenas,Fiorentina,D,hedge_head_to_head,-0.40
+7274,Zè Pedro,Cagliari,D,Caprile,Cagliari,P,moves_with,0.35
+7274,Zè Pedro,Cagliari,D,Kofler,Cagliari,D,moves_with,0.26
+7274,Zè Pedro,Cagliari,D,Zappa,Cagliari,D,moves_with,0.23
+7274,Zè Pedro,Cagliari,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.49
+7274,Zè Pedro,Cagliari,D,Oyono A.,Frosinone,D,hedge_head_to_head,-0.46
+7274,Zè Pedro,Cagliari,D,Bobcek,Frosinone,A,hedge_head_to_head,-0.43
+7621,Sugawara,Cagliari,D,Caprile,Cagliari,P,moves_with,0.30
+7621,Sugawara,Cagliari,D,Maldini,Cagliari,A,moves_with,0.27
+7621,Sugawara,Cagliari,D,Obert,Cagliari,D,moves_with,0.23
+7532,Kofler,Cagliari,D,Caprile,Cagliari,P,moves_with,0.34
+7532,Kofler,Cagliari,D,Zappa,Cagliari,D,moves_with,0.27
+7532,Kofler,Cagliari,D,Zè Pedro,Cagliari,D,moves_with,0.26
+7311,Romano,Cagliari,C,Obert,Cagliari,D,moves_with,0.16
+7311,Romano,Cagliari,C,Zappa,Cagliari,D,moves_with,0.16
+7311,Romano,Cagliari,C,Adopo,Cagliari,C,moves_with,0.15
+7311,Romano,Cagliari,C,Okoye,Udinese,P,hedge_head_to_head,-0.49
+7311,Romano,Cagliari,C,Perri,Torino,P,hedge_head_to_head,-0.47
+7311,Romano,Cagliari,C,Bijlow,Genoa,P,hedge_head_to_head,-0.43
+4260,Winks,Cagliari,C,Kofler,Cagliari,D,moves_with,0.19
+4260,Winks,Cagliari,C,Sugawara,Cagliari,D,moves_with,0.17
+4260,Winks,Cagliari,C,Caprile,Cagliari,P,moves_with,0.15
+4260,Winks,Cagliari,C,Svilar,Roma,P,hedge_head_to_head,-0.43
+4260,Winks,Cagliari,C,Kabasele,Udinese,D,hedge_head_to_head,-0.41
+4260,Winks,Cagliari,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+4870,Adopo,Cagliari,C,Zè Pedro,Cagliari,D,moves_with,0.19
+4870,Adopo,Cagliari,C,Zappa,Cagliari,D,moves_with,0.18
+4870,Adopo,Cagliari,C,Ciervo,Cagliari,C,moves_with,0.17
+4870,Adopo,Cagliari,C,Smolcic I.,Como,D,hedge_head_to_head,-0.48
+4870,Adopo,Cagliari,C,Vicario,Juventus,P,hedge_head_to_head,-0.47
+4870,Adopo,Cagliari,C,Perri,Torino,P,hedge_head_to_head,-0.45
+1871,Deiola,Cagliari,C,Massolin,Cagliari,C,moves_with,0.17
+1871,Deiola,Cagliari,C,Kevin Carlos,Cagliari,A,moves_with,0.17
+1871,Deiola,Cagliari,C,Zappa,Cagliari,D,moves_with,0.16
+1871,Deiola,Cagliari,C,Vicario,Juventus,P,hedge_head_to_head,-0.45
+1871,Deiola,Cagliari,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.36
+1871,Deiola,Cagliari,C,Montipò,Venezia,P,hedge_head_to_head,-0.35
+6424,Prati,Cagliari,C,Zappa,Cagliari,D,moves_with,0.20
+6424,Prati,Cagliari,C,Borrelli,Cagliari,A,moves_with,0.17
+6424,Prati,Cagliari,C,Kofler,Cagliari,D,moves_with,0.16
+6424,Prati,Cagliari,C,Terracciano F.,Milan,D,hedge_head_to_head,-0.38
+6424,Prati,Cagliari,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.37
+6424,Prati,Cagliari,C,Gallo,Lecce,D,hedge_head_to_head,-0.36
+801,Gagliardini,Cagliari,C,Obert,Cagliari,D,moves_with,0.16
+801,Gagliardini,Cagliari,C,Mina,Cagliari,D,moves_with,0.15
+801,Gagliardini,Cagliari,C,Kevin Carlos,Cagliari,A,moves_with,0.14
+801,Gagliardini,Cagliari,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.51
+801,Gagliardini,Cagliari,C,Franjic,Venezia,D,hedge_head_to_head,-0.46
+801,Gagliardini,Cagliari,C,Motta,Lazio,P,hedge_head_to_head,-0.38
+6010,Fazzini,Cagliari,C,Caprile,Cagliari,P,moves_with,0.19
+6010,Fazzini,Cagliari,C,Mendy P.,Cagliari,A,moves_with,0.17
+6010,Fazzini,Cagliari,C,Liteta,Cagliari,C,moves_with,0.17
+6010,Fazzini,Cagliari,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.45
+6010,Fazzini,Cagliari,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.42
+6010,Fazzini,Cagliari,C,Bijlow,Genoa,P,hedge_head_to_head,-0.41
+6815,Fadera,Cagliari,C,Obert,Cagliari,D,moves_with,0.22
+6815,Fadera,Cagliari,C,Sugawara,Cagliari,D,moves_with,0.21
+6815,Fadera,Cagliari,C,Kevin Carlos,Cagliari,A,moves_with,0.19
+6815,Fadera,Cagliari,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+6815,Fadera,Cagliari,C,Juan Jesus,Venezia,D,hedge_head_to_head,-0.40
+6815,Fadera,Cagliari,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+7579,Massolin,Cagliari,C,Kevin Carlos,Cagliari,A,moves_with,0.25
+7579,Massolin,Cagliari,C,Zappa,Cagliari,D,moves_with,0.18
+7579,Massolin,Cagliari,C,Deiola,Cagliari,C,moves_with,0.17
+7579,Massolin,Cagliari,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.51
+7579,Massolin,Cagliari,C,Perri,Torino,P,hedge_head_to_head,-0.48
+7579,Massolin,Cagliari,C,Bijlow,Genoa,P,hedge_head_to_head,-0.43
+5462,Ciervo,Cagliari,C,Sugawara,Cagliari,D,moves_with,0.22
+5462,Ciervo,Cagliari,C,Maldini,Cagliari,A,moves_with,0.17
+5462,Ciervo,Cagliari,C,Adopo,Cagliari,C,moves_with,0.17
+7165,Liteta,Cagliari,C,Fadera,Cagliari,C,moves_with,0.17
+7165,Liteta,Cagliari,C,Fazzini,Cagliari,C,moves_with,0.17
+7165,Liteta,Cagliari,C,Caprile,Cagliari,P,moves_with,0.16
+7374,Mendy P.,Cagliari,A,Maldini,Cagliari,A,moves_with,0.19
+7374,Mendy P.,Cagliari,A,Fazzini,Cagliari,C,moves_with,0.17
+7374,Mendy P.,Cagliari,A,Zappa,Cagliari,D,moves_with,0.17
+7374,Mendy P.,Cagliari,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.64
+7374,Mendy P.,Cagliari,A,Mandas,Lazio,P,hedge_head_to_head,-0.61
+7374,Mendy P.,Cagliari,A,Perri,Torino,P,hedge_head_to_head,-0.61
+4896,Maldini,Cagliari,A,Sugawara,Cagliari,D,moves_with,0.27
+4896,Maldini,Cagliari,A,Obert,Cagliari,D,moves_with,0.24
+4896,Maldini,Cagliari,A,Mendy P.,Cagliari,A,moves_with,0.19
+4896,Maldini,Cagliari,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.59
+4896,Maldini,Cagliari,A,Skorupski,Bologna,P,hedge_head_to_head,-0.59
+4896,Maldini,Cagliari,A,Montipò,Venezia,P,hedge_head_to_head,-0.57
+5336,Nzola,Cagliari,A,Kofler,Cagliari,D,moves_with,0.20
+5336,Nzola,Cagliari,A,Zappa,Cagliari,D,moves_with,0.16
+5336,Nzola,Cagliari,A,Liteta,Cagliari,C,moves_with,0.15
+5336,Nzola,Cagliari,A,Maignan,Milan,P,hedge_head_to_head,-0.58
+5336,Nzola,Cagliari,A,Montipò,Venezia,P,hedge_head_to_head,-0.53
+5336,Nzola,Cagliari,A,Bijlow,Genoa,P,hedge_head_to_head,-0.49
+6243,Borrelli,Cagliari,A,Prati,Cagliari,C,moves_with,0.17
+6243,Borrelli,Cagliari,A,Massolin,Cagliari,C,moves_with,0.17
+6243,Borrelli,Cagliari,A,Rodriguez Ju.,Cagliari,D,moves_with,0.16
+6243,Borrelli,Cagliari,A,Montipò,Venezia,P,hedge_head_to_head,-0.40
+6243,Borrelli,Cagliari,A,Rrahmani,Napoli,D,hedge_head_to_head,-0.39
+6243,Borrelli,Cagliari,A,Maignan,Milan,P,hedge_head_to_head,-0.37
+7547,Kevin Carlos,Cagliari,A,Massolin,Cagliari,C,moves_with,0.25
+7547,Kevin Carlos,Cagliari,A,Fadera,Cagliari,C,moves_with,0.19
+7547,Kevin Carlos,Cagliari,A,Deiola,Cagliari,C,moves_with,0.17
+6966,Butez,Como,P,Goldaniga,Como,D,moves_with,0.36
+6966,Butez,Como,P,Smolcic I.,Como,D,moves_with,0.32
+6966,Butez,Como,P,Valle,Como,D,moves_with,0.30
+6966,Butez,Como,P,Davis K.,Udinese,A,hedge_head_to_head,-0.71
+6966,Butez,Como,P,Kvernadze,Frosinone,A,hedge_head_to_head,-0.63
+6966,Butez,Como,P,Cutrone,Monza,A,hedge_head_to_head,-0.62
+6869,Ramon,Como,D,Butez,Como,P,moves_with,0.28
+6869,Ramon,Como,D,Caqueret,Como,C,moves_with,0.18
+6869,Ramon,Como,D,Valle,Como,D,moves_with,0.18
+6869,Ramon,Como,D,Bernasconi,Atalanta,D,hedge_head_to_head,-0.45
+6869,Ramon,Como,D,Delli Carri,Monza,D,hedge_head_to_head,-0.42
+6869,Ramon,Como,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.38
+6727,Couto,Como,D,Butez,Como,P,moves_with,0.30
+6727,Couto,Como,D,Kuhn,Como,A,moves_with,0.24
+6727,Couto,Como,D,Goldaniga,Como,D,moves_with,0.23
+6727,Couto,Como,D,Ngom,Lecce,C,hedge_head_to_head,-0.47
+6727,Couto,Como,D,Estupinan,Milan,D,hedge_head_to_head,-0.45
+6727,Couto,Como,D,Cristante,Roma,C,hedge_head_to_head,-0.41
+5641,Chalobah T.,Como,D,Butez,Como,P,moves_with,0.28
+5641,Chalobah T.,Como,D,Milla,Como,C,moves_with,0.19
+5641,Chalobah T.,Como,D,Caqueret,Como,C,moves_with,0.19
+5641,Chalobah T.,Como,D,Caprile,Cagliari,P,hedge_head_to_head,-0.42
+5641,Chalobah T.,Como,D,Cambiaso,Juventus,D,hedge_head_to_head,-0.41
+5641,Chalobah T.,Como,D,Ranieri L.,Fiorentina,D,hedge_head_to_head,-0.40
+6893,Kempf,Como,D,Butez,Como,P,moves_with,0.25
+6893,Kempf,Como,D,Smolcic I.,Como,D,moves_with,0.20
+6893,Kempf,Como,D,Couto,Como,D,moves_with,0.19
+6893,Kempf,Como,D,Mancini,Roma,D,hedge_head_to_head,-0.52
+6893,Kempf,Como,D,Floriani Mussolini,Lazio,D,hedge_head_to_head,-0.47
+6893,Kempf,Como,D,Thiam,Monza,P,hedge_head_to_head,-0.43
+6867,Valle,Como,D,Butez,Como,P,moves_with,0.30
+6867,Valle,Como,D,Goldaniga,Como,D,moves_with,0.26
+6867,Valle,Como,D,Kean,Como,A,moves_with,0.22
+6867,Valle,Como,D,Thiam,Monza,P,hedge_head_to_head,-0.44
+6867,Valle,Como,D,Estupinan,Milan,D,hedge_head_to_head,-0.41
+6867,Valle,Como,D,Vicario,Juventus,P,hedge_head_to_head,-0.40
+7014,Smolcic I.,Como,D,Butez,Como,P,moves_with,0.32
+7014,Smolcic I.,Como,D,Ricci S.,Como,C,moves_with,0.26
+7014,Smolcic I.,Como,D,Goldaniga,Como,D,moves_with,0.22
+7014,Smolcic I.,Como,D,Adopo,Cagliari,C,hedge_head_to_head,-0.48
+7014,Smolcic I.,Como,D,Bellanova,Atalanta,D,hedge_head_to_head,-0.48
+7014,Smolcic I.,Como,D,Rabiot,Milan,C,hedge_head_to_head,-0.40
+7414,Kaiki,Como,D,Goldaniga,Como,D,moves_with,0.25
+7414,Kaiki,Como,D,Butez,Como,P,moves_with,0.24
+7414,Kaiki,Como,D,Kuhn,Como,A,moves_with,0.22
+7414,Kaiki,Como,D,Zappacosta,Atalanta,D,hedge_head_to_head,-0.41
+7414,Kaiki,Como,D,Caprile,Cagliari,P,hedge_head_to_head,-0.41
+7414,Kaiki,Como,D,Walukiewicz,Sassuolo,D,hedge_head_to_head,-0.39
+418,Goldaniga,Como,D,Butez,Como,P,moves_with,0.36
+418,Goldaniga,Como,D,Valle,Como,D,moves_with,0.26
+418,Goldaniga,Como,D,Kaiki,Como,D,moves_with,0.25
+6875,Paz N.,Como,C,Valle,Como,D,moves_with,0.20
+6875,Paz N.,Como,C,Smolcic I.,Como,D,moves_with,0.20
+6875,Paz N.,Como,C,Kean,Como,A,moves_with,0.19
+6875,Paz N.,Como,C,Thiam,Monza,P,hedge_head_to_head,-0.61
+6875,Paz N.,Como,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.60
+6875,Paz N.,Como,C,Bijlow,Genoa,P,hedge_head_to_head,-0.60
+5559,Da Cunha,Como,C,Ricci S.,Como,C,moves_with,0.17
+5559,Da Cunha,Como,C,Valle,Como,D,moves_with,0.15
+5559,Da Cunha,Como,C,Morata,Como,A,moves_with,0.15
+5559,Da Cunha,Como,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.53
+5559,Da Cunha,Como,C,Svilar,Roma,P,hedge_head_to_head,-0.50
+5559,Da Cunha,Como,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.49
+6151,Perrone,Como,C,Diao,Como,A,moves_with,0.18
+6151,Perrone,Como,C,Baturina,Como,C,moves_with,0.15
+6151,Perrone,Como,C,Kuhn,Como,A,moves_with,0.15
+6151,Perrone,Como,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.56
+6151,Perrone,Como,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.56
+6151,Perrone,Como,C,Ranieri L.,Fiorentina,D,hedge_head_to_head,-0.49
+7126,Baturina,Como,C,Rodriguez Je.,Como,C,moves_with,0.19
+7126,Baturina,Como,C,Caqueret,Como,C,moves_with,0.18
+7126,Baturina,Como,C,Chalobah T.,Como,D,moves_with,0.16
+7126,Baturina,Como,C,Caprile,Cagliari,P,hedge_head_to_head,-0.62
+7126,Baturina,Como,C,Muric,Sassuolo,P,hedge_head_to_head,-0.57
+7126,Baturina,Como,C,Mandas,Lazio,P,hedge_head_to_head,-0.51
+5036,Caqueret,Como,C,Chalobah T.,Como,D,moves_with,0.19
+5036,Caqueret,Como,C,Diao,Como,A,moves_with,0.18
+5036,Caqueret,Como,C,Ramon,Como,D,moves_with,0.18
+5036,Caqueret,Como,C,Perri,Torino,P,hedge_head_to_head,-0.60
+5036,Caqueret,Como,C,Obert,Cagliari,D,hedge_head_to_head,-0.47
+5036,Caqueret,Como,C,Muric,Sassuolo,P,hedge_head_to_head,-0.42
+7412,Milla,Como,C,Valle,Como,D,moves_with,0.20
+7412,Milla,Como,C,Chalobah T.,Como,D,moves_with,0.19
+7412,Milla,Como,C,Kean,Como,A,moves_with,0.17
+7412,Milla,Como,C,Caprile,Cagliari,P,hedge_head_to_head,-0.51
+7412,Milla,Como,C,Juan Jesus,Venezia,D,hedge_head_to_head,-0.43
+7412,Milla,Como,C,Mangas,Monza,D,hedge_head_to_head,-0.41
+5453,Ricci S.,Como,C,Smolcic I.,Como,D,moves_with,0.26
+5453,Ricci S.,Como,C,Goldaniga,Como,D,moves_with,0.23
+5453,Ricci S.,Como,C,Paz N.,Como,C,moves_with,0.18
+5453,Ricci S.,Como,C,Caprile,Cagliari,P,hedge_head_to_head,-0.42
+5453,Ricci S.,Como,C,Montipò,Venezia,P,hedge_head_to_head,-0.41
+5453,Ricci S.,Como,C,Haps,Venezia,D,hedge_head_to_head,-0.41
+7129,Rodriguez Je.,Como,C,Smolcic I.,Como,D,moves_with,0.21
+7129,Rodriguez Je.,Como,C,Diao,Como,A,moves_with,0.19
+7129,Rodriguez Je.,Como,C,Baturina,Como,C,moves_with,0.19
+7129,Rodriguez Je.,Como,C,Montipò,Venezia,P,hedge_head_to_head,-0.51
+7129,Rodriguez Je.,Como,C,Skorupski,Bologna,P,hedge_head_to_head,-0.47
+7129,Rodriguez Je.,Como,C,Vicario,Juventus,P,hedge_head_to_head,-0.41
+7017,Douvikas,Como,A,Goldaniga,Como,D,moves_with,0.19
+7017,Douvikas,Como,A,Valle,Como,D,moves_with,0.19
+7017,Douvikas,Como,A,Paz N.,Como,C,moves_with,0.17
+7017,Douvikas,Como,A,Provedel,Inter,P,hedge_head_to_head,-0.65
+7017,Douvikas,Como,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.64
+7017,Douvikas,Como,A,Martinez Jo.,Inter,P,hedge_head_to_head,-0.62
+2097,Kean,Como,A,Valle,Como,D,moves_with,0.22
+2097,Kean,Como,A,Paz N.,Como,C,moves_with,0.19
+2097,Kean,Como,A,Milla,Como,C,moves_with,0.17
+2097,Kean,Como,A,Thiam,Monza,P,hedge_head_to_head,-0.58
+2097,Kean,Como,A,Mandas,Lazio,P,hedge_head_to_head,-0.56
+2097,Kean,Como,A,Caprile,Cagliari,P,hedge_head_to_head,-0.56
+6967,Diao,Como,A,Rodriguez Je.,Como,C,moves_with,0.19
+6967,Diao,Como,A,Couto,Como,D,moves_with,0.18
+6967,Diao,Como,A,Caqueret,Como,C,moves_with,0.18
+6967,Diao,Como,A,Caprile,Cagliari,P,hedge_head_to_head,-0.55
+6967,Diao,Como,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.44
+6967,Diao,Como,A,Falcone,Lecce,P,hedge_head_to_head,-0.43
+313,Morata,Como,A,Valle,Como,D,moves_with,0.17
+313,Morata,Como,A,Goldaniga,Como,D,moves_with,0.16
+313,Morata,Como,A,Caqueret,Como,C,moves_with,0.15
+313,Morata,Como,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.47
+313,Morata,Como,A,Vicario,Juventus,P,hedge_head_to_head,-0.40
+313,Morata,Como,A,Montipò,Venezia,P,hedge_head_to_head,-0.40
+7128,Kuhn,Como,A,Couto,Como,D,moves_with,0.24
+7128,Kuhn,Como,A,Kaiki,Como,D,moves_with,0.22
+7128,Kuhn,Como,A,Diao,Como,A,moves_with,0.18
+7128,Kuhn,Como,A,Muric,Sassuolo,P,hedge_head_to_head,-0.38
+7128,Kuhn,Como,A,Perri,Torino,P,hedge_head_to_head,-0.29
+7128,Kuhn,Como,A,Idzes,Sassuolo,D,hedge_head_to_head,-0.27
+2521,De Gea,Fiorentina,P,Viery,Fiorentina,D,moves_with,0.40
+2521,De Gea,Fiorentina,P,Jimenez A.,Fiorentina,D,moves_with,0.39
+2521,De Gea,Fiorentina,P,Valdepenas,Fiorentina,D,moves_with,0.36
+2521,De Gea,Fiorentina,P,Martinez L.,Inter,A,hedge_head_to_head,-0.73
+2521,De Gea,Fiorentina,P,Laurientè,Sassuolo,A,hedge_head_to_head,-0.68
+2521,De Gea,Fiorentina,P,Malen,Roma,A,hedge_head_to_head,-0.65
+5365,Dragusin,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.33
+5365,Dragusin,Fiorentina,D,Viery,Fiorentina,D,moves_with,0.23
+5365,Dragusin,Fiorentina,D,Jimenez A.,Fiorentina,D,moves_with,0.23
+5365,Dragusin,Fiorentina,D,Caprile,Cagliari,P,hedge_head_to_head,-0.50
+5365,Dragusin,Fiorentina,D,Martinez L.,Inter,A,hedge_head_to_head,-0.47
+5365,Dragusin,Fiorentina,D,Bisseck,Inter,D,hedge_head_to_head,-0.42
+5885,Dodò,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.28
+5885,Dodò,Fiorentina,D,Parisi,Fiorentina,D,moves_with,0.20
+5885,Dodò,Fiorentina,D,Beto,Fiorentina,A,moves_with,0.20
+5885,Dodò,Fiorentina,D,Martinez Jo.,Inter,P,hedge_head_to_head,-0.53
+5885,Dodò,Fiorentina,D,Mandas,Lazio,P,hedge_head_to_head,-0.49
+5885,Dodò,Fiorentina,D,Butez,Como,P,hedge_head_to_head,-0.48
+4378,Ranieri L.,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.34
+4378,Ranieri L.,Fiorentina,D,Valdepenas,Fiorentina,D,moves_with,0.23
+4378,Ranieri L.,Fiorentina,D,Joao Mario,Fiorentina,D,moves_with,0.20
+4378,Ranieri L.,Fiorentina,D,Perrone,Como,C,hedge_head_to_head,-0.49
+4378,Ranieri L.,Fiorentina,D,Akanji,Inter,D,hedge_head_to_head,-0.41
+4378,Ranieri L.,Fiorentina,D,Muric,Sassuolo,P,hedge_head_to_head,-0.41
+5603,Pongracic,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.35
+5603,Pongracic,Fiorentina,D,Viery,Fiorentina,D,moves_with,0.25
+5603,Pongracic,Fiorentina,D,Joao Mario,Fiorentina,D,moves_with,0.20
+5603,Pongracic,Fiorentina,D,Ebosse,Udinese,D,hedge_head_to_head,-0.47
+5603,Pongracic,Fiorentina,D,Ellertsson,Genoa,C,hedge_head_to_head,-0.43
+5603,Pongracic,Fiorentina,D,Rrahmani,Napoli,D,hedge_head_to_head,-0.42
+7410,Viery,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.40
+7410,Viery,Fiorentina,D,Valdepenas,Fiorentina,D,moves_with,0.27
+7410,Viery,Fiorentina,D,Pongracic,Fiorentina,D,moves_with,0.25
+7410,Viery,Fiorentina,D,Mangas,Monza,D,hedge_head_to_head,-0.44
+7410,Viery,Fiorentina,D,Suzuki,Parma,P,hedge_head_to_head,-0.40
+7410,Viery,Fiorentina,D,Zortea,Bologna,D,hedge_head_to_head,-0.40
+7294,Valdepenas,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.36
+7294,Valdepenas,Fiorentina,D,Jimenez A.,Fiorentina,D,moves_with,0.35
+7294,Valdepenas,Fiorentina,D,Viery,Fiorentina,D,moves_with,0.27
+7294,Valdepenas,Fiorentina,D,Esposito Se.,Sassuolo,A,hedge_head_to_head,-0.47
+7294,Valdepenas,Fiorentina,D,Tomori,Milan,D,hedge_head_to_head,-0.44
+7294,Valdepenas,Fiorentina,D,Caprile,Cagliari,P,hedge_head_to_head,-0.42
+7175,Joao Mario,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.34
+7175,Joao Mario,Fiorentina,D,Gnonto,Fiorentina,A,moves_with,0.27
+7175,Joao Mario,Fiorentina,D,Valdepenas,Fiorentina,D,moves_with,0.24
+7175,Joao Mario,Fiorentina,D,Falcone,Lecce,P,hedge_head_to_head,-0.46
+7175,Joao Mario,Fiorentina,D,Muric,Sassuolo,P,hedge_head_to_head,-0.42
+7175,Joao Mario,Fiorentina,D,Caprile,Cagliari,P,hedge_head_to_head,-0.41
+5449,Parisi,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.26
+5449,Parisi,Fiorentina,D,Jimenez A.,Fiorentina,D,moves_with,0.22
+5449,Parisi,Fiorentina,D,Dodò,Fiorentina,D,moves_with,0.20
+5449,Parisi,Fiorentina,D,Zortea,Bologna,D,hedge_head_to_head,-0.35
+5449,Parisi,Fiorentina,D,Gallo,Lecce,D,hedge_head_to_head,-0.31
+5449,Parisi,Fiorentina,D,Bernardeschi,Bologna,C,hedge_head_to_head,-0.31
+6531,Jimenez A.,Fiorentina,D,De Gea,Fiorentina,P,moves_with,0.39
+6531,Jimenez A.,Fiorentina,D,Valdepenas,Fiorentina,D,moves_with,0.35
+6531,Jimenez A.,Fiorentina,D,Viery,Fiorentina,D,moves_with,0.24
+6531,Jimenez A.,Fiorentina,D,Thuram,Inter,A,hedge_head_to_head,-0.37
+6531,Jimenez A.,Fiorentina,D,Mangas,Monza,D,hedge_head_to_head,-0.35
+6531,Jimenez A.,Fiorentina,D,Akanji,Inter,D,hedge_head_to_head,-0.33
+7078,Mastantuono,Fiorentina,C,Fagioli,Fiorentina,C,moves_with,0.18
+7078,Mastantuono,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.15
+7078,Mastantuono,Fiorentina,C,Parisi,Fiorentina,D,moves_with,0.15
+7078,Mastantuono,Fiorentina,C,Okoye,Udinese,P,hedge_head_to_head,-0.59
+7078,Mastantuono,Fiorentina,C,Montipò,Venezia,P,hedge_head_to_head,-0.55
+7078,Mastantuono,Fiorentina,C,Maignan,Milan,P,hedge_head_to_head,-0.53
+4465,Fagioli,Fiorentina,C,Joao Mario,Fiorentina,D,moves_with,0.19
+4465,Fagioli,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.18
+4465,Fagioli,Fiorentina,C,Mastantuono,Fiorentina,C,moves_with,0.18
+4465,Fagioli,Fiorentina,C,Okoye,Udinese,P,hedge_head_to_head,-0.50
+4465,Fagioli,Fiorentina,C,Mandas,Lazio,P,hedge_head_to_head,-0.49
+4465,Fagioli,Fiorentina,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.48
+6908,Atta,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.17
+6908,Atta,Fiorentina,C,Dragusin,Fiorentina,D,moves_with,0.15
+6908,Atta,Fiorentina,C,Brescianini,Fiorentina,C,moves_with,0.14
+6908,Atta,Fiorentina,C,Falcone,Lecce,P,hedge_head_to_head,-0.49
+6908,Atta,Fiorentina,C,Mandas,Lazio,P,hedge_head_to_head,-0.48
+6908,Atta,Fiorentina,C,Skorupski,Bologna,P,hedge_head_to_head,-0.46
+6294,Ndour,Fiorentina,C,Jimenez A.,Fiorentina,D,moves_with,0.20
+6294,Ndour,Fiorentina,C,De Gea,Fiorentina,P,moves_with,0.15
+6294,Ndour,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.15
+6294,Ndour,Fiorentina,C,Muric,Sassuolo,P,hedge_head_to_head,-0.51
+6294,Ndour,Fiorentina,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.46
+6294,Ndour,Fiorentina,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.44
+7625,Goncalves P.,Fiorentina,C,Jimenez A.,Fiorentina,D,moves_with,0.20
+7625,Goncalves P.,Fiorentina,C,Fagioli,Fiorentina,C,moves_with,0.17
+7625,Goncalves P.,Fiorentina,C,Joao Mario,Fiorentina,D,moves_with,0.16
+7625,Goncalves P.,Fiorentina,C,Caprile,Cagliari,P,hedge_head_to_head,-0.54
+7625,Goncalves P.,Fiorentina,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.49
+7625,Goncalves P.,Fiorentina,C,Thiam,Monza,P,hedge_head_to_head,-0.49
+7464,Oulai,Fiorentina,C,Beto,Fiorentina,A,moves_with,0.17
+7464,Oulai,Fiorentina,C,De Gea,Fiorentina,P,moves_with,0.17
+7464,Oulai,Fiorentina,C,Dragusin,Fiorentina,D,moves_with,0.16
+7464,Oulai,Fiorentina,C,Svilar,Roma,P,hedge_head_to_head,-0.45
+7464,Oulai,Fiorentina,C,Suzuki,Parma,P,hedge_head_to_head,-0.41
+7464,Oulai,Fiorentina,C,Ellertsson,Genoa,C,hedge_head_to_head,-0.39
+4947,Brescianini,Fiorentina,C,Viery,Fiorentina,D,moves_with,0.19
+4947,Brescianini,Fiorentina,C,Beto,Fiorentina,A,moves_with,0.17
+4947,Brescianini,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.16
+4947,Brescianini,Fiorentina,C,Maignan,Milan,P,hedge_head_to_head,-0.45
+4947,Brescianini,Fiorentina,C,Thiam,Monza,P,hedge_head_to_head,-0.45
+4947,Brescianini,Fiorentina,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.44
+6827,Njie,Fiorentina,C,Joao Mario,Fiorentina,D,moves_with,0.17
+6827,Njie,Fiorentina,C,Dodò,Fiorentina,D,moves_with,0.15
+6827,Njie,Fiorentina,C,De Gea,Fiorentina,P,moves_with,0.14
+6827,Njie,Fiorentina,C,Falcone,Lecce,P,hedge_head_to_head,-0.34
+6827,Njie,Fiorentina,C,Gila,Milan,D,hedge_head_to_head,-0.33
+6827,Njie,Fiorentina,C,Okoye,Udinese,P,hedge_head_to_head,-0.33
+7023,Pellegrino M.,Fiorentina,A,Dodò,Fiorentina,D,moves_with,0.17
+7023,Pellegrino M.,Fiorentina,A,Joao Mario,Fiorentina,D,moves_with,0.17
+7023,Pellegrino M.,Fiorentina,A,Fagioli,Fiorentina,C,moves_with,0.15
+7023,Pellegrino M.,Fiorentina,A,Bijlow,Genoa,P,hedge_head_to_head,-0.59
+7023,Pellegrino M.,Fiorentina,A,Perri,Torino,P,hedge_head_to_head,-0.59
+7023,Pellegrino M.,Fiorentina,A,Martinez Jo.,Inter,P,hedge_head_to_head,-0.55
+5694,Beto,Fiorentina,A,Dodò,Fiorentina,D,moves_with,0.20
+5694,Beto,Fiorentina,A,Brescianini,Fiorentina,C,moves_with,0.17
+5694,Beto,Fiorentina,A,Oulai,Fiorentina,C,moves_with,0.17
+7623,Gnonto,Fiorentina,A,Joao Mario,Fiorentina,D,moves_with,0.27
+7623,Gnonto,Fiorentina,A,De Gea,Fiorentina,P,moves_with,0.16
+7623,Gnonto,Fiorentina,A,Oulai,Fiorentina,C,moves_with,0.15
+6415,Palmisani,Frosinone,P,Gelli J.,Frosinone,D,moves_with,0.48
+6415,Palmisani,Frosinone,P,Oyono J.,Frosinone,D,moves_with,0.46
+6415,Palmisani,Frosinone,P,Omar Fayed,Frosinone,D,moves_with,0.45
+6415,Palmisani,Frosinone,P,Romero D.,Parma,A,hedge_head_to_head,-0.73
+6415,Palmisani,Frosinone,P,Douvikas,Como,A,hedge_head_to_head,-0.64
+6415,Palmisani,Frosinone,P,Ramos G.,Milan,A,hedge_head_to_head,-0.64
+7469,Bracaglia,Frosinone,D,Omar Fayed,Frosinone,D,moves_with,0.28
+7469,Bracaglia,Frosinone,D,Terzic,Frosinone,D,moves_with,0.24
+7469,Bracaglia,Frosinone,D,Corrado,Frosinone,D,moves_with,0.24
+7469,Bracaglia,Frosinone,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.51
+7469,Bracaglia,Frosinone,D,Corvi,Parma,P,hedge_head_to_head,-0.47
+7469,Bracaglia,Frosinone,D,Suzuki,Parma,P,hedge_head_to_head,-0.45
+7467,Calvani,Frosinone,D,Omar Fayed,Frosinone,D,moves_with,0.39
+7467,Calvani,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.38
+7467,Calvani,Frosinone,D,Terzic,Frosinone,D,moves_with,0.29
+7467,Calvani,Frosinone,D,Doekhi,Lazio,D,hedge_head_to_head,-0.43
+7467,Calvani,Frosinone,D,Caprile,Cagliari,P,hedge_head_to_head,-0.42
+7467,Calvani,Frosinone,D,Esposito F.P.,Inter,A,hedge_head_to_head,-0.38
+6238,Oyono A.,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.35
+6238,Oyono A.,Frosinone,D,Akpoguma,Frosinone,D,moves_with,0.31
+6238,Oyono A.,Frosinone,D,Oyono J.,Frosinone,D,moves_with,0.29
+6238,Oyono A.,Frosinone,D,Zè Pedro,Cagliari,D,hedge_head_to_head,-0.46
+6238,Oyono A.,Frosinone,D,Muric,Sassuolo,P,hedge_head_to_head,-0.45
+6238,Oyono A.,Frosinone,D,Mandas,Lazio,P,hedge_head_to_head,-0.44
+4952,Monterisi,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.32
+4952,Monterisi,Frosinone,D,Grillitsch,Frosinone,C,moves_with,0.24
+4952,Monterisi,Frosinone,D,Gelli J.,Frosinone,D,moves_with,0.23
+4952,Monterisi,Frosinone,D,Skorupski,Bologna,P,hedge_head_to_head,-0.45
+4952,Monterisi,Frosinone,D,Suzuki,Parma,P,hedge_head_to_head,-0.43
+4952,Monterisi,Frosinone,D,Drobnic,Parma,D,hedge_head_to_head,-0.42
+5757,Cittadini,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.45
+5757,Cittadini,Frosinone,D,Oyono J.,Frosinone,D,moves_with,0.40
+5757,Cittadini,Frosinone,D,Omar Fayed,Frosinone,D,moves_with,0.38
+5757,Cittadini,Frosinone,D,Bernasconi,Atalanta,D,hedge_head_to_head,-0.47
+5757,Cittadini,Frosinone,D,Troilo,Parma,D,hedge_head_to_head,-0.44
+5757,Cittadini,Frosinone,D,Vojvoda,Udinese,D,hedge_head_to_head,-0.42
+4375,Terzic,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.42
+4375,Terzic,Frosinone,D,Omar Fayed,Frosinone,D,moves_with,0.37
+4375,Terzic,Frosinone,D,Tchato,Frosinone,D,moves_with,0.32
+4375,Terzic,Frosinone,D,Valeri,Parma,D,hedge_head_to_head,-0.30
+4375,Terzic,Frosinone,D,Mangas,Monza,D,hedge_head_to_head,-0.13
+7605,Tchato,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.43
+7605,Tchato,Frosinone,D,Terzic,Frosinone,D,moves_with,0.32
+7605,Tchato,Frosinone,D,Akpoguma,Frosinone,D,moves_with,0.32
+7540,Akpoguma,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.38
+7540,Akpoguma,Frosinone,D,Tchato,Frosinone,D,moves_with,0.32
+7540,Akpoguma,Frosinone,D,Oyono A.,Frosinone,D,moves_with,0.31
+7470,Oyono J.,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.46
+7470,Oyono J.,Frosinone,D,Cittadini,Frosinone,D,moves_with,0.40
+7470,Oyono J.,Frosinone,D,Cichella,Frosinone,C,moves_with,0.29
+7471,Corrado,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.37
+7471,Corrado,Frosinone,D,Fini,Frosinone,C,moves_with,0.35
+7471,Corrado,Frosinone,D,Cittadini,Frosinone,D,moves_with,0.27
+7468,Gelli J.,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.48
+7468,Gelli J.,Frosinone,D,Calvani,Frosinone,D,moves_with,0.27
+7468,Gelli J.,Frosinone,D,Oyono A.,Frosinone,D,moves_with,0.27
+7553,Omar Fayed,Frosinone,D,Palmisani,Frosinone,P,moves_with,0.45
+7553,Omar Fayed,Frosinone,D,Calvani,Frosinone,D,moves_with,0.39
+7553,Omar Fayed,Frosinone,D,Cittadini,Frosinone,D,moves_with,0.38
+7551,Schmid,Frosinone,C,Raimondo,Frosinone,A,moves_with,0.25
+7551,Schmid,Frosinone,C,Tchato,Frosinone,D,moves_with,0.24
+7551,Schmid,Frosinone,C,Corrado,Frosinone,D,moves_with,0.20
+7551,Schmid,Frosinone,C,Suzuki,Parma,P,hedge_head_to_head,-0.55
+7551,Schmid,Frosinone,C,Thiam,Monza,P,hedge_head_to_head,-0.55
+7551,Schmid,Frosinone,C,Butez,Como,P,hedge_head_to_head,-0.51
+6917,Masini,Frosinone,C,Zerbin,Frosinone,C,moves_with,0.20
+6917,Masini,Frosinone,C,Kvernadze,Frosinone,A,moves_with,0.19
+6917,Masini,Frosinone,C,Raimondo,Frosinone,A,moves_with,0.19
+6917,Masini,Frosinone,C,Okoye,Udinese,P,hedge_head_to_head,-0.44
+6917,Masini,Frosinone,C,Rensch,Roma,D,hedge_head_to_head,-0.43
+6917,Masini,Frosinone,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+7472,Calò,Frosinone,C,Fini,Frosinone,C,moves_with,0.25
+7472,Calò,Frosinone,C,Terzic,Frosinone,D,moves_with,0.19
+7472,Calò,Frosinone,C,Omar Fayed,Frosinone,D,moves_with,0.19
+7472,Calò,Frosinone,C,Perri,Torino,P,hedge_head_to_head,-0.53
+7472,Calò,Frosinone,C,Provedel,Inter,P,hedge_head_to_head,-0.47
+7472,Calò,Frosinone,C,Fitz-Jim,Torino,C,hedge_head_to_head,-0.44
+5998,Zerbin,Frosinone,C,Masini,Frosinone,C,moves_with,0.20
+5998,Zerbin,Frosinone,C,Grillitsch,Frosinone,C,moves_with,0.19
+5998,Zerbin,Frosinone,C,Gelli F.,Frosinone,C,moves_with,0.19
+5998,Zerbin,Frosinone,C,Perri,Torino,P,hedge_head_to_head,-0.45
+5998,Zerbin,Frosinone,C,Lulli,Roma,D,hedge_head_to_head,-0.38
+5998,Zerbin,Frosinone,C,Svilar,Roma,P,hedge_head_to_head,-0.36
+6241,Gelli F.,Frosinone,C,Tchato,Frosinone,D,moves_with,0.21
+6241,Gelli F.,Frosinone,C,Oyono J.,Frosinone,D,moves_with,0.20
+6241,Gelli F.,Frosinone,C,Oyono A.,Frosinone,D,moves_with,0.20
+6241,Gelli F.,Frosinone,C,Svilar,Roma,P,hedge_head_to_head,-0.44
+6241,Gelli F.,Frosinone,C,Caprile,Cagliari,P,hedge_head_to_head,-0.44
+6241,Gelli F.,Frosinone,C,Okoye,Udinese,P,hedge_head_to_head,-0.42
+7473,Cichella,Frosinone,C,Akpoguma,Frosinone,D,moves_with,0.29
+7473,Cichella,Frosinone,C,Oyono J.,Frosinone,D,moves_with,0.29
+7473,Cichella,Frosinone,C,Omar Fayed,Frosinone,D,moves_with,0.26
+7473,Cichella,Frosinone,C,Okoye,Udinese,P,hedge_head_to_head,-0.50
+7473,Cichella,Frosinone,C,Taylor K.,Lazio,C,hedge_head_to_head,-0.28
+7473,Cichella,Frosinone,C,Falcone,Lecce,P,hedge_head_to_head,-0.23
+6506,Fini,Frosinone,C,Corrado,Frosinone,D,moves_with,0.35
+6506,Fini,Frosinone,C,Calò,Frosinone,C,moves_with,0.25
+6506,Fini,Frosinone,C,Oyono A.,Frosinone,D,moves_with,0.19
+7474,Koutsoupias,Frosinone,C,Birligea,Frosinone,A,moves_with,0.22
+7474,Koutsoupias,Frosinone,C,Terzic,Frosinone,D,moves_with,0.16
+7474,Koutsoupias,Frosinone,C,Schmid,Frosinone,C,moves_with,0.14
+7550,Grillitsch,Frosinone,C,Raimondo,Frosinone,A,moves_with,0.26
+7550,Grillitsch,Frosinone,C,Oyono A.,Frosinone,D,moves_with,0.26
+7550,Grillitsch,Frosinone,C,Monterisi,Frosinone,D,moves_with,0.24
+6204,Kvernadze,Frosinone,A,Schmid,Frosinone,C,moves_with,0.20
+6204,Kvernadze,Frosinone,A,Omar Fayed,Frosinone,D,moves_with,0.20
+6204,Kvernadze,Frosinone,A,Oyono A.,Frosinone,D,moves_with,0.19
+6204,Kvernadze,Frosinone,A,Corvi,Parma,P,hedge_head_to_head,-0.63
+6204,Kvernadze,Frosinone,A,Butez,Como,P,hedge_head_to_head,-0.63
+6204,Kvernadze,Frosinone,A,Maignan,Milan,P,hedge_head_to_head,-0.57
+6530,Ghedjemis,Frosinone,A,Zerbin,Frosinone,C,moves_with,0.18
+6530,Ghedjemis,Frosinone,A,Omar Fayed,Frosinone,D,moves_with,0.18
+6530,Ghedjemis,Frosinone,A,Schmid,Frosinone,C,moves_with,0.17
+6530,Ghedjemis,Frosinone,A,Thiam,Monza,P,hedge_head_to_head,-0.56
+6530,Ghedjemis,Frosinone,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.55
+6530,Ghedjemis,Frosinone,A,Vicario,Juventus,P,hedge_head_to_head,-0.54
+5436,Raimondo,Frosinone,A,Akpoguma,Frosinone,D,moves_with,0.31
+5436,Raimondo,Frosinone,A,Grillitsch,Frosinone,C,moves_with,0.26
+5436,Raimondo,Frosinone,A,Omar Fayed,Frosinone,D,moves_with,0.26
+5436,Raimondo,Frosinone,A,Caprile,Cagliari,P,hedge_head_to_head,-0.71
+5436,Raimondo,Frosinone,A,Mandas,Lazio,P,hedge_head_to_head,-0.61
+5436,Raimondo,Frosinone,A,Thiam,Monza,P,hedge_head_to_head,-0.60
+7612,Bobcek,Frosinone,A,Corrado,Frosinone,D,moves_with,0.26
+7612,Bobcek,Frosinone,A,Oyono J.,Frosinone,D,moves_with,0.20
+7612,Bobcek,Frosinone,A,Akpoguma,Frosinone,D,moves_with,0.17
+7612,Bobcek,Frosinone,A,Skorupski,Bologna,P,hedge_head_to_head,-0.51
+7612,Bobcek,Frosinone,A,Suzuki,Parma,P,hedge_head_to_head,-0.50
+7612,Bobcek,Frosinone,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.49
+7610,Birligea,Frosinone,A,Koutsoupias,Frosinone,C,moves_with,0.22
+7610,Birligea,Frosinone,A,Schmid,Frosinone,C,moves_with,0.18
+7610,Birligea,Frosinone,A,Tchato,Frosinone,D,moves_with,0.18
+7610,Birligea,Frosinone,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.51
+7610,Birligea,Frosinone,A,Lucchesi,Monza,D,hedge_head_to_head,-0.49
+7610,Birligea,Frosinone,A,Perri,Torino,P,hedge_head_to_head,-0.47
+7332,Bijlow,Genoa,P,Otoa,Genoa,D,moves_with,0.44
+7332,Bijlow,Genoa,P,Marcandalli,Genoa,D,moves_with,0.41
+7332,Bijlow,Genoa,P,Sabelli,Genoa,D,moves_with,0.41
+7332,Bijlow,Genoa,P,Soulè,Roma,A,hedge_head_to_head,-0.68
+7332,Bijlow,Genoa,P,Adams A.,Venezia,A,hedge_head_to_head,-0.63
+7332,Bijlow,Genoa,P,Davis K.,Udinese,A,hedge_head_to_head,-0.63
+5514,Vasquez,Genoa,D,Otoa,Genoa,D,moves_with,0.30
+5514,Vasquez,Genoa,D,Bijlow,Genoa,P,moves_with,0.28
+5514,Vasquez,Genoa,D,Sabelli,Genoa,D,moves_with,0.26
+5514,Vasquez,Genoa,D,Martinez Jo.,Inter,P,hedge_head_to_head,-0.45
+5514,Vasquez,Genoa,D,Maignan,Milan,P,hedge_head_to_head,-0.41
+5514,Vasquez,Genoa,D,Isaksen,Lazio,C,hedge_head_to_head,-0.39
+5750,Ostigard,Genoa,D,Bijlow,Genoa,P,moves_with,0.23
+5750,Ostigard,Genoa,D,Otoa,Genoa,D,moves_with,0.19
+5750,Ostigard,Genoa,D,Marcandalli,Genoa,D,moves_with,0.19
+5750,Ostigard,Genoa,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.45
+5750,Ostigard,Genoa,D,Falcone,Lecce,P,hedge_head_to_head,-0.43
+5750,Ostigard,Genoa,D,Rrahmani,Napoli,D,hedge_head_to_head,-0.42
+2593,Martin,Genoa,D,Bijlow,Genoa,P,moves_with,0.33
+2593,Martin,Genoa,D,Otoa,Genoa,D,moves_with,0.25
+2593,Martin,Genoa,D,Traorè Hj.,Genoa,C,moves_with,0.25
+2593,Martin,Genoa,D,Thiam,Monza,P,hedge_head_to_head,-0.43
+2593,Martin,Genoa,D,Provedel,Inter,P,hedge_head_to_head,-0.42
+2593,Martin,Genoa,D,Maignan,Milan,P,hedge_head_to_head,-0.40
+6660,Marcandalli,Genoa,D,Bijlow,Genoa,P,moves_with,0.41
+6660,Marcandalli,Genoa,D,Norton-Cuffy,Genoa,D,moves_with,0.35
+6660,Marcandalli,Genoa,D,Messias,Genoa,C,moves_with,0.27
+6660,Marcandalli,Genoa,D,Thiam,Monza,P,hedge_head_to_head,-0.56
+6660,Marcandalli,Genoa,D,Sarr P.,Juventus,C,hedge_head_to_head,-0.43
+6660,Marcandalli,Genoa,D,Muric,Sassuolo,P,hedge_head_to_head,-0.43
+6047,Ehizibue,Genoa,D,Bijlow,Genoa,P,moves_with,0.32
+6047,Ehizibue,Genoa,D,Sabelli,Genoa,D,moves_with,0.23
+6047,Ehizibue,Genoa,D,El Shaarawy,Genoa,C,moves_with,0.22
+6047,Ehizibue,Genoa,D,Maignan,Milan,P,hedge_head_to_head,-0.49
+6047,Ehizibue,Genoa,D,Gaspar K.,Lecce,D,hedge_head_to_head,-0.46
+6047,Ehizibue,Genoa,D,Comuzzo,Torino,D,hedge_head_to_head,-0.43
+6814,Norton-Cuffy,Genoa,D,Otoa,Genoa,D,moves_with,0.38
+6814,Norton-Cuffy,Genoa,D,Bijlow,Genoa,P,moves_with,0.36
+6814,Norton-Cuffy,Genoa,D,Marcandalli,Genoa,D,moves_with,0.35
+6814,Norton-Cuffy,Genoa,D,Miranda J.,Bologna,D,hedge_head_to_head,-0.48
+6814,Norton-Cuffy,Genoa,D,Skorupski,Bologna,P,hedge_head_to_head,-0.46
+6814,Norton-Cuffy,Genoa,D,Maignan,Milan,P,hedge_head_to_head,-0.43
+791,Sabelli,Genoa,D,Bijlow,Genoa,P,moves_with,0.41
+791,Sabelli,Genoa,D,Otoa,Genoa,D,moves_with,0.31
+791,Sabelli,Genoa,D,Vasquez,Genoa,D,moves_with,0.26
+791,Sabelli,Genoa,D,Maignan,Milan,P,hedge_head_to_head,-0.48
+791,Sabelli,Genoa,D,Perri,Torino,P,hedge_head_to_head,-0.47
+791,Sabelli,Genoa,D,Orsolini,Bologna,C,hedge_head_to_head,-0.42
+6977,Otoa,Genoa,D,Bijlow,Genoa,P,moves_with,0.44
+6977,Otoa,Genoa,D,Norton-Cuffy,Genoa,D,moves_with,0.38
+6977,Otoa,Genoa,D,Sabelli,Genoa,D,moves_with,0.31
+5791,Frendrup,Genoa,C,Messias,Genoa,C,moves_with,0.20
+5791,Frendrup,Genoa,C,Sabelli,Genoa,D,moves_with,0.17
+5791,Frendrup,Genoa,C,El Shaarawy,Genoa,C,moves_with,0.16
+5791,Frendrup,Genoa,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.59
+5791,Frendrup,Genoa,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+5791,Frendrup,Genoa,C,Svilar,Roma,P,hedge_head_to_head,-0.45
+6020,Ellertsson,Genoa,C,Marcandalli,Genoa,D,moves_with,0.20
+6020,Ellertsson,Genoa,C,Otoa,Genoa,D,moves_with,0.19
+6020,Ellertsson,Genoa,C,Traorè Hj.,Genoa,C,moves_with,0.18
+6020,Ellertsson,Genoa,C,Thiam,Monza,P,hedge_head_to_head,-0.46
+6020,Ellertsson,Genoa,C,Pongracic,Fiorentina,D,hedge_head_to_head,-0.43
+6020,Ellertsson,Genoa,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.41
+5946,Sow,Genoa,C,Otoa,Genoa,D,moves_with,0.24
+5946,Sow,Genoa,C,Vitinha O.,Genoa,A,moves_with,0.22
+5946,Sow,Genoa,C,Sabelli,Genoa,D,moves_with,0.22
+5946,Sow,Genoa,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.48
+5946,Sow,Genoa,C,Falcone,Lecce,P,hedge_head_to_head,-0.43
+5946,Sow,Genoa,C,Perri,Torino,P,hedge_head_to_head,-0.42
+2857,Traorè Hj.,Genoa,C,Martin,Genoa,D,moves_with,0.25
+2857,Traorè Hj.,Genoa,C,Messias,Genoa,C,moves_with,0.22
+2857,Traorè Hj.,Genoa,C,Marcandalli,Genoa,D,moves_with,0.19
+2857,Traorè Hj.,Genoa,C,Muric,Sassuolo,P,hedge_head_to_head,-0.53
+2857,Traorè Hj.,Genoa,C,Falcone,Lecce,P,hedge_head_to_head,-0.47
+2857,Traorè Hj.,Genoa,C,Vicario,Juventus,P,hedge_head_to_head,-0.46
+7608,Wiafe,Genoa,C,Meichtry,Genoa,C,moves_with,0.30
+7608,Wiafe,Genoa,C,El Shaarawy,Genoa,C,moves_with,0.21
+7608,Wiafe,Genoa,C,Otoa,Genoa,D,moves_with,0.17
+7608,Wiafe,Genoa,C,Bernardeschi,Bologna,C,hedge_head_to_head,-0.51
+7608,Wiafe,Genoa,C,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+7608,Wiafe,Genoa,C,Lucchesi,Monza,D,hedge_head_to_head,-0.46
+5823,Baldanzi,Genoa,C,Meichtry,Genoa,C,moves_with,0.22
+5823,Baldanzi,Genoa,C,Sabelli,Genoa,D,moves_with,0.18
+5823,Baldanzi,Genoa,C,Norton-Cuffy,Genoa,D,moves_with,0.17
+5823,Baldanzi,Genoa,C,Montipò,Venezia,P,hedge_head_to_head,-0.55
+5823,Baldanzi,Genoa,C,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+5823,Baldanzi,Genoa,C,Okoye,Udinese,P,hedge_head_to_head,-0.46
+795,El Shaarawy,Genoa,C,Ehizibue,Genoa,D,moves_with,0.22
+795,El Shaarawy,Genoa,C,Wiafe,Genoa,C,moves_with,0.21
+795,El Shaarawy,Genoa,C,Norton-Cuffy,Genoa,D,moves_with,0.19
+795,El Shaarawy,Genoa,C,Falcone,Lecce,P,hedge_head_to_head,-0.56
+795,El Shaarawy,Genoa,C,Maignan,Milan,P,hedge_head_to_head,-0.50
+795,El Shaarawy,Genoa,C,Skorupski,Bologna,P,hedge_head_to_head,-0.46
+7341,Amorim,Genoa,C,Colombo,Genoa,A,moves_with,0.19
+7341,Amorim,Genoa,C,Sabelli,Genoa,D,moves_with,0.15
+7341,Amorim,Genoa,C,Ellertsson,Genoa,C,moves_with,0.15
+7341,Amorim,Genoa,C,Halhal,Venezia,D,hedge_head_to_head,-0.60
+7341,Amorim,Genoa,C,Montipò,Venezia,P,hedge_head_to_head,-0.54
+7341,Amorim,Genoa,C,Schingtienne,Venezia,D,hedge_head_to_head,-0.47
+4970,Messias,Genoa,C,Marcandalli,Genoa,D,moves_with,0.27
+4970,Messias,Genoa,C,Traorè Hj.,Genoa,C,moves_with,0.22
+4970,Messias,Genoa,C,Frendrup,Genoa,C,moves_with,0.20
+4970,Messias,Genoa,C,Vicario,Juventus,P,hedge_head_to_head,-0.46
+4970,Messias,Genoa,C,Juan Jesus,Venezia,D,hedge_head_to_head,-0.20
+4970,Messias,Genoa,C,Adams A.,Venezia,A,hedge_head_to_head,-0.17
+7409,Meichtry,Genoa,C,Wiafe,Genoa,C,moves_with,0.30
+7409,Meichtry,Genoa,C,Otoa,Genoa,D,moves_with,0.22
+7409,Meichtry,Genoa,C,Baldanzi,Genoa,C,moves_with,0.22
+4923,Colombo,Genoa,A,Amorim,Genoa,C,moves_with,0.19
+4923,Colombo,Genoa,A,Traorè Hj.,Genoa,C,moves_with,0.18
+4923,Colombo,Genoa,A,Sabelli,Genoa,D,moves_with,0.17
+4923,Colombo,Genoa,A,Provedel,Inter,P,hedge_head_to_head,-0.58
+4923,Colombo,Genoa,A,Butez,Como,P,hedge_head_to_head,-0.57
+4923,Colombo,Genoa,A,Skorupski,Bologna,P,hedge_head_to_head,-0.56
+7600,Osmajic,Genoa,A,Meichtry,Genoa,C,moves_with,0.21
+7600,Osmajic,Genoa,A,Marcandalli,Genoa,D,moves_with,0.20
+7600,Osmajic,Genoa,A,Martin,Genoa,D,moves_with,0.20
+7600,Osmajic,Genoa,A,Perri,Torino,P,hedge_head_to_head,-0.62
+7600,Osmajic,Genoa,A,Falcone,Lecce,P,hedge_head_to_head,-0.61
+7600,Osmajic,Genoa,A,Thiam,Monza,P,hedge_head_to_head,-0.60
+6164,Vitinha O.,Genoa,A,Sow,Genoa,C,moves_with,0.22
+6164,Vitinha O.,Genoa,A,Sabelli,Genoa,D,moves_with,0.19
+6164,Vitinha O.,Genoa,A,Martin,Genoa,D,moves_with,0.17
+6164,Vitinha O.,Genoa,A,Maignan,Milan,P,hedge_head_to_head,-0.51
+6164,Vitinha O.,Genoa,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.48
+6164,Vitinha O.,Genoa,A,Montipò,Venezia,P,hedge_head_to_head,-0.44
+2814,Provedel,Inter,P,Pavard,Inter,D,moves_with,0.33
+2814,Provedel,Inter,P,Akanji,Inter,D,moves_with,0.28
+2814,Provedel,Inter,P,Spence,Inter,D,moves_with,0.25
+2814,Provedel,Inter,P,Douvikas,Como,A,hedge_head_to_head,-0.65
+2814,Provedel,Inter,P,Kolo Muani,Juventus,A,hedge_head_to_head,-0.62
+2814,Provedel,Inter,P,Yeboah J.,Venezia,A,hedge_head_to_head,-0.61
+5116,Martinez Jo.,Inter,P,Pavard,Inter,D,moves_with,0.34
+5116,Martinez Jo.,Inter,P,Spence,Inter,D,moves_with,0.27
+5116,Martinez Jo.,Inter,P,Stones,Inter,D,moves_with,0.26
+5116,Martinez Jo.,Inter,P,Douvikas,Como,A,hedge_head_to_head,-0.62
+5116,Martinez Jo.,Inter,P,Adams A.,Venezia,A,hedge_head_to_head,-0.61
+5116,Martinez Jo.,Inter,P,Frendrup,Genoa,C,hedge_head_to_head,-0.59
+254,Dimarco,Inter,D,Martinez L.,Inter,A,moves_with,0.22
+254,Dimarco,Inter,D,Stones,Inter,D,moves_with,0.18
+254,Dimarco,Inter,D,Bisseck,Inter,D,moves_with,0.17
+254,Dimarco,Inter,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.56
+254,Dimarco,Inter,D,Caprile,Cagliari,P,hedge_head_to_head,-0.55
+254,Dimarco,Inter,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.52
+4159,Akanji,Inter,D,Provedel,Inter,P,moves_with,0.28
+4159,Akanji,Inter,D,Martinez Jo.,Inter,P,moves_with,0.25
+4159,Akanji,Inter,D,Pavard,Inter,D,moves_with,0.21
+4159,Akanji,Inter,D,Skorupski,Bologna,P,hedge_head_to_head,-0.48
+4159,Akanji,Inter,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.41
+4159,Akanji,Inter,D,Ranieri L.,Fiorentina,D,hedge_head_to_head,-0.41
+2120,Bastoni,Inter,D,Provedel,Inter,P,moves_with,0.22
+2120,Bastoni,Inter,D,Martinez Jo.,Inter,P,moves_with,0.22
+2120,Bastoni,Inter,D,Carlos Augusto,Inter,D,moves_with,0.19
+2120,Bastoni,Inter,D,Suzuki,Parma,P,hedge_head_to_head,-0.43
+2120,Bastoni,Inter,D,Lucumì,Juventus,D,hedge_head_to_head,-0.43
+2120,Bastoni,Inter,D,Hien,Atalanta,D,hedge_head_to_head,-0.42
+6217,Bisseck,Inter,D,Martinez Jo.,Inter,P,moves_with,0.25
+6217,Bisseck,Inter,D,Provedel,Inter,P,moves_with,0.20
+6217,Bisseck,Inter,D,Bastoni,Inter,D,moves_with,0.17
+6217,Bisseck,Inter,D,Mandas,Lazio,P,hedge_head_to_head,-0.42
+6217,Bisseck,Inter,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+6217,Bisseck,Inter,D,Muric,Sassuolo,P,hedge_head_to_head,-0.42
+5877,Carlos Augusto,Inter,D,Provedel,Inter,P,moves_with,0.20
+5877,Carlos Augusto,Inter,D,Martinez Jo.,Inter,P,moves_with,0.19
+5877,Carlos Augusto,Inter,D,Bastoni,Inter,D,moves_with,0.19
+5877,Carlos Augusto,Inter,D,Motta,Lazio,P,hedge_head_to_head,-0.49
+5877,Carlos Augusto,Inter,D,Perri,Torino,P,hedge_head_to_head,-0.45
+5877,Carlos Augusto,Inter,D,Comuzzo,Torino,D,hedge_head_to_head,-0.44
+2514,Stones,Inter,D,Martinez Jo.,Inter,P,moves_with,0.26
+2514,Stones,Inter,D,Provedel,Inter,P,moves_with,0.21
+2514,Stones,Inter,D,Spence,Inter,D,moves_with,0.20
+2514,Stones,Inter,D,Muric,Sassuolo,P,hedge_head_to_head,-0.45
+2514,Stones,Inter,D,Djimsiti,Atalanta,D,hedge_head_to_head,-0.39
+2514,Stones,Inter,D,Vicario,Juventus,P,hedge_head_to_head,-0.38
+5982,Spence,Inter,D,Martinez Jo.,Inter,P,moves_with,0.27
+5982,Spence,Inter,D,Provedel,Inter,P,moves_with,0.25
+5982,Spence,Inter,D,Stones,Inter,D,moves_with,0.20
+5982,Spence,Inter,D,Bijlow,Genoa,P,hedge_head_to_head,-0.43
+5982,Spence,Inter,D,Raimondo,Frosinone,A,hedge_head_to_head,-0.41
+5982,Spence,Inter,D,Walukiewicz,Sassuolo,D,hedge_head_to_head,-0.39
+4177,Pavard,Inter,D,Martinez Jo.,Inter,P,moves_with,0.34
+4177,Pavard,Inter,D,Provedel,Inter,P,moves_with,0.33
+4177,Pavard,Inter,D,Akanji,Inter,D,moves_with,0.21
+4177,Pavard,Inter,D,Frendrup,Genoa,C,hedge_head_to_head,-0.39
+4177,Pavard,Inter,D,Vicario,Juventus,P,hedge_head_to_head,-0.38
+4177,Pavard,Inter,D,Pellegrino M.,Fiorentina,A,hedge_head_to_head,-0.36
+1870,Barella,Inter,C,Martinez L.,Inter,A,moves_with,0.17
+1870,Barella,Inter,C,Thuram,Inter,A,moves_with,0.16
+1870,Barella,Inter,C,Dimarco,Inter,D,moves_with,0.16
+1870,Barella,Inter,C,Mandas,Lazio,P,hedge_head_to_head,-0.50
+1870,Barella,Inter,C,Svilar,Roma,P,hedge_head_to_head,-0.47
+1870,Barella,Inter,C,Montipò,Venezia,P,hedge_head_to_head,-0.45
+2194,Calhanoglu,Inter,C,Diouf,Inter,C,moves_with,0.18
+2194,Calhanoglu,Inter,C,Pavard,Inter,D,moves_with,0.14
+2194,Calhanoglu,Inter,C,Thuram,Inter,A,moves_with,0.13
+2194,Calhanoglu,Inter,C,Svilar,Roma,P,hedge_head_to_head,-0.57
+2194,Calhanoglu,Inter,C,Mandas,Lazio,P,hedge_head_to_head,-0.54
+2194,Calhanoglu,Inter,C,Vicario,Juventus,P,hedge_head_to_head,-0.51
+2529,Mkhitaryan,Inter,C,Martinez L.,Inter,A,moves_with,0.17
+2529,Mkhitaryan,Inter,C,Dimarco,Inter,D,moves_with,0.16
+2529,Mkhitaryan,Inter,C,Thuram,Inter,A,moves_with,0.15
+2529,Mkhitaryan,Inter,C,Motta,Lazio,P,hedge_head_to_head,-0.51
+2529,Mkhitaryan,Inter,C,Mandas,Lazio,P,hedge_head_to_head,-0.44
+2529,Mkhitaryan,Inter,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.38
+7070,Sucic P.,Inter,C,Diouf,Inter,C,moves_with,0.19
+7070,Sucic P.,Inter,C,Pavard,Inter,D,moves_with,0.16
+7070,Sucic P.,Inter,C,Spence,Inter,D,moves_with,0.16
+7070,Sucic P.,Inter,C,Svilar,Roma,P,hedge_head_to_head,-0.38
+7070,Sucic P.,Inter,C,Maignan,Milan,P,hedge_head_to_head,-0.34
+7070,Sucic P.,Inter,C,Caprile,Cagliari,P,hedge_head_to_head,-0.34
+152,Zielinski,Inter,C,Martinez Jo.,Inter,P,moves_with,0.18
+152,Zielinski,Inter,C,Bonny,Inter,A,moves_with,0.17
+152,Zielinski,Inter,C,Pavard,Inter,D,moves_with,0.15
+152,Zielinski,Inter,C,Vicario,Juventus,P,hedge_head_to_head,-0.57
+152,Zielinski,Inter,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.56
+152,Zielinski,Inter,C,Idzes,Sassuolo,D,hedge_head_to_head,-0.44
+5301,Luis Henrique,Inter,C,Martinez L.,Inter,A,moves_with,0.17
+5301,Luis Henrique,Inter,C,Barella,Inter,C,moves_with,0.15
+5301,Luis Henrique,Inter,C,Spence,Inter,D,moves_with,0.15
+5301,Luis Henrique,Inter,C,Butez,Como,P,hedge_head_to_head,-0.42
+5301,Luis Henrique,Inter,C,Perri,Torino,P,hedge_head_to_head,-0.42
+5301,Luis Henrique,Inter,C,Bijlow,Genoa,P,hedge_head_to_head,-0.38
+5172,Jones C.,Inter,C,Carlos Augusto,Inter,D,moves_with,0.18
+5172,Jones C.,Inter,C,Diouf,Inter,C,moves_with,0.16
+5172,Jones C.,Inter,C,Luis Henrique,Inter,C,moves_with,0.14
+5172,Jones C.,Inter,C,Idzes,Sassuolo,D,hedge_head_to_head,-0.39
+5172,Jones C.,Inter,C,Muric,Sassuolo,P,hedge_head_to_head,-0.36
+5172,Jones C.,Inter,C,Butez,Como,P,hedge_head_to_head,-0.33
+6274,Diouf,Inter,C,Martinez L.,Inter,A,moves_with,0.20
+6274,Diouf,Inter,C,Sucic P.,Inter,C,moves_with,0.19
+6274,Diouf,Inter,C,Martinez Jo.,Inter,P,moves_with,0.18
+6274,Diouf,Inter,C,Falcone,Lecce,P,hedge_head_to_head,-0.59
+6274,Diouf,Inter,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.59
+6274,Diouf,Inter,C,Vicario,Juventus,P,hedge_head_to_head,-0.41
+4871,Thuram,Inter,A,Diouf,Inter,C,moves_with,0.17
+4871,Thuram,Inter,A,Pavard,Inter,D,moves_with,0.17
+4871,Thuram,Inter,A,Dimarco,Inter,D,moves_with,0.16
+4871,Thuram,Inter,A,Skorupski,Bologna,P,hedge_head_to_head,-0.64
+4871,Thuram,Inter,A,Svilar,Roma,P,hedge_head_to_head,-0.62
+4871,Thuram,Inter,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.58
+2764,Martinez L.,Inter,A,Dimarco,Inter,D,moves_with,0.22
+2764,Martinez L.,Inter,A,Diouf,Inter,C,moves_with,0.20
+2764,Martinez L.,Inter,A,Bastoni,Inter,D,moves_with,0.18
+2764,Martinez L.,Inter,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.73
+2764,Martinez L.,Inter,A,Muric,Sassuolo,P,hedge_head_to_head,-0.66
+2764,Martinez L.,Inter,A,Perri,Torino,P,hedge_head_to_head,-0.64
+7071,Esposito F.P.,Inter,A,Pavard,Inter,D,moves_with,0.18
+7071,Esposito F.P.,Inter,A,Diouf,Inter,C,moves_with,0.16
+7071,Esposito F.P.,Inter,A,Spence,Inter,D,moves_with,0.14
+7071,Esposito F.P.,Inter,A,Maignan,Milan,P,hedge_head_to_head,-0.46
+7071,Esposito F.P.,Inter,A,Butez,Como,P,hedge_head_to_head,-0.45
+7071,Esposito F.P.,Inter,A,Vicario,Juventus,P,hedge_head_to_head,-0.43
+6669,Bonny,Inter,A,Zielinski,Inter,C,moves_with,0.17
+6669,Bonny,Inter,A,Stones,Inter,D,moves_with,0.15
+6669,Bonny,Inter,A,Luis Henrique,Inter,C,moves_with,0.15
+6669,Bonny,Inter,A,Montipò,Venezia,P,hedge_head_to_head,-0.53
+6669,Bonny,Inter,A,Maignan,Milan,P,hedge_head_to_head,-0.43
+6669,Bonny,Inter,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.39
+4964,Vicario,Juventus,P,Kelly L.,Juventus,D,moves_with,0.31
+4964,Vicario,Juventus,P,Kalulu,Juventus,D,moves_with,0.29
+4964,Vicario,Juventus,P,Celik,Juventus,D,moves_with,0.27
+4964,Vicario,Juventus,P,Varela G.,Monza,A,hedge_head_to_head,-0.70
+4964,Vicario,Juventus,P,Yeboah J.,Venezia,A,hedge_head_to_head,-0.69
+4964,Vicario,Juventus,P,Malen,Roma,A,hedge_head_to_head,-0.66
+4976,Kalulu,Juventus,D,Vicario,Juventus,P,moves_with,0.29
+4976,Kalulu,Juventus,D,Celik,Juventus,D,moves_with,0.20
+4976,Kalulu,Juventus,D,Kelly L.,Juventus,D,moves_with,0.18
+4976,Kalulu,Juventus,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.60
+4976,Kalulu,Juventus,D,Falcone,Lecce,P,hedge_head_to_head,-0.46
+4976,Kalulu,Juventus,D,Thiam,Monza,P,hedge_head_to_head,-0.43
+5520,Cambiaso,Juventus,D,Miretti,Juventus,C,moves_with,0.25
+5520,Cambiaso,Juventus,D,Gatti,Juventus,D,moves_with,0.24
+5520,Cambiaso,Juventus,D,Vicario,Juventus,P,moves_with,0.22
+5520,Cambiaso,Juventus,D,Chalobah T.,Como,D,hedge_head_to_head,-0.41
+5520,Cambiaso,Juventus,D,Norton-Cuffy,Genoa,D,hedge_head_to_head,-0.40
+5520,Cambiaso,Juventus,D,Bijlow,Genoa,P,hedge_head_to_head,-0.38
+6766,Kelly L.,Juventus,D,Vicario,Juventus,P,moves_with,0.31
+6766,Kelly L.,Juventus,D,Kalulu,Juventus,D,moves_with,0.18
+6766,Kelly L.,Juventus,D,Lucumì,Juventus,D,moves_with,0.18
+6766,Kelly L.,Juventus,D,Malen,Roma,A,hedge_head_to_head,-0.44
+6766,Kelly L.,Juventus,D,Rensch,Roma,D,hedge_head_to_head,-0.43
+6766,Kelly L.,Juventus,D,Giovane,Napoli,A,hedge_head_to_head,-0.41
+4657,Celik,Juventus,D,Vicario,Juventus,P,moves_with,0.27
+4657,Celik,Juventus,D,Bremer,Juventus,D,moves_with,0.22
+4657,Celik,Juventus,D,Gatti,Juventus,D,moves_with,0.20
+4657,Celik,Juventus,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.49
+4657,Celik,Juventus,D,Thiam,Monza,P,hedge_head_to_head,-0.48
+4657,Celik,Juventus,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+6042,Lucumì,Juventus,D,Vicario,Juventus,P,moves_with,0.27
+6042,Lucumì,Juventus,D,Bremer,Juventus,D,moves_with,0.19
+6042,Lucumì,Juventus,D,Kelly L.,Juventus,D,moves_with,0.18
+6042,Lucumì,Juventus,D,Montipò,Venezia,P,hedge_head_to_head,-0.53
+6042,Lucumì,Juventus,D,Haps,Venezia,D,hedge_head_to_head,-0.45
+6042,Lucumì,Juventus,D,Malen,Roma,A,hedge_head_to_head,-0.44
+2788,Bremer,Juventus,D,Vicario,Juventus,P,moves_with,0.25
+2788,Bremer,Juventus,D,Gatti,Juventus,D,moves_with,0.23
+2788,Bremer,Juventus,D,Celik,Juventus,D,moves_with,0.22
+2788,Bremer,Juventus,D,Falcone,Lecce,P,hedge_head_to_head,-0.44
+2788,Bremer,Juventus,D,Provedel,Inter,P,hedge_head_to_head,-0.40
+2788,Bremer,Juventus,D,Montipò,Venezia,P,hedge_head_to_head,-0.40
+5831,Gatti,Juventus,D,Cambiaso,Juventus,D,moves_with,0.24
+5831,Gatti,Juventus,D,Bremer,Juventus,D,moves_with,0.23
+5831,Gatti,Juventus,D,Vicario,Juventus,P,moves_with,0.23
+5831,Gatti,Juventus,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+5831,Gatti,Juventus,D,Vasquez,Genoa,D,hedge_head_to_head,-0.37
+5831,Gatti,Juventus,D,Monteiro J.,Lecce,C,hedge_head_to_head,-0.29
+4973,McKennie,Juventus,C,Woltemade,Juventus,A,moves_with,0.17
+4973,McKennie,Juventus,C,Alajbegovic,Juventus,C,moves_with,0.15
+4973,McKennie,Juventus,C,Cambiaso,Juventus,D,moves_with,0.15
+4973,McKennie,Juventus,C,Muric,Sassuolo,P,hedge_head_to_head,-0.50
+4973,McKennie,Juventus,C,Helland,Bologna,D,hedge_head_to_head,-0.46
+4973,McKennie,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+827,Locatelli,Juventus,C,Gatti,Juventus,D,moves_with,0.18
+827,Locatelli,Juventus,C,Cambiaso,Juventus,D,moves_with,0.16
+827,Locatelli,Juventus,C,Celik,Juventus,D,moves_with,0.15
+827,Locatelli,Juventus,C,Muric,Sassuolo,P,hedge_head_to_head,-0.45
+827,Locatelli,Juventus,C,Falcone,Lecce,P,hedge_head_to_head,-0.42
+827,Locatelli,Juventus,C,Gutierrez,Napoli,D,hedge_head_to_head,-0.41
+7436,Alajbegovic,Juventus,C,Bremer,Juventus,D,moves_with,0.18
+7436,Alajbegovic,Juventus,C,Kelly L.,Juventus,D,moves_with,0.17
+7436,Alajbegovic,Juventus,C,Miretti,Juventus,C,moves_with,0.16
+7436,Alajbegovic,Juventus,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.47
+7436,Alajbegovic,Juventus,C,Muric,Sassuolo,P,hedge_head_to_head,-0.47
+7436,Alajbegovic,Juventus,C,Montipò,Venezia,P,hedge_head_to_head,-0.46
+6884,Conceicao,Juventus,C,Yildiz,Juventus,A,moves_with,0.17
+6884,Conceicao,Juventus,C,Gonzalez N.,Juventus,C,moves_with,0.17
+6884,Conceicao,Juventus,C,Lucumì,Juventus,D,moves_with,0.17
+6884,Conceicao,Juventus,C,Skorupski,Bologna,P,hedge_head_to_head,-0.47
+6884,Conceicao,Juventus,C,Perri,Torino,P,hedge_head_to_head,-0.46
+6884,Conceicao,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+5685,Koopmeiners,Juventus,C,Yildiz,Juventus,A,moves_with,0.15
+5685,Koopmeiners,Juventus,C,Celik,Juventus,D,moves_with,0.15
+5685,Koopmeiners,Juventus,C,McKennie,Juventus,C,moves_with,0.14
+5685,Koopmeiners,Juventus,C,Caprile,Cagliari,P,hedge_head_to_head,-0.49
+5685,Koopmeiners,Juventus,C,Provedel,Inter,P,hedge_head_to_head,-0.47
+5685,Koopmeiners,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+5680,Sarr P.,Juventus,C,Douglas Luiz,Juventus,C,moves_with,0.21
+5680,Sarr P.,Juventus,C,Kalulu,Juventus,D,moves_with,0.17
+5680,Sarr P.,Juventus,C,Bremer,Juventus,D,moves_with,0.15
+5680,Sarr P.,Juventus,C,Marcandalli,Genoa,D,hedge_head_to_head,-0.43
+5680,Sarr P.,Juventus,C,Thiam,Monza,P,hedge_head_to_head,-0.40
+5680,Sarr P.,Juventus,C,Skorupski,Bologna,P,hedge_head_to_head,-0.37
+5562,Thuram K.,Juventus,C,Cambiaso,Juventus,D,moves_with,0.19
+5562,Thuram K.,Juventus,C,Woltemade,Juventus,A,moves_with,0.18
+5562,Thuram K.,Juventus,C,David,Juventus,A,moves_with,0.16
+5562,Thuram K.,Juventus,C,Montipò,Venezia,P,hedge_head_to_head,-0.53
+5562,Thuram K.,Juventus,C,Maignan,Milan,P,hedge_head_to_head,-0.48
+5562,Thuram K.,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+4179,Gonzalez N.,Juventus,C,Boga,Juventus,A,moves_with,0.21
+4179,Gonzalez N.,Juventus,C,Celik,Juventus,D,moves_with,0.18
+4179,Gonzalez N.,Juventus,C,Conceicao,Juventus,C,moves_with,0.17
+4179,Gonzalez N.,Juventus,C,Thiam,Monza,P,hedge_head_to_head,-0.55
+4179,Gonzalez N.,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+4179,Gonzalez N.,Juventus,C,Montipò,Venezia,P,hedge_head_to_head,-0.45
+5813,Miretti,Juventus,C,Cambiaso,Juventus,D,moves_with,0.25
+5813,Miretti,Juventus,C,Bremer,Juventus,D,moves_with,0.16
+5813,Miretti,Juventus,C,Alajbegovic,Juventus,C,moves_with,0.16
+5813,Miretti,Juventus,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+5813,Miretti,Juventus,C,Bijlow,Genoa,P,hedge_head_to_head,-0.40
+5813,Miretti,Juventus,C,Perri,Torino,P,hedge_head_to_head,-0.39
+4911,Douglas Luiz,Juventus,C,Boga,Juventus,A,moves_with,0.24
+4911,Douglas Luiz,Juventus,C,Sarr P.,Juventus,C,moves_with,0.21
+4911,Douglas Luiz,Juventus,C,David,Juventus,A,moves_with,0.20
+4911,Douglas Luiz,Juventus,C,Falcone,Lecce,P,hedge_head_to_head,-0.34
+4911,Douglas Luiz,Juventus,C,Bijlow,Genoa,P,hedge_head_to_head,-0.33
+4911,Douglas Luiz,Juventus,C,Martin,Genoa,D,hedge_head_to_head,-0.30
+5951,Kolo Muani,Juventus,A,Kelly L.,Juventus,D,moves_with,0.16
+5951,Kolo Muani,Juventus,A,Celik,Juventus,D,moves_with,0.14
+5951,Kolo Muani,Juventus,A,Yildiz,Juventus,A,moves_with,0.13
+5951,Kolo Muani,Juventus,A,Provedel,Inter,P,hedge_head_to_head,-0.62
+5951,Kolo Muani,Juventus,A,Meret,Napoli,P,hedge_head_to_head,-0.57
+5951,Kolo Muani,Juventus,A,Ziolkowski,Monza,D,hedge_head_to_head,-0.55
+6434,Yildiz,Juventus,A,Conceicao,Juventus,C,moves_with,0.17
+6434,Yildiz,Juventus,A,Woltemade,Juventus,A,moves_with,0.15
+6434,Yildiz,Juventus,A,Koopmeiners,Juventus,C,moves_with,0.15
+6434,Yildiz,Juventus,A,Maignan,Milan,P,hedge_head_to_head,-0.58
+6434,Yildiz,Juventus,A,Svilar,Roma,P,hedge_head_to_head,-0.56
+6434,Yildiz,Juventus,A,Caprile,Cagliari,P,hedge_head_to_head,-0.53
+5544,David,Juventus,A,Douglas Luiz,Juventus,C,moves_with,0.20
+5544,David,Juventus,A,Celik,Juventus,D,moves_with,0.19
+5544,David,Juventus,A,Thuram K.,Juventus,C,moves_with,0.16
+5544,David,Juventus,A,Svilar,Roma,P,hedge_head_to_head,-0.61
+5544,David,Juventus,A,Falcone,Lecce,P,hedge_head_to_head,-0.56
+5544,David,Juventus,A,Perri,Torino,P,hedge_head_to_head,-0.49
+6752,Woltemade,Juventus,A,Thuram K.,Juventus,C,moves_with,0.18
+6752,Woltemade,Juventus,A,Cambiaso,Juventus,D,moves_with,0.17
+6752,Woltemade,Juventus,A,McKennie,Juventus,C,moves_with,0.17
+6752,Woltemade,Juventus,A,Falcone,Lecce,P,hedge_head_to_head,-0.51
+6752,Woltemade,Juventus,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.50
+6752,Woltemade,Juventus,A,Bijlow,Genoa,P,hedge_head_to_head,-0.44
+2832,Boga,Juventus,A,Douglas Luiz,Juventus,C,moves_with,0.24
+2832,Boga,Juventus,A,Gonzalez N.,Juventus,C,moves_with,0.21
+2832,Boga,Juventus,A,Kelly L.,Juventus,D,moves_with,0.17
+2832,Boga,Juventus,A,Bijlow,Genoa,P,hedge_head_to_head,-0.38
+2832,Boga,Juventus,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.29
+2832,Boga,Juventus,A,Gallo,Lecce,D,hedge_head_to_head,-0.28
+6482,Mandas,Lazio,P,Floriani Mussolini,Lazio,D,moves_with,0.43
+6482,Mandas,Lazio,P,Lazzari,Lazio,D,moves_with,0.41
+6482,Mandas,Lazio,P,Romagnoli,Lazio,D,moves_with,0.38
+6482,Mandas,Lazio,P,Malen,Roma,A,hedge_head_to_head,-0.68
+6482,Mandas,Lazio,P,Laurientè,Sassuolo,A,hedge_head_to_head,-0.63
+6482,Mandas,Lazio,P,Mendy P.,Cagliari,A,hedge_head_to_head,-0.61
+7337,Motta,Lazio,P,Pedraza,Lazio,D,moves_with,0.41
+7337,Motta,Lazio,P,Lazzari,Lazio,D,moves_with,0.40
+7337,Motta,Lazio,P,Romagnoli,Lazio,D,moves_with,0.34
+7337,Motta,Lazio,P,Soulè,Roma,A,hedge_head_to_head,-0.69
+7337,Motta,Lazio,P,Pasalic,Atalanta,C,hedge_head_to_head,-0.64
+7337,Motta,Lazio,P,Hojlund,Napoli,A,hedge_head_to_head,-0.64
+2188,Marusic,Lazio,D,Mandas,Lazio,P,moves_with,0.28
+2188,Marusic,Lazio,D,Motta,Lazio,P,moves_with,0.22
+2188,Marusic,Lazio,D,Floriani Mussolini,Lazio,D,moves_with,0.20
+2188,Marusic,Lazio,D,Bijlow,Genoa,P,hedge_head_to_head,-0.45
+2188,Marusic,Lazio,D,Scamacca,Atalanta,A,hedge_head_to_head,-0.38
+2188,Marusic,Lazio,D,Ostigard,Genoa,D,hedge_head_to_head,-0.38
+460,Romagnoli,Lazio,D,Mandas,Lazio,P,moves_with,0.38
+460,Romagnoli,Lazio,D,Motta,Lazio,P,moves_with,0.34
+460,Romagnoli,Lazio,D,Floriani Mussolini,Lazio,D,moves_with,0.26
+460,Romagnoli,Lazio,D,Gandelman,Lecce,C,hedge_head_to_head,-0.48
+460,Romagnoli,Lazio,D,Skorupski,Bologna,P,hedge_head_to_head,-0.47
+460,Romagnoli,Lazio,D,Cristante,Roma,C,hedge_head_to_head,-0.41
+5620,Tavares N.,Lazio,D,Motta,Lazio,P,moves_with,0.29
+5620,Tavares N.,Lazio,D,Lazzari,Lazio,D,moves_with,0.28
+5620,Tavares N.,Lazio,D,Leite,Lazio,D,moves_with,0.26
+5620,Tavares N.,Lazio,D,Muric,Sassuolo,P,hedge_head_to_head,-0.61
+5620,Tavares N.,Lazio,D,Falcone,Lecce,P,hedge_head_to_head,-0.51
+5620,Tavares N.,Lazio,D,Obrador,Sassuolo,D,hedge_head_to_head,-0.48
+6320,Doekhi,Lazio,D,Motta,Lazio,P,moves_with,0.27
+6320,Doekhi,Lazio,D,Mandas,Lazio,P,moves_with,0.26
+6320,Doekhi,Lazio,D,Noslin,Lazio,A,moves_with,0.26
+6320,Doekhi,Lazio,D,Caprile,Cagliari,P,hedge_head_to_head,-0.50
+6320,Doekhi,Lazio,D,Balerdi,Roma,D,hedge_head_to_head,-0.46
+6320,Doekhi,Lazio,D,Svilar,Roma,P,hedge_head_to_head,-0.46
+7580,Sutalo J.,Lazio,D,Mandas,Lazio,P,moves_with,0.34
+7580,Sutalo J.,Lazio,D,Lazzari,Lazio,D,moves_with,0.28
+7580,Sutalo J.,Lazio,D,Pedraza,Lazio,D,moves_with,0.26
+7580,Sutalo J.,Lazio,D,Djimsiti,Atalanta,D,hedge_head_to_head,-0.47
+7580,Sutalo J.,Lazio,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.47
+7580,Sutalo J.,Lazio,D,Falcone,Lecce,P,hedge_head_to_head,-0.45
+7131,Floriani Mussolini,Lazio,D,Mandas,Lazio,P,moves_with,0.43
+7131,Floriani Mussolini,Lazio,D,Motta,Lazio,P,moves_with,0.30
+7131,Floriani Mussolini,Lazio,D,Romagnoli,Lazio,D,moves_with,0.26
+7131,Floriani Mussolini,Lazio,D,Soulè,Roma,A,hedge_head_to_head,-0.60
+7131,Floriani Mussolini,Lazio,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.54
+7131,Floriani Mussolini,Lazio,D,Kempf,Como,D,hedge_head_to_head,-0.47
+7012,Provstgaard,Lazio,D,Motta,Lazio,P,moves_with,0.33
+7012,Provstgaard,Lazio,D,Mandas,Lazio,P,moves_with,0.26
+7012,Provstgaard,Lazio,D,Leite,Lazio,D,moves_with,0.25
+7012,Provstgaard,Lazio,D,Pasalic,Atalanta,C,hedge_head_to_head,-0.49
+7012,Provstgaard,Lazio,D,Laurientè,Sassuolo,A,hedge_head_to_head,-0.43
+7012,Provstgaard,Lazio,D,Tiago Gabriel,Lecce,D,hedge_head_to_head,-0.42
+2728,Pellegrini Lu.,Lazio,D,Belahyane,Lazio,C,moves_with,0.35
+2728,Pellegrini Lu.,Lazio,D,Motta,Lazio,P,moves_with,0.28
+2728,Pellegrini Lu.,Lazio,D,Mandas,Lazio,P,moves_with,0.23
+2728,Pellegrini Lu.,Lazio,D,Butez,Como,P,hedge_head_to_head,-0.32
+2728,Pellegrini Lu.,Lazio,D,Paz N.,Como,C,hedge_head_to_head,-0.30
+2728,Pellegrini Lu.,Lazio,D,Falcone,Lecce,P,hedge_head_to_head,-0.30
+2263,Lazzari,Lazio,D,Mandas,Lazio,P,moves_with,0.41
+2263,Lazzari,Lazio,D,Motta,Lazio,P,moves_with,0.40
+2263,Lazzari,Lazio,D,Pedraza,Lazio,D,moves_with,0.29
+2263,Lazzari,Lazio,D,Caprile,Cagliari,P,hedge_head_to_head,-0.33
+2263,Lazzari,Lazio,D,Winks,Cagliari,C,hedge_head_to_head,-0.27
+4817,Pedraza,Lazio,D,Motta,Lazio,P,moves_with,0.41
+4817,Pedraza,Lazio,D,Mandas,Lazio,P,moves_with,0.36
+4817,Pedraza,Lazio,D,Noslin,Lazio,A,moves_with,0.29
+6319,Leite,Lazio,D,Mandas,Lazio,P,moves_with,0.29
+6319,Leite,Lazio,D,Tavares N.,Lazio,D,moves_with,0.26
+6319,Leite,Lazio,D,Provstgaard,Lazio,D,moves_with,0.25
+7314,Taylor K.,Lazio,C,Lazzari,Lazio,D,moves_with,0.18
+7314,Taylor K.,Lazio,C,Tavares N.,Lazio,D,moves_with,0.17
+7314,Taylor K.,Lazio,C,Dia,Lazio,A,moves_with,0.17
+7314,Taylor K.,Lazio,C,Okoye,Udinese,P,hedge_head_to_head,-0.54
+7314,Taylor K.,Lazio,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.48
+7314,Taylor K.,Lazio,C,Montipò,Venezia,P,hedge_head_to_head,-0.47
+632,Zaccagni,Lazio,C,Rovella,Lazio,C,moves_with,0.20
+632,Zaccagni,Lazio,C,Noslin,Lazio,A,moves_with,0.18
+632,Zaccagni,Lazio,C,Pedraza,Lazio,D,moves_with,0.18
+632,Zaccagni,Lazio,C,Perri,Torino,P,hedge_head_to_head,-0.56
+632,Zaccagni,Lazio,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.52
+632,Zaccagni,Lazio,C,Bijlow,Genoa,P,hedge_head_to_head,-0.51
+6398,Isaksen,Lazio,C,Lazzari,Lazio,D,moves_with,0.21
+6398,Isaksen,Lazio,C,Belahyane,Lazio,C,moves_with,0.18
+6398,Isaksen,Lazio,C,Pellegrini Lu.,Lazio,D,moves_with,0.17
+6398,Isaksen,Lazio,C,Okoye,Udinese,P,hedge_head_to_head,-0.52
+6398,Isaksen,Lazio,C,Butez,Como,P,hedge_head_to_head,-0.46
+6398,Isaksen,Lazio,C,Maignan,Milan,P,hedge_head_to_head,-0.46
+5800,Gudmundsson A.,Lazio,C,Rovella,Lazio,C,moves_with,0.18
+5800,Gudmundsson A.,Lazio,C,Tavares N.,Lazio,D,moves_with,0.16
+5800,Gudmundsson A.,Lazio,C,Floriani Mussolini,Lazio,D,moves_with,0.16
+5800,Gudmundsson A.,Lazio,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.54
+5800,Gudmundsson A.,Lazio,C,Maignan,Milan,P,hedge_head_to_head,-0.54
+5800,Gudmundsson A.,Lazio,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.53
+5500,Cancellieri,Lazio,C,Tavares N.,Lazio,D,moves_with,0.21
+5500,Cancellieri,Lazio,C,Belahyane,Lazio,C,moves_with,0.17
+5500,Cancellieri,Lazio,C,Leite,Lazio,D,moves_with,0.17
+5500,Cancellieri,Lazio,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.52
+5500,Cancellieri,Lazio,C,Muric,Sassuolo,P,hedge_head_to_head,-0.48
+5500,Cancellieri,Lazio,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.45
+333,Cataldi,Lazio,C,Noslin,Lazio,A,moves_with,0.21
+333,Cataldi,Lazio,C,Floriani Mussolini,Lazio,D,moves_with,0.17
+333,Cataldi,Lazio,C,Dia,Lazio,A,moves_with,0.17
+333,Cataldi,Lazio,C,Bijlow,Genoa,P,hedge_head_to_head,-0.52
+333,Cataldi,Lazio,C,Skorupski,Bologna,P,hedge_head_to_head,-0.52
+333,Cataldi,Lazio,C,Theate,Bologna,D,hedge_head_to_head,-0.52
+4459,Rovella,Lazio,C,Dia,Lazio,A,moves_with,0.21
+4459,Rovella,Lazio,C,Noslin,Lazio,A,moves_with,0.20
+4459,Rovella,Lazio,C,Zaccagni,Lazio,C,moves_with,0.20
+4459,Rovella,Lazio,C,Balerdi,Roma,D,hedge_head_to_head,-0.44
+4459,Rovella,Lazio,C,Provedel,Inter,P,hedge_head_to_head,-0.43
+4459,Rovella,Lazio,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.41
+6191,Belahyane,Lazio,C,Pellegrini Lu.,Lazio,D,moves_with,0.35
+6191,Belahyane,Lazio,C,Pinamonti,Lazio,A,moves_with,0.23
+6191,Belahyane,Lazio,C,Isaksen,Lazio,C,moves_with,0.18
+6191,Belahyane,Lazio,C,Provedel,Inter,P,hedge_head_to_head,-0.43
+6191,Belahyane,Lazio,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.42
+6191,Belahyane,Lazio,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.37
+6629,Dele-Bashiru,Lazio,C,Lazzari,Lazio,D,moves_with,0.19
+6629,Dele-Bashiru,Lazio,C,Tavares N.,Lazio,D,moves_with,0.18
+6629,Dele-Bashiru,Lazio,C,Cancellieri,Lazio,C,moves_with,0.15
+6629,Dele-Bashiru,Lazio,C,Caprile,Cagliari,P,hedge_head_to_head,-0.44
+6629,Dele-Bashiru,Lazio,C,Perri,Torino,P,hedge_head_to_head,-0.43
+6629,Dele-Bashiru,Lazio,C,Falcone,Lecce,P,hedge_head_to_head,-0.43
+2848,Frattesi,Lazio,C,Tavares N.,Lazio,D,moves_with,0.19
+2848,Frattesi,Lazio,C,Motta,Lazio,P,moves_with,0.16
+2848,Frattesi,Lazio,C,Romagnoli,Lazio,D,moves_with,0.15
+2848,Frattesi,Lazio,C,Muric,Sassuolo,P,hedge_head_to_head,-0.50
+2848,Frattesi,Lazio,C,Butez,Como,P,hedge_head_to_head,-0.46
+2848,Frattesi,Lazio,C,Caprile,Cagliari,P,hedge_head_to_head,-0.43
+2038,Pinamonti,Lazio,A,Belahyane,Lazio,C,moves_with,0.23
+2038,Pinamonti,Lazio,A,Tavares N.,Lazio,D,moves_with,0.20
+2038,Pinamonti,Lazio,A,Cancellieri,Lazio,C,moves_with,0.14
+2038,Pinamonti,Lazio,A,Suzuki,Parma,P,hedge_head_to_head,-0.63
+2038,Pinamonti,Lazio,A,Meret,Napoli,P,hedge_head_to_head,-0.62
+2038,Pinamonti,Lazio,A,Maignan,Milan,P,hedge_head_to_head,-0.57
+5672,Dia,Lazio,A,Lazzari,Lazio,D,moves_with,0.25
+5672,Dia,Lazio,A,Leite,Lazio,D,moves_with,0.24
+5672,Dia,Lazio,A,Pellegrini Lu.,Lazio,D,moves_with,0.22
+5672,Dia,Lazio,A,Butez,Como,P,hedge_head_to_head,-0.50
+5672,Dia,Lazio,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.45
+5672,Dia,Lazio,A,Muric,Sassuolo,P,hedge_head_to_head,-0.43
+6556,Noslin,Lazio,A,Pedraza,Lazio,D,moves_with,0.29
+6556,Noslin,Lazio,A,Doekhi,Lazio,D,moves_with,0.26
+6556,Noslin,Lazio,A,Floriani Mussolini,Lazio,D,moves_with,0.25
+2134,Falcone,Lecce,P,Jean,Lecce,D,moves_with,0.45
+2134,Falcone,Lecce,P,Ndaba,Lecce,D,moves_with,0.45
+2134,Falcone,Lecce,P,Dembelè A.,Lecce,D,moves_with,0.38
+2134,Falcone,Lecce,P,Davis K.,Udinese,A,hedge_head_to_head,-0.64
+2134,Falcone,Lecce,P,Malen,Roma,A,hedge_head_to_head,-0.63
+2134,Falcone,Lecce,P,Romero D.,Parma,A,hedge_head_to_head,-0.62
+4502,Gallo,Lecce,D,Falcone,Lecce,P,moves_with,0.38
+4502,Gallo,Lecce,D,Dembelè A.,Lecce,D,moves_with,0.28
+4502,Gallo,Lecce,D,Ndaba,Lecce,D,moves_with,0.28
+4502,Gallo,Lecce,D,Mandas,Lazio,P,hedge_head_to_head,-0.47
+4502,Gallo,Lecce,D,Zortea,Bologna,D,hedge_head_to_head,-0.46
+4502,Gallo,Lecce,D,Suzuki,Parma,P,hedge_head_to_head,-0.45
+6989,Tiago Gabriel,Lecce,D,Falcone,Lecce,P,moves_with,0.28
+6989,Tiago Gabriel,Lecce,D,Gallo,Lecce,D,moves_with,0.23
+6989,Tiago Gabriel,Lecce,D,Jean,Lecce,D,moves_with,0.22
+6989,Tiago Gabriel,Lecce,D,Mandas,Lazio,P,hedge_head_to_head,-0.48
+6989,Tiago Gabriel,Lecce,D,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+6989,Tiago Gabriel,Lecce,D,Suzuki,Parma,P,hedge_head_to_head,-0.47
+6990,Veiga D.,Lecce,D,Falcone,Lecce,P,moves_with,0.37
+6990,Veiga D.,Lecce,D,Ndaba,Lecce,D,moves_with,0.28
+6990,Veiga D.,Lecce,D,Jean,Lecce,D,moves_with,0.24
+6990,Veiga D.,Lecce,D,Caprile,Cagliari,P,hedge_head_to_head,-0.42
+6990,Veiga D.,Lecce,D,Maignan,Milan,P,hedge_head_to_head,-0.42
+6990,Veiga D.,Lecce,D,Okoye,Udinese,P,hedge_head_to_head,-0.42
+6632,Gaspar K.,Lecce,D,Falcone,Lecce,P,moves_with,0.36
+6632,Gaspar K.,Lecce,D,Gallo,Lecce,D,moves_with,0.27
+6632,Gaspar K.,Lecce,D,Dembelè A.,Lecce,D,moves_with,0.24
+6632,Gaspar K.,Lecce,D,Ehizibue,Genoa,D,hedge_head_to_head,-0.46
+6632,Gaspar K.,Lecce,D,El Shaarawy,Genoa,C,hedge_head_to_head,-0.42
+6632,Gaspar K.,Lecce,D,Martinez L.,Inter,A,hedge_head_to_head,-0.41
+7240,Siebert,Lecce,D,Falcone,Lecce,P,moves_with,0.31
+7240,Siebert,Lecce,D,Ndaba,Lecce,D,moves_with,0.30
+7240,Siebert,Lecce,D,Dembelè A.,Lecce,D,moves_with,0.24
+7240,Siebert,Lecce,D,Malen,Roma,A,hedge_head_to_head,-0.45
+7240,Siebert,Lecce,D,Gila,Milan,D,hedge_head_to_head,-0.39
+7240,Siebert,Lecce,D,Maignan,Milan,P,hedge_head_to_head,-0.39
+7182,Ndaba,Lecce,D,Jean,Lecce,D,moves_with,0.49
+7182,Ndaba,Lecce,D,Falcone,Lecce,P,moves_with,0.45
+7182,Ndaba,Lecce,D,Dembelè A.,Lecce,D,moves_with,0.37
+7182,Ndaba,Lecce,D,Martinez L.,Inter,A,hedge_head_to_head,-0.49
+7182,Ndaba,Lecce,D,Paz N.,Como,C,hedge_head_to_head,-0.47
+7182,Ndaba,Lecce,D,Ghedjemis,Frosinone,A,hedge_head_to_head,-0.40
+6826,Dembelè A.,Lecce,D,Falcone,Lecce,P,moves_with,0.38
+6826,Dembelè A.,Lecce,D,Ndaba,Lecce,D,moves_with,0.37
+6826,Dembelè A.,Lecce,D,Gallo,Lecce,D,moves_with,0.28
+6826,Dembelè A.,Lecce,D,Hojlund,Napoli,A,hedge_head_to_head,-0.49
+6826,Dembelè A.,Lecce,D,Bracaglia,Frosinone,D,hedge_head_to_head,-0.38
+6826,Dembelè A.,Lecce,D,Kvernadze,Frosinone,A,hedge_head_to_head,-0.34
+6883,Jean,Lecce,D,Ndaba,Lecce,D,moves_with,0.49
+6883,Jean,Lecce,D,Falcone,Lecce,P,moves_with,0.45
+6883,Jean,Lecce,D,Dembelè A.,Lecce,D,moves_with,0.28
+6883,Jean,Lecce,D,Butez,Como,P,hedge_head_to_head,-0.42
+6883,Jean,Lecce,D,Paz N.,Como,C,hedge_head_to_head,-0.34
+5504,Coulibaly L.,Lecce,C,Veiga D.,Lecce,D,moves_with,0.21
+5504,Coulibaly L.,Lecce,C,Ndaba,Lecce,D,moves_with,0.19
+5504,Coulibaly L.,Lecce,C,Ilic,Lecce,C,moves_with,0.19
+5504,Coulibaly L.,Lecce,C,Suzuki,Parma,P,hedge_head_to_head,-0.46
+5504,Coulibaly L.,Lecce,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.46
+5504,Coulibaly L.,Lecce,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.44
+7619,Monteiro J.,Lecce,C,Pierotti,Lecce,C,moves_with,0.22
+7619,Monteiro J.,Lecce,C,N'Dri,Lecce,A,moves_with,0.20
+7619,Monteiro J.,Lecce,C,Gallo,Lecce,D,moves_with,0.19
+7619,Monteiro J.,Lecce,C,Carboni A.,Monza,D,hedge_head_to_head,-0.57
+7619,Monteiro J.,Lecce,C,Vicario,Juventus,P,hedge_head_to_head,-0.52
+7619,Monteiro J.,Lecce,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.40
+7322,Ngom,Lecce,C,Gorter,Lecce,C,moves_with,0.23
+7322,Ngom,Lecce,C,Falcone,Lecce,P,moves_with,0.21
+7322,Ngom,Lecce,C,N'Dri,Lecce,A,moves_with,0.20
+7322,Ngom,Lecce,C,Couto,Como,D,hedge_head_to_head,-0.47
+7322,Ngom,Lecce,C,Romagnoli,Lazio,D,hedge_head_to_head,-0.38
+7322,Ngom,Lecce,C,Butez,Como,P,hedge_head_to_head,-0.35
+5457,Maleh,Lecce,C,Falcone,Lecce,P,moves_with,0.16
+5457,Maleh,Lecce,C,Veiga D.,Lecce,D,moves_with,0.15
+5457,Maleh,Lecce,C,N'Dri,Lecce,A,moves_with,0.15
+5457,Maleh,Lecce,C,Hien,Atalanta,D,hedge_head_to_head,-0.36
+5457,Maleh,Lecce,C,Muric,Sassuolo,P,hedge_head_to_head,-0.36
+5457,Maleh,Lecce,C,Traorè Hj.,Genoa,C,hedge_head_to_head,-0.36
+7318,Gandelman,Lecce,C,Ndaba,Lecce,D,moves_with,0.19
+7318,Gandelman,Lecce,C,Tiago Gabriel,Lecce,D,moves_with,0.17
+7318,Gandelman,Lecce,C,Fatah,Lecce,A,moves_with,0.16
+7318,Gandelman,Lecce,C,Romagnoli,Lazio,D,hedge_head_to_head,-0.48
+7318,Gandelman,Lecce,C,Perri,Torino,P,hedge_head_to_head,-0.45
+7318,Gandelman,Lecce,C,Muric,Sassuolo,P,hedge_head_to_head,-0.44
+6549,Pierotti,Lecce,C,Monteiro J.,Lecce,C,moves_with,0.22
+6549,Pierotti,Lecce,C,Veiga D.,Lecce,D,moves_with,0.18
+6549,Pierotti,Lecce,C,N'Dri,Lecce,A,moves_with,0.18
+6549,Pierotti,Lecce,C,Caprile,Cagliari,P,hedge_head_to_head,-0.56
+6549,Pierotti,Lecce,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.51
+6549,Pierotti,Lecce,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.44
+5007,Ilic,Lecce,C,N'Dri,Lecce,A,moves_with,0.27
+5007,Ilic,Lecce,C,Coulibaly L.,Lecce,C,moves_with,0.19
+5007,Ilic,Lecce,C,Gallo,Lecce,D,moves_with,0.17
+5007,Ilic,Lecce,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.38
+5007,Ilic,Lecce,C,Valeri,Parma,D,hedge_head_to_head,-0.38
+5007,Ilic,Lecce,C,Idzes,Sassuolo,D,hedge_head_to_head,-0.34
+6015,Berisha M.,Lecce,C,Kaba,Lecce,C,moves_with,0.23
+6015,Berisha M.,Lecce,C,Dembelè A.,Lecce,D,moves_with,0.22
+6015,Berisha M.,Lecce,C,N'Dri,Lecce,A,moves_with,0.20
+6015,Berisha M.,Lecce,C,Perri,Torino,P,hedge_head_to_head,-0.57
+6015,Berisha M.,Lecce,C,Bijlow,Genoa,P,hedge_head_to_head,-0.40
+6015,Berisha M.,Lecce,C,Vicario,Juventus,P,hedge_head_to_head,-0.36
+6410,Kaba,Lecce,C,Esteban,Lecce,A,moves_with,0.24
+6410,Kaba,Lecce,C,Berisha M.,Lecce,C,moves_with,0.23
+6410,Kaba,Lecce,C,Jean,Lecce,D,moves_with,0.22
+7248,Gorter,Lecce,C,Ngom,Lecce,C,moves_with,0.23
+7248,Gorter,Lecce,C,Ndaba,Lecce,D,moves_with,0.20
+7248,Gorter,Lecce,C,Kaba,Lecce,C,moves_with,0.19
+7252,Stulic,Lecce,A,Berisha M.,Lecce,C,moves_with,0.19
+7252,Stulic,Lecce,A,Kaba,Lecce,C,moves_with,0.18
+7252,Stulic,Lecce,A,Veiga D.,Lecce,D,moves_with,0.17
+7252,Stulic,Lecce,A,Muric,Sassuolo,P,hedge_head_to_head,-0.60
+7252,Stulic,Lecce,A,Suzuki,Parma,P,hedge_head_to_head,-0.58
+7252,Stulic,Lecce,A,Motta,Lazio,P,hedge_head_to_head,-0.54
+5029,Geubbels,Lecce,A,Dembelè A.,Lecce,D,moves_with,0.20
+5029,Geubbels,Lecce,A,Veiga D.,Lecce,D,moves_with,0.20
+5029,Geubbels,Lecce,A,Gallo,Lecce,D,moves_with,0.19
+5029,Geubbels,Lecce,A,Suzuki,Parma,P,hedge_head_to_head,-0.58
+5029,Geubbels,Lecce,A,Vicario,Juventus,P,hedge_head_to_head,-0.52
+5029,Geubbels,Lecce,A,Svilar,Roma,P,hedge_head_to_head,-0.51
+7602,Fatah,Lecce,A,Veiga D.,Lecce,D,moves_with,0.20
+7602,Fatah,Lecce,A,Dembelè A.,Lecce,D,moves_with,0.17
+7602,Fatah,Lecce,A,Berisha M.,Lecce,C,moves_with,0.16
+7602,Fatah,Lecce,A,Vicario,Juventus,P,hedge_head_to_head,-0.59
+7602,Fatah,Lecce,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.54
+7602,Fatah,Lecce,A,Provedel,Inter,P,hedge_head_to_head,-0.53
+7647,Esteban,Lecce,A,Kaba,Lecce,C,moves_with,0.24
+7647,Esteban,Lecce,A,N'Dri,Lecce,A,moves_with,0.21
+7647,Esteban,Lecce,A,Veiga D.,Lecce,D,moves_with,0.19
+7647,Esteban,Lecce,A,Butez,Como,P,hedge_head_to_head,-0.60
+7647,Esteban,Lecce,A,Perri,Torino,P,hedge_head_to_head,-0.57
+7647,Esteban,Lecce,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+7001,N'Dri,Lecce,A,Ilic,Lecce,C,moves_with,0.27
+7001,N'Dri,Lecce,A,Jean,Lecce,D,moves_with,0.23
+7001,N'Dri,Lecce,A,Gallo,Lecce,D,moves_with,0.22
+4312,Maignan,Milan,P,Terracciano F.,Milan,D,moves_with,0.35
+4312,Maignan,Milan,P,Gabbia,Milan,D,moves_with,0.31
+4312,Maignan,Milan,P,De Winter,Milan,D,moves_with,0.31
+4312,Maignan,Milan,P,Varela G.,Monza,A,hedge_head_to_head,-0.68
+4312,Maignan,Milan,P,Adams A.,Venezia,A,hedge_head_to_head,-0.62
+4312,Maignan,Milan,P,Romero D.,Parma,A,hedge_head_to_head,-0.61
+5022,Pavlovic,Milan,D,Maignan,Milan,P,moves_with,0.24
+5022,Pavlovic,Milan,D,Terracciano F.,Milan,D,moves_with,0.21
+5022,Pavlovic,Milan,D,Athekame,Milan,D,moves_with,0.19
+5022,Pavlovic,Milan,D,Falcone,Lecce,P,hedge_head_to_head,-0.51
+5022,Pavlovic,Milan,D,Perri,Torino,P,hedge_head_to_head,-0.50
+5022,Pavlovic,Milan,D,Muric,Sassuolo,P,hedge_head_to_head,-0.47
+5833,Gila,Milan,D,Maignan,Milan,P,moves_with,0.28
+5833,Gila,Milan,D,Estupinan,Milan,D,moves_with,0.23
+5833,Gila,Milan,D,Tomori,Milan,D,moves_with,0.18
+5833,Gila,Milan,D,Djimsiti,Atalanta,D,hedge_head_to_head,-0.43
+5833,Gila,Milan,D,Kalulu,Juventus,D,hedge_head_to_head,-0.40
+5833,Gila,Milan,D,Siebert,Lecce,D,hedge_head_to_head,-0.39
+4751,Tomori,Milan,D,Maignan,Milan,P,moves_with,0.30
+4751,Tomori,Milan,D,De Winter,Milan,D,moves_with,0.19
+4751,Tomori,Milan,D,Terracciano F.,Milan,D,moves_with,0.19
+4751,Tomori,Milan,D,Valdepenas,Fiorentina,D,hedge_head_to_head,-0.44
+4751,Tomori,Milan,D,Soulè,Roma,A,hedge_head_to_head,-0.43
+4751,Tomori,Milan,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.42
+5739,De Winter,Milan,D,Maignan,Milan,P,moves_with,0.31
+5739,De Winter,Milan,D,Terracciano F.,Milan,D,moves_with,0.23
+5739,De Winter,Milan,D,Tomori,Milan,D,moves_with,0.19
+5739,De Winter,Milan,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.46
+5739,De Winter,Milan,D,Romero D.,Parma,A,hedge_head_to_head,-0.46
+5739,De Winter,Milan,D,Schmid,Frosinone,C,hedge_head_to_head,-0.38
+5812,Terracciano F.,Milan,D,Maignan,Milan,P,moves_with,0.35
+5812,Terracciano F.,Milan,D,De Winter,Milan,D,moves_with,0.23
+5812,Terracciano F.,Milan,D,Pavlovic,Milan,D,moves_with,0.21
+5812,Terracciano F.,Milan,D,Mastantuono,Fiorentina,C,hedge_head_to_head,-0.40
+5812,Terracciano F.,Milan,D,McTominay,Napoli,C,hedge_head_to_head,-0.39
+5812,Terracciano F.,Milan,D,Tourè I.,Monza,C,hedge_head_to_head,-0.39
+5273,Estupinan,Milan,D,Athekame,Milan,D,moves_with,0.34
+5273,Estupinan,Milan,D,Maignan,Milan,P,moves_with,0.30
+5273,Estupinan,Milan,D,Gila,Milan,D,moves_with,0.23
+5273,Estupinan,Milan,D,Couto,Como,D,hedge_head_to_head,-0.45
+5273,Estupinan,Milan,D,Marcandalli,Genoa,D,hedge_head_to_head,-0.42
+5273,Estupinan,Milan,D,Valle,Como,D,hedge_head_to_head,-0.41
+6496,Bartesaghi,Milan,D,Athekame,Milan,D,moves_with,0.29
+6496,Bartesaghi,Milan,D,Maignan,Milan,P,moves_with,0.25
+6496,Bartesaghi,Milan,D,Gabbia,Milan,D,moves_with,0.20
+6496,Bartesaghi,Milan,D,Di Lorenzo,Napoli,D,hedge_head_to_head,-0.46
+6496,Bartesaghi,Milan,D,Butez,Como,P,hedge_head_to_head,-0.37
+6496,Bartesaghi,Milan,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.35
+4401,Gabbia,Milan,D,Maignan,Milan,P,moves_with,0.31
+4401,Gabbia,Milan,D,Leao,Milan,A,moves_with,0.21
+4401,Gabbia,Milan,D,Athekame,Milan,D,moves_with,0.21
+4401,Gabbia,Milan,D,Karlstrom,Udinese,C,hedge_head_to_head,-0.45
+4401,Gabbia,Milan,D,Falcone,Lecce,P,hedge_head_to_head,-0.40
+4401,Gabbia,Milan,D,Mancini,Roma,D,hedge_head_to_head,-0.40
+7211,Athekame,Milan,D,Estupinan,Milan,D,moves_with,0.34
+7211,Athekame,Milan,D,Bartesaghi,Milan,D,moves_with,0.29
+7211,Athekame,Milan,D,Maignan,Milan,P,moves_with,0.24
+2379,Rabiot,Milan,C,Jashari,Milan,C,moves_with,0.21
+2379,Rabiot,Milan,C,Gabbia,Milan,D,moves_with,0.20
+2379,Rabiot,Milan,C,Estupinan,Milan,D,moves_with,0.19
+2379,Rabiot,Milan,C,Ziolkowski,Monza,D,hedge_head_to_head,-0.57
+2379,Rabiot,Milan,C,Falcone,Lecce,P,hedge_head_to_head,-0.57
+2379,Rabiot,Milan,C,Vicario,Juventus,P,hedge_head_to_head,-0.56
+2606,Modric,Milan,C,Jashari,Milan,C,moves_with,0.22
+2606,Modric,Milan,C,Saelemaekers,Milan,C,moves_with,0.15
+2606,Modric,Milan,C,Loftus-Cheek,Milan,C,moves_with,0.15
+2606,Modric,Milan,C,Caprile,Cagliari,P,hedge_head_to_head,-0.43
+2606,Modric,Milan,C,Perri,Torino,P,hedge_head_to_head,-0.42
+2606,Modric,Milan,C,Meret,Napoli,P,hedge_head_to_head,-0.42
+2423,Pulisic,Milan,C,Athekame,Milan,D,moves_with,0.23
+2423,Pulisic,Milan,C,Hutchinson,Milan,C,moves_with,0.19
+2423,Pulisic,Milan,C,Rabiot,Milan,C,moves_with,0.16
+2423,Pulisic,Milan,C,Suzuki,Parma,P,hedge_head_to_head,-0.64
+2423,Pulisic,Milan,C,Montipò,Venezia,P,hedge_head_to_head,-0.56
+2423,Pulisic,Milan,C,Falcone,Lecce,P,hedge_head_to_head,-0.55
+4892,Saelemaekers,Milan,C,Hutchinson,Milan,C,moves_with,0.16
+4892,Saelemaekers,Milan,C,Pulisic,Milan,C,moves_with,0.16
+4892,Saelemaekers,Milan,C,Terracciano F.,Milan,D,moves_with,0.16
+4892,Saelemaekers,Milan,C,Caprile,Cagliari,P,hedge_head_to_head,-0.47
+4892,Saelemaekers,Milan,C,Muric,Sassuolo,P,hedge_head_to_head,-0.46
+4892,Saelemaekers,Milan,C,Bakoune,Monza,D,hedge_head_to_head,-0.43
+4686,Fofana Y.,Milan,C,Jashari,Milan,C,moves_with,0.25
+4686,Fofana Y.,Milan,C,Athekame,Milan,D,moves_with,0.20
+4686,Fofana Y.,Milan,C,Musah,Milan,C,moves_with,0.19
+4686,Fofana Y.,Milan,C,Montipò,Venezia,P,hedge_head_to_head,-0.44
+4686,Fofana Y.,Milan,C,Skorupski,Bologna,P,hedge_head_to_head,-0.43
+4686,Fofana Y.,Milan,C,Thiam,Monza,P,hedge_head_to_head,-0.43
+6372,Moreira,Milan,C,Musah,Milan,C,moves_with,0.20
+6372,Moreira,Milan,C,Chukwueze,Milan,C,moves_with,0.18
+6372,Moreira,Milan,C,De Winter,Milan,D,moves_with,0.18
+6372,Moreira,Milan,C,Skorupski,Bologna,P,hedge_head_to_head,-0.56
+6372,Moreira,Milan,C,Provedel,Inter,P,hedge_head_to_head,-0.51
+6372,Moreira,Milan,C,Obert,Cagliari,D,hedge_head_to_head,-0.50
+4199,Loftus-Cheek,Milan,C,Leao,Milan,A,moves_with,0.18
+4199,Loftus-Cheek,Milan,C,Estupinan,Milan,D,moves_with,0.18
+4199,Loftus-Cheek,Milan,C,De Winter,Milan,D,moves_with,0.16
+4199,Loftus-Cheek,Milan,C,Thiam,Monza,P,hedge_head_to_head,-0.42
+4199,Loftus-Cheek,Milan,C,Carboni A.,Monza,D,hedge_head_to_head,-0.42
+4199,Loftus-Cheek,Milan,C,Britschgi,Parma,D,hedge_head_to_head,-0.42
+5295,Musah,Milan,C,Chukwueze,Milan,C,moves_with,0.26
+5295,Musah,Milan,C,Leao,Milan,A,moves_with,0.20
+5295,Musah,Milan,C,Moreira,Milan,C,moves_with,0.20
+5295,Musah,Milan,C,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+5295,Musah,Milan,C,Provedel,Inter,P,hedge_head_to_head,-0.42
+5295,Musah,Milan,C,Bijlow,Genoa,P,hedge_head_to_head,-0.39
+4856,Chukwueze,Milan,C,Jashari,Milan,C,moves_with,0.29
+4856,Chukwueze,Milan,C,Musah,Milan,C,moves_with,0.26
+4856,Chukwueze,Milan,C,Leao,Milan,A,moves_with,0.20
+7618,Hutchinson,Milan,C,Pulisic,Milan,C,moves_with,0.19
+7618,Hutchinson,Milan,C,Jashari,Milan,C,moves_with,0.18
+7618,Hutchinson,Milan,C,Maignan,Milan,P,moves_with,0.17
+7618,Hutchinson,Milan,C,Skorupski,Bologna,P,hedge_head_to_head,-0.35
+7618,Hutchinson,Milan,C,Okoye,Udinese,P,hedge_head_to_head,-0.34
+7618,Hutchinson,Milan,C,Solet,Udinese,D,hedge_head_to_head,-0.28
+7203,Jashari,Milan,C,Chukwueze,Milan,C,moves_with,0.29
+7203,Jashari,Milan,C,Fofana Y.,Milan,C,moves_with,0.25
+7203,Jashari,Milan,C,Modric,Milan,C,moves_with,0.22
+6397,Ramos G.,Milan,A,Jashari,Milan,C,moves_with,0.20
+6397,Ramos G.,Milan,A,Fofana Y.,Milan,C,moves_with,0.16
+6397,Ramos G.,Milan,A,De Winter,Milan,D,moves_with,0.15
+6397,Ramos G.,Milan,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.66
+6397,Ramos G.,Milan,A,Vicario,Juventus,P,hedge_head_to_head,-0.65
+6397,Ramos G.,Milan,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.64
+4510,Leao,Milan,A,Gabbia,Milan,D,moves_with,0.21
+4510,Leao,Milan,A,Musah,Milan,C,moves_with,0.20
+4510,Leao,Milan,A,Chukwueze,Milan,C,moves_with,0.20
+4510,Leao,Milan,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+4510,Leao,Milan,A,Valeri,Parma,D,hedge_head_to_head,-0.24
+4510,Leao,Milan,A,Kvernadze,Frosinone,A,hedge_head_to_head,-0.24
+4485,Thiam,Monza,P,Ziolkowski,Monza,D,moves_with,0.51
+4485,Thiam,Monza,P,Antov,Monza,D,moves_with,0.50
+4485,Thiam,Monza,P,Bakoune,Monza,D,moves_with,0.46
+4485,Thiam,Monza,P,Soulè,Roma,A,hedge_head_to_head,-0.68
+4485,Thiam,Monza,P,Malen,Roma,A,hedge_head_to_head,-0.67
+4485,Thiam,Monza,P,Paz N.,Como,C,hedge_head_to_head,-0.61
+6682,Pizzignacco,Monza,P,Antov,Monza,D,moves_with,0.57
+6682,Pizzignacco,Monza,P,Maye,Monza,D,moves_with,0.48
+6682,Pizzignacco,Monza,P,Bakoune,Monza,D,moves_with,0.43
+7301,Tornqvist,Monza,P,Antov,Monza,D,moves_with,0.57
+7301,Tornqvist,Monza,P,Bakoune,Monza,D,moves_with,0.53
+7301,Tornqvist,Monza,P,Delli Carri,Monza,D,moves_with,0.46
+7485,Mangas,Monza,D,Tornqvist,Monza,P,moves_with,0.31
+7485,Mangas,Monza,D,Thiam,Monza,P,moves_with,0.29
+7485,Mangas,Monza,D,Antov,Monza,D,moves_with,0.28
+7485,Mangas,Monza,D,Meret,Napoli,P,hedge_head_to_head,-0.56
+7485,Mangas,Monza,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.49
+7485,Mangas,Monza,D,Muric,Sassuolo,P,hedge_head_to_head,-0.48
+5838,Birindelli,Monza,D,Pizzignacco,Monza,P,moves_with,0.42
+5838,Birindelli,Monza,D,Tornqvist,Monza,P,moves_with,0.33
+5838,Birindelli,Monza,D,Thiam,Monza,P,moves_with,0.32
+5838,Birindelli,Monza,D,Okoye,Udinese,P,hedge_head_to_head,-0.47
+5838,Birindelli,Monza,D,Mina,Cagliari,D,hedge_head_to_head,-0.45
+5838,Birindelli,Monza,D,Bijlow,Genoa,P,hedge_head_to_head,-0.41
+4925,Carboni A.,Monza,D,Thiam,Monza,P,moves_with,0.40
+4925,Carboni A.,Monza,D,Tornqvist,Monza,P,moves_with,0.39
+4925,Carboni A.,Monza,D,Pizzignacco,Monza,P,moves_with,0.36
+4925,Carboni A.,Monza,D,Monteiro J.,Lecce,C,hedge_head_to_head,-0.57
+4925,Carboni A.,Monza,D,Pinamonti,Lazio,A,hedge_head_to_head,-0.49
+4925,Carboni A.,Monza,D,Caprile,Cagliari,P,hedge_head_to_head,-0.48
+6537,Goglichidze,Monza,D,Pizzignacco,Monza,P,moves_with,0.38
+6537,Goglichidze,Monza,D,Tornqvist,Monza,P,moves_with,0.36
+6537,Goglichidze,Monza,D,Thiam,Monza,P,moves_with,0.36
+6537,Goglichidze,Monza,D,Raimondo,Frosinone,A,hedge_head_to_head,-0.41
+6537,Goglichidze,Monza,D,Caprile,Cagliari,P,hedge_head_to_head,-0.40
+6537,Goglichidze,Monza,D,Okoye,Udinese,P,hedge_head_to_head,-0.40
+6659,Lucchesi,Monza,D,Thiam,Monza,P,moves_with,0.46
+6659,Lucchesi,Monza,D,Pizzignacco,Monza,P,moves_with,0.40
+6659,Lucchesi,Monza,D,Tornqvist,Monza,P,moves_with,0.39
+6659,Lucchesi,Monza,D,Birligea,Frosinone,A,hedge_head_to_head,-0.49
+6659,Lucchesi,Monza,D,Wiafe,Genoa,C,hedge_head_to_head,-0.46
+6659,Lucchesi,Monza,D,Dimarco,Inter,D,hedge_head_to_head,-0.45
+7238,Kouadio,Monza,D,Pizzignacco,Monza,P,moves_with,0.38
+7238,Kouadio,Monza,D,Tornqvist,Monza,P,moves_with,0.32
+7238,Kouadio,Monza,D,Thiam,Monza,P,moves_with,0.30
+7238,Kouadio,Monza,D,Skorupski,Bologna,P,hedge_head_to_head,-0.44
+7238,Kouadio,Monza,D,Zalewski,Atalanta,C,hedge_head_to_head,-0.40
+7238,Kouadio,Monza,D,Saelemaekers,Milan,C,hedge_head_to_head,-0.38
+7476,Bakoune,Monza,D,Tornqvist,Monza,P,moves_with,0.53
+7476,Bakoune,Monza,D,Thiam,Monza,P,moves_with,0.46
+7476,Bakoune,Monza,D,Pizzignacco,Monza,P,moves_with,0.43
+7476,Bakoune,Monza,D,Raimondo,Frosinone,A,hedge_head_to_head,-0.56
+7476,Bakoune,Monza,D,Hermoso,Roma,D,hedge_head_to_head,-0.54
+7476,Bakoune,Monza,D,Kolo Muani,Juventus,A,hedge_head_to_head,-0.46
+2115,Delli Carri,Monza,D,Thiam,Monza,P,moves_with,0.46
+2115,Delli Carri,Monza,D,Tornqvist,Monza,P,moves_with,0.46
+2115,Delli Carri,Monza,D,Antov,Monza,D,moves_with,0.39
+2115,Delli Carri,Monza,D,Ramon,Como,D,hedge_head_to_head,-0.42
+2115,Delli Carri,Monza,D,Perri,Torino,P,hedge_head_to_head,-0.42
+2115,Delli Carri,Monza,D,Kempf,Como,D,hedge_head_to_head,-0.39
+7260,Ziolkowski,Monza,D,Thiam,Monza,P,moves_with,0.51
+7260,Ziolkowski,Monza,D,Tornqvist,Monza,P,moves_with,0.43
+7260,Ziolkowski,Monza,D,Antov,Monza,D,moves_with,0.34
+7260,Ziolkowski,Monza,D,Rabiot,Milan,C,hedge_head_to_head,-0.57
+7260,Ziolkowski,Monza,D,Kolo Muani,Juventus,A,hedge_head_to_head,-0.55
+7260,Ziolkowski,Monza,D,Colombo,Genoa,A,hedge_head_to_head,-0.43
+7604,Maye,Monza,D,Pizzignacco,Monza,P,moves_with,0.48
+7604,Maye,Monza,D,Thiam,Monza,P,moves_with,0.34
+7604,Maye,Monza,D,Tornqvist,Monza,P,moves_with,0.33
+7604,Maye,Monza,D,Mancini,Roma,D,hedge_head_to_head,-0.32
+7604,Maye,Monza,D,McKennie,Juventus,C,hedge_head_to_head,-0.31
+7604,Maye,Monza,D,Svilar,Roma,P,hedge_head_to_head,-0.23
+5399,Antov,Monza,D,Pizzignacco,Monza,P,moves_with,0.57
+5399,Antov,Monza,D,Tornqvist,Monza,P,moves_with,0.57
+5399,Antov,Monza,D,Thiam,Monza,P,moves_with,0.50
+5878,Colpani,Monza,C,Mout,Monza,C,moves_with,0.23
+5878,Colpani,Monza,C,Ngonge,Monza,A,moves_with,0.20
+5878,Colpani,Monza,C,Robinson J.,Monza,A,moves_with,0.20
+5878,Colpani,Monza,C,Montipò,Venezia,P,hedge_head_to_head,-0.68
+5878,Colpani,Monza,C,Maignan,Milan,P,hedge_head_to_head,-0.49
+5878,Colpani,Monza,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.47
+6593,Akinsanmiro,Monza,C,Varela G.,Monza,A,moves_with,0.23
+6593,Akinsanmiro,Monza,C,Ngonge,Monza,A,moves_with,0.23
+6593,Akinsanmiro,Monza,C,Delli Carri,Monza,D,moves_with,0.21
+6593,Akinsanmiro,Monza,C,Skorupski,Bologna,P,hedge_head_to_head,-0.44
+6593,Akinsanmiro,Monza,C,Vicario,Juventus,P,hedge_head_to_head,-0.41
+6593,Akinsanmiro,Monza,C,Montipò,Venezia,P,hedge_head_to_head,-0.41
+6252,Folorunsho,Monza,C,Antov,Monza,D,moves_with,0.21
+6252,Folorunsho,Monza,C,Tornqvist,Monza,P,moves_with,0.19
+6252,Folorunsho,Monza,C,Maye,Monza,D,moves_with,0.18
+6252,Folorunsho,Monza,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.37
+6252,Folorunsho,Monza,C,Bijlow,Genoa,P,hedge_head_to_head,-0.35
+6252,Folorunsho,Monza,C,Idzes,Sassuolo,D,hedge_head_to_head,-0.33
+7146,Tourè I.,Monza,C,Tornqvist,Monza,P,moves_with,0.21
+7146,Tourè I.,Monza,C,Foe Ondoa,Monza,C,moves_with,0.21
+7146,Tourè I.,Monza,C,Ciurria,Monza,C,moves_with,0.21
+7146,Tourè I.,Monza,C,Montipò,Venezia,P,hedge_head_to_head,-0.42
+7146,Tourè I.,Monza,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+7146,Tourè I.,Monza,C,Terracciano F.,Milan,D,hedge_head_to_head,-0.39
+2741,Pessina,Monza,C,Ciurria,Monza,C,moves_with,0.16
+2741,Pessina,Monza,C,Zeballos,Monza,A,moves_with,0.16
+2741,Pessina,Monza,C,Cutrone,Monza,A,moves_with,0.15
+2741,Pessina,Monza,C,Butez,Como,P,hedge_head_to_head,-0.50
+2741,Pessina,Monza,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+2741,Pessina,Monza,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.37
+7574,Foe Ondoa,Monza,C,Tornqvist,Monza,P,moves_with,0.26
+7574,Foe Ondoa,Monza,C,Mout,Monza,C,moves_with,0.22
+7574,Foe Ondoa,Monza,C,Tourè I.,Monza,C,moves_with,0.21
+7574,Foe Ondoa,Monza,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.40
+7574,Foe Ondoa,Monza,C,Skorupski,Bologna,P,hedge_head_to_head,-0.35
+7574,Foe Ondoa,Monza,C,Heggem,Bologna,D,hedge_head_to_head,-0.29
+5880,Ciurria,Monza,C,Mout,Monza,C,moves_with,0.25
+5880,Ciurria,Monza,C,Bakoune,Monza,D,moves_with,0.22
+5880,Ciurria,Monza,C,Tourè I.,Monza,C,moves_with,0.21
+5880,Ciurria,Monza,C,Butez,Como,P,hedge_head_to_head,-0.37
+5880,Ciurria,Monza,C,Perri,Torino,P,hedge_head_to_head,-0.35
+5880,Ciurria,Monza,C,Ferguson,Bologna,C,hedge_head_to_head,-0.28
+7575,Mout,Monza,C,Tornqvist,Monza,P,moves_with,0.26
+7575,Mout,Monza,C,Robinson J.,Monza,A,moves_with,0.25
+7575,Mout,Monza,C,Ciurria,Monza,C,moves_with,0.25
+7523,Varela G.,Monza,A,Akinsanmiro,Monza,C,moves_with,0.23
+7523,Varela G.,Monza,A,Foe Ondoa,Monza,C,moves_with,0.19
+7523,Varela G.,Monza,A,Ngonge,Monza,A,moves_with,0.19
+7523,Varela G.,Monza,A,Perri,Torino,P,hedge_head_to_head,-0.74
+7523,Varela G.,Monza,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.71
+7523,Varela G.,Monza,A,Vicario,Juventus,P,hedge_head_to_head,-0.70
+5882,Mota,Monza,A,Zeballos,Monza,A,moves_with,0.21
+5882,Mota,Monza,A,Ziolkowski,Monza,D,moves_with,0.21
+5882,Mota,Monza,A,Ngonge,Monza,A,moves_with,0.20
+5882,Mota,Monza,A,Skorupski,Bologna,P,hedge_head_to_head,-0.55
+5882,Mota,Monza,A,Butez,Como,P,hedge_head_to_head,-0.50
+5882,Mota,Monza,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.50
+7546,Robinson J.,Monza,A,Mangas,Monza,D,moves_with,0.26
+7546,Robinson J.,Monza,A,Mout,Monza,C,moves_with,0.25
+7546,Robinson J.,Monza,A,Bakoune,Monza,D,moves_with,0.22
+7546,Robinson J.,Monza,A,Perri,Torino,P,hedge_head_to_head,-0.64
+7546,Robinson J.,Monza,A,Bijlow,Genoa,P,hedge_head_to_head,-0.57
+7546,Robinson J.,Monza,A,Vicario,Juventus,P,hedge_head_to_head,-0.55
+2155,Cutrone,Monza,A,Ngonge,Monza,A,moves_with,0.19
+2155,Cutrone,Monza,A,Mota,Monza,A,moves_with,0.18
+2155,Cutrone,Monza,A,Carboni A.,Monza,D,moves_with,0.17
+2155,Cutrone,Monza,A,Butez,Como,P,hedge_head_to_head,-0.62
+2155,Cutrone,Monza,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.57
+2155,Cutrone,Monza,A,Skorupski,Bologna,P,hedge_head_to_head,-0.56
+6145,Ngonge,Monza,A,Mangas,Monza,D,moves_with,0.24
+6145,Ngonge,Monza,A,Akinsanmiro,Monza,C,moves_with,0.23
+6145,Ngonge,Monza,A,Mota,Monza,A,moves_with,0.20
+7620,Zeballos,Monza,A,Delli Carri,Monza,D,moves_with,0.27
+7620,Zeballos,Monza,A,Mout,Monza,C,moves_with,0.22
+7620,Zeballos,Monza,A,Mota,Monza,A,moves_with,0.21
+2170,Milinkovic-Savic V.,Napoli,P,Marin R.,Napoli,D,moves_with,0.41
+2170,Milinkovic-Savic V.,Napoli,P,Olivera,Napoli,D,moves_with,0.34
+2170,Milinkovic-Savic V.,Napoli,P,Badiashile,Napoli,D,moves_with,0.33
+2170,Milinkovic-Savic V.,Napoli,P,Malen,Roma,A,hedge_head_to_head,-0.67
+2170,Milinkovic-Savic V.,Napoli,P,Romero D.,Parma,A,hedge_head_to_head,-0.66
+2170,Milinkovic-Savic V.,Napoli,P,Ramos G.,Milan,A,hedge_head_to_head,-0.66
+572,Meret,Napoli,P,Marin R.,Napoli,D,moves_with,0.46
+572,Meret,Napoli,P,Marianucci,Napoli,D,moves_with,0.32
+572,Meret,Napoli,P,Olivera,Napoli,D,moves_with,0.30
+572,Meret,Napoli,P,Malen,Roma,A,hedge_head_to_head,-0.68
+572,Meret,Napoli,P,Pinamonti,Lazio,A,hedge_head_to_head,-0.62
+572,Meret,Napoli,P,Kolo Muani,Juventus,A,hedge_head_to_head,-0.57
+2816,Di Lorenzo,Napoli,D,Marin R.,Napoli,D,moves_with,0.24
+2816,Di Lorenzo,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.23
+2816,Di Lorenzo,Napoli,D,Meret,Napoli,P,moves_with,0.20
+2816,Di Lorenzo,Napoli,D,Bartesaghi,Milan,D,hedge_head_to_head,-0.46
+2816,Di Lorenzo,Napoli,D,Bijlow,Genoa,P,hedge_head_to_head,-0.42
+2816,Di Lorenzo,Napoli,D,Kempf,Como,D,hedge_head_to_head,-0.41
+4409,Rrahmani,Napoli,D,Meret,Napoli,P,moves_with,0.23
+4409,Rrahmani,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.23
+4409,Rrahmani,Napoli,D,Gutierrez,Napoli,D,moves_with,0.22
+4409,Rrahmani,Napoli,D,Bijlow,Genoa,P,hedge_head_to_head,-0.46
+4409,Rrahmani,Napoli,D,Pongracic,Fiorentina,D,hedge_head_to_head,-0.42
+4409,Rrahmani,Napoli,D,Ostigard,Genoa,D,hedge_head_to_head,-0.42
+6202,Beukema,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.30
+6202,Beukema,Napoli,D,Meret,Napoli,P,moves_with,0.25
+6202,Beukema,Napoli,D,Marin R.,Napoli,D,moves_with,0.21
+6202,Beukema,Napoli,D,Alajbegovic,Juventus,C,hedge_head_to_head,-0.45
+6202,Beukema,Napoli,D,Thiam,Monza,P,hedge_head_to_head,-0.41
+6202,Beukema,Napoli,D,Ndiaye,Parma,D,hedge_head_to_head,-0.38
+1852,Spinazzola,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.27
+1852,Spinazzola,Napoli,D,Meret,Napoli,P,moves_with,0.24
+1852,Spinazzola,Napoli,D,Beukema,Napoli,D,moves_with,0.19
+1852,Spinazzola,Napoli,D,Lulli,Roma,D,hedge_head_to_head,-0.56
+1852,Spinazzola,Napoli,D,Molina N.,Roma,D,hedge_head_to_head,-0.40
+1852,Spinazzola,Napoli,D,N'Dicka,Roma,D,hedge_head_to_head,-0.38
+5840,Olivera,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.34
+5840,Olivera,Napoli,D,Marin R.,Napoli,D,moves_with,0.32
+5840,Olivera,Napoli,D,Meret,Napoli,P,moves_with,0.30
+5840,Olivera,Napoli,D,Malen,Roma,A,hedge_head_to_head,-0.52
+5840,Olivera,Napoli,D,Alaba,Udinese,D,hedge_head_to_head,-0.39
+5840,Olivera,Napoli,D,Soulè,Roma,A,hedge_head_to_head,-0.36
+2724,Buongiorno,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.31
+2724,Buongiorno,Napoli,D,Meret,Napoli,P,moves_with,0.21
+2724,Buongiorno,Napoli,D,Badiashile,Napoli,D,moves_with,0.21
+2724,Buongiorno,Napoli,D,Bijlow,Genoa,P,hedge_head_to_head,-0.36
+2724,Buongiorno,Napoli,D,Suzuki,Parma,P,hedge_head_to_head,-0.34
+2724,Buongiorno,Napoli,D,Lovric,Udinese,C,hedge_head_to_head,-0.33
+4664,Badiashile,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.33
+4664,Badiashile,Napoli,D,Marin R.,Napoli,D,moves_with,0.23
+4664,Badiashile,Napoli,D,Marianucci,Napoli,D,moves_with,0.23
+4664,Badiashile,Napoli,D,Valenti,Parma,D,hedge_head_to_head,-0.43
+4664,Badiashile,Napoli,D,Falcone,Lecce,P,hedge_head_to_head,-0.42
+4664,Badiashile,Napoli,D,Lucchesi,Monza,D,hedge_head_to_head,-0.41
+5427,Gutierrez,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.30
+5427,Gutierrez,Napoli,D,Santos A.,Napoli,A,moves_with,0.23
+5427,Gutierrez,Napoli,D,Meret,Napoli,P,moves_with,0.22
+5427,Gutierrez,Napoli,D,Locatelli,Juventus,C,hedge_head_to_head,-0.41
+5427,Gutierrez,Napoli,D,Krstovic,Atalanta,A,hedge_head_to_head,-0.39
+5427,Gutierrez,Napoli,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.39
+6638,Marin R.,Napoli,D,Meret,Napoli,P,moves_with,0.46
+6638,Marin R.,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.41
+6638,Marin R.,Napoli,D,Olivera,Napoli,D,moves_with,0.32
+6638,Marin R.,Napoli,D,Mangas,Monza,D,hedge_head_to_head,-0.45
+6638,Marin R.,Napoli,D,Veiga D.,Lecce,D,hedge_head_to_head,-0.35
+6638,Marin R.,Napoli,D,Birindelli,Monza,D,hedge_head_to_head,-0.34
+6809,Marianucci,Napoli,D,Meret,Napoli,P,moves_with,0.32
+6809,Marianucci,Napoli,D,Milinkovic-Savic V.,Napoli,P,moves_with,0.31
+6809,Marianucci,Napoli,D,Giovane,Napoli,A,moves_with,0.26
+4777,McTominay,Napoli,C,Lang,Napoli,A,moves_with,0.20
+4777,McTominay,Napoli,C,Marianucci,Napoli,D,moves_with,0.17
+4777,McTominay,Napoli,C,Giovane,Napoli,A,moves_with,0.16
+4777,McTominay,Napoli,C,Skorupski,Bologna,P,hedge_head_to_head,-0.58
+4777,McTominay,Napoli,C,Vicario,Juventus,P,hedge_head_to_head,-0.57
+4777,McTominay,Napoli,C,Caprile,Cagliari,P,hedge_head_to_head,-0.54
+536,Politano,Napoli,C,Santos A.,Napoli,A,moves_with,0.21
+536,Politano,Napoli,C,Giovane,Napoli,A,moves_with,0.20
+536,Politano,Napoli,C,Vergara,Napoli,C,moves_with,0.19
+536,Politano,Napoli,C,Muric,Sassuolo,P,hedge_head_to_head,-0.55
+536,Politano,Napoli,C,Perri,Torino,P,hedge_head_to_head,-0.53
+536,Politano,Napoli,C,Okoye,Udinese,P,hedge_head_to_head,-0.51
+4287,Lobotka,Napoli,C,Badiashile,Napoli,D,moves_with,0.18
+4287,Lobotka,Napoli,C,Marin R.,Napoli,D,moves_with,0.17
+4287,Lobotka,Napoli,C,McTominay,Napoli,C,moves_with,0.16
+4287,Lobotka,Napoli,C,Caprile,Cagliari,P,hedge_head_to_head,-0.41
+4287,Lobotka,Napoli,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.41
+4287,Lobotka,Napoli,C,Dragusin,Fiorentina,D,hedge_head_to_head,-0.39
+4220,Zambo Anguissa,Napoli,C,Giovane,Napoli,A,moves_with,0.20
+4220,Zambo Anguissa,Napoli,C,Lang,Napoli,A,moves_with,0.18
+4220,Zambo Anguissa,Napoli,C,Lukaku,Napoli,A,moves_with,0.17
+4220,Zambo Anguissa,Napoli,C,Montipò,Venezia,P,hedge_head_to_head,-0.56
+4220,Zambo Anguissa,Napoli,C,Skorupski,Bologna,P,hedge_head_to_head,-0.56
+4220,Zambo Anguissa,Napoli,C,Muric,Sassuolo,P,hedge_head_to_head,-0.54
+2517,De Bruyne,Napoli,C,Marin R.,Napoli,D,moves_with,0.22
+2517,De Bruyne,Napoli,C,Politano,Napoli,C,moves_with,0.18
+2517,De Bruyne,Napoli,C,Neres,Napoli,A,moves_with,0.17
+2517,De Bruyne,Napoli,C,Thiam,Monza,P,hedge_head_to_head,-0.59
+2517,De Bruyne,Napoli,C,Muric,Sassuolo,P,hedge_head_to_head,-0.59
+2517,De Bruyne,Napoli,C,Okoye,Udinese,P,hedge_head_to_head,-0.53
+7223,Vergara,Napoli,C,Politano,Napoli,C,moves_with,0.19
+7223,Vergara,Napoli,C,Hojlund,Napoli,A,moves_with,0.16
+7223,Vergara,Napoli,C,McTominay,Napoli,C,moves_with,0.16
+7223,Vergara,Napoli,C,Maignan,Milan,P,hedge_head_to_head,-0.49
+7223,Vergara,Napoli,C,Vicario,Juventus,P,hedge_head_to_head,-0.41
+7223,Vergara,Napoli,C,Tomori,Milan,D,hedge_head_to_head,-0.39
+5131,Gilmour,Napoli,C,Lobotka,Napoli,C,moves_with,0.15
+5131,Gilmour,Napoli,C,Gutierrez,Napoli,D,moves_with,0.15
+5131,Gilmour,Napoli,C,Olivera,Napoli,D,moves_with,0.14
+5131,Gilmour,Napoli,C,Coco,Torino,D,hedge_head_to_head,-0.37
+5131,Gilmour,Napoli,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.34
+5131,Gilmour,Napoli,C,Circati,Parma,D,hedge_head_to_head,-0.32
+6052,Hojlund,Napoli,A,Marianucci,Napoli,D,moves_with,0.21
+6052,Hojlund,Napoli,A,Lukaku,Napoli,A,moves_with,0.20
+6052,Hojlund,Napoli,A,Lucca,Napoli,A,moves_with,0.20
+6052,Hojlund,Napoli,A,Motta,Lazio,P,hedge_head_to_head,-0.64
+6052,Hojlund,Napoli,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.62
+6052,Hojlund,Napoli,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.62
+7162,Giovane,Napoli,A,Marianucci,Napoli,D,moves_with,0.26
+7162,Giovane,Napoli,A,Politano,Napoli,C,moves_with,0.20
+7162,Giovane,Napoli,A,Marin R.,Napoli,D,moves_with,0.20
+7162,Giovane,Napoli,A,Muric,Sassuolo,P,hedge_head_to_head,-0.63
+7162,Giovane,Napoli,A,Vicario,Juventus,P,hedge_head_to_head,-0.46
+7162,Giovane,Napoli,A,Caprile,Cagliari,P,hedge_head_to_head,-0.46
+7351,Santos A.,Napoli,A,Gutierrez,Napoli,D,moves_with,0.23
+7351,Santos A.,Napoli,A,Politano,Napoli,C,moves_with,0.21
+7351,Santos A.,Napoli,A,Marianucci,Napoli,D,moves_with,0.20
+7351,Santos A.,Napoli,A,Muric,Sassuolo,P,hedge_head_to_head,-0.67
+7351,Santos A.,Napoli,A,Falcone,Lecce,P,hedge_head_to_head,-0.52
+7351,Santos A.,Napoli,A,Walukiewicz,Sassuolo,D,hedge_head_to_head,-0.50
+2531,Lukaku,Napoli,A,Hojlund,Napoli,A,moves_with,0.20
+2531,Lukaku,Napoli,A,Santos A.,Napoli,A,moves_with,0.19
+2531,Lukaku,Napoli,A,Marianucci,Napoli,D,moves_with,0.19
+2531,Lukaku,Napoli,A,Vicario,Juventus,P,hedge_head_to_head,-0.47
+2531,Lukaku,Napoli,A,Falcone,Lecce,P,hedge_head_to_head,-0.41
+2531,Lukaku,Napoli,A,Caprile,Cagliari,P,hedge_head_to_head,-0.40
+6215,Lucca,Napoli,A,Lang,Napoli,A,moves_with,0.24
+6215,Lucca,Napoli,A,Marin R.,Napoli,D,moves_with,0.22
+6215,Lucca,Napoli,A,Marianucci,Napoli,D,moves_with,0.20
+6215,Lucca,Napoli,A,Maignan,Milan,P,hedge_head_to_head,-0.42
+6215,Lucca,Napoli,A,Britschgi,Parma,D,hedge_head_to_head,-0.37
+6215,Lucca,Napoli,A,Falcone,Lecce,P,hedge_head_to_head,-0.29
+7120,Lang,Napoli,A,Lucca,Napoli,A,moves_with,0.24
+7120,Lang,Napoli,A,McTominay,Napoli,C,moves_with,0.20
+7120,Lang,Napoli,A,Zambo Anguissa,Napoli,C,moves_with,0.18
+6831,Neres,Napoli,A,De Bruyne,Napoli,C,moves_with,0.17
+6831,Neres,Napoli,A,Hojlund,Napoli,A,moves_with,0.15
+6831,Neres,Napoli,A,McTominay,Napoli,C,moves_with,0.13
+6641,Suzuki,Parma,P,Ndiaye,Parma,D,moves_with,0.42
+6641,Suzuki,Parma,P,Drobnic,Parma,D,moves_with,0.38
+6641,Suzuki,Parma,P,Carboni F.,Parma,D,moves_with,0.38
+6641,Suzuki,Parma,P,Pulisic,Milan,C,hedge_head_to_head,-0.64
+6641,Suzuki,Parma,P,Pinamonti,Lazio,A,hedge_head_to_head,-0.63
+6641,Suzuki,Parma,P,Davis K.,Udinese,A,hedge_head_to_head,-0.63
+6662,Corvi,Parma,P,Carboni F.,Parma,D,moves_with,0.47
+6662,Corvi,Parma,P,Ndiaye,Parma,D,moves_with,0.47
+6662,Corvi,Parma,P,Drobnic,Parma,D,moves_with,0.43
+6662,Corvi,Parma,P,Adams A.,Venezia,A,hedge_head_to_head,-0.66
+6662,Corvi,Parma,P,Kvernadze,Frosinone,A,hedge_head_to_head,-0.63
+6662,Corvi,Parma,P,Bracaglia,Frosinone,D,hedge_head_to_head,-0.47
+5862,Valeri,Parma,D,Corvi,Parma,P,moves_with,0.27
+5862,Valeri,Parma,D,Suzuki,Parma,P,moves_with,0.27
+5862,Valeri,Parma,D,Elphege,Parma,A,moves_with,0.25
+5862,Valeri,Parma,D,Butez,Como,P,hedge_head_to_head,-0.52
+5862,Valeri,Parma,D,Meret,Napoli,P,hedge_head_to_head,-0.50
+5862,Valeri,Parma,D,Motta,Lazio,P,hedge_head_to_head,-0.50
+6664,Delprato,Parma,D,Corvi,Parma,P,moves_with,0.25
+6664,Delprato,Parma,D,Suzuki,Parma,P,moves_with,0.24
+6664,Delprato,Parma,D,Ndiaye,Parma,D,moves_with,0.22
+6664,Delprato,Parma,D,Perri,Torino,P,hedge_head_to_head,-0.46
+6664,Delprato,Parma,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.41
+6664,Delprato,Parma,D,Meret,Napoli,P,hedge_head_to_head,-0.39
+4137,Diego Carlos,Parma,D,Corvi,Parma,P,moves_with,0.32
+4137,Diego Carlos,Parma,D,Drobnic,Parma,D,moves_with,0.26
+4137,Diego Carlos,Parma,D,Elphege,Parma,A,moves_with,0.24
+4137,Diego Carlos,Parma,D,Caprile,Cagliari,P,hedge_head_to_head,-0.53
+4137,Diego Carlos,Parma,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.46
+4137,Diego Carlos,Parma,D,Candè,Sassuolo,D,hedge_head_to_head,-0.41
+7255,Britschgi,Parma,D,Suzuki,Parma,P,moves_with,0.37
+7255,Britschgi,Parma,D,Corvi,Parma,P,moves_with,0.35
+7255,Britschgi,Parma,D,Carboni F.,Parma,D,moves_with,0.26
+7255,Britschgi,Parma,D,Zortea,Bologna,D,hedge_head_to_head,-0.44
+7255,Britschgi,Parma,D,Loftus-Cheek,Milan,C,hedge_head_to_head,-0.42
+7255,Britschgi,Parma,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.39
+7235,Troilo,Parma,D,Corvi,Parma,P,moves_with,0.30
+7235,Troilo,Parma,D,Suzuki,Parma,P,moves_with,0.29
+7235,Troilo,Parma,D,Almqvist,Parma,C,moves_with,0.25
+7235,Troilo,Parma,D,Scamacca,Atalanta,A,hedge_head_to_head,-0.45
+7235,Troilo,Parma,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.44
+7235,Troilo,Parma,D,Bastoni,Inter,D,hedge_head_to_head,-0.42
+5307,Valenti,Parma,D,Suzuki,Parma,P,moves_with,0.36
+5307,Valenti,Parma,D,Corvi,Parma,P,moves_with,0.32
+5307,Valenti,Parma,D,Drobnic,Parma,D,moves_with,0.24
+5307,Valenti,Parma,D,Motta,Lazio,P,hedge_head_to_head,-0.50
+5307,Valenti,Parma,D,Osmajic,Genoa,A,hedge_head_to_head,-0.49
+5307,Valenti,Parma,D,Badiashile,Napoli,D,hedge_head_to_head,-0.43
+6663,Circati,Parma,D,Corvi,Parma,P,moves_with,0.38
+6663,Circati,Parma,D,Suzuki,Parma,P,moves_with,0.27
+6663,Circati,Parma,D,Britschgi,Parma,D,moves_with,0.24
+6663,Circati,Parma,D,Scamacca,Atalanta,A,hedge_head_to_head,-0.47
+6663,Circati,Parma,D,Montipò,Venezia,P,hedge_head_to_head,-0.45
+6663,Circati,Parma,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.40
+7615,Drobnic,Parma,D,Corvi,Parma,P,moves_with,0.43
+7615,Drobnic,Parma,D,Suzuki,Parma,P,moves_with,0.38
+7615,Drobnic,Parma,D,Ndiaye,Parma,D,moves_with,0.26
+7615,Drobnic,Parma,D,Pulisic,Milan,C,hedge_head_to_head,-0.49
+7615,Drobnic,Parma,D,Isaksen,Lazio,C,hedge_head_to_head,-0.45
+7615,Drobnic,Parma,D,Monterisi,Frosinone,D,hedge_head_to_head,-0.42
+7202,Ndiaye,Parma,D,Corvi,Parma,P,moves_with,0.47
+7202,Ndiaye,Parma,D,Suzuki,Parma,P,moves_with,0.42
+7202,Ndiaye,Parma,D,Drobnic,Parma,D,moves_with,0.26
+7202,Ndiaye,Parma,D,Mangas,Monza,D,hedge_head_to_head,-0.44
+7202,Ndiaye,Parma,D,Politano,Napoli,C,hedge_head_to_head,-0.42
+7202,Ndiaye,Parma,D,Doekhi,Lazio,D,hedge_head_to_head,-0.40
+6149,Carboni F.,Parma,D,Corvi,Parma,P,moves_with,0.47
+6149,Carboni F.,Parma,D,Suzuki,Parma,P,moves_with,0.38
+6149,Carboni F.,Parma,D,Britschgi,Parma,D,moves_with,0.26
+6149,Carboni F.,Parma,D,Zaccagni,Lazio,C,hedge_head_to_head,-0.50
+6149,Carboni F.,Parma,D,McTominay,Napoli,C,hedge_head_to_head,-0.47
+6149,Carboni F.,Parma,D,Stulic,Lecce,A,hedge_head_to_head,-0.40
+6898,Keita M.,Parma,C,Elphege,Parma,A,moves_with,0.22
+6898,Keita M.,Parma,C,Bernabè,Parma,C,moves_with,0.19
+6898,Keita M.,Parma,C,Corvi,Parma,P,moves_with,0.19
+6898,Keita M.,Parma,C,Provedel,Inter,P,hedge_head_to_head,-0.51
+6898,Keita M.,Parma,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.43
+6898,Keita M.,Parma,C,Motta,Lazio,P,hedge_head_to_head,-0.43
+6666,Bernabè,Parma,C,Nicolussi Caviglia,Parma,C,moves_with,0.27
+6666,Bernabè,Parma,C,Drobnic,Parma,D,moves_with,0.23
+6666,Bernabè,Parma,C,Ndiaye,Parma,D,moves_with,0.20
+6666,Bernabè,Parma,C,Falcone,Lecce,P,hedge_head_to_head,-0.59
+6666,Bernabè,Parma,C,Skorupski,Bologna,P,hedge_head_to_head,-0.53
+6666,Bernabè,Parma,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.51
+7628,Sierro,Parma,C,Suzuki,Parma,P,moves_with,0.19
+7628,Sierro,Parma,C,Elphege,Parma,A,moves_with,0.18
+7628,Sierro,Parma,C,Britschgi,Parma,D,moves_with,0.17
+7628,Sierro,Parma,C,Okoye,Udinese,P,hedge_head_to_head,-0.38
+7628,Sierro,Parma,C,Cittadini,Frosinone,D,hedge_head_to_head,-0.34
+7628,Sierro,Parma,C,Busio,Venezia,C,hedge_head_to_head,-0.33
+4349,Nicolussi Caviglia,Parma,C,Bernabè,Parma,C,moves_with,0.27
+4349,Nicolussi Caviglia,Parma,C,Lontani,Parma,A,moves_with,0.21
+4349,Nicolussi Caviglia,Parma,C,Elphege,Parma,A,moves_with,0.19
+4349,Nicolussi Caviglia,Parma,C,Falcone,Lecce,P,hedge_head_to_head,-0.49
+4349,Nicolussi Caviglia,Parma,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.46
+4349,Nicolussi Caviglia,Parma,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.45
+7209,Sorensen O.,Parma,C,Ondrejka,Parma,C,moves_with,0.34
+7209,Sorensen O.,Parma,C,Elphege,Parma,A,moves_with,0.32
+7209,Sorensen O.,Parma,C,Fabbian,Parma,C,moves_with,0.21
+7209,Sorensen O.,Parma,C,Skorupski,Bologna,P,hedge_head_to_head,-0.50
+7209,Sorensen O.,Parma,C,Montipò,Venezia,P,hedge_head_to_head,-0.44
+7209,Sorensen O.,Parma,C,Muric,Sassuolo,P,hedge_head_to_head,-0.41
+7138,Ordonez C.,Parma,C,Ndiaye,Parma,D,moves_with,0.23
+7138,Ordonez C.,Parma,C,Romero D.,Parma,A,moves_with,0.18
+7138,Ordonez C.,Parma,C,Carboni F.,Parma,D,moves_with,0.18
+7138,Ordonez C.,Parma,C,Montipò,Venezia,P,hedge_head_to_head,-0.46
+7138,Ordonez C.,Parma,C,Okoye,Udinese,P,hedge_head_to_head,-0.44
+7138,Ordonez C.,Parma,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.39
+6206,Fabbian,Parma,C,Sorensen O.,Parma,C,moves_with,0.21
+6206,Fabbian,Parma,C,Almqvist,Parma,C,moves_with,0.18
+6206,Fabbian,Parma,C,Nicolussi Caviglia,Parma,C,moves_with,0.16
+6206,Fabbian,Parma,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.46
+6206,Fabbian,Parma,C,Skorupski,Bologna,P,hedge_head_to_head,-0.41
+6206,Fabbian,Parma,C,Svilar,Roma,P,hedge_head_to_head,-0.34
+6207,Almqvist,Parma,C,Ondrejka,Parma,C,moves_with,0.31
+6207,Almqvist,Parma,C,Troilo,Parma,D,moves_with,0.25
+6207,Almqvist,Parma,C,Valeri,Parma,D,moves_with,0.23
+6984,Ondrejka,Parma,C,Sorensen O.,Parma,C,moves_with,0.34
+6984,Ondrejka,Parma,C,Almqvist,Parma,C,moves_with,0.31
+6984,Ondrejka,Parma,C,Troilo,Parma,D,moves_with,0.22
+7554,Romero D.,Parma,A,Valeri,Parma,D,moves_with,0.22
+7554,Romero D.,Parma,A,Ndiaye,Parma,D,moves_with,0.20
+7554,Romero D.,Parma,A,Almqvist,Parma,C,moves_with,0.19
+7554,Romero D.,Parma,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.73
+7554,Romero D.,Parma,A,Muric,Sassuolo,P,hedge_head_to_head,-0.73
+7554,Romero D.,Parma,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.66
+7561,Lontani,Parma,A,Ondrejka,Parma,C,moves_with,0.21
+7561,Lontani,Parma,A,Nicolussi Caviglia,Parma,C,moves_with,0.21
+7561,Lontani,Parma,A,Britschgi,Parma,D,moves_with,0.21
+7561,Lontani,Parma,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.60
+7561,Lontani,Parma,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.59
+7561,Lontani,Parma,A,Falcone,Lecce,P,hedge_head_to_head,-0.55
+7342,Elphege,Parma,A,Sorensen O.,Parma,C,moves_with,0.32
+7342,Elphege,Parma,A,Valeri,Parma,D,moves_with,0.25
+7342,Elphege,Parma,A,Diego Carlos,Parma,D,moves_with,0.24
+5841,Svilar,Roma,P,Ghilardi,Roma,D,moves_with,0.32
+5841,Svilar,Roma,P,Balerdi,Roma,D,moves_with,0.31
+5841,Svilar,Roma,P,Angelino,Roma,D,moves_with,0.29
+5841,Svilar,Roma,P,Varela G.,Monza,A,hedge_head_to_head,-0.69
+5841,Svilar,Roma,P,Thuram,Inter,A,hedge_head_to_head,-0.62
+5841,Svilar,Roma,P,David,Juventus,A,hedge_head_to_head,-0.61
+2296,Mancini,Roma,D,Ghilardi,Roma,D,moves_with,0.19
+2296,Mancini,Roma,D,Soulè,Roma,A,moves_with,0.19
+2296,Mancini,Roma,D,Svilar,Roma,P,moves_with,0.18
+2296,Mancini,Roma,D,Kempf,Como,D,hedge_head_to_head,-0.52
+2296,Mancini,Roma,D,Sverko,Venezia,D,hedge_head_to_head,-0.44
+2296,Mancini,Roma,D,Bijlow,Genoa,P,hedge_head_to_head,-0.43
+7181,Wesley,Roma,D,Ghilardi,Roma,D,moves_with,0.20
+7181,Wesley,Roma,D,Svilar,Roma,P,moves_with,0.18
+7181,Wesley,Roma,D,Balerdi,Roma,D,moves_with,0.17
+7181,Wesley,Roma,D,Bakoune,Monza,D,hedge_head_to_head,-0.46
+7181,Wesley,Roma,D,Montipò,Venezia,P,hedge_head_to_head,-0.43
+7181,Wesley,Roma,D,Caprile,Cagliari,P,hedge_head_to_head,-0.41
+4317,N'Dicka,Roma,D,Svilar,Roma,P,moves_with,0.28
+4317,N'Dicka,Roma,D,Balerdi,Roma,D,moves_with,0.24
+4317,N'Dicka,Roma,D,Ghilardi,Roma,D,moves_with,0.19
+4317,N'Dicka,Roma,D,Okoye,Udinese,P,hedge_head_to_head,-0.42
+4317,N'Dicka,Roma,D,Spinazzola,Napoli,D,hedge_head_to_head,-0.38
+4317,N'Dicka,Roma,D,Motta,Lazio,P,hedge_head_to_head,-0.38
+4998,Molina N.,Roma,D,Rensch,Roma,D,moves_with,0.24
+4998,Molina N.,Roma,D,Ghilardi,Roma,D,moves_with,0.19
+4998,Molina N.,Roma,D,Svilar,Roma,P,moves_with,0.18
+4998,Molina N.,Roma,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.49
+4998,Molina N.,Roma,D,Thiam,Monza,P,hedge_head_to_head,-0.49
+4998,Molina N.,Roma,D,Bijlow,Genoa,P,hedge_head_to_head,-0.48
+4807,Hermoso,Roma,D,Svilar,Roma,P,moves_with,0.22
+4807,Hermoso,Roma,D,Ghilardi,Roma,D,moves_with,0.20
+4807,Hermoso,Roma,D,De Roon,Roma,C,moves_with,0.18
+4807,Hermoso,Roma,D,Bijlow,Genoa,P,hedge_head_to_head,-0.56
+4807,Hermoso,Roma,D,Bakoune,Monza,D,hedge_head_to_head,-0.54
+4807,Hermoso,Roma,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.46
+7599,Lulli,Roma,D,Svilar,Roma,P,moves_with,0.21
+7599,Lulli,Roma,D,Ghilardi,Roma,D,moves_with,0.17
+7599,Lulli,Roma,D,N'Dicka,Roma,D,moves_with,0.16
+7599,Lulli,Roma,D,Spinazzola,Napoli,D,hedge_head_to_head,-0.56
+7599,Lulli,Roma,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.50
+7599,Lulli,Roma,D,Mandas,Lazio,P,hedge_head_to_head,-0.41
+4705,Balerdi,Roma,D,Svilar,Roma,P,moves_with,0.31
+4705,Balerdi,Roma,D,N'Dicka,Roma,D,moves_with,0.24
+4705,Balerdi,Roma,D,Molina N.,Roma,D,moves_with,0.18
+4705,Balerdi,Roma,D,Doekhi,Lazio,D,hedge_head_to_head,-0.46
+4705,Balerdi,Roma,D,Rovella,Lazio,C,hedge_head_to_head,-0.44
+4705,Balerdi,Roma,D,Barella,Inter,C,hedge_head_to_head,-0.43
+4772,Angelino,Roma,D,Svilar,Roma,P,moves_with,0.29
+4772,Angelino,Roma,D,Rensch,Roma,D,moves_with,0.20
+4772,Angelino,Roma,D,Molina N.,Roma,D,moves_with,0.17
+4772,Angelino,Roma,D,Okoye,Udinese,P,hedge_head_to_head,-0.42
+4772,Angelino,Roma,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.40
+4772,Angelino,Roma,D,Winks,Cagliari,C,hedge_head_to_head,-0.38
+6631,Ghilardi,Roma,D,Svilar,Roma,P,moves_with,0.32
+6631,Ghilardi,Roma,D,Koulierakis,Roma,D,moves_with,0.24
+6631,Ghilardi,Roma,D,Wesley,Roma,D,moves_with,0.20
+6631,Ghilardi,Roma,D,Theate,Bologna,D,hedge_head_to_head,-0.49
+6631,Ghilardi,Roma,D,Alajbegovic,Juventus,C,hedge_head_to_head,-0.44
+6631,Ghilardi,Roma,D,Yildiz,Juventus,A,hedge_head_to_head,-0.43
+6986,Rensch,Roma,D,Molina N.,Roma,D,moves_with,0.24
+6986,Rensch,Roma,D,Svilar,Roma,P,moves_with,0.23
+6986,Rensch,Roma,D,Soulè,Roma,A,moves_with,0.23
+6986,Rensch,Roma,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.44
+6986,Rensch,Roma,D,Montipò,Venezia,P,hedge_head_to_head,-0.43
+6986,Rensch,Roma,D,Kelly L.,Juventus,D,hedge_head_to_head,-0.43
+7529,Koulierakis,Roma,D,Ghilardi,Roma,D,moves_with,0.24
+7529,Koulierakis,Roma,D,Svilar,Roma,P,moves_with,0.22
+7529,Koulierakis,Roma,D,Pellegrini Lo.,Roma,C,moves_with,0.22
+7529,Koulierakis,Roma,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.48
+7529,Koulierakis,Roma,D,Skorupski,Bologna,P,hedge_head_to_head,-0.43
+7529,Koulierakis,Roma,D,Calvani,Frosinone,D,hedge_head_to_head,-0.37
+779,Cristante,Roma,C,Soulè,Roma,A,moves_with,0.17
+779,Cristante,Roma,C,Malen,Roma,A,moves_with,0.17
+779,Cristante,Roma,C,Molina N.,Roma,D,moves_with,0.15
+779,Cristante,Roma,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.43
+779,Cristante,Roma,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.42
+779,Cristante,Roma,C,Couto,Como,D,hedge_head_to_head,-0.41
+5589,Konè M.,Roma,C,Dybala,Roma,A,moves_with,0.17
+5589,Konè M.,Roma,C,Mancini,Roma,D,moves_with,0.16
+5589,Konè M.,Roma,C,De Roon,Roma,C,moves_with,0.15
+5589,Konè M.,Roma,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.49
+5589,Konè M.,Roma,C,Muric,Sassuolo,P,hedge_head_to_head,-0.47
+5589,Konè M.,Roma,C,Montipò,Venezia,P,hedge_head_to_head,-0.47
+22,De Roon,Roma,C,Malen,Roma,A,moves_with,0.19
+22,De Roon,Roma,C,Hermoso,Roma,D,moves_with,0.18
+22,De Roon,Roma,C,Balerdi,Roma,D,moves_with,0.15
+22,De Roon,Roma,C,Muric,Sassuolo,P,hedge_head_to_head,-0.51
+22,De Roon,Roma,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.45
+22,De Roon,Roma,C,Cinquegrano,Sassuolo,D,hedge_head_to_head,-0.39
+7556,Mora,Roma,C,Soulè,Roma,A,moves_with,0.18
+7556,Mora,Roma,C,Balerdi,Roma,D,moves_with,0.17
+7556,Mora,Roma,C,Dybala,Roma,A,moves_with,0.17
+7556,Mora,Roma,C,Okoye,Udinese,P,hedge_head_to_head,-0.54
+7556,Mora,Roma,C,Skorupski,Bologna,P,hedge_head_to_head,-0.50
+7556,Mora,Roma,C,Muric,Sassuolo,P,hedge_head_to_head,-0.47
+530,Pellegrini Lo.,Roma,C,Koulierakis,Roma,D,moves_with,0.22
+530,Pellegrini Lo.,Roma,C,Soulè,Roma,A,moves_with,0.21
+530,Pellegrini Lo.,Roma,C,Malen,Roma,A,moves_with,0.17
+530,Pellegrini Lo.,Roma,C,Busio,Venezia,C,hedge_head_to_head,-0.20
+530,Pellegrini Lo.,Roma,C,Adams A.,Venezia,A,hedge_head_to_head,-0.07
+5585,Malen,Roma,A,Soulè,Roma,A,moves_with,0.20
+5585,Malen,Roma,A,De Roon,Roma,C,moves_with,0.19
+5585,Malen,Roma,A,Ghilardi,Roma,D,moves_with,0.18
+5585,Malen,Roma,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.69
+5585,Malen,Roma,A,Mandas,Lazio,P,hedge_head_to_head,-0.68
+5585,Malen,Roma,A,Meret,Napoli,P,hedge_head_to_head,-0.68
+5734,Soulè,Roma,A,Rensch,Roma,D,moves_with,0.23
+5734,Soulè,Roma,A,Pellegrini Lo.,Roma,C,moves_with,0.21
+5734,Soulè,Roma,A,Malen,Roma,A,moves_with,0.20
+5734,Soulè,Roma,A,Motta,Lazio,P,hedge_head_to_head,-0.69
+5734,Soulè,Roma,A,Thiam,Monza,P,hedge_head_to_head,-0.68
+5734,Soulè,Roma,A,Bijlow,Genoa,P,hedge_head_to_head,-0.68
+6572,Castro S.,Roma,A,Rensch,Roma,D,moves_with,0.20
+6572,Castro S.,Roma,A,Koulierakis,Roma,D,moves_with,0.19
+6572,Castro S.,Roma,A,N'Dicka,Roma,D,moves_with,0.18
+6572,Castro S.,Roma,A,Muric,Sassuolo,P,hedge_head_to_head,-0.59
+6572,Castro S.,Roma,A,Idzes,Sassuolo,D,hedge_head_to_head,-0.51
+6572,Castro S.,Roma,A,Montipò,Venezia,P,hedge_head_to_head,-0.51
+309,Dybala,Roma,A,Soulè,Roma,A,moves_with,0.20
+309,Dybala,Roma,A,Malen,Roma,A,moves_with,0.17
+309,Dybala,Roma,A,Konè M.,Roma,C,moves_with,0.17
+309,Dybala,Roma,A,Okoye,Udinese,P,hedge_head_to_head,-0.54
+309,Dybala,Roma,A,Palmisani,Frosinone,P,hedge_head_to_head,-0.50
+309,Dybala,Roma,A,Vicario,Juventus,P,hedge_head_to_head,-0.50
+4236,Muric,Sassuolo,P,Walukiewicz,Sassuolo,D,moves_with,0.50
+4236,Muric,Sassuolo,P,Van Der Brempt,Sassuolo,D,moves_with,0.43
+4236,Muric,Sassuolo,P,Idzes,Sassuolo,D,moves_with,0.41
+4236,Muric,Sassuolo,P,Romero D.,Parma,A,hedge_head_to_head,-0.73
+4236,Muric,Sassuolo,P,Davis K.,Udinese,A,hedge_head_to_head,-0.67
+4236,Muric,Sassuolo,P,Santos A.,Napoli,A,hedge_head_to_head,-0.67
+6672,Idzes,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.41
+6672,Idzes,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.28
+6672,Idzes,Sassuolo,D,Cinquegrano,Sassuolo,D,moves_with,0.26
+6672,Idzes,Sassuolo,D,Perri,Torino,P,hedge_head_to_head,-0.52
+6672,Idzes,Sassuolo,D,Castro S.,Roma,A,hedge_head_to_head,-0.51
+6672,Idzes,Sassuolo,D,Miranda J.,Bologna,D,hedge_head_to_head,-0.46
+5851,Doig,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.34
+5851,Doig,Sassuolo,D,Van Der Brempt,Sassuolo,D,moves_with,0.26
+5851,Doig,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.21
+5851,Doig,Sassuolo,D,Kvernadze,Frosinone,A,hedge_head_to_head,-0.47
+5851,Doig,Sassuolo,D,Okoye,Udinese,P,hedge_head_to_head,-0.41
+5851,Doig,Sassuolo,D,Vlasic,Torino,C,hedge_head_to_head,-0.40
+4374,Walukiewicz,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.50
+4374,Walukiewicz,Sassuolo,D,Van Der Brempt,Sassuolo,D,moves_with,0.34
+4374,Walukiewicz,Sassuolo,D,Cinquegrano,Sassuolo,D,moves_with,0.30
+4374,Walukiewicz,Sassuolo,D,Santos A.,Napoli,A,hedge_head_to_head,-0.50
+4374,Walukiewicz,Sassuolo,D,Martinez L.,Inter,A,hedge_head_to_head,-0.48
+4374,Walukiewicz,Sassuolo,D,Politano,Napoli,C,hedge_head_to_head,-0.47
+7573,Cinquegrano,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.40
+7573,Cinquegrano,Sassuolo,D,Van Der Brempt,Sassuolo,D,moves_with,0.33
+7573,Cinquegrano,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.30
+7573,Cinquegrano,Sassuolo,D,Bella-Kotchap,Venezia,D,hedge_head_to_head,-0.51
+7573,Cinquegrano,Sassuolo,D,Zaniolo,Udinese,C,hedge_head_to_head,-0.48
+7573,Cinquegrano,Sassuolo,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+4147,Caleta-Car,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.38
+4147,Caleta-Car,Sassuolo,D,Candè,Sassuolo,D,moves_with,0.30
+4147,Caleta-Car,Sassuolo,D,Leysen F.,Sassuolo,D,moves_with,0.28
+4147,Caleta-Car,Sassuolo,D,Skorupski,Bologna,P,hedge_head_to_head,-0.48
+4147,Caleta-Car,Sassuolo,D,Falcone,Lecce,P,hedge_head_to_head,-0.44
+4147,Caleta-Car,Sassuolo,D,Bijlow,Genoa,P,hedge_head_to_head,-0.43
+7329,Obrador,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.35
+7329,Obrador,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.25
+7329,Obrador,Sassuolo,D,Laurientè,Sassuolo,A,moves_with,0.25
+7329,Obrador,Sassuolo,D,Okoye,Udinese,P,hedge_head_to_head,-0.56
+7329,Obrador,Sassuolo,D,Tavares N.,Lazio,D,hedge_head_to_head,-0.48
+7329,Obrador,Sassuolo,D,Falcone,Lecce,P,hedge_head_to_head,-0.47
+6896,Van Der Brempt,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.43
+6896,Van Der Brempt,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.34
+6896,Van Der Brempt,Sassuolo,D,Cinquegrano,Sassuolo,D,moves_with,0.33
+6896,Van Der Brempt,Sassuolo,D,Martinez L.,Inter,A,hedge_head_to_head,-0.55
+6896,Van Der Brempt,Sassuolo,D,Caprile,Cagliari,P,hedge_head_to_head,-0.51
+6896,Van Der Brempt,Sassuolo,D,Akanji,Inter,D,hedge_head_to_head,-0.40
+6985,Candè,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.36
+6985,Candè,Sassuolo,D,Caleta-Car,Sassuolo,D,moves_with,0.30
+6985,Candè,Sassuolo,D,Idzes,Sassuolo,D,moves_with,0.25
+6985,Candè,Sassuolo,D,Diego Carlos,Parma,D,hedge_head_to_head,-0.41
+6985,Candè,Sassuolo,D,Malen,Roma,A,hedge_head_to_head,-0.31
+6985,Candè,Sassuolo,D,Delprato,Parma,D,hedge_head_to_head,-0.29
+7564,Leysen F.,Sassuolo,D,Muric,Sassuolo,P,moves_with,0.36
+7564,Leysen F.,Sassuolo,D,Berardi,Sassuolo,A,moves_with,0.31
+7564,Leysen F.,Sassuolo,D,Walukiewicz,Sassuolo,D,moves_with,0.29
+7564,Leysen F.,Sassuolo,D,Bijlow,Genoa,P,hedge_head_to_head,-0.50
+7564,Leysen F.,Sassuolo,D,Okoye,Udinese,P,hedge_head_to_head,-0.36
+7564,Leysen F.,Sassuolo,D,Bastoni,Inter,D,hedge_head_to_head,-0.33
+2528,Matic,Sassuolo,C,Laurientè,Sassuolo,A,moves_with,0.18
+2528,Matic,Sassuolo,C,Muric,Sassuolo,P,moves_with,0.18
+2528,Matic,Sassuolo,C,Van Der Brempt,Sassuolo,D,moves_with,0.17
+2528,Matic,Sassuolo,C,Motta,Lazio,P,hedge_head_to_head,-0.57
+2528,Matic,Sassuolo,C,Floriani Mussolini,Lazio,D,hedge_head_to_head,-0.38
+2528,Matic,Sassuolo,C,Abankwah,Udinese,D,hedge_head_to_head,-0.37
+5844,Thorstvedt,Sassuolo,C,Leysen F.,Sassuolo,D,moves_with,0.21
+5844,Thorstvedt,Sassuolo,C,Obrador,Sassuolo,D,moves_with,0.16
+5844,Thorstvedt,Sassuolo,C,Bowie,Sassuolo,A,moves_with,0.16
+5844,Thorstvedt,Sassuolo,C,Motta,Lazio,P,hedge_head_to_head,-0.54
+5844,Thorstvedt,Sassuolo,C,Falcone,Lecce,P,hedge_head_to_head,-0.46
+5844,Thorstvedt,Sassuolo,C,Okoye,Udinese,P,hedge_head_to_head,-0.42
+7036,Bakola,Sassuolo,C,Adzic,Sassuolo,C,moves_with,0.24
+7036,Bakola,Sassuolo,C,Dominguez B.,Sassuolo,C,moves_with,0.24
+7036,Bakola,Sassuolo,C,Esposito Se.,Sassuolo,A,moves_with,0.23
+7036,Bakola,Sassuolo,C,Falcone,Lecce,P,hedge_head_to_head,-0.53
+7036,Bakola,Sassuolo,C,Montipò,Venezia,P,hedge_head_to_head,-0.51
+7036,Bakola,Sassuolo,C,Mandas,Lazio,P,hedge_head_to_head,-0.47
+6717,Konè I.,Sassuolo,C,Dominguez B.,Sassuolo,C,moves_with,0.23
+6717,Konè I.,Sassuolo,C,Leysen F.,Sassuolo,D,moves_with,0.18
+6717,Konè I.,Sassuolo,C,Obrador,Sassuolo,D,moves_with,0.18
+6717,Konè I.,Sassuolo,C,Svilar,Roma,P,hedge_head_to_head,-0.55
+6717,Konè I.,Sassuolo,C,Butez,Como,P,hedge_head_to_head,-0.52
+6717,Konè I.,Sassuolo,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.49
+5735,Volpato,Sassuolo,C,Leysen F.,Sassuolo,D,moves_with,0.24
+5735,Volpato,Sassuolo,C,Lipani,Sassuolo,C,moves_with,0.21
+5735,Volpato,Sassuolo,C,Adzic,Sassuolo,C,moves_with,0.19
+5735,Volpato,Sassuolo,C,Okoye,Udinese,P,hedge_head_to_head,-0.51
+5735,Volpato,Sassuolo,C,Caprile,Cagliari,P,hedge_head_to_head,-0.45
+5735,Volpato,Sassuolo,C,Bijlow,Genoa,P,hedge_head_to_head,-0.44
+6246,Lipani,Sassuolo,C,Cinquegrano,Sassuolo,D,moves_with,0.25
+6246,Lipani,Sassuolo,C,Boloca,Sassuolo,C,moves_with,0.22
+6246,Lipani,Sassuolo,C,Laurientè,Sassuolo,A,moves_with,0.22
+6246,Lipani,Sassuolo,C,Falcone,Lecce,P,hedge_head_to_head,-0.42
+6246,Lipani,Sassuolo,C,Bijlow,Genoa,P,hedge_head_to_head,-0.39
+6246,Lipani,Sassuolo,C,Veiga D.,Lecce,D,hedge_head_to_head,-0.37
+6895,Dominguez B.,Sassuolo,C,Adzic,Sassuolo,C,moves_with,0.25
+6895,Dominguez B.,Sassuolo,C,Bakola,Sassuolo,C,moves_with,0.24
+6895,Dominguez B.,Sassuolo,C,Konè I.,Sassuolo,C,moves_with,0.23
+6895,Dominguez B.,Sassuolo,C,Butez,Como,P,hedge_head_to_head,-0.56
+6895,Dominguez B.,Sassuolo,C,Montipò,Venezia,P,hedge_head_to_head,-0.51
+6895,Dominguez B.,Sassuolo,C,Caprile,Cagliari,P,hedge_head_to_head,-0.50
+6024,Sulemana I.,Sassuolo,C,Boloca,Sassuolo,C,moves_with,0.24
+6024,Sulemana I.,Sassuolo,C,Walukiewicz,Sassuolo,D,moves_with,0.22
+6024,Sulemana I.,Sassuolo,C,Cinquegrano,Sassuolo,D,moves_with,0.18
+6024,Sulemana I.,Sassuolo,C,Montipò,Venezia,P,hedge_head_to_head,-0.45
+6024,Sulemana I.,Sassuolo,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.44
+6024,Sulemana I.,Sassuolo,C,Zambo Anguissa,Napoli,C,hedge_head_to_head,-0.33
+6219,Boloca,Sassuolo,C,Sulemana I.,Sassuolo,C,moves_with,0.24
+6219,Boloca,Sassuolo,C,Lipani,Sassuolo,C,moves_with,0.22
+6219,Boloca,Sassuolo,C,Van Der Brempt,Sassuolo,D,moves_with,0.19
+6219,Boloca,Sassuolo,C,Vasquez,Genoa,D,hedge_head_to_head,-0.27
+6219,Boloca,Sassuolo,C,N'Dicka,Roma,D,hedge_head_to_head,-0.26
+6219,Boloca,Sassuolo,C,Di Lorenzo,Napoli,D,hedge_head_to_head,-0.24
+6677,Adzic,Sassuolo,C,Dominguez B.,Sassuolo,C,moves_with,0.25
+6677,Adzic,Sassuolo,C,Bakola,Sassuolo,C,moves_with,0.24
+6677,Adzic,Sassuolo,C,Lipani,Sassuolo,C,moves_with,0.22
+6060,Laurientè,Sassuolo,A,Obrador,Sassuolo,D,moves_with,0.25
+6060,Laurientè,Sassuolo,A,Cinquegrano,Sassuolo,D,moves_with,0.23
+6060,Laurientè,Sassuolo,A,Van Der Brempt,Sassuolo,D,moves_with,0.22
+6060,Laurientè,Sassuolo,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.68
+6060,Laurientè,Sassuolo,A,Okoye,Udinese,P,hedge_head_to_head,-0.67
+6060,Laurientè,Sassuolo,A,Mandas,Lazio,P,hedge_head_to_head,-0.63
+4463,Esposito Se.,Sassuolo,A,Van Der Brempt,Sassuolo,D,moves_with,0.24
+4463,Esposito Se.,Sassuolo,A,Bakola,Sassuolo,C,moves_with,0.23
+4463,Esposito Se.,Sassuolo,A,Dominguez B.,Sassuolo,C,moves_with,0.20
+4463,Esposito Se.,Sassuolo,A,De Gea,Fiorentina,P,hedge_head_to_head,-0.61
+4463,Esposito Se.,Sassuolo,A,Butez,Como,P,hedge_head_to_head,-0.58
+4463,Esposito Se.,Sassuolo,A,Mandas,Lazio,P,hedge_head_to_head,-0.56
+7347,Bowie,Sassuolo,A,Leysen F.,Sassuolo,D,moves_with,0.22
+7347,Bowie,Sassuolo,A,Cinquegrano,Sassuolo,D,moves_with,0.21
+7347,Bowie,Sassuolo,A,Obrador,Sassuolo,D,moves_with,0.19
+7347,Bowie,Sassuolo,A,Maignan,Milan,P,hedge_head_to_head,-0.60
+7347,Bowie,Sassuolo,A,Montipò,Venezia,P,hedge_head_to_head,-0.52
+7347,Bowie,Sassuolo,A,Bijlow,Genoa,P,hedge_head_to_head,-0.51
+531,Berardi,Sassuolo,A,Leysen F.,Sassuolo,D,moves_with,0.31
+531,Berardi,Sassuolo,A,Van Der Brempt,Sassuolo,D,moves_with,0.20
+531,Berardi,Sassuolo,A,Walukiewicz,Sassuolo,D,moves_with,0.18
+531,Berardi,Sassuolo,A,Caprile,Cagliari,P,hedge_head_to_head,-0.60
+531,Berardi,Sassuolo,A,Falcone,Lecce,P,hedge_head_to_head,-0.57
+531,Berardi,Sassuolo,A,Montipò,Venezia,P,hedge_head_to_head,-0.56
+6534,Perri,Torino,P,Coco,Torino,D,moves_with,0.37
+6534,Perri,Torino,P,Rodriguez R.,Torino,D,moves_with,0.36
+6534,Perri,Torino,P,Fortini,Torino,D,moves_with,0.36
+6534,Perri,Torino,P,Varela G.,Monza,A,hedge_head_to_head,-0.74
+6534,Perri,Torino,P,Martinez L.,Inter,A,hedge_head_to_head,-0.64
+6534,Perri,Torino,P,Robinson J.,Monza,A,hedge_head_to_head,-0.64
+5320,Paleari,Torino,P,Pedersen,Torino,D,moves_with,0.38
+5320,Paleari,Torino,P,Rodriguez R.,Torino,D,moves_with,0.35
+5320,Paleari,Torino,P,Biraghi,Torino,D,moves_with,0.35
+6642,Coco,Torino,D,Perri,Torino,P,moves_with,0.37
+6642,Coco,Torino,D,Paleari,Torino,P,moves_with,0.25
+6642,Coco,Torino,D,Biraghi,Torino,D,moves_with,0.22
+6642,Coco,Torino,D,Robinson J.,Monza,A,hedge_head_to_head,-0.47
+6642,Coco,Torino,D,Skorupski,Bologna,P,hedge_head_to_head,-0.45
+6642,Coco,Torino,D,Lucchesi,Monza,D,hedge_head_to_head,-0.41
+5010,Ismajli,Torino,D,Perri,Torino,P,moves_with,0.36
+5010,Ismajli,Torino,D,Paleari,Torino,P,moves_with,0.30
+5010,Ismajli,Torino,D,Fortini,Torino,D,moves_with,0.22
+5010,Ismajli,Torino,D,Djimsiti,Atalanta,D,hedge_head_to_head,-0.54
+5010,Ismajli,Torino,D,Mandas,Lazio,P,hedge_head_to_head,-0.45
+5010,Ismajli,Torino,D,Okoye,Udinese,P,hedge_head_to_head,-0.44
+7220,Belghali,Torino,D,Perri,Torino,P,moves_with,0.26
+7220,Belghali,Torino,D,Paleari,Torino,P,moves_with,0.25
+7220,Belghali,Torino,D,Simeone,Torino,A,moves_with,0.24
+7220,Belghali,Torino,D,Vicario,Juventus,P,hedge_head_to_head,-0.51
+7220,Belghali,Torino,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.45
+7220,Belghali,Torino,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.45
+2169,Rodriguez R.,Torino,D,Perri,Torino,P,moves_with,0.36
+2169,Rodriguez R.,Torino,D,Paleari,Torino,P,moves_with,0.35
+2169,Rodriguez R.,Torino,D,Biraghi,Torino,D,moves_with,0.29
+2169,Rodriguez R.,Torino,D,Martinez L.,Inter,A,hedge_head_to_head,-0.43
+2169,Rodriguez R.,Torino,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.42
+2169,Rodriguez R.,Torino,D,Okoye,Udinese,P,hedge_head_to_head,-0.40
+6495,Comuzzo,Torino,D,Perri,Torino,P,moves_with,0.32
+6495,Comuzzo,Torino,D,Paleari,Torino,P,moves_with,0.29
+6495,Comuzzo,Torino,D,Rodriguez R.,Torino,D,moves_with,0.21
+6495,Comuzzo,Torino,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.50
+6495,Comuzzo,Torino,D,Kolo Muani,Juventus,A,hedge_head_to_head,-0.47
+6495,Comuzzo,Torino,D,Motta,Lazio,P,hedge_head_to_head,-0.45
+7526,Comert,Torino,D,Paleari,Torino,P,moves_with,0.33
+7526,Comert,Torino,D,Perri,Torino,P,moves_with,0.33
+7526,Comert,Torino,D,Fortini,Torino,D,moves_with,0.30
+7526,Comert,Torino,D,Butez,Como,P,hedge_head_to_head,-0.43
+7526,Comert,Torino,D,Mandas,Lazio,P,hedge_head_to_head,-0.43
+7526,Comert,Torino,D,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.41
+6426,Pedersen,Torino,D,Paleari,Torino,P,moves_with,0.38
+6426,Pedersen,Torino,D,Perri,Torino,P,moves_with,0.31
+6426,Pedersen,Torino,D,Rodriguez R.,Torino,D,moves_with,0.23
+6426,Pedersen,Torino,D,Martinez L.,Inter,A,hedge_head_to_head,-0.41
+6426,Pedersen,Torino,D,Halhal,Venezia,D,hedge_head_to_head,-0.36
+6426,Pedersen,Torino,D,Montipò,Venezia,P,hedge_head_to_head,-0.36
+252,Biraghi,Torino,D,Paleari,Torino,P,moves_with,0.35
+252,Biraghi,Torino,D,Perri,Torino,P,moves_with,0.33
+252,Biraghi,Torino,D,Simeone,Torino,A,moves_with,0.32
+252,Biraghi,Torino,D,Gallo,Lecce,D,hedge_head_to_head,-0.41
+252,Biraghi,Torino,D,Butez,Como,P,hedge_head_to_head,-0.36
+252,Biraghi,Torino,D,Di Lorenzo,Napoli,D,hedge_head_to_head,-0.33
+7069,Fortini,Torino,D,Perri,Torino,P,moves_with,0.36
+7069,Fortini,Torino,D,Comert,Torino,D,moves_with,0.30
+7069,Fortini,Torino,D,Ismajli,Torino,D,moves_with,0.22
+5751,Patterson,Torino,D,Perri,Torino,P,moves_with,0.34
+5751,Patterson,Torino,D,Paleari,Torino,P,moves_with,0.33
+5751,Patterson,Torino,D,Comert,Torino,D,moves_with,0.27
+5687,Vlasic,Torino,C,Ilkhan,Torino,C,moves_with,0.20
+5687,Vlasic,Torino,C,Pedersen,Torino,D,moves_with,0.18
+5687,Vlasic,Torino,C,Adams C.,Torino,A,moves_with,0.15
+5687,Vlasic,Torino,C,Vicario,Juventus,P,hedge_head_to_head,-0.54
+5687,Vlasic,Torino,C,Butez,Como,P,hedge_head_to_head,-0.52
+5687,Vlasic,Torino,C,Maignan,Milan,P,hedge_head_to_head,-0.52
+1933,Mandragora,Torino,C,Belghali,Torino,D,moves_with,0.20
+1933,Mandragora,Torino,C,Aboukhlal,Torino,C,moves_with,0.18
+1933,Mandragora,Torino,C,Simeone,Torino,A,moves_with,0.16
+1933,Mandragora,Torino,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.59
+1933,Mandragora,Torino,C,Motta,Lazio,P,hedge_head_to_head,-0.57
+1933,Mandragora,Torino,C,Mandas,Lazio,P,hedge_head_to_head,-0.52
+7060,Cacciamani,Torino,C,Adams C.,Torino,A,moves_with,0.21
+7060,Cacciamani,Torino,C,Ismajli,Torino,D,moves_with,0.19
+7060,Cacciamani,Torino,C,Simeone,Torino,A,moves_with,0.18
+7060,Cacciamani,Torino,C,Mandas,Lazio,P,hedge_head_to_head,-0.45
+7060,Cacciamani,Torino,C,Franjic,Venezia,D,hedge_head_to_head,-0.45
+7060,Cacciamani,Torino,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.45
+7535,Fitz-Jim,Torino,C,Zapata D.,Torino,A,moves_with,0.20
+7535,Fitz-Jim,Torino,C,Fortini,Torino,D,moves_with,0.20
+7535,Fitz-Jim,Torino,C,Paleari,Torino,P,moves_with,0.19
+7535,Fitz-Jim,Torino,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.48
+7535,Fitz-Jim,Torino,C,Okoye,Udinese,P,hedge_head_to_head,-0.46
+7535,Fitz-Jim,Torino,C,Bijlow,Genoa,P,hedge_head_to_head,-0.46
+5888,Casadei,Torino,C,Pedersen,Torino,D,moves_with,0.21
+5888,Casadei,Torino,C,Simeone,Torino,A,moves_with,0.18
+5888,Casadei,Torino,C,Belghali,Torino,D,moves_with,0.16
+5888,Casadei,Torino,C,Mandas,Lazio,P,hedge_head_to_head,-0.57
+5888,Casadei,Torino,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.48
+5888,Casadei,Torino,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.46
+7624,Braganca,Torino,C,Anjorin,Torino,C,moves_with,0.20
+7624,Braganca,Torino,C,Comert,Torino,D,moves_with,0.18
+7624,Braganca,Torino,C,Rodriguez R.,Torino,D,moves_with,0.17
+7624,Braganca,Torino,C,Montipò,Venezia,P,hedge_head_to_head,-0.44
+7624,Braganca,Torino,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.43
+7624,Braganca,Torino,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.41
+6170,Gineitis,Torino,C,Anjorin,Torino,C,moves_with,0.24
+6170,Gineitis,Torino,C,Paleari,Torino,P,moves_with,0.19
+6170,Gineitis,Torino,C,Comert,Torino,D,moves_with,0.19
+6170,Gineitis,Torino,C,Mandas,Lazio,P,hedge_head_to_head,-0.56
+6170,Gineitis,Torino,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.42
+6170,Gineitis,Torino,C,Okoye,Udinese,P,hedge_head_to_head,-0.37
+6218,Oristanio,Torino,C,Zapata D.,Torino,A,moves_with,0.23
+6218,Oristanio,Torino,C,Aboukhlal,Torino,C,moves_with,0.19
+6218,Oristanio,Torino,C,Gineitis,Torino,C,moves_with,0.18
+6218,Oristanio,Torino,C,Butez,Como,P,hedge_head_to_head,-0.50
+6218,Oristanio,Torino,C,Montipò,Venezia,P,hedge_head_to_head,-0.47
+6218,Oristanio,Torino,C,Halhal,Venezia,D,hedge_head_to_head,-0.45
+6005,Ilkhan,Torino,C,Vlasic,Torino,C,moves_with,0.20
+6005,Ilkhan,Torino,C,Perri,Torino,P,moves_with,0.20
+6005,Ilkhan,Torino,C,Zapata D.,Torino,A,moves_with,0.18
+6005,Ilkhan,Torino,C,Caprile,Cagliari,P,hedge_head_to_head,-0.43
+6005,Ilkhan,Torino,C,Kolo Muani,Juventus,A,hedge_head_to_head,-0.27
+6005,Ilkhan,Torino,C,Politano,Napoli,C,hedge_head_to_head,-0.18
+6889,Anjorin,Torino,C,Gineitis,Torino,C,moves_with,0.24
+6889,Anjorin,Torino,C,Pedersen,Torino,D,moves_with,0.22
+6889,Anjorin,Torino,C,Comert,Torino,D,moves_with,0.22
+7183,Aboukhlal,Torino,C,Zapata D.,Torino,A,moves_with,0.29
+7183,Aboukhlal,Torino,C,Comert,Torino,D,moves_with,0.21
+7183,Aboukhlal,Torino,C,Adams C.,Torino,A,moves_with,0.19
+6646,Adams C.,Torino,A,Cacciamani,Torino,C,moves_with,0.21
+6646,Adams C.,Torino,A,Ismajli,Torino,D,moves_with,0.20
+6646,Adams C.,Torino,A,Aboukhlal,Torino,C,moves_with,0.19
+6646,Adams C.,Torino,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.60
+6646,Adams C.,Torino,A,Thiam,Monza,P,hedge_head_to_head,-0.60
+6646,Adams C.,Torino,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.59
+2061,Simeone,Torino,A,Biraghi,Torino,D,moves_with,0.32
+2061,Simeone,Torino,A,Comert,Torino,D,moves_with,0.25
+2061,Simeone,Torino,A,Belghali,Torino,D,moves_with,0.24
+2061,Simeone,Torino,A,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.60
+2061,Simeone,Torino,A,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.59
+2061,Simeone,Torino,A,Vicario,Juventus,P,hedge_head_to_head,-0.54
+608,Zapata D.,Torino,A,Aboukhlal,Torino,C,moves_with,0.29
+608,Zapata D.,Torino,A,Comert,Torino,D,moves_with,0.25
+608,Zapata D.,Torino,A,Biraghi,Torino,D,moves_with,0.23
+6462,Okoye,Udinese,P,Mlacic,Udinese,D,moves_with,0.49
+6462,Okoye,Udinese,P,Ebosse,Udinese,D,moves_with,0.44
+6462,Okoye,Udinese,P,Arizala,Udinese,D,moves_with,0.42
+6462,Okoye,Udinese,P,Laurientè,Sassuolo,A,hedge_head_to_head,-0.67
+6462,Okoye,Udinese,P,Romero D.,Parma,A,hedge_head_to_head,-0.65
+6462,Okoye,Udinese,P,Malen,Roma,A,hedge_head_to_head,-0.62
+6956,Solet,Udinese,D,Okoye,Udinese,P,moves_with,0.28
+6956,Solet,Udinese,D,Ebosse,Udinese,D,moves_with,0.25
+6956,Solet,Udinese,D,Mlacic,Udinese,D,moves_with,0.22
+6956,Solet,Udinese,D,Suzuki,Parma,P,hedge_head_to_head,-0.43
+6956,Solet,Udinese,D,Skorupski,Bologna,P,hedge_head_to_head,-0.43
+6956,Solet,Udinese,D,Svilar,Roma,P,hedge_head_to_head,-0.42
+5555,Kamara H.,Udinese,D,Okoye,Udinese,P,moves_with,0.28
+5555,Kamara H.,Udinese,D,Arizala,Udinese,D,moves_with,0.22
+5555,Kamara H.,Udinese,D,Miller L.,Udinese,C,moves_with,0.21
+5555,Kamara H.,Udinese,D,Perri,Torino,P,hedge_head_to_head,-0.49
+5555,Kamara H.,Udinese,D,Butez,Como,P,hedge_head_to_head,-0.49
+5555,Kamara H.,Udinese,D,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.46
+4994,Vojvoda,Udinese,D,Okoye,Udinese,P,moves_with,0.29
+4994,Vojvoda,Udinese,D,Ebosse,Udinese,D,moves_with,0.23
+4994,Vojvoda,Udinese,D,Bayo V.,Udinese,A,moves_with,0.23
+4994,Vojvoda,Udinese,D,Cittadini,Frosinone,D,hedge_head_to_head,-0.42
+4994,Vojvoda,Udinese,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.40
+4994,Vojvoda,Udinese,D,Sverko,Venezia,D,hedge_head_to_head,-0.38
+2404,Alaba,Udinese,D,Okoye,Udinese,P,moves_with,0.30
+2404,Alaba,Udinese,D,Ebosse,Udinese,D,moves_with,0.28
+2404,Alaba,Udinese,D,Mlacic,Udinese,D,moves_with,0.28
+2404,Alaba,Udinese,D,Valeri,Parma,D,hedge_head_to_head,-0.44
+2404,Alaba,Udinese,D,Muric,Sassuolo,P,hedge_head_to_head,-0.44
+2404,Alaba,Udinese,D,Valenti,Parma,D,hedge_head_to_head,-0.43
+4263,Kabasele,Udinese,D,Mlacic,Udinese,D,moves_with,0.29
+4263,Kabasele,Udinese,D,Okoye,Udinese,P,moves_with,0.27
+4263,Kabasele,Udinese,D,Miller L.,Udinese,C,moves_with,0.24
+4263,Kabasele,Udinese,D,Carboni A.,Monza,D,hedge_head_to_head,-0.45
+4263,Kabasele,Udinese,D,Mendy P.,Cagliari,A,hedge_head_to_head,-0.44
+4263,Kabasele,Udinese,D,Winks,Cagliari,C,hedge_head_to_head,-0.41
+5527,Zanoli,Udinese,D,Okoye,Udinese,P,moves_with,0.30
+5527,Zanoli,Udinese,D,Ebosse,Udinese,D,moves_with,0.27
+5527,Zanoli,Udinese,D,Mlacic,Udinese,D,moves_with,0.24
+5527,Zanoli,Udinese,D,Laurientè,Sassuolo,A,hedge_head_to_head,-0.42
+5527,Zanoli,Udinese,D,Suzuki,Parma,P,hedge_head_to_head,-0.42
+5527,Zanoli,Udinese,D,Caleta-Car,Sassuolo,D,hedge_head_to_head,-0.41
+5820,Bertola,Udinese,D,Okoye,Udinese,P,moves_with,0.42
+5820,Bertola,Udinese,D,Arizala,Udinese,D,moves_with,0.35
+5820,Bertola,Udinese,D,Mlacic,Udinese,D,moves_with,0.26
+5820,Bertola,Udinese,D,Soulè,Roma,A,hedge_head_to_head,-0.47
+5820,Bertola,Udinese,D,Cinquegrano,Sassuolo,D,hedge_head_to_head,-0.43
+5820,Bertola,Udinese,D,Orsolini,Bologna,C,hedge_head_to_head,-0.42
+5994,Ebosse,Udinese,D,Okoye,Udinese,P,moves_with,0.44
+5994,Ebosse,Udinese,D,Mlacic,Udinese,D,moves_with,0.36
+5994,Ebosse,Udinese,D,Alaba,Udinese,D,moves_with,0.28
+5994,Ebosse,Udinese,D,Raimondo,Frosinone,A,hedge_head_to_head,-0.57
+5994,Ebosse,Udinese,D,Pongracic,Fiorentina,D,hedge_head_to_head,-0.47
+5994,Ebosse,Udinese,D,Palmisani,Frosinone,P,hedge_head_to_head,-0.41
+6021,Abankwah,Udinese,D,Okoye,Udinese,P,moves_with,0.30
+6021,Abankwah,Udinese,D,Mlacic,Udinese,D,moves_with,0.26
+6021,Abankwah,Udinese,D,Zarraga,Udinese,C,moves_with,0.24
+6021,Abankwah,Udinese,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.56
+6021,Abankwah,Udinese,D,Muric,Sassuolo,P,hedge_head_to_head,-0.44
+6021,Abankwah,Udinese,D,Malen,Roma,A,hedge_head_to_head,-0.44
+7356,Mlacic,Udinese,D,Okoye,Udinese,P,moves_with,0.49
+7356,Mlacic,Udinese,D,Ebosse,Udinese,D,moves_with,0.36
+7356,Mlacic,Udinese,D,Kabasele,Udinese,D,moves_with,0.29
+7312,Arizala,Udinese,D,Okoye,Udinese,P,moves_with,0.42
+7312,Arizala,Udinese,D,Bertola,Udinese,D,moves_with,0.35
+7312,Arizala,Udinese,D,Lovric,Udinese,C,moves_with,0.29
+6684,Ekkelenkamp,Udinese,C,Lovric,Udinese,C,moves_with,0.20
+6684,Ekkelenkamp,Udinese,C,Bertola,Udinese,D,moves_with,0.18
+6684,Ekkelenkamp,Udinese,C,Alaba,Udinese,D,moves_with,0.18
+6684,Ekkelenkamp,Udinese,C,Muric,Sassuolo,P,hedge_head_to_head,-0.60
+6684,Ekkelenkamp,Udinese,C,Perri,Torino,P,hedge_head_to_head,-0.56
+6684,Ekkelenkamp,Udinese,C,Provedel,Inter,P,hedge_head_to_head,-0.55
+6680,Karlstrom,Udinese,C,Bayo V.,Udinese,A,moves_with,0.16
+6680,Karlstrom,Udinese,C,Davis K.,Udinese,A,moves_with,0.15
+6680,Karlstrom,Udinese,C,Okoye,Udinese,P,moves_with,0.14
+6680,Karlstrom,Udinese,C,Gabbia,Milan,D,hedge_head_to_head,-0.45
+6680,Karlstrom,Udinese,C,Montipò,Venezia,P,hedge_head_to_head,-0.39
+6680,Karlstrom,Udinese,C,Alhassane,Bologna,D,hedge_head_to_head,-0.39
+2766,Zaniolo,Udinese,C,Ebosse,Udinese,D,moves_with,0.19
+2766,Zaniolo,Udinese,C,Mlacic,Udinese,D,moves_with,0.18
+2766,Zaniolo,Udinese,C,Bertola,Udinese,D,moves_with,0.18
+2766,Zaniolo,Udinese,C,Suzuki,Parma,P,hedge_head_to_head,-0.52
+2766,Zaniolo,Udinese,C,Milinkovic-Savic V.,Napoli,P,hedge_head_to_head,-0.51
+2766,Zaniolo,Udinese,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.50
+6783,Unai Gomez,Udinese,C,Buksa,Udinese,A,moves_with,0.20
+6783,Unai Gomez,Udinese,C,Zanoli,Udinese,D,moves_with,0.19
+6783,Unai Gomez,Udinese,C,Lovric,Udinese,C,moves_with,0.18
+6783,Unai Gomez,Udinese,C,Muric,Sassuolo,P,hedge_head_to_head,-0.51
+6783,Unai Gomez,Udinese,C,Suzuki,Parma,P,hedge_head_to_head,-0.44
+6783,Unai Gomez,Udinese,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.40
+7198,Piotrowski,Udinese,C,Arizala,Udinese,D,moves_with,0.25
+7198,Piotrowski,Udinese,C,Bayo V.,Udinese,A,moves_with,0.22
+7198,Piotrowski,Udinese,C,Ebosse,Udinese,D,moves_with,0.21
+7198,Piotrowski,Udinese,C,Muric,Sassuolo,P,hedge_head_to_head,-0.45
+7198,Piotrowski,Udinese,C,Cinquegrano,Sassuolo,D,hedge_head_to_head,-0.38
+7198,Piotrowski,Udinese,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.37
+5850,Lovric,Udinese,C,Arizala,Udinese,D,moves_with,0.29
+5850,Lovric,Udinese,C,Mlacic,Udinese,D,moves_with,0.22
+5850,Lovric,Udinese,C,Buksa,Udinese,A,moves_with,0.21
+5850,Lovric,Udinese,C,Montipò,Venezia,P,hedge_head_to_head,-0.48
+5850,Lovric,Udinese,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.47
+5850,Lovric,Udinese,C,Suzuki,Parma,P,hedge_head_to_head,-0.40
+7418,Chakvetadze,Udinese,C,Okoye,Udinese,P,moves_with,0.22
+7418,Chakvetadze,Udinese,C,Kamara H.,Udinese,D,moves_with,0.21
+7418,Chakvetadze,Udinese,C,Davis K.,Udinese,A,moves_with,0.20
+7418,Chakvetadze,Udinese,C,Bijlow,Genoa,P,hedge_head_to_head,-0.39
+7418,Chakvetadze,Udinese,C,Kolo Muani,Juventus,A,hedge_head_to_head,-0.34
+7418,Chakvetadze,Udinese,C,Hojlund,Napoli,A,hedge_head_to_head,-0.31
+7208,Miller L.,Udinese,C,Kabasele,Udinese,D,moves_with,0.24
+7208,Miller L.,Udinese,C,Kamara H.,Udinese,D,moves_with,0.21
+7208,Miller L.,Udinese,C,Arizala,Udinese,D,moves_with,0.21
+7208,Miller L.,Udinese,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.41
+7208,Miller L.,Udinese,C,Molina N.,Roma,D,hedge_head_to_head,-0.22
+7208,Miller L.,Udinese,C,Bijlow,Genoa,P,hedge_head_to_head,-0.20
+6212,Zarraga,Udinese,C,Abankwah,Udinese,D,moves_with,0.24
+6212,Zarraga,Udinese,C,Ebosse,Udinese,D,moves_with,0.22
+6212,Zarraga,Udinese,C,Kamara H.,Udinese,D,moves_with,0.21
+5637,Davis K.,Udinese,A,Bayo V.,Udinese,A,moves_with,0.32
+5637,Davis K.,Udinese,A,Chakvetadze,Udinese,C,moves_with,0.20
+5637,Davis K.,Udinese,A,Abankwah,Udinese,D,moves_with,0.18
+5637,Davis K.,Udinese,A,Butez,Como,P,hedge_head_to_head,-0.71
+5637,Davis K.,Udinese,A,Muric,Sassuolo,P,hedge_head_to_head,-0.67
+5637,Davis K.,Udinese,A,Falcone,Lecce,P,hedge_head_to_head,-0.64
+7249,Buksa,Udinese,A,Mlacic,Udinese,D,moves_with,0.22
+7249,Buksa,Udinese,A,Lovric,Udinese,C,moves_with,0.21
+7249,Buksa,Udinese,A,Unai Gomez,Udinese,C,moves_with,0.20
+7249,Buksa,Udinese,A,Maignan,Milan,P,hedge_head_to_head,-0.42
+7249,Buksa,Udinese,A,Gila,Milan,D,hedge_head_to_head,-0.18
+7249,Buksa,Udinese,A,Britschgi,Parma,D,hedge_head_to_head,-0.14
+7161,Bayo V.,Udinese,A,Davis K.,Udinese,A,moves_with,0.32
+7161,Bayo V.,Udinese,A,Vojvoda,Udinese,D,moves_with,0.23
+7161,Bayo V.,Udinese,A,Piotrowski,Udinese,C,moves_with,0.22
+4957,Montipò,Venezia,P,Schingtienne,Venezia,D,moves_with,0.45
+4957,Montipò,Venezia,P,Franjic,Venezia,D,moves_with,0.43
+4957,Montipò,Venezia,P,Mazzocchi,Venezia,D,moves_with,0.42
+4957,Montipò,Venezia,P,Colpani,Monza,C,hedge_head_to_head,-0.68
+4957,Montipò,Venezia,P,Varela G.,Monza,A,hedge_head_to_head,-0.61
+4957,Montipò,Venezia,P,Malen,Roma,A,hedge_head_to_head,-0.61
+6248,Stankovic F.,Venezia,P,Gomes,Venezia,D,moves_with,0.53
+6248,Stankovic F.,Venezia,P,Juan Jesus,Venezia,D,moves_with,0.50
+6248,Stankovic F.,Venezia,P,Franjic,Venezia,D,moves_with,0.47
+6892,Schingtienne,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.46
+6892,Schingtienne,Venezia,D,Montipò,Venezia,P,moves_with,0.45
+6892,Schingtienne,Venezia,D,Mazzocchi,Venezia,D,moves_with,0.29
+6892,Schingtienne,Venezia,D,Amorim,Genoa,C,hedge_head_to_head,-0.47
+6892,Schingtienne,Venezia,D,David,Juventus,A,hedge_head_to_head,-0.45
+6892,Schingtienne,Venezia,D,Lontani,Parma,A,hedge_head_to_head,-0.44
+256,Juan Jesus,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.50
+256,Juan Jesus,Venezia,D,Montipò,Venezia,P,moves_with,0.40
+256,Juan Jesus,Venezia,D,Bella-Kotchap,Venezia,D,moves_with,0.28
+256,Juan Jesus,Venezia,D,Zappa,Cagliari,D,hedge_head_to_head,-0.44
+256,Juan Jesus,Venezia,D,Milla,Como,C,hedge_head_to_head,-0.43
+256,Juan Jesus,Venezia,D,Idzes,Sassuolo,D,hedge_head_to_head,-0.43
+5695,Haps,Venezia,D,Montipò,Venezia,P,moves_with,0.33
+5695,Haps,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.30
+5695,Haps,Venezia,D,Sverko,Venezia,D,moves_with,0.29
+5695,Haps,Venezia,D,Vicario,Juventus,P,hedge_head_to_head,-0.46
+5695,Haps,Venezia,D,Lucumì,Juventus,D,hedge_head_to_head,-0.45
+5695,Haps,Venezia,D,Martinez Jo.,Inter,P,hedge_head_to_head,-0.42
+7538,Halhal,Venezia,D,Montipò,Venezia,P,moves_with,0.40
+7538,Halhal,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.40
+7538,Halhal,Venezia,D,Moreno M.,Venezia,D,moves_with,0.32
+7538,Halhal,Venezia,D,Amorim,Genoa,C,hedge_head_to_head,-0.60
+7538,Halhal,Venezia,D,De Gea,Fiorentina,P,hedge_head_to_head,-0.46
+7538,Halhal,Venezia,D,Oristanio,Torino,C,hedge_head_to_head,-0.45
+4845,Correia T.,Venezia,D,Montipò,Venezia,P,moves_with,0.39
+4845,Correia T.,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.35
+4845,Correia T.,Venezia,D,Halhal,Venezia,D,moves_with,0.25
+4845,Correia T.,Venezia,D,Bakola,Sassuolo,C,hedge_head_to_head,-0.42
+4845,Correia T.,Venezia,D,Caqueret,Como,C,hedge_head_to_head,-0.41
+4845,Correia T.,Venezia,D,Dybala,Roma,A,hedge_head_to_head,-0.39
+7253,Bella-Kotchap,Venezia,D,Montipò,Venezia,P,moves_with,0.42
+7253,Bella-Kotchap,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.41
+7253,Bella-Kotchap,Venezia,D,Sverko,Venezia,D,moves_with,0.30
+7253,Bella-Kotchap,Venezia,D,Cinquegrano,Sassuolo,D,hedge_head_to_head,-0.51
+7253,Bella-Kotchap,Venezia,D,Bakola,Sassuolo,C,hedge_head_to_head,-0.40
+7253,Bella-Kotchap,Venezia,D,Berardi,Sassuolo,A,hedge_head_to_head,-0.39
+6821,Hainaut,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.29
+6821,Hainaut,Venezia,D,Montipò,Venezia,P,moves_with,0.24
+6821,Hainaut,Venezia,D,Sagrado,Venezia,D,moves_with,0.22
+6821,Hainaut,Venezia,D,Okoye,Udinese,P,hedge_head_to_head,-0.45
+6821,Hainaut,Venezia,D,Zappa,Cagliari,D,hedge_head_to_head,-0.44
+6821,Hainaut,Venezia,D,Vicario,Juventus,P,hedge_head_to_head,-0.44
+6890,Moreno M.,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.46
+6890,Moreno M.,Venezia,D,Montipò,Venezia,P,moves_with,0.33
+6890,Moreno M.,Venezia,D,Halhal,Venezia,D,moves_with,0.32
+6890,Moreno M.,Venezia,D,Colombo,Genoa,A,hedge_head_to_head,-0.41
+6890,Moreno M.,Venezia,D,Colpani,Monza,C,hedge_head_to_head,-0.41
+6890,Moreno M.,Venezia,D,Thiam,Monza,P,hedge_head_to_head,-0.41
+7478,Franjic,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.47
+7478,Franjic,Venezia,D,Montipò,Venezia,P,moves_with,0.43
+7478,Franjic,Venezia,D,Sverko,Venezia,D,moves_with,0.30
+7478,Franjic,Venezia,D,Gagliardini,Cagliari,C,hedge_head_to_head,-0.46
+7478,Franjic,Venezia,D,Cacciamani,Torino,C,hedge_head_to_head,-0.45
+7478,Franjic,Venezia,D,Adopo,Cagliari,C,hedge_head_to_head,-0.41
+6673,Sverko,Venezia,D,Montipò,Venezia,P,moves_with,0.39
+6673,Sverko,Venezia,D,Bella-Kotchap,Venezia,D,moves_with,0.30
+6673,Sverko,Venezia,D,Franjic,Venezia,D,moves_with,0.30
+6673,Sverko,Venezia,D,Mancini,Roma,D,hedge_head_to_head,-0.44
+6673,Sverko,Venezia,D,Celik,Juventus,D,hedge_head_to_head,-0.43
+6673,Sverko,Venezia,D,Vojvoda,Udinese,D,hedge_head_to_head,-0.38
+5481,Mazzocchi,Venezia,D,Montipò,Venezia,P,moves_with,0.42
+5481,Mazzocchi,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.33
+5481,Mazzocchi,Venezia,D,Helgason,Venezia,C,moves_with,0.32
+5481,Mazzocchi,Venezia,D,Kolo Muani,Juventus,A,hedge_head_to_head,-0.43
+5481,Mazzocchi,Venezia,D,Osmajic,Genoa,A,hedge_head_to_head,-0.36
+5481,Mazzocchi,Venezia,D,Frendrup,Genoa,C,hedge_head_to_head,-0.36
+6681,Sagrado,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.33
+6681,Sagrado,Venezia,D,Bella-Kotchap,Venezia,D,moves_with,0.30
+6681,Sagrado,Venezia,D,Sverko,Venezia,D,moves_with,0.27
+7454,Gomes,Venezia,D,Stankovic F.,Venezia,P,moves_with,0.53
+7454,Gomes,Venezia,D,Montipò,Venezia,P,moves_with,0.28
+7454,Gomes,Venezia,D,Juan Jesus,Venezia,D,moves_with,0.26
+7454,Gomes,Venezia,D,Frendrup,Genoa,C,hedge_head_to_head,-0.14
+6994,Perez K.,Venezia,C,Adorante,Venezia,A,moves_with,0.21
+6994,Perez K.,Venezia,C,Halhal,Venezia,D,moves_with,0.19
+6994,Perez K.,Venezia,C,Helgason,Venezia,C,moves_with,0.18
+6994,Perez K.,Venezia,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.51
+6994,Perez K.,Venezia,C,Okoye,Udinese,P,hedge_head_to_head,-0.48
+6994,Perez K.,Venezia,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.42
+5507,Busio,Venezia,C,Bella-Kotchap,Venezia,D,moves_with,0.17
+5507,Busio,Venezia,C,Adorante,Venezia,A,moves_with,0.17
+5507,Busio,Venezia,C,Halhal,Venezia,D,moves_with,0.16
+5507,Busio,Venezia,C,Martinez Jo.,Inter,P,hedge_head_to_head,-0.51
+5507,Busio,Venezia,C,Caprile,Cagliari,P,hedge_head_to_head,-0.45
+5507,Busio,Venezia,C,Palmisani,Frosinone,P,hedge_head_to_head,-0.44
+5319,Sohm,Venezia,C,Haps,Venezia,D,moves_with,0.18
+5319,Sohm,Venezia,C,Sagrado,Venezia,D,moves_with,0.17
+5319,Sohm,Venezia,C,Mazzocchi,Venezia,D,moves_with,0.17
+5319,Sohm,Venezia,C,Carnesecchi,Atalanta,P,hedge_head_to_head,-0.55
+5319,Sohm,Venezia,C,De Gea,Fiorentina,P,hedge_head_to_head,-0.49
+5319,Sohm,Venezia,C,Bijlow,Genoa,P,hedge_head_to_head,-0.38
+5674,Basic,Venezia,C,Bella-Kotchap,Venezia,D,moves_with,0.19
+5674,Basic,Venezia,C,Duncan,Venezia,C,moves_with,0.19
+5674,Basic,Venezia,C,Juan Jesus,Venezia,D,moves_with,0.16
+5674,Basic,Venezia,C,Muric,Sassuolo,P,hedge_head_to_head,-0.45
+5674,Basic,Venezia,C,Caprile,Cagliari,P,hedge_head_to_head,-0.39
+5674,Basic,Venezia,C,Kouadio,Monza,D,hedge_head_to_head,-0.37
+526,Duncan,Venezia,C,Mazzocchi,Venezia,D,moves_with,0.26
+526,Duncan,Venezia,C,Montipò,Venezia,P,moves_with,0.22
+526,Duncan,Venezia,C,Hainaut,Venezia,D,moves_with,0.22
+526,Duncan,Venezia,C,Perri,Torino,P,hedge_head_to_head,-0.41
+526,Duncan,Venezia,C,Skorupski,Bologna,P,hedge_head_to_head,-0.39
+526,Duncan,Venezia,C,Esposito F.P.,Inter,A,hedge_head_to_head,-0.34
+5872,Helgason,Venezia,C,Mazzocchi,Venezia,D,moves_with,0.32
+5872,Helgason,Venezia,C,Montipò,Venezia,P,moves_with,0.21
+5872,Helgason,Venezia,C,Duncan,Venezia,C,moves_with,0.21
+7232,Fernandez T.,Venezia,C,Adorante,Venezia,A,moves_with,0.47
+7232,Fernandez T.,Venezia,C,Rrahmani Al.,Venezia,A,moves_with,0.28
+7232,Fernandez T.,Venezia,C,Mazzocchi,Venezia,D,moves_with,0.27
+7484,Adams A.,Venezia,A,Fernandez T.,Venezia,C,moves_with,0.21
+7484,Adams A.,Venezia,A,Gomes,Venezia,D,moves_with,0.20
+7484,Adams A.,Venezia,A,Franjic,Venezia,D,moves_with,0.19
+7484,Adams A.,Venezia,A,Corvi,Parma,P,hedge_head_to_head,-0.66
+7484,Adams A.,Venezia,A,Bijlow,Genoa,P,hedge_head_to_head,-0.63
+7484,Adams A.,Venezia,A,Maignan,Milan,P,hedge_head_to_head,-0.62
+6904,Yeboah J.,Venezia,A,Mazzocchi,Venezia,D,moves_with,0.21
+6904,Yeboah J.,Venezia,A,Sagrado,Venezia,D,moves_with,0.17
+6904,Yeboah J.,Venezia,A,Moreno M.,Venezia,D,moves_with,0.17
+6904,Yeboah J.,Venezia,A,Vicario,Juventus,P,hedge_head_to_head,-0.69
+6904,Yeboah J.,Venezia,A,Provedel,Inter,P,hedge_head_to_head,-0.61
+6904,Yeboah J.,Venezia,A,Falcone,Lecce,P,hedge_head_to_head,-0.60
+7449,Rrahmani Al.,Venezia,A,Fernandez T.,Venezia,C,moves_with,0.28
+7449,Rrahmani Al.,Venezia,A,Franjic,Venezia,D,moves_with,0.19
+7449,Rrahmani Al.,Venezia,A,Haps,Venezia,D,moves_with,0.18
+7449,Rrahmani Al.,Venezia,A,Vicario,Juventus,P,hedge_head_to_head,-0.55
+7449,Rrahmani Al.,Venezia,A,Bijlow,Genoa,P,hedge_head_to_head,-0.51
+7449,Rrahmani Al.,Venezia,A,Skorupski,Bologna,P,hedge_head_to_head,-0.48
+4387,Adorante,Venezia,A,Fernandez T.,Venezia,C,moves_with,0.47
+4387,Adorante,Venezia,A,Gomes,Venezia,D,moves_with,0.23
+4387,Adorante,Venezia,A,Perez K.,Venezia,C,moves_with,0.21

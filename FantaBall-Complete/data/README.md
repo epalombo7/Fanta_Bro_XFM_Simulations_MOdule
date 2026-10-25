@@ -33,6 +33,19 @@ where it stopped. Seasons covered: 2015-16 to the current season (Understat from
 Snapshots only exist from the first run onwards (the sites don't keep history of these pages), so each
 weekly run adds one; backtests of the probable-lineup and injury-list inputs can use them as they accumulate.
 
+## `forecasts/` — weekly outputs
+
+| File | Contents |
+|---|---|
+| `xfm_<date>.csv`, `xfm_latest.csv` | per player: xFM and P10–P90, rated games and P10–P90, expected season points, vote, goals, assists, penalties, integrità, titolarità, matchdays still injured |
+| `correlation_matchday.csv.gz` | player-by-player correlation of fantavoto in the same round (players expected to get ≥ 5 votes, sorted by club and role). Positive = rise and fall together: risk if started together. Pairs need ≥ 100 shared simulated rounds |
+| `correlation_head_to_head.csv.gz` | as above, but for players of different clubs only the rounds where the clubs meet (≥ 60 shared): the hedge, e.g. a keeper vs the striker he faces |
+| `correlation_season.csv.gz` | correlation of each simulated season's xFM: do whole seasons go well together (auction squad building) |
+| `correlation_pairs.csv` | per player: his 3 strongest same-club partners (`moves_with`) and 3 strongest head-to-head hedges |
+
+All are under the standard rules; `pipeline/score_season.js <season file> <config> <out> --corr <prefix>`
+recomputes them for any league's rules.
+
 ## `params/` — calibrated model inputs
 
 | File | Built by | Contents |
@@ -54,7 +67,8 @@ node pipeline/run_season.js league.json <rounds_left> <N> season.fbsim.gz     # 
 node pipeline/score_season.js season.fbsim.gz config.json xfm.json           # module 2 (your league rules)
 ```
 
-Each weekly run commits its file. Only the 10 most recent are kept in `sim/`; older ones are listed in
+Each weekly run commits its file (about 7.5 MB, including per-match detail for 100 simulated seasons that
+the correlation matrices use). Only the 10 most recent are kept in `sim/`; older ones are listed in
 `sim/archive.csv` and removed from the folder, but stay in git history (`git log --all -- <path>` finds the
 commit, `git show <commit>:<path> > file` restores it). `season_latest.fbsim.gz` is an identical copy of the
 newest file, which git stores only once. The simulation is seeded, so module 1 on the same league gives the

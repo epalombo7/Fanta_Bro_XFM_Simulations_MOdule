@@ -37,6 +37,16 @@ assert.deepEqual(E.scoreSeason(S,{...c,rules:{goal:{A:4.5}}}).players.map(p=>p.r
 const booked=E.scoreSeason(S,{...c,rules:{noVoteYellow:5.5}}).players;
 assert(sum(booked,'rated')>=sum(ps,'rated'));
 assert.throws(()=>E.deserializeSeason(new Uint8Array([1,2,3,4,0,0,0,0])),/season file/);
+// Correlations: keeper and defenders of one club move together; a keeper hedges the striker he faces
+const tm=S.players.findIndex(p=>p.role==='P'),club=S.players[tm].team;
+const keeper=S.players[tm].id,defs=S.players.filter(p=>p.team===club&&p.role==='D').slice(0,2).map(p=>p.id);
+const opp=S.rounds.flat().find(([h,a])=>h===club||a===club),oppClub=opp[0]===club?opp[1]:opp[0];
+const st=S.players.filter(p=>p.team===oppClub&&p.role==='A')[0].id;
+const Cm=E.correlations(S,c,{ids:[keeper,...defs,st]}),Ch=E.correlations(S,c,{ids:[keeper,...defs,st],level:'head_to_head'});
+assert(Cm.matrix[1]>0.2&&Cm.matrix[2]>0.2,'keeper and own defenders correlate');
+assert(Ch.matrix[3]<-0.2,'keeper hedges the opposing striker head-to-head');
+assert(E.correlationRow(S,c,keeper).length>0);
+assert.equal(E.deserializeSeason(E.serializeSeason(S)).detail.length,S.detail.length);
 // Ledger
 let l=E.purchase(c,[],ps,ps[0].id,10,'me');assert.equal(E.squad(c,l,ps).left,490);assert.throws(()=>E.purchase(c,l,ps,ps[0].id,10,'me'));assert.throws(()=>E.purchase(c,l,ps,ps[1].id,999,'me'));assert.throws(()=>E.validate({...c,budget:1}));
 console.log('Team-based simulation and ledger tests passed');

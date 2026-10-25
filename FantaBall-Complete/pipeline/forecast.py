@@ -51,12 +51,12 @@ def main(n=500):
     (sim_dir / 'season_latest.fbsim.gz').write_bytes(season_file.read_bytes())   # identical content: stored once by git
     prune_season_files(sim_dir)
     # Module 2: xFM under the standard rules (any league's rules: pipeline/score_season.js)
-    sim = B.score_season(season_file)
+    d = DATA / 'forecasts'; d.mkdir(exist_ok=True)
+    sim = B.score_season(season_file, corr_prefix=d / 'correlation')     # + player-by-player correlation matrices
     meta = pd.DataFrame(lg['players'])[['id', 'qi', 'start', 'injuryRisk', 'injuredFor']]
     out = sim.merge(meta, on='id')[['id', 'name', 'team', 'role', 'qi', 'xfm', 'xfmLow', 'xfmHigh', 'rated', 'glo', 'ghi', 'expected',
                                      'vote', 'goals', 'assists', 'penScored', 'integrita', 'titolarita', 'injuredFor']]
     out = out.sort_values('expected', ascending=False).round(3)
-    d = DATA / 'forecasts'; d.mkdir(exist_ok=True)
     stamp = str(datetime.date.today())
     out.to_csv(d / f'xfm_{stamp}.csv', index=False); out.to_csv(d / 'xfm_latest.csv', index=False)
     print(f'forecast {CURRENT} after round {played}: {len(out)} players, rounds left {38 - played}')
