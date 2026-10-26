@@ -49,6 +49,14 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
   Show the chance of a goal and the expected value next to the median.
 
 
+- [ ] **Forecasts too spread (biggest fixable fantavoto error, 26 Oct, `data/backtest/fv_error_by_dimension_2026-10-26.txt`)**:
+  real fantavoto moves only ~0.77 for each 1.0 the forecast moves, in every role. Match-up effects are ~40% too strong
+  (attackers: +10% team attack → model +0.088, real +0.062; keepers vs opponent attack: model −0.15, real −0.09) and
+  scorers' goal rates too spread (midfielders per +0.1 goalW: model +0.33, real +0.27). Shrinking out of sample: fantavoto
+  error 0.970 → 0.952 (attackers 1.515 → 1.473). Fix at the source: stronger ridge on team strength (penalty 4 → tune), pull
+  goal rates toward the role average more for high scorers, then re-check the slope. Keepers: model ignores the win effect
+  (own attack +10% → real +0.047, model 0).
+
 ## 26 Oct tuning loop (stopped after 3 tries in a row without gain; log: `data/backtest/tuning_results.csv`, harness: `pipeline/tuning/`)
 
 Tuned on 2021-22 to 2023-24, checked on 2024-25 and 2025-26.

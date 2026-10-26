@@ -1,0 +1,28 @@
+import pandas as pd, numpy as np
+d = pd.read_pickle(__import__('pathlib').Path(__file__).resolve().parents[2] / 'data/cache/tuning/d.pkl'); v = d[d.rated & d.xfm.notna()].copy()
+v['e'] = v.xfm - v.fv; v['ae'] = v.e.abs()
+v['G'] = v.goals.fillna(0) + v.pen_scored.fillna(0)
+v['mins'] = np.where(v.status == 'started', v.sub_out_min.fillna(90), np.where(v.status == 'sub_in', 90 - v.sub_in_min.fillna(75), np.nan))
+v['res'] = np.sign(v.gf - v.ga).map({1: 'win', 0: 'draw', -1: 'loss'})
+v['strength_gap'] = np.log(v.att / v.opp_def) - np.log(v.opp_att / v['def'])   # >0: stronger than the opponent
+tot = v.ae.sum()
+def tab(col, buckets=None, name=None):
+    x = v[col] if buckets is None else pd.qcut(v[col].rank(method='first'), buckets, labels=[f'Q{i+1}' for i in range(buckets)])
+    g = v.groupby(x, observed=True)
+    t = pd.DataFrame({'n': g.size(), 'MAE': g.ae.mean(), 'bias': g.e.mean(), 'share_err': g.ae.sum() / tot})
+    if buckets: t.insert(0, 'range', g[col].agg(lambda s: f'{s.min():.2f}–{s.max():.2f}'))
+    print(f'\n== {name or col}'); print(t.round(3).to_string())
+print('overall MAE', round(v.ae.mean(), 3), 'bias', round(v.e.mean(), 3), 'n', len(v))
+print('\n######## KNOWN BEFORE THE MATCH')
+for c in ['role', 'home', 'club_status', 'promoted', 'season']: tab(c)
+for c, b in [('qi', 5), ('start_share', 5), ('hist_votes', 5), ('season_votes', 4), ('round', 4), ('goalW', 5), ('penW', 4), ('base', 5), ('xfm', 5), ('p', 5), ('strength_gap', 5), ('att', 5), ('opp_def', 5)]: tab(c, b)
+print('\n######## HAPPENS IN THE MATCH')
+v['scored'] = np.where(v.G == 0, '0 goals', np.where(v.G == 1, '1 goal', '2+ goals'))
+for c in ['scored', 'res', 'status']: tab(c)
+v['assist'] = v.assists.fillna(0).clip(upper=2); tab('assist')
+v['card'] = np.where(v.red.fillna(0) > 0, 'red', np.where(v.yellow.fillna(0) > 0, 'yellow', 'none')); tab('card')
+v['pen_miss'] = v.pen_missed.fillna(0) > 0; tab('pen_miss')
+v['mins_b'] = pd.cut(v.mins, [0, 15, 30, 60, 89, 90]); tab('mins_b')
+k = v[v.role == 'P'].copy(); k['ga_b'] = k.ga.clip(upper=4); g = k.groupby('ga_b')
+print('\n== keepers by goals conceded'); print(pd.DataFrame({'n': g.size(), 'MAE': g.ae.mean(), 'bias': g.e.mean()}).round(3).to_string())
+pass
