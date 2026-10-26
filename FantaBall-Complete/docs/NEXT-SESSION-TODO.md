@@ -11,7 +11,9 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 
 ## 2. What I need from you
 
-- [ ] **`ODDS_API_KEY`** in the environment settings (Network secrets / API credentials) — then add odds to team strength.
+- [ ] **`ODDS_API_KEY`** in the environment settings (Network secrets / environment variable) so the Friday run can read it.
+  Anytime-goalscorer odds are collected weekly from 26 Oct (`data/raw/odds_api/goalscorer/`); backtest a blend into goal
+  rates once ~10 rounds have built up. Match odds for team strength come from football-data (already downloaded).
 - [ ] **Your league's rules**, if not the standard Classic defaults: vote provider, defence modifier, bonuses, Classic or Mantra.
 - [ ] **Your league settings**: participants, budget, squad slots — needed for a squad-level backtest and a lineup optimizer.
 - [ ] **Your squad** (or the auction ledger when it happens), for lineup and hedging advice from the correlation matrices.

@@ -28,6 +28,7 @@ where it stopped. Seasons covered: 2015-16 to the current season (Understat from
 | `fotmob/squads_<season>.csv.gz` | FotMob | player in a matchday squad | starter or sub, formation, minute subbed in / out, rating, age, market value |
 | `fotmob/unavailable_<season>.csv.gz` | FotMob | player listed unavailable for a match | type (injury / suspension), injury code, expected return, age (lists reliable from 2020-21) |
 | `fantacalcio/snapshots/injuries_<date>.csv` | Fantacalcio.it | injured player today | injury description, parsed expected return date |
+| `odds_api/goalscorer/anytime_<date>.csv` | The Odds API (needs `ODDS_API_KEY`) | bookmaker price for a player to score, matches in the next 8 days | fetch time, kick-off, home, away, bookmaker, player, decimal price (UK bookmakers) |
 | `fantacalcio/snapshots/probable_lineups_<date>.csv` | Fantacalcio.it | player in next matchday's probable lineups | starter or reserve, probability of starting (%) |
 
 Snapshots only exist from the first run onwards (the sites don't keep history of these pages), so each
