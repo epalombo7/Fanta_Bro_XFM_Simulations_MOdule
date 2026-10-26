@@ -48,6 +48,19 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
 - [ ] **Matchday medians are two-humped for scorers** (about 6 without a goal, 9.5 with one), so the median jumps between rounds.
   Show the chance of a goal and the expected value next to the median.
 
+
+## 26 Oct tuning loop (stopped after 3 tries in a row without gain; log: `data/backtest/tuning_results.csv`, harness: `pipeline/tuning/`)
+
+Tuned on 2021-22 to 2023-24, checked on 2024-25 and 2025-26.
+- Accepted: mean-preserving team-strength uncertainty (was inflating goals ~3%); team strength recency (past season
+  weight 0.6 → 0.4, current-season matches ×2.5); assist share calibrated (0.72, was a guess of 0.7).
+- Rejected: late absence / flatter pecking order; player-rate spread; assist share 0.6; goal-rate prior strength 4 or 25;
+  start-share cap 0.90 or prior 12.
+- Holdout: fantavoto error 0.968 → 0.966, attacker bias +0.147 → +0.118, keeper bias −0.05 → +0.01 (keeper error
+  1.435 → 1.449), RMSE and rankings unchanged. Gains are small: the remaining error is mostly luck (see the floor analysis).
+- Not yet tried (need new data or bigger changes): Understat xG for goal shares, penalty-taker order, closing odds in team
+  strength, probable-lineup % for the next round, keeper vote from shots on target faced.
+
 ## 4. Validation
 
 - [ ] Re-run the backtest with the 50% band (target coverage 50%).
