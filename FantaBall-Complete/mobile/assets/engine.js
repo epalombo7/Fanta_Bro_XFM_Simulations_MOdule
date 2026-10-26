@@ -42,6 +42,8 @@ const MODEL={
   baseGoals:1.24,          // league-average non-penalty goals per team per match
   home:1.12,               // home multiplier on goals scored (away team divided by it)
   teamSd:.08,              // per-world uncertainty in team attack/defence (log scale)
+  teamSdMeanFix:true,      // scale that uncertainty so it does not raise average goals
+  goalScale:1,             // multiplier on open-play goals (calibration check)
   playerSd:.15,            // per-world uncertainty in player scoring/assist rates (log scale)
   ownGoal:.03,             // share of goals that are own goals by the opponent
   ownGoalRole:{P:.3,D:3,C:1,A:.4}, // who scores own goals, relative weight per minute by role
@@ -60,6 +62,8 @@ const MODEL={
   subRatedMin:25,          // a substitute below this gets no vote unless scoring/assisting/sent off
   red:.008,                // straight red card probability per 90 minutes
   yellowBanEvery:5,        // one-match ban every N yellow cards
+  startPower:1,            // lineup weight = start^startPower (below 1 flattens the pecking order)
+  lateAbsence:0,           // chance an available player misses the squad on the day
   keeperSuccession:true,   // first-choice keeper unavailable: the next keeper in the pecking order starts
   injuryDispersion:0.28,    // shape of the injury-length distribution (lower = heavier tail); calibrated, data/params/injury_model.json
   // Vote = base + result + goal difference + team performance + individual noise + events
@@ -189,12 +193,14 @@ function runSeason(c,opts={}){
       if(r()<p.injuryRisk){let k=M.injuryDispersion,extra=Math.max(0,p.injuryGames-1);injured[i]=extra?Math.min(60,poisson(gamma(k,extra/k,r),r)):0;continue}
       if(rec)md[mdA(i)+mFit]++;if(banned[i]>0){banned[i]--;continue}
       if(rec)md[mdA(i)+mAv]++;ready.push(i)}
+    // late absence (illness, knock in training, coach's choice): an available player misses the squad
+    if(M.lateAbsence)ready=ready.filter(i=>r()>=M.lateAbsence);
     let byRole={P:[],D:[],C:[],A:[]};for(let i of ready)byRole[players[i].role].push(i);
     let Fm=teams[t].slots||M.formation,xi=[];
     for(let role of ROLES){let pool=byRole[role];
       // Keeper succession: if the club's first-choice keeper is out, the best available keeper is the de facto first choice
       if(role==='P'&&M.keeperSuccession&&pool.length&&!pool.includes(gkOrder[t][0]))pool=[pool.reduce((x,y)=>players[y].start>players[x].start?y:x)];
-      for(let i of pick(pool,Fm[role],i=>players[i].start,r)){xi.push(i);starter[i]=1}}
+      for(let i of pick(pool,Fm[role],i=>Math.pow(players[i].start,M.startPower),r)){xi.push(i);starter[i]=1}}
     if(xi.length<11)for(let i of pick(ready.filter(i=>!starter[i]&&players[i].role!=='P'),11-xi.length,i=>players[i].start,r)){xi.push(i);starter[i]=1}
     xi.forEach(i=>{mins[i]=90;if(rec)md[mdA(i)+mSt]++});
     let bench=ready.filter(i=>!starter[i]&&players[i].role!=='P'),played=xi.slice();
@@ -266,12 +272,14 @@ function runSeason(c,opts={}){
 
   for(w=0;w<burnIn+N;w++){
     rec=w>=burnIn;ws=w-burnIn;
-    teams.forEach((t,k)=>{att[k]=t.att*Math.exp(normal(r)*M.teamSd);def[k]=t.def*Math.exp(normal(r)*M.teamSd)});
+    // per-world strength uncertainty, mean-preserving (log-normal with mean 1) unless teamSdMeanFix is off
+    let tc=M.teamSdMeanFix?Math.exp(-M.teamSd*M.teamSd/2):1;
+    teams.forEach((t,k)=>{att[k]=t.att*tc*Math.exp(normal(r)*M.teamSd);def[k]=t.def*tc*Math.exp(normal(r)*M.teamSd)});
     players.forEach((p,i)=>{q[i]=Math.exp(normal(r)*M.playerSd);injured[i]=p.injuredFor||0;yellows[i]=p.yellows||0;banned[i]=0});
     ri=0;
     for(let round of rounds){for(let [h,aw] of round){
       let ph=lineup(h),pa=lineup(aw);
-      let oh=poisson(M.baseGoals*att[h]*def[aw]*M.home,r),oa=poisson(M.baseGoals*att[aw]*def[h]/M.home,r);
+      let oh=poisson(M.goalScale*M.baseGoals*att[h]*def[aw]*M.home,r),oa=poisson(M.goalScale*M.baseGoals*att[aw]*def[h]/M.home,r);
       credit(ph,pa,oh);credit(pa,ph,oa);
       let gh=oh+penalties(ph,pa),ga=oa+penalties(pa,ph);
       rate(ph,gh,ga,h);rate(pa,ga,gh,aw)}ri++}}

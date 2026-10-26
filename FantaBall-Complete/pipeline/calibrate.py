@@ -10,7 +10,7 @@ backtest (past seasons, as_of_round=0). Output matches engine.js simulate(config
   fixtures  38 rounds of [home, away] team indices
   model     calibrated MODEL overrides (goals, home edge, penalties, subs, cards, vote model per provider)
 """
-import glob, json, re
+import glob, json, os, re
 import numpy as np
 import pandas as pd
 from common import SEASONS, CURRENT, RAW, DATA
@@ -18,6 +18,12 @@ import calibrate_injuries as INJ
 
 DECAY = 0.6            # weight of a past season relative to the next one (rosters change fast)
 WINDOW = 3             # past seasons used
+TEAM_DECAY = float(os.environ.get('FB_TEAM_DECAY', 0.4))       # team strength: weight of a past season relative to the next one
+RATE_PRIOR_N = float(os.environ.get('FB_RATE_PRIOR_N', 10))    # goal / assist / card rates: prior weight in 90-minute games
+START_PRIOR_N = float(os.environ.get('FB_START_PRIOR_N', 5))   # start share: prior weight in matchdays
+START_MAX = float(os.environ.get('FB_START_MAX', 0.97))        # start share: cap
+VOTE_PRIOR_N = float(os.environ.get('FB_VOTE_PRIOR_N', 5))     # base vote: prior weight in rated games
+TEAM_CURRENT_W = float(os.environ.get('FB_TEAM_CURRENT_W', 2.5)) # team strength: weight of a match of the current season
 PROVIDERS = ['fantacalcio', 'statistico', 'italia']
 ROLES = ['P', 'D', 'C', 'A']
 FOTMOB_ALIAS = {'AC Milan': 'Milan', 'Hellas Verona': 'Verona', 'Chievo Verona': 'Chievo', 'SSC Napoli': 'Napoli',
@@ -94,9 +100,10 @@ def team_strength(season, as_of_round, w, teams):
     """Poisson regression with ridge: log goals = mu + home + attack(team) + defence(opponent)."""
     fd = results()
     d = fd[fd.Season.isin([s for s in w if s != season])].copy()
-    d['w'] = d.Season.map(w)
+    i = SEASONS.index(season)
+    d['w'] = d.Season.map(lambda s: TEAM_DECAY ** (i - SEASONS.index(s)))
     if as_of_round > 0:          # current season: matches already played, by date order within the season
-        cur = fd[fd.Season == season].copy(); cur['w'] = 1.0
+        cur = fd[fd.Season == season].copy(); cur['w'] = TEAM_CURRENT_W
         d = pd.concat([d, cur.iloc[:as_of_round * 10]])
     names = sorted(set(d.HomeTeam) | set(d.AwayTeam) | set(teams))
     k = {t: i for i, t in enumerate(names)}; n = len(names)
@@ -154,6 +161,7 @@ def league_settings(v, md):
          'penaltyConversion': float((v.pen_scored * W).sum() / max((pens * W).sum(), 1e-9)),
          'penaltySavedShare': float(min(1, (v.pen_saved * W).sum() / max((v.pen_missed * W).sum(), 1e-9))),
          'ownGoal': float((v.own_goals * W).sum() / goals),
+         'assisted': float((v.assists * W).sum() / max((v.goals * W).sum(), 1e-9)),
          'pen_goal_share': float((v.pen_scored * W).sum() / goals)}
     mins = (md.minutes * md.w).sum() / 90
     s['red'] = float((v.red * W).sum() / mins)
@@ -328,21 +336,21 @@ def build_league(season, as_of_round=0, verbose=False):
         pid, role, q = r.player_id, r.role, r.qi if pd.notna(r.qi) else 1
         h = agg.loc[pid] if pid in agg.index else None
         mins90 = (h.minutes / 90) if h is not None else 0.0
-        def rate(col, n0=10):
+        def rate(col, n0=RATE_PRIOR_N):
             pri = max(0.0, float(np.polyval(priors[col].get(role, [0, 0]), q))) if role in priors[col] else 0.0
             return float(((h[col] if h is not None else 0) + n0 * pri) / (mins90 + n0))
         rounds_, starts_ = (h.rounds, h.starts) if h is not None else (0, 0)
         if role == 'P':
             rounds_, starts_ = (gk_a.loc[pid, 'rounds'], gk_a.loc[pid, 'starts']) if pid in gk_a.index else (0, 0)
         s_pri = float(np.clip(np.polyval(sp.get(role, [0, 0.4]), q), 0.02, 0.95))
-        share = float(np.clip((starts_ + 5 * s_pri) / (rounds_ + 5), 0.01, 0.97))
+        share = float(np.clip((starts_ + START_PRIOR_N * s_pri) / (rounds_ + START_PRIOR_N), 0.01, START_MAX))
         base = {}
         for prov in PROVIDERS:
             eff, prior = bases[prov]
             pri = float(np.polyval(prior.get(role, [0, 6]), q))
             if pid in eff.index:
                 n, m = eff.loc[pid, 'n'], eff.loc[pid, 'mean']
-                base[prov] = round((m * n + pri * 5) / (n + 5), 3)
+                base[prov] = round((m * n + pri * VOTE_PRIOR_N) / (n + VOTE_PRIOR_N), 3)
             else:
                 base[prov] = round(pri, 3)
         ij = inj.get(pid, {})
