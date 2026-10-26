@@ -5,3 +5,5 @@ __pycache__/
 .env
 mobile/assets/webview.html
 data/cache/
+pipeline/page/data.json
+pipeline/page/fantaball-matchday.html

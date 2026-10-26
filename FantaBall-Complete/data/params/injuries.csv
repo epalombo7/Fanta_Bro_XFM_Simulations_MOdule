@@ -129,7 +129,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 113672,2168.0,Mateo Pablo Musacchio,Milan,D,30.0,D 30+,0.0183,2.485,0.0,0.0,5.458
 114558,470.0,Kevin Strootman,Genoa,C,34.0,C 30+,0.0227,2.3209,0.0,1.125,35.5693
 115067,2528.0,Nemanja Matic,Sassuolo,C,37.0,C 30+,0.009,2.4412,0.0,0.0,53.0312
-115591,2169.0,Ricardo Rodríguez,Torino,D,31.0,D 30+,0.0147,2.2505,3.0,0.5625,57.1729
+115591,2169.0,Ricardo Rodríguez,Torino,D,31.0,D 30+,0.0147,2.2505,2.0,0.5625,57.1729
 116555,608.0,Duván Zapata,Torino,A,35.0,A 30+,0.0617,2.3473,0.0,8.8975,114.7227
 119014,236.0,Darko Lazovic,Hellas Verona,C,34.0,C 30+,0.011,2.2137,0.0,0.5625,84.46
 120569,,Robin Olsen,Roma,,30.0,? 30+,0.0185,2.1216,0.0,0.0,0.2373
@@ -302,7 +302,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 281085,5071.0,Jesé,Sampdoria,A,30.0,A 30+,0.0191,2.7484,0.0,0.0,6.75
 281238,2087.0,Maximiliano Olivera,Fiorentina,D,29.0,D 24-29,0.0197,2.0367,0.0,0.0,4.0342
 281760,1868.0,Nicola Murru,Sampdoria,D,28.0,D 24-29,0.0121,2.0367,0.0,0.0,35.8857
-281762,2815.0,Pietro Terracciano,Milan,P,36.0,P 30+,0.0051,3.2286,0.0,0.0,123.9473
+281762,2815.0,Pietro Terracciano,Milan,P,36.0,P 30+,0.0051,3.2286,1.0,0.0,123.9473
 281993,1997.0,Simy,Salernitana,A,32.0,A 30+,0.0131,2.7484,0.0,0.0,30.8496
 282012,2065.0,Dennis Praet,Torino,C,27.0,C 24-29,0.0167,2.3875,0.0,0.0,11.3906
 282059,158.0,Luca Lezzerini,Fiorentina,P,31.0,P 30+,0.0084,3.2286,0.0,0.0,45.5938
@@ -338,7 +338,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 303155,2869.0,Koffi Djidji,Torino,D,31.0,D 30+,0.0223,3.1709,0.0,1.125,46.3359
 303799,2062.0,Bastos,Lazio,D,28.0,D 24-29,0.0212,2.0367,0.0,0.0,0.4746
 304000,6025.0,Tonny Vilhena,Salernitana,C,28.0,C 24-29,0.0156,2.3875,0.0,0.0,15.6094
-304345,2640.0,Sead Kolasinac,Atalanta,D,32.0,D 30+,0.0697,2.9879,4.0,7.3955,71.4062
+304345,2640.0,Sead Kolasinac,Atalanta,D,32.0,D 30+,0.0697,2.9879,3.0,7.3955,71.4062
 304733,2194.0,Hakan Calhanoglu,Inter,C,32.0,C 30+,0.0171,2.4647,0.0,2.0,117.9473
 305132,4414.0,Stefano Denswil,Bologna,D,27.0,D 24-29,0.0199,2.0367,0.0,0.0,3.5596
 307235,1998.0,Marko Pjaca,Empoli,A,28.0,A 24-29,0.0118,2.1149,0.0,0.0,35.3848
@@ -358,7 +358,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 321140,4385.0,Valentino Lazaro,Torino,D,30.0,D 30+,0.0116,2.188,0.0,0.75,101.75
 322003,6680.0,Jesper Karlström,Udinese,C,30.0,C 30+,0.008,2.4412,0.0,0.0,66.5
 324578,1996.0,Rodrigo De Paul,Udinese,C,26.0,C 24-29,0.0174,2.3875,0.0,0.0,9.0176
-325916,309.0,Paulo Dybala,Roma,A,32.0,A 30+,0.0721,1.591,1.0,11.0234,121.0771
+325916,309.0,Paulo Dybala,Roma,A,32.0,A 30+,0.0721,1.591,0.0,11.0234,121.0771
 331534,2758.0,Koray Günter,Hellas Verona,D,28.0,D 24-29,0.0123,2.0367,0.0,0.0,34.6465
 331634,,Zan Majer,Cremonese,,30.0,? 30+,0.0241,1.9833,0.0,0.4219,5.0625
 335606,644.0,Erick Pulgar,Fiorentina,C,28.0,C 24-29,0.0157,2.3875,0.0,0.0,15.2666
@@ -471,7 +471,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 478112,5899.0,Samuel Gigot,Lazio,D,32.0,D 30+,0.0832,1.9938,0.0,7.5205,53.3301
 478145,4987.0,Paolo Bartolomei,Spezia,C,31.0,C 30+,0.0163,2.4412,0.0,0.0,3.3223
 478393,2639.0,Tiemoué Bakayoko,Milan,C,28.0,C 24-29,0.0119,2.3875,0.0,0.0,35.9648
-478447,2188.0,Adam Marusic,Lazio,D,33.0,D 30+,0.0058,2.485,1.0,0.0,124.1035
+478447,2188.0,Adam Marusic,Lazio,D,33.0,D 30+,0.0058,2.485,0.0,0.0,124.1035
 479906,139.0,Kastriot Dermaku,Lecce,D,32.0,D 30+,0.0677,1.8854,0.0,3.9375,23.8184
 480014,5479.0,Pietro Ceccaroni,Lecce,D,27.0,D 24-29,0.0151,2.0367,0.0,0.0,19.6172
 480021,5880.0,Patrick Ciurria,Monza,C,30.0,C 30+,0.0086,2.4412,0.0,0.0,58.0312
@@ -548,7 +548,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 543298,2756.0,Krzysztof Piatek,Salernitana,A,27.0,A 24-29,0.0145,2.1149,0.0,0.0,20.0391
 543306,505.0,Federico Bonazzoli,Cremonese,A,29.0,A 24-29,0.0069,2.1149,0.0,0.0,96.6846
 543313,,Lorenzo Simonetti,Parma,,24.0,? 24-29,0.0185,2.7437,0.0,0.0,0.2373
-544693,4409.0,Amir Rrahmani,Napoli,D,32.0,D 30+,0.0175,2.091,1.0,2.0,121.9473
+544693,4409.0,Amir Rrahmani,Napoli,D,32.0,D 30+,0.0175,2.091,0.0,2.0,121.9473
 545026,,Nikolas Ioannou,Sampdoria,,27.0,? 24-29,0.0642,2.2359,0.0,3.2168,11.7861
 552040,2076.0,Marko Rog,Cagliari,C,30.0,C 30+,0.0192,2.8452,0.0,0.5625,23.416
 553849,610.0,Pierluigi Gollini,Roma,P,31.0,P 30+,0.0287,2.4194,0.0,4.0,101.3154
@@ -567,7 +567,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 561844,5480.0,Tyronne Ebuehi,Empoli,D,29.0,D 24-29,0.0102,2.0367,0.0,0.0,51.0352
 562062,2692.0,Samuel Castillejo,Sassuolo,C,29.0,C 24-29,0.0251,2.1685,0.0,1.125,36.4043
 566118,2739.0,Arkadiusz Reca,Spezia,D,27.0,D 24-29,0.0122,2.0367,0.0,0.0,35.1738
-566654,2741.0,Matteo Pessina,Monza,C,27.0,C 24-29,0.0385,2.0611,4.0,3.75,75.0762
+566654,2741.0,Matteo Pessina,Monza,C,27.0,C 24-29,0.0385,2.0611,3.0,3.75,75.0762
 566687,,Luigi Canotto,Frosinone,,29.0,? 24-29,0.0182,2.7437,0.0,0.0,1.125
 566753,649.0,Rey Manaj,Spezia,A,25.0,A 24-29,0.0165,2.1149,0.0,0.0,11.3906
 566776,6657.0,Alessandro Gabrielloni,Como,A,31.0,A 30+,0.0133,2.7484,0.0,0.0,29.5
@@ -585,7 +585,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 575364,27.0,Alberto Grassi,Cremonese,C,31.0,C 30+,0.0089,2.8452,0.0,0.5625,118.2266
 575731,179.0,Jacopo Petriccione,Crotone,C,26.0,C 24-29,0.0176,2.3875,0.0,0.0,8.543
 575779,4249.0,Andreas Pereira,Lazio,C,25.0,C 24-29,0.0178,2.3875,0.0,0.0,7.8311
-577911,1933.0,Rolando Mandragora,Fiorentina,C,28.0,C 24-29,0.0103,2.31,0.0,0.75,121.2236
+577911,1933.0,Rolando Mandragora,Fiorentina,C,28.0,C 24-29,0.0103,2.31,1.0,0.75,121.2236
 577912,572.0,Alex Meret,Napoli,P,29.0,P 24-29,0.0168,3.6133,0.0,2.0,113.9473
 577914,219.0,Daniele Sommariva,Genoa,P,28.0,P 24-29,0.0065,2.3556,0.0,0.0,87.875
 579747,1850.0,Franck Kessié,Milan,C,25.0,C 24-29,0.0145,2.3875,0.0,0.0,20.4082
@@ -614,13 +614,13 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 603537,4772.0,Angelino,Roma,D,29.0,D 24-29,0.0165,1.7775,0.0,1.0,74.5
 604089,4185.0,Ainsley Maitland-Niles,Roma,D,24.0,D 24-29,0.0191,2.0367,0.0,0.0,5.6953
 604330,393.0,Sebastiano Luperto,Cagliari,D,29.0,D 24-29,0.0058,2.0367,0.0,0.0,124.4727
-604982,4199.0,Ruben Loftus-Cheek,Milan,C,30.0,C 30+,0.0306,1.6377,0.0,3.7803,98.4121
+604982,4199.0,Ruben Loftus-Cheek,Milan,C,30.0,C 30+,0.0306,1.6377,1.0,3.7803,98.4121
 605224,254.0,Federico Dimarco,Inter,D,28.0,D 24-29,0.0058,2.0367,0.0,0.0,124.5254
 605654,2775.0,Fabián Ruiz,Napoli,C,26.0,C 24-29,0.0144,2.3875,0.0,0.0,21.041
 605848,5869.0,Alexis Blin,Lecce,C,27.0,C 24-29,0.0183,2.1685,0.0,0.5625,36.8438
 607149,819.0,Andrea Favilli,Genoa,A,23.0,A U24,0.017,2.3671,0.0,0.0,8.7012
 609624,2818.0,Ismael Bennacer,Milan,C,27.0,C 24-29,0.0124,2.3875,0.0,0.4219,65.9473
-611223,4177.0,Benjamin Pavard,Inter,D,29.0,D 24-29,0.0405,1.6208,1.0,3.4395,63.0254
+611223,4177.0,Benjamin Pavard,Inter,D,29.0,D 24-29,0.0405,1.6208,0.0,3.4395,63.0254
 611491,5830.0,Andre Onana,Inter,P,27.0,P 24-29,0.0123,2.3556,0.0,0.0,16.0312
 611827,244.0,Paolo Ghiglione,Cremonese,D,26.0,D 24-29,0.012,2.0367,0.0,0.0,36.7559
 612747,5626.0,Frédéric Guilbert,Lecce,D,30.0,D 30+,0.0131,2.485,0.0,0.0,27.0
@@ -640,7 +640,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 621515,5948.0,Daichi Kamada,Lazio,C,27.0,C 24-29,0.0143,2.3875,0.0,0.0,21.375
 621562,4871.0,Marcus Thuram,Inter,A,28.0,A 24-29,0.0131,1.8702,0.0,0.8438,91.0938
 622091,6820.0,Borna Sosa,Torino,D,27.0,D 24-29,0.0478,1.8663,0.0,2.6865,30.4102
-624166,827.0,Manuel Locatelli,Juventus,C,28.0,C 24-29,0.0058,2.3875,17.0,0.0,124.9473
+624166,827.0,Manuel Locatelli,Juventus,C,28.0,C 24-29,0.0058,2.3875,16.0,0.0,124.9473
 625797,2117.0,Grigoris Kastanos,Hellas Verona,C,27.0,C 24-29,0.0147,2.6909,0.0,1.125,95.9922
 629041,447.0,Antonino La Gumina,Sampdoria,A,25.0,A 24-29,0.0172,2.1149,0.0,0.0,9.0176
 630797,,Dejan Vokic,Benevento,,24.0,? 24-29,0.0185,2.7437,0.0,0.0,0.2373
@@ -657,7 +657,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 643161,4335.0,Nicolas Schiappacasse,Sassuolo,A,22.0,A U24,0.0188,2.3671,0.0,0.0,3.3223
 643229,2832.0,Jérémie Boga,Juventus,A,29.0,A 24-29,0.0102,2.1149,0.0,0.0,48.7236
 643573,4514.0,Nahitan Nández,Cagliari,C,28.0,C 24-29,0.0175,2.4843,0.0,0.5625,40.7285
-644738,7161.0,Vakoun Issouf Bayo,Udinese,A,29.0,A 24-29,0.016,1.9626,4.0,0.4746,42.9834
+644738,7161.0,Vakoun Issouf Bayo,Udinese,A,29.0,A 24-29,0.016,1.9626,3.0,0.4746,42.9834
 645187,,Rok Vodisek,Genoa,,23.0,? U24,0.018,1.6987,0.0,0.0,1.582
 645576,5886.0,Kristijan Bistrovic,Lecce,C,24.0,C 24-29,0.0179,2.3875,0.0,0.0,7.5938
 645704,5873.0,Marcin Listkowski,Lecce,C,25.0,C 24-29,0.0152,2.3875,0.0,0.0,17.5781
@@ -676,15 +676,15 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 660136,4999.0,Thomas Ouwejan,Udinese,D,24.0,D 24-29,0.018,2.0367,0.0,0.0,9.0176
 660301,5585.0,Donyell Malen,Roma,A,27.0,A 24-29,0.0149,2.1149,0.0,0.0,18.0
 660887,6576.0,Fabien Centonze,Hellas Verona,D,28.0,D 24-29,0.018,2.0367,0.0,0.0,9.0
-661761,2167.0,Riccardo Orsolini,Bologna,C,29.0,C 24-29,0.0058,2.3875,3.0,0.0,123.9473
+661761,2167.0,Riccardo Orsolini,Bologna,C,29.0,C 24-29,0.0058,2.3875,2.0,0.0,123.9473
 661766,5488.0,Luca Antonio Fiordilino,Venezia,C,25.0,C 24-29,0.0166,2.3875,0.0,0.0,12.0234
 662205,2263.0,Manuel Lazzari,Lazio,D,32.0,D 30+,0.021,2.3473,0.0,2.541,119.6562
 662936,5324.0,Ben Godfrey,Atalanta,D,28.0,D 24-29,0.0166,2.0367,0.0,0.0,13.5
 664444,4422.0,Takehiro Tomiyasu,Bologna,D,22.0,D U24,0.015,2.216,0.0,0.0,9.334
-664587,5504.0,Lassana Coulibaly,Lecce,C,30.0,C 30+,0.0091,2.6873,3.0,0.5625,113.6797
+664587,5504.0,Lassana Coulibaly,Lecce,C,30.0,C 30+,0.0091,2.6873,2.0,0.5625,113.6797
 664607,4985.0,Luca Vignali,Spezia,D,25.0,D 24-29,0.0178,2.0367,0.0,0.0,9.6504
 665164,5292.0,Sam Lammers,Empoli,A,25.0,A 24-29,0.0134,2.1149,0.0,0.0,25.2598
-665188,5800.0,Albert Gudmundsson,Fiorentina,C,28.0,C 24-29,0.0533,1.8165,4.0,6.9531,100.7207
+665188,5800.0,Albert Gudmundsson,Fiorentina,C,28.0,C 24-29,0.0533,1.8165,3.0,6.9531,100.7207
 665313,2847.0,Leonardo Sernicola,Cremonese,D,28.0,D 24-29,0.0155,2.0367,0.0,0.0,18.0312
 665339,1890.0,Marco Festa,Crotone,P,28.0,P 24-29,0.0135,2.3556,0.0,0.0,9.0176
 667790,6458.0,Suat Serdar,Hellas Verona,C,28.0,C 24-29,0.0163,2.2907,0.0,1.0,74.3125
@@ -719,7 +719,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 689680,2765.0,Jens Odgaard,Bologna,C,27.0,C 24-29,0.0531,1.73,0.0,6.0293,83.9932
 689987,7198.0,Jakub Piotrowski,Udinese,C,28.0,C 24-29,0.024,2.5407,0.0,1.0,35.0
 690149,4775.0,Axel Tuanzebe,Napoli,D,24.0,D 24-29,0.0193,2.0367,0.0,0.0,5.0625
-690230,2764.0,Lautaro Martinez,Inter,A,28.0,A 24-29,0.0213,1.7719,4.0,2.6289,121.002
+690230,2764.0,Lautaro Martinez,Inter,A,28.0,A 24-29,0.0213,1.7719,3.0,2.6289,121.002
 690409,2835.0,Kingsley Michael,Bologna,C,22.0,C U24,0.0177,2.06,0.0,0.0,6.3281
 690516,4730.0,Ademola Lookman,Atalanta,A,28.0,A 24-29,0.0075,2.1149,0.0,0.0,83.4062
 693160,4421.0,Tommaso Augello,Cagliari,D,30.0,D 30+,0.0074,2.485,0.0,0.0,86.9473
@@ -760,7 +760,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 746835,5452.0,Samuele Damiani,Empoli,C,23.0,C U24,0.0196,2.06,0.0,0.0,0.6328
 747079,2861.0,Adrian Semper,Pisa,P,28.0,P 24-29,0.0181,2.7667,0.0,1.0,45.3906
 747767,6314.0,Loïs Openda,Juventus,A,26.0,A 24-29,0.0117,2.1149,0.0,0.0,36.0
-747926,2097.0,Moise Kean,Fiorentina,A,26.0,A 24-29,0.0287,2.3251,1.0,3.25,99.125
+747926,2097.0,Moise Kean,Fiorentina,A,26.0,A 24-29,0.0287,2.3251,0.0,3.25,99.125
 748378,6216.0,Jordi Mboula,Hellas Verona,C,24.0,C 24-29,0.0262,2.3264,0.0,0.5625,11.25
 748381,5013.0,Joel Asoro,Genoa,A,21.0,A U24,0.0199,2.3671,0.0,0.0,0.2373
 748405,2855.0,Ronaldo Vieira,Sampdoria,C,24.0,C 24-29,0.0131,2.3875,0.0,0.0,27.7383
@@ -769,7 +769,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 749661,2544.0,Tammy Abraham,Roma,A,26.0,A 24-29,0.0164,4.1825,0.0,0.8789,65.5898
 749662,4751.0,Fikayo Tomori,Milan,D,28.0,D 24-29,0.006,2.0367,0.0,0.0,120.6758
 750027,4825.0,Brahim Diaz,Milan,C,23.0,C U24,0.0114,2.06,0.0,0.0,37.0723
-750030,2038.0,Andrea Pinamonti,Sassuolo,A,27.0,A 24-29,0.0058,2.1149,2.0,0.0,123.8809
+750030,2038.0,Andrea Pinamonti,Sassuolo,A,27.0,A 24-29,0.0058,2.1149,1.0,0.0,123.8809
 750056,4511.0,Leo Duarte,Milan,D,24.0,D 24-29,0.0197,2.0367,0.0,0.0,4.0342
 750734,5885.0,Dodô,Fiorentina,D,27.0,D 24-29,0.0066,2.0367,0.0,0.0,103.9062
 750880,5010.0,Ardian Ismajli,Torino,D,29.0,D 24-29,0.0523,1.7603,0.0,8.7256,139.2598
@@ -788,7 +788,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 767229,6237.0,Przemysław Szymiński,Frosinone,D,29.0,D 24-29,0.0209,2.0367,0.0,0.0,1.125
 767885,2316.0,Niccolo Zanellato,Crotone,C,22.0,C U24,0.0169,2.06,0.0,0.0,9.0176
 768331,4407.0,Igor,Fiorentina,D,25.0,D 24-29,0.0121,2.0367,0.0,0.0,36.2285
-768474,5841.0,Mile Svilar,Roma,P,26.0,P 24-29,0.0059,2.3556,4.0,0.0,103.9062
+768474,5841.0,Mile Svilar,Roma,P,26.0,P 24-29,0.0059,2.3556,3.0,0.0,103.9062
 768505,5487.0,Daan Heymans,Venezia,C,22.0,C U24,0.0176,2.06,0.0,0.0,6.6445
 769167,5994.0,Enzo Ebosse,Hellas Verona,D,26.0,D 24-29,0.0089,2.0367,0.0,0.0,65.4688
 769335,2006.0,Pol Lirola,Hellas Verona,D,28.0,D 24-29,0.0372,1.9971,0.0,2.125,37.3594
@@ -811,7 +811,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 780432,4719.0,Ethan Ampadu,Spezia,D,22.0,D U24,0.0122,2.216,0.0,0.0,24.3633
 780491,6061.0,Rémi Oudin,Lecce,C,28.0,C 24-29,0.0103,2.3875,0.0,0.0,48.8438
 782695,2842.0,Luca Zanimacchia,Cremonese,A,24.0,A 24-29,0.0382,1.883,0.0,1.2656,10.125
-782703,6673.0,Marin Sverko,Venezia,D,27.0,D 24-29,0.0366,1.7641,4.0,1.8984,32.6133
+782703,6673.0,Marin Sverko,Venezia,D,27.0,D 24-29,0.0366,1.7641,3.0,1.8984,32.6133
 783580,5331.0,Abdallah Basit,Benevento,C,21.0,C U24,0.0184,2.06,0.0,0.0,4.0342
 783635,2091.0,Alessandro Plizzari,Milan,P,,P 24-29,0.0152,2.3556,0.0,0.0,0.6328
 784175,6027.0,Luka Lochoshvili,Cremonese,D,24.0,D 24-29,0.0282,1.7875,0.0,0.9492,22.4648
@@ -828,7 +828,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 792756,5784.0,Michel Aebischer,Pisa,C,29.0,C 24-29,0.0112,2.11,0.0,0.75,108.2188
 793041,2722.0,Federico Ravaglia,Bologna,P,26.0,P 24-29,0.0059,2.3556,0.0,0.0,104.8555
 793048,5512.0,Manuel De Luca,Cremonese,A,27.0,A 24-29,0.0213,1.9774,0.0,0.4219,17.6094
-793066,6831.0,David Neres,Napoli,C,28.0,C 24-29,0.0465,2.5142,3.0,4.042,59.9756
+793066,6831.0,David Neres,Napoli,C,28.0,C 24-29,0.0465,2.5142,2.0,4.042,59.9756
 793586,5317.0,Juan Brunetta,Parma,C,23.0,C U24,0.0176,2.06,0.0,0.0,6.4072
 794253,2779.0,Justin Kluivert,Roma,C,21.0,C U24,0.0196,2.06,0.0,0.0,0.7119
 794427,4811.0,Joao Félix,Milan,A,25.0,A 24-29,0.0164,2.1149,0.0,0.0,12.0
@@ -871,10 +871,10 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 822237,6380.0,Manor Solomon,Fiorentina,A,26.0,A 24-29,0.0307,2.8362,0.0,1.0,16.0
 822252,2294.0,Michele Cerofolini,Frosinone,P,25.0,P 24-29,0.0095,2.3556,0.0,0.0,40.2539
 822440,6252.0,Michael Folorunsho,Cagliari,C,28.0,C 24-29,0.0312,3.7711,0.0,2.75,71.8125
-822589,6207.0,Pontus Almqvist,Parma,A,26.0,A 24-29,0.0335,2.3219,1.0,3.3125,79.5625
+822589,6207.0,Pontus Almqvist,Parma,A,26.0,A 24-29,0.0335,2.3219,0.0,3.3125,79.5625
 822789,6230.0,Alberto Dossena,Cagliari,D,27.0,D 24-29,0.0684,1.6742,0.0,6.8125,67.5
 822794,5451.0,Nedim Bajrami,Sassuolo,C,25.0,C 24-29,0.0102,2.3875,0.0,0.0,49.4297
-823018,2724.0,Alessandro Buongiorno,Napoli,D,26.0,D 24-29,0.0371,1.7914,9.0,5.4316,126.8594
+823018,2724.0,Alessandro Buongiorno,Napoli,D,26.0,D 24-29,0.0371,1.7914,8.0,5.4316,126.8594
 823030,4883.0,Sebastian Breza,Bologna,P,22.0,P U24,0.0144,3.6947,0.0,0.0,2.1357
 823078,4332.0,Merih Demiral,Atalanta,D,28.0,D 24-29,0.0179,1.873,0.0,0.5625,40.7285
 823113,7349.0,Sandro Kulenovic,Torino,A,26.0,A 24-29,0.0154,2.1149,0.0,0.0,16.0
@@ -885,7 +885,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 824624,6674.0,Magnus Kofod Andersen,Venezia,C,25.0,C 24-29,0.016,2.3875,0.0,0.0,14.25
 827315,4869.0,Nicolás Dominguez,Bologna,C,25.0,C 24-29,0.0118,2.3875,0.0,0.0,36.3516
 828159,5892.0,Min-Jae Kim,Napoli,D,26.0,D 24-29,0.0161,2.0367,0.0,0.0,15.6094
-831474,5603.0,Marin Pongracic,Fiorentina,D,28.0,D 24-29,0.0182,1.6635,0.0,1.6875,101.375
+831474,5603.0,Marin Pongracic,Fiorentina,D,28.0,D 24-29,0.0182,1.6635,1.0,1.6875,101.375
 833024,2144.0,Mamadou Coulibaly,Salernitana,C,24.0,C 24-29,0.0154,2.3875,0.0,0.0,16.4707
 833638,6435.0,Nikola Krstovic,Atalanta,A,26.0,A 24-29,0.0073,2.1149,0.0,0.0,87.3125
 834956,2769.0,Giangiacomo Magnani,Hellas Verona,D,29.0,D 24-29,0.0132,1.873,0.0,0.5625,71.4199
@@ -894,14 +894,14 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 838404,,Vladyslav Supriaga,Sampdoria,,22.0,? U24,0.0172,1.6987,0.0,0.0,4.1133
 840184,5509.0,Matías Viña,Sassuolo,D,26.0,D 24-29,0.0207,2.5045,0.0,0.5625,28.8984
 840384,2654.0,Damir Ceter,Cagliari,A,24.0,A 24-29,0.0168,2.1149,0.0,0.0,10.4414
-841672,4179.0,Nicolás González,Juventus,A,27.0,A 24-29,0.0234,2.3015,4.0,1.875,73.5547
+841672,4179.0,Nicolás González,Juventus,A,27.0,A 24-29,0.0234,2.3015,3.0,1.875,73.5547
 841910,6574.0,Triantafyllos Pasalidis,Salernitana,D,27.0,D 24-29,0.018,2.0367,0.0,0.0,9.0
 843099,4777.0,Scott McTominay,Napoli,C,29.0,C 24-29,0.0734,2.05,0.0,7.8408,72.1396
 844493,2781.0,Daniel Fuzato,Roma,P,24.0,P 24-29,0.0122,2.3556,0.0,0.0,17.2441
 844504,4412.0,Rodrigo Becao,Udinese,D,27.0,D 24-29,0.0121,2.0367,0.0,0.0,35.8066
-844996,4401.0,Matteo Gabbia,Milan,D,26.0,D 24-29,0.0175,1.6491,18.0,1.791,112.5566
+844996,4401.0,Matteo Gabbia,Milan,D,26.0,D 24-29,0.0175,1.6491,17.0,1.791,112.5566
 845368,6904.0,John Yeboah,Venezia,C,24.0,C 24-29,0.0134,2.3875,0.0,0.0,26.25
-845994,4349.0,Hans Nicolussi Caviglia,Fiorentina,C,25.0,C 24-29,0.0069,2.3875,8.0,0.0,97.542
+845994,4349.0,Hans Nicolussi Caviglia,Fiorentina,C,25.0,C 24-29,0.0069,2.3875,7.0,0.0,97.542
 846000,5036.0,Maxence Caqueret,Como,C,26.0,C 24-29,0.0099,2.3875,0.0,0.0,52.25
 846002,5875.0,Yacine Adli,Fiorentina,C,24.0,C 24-29,0.0089,2.3875,0.0,0.0,64.4062
 846006,7352.0,Andrias Edmundsson,Hellas Verona,D,25.0,D 24-29,0.0162,2.0367,0.0,0.0,15.0
@@ -917,7 +917,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 848708,5477.0,Magnus Warming,Torino,A,21.0,A U24,0.0168,2.3671,0.0,0.0,9.4922
 848844,4510.0,Rafael Leao,Milan,A,26.0,A 24-29,0.0153,1.8564,0.0,1.5625,118.585
 848951,5776.0,Emil Konradsen Ceïde,Sassuolo,A,22.0,A U24,0.0109,2.3671,0.0,0.0,42.1523
-850055,6219.0,Daniel Boloca,Sassuolo,C,27.0,C 24-29,0.0472,3.6938,1.0,3.0,36.375
+850055,6219.0,Daniel Boloca,Sassuolo,C,27.0,C 24-29,0.0472,3.6938,0.0,3.0,36.375
 850295,5998.0,Alessio Zerbin,Cremonese,C,27.0,C 24-29,0.0066,2.3875,0.0,0.0,102.5938
 856464,6213.0,Brenner da Silva,Udinese,A,25.0,A 24-29,0.0205,3.3599,0.0,0.5625,27.0
 857269,2788.0,Gleison Bremer,Juventus,D,29.0,D 24-29,0.0694,2.1493,0.0,9.915,110.5869
@@ -936,9 +936,9 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 865362,2300.0,Maxime Leverbe,Sampdoria,D,,D 24-29,0.0209,2.0367,0.0,0.0,1.2656
 866358,5533.0,Tiago Djaló,Juventus,D,24.0,D 24-29,0.018,2.0367,0.0,0.0,9.0
 866516,5685.0,Teun Koopmeiners,Juventus,C,28.0,C 24-29,0.0132,2.1455,0.0,1.125,112.1094
-866708,6956.0,Oumar Solet,Udinese,D,26.0,D 24-29,0.01,2.0367,0.0,0.0,53.0
+866708,6956.0,Oumar Solet,Udinese,D,26.0,D 24-29,0.01,2.0367,1.0,0.0,53.0
 867080,4403.0,Jeff Chabot,Sampdoria,D,23.0,D U24,0.0137,2.216,0.0,0.0,15.8203
-867225,4657.0,Zeki Çelik,Roma,D,29.0,D 24-29,0.0291,1.479,4.0,3.4922,107.7197
+867225,4657.0,Zeki Çelik,Roma,D,29.0,D 24-29,0.0291,1.479,3.0,3.4922,107.7197
 867414,4449.0,Sandro Tonali,Milan,C,22.0,C U24,0.0115,2.06,0.0,0.0,36.6504
 867789,5862.0,Emanuele Valeri,Parma,D,27.0,D 24-29,0.0087,1.9607,0.0,0.2373,95.3809
 868344,6224.0,Tijjani Reijnders,Milan,C,26.0,C 24-29,0.0102,2.3875,0.0,0.0,49.875
@@ -983,7 +983,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 900043,5511.0,Matheus Henrique,Sassuolo,C,26.0,C 24-29,0.0222,2.0091,0.0,1.125,47.4258
 900433,5839.0,Khvicha Kvaratskhelia,Napoli,A,23.0,A U24,0.0214,1.9943,0.0,1.125,49.2188
 902383,5677.0,Nehuén Pérez,Udinese,D,24.0,D 24-29,0.0103,2.0367,0.0,0.0,50.2969
-902651,4887.0,Raoul Bellanova,Atalanta,D,26.0,D 24-29,0.0131,3.5275,0.0,1.0,106.5469
+902651,4887.0,Raoul Bellanova,Atalanta,D,26.0,D 24-29,0.0131,3.5275,1.0,1.0,106.5469
 904098,4521.0,Mert Müldür,Sassuolo,D,24.0,D 24-29,0.0119,2.0367,0.0,0.0,37.0723
 904262,,Nicola Borghetto,Hellas Verona,,20.0,? U24,0.0185,1.6987,0.0,0.0,0.2373
 905494,5747.0,Ruan,Sassuolo,D,24.0,D 24-29,0.0221,2.4789,0.0,1.0283,45.1494
@@ -1005,7 +1005,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 919916,6002.0,Emanuel Aiwu,Cremonese,D,22.0,D U24,0.0136,2.216,0.0,0.0,16.0312
 920851,5789.0,Mateusz Praszelik,Hellas Verona,C,22.0,C U24,0.0164,2.06,0.0,0.0,10.6523
 920861,6667.0,Adrian Benedyczak,Parma,A,25.0,A 24-29,0.0689,1.8147,0.0,5.6611,47.5469
-921341,4892.0,Alexis Saelemaekers,Milan,C,26.0,C 24-29,0.0197,1.9247,17.0,2.3125,119.6348
+921341,4892.0,Alexis Saelemaekers,Milan,C,26.0,C 24-29,0.0197,1.9247,16.0,2.3125,119.6348
 921543,5791.0,Morten Frendrup,Genoa,C,25.0,C 24-29,0.0071,2.3875,0.0,0.0,92.6211
 921594,5532.0,Domagoj Bradaric,Hellas Verona,D,26.0,D 24-29,0.0138,2.0275,0.0,1.0,98.2969
 921921,5844.0,Kristian Thorstvedt,Sassuolo,C,27.0,C 24-29,0.0401,1.9415,0.0,4.1641,80.4766
@@ -1027,7 +1027,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 934873,,Salvatore Elia,Atalanta,,24.0,? 24-29,0.0186,2.7437,0.0,0.0,0.0
 935379,2833.0,Dejan Kulusevski,Juventus,C,21.0,C U24,0.015,2.06,0.0,0.0,16.2949
 935380,,Enrico Del Prato,Parma,,26.0,? 24-29,0.0083,2.7437,0.0,0.0,66.0664
-935406,4378.0,Luca Ranieri,Fiorentina,D,27.0,D 24-29,0.0063,2.0367,1.0,0.0,111.8594
+935406,4378.0,Luca Ranieri,Fiorentina,D,27.0,D 24-29,0.0063,2.0367,0.0,0.0,111.8594
 935550,7212.0,Torbjørn Heggem,Bologna,D,27.0,D 24-29,0.0118,2.0367,0.0,0.0,38.0
 935622,6426.0,Marcus Holmgren Pedersen,Torino,D,25.0,D 24-29,0.0198,2.2433,0.0,1.5625,82.4375
 935769,6060.0,Armand Laurienté,Sassuolo,A,27.0,A 24-29,0.0082,2.1149,0.0,0.0,72.4531
@@ -1036,12 +1036,12 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 936164,4870.0,Michel Ndary Adopo,Cagliari,C,25.0,C 24-29,0.0066,2.3875,0.0,0.0,103.9062
 937034,4919.0,Andri Fannar Baldursson,Bologna,C,19.0,C U24,0.0169,2.06,0.0,0.0,9.0176
 937273,,Mattia Novella,Lazio,,19.0,? U24,0.0183,1.6987,0.0,0.0,0.7119
-937412,6672.0,Jay Idzes,Sassuolo,D,25.0,D 24-29,0.009,2.0367,1.0,0.0,65.0
+937412,6672.0,Jay Idzes,Sassuolo,D,25.0,D 24-29,0.009,2.0367,0.0,0.0,65.0
 937462,5878.0,Andrea Colpani,Fiorentina,C,26.0,C 24-29,0.0437,1.5957,0.0,4.3857,74.915
 937502,4487.0,Erick Ferigra,Torino,D,22.0,D U24,0.0156,2.216,0.0,0.0,6.6445
 939569,5544.0,Jonathan David,Juventus,A,26.0,A 24-29,0.0115,2.1149,0.0,0.0,38.0
 939593,5872.0,Thórir Helgason,Lecce,C,25.0,C 24-29,0.0076,2.3875,0.0,0.0,83.6562
-939780,6046.0,Isak Hien,Atalanta,D,27.0,D 24-29,0.0145,2.0267,4.0,1.125,100.25
+939780,6046.0,Isak Hien,Atalanta,D,27.0,D 24-29,0.0145,2.0267,3.0,1.125,100.25
 940440,5884.0,Filippo Ranocchia,Empoli,C,22.0,C U24,0.0127,2.06,0.0,0.0,28.1514
 940447,5360.0,Edoardo Vergani,Salernitana,A,21.0,A U24,0.0162,2.3671,0.0,0.0,11.8652
 940594,5690.0,David Strelec,Spezia,A,21.0,A U24,0.0145,2.3671,0.0,0.0,19.1953
@@ -1069,7 +1069,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 951711,5406.0,Alessandro Di Pardo,Cagliari,D,26.0,D 24-29,0.0337,1.9361,0.0,2.125,46.0078
 951712,4465.0,Nicolò Fagioli,Fiorentina,C,25.0,C 24-29,0.0064,2.3875,0.0,0.0,108.8896
 951714,6666.0,Adrián Bernabé,Parma,C,24.0,C 24-29,0.0227,1.925,0.0,1.5,62.0
-951743,4371.0,Giacomo Raspadori,Atalanta,A,26.0,A 24-29,0.0169,1.7331,3.0,1.5625,102.9102
+951743,4371.0,Giacomo Raspadori,Atalanta,A,26.0,A 24-29,0.0169,1.7331,2.0,1.5625,102.9102
 951765,7253.0,Armel Bella-Kotchap,Hellas Verona,D,24.0,D 24-29,0.0558,3.0183,0.0,3.0,25.0
 951921,5484.0,Michael Svoboda,Venezia,D,26.0,D 24-29,0.0597,3.2048,0.0,3.3164,25.6406
 951927,5755.0,Kelvin Yeboah,Genoa,A,21.0,A U24,0.0181,2.3671,0.0,0.0,5.3789
@@ -1110,7 +1110,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 975170,4518.0,Alessandro Russo,Sassuolo,P,22.0,P U24,0.012,3.6947,0.0,0.0,16.0312
 975242,5319.0,Simon Sohm,Fiorentina,C,24.0,C 24-29,0.0185,2.0917,0.0,1.5,87.1191
 979789,5364.0,Giuseppe Caso,Frosinone,A,25.0,A 24-29,0.022,1.9389,0.0,0.5625,22.043
-980793,5562.0,Khéphren Thuram-Ulien,Juventus,C,25.0,C 24-29,0.0087,2.3875,12.0,0.0,66.5
+980793,5562.0,Khéphren Thuram-Ulien,Juventus,C,25.0,C 24-29,0.0087,2.3875,11.0,0.0,66.5
 981120,,Kaique Rocha,Sampdoria,,20.0,? U24,0.016,1.6987,0.0,0.0,8.543
 982426,,Gabriel Brazao,Inter,,22.0,? U24,0.0181,1.6987,0.0,0.0,1.2656
 982617,7347.0,Kieron Bowie,Hellas Verona,A,23.0,A U24,0.0154,2.3671,0.0,0.0,15.0
@@ -1133,24 +1133,24 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1012842,4364.0,Gianluca Gaetano,Cagliari,C,26.0,C 24-29,0.0479,1.8769,0.0,6.6719,111.7549
 1013021,4431.0,Marco Carnesecchi,Atalanta,P,25.0,P 24-29,0.006,2.3556,0.0,0.0,101.665
 1014136,,Malthe Højholt,Pisa,,25.0,? 24-29,0.0109,2.7437,0.0,0.0,38.0
-1014496,5578.0,Odilon Kossounou,Atalanta,D,25.0,D 24-29,0.0286,1.6059,4.0,2.1328,62.9648
-1014630,5678.0,Emil Holm,Juventus,D,26.0,D 24-29,0.0535,1.7123,18.0,6.7627,98.3145
+1014496,5578.0,Odilon Kossounou,Atalanta,D,25.0,D 24-29,0.0286,1.6059,3.0,2.1328,62.9648
+1014630,5678.0,Emil Holm,Juventus,D,26.0,D 24-29,0.0535,1.7123,17.0,6.7627,98.3145
 1014981,5003.0,Augustus Kargbo,Crotone,A,21.0,A U24,0.0198,2.3671,0.0,0.0,0.4746
 1015183,5689.0,Mohammed Ihattaren,Sampdoria,C,,C 24-29,0.0205,2.3875,0.0,0.0,0.3164
 1015263,6203.0,Luca Belardinelli,Empoli,C,23.0,C U24,0.0178,2.06,0.0,0.0,6.0
 1016093,6398.0,Gustav Isaksen,Lazio,C,25.0,C 24-29,0.0363,1.7076,0.0,4.2959,97.7178
 1016132,,Kouadio Koné,Roma,,25.0,? 24-29,0.0171,2.5577,0.0,1.0,63.0
-1017401,4359.0,Roberto Piccoli,Fiorentina,A,25.0,A 24-29,0.0058,2.1149,4.0,0.0,121.8115
+1017401,4359.0,Roberto Piccoli,Fiorentina,A,25.0,A 24-29,0.0058,2.1149,3.0,0.0,121.8115
 1018462,6430.0,Sergio Kalaj,Frosinone,D,24.0,D 24-29,0.0214,2.0367,0.0,0.0,0.0
 1019019,5810.0,Simone Trimboli,Sampdoria,C,20.0,C U24,0.015,2.06,0.0,0.0,16.2422
 1019567,6562.0,Dani Silva,Hellas Verona,C,24.0,C 24-29,0.0133,2.3875,0.0,0.0,26.8125
-1020963,4459.0,Nicolò Rovella,Lazio,C,24.0,C 24-29,0.0357,3.0546,1.0,4.5625,107.5879
-1021302,6640.0,Mattia Felici,Cagliari,C,25.0,C 24-29,0.0327,4.7689,21.0,2.3037,52.541
+1020963,4459.0,Nicolò Rovella,Lazio,C,24.0,C 24-29,0.0357,3.0546,0.0,4.5625,107.5879
+1021302,6640.0,Mattia Felici,Cagliari,C,25.0,C 24-29,0.0327,4.7689,20.0,2.3037,52.541
 1021834,5693.0,Jakub Kiwior,Spezia,D,22.0,D U24,0.0131,2.216,0.0,0.0,18.668
 1022649,5564.0,Dan Ndoye,Bologna,C,24.0,C 24-29,0.0407,2.062,0.0,3.0381,50.915
 1022843,7158.0,Luca Moro,Sassuolo,A,25.0,A 24-29,0.0115,2.1149,0.0,0.0,38.0
 1023720,,Krisztofer Horváth,Torino,,22.0,? U24,0.0169,1.6987,0.0,0.0,5.2969
-1024432,4387.0,Andrea Adorante,Parma,A,20.0,A U24,0.0195,2.3671,1.0,0.0,1.1865
+1024432,4387.0,Andrea Adorante,Parma,A,20.0,A U24,0.0195,2.3671,0.0,0.0,1.1865
 1025385,5713.0,Filippo Neri,Venezia,P,19.0,P U24,0.0135,3.6947,0.0,0.0,6.6445
 1025386,5521.0,Bruno Bertinato,Venezia,P,26.0,P 24-29,0.0115,2.3556,0.0,0.0,21.7734
 1026135,6532.0,Tajon Buchanan,Inter,C,25.0,C 24-29,0.0241,2.31,0.0,0.75,24.1875
@@ -1165,12 +1165,12 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1031127,,Thomas Battistella,Udinese,,19.0,? U24,0.0159,1.6987,0.0,0.0,9.0176
 1031128,,Karim Zedadka,Napoli,,23.0,? U24,0.0139,1.6987,0.0,0.0,17.9121
 1033125,,Issa Bah,Venezia,,19.0,? U24,0.0173,1.6987,0.0,0.0,3.7969
-1036182,5007.0,Ivan Ilic,Torino,C,25.0,C 24-29,0.0122,3.7907,22.0,1.0,115.7871
+1036182,5007.0,Ivan Ilic,Torino,C,25.0,C 24-29,0.0122,3.7907,21.0,1.0,115.7871
 1036214,6029.0,Gianluca Saro,Cremonese,P,22.0,P U24,0.012,3.6947,0.0,0.0,16.0312
 1037813,5458.0,Louis Munteanu,Fiorentina,A,19.0,A U24,0.0155,2.3671,0.0,0.0,14.3965
 1037832,,Angelo Ndrecka,Lazio,,19.0,? U24,0.0185,1.6987,0.0,0.0,0.2373
 1039220,4515.0,Kevin Agudelo,Spezia,C,24.0,C 24-29,0.0117,2.3875,0.0,0.0,37.0723
-1039403,6549.0,Santiago Pierotti,Lecce,C,25.0,C 24-29,0.0081,2.3875,12.0,0.0,75.625
+1039403,6549.0,Santiago Pierotti,Lecce,C,25.0,C 24-29,0.0081,2.3875,11.0,0.0,75.625
 1039784,,Redi Kasa,Parma,,19.0,? U24,0.0185,1.6987,0.0,0.0,0.2373
 1041508,7182.0,Corrie Ndaba,Lecce,D,26.0,D 24-29,0.0118,2.0367,0.0,0.0,38.0
 1041522,6985.0,Fali Candé,Sassuolo,D,28.0,D 24-29,0.0378,3.222,0.0,2.0,32.75
@@ -1247,7 +1247,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1091141,6048.0,Faride Alidou,Hellas Verona,C,23.0,C U24,0.0274,1.848,0.0,0.75,13.5
 1091193,6462.0,Maduka Okoye,Udinese,P,26.0,P 24-29,0.0068,2.3556,0.0,0.0,81.3125
 1091907,6629.0,Fisayo Dele-Bashiru,Lazio,C,25.0,C 24-29,0.0087,2.3875,0.0,0.0,66.5
-1093285,5449.0,Fabiano Parisi,Fiorentina,D,25.0,D 24-29,0.0125,1.7775,8.0,1.0,113.6133
+1093285,5449.0,Fabiano Parisi,Fiorentina,D,25.0,D 24-29,0.0125,1.7775,7.0,1.0,113.6133
 1093766,6222.0,Hamza Rafia,Lecce,C,26.0,C 24-29,0.0096,2.3875,0.0,0.0,55.8584
 1095432,5995.0,Charles De Ketelaere,Atalanta,A,25.0,A 24-29,0.0208,1.8477,0.0,2.125,100.7812
 1097009,,Oliver Sørensen,Parma,,24.0,? 24-29,0.0109,2.7437,0.0,0.0,38.0
@@ -1260,7 +1260,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1104266,,Stefano Piccinini,Sassuolo,,18.0,? U24,0.0168,1.6987,0.0,0.0,5.6953
 1104441,5156.0,Niels Nkounkou,Torino,D,25.0,D 24-29,0.0245,1.7775,0.0,1.0,35.0
 1105912,4945.0,Riccardo Calafiori,Bologna,D,22.0,D U24,0.0129,2.1268,0.0,0.2373,38.6807
-1106074,5833.0,Mario Gila,Lazio,D,25.0,D 24-29,0.0176,1.9282,1.0,1.5625,98.9688
+1106074,5833.0,Mario Gila,Lazio,D,25.0,D 24-29,0.0176,1.9282,0.0,1.5625,98.9688
 1106841,,Altin Kryeziu,Torino,,19.0,? U24,0.0163,1.6987,0.0,0.0,7.3564
 1106873,5420.0,Ebrima Darboe,Frosinone,C,22.0,C U24,0.0241,1.8161,0.0,0.8965,28.5029
 1106916,6212.0,Oier Zarraga,Udinese,C,27.0,C 24-29,0.0073,2.3875,0.0,0.0,87.875
@@ -1273,7 +1273,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1113694,6844.0,Jonathan Rowe,Bologna,C,23.0,C U24,0.0115,2.06,0.0,0.0,37.0
 1114138,,Lisandru Tramoni,Cagliari,,18.0,? U24,0.0184,1.6987,0.0,0.0,0.3164
 1114560,4932.0,Marco Ballarini,Udinese,D,20.0,D U24,0.0159,2.216,0.0,0.0,5.6162
-1114635,5301.0,Luis Henrique,Inter,C,24.0,C 24-29,0.0116,2.3875,4.0,0.0,38.0
+1114635,5301.0,Luis Henrique,Inter,C,24.0,C 24-29,0.0116,2.3875,3.0,0.0,38.0
 1114874,5793.0,Denso Kasius,Bologna,D,20.0,D U24,0.0142,2.216,0.0,0.0,12.7617
 1116589,4929.0,Giuseppe Ciocci,Cagliari,P,24.0,P 24-29,0.0077,2.3556,0.0,0.0,65.1992
 1116749,5718.0,Mattia Viti,Fiorentina,D,23.0,D U24,0.0201,2.2582,0.0,1.6875,75.9609
@@ -1364,7 +1364,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1183758,,Luca Stanga,Milan,,20.0,? U24,0.018,1.6987,0.0,0.0,1.5029
 1184668,,Amir Feratovic,Roma,,18.0,? U24,0.0173,1.6987,0.0,0.0,3.7969
 1185260,7240.0,Jamil Siebert,Lecce,D,24.0,D 24-29,0.0118,2.0367,0.0,0.0,38.0
-1185336,6884.0,Chico Conceicao,Juventus,C,23.0,C U24,0.0244,1.88,4.0,1.75,62.25
+1185336,6884.0,Chico Conceicao,Juventus,C,23.0,C U24,0.0244,1.88,3.0,1.75,62.25
 1186242,5289.0,Gian Crespi,Juventus,P,22.0,P U24,0.013,3.6947,0.0,0.0,9.5801
 1186440,,Reinaldo Radu,Parma,,19.0,? U24,0.0175,1.6987,0.0,0.0,3.3223
 1186446,,Nik Prelec,Sampdoria,,19.0,? U24,0.0175,1.6987,0.0,0.0,3.3223
@@ -1427,7 +1427,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1201803,,Samuele Vitale,Sassuolo,,19.0,? U24,0.0159,1.6987,0.0,0.0,9.0176
 1201833,5716.0,Suf Podgoreanu,Spezia,A,20.0,A U24,0.0149,2.3671,0.0,0.0,17.2441
 1202114,7318.0,Omri Gandelman,Lecce,C,26.0,C 24-29,0.0146,2.3875,0.0,0.0,20.0
-1202358,5526.0,Giorgio Scalvini,Atalanta,D,22.0,D U24,0.027,1.7114,1.0,3.5156,109.584
+1202358,5526.0,Giorgio Scalvini,Atalanta,D,22.0,D U24,0.027,1.7114,0.0,3.5156,109.584
 1202525,6575.0,Bryan Zaragoza,Roma,C,24.0,C 24-29,0.0337,2.3875,0.0,1.0,11.0
 1202892,6017.0,Filippo Tripi,Roma,C,20.0,C U24,0.0167,2.06,0.0,0.0,9.4922
 1203212,7022.0,Daniel Fila,Venezia,A,22.0,A U24,0.0163,2.3671,0.0,0.0,11.25
@@ -1528,7 +1528,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1286272,6418.0,Rares Burnete,Lecce,A,21.0,A U24,0.01,2.3671,0.0,0.0,49.875
 1286281,5887.0,Dorian Ciezkowski,Cremonese,P,,P 24-29,0.0151,2.3556,0.0,0.0,1.2656
 1287251,,Ed McJannett,Lecce,,21.0,? U24,0.0144,1.6987,0.0,0.0,15.75
-1288119,6717.0,Ismaël Koné,Sassuolo,C,23.0,C U24,0.0113,2.06,8.0,0.0,38.0
+1288119,6717.0,Ismaël Koné,Sassuolo,C,23.0,C U24,0.0113,2.06,7.0,0.0,38.0
 1289038,5524.0,Laurens Serpe,Genoa,D,20.0,D U24,0.0158,2.216,0.0,0.0,6.0117
 1289054,5517.0,Gerard Yepes,Sampdoria,C,20.0,C U24,0.0131,2.06,0.0,0.0,25.8398
 1289060,5528.0,Petar Zovko,Spezia,P,20.0,P U24,0.0105,3.6947,0.0,0.0,28.0547
@@ -1677,7 +1677,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1353487,,Elia Boseggia,Hellas Verona,,18.0,? U24,0.0179,1.6987,0.0,0.0,1.8984
 1354177,7276.0,Benjamín Cremaschi,Parma,C,21.0,C U24,0.0259,2.06,0.0,1.0,27.0
 1354820,7325.0,Rosen Bozhinov,Pisa,D,21.0,D U24,0.0133,2.216,0.0,0.0,18.0
-1355552,7351.0,Alisson Santos,Napoli,C,23.0,C U24,0.0153,2.06,6.0,0.0,15.0
+1355552,7351.0,Alisson Santos,Napoli,C,23.0,C U24,0.0153,2.06,5.0,0.0,15.0
 1355557,,Lado Akhalaia,Torino,,19.0,? U24,0.0184,1.6987,0.0,0.0,0.3164
 1355574,7162.0,Giovane Nascimento,Hellas Verona,A,22.0,A U24,0.0114,2.3671,0.0,0.0,38.0
 1355831,,Marco Somma,Sampdoria,,20.0,? U24,0.0178,1.6987,0.0,0.0,2.2148
@@ -1724,7 +1724,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1393976,6157.0,Lorenzo Malagrida,Sampdoria,C,19.0,C U24,0.0151,2.06,0.0,0.0,16.0312
 1393977,,Elia Tantalocchi,Sampdoria,,18.0,? U24,0.0154,1.6987,0.0,0.0,10.9688
 1394618,,Lysandros Papastylianou,Genoa,,19.0,? U24,0.0183,1.6987,0.0,0.0,0.75
-1395728,6015.0,Medon Berisha,Lecce,C,22.0,C U24,0.0173,4.295,1.0,1.0,65.2969
+1395728,6015.0,Medon Berisha,Lecce,C,22.0,C U24,0.0173,4.295,2.0,1.0,65.2969
 1395735,,Sebas Wade,Torino,,,? 24-29,0.0184,2.7437,0.0,0.0,0.4219
 1396052,,Mattia Motolese,Bologna,,,? 24-29,0.0184,2.7437,0.0,0.0,0.4219
 1396064,,Léandre Kuavita,Genoa,,19.0,? U24,0.0184,1.6987,0.0,0.0,0.5625
@@ -1751,7 +1751,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1405339,,Simone Scaglia,Juventus,,21.0,? U24,0.0119,1.6987,0.0,0.0,30.2344
 1410436,,Nikolaos Botis,Inter,,19.0,? U24,0.0158,1.6987,0.0,0.0,9.2812
 1410437,,Aleksandar Stanković,Inter,,18.0,? U24,0.0118,1.6987,0.0,0.0,30.5156
-1412132,6434.0,Kenan Yildiz,Juventus,A,21.0,A U24,0.0073,2.3671,6.0,0.0,87.875
+1412132,6434.0,Kenan Yildiz,Juventus,A,21.0,A U24,0.0073,2.3671,5.0,0.0,87.875
 1412706,,Francesco Raffaelli,Bologna,,17.0,? U24,0.0172,1.6987,0.0,0.0,4.2188
 1412942,6244.0,Alan Matturro,Genoa,D,20.0,D U24,0.0305,2.8206,0.0,2.2236,48.1025
 1412943,,Lorenzo Anghele,Juventus,,20.0,? U24,0.018,1.6987,0.0,0.0,1.75
@@ -1790,7 +1790,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1432807,,Thomas Gillier,Bologna,,19.0,? U24,0.0294,1.6286,0.0,0.7119,4.2715
 1434430,6254.0,Joselito,Hellas Verona,C,19.0,C U24,0.0156,2.06,0.0,0.0,13.6406
 1434461,,Velizar Iliya Iliev,Cagliari,,20.0,? U24,0.0106,1.6987,0.0,0.0,40.1875
-1434889,6967.0,Assane Diao,Como,A,20.0,A U24,0.0672,3.0829,4.0,5.0,39.25
+1434889,6967.0,Assane Diao,Como,A,20.0,A U24,0.0672,3.0829,3.0,5.0,39.25
 1435445,7254.0,Lorran,Pisa,C,19.0,C U24,0.0119,2.06,0.0,0.0,34.0
 1435689,7199.0,Semih Kiliçsoy,Cagliari,A,20.0,A U24,0.0115,2.3671,0.0,0.0,37.0
 1435833,7345.0,Adrian Przyborek,Lazio,C,19.0,C U24,0.0153,2.06,0.0,0.0,15.0
@@ -1862,7 +1862,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1504804,,Charlys,Hellas Verona,,21.0,? U24,0.0134,1.6987,0.0,0.0,20.6875
 1507697,6537.0,Saba Goglichidze,Udinese,D,21.0,D U24,0.0172,2.162,0.0,1.0,58.625
 1508735,,Ayanda Sishuba,Hellas Verona,,19.0,? U24,0.0147,1.6987,0.0,0.0,14.25
-1511063,7260.0,Jan Ziólkowski,Roma,D,20.0,D U24,0.0107,2.216,4.0,0.0,36.0
+1511063,7260.0,Jan Ziólkowski,Roma,D,20.0,D U24,0.0107,2.216,3.0,0.0,36.0
 1515130,,Clinton Nsiala,Milan,,19.0,? U24,0.018,1.6987,0.0,0.0,1.6875
 1515132,7025.0,Hugo Cuenca,Genoa,C,21.0,C U24,0.0986,1.8962,0.0,8.0049,41.0664
 1518451,6870.0,Mikayil Faye,Cremonese,D,21.0,D U24,0.0339,2.1296,0.0,2.0,31.0
@@ -1891,7 +1891,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1531814,6411.0,Mateus Lusuardi,Pisa,D,22.0,D U24,0.0406,2.6414,0.0,2.6875,33.4375
 1532142,6509.0,Tito Gasperini,Bologna,P,17.0,P U24,0.0138,3.6947,0.0,0.0,5.0625
 1532181,,Saná Fernandes,Lazio,,19.0,? U24,0.0143,1.6987,0.0,0.0,16.0625
-1532261,7272.0,Idrissa Gueye,Udinese,A,19.0,A U24,0.0118,2.3671,14.0,0.0,35.0
+1532261,7272.0,Idrissa Gueye,Udinese,A,19.0,A U24,0.0118,2.3671,13.0,0.0,35.0
 1532671,,Bor Zunec,Udinese,,18.0,? U24,0.0184,1.6987,0.0,0.0,0.5625
 1536103,,Siren Diao,Hellas Verona,,18.0,? U24,0.0159,1.6987,0.0,0.0,9.0
 1553461,,Alessandro Scacchetti,Sassuolo,,19.0,? U24,0.0136,1.6987,0.0,0.0,19.6875
@@ -1923,7 +1923,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1589695,,Riccardo Arboscello,Genoa,,18.0,? U24,0.0184,1.6987,0.0,0.0,0.5625
 1591993,6872.0,Alberto Manzoni,Atalanta,C,19.0,C U24,0.0188,2.06,0.0,0.0,2.8125
 1592431,,Federico Chinetti,Como,,19.0,? U24,0.0159,1.6987,0.0,0.0,9.0
-1593861,6678.0,Mattia Liberali,Milan,C,17.0,C U24,0.0173,2.06,1.0,0.0,7.5
+1593861,6678.0,Mattia Liberali,Milan,C,17.0,C U24,0.0173,2.06,0.0,0.0,7.5
 1593871,,Matteo Dutu,Milan,,20.0,? U24,0.0179,1.6987,0.0,0.0,2.0
 1594898,,Paolo Vismara,Atalanta,,21.0,? U24,0.0177,1.6987,0.0,0.0,2.4375
 1595629,7211.0,Zachary Athekame,Milan,D,21.0,D U24,0.0105,2.216,0.0,0.0,38.0
@@ -1960,7 +1960,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1639458,,Fallou Sene,Fiorentina,,19.0,? U24,0.0184,1.6987,0.0,0.0,0.5625
 1640961,6612.0,Alessandro Dellavalle,Torino,D,20.0,D U24,0.0163,2.216,0.0,0.0,3.75
 1641041,7036.0,Darryl Bakola,Sassuolo,C,18.0,C U24,0.0156,2.06,0.0,0.0,14.0
-1642351,7069.0,Niccolò Fortini,Fiorentina,D,20.0,D U24,0.0103,2.216,2.0,0.0,40.0625
+1642351,7069.0,Niccolò Fortini,Fiorentina,D,20.0,D U24,0.0103,2.216,0.0,0.0,40.0625
 1642393,6813.0,Lorenzo Torriani,Milan,P,21.0,P U24,0.0076,3.6947,0.0,0.0,64.625
 1642673,,Niccolò Guccione,Salernitana,,18.0,? U24,0.0178,1.6987,0.0,0.0,2.25
 1642674,,Gerardo Fusco,Salernitana,,19.0,? U24,0.0178,1.6987,0.0,0.0,2.25
@@ -1987,14 +1987,14 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1667018,,Jonas Harder,Fiorentina,,19.0,? U24,0.0167,1.6987,0.0,0.0,6.0
 1667019,,Augusto Owusu,Juventus,,19.0,? U24,0.018,1.6987,0.0,0.0,1.5
 1667023,,Matteo Fuscaldo,Juventus,,20.0,? U24,0.0162,1.6987,0.0,0.0,8.0
-1668219,7125.0,Riyad Idrissi,Cagliari,D,20.0,D U24,0.0117,2.216,4.0,0.0,28.0
+1668219,7125.0,Riyad Idrissi,Cagliari,D,20.0,D U24,0.0117,2.216,3.0,0.0,28.0
 1668225,,Dachi Lordkipanidze,Cremonese,,20.0,? U24,0.0134,1.6987,0.0,0.0,21.0
 1668343,,Dario Daka,Lecce,,20.0,? U24,0.0178,1.6987,0.0,0.0,2.25
 1668963,6834.0,Federico Cassa,Atalanta,C,19.0,C U24,0.0145,2.06,0.0,0.0,18.75
 1668964,,Pietro Tornaghi,Atalanta,,18.0,? U24,0.018,1.6987,0.0,0.0,1.5
 1668965,,Dominic Vavassori,Atalanta,,20.0,? U24,0.0106,1.6987,0.0,0.0,40.75
 1669441,7136.0,Christ-Owen Kouassi,Lecce,D,22.0,D U24,0.0126,2.216,0.0,0.0,22.0
-1669628,6822.0,Jeff Ekhator,Genoa,A,19.0,A U24,0.0087,2.3671,4.0,0.0,65.5
+1669628,6822.0,Jeff Ekhator,Genoa,A,19.0,A U24,0.0087,2.3671,3.0,0.0,65.5
 1669629,6916.0,Honest Ahanor,Atalanta,D,18.0,D U24,0.0549,2.5195,0.0,5.9062,68.4014
 1669633,,Leonardo Baroncelli,Fiorentina,,19.0,? U24,0.0161,1.6987,0.0,0.0,8.25
 1669644,,Lorenzo Tosto,Empoli,,19.0,? U24,0.0121,1.6987,0.0,0.0,28.5
@@ -2051,7 +2051,7 @@ fotmob_id,fc_id,name,team,role,age,group,injuryRisk,injuryGames,injuredFor,spell
 1705134,6981.0,Robinio Vaz,Roma,A,19.0,A U24,0.0299,2.0253,0.0,1.0,17.0
 1705649,,Alessando Romano,Roma,,19.0,? U24,0.017,1.6987,0.0,0.0,4.75
 1705698,,Giacomo Maucci,Pisa,,18.0,? U24,0.0141,1.6987,0.0,0.0,17.0
-1707510,6980.0,Lorenzo Venturino,Genoa,C,19.0,C U24,0.0098,2.06,3.0,0.0,51.5
+1707510,6980.0,Lorenzo Venturino,Genoa,C,19.0,C U24,0.0098,2.06,2.0,0.0,51.5
 1708103,,Demyan Yesin,Torino,,17.0,? U24,0.0178,1.6987,0.0,0.0,2.25
 1708305,,Ank Asmussen,Empoli,,19.0,? U24,0.0155,1.6987,0.0,0.0,10.5
 1709028,,Alessio Marcaccini,Roma,,16.0,? U24,0.0167,1.6987,0.0,0.0,6.0

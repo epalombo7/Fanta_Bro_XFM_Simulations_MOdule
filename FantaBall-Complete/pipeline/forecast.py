@@ -1,7 +1,7 @@
 """Weekly forecast: build the current league from the data (rounds played so far count), simulate the rest of
 the season (module 1, saved to data/sim/, last 10 kept), score it under the standard rules (module 2), save the forecast
 table, and hand the league to the app (mobile/assets/league.js). No backtest."""
-import datetime, json, pathlib
+import subprocess, datetime, json, pathlib
 import pandas as pd
 import calibrate as C
 import backtest as B
@@ -62,6 +62,9 @@ def main(n=SIMULATIONS):
     out = out.sort_values('expected', ascending=False).round(3)
     stamp = str(datetime.date.today())
     out.to_csv(d / f'xfm_{stamp}.csv', index=False); out.to_csv(d / 'xfm_latest.csv', index=False)
+    # Next matchday only: correlations across 15,000 draws of that one round (teammates and the two opposing clubs)
+    subprocess.run(['node', '--max-old-space-size=8000', str(pathlib.Path(__file__).parent / 'match_correlations.js'), str(APP),
+                    str(d / 'correlation_next_match.json'), str(n)], check=True)
     print(f'forecast {CURRENT} after round {played}: {len(out)} players, rounds left {38 - played}')
     print(out.groupby('role').head(3)[['name', 'team', 'role', 'xfm', 'rated', 'expected']].to_string(index=False))
 
