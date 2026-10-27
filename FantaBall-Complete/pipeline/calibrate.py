@@ -10,7 +10,7 @@ backtest (past seasons, as_of_round=0). Output matches engine.js simulate(config
   fixtures  38 rounds of [home, away] team indices
   model     calibrated MODEL overrides (goals, home edge, penalties, subs, cards, vote model per provider)
 """
-import glob, json, os, re
+import glob, json, math, os, re
 import numpy as np
 import pandas as pd
 from common import SEASONS, CURRENT, RAW, DATA
@@ -77,11 +77,25 @@ def history(season, as_of_round=0):
     return w
 
 
+# Bootstrap: with a seed set, every past matchday (season, round) gets a Poisson(1) weight, the same for every table
+# (results, votes, lineups), so each refit sees a resampled history with matchdays kept whole.
+BOOT = None
+
+
+def boot_factor(seasons, rounds):
+    if BOOT is None:
+        return np.ones(len(seasons))
+    keys = pd.Series([f'{BOOT}|{a}|{int(b)}' for a, b in zip(seasons, rounds)])
+    u = (pd.util.hash_pandas_object(keys, index=False).values >> np.uint64(11)).astype(float) / 2.0 ** 53   # uniform, fixed per matchday
+    cdf = np.cumsum([np.exp(-1) / math.factorial(k) for k in range(12)])
+    return np.searchsorted(cdf, u).astype(float)                                                          # Poisson(1) count
+
+
 def in_history(df, season, as_of_round, w):
     keep = df.season.isin([s for s in w if s != season]) | ((df.season == season) & (df['round'] <= as_of_round))
     d = df[keep].copy()
-    d['w'] = d.season.map(w)
-    return d
+    d['w'] = d.season.map(w) * boot_factor(d.season, d['round'])
+    return d[d.w > 0]
 
 
 # ---------------------------------------------------------------- teams and calendar
@@ -105,6 +119,8 @@ def team_strength(season, as_of_round, w, teams):
     if as_of_round > 0:          # current season: matches already played, by date order within the season
         cur = fd[fd.Season == season].copy(); cur['w'] = TEAM_CURRENT_W
         d = pd.concat([d, cur.iloc[:as_of_round * 10]])
+    d['rnd'] = d.groupby('Season').cumcount() // 10 + 1                   # matchday by date order (10 matches each)
+    d['w'] = d.w * boot_factor(d.Season, d.rnd); d = d[d.w > 0]
     names = sorted(set(d.HomeTeam) | set(d.AwayTeam) | set(teams))
     k = {t: i for i, t in enumerate(names)}; n = len(names)
     rows, y, wt = [], [], []

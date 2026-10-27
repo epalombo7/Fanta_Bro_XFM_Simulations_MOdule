@@ -178,7 +178,12 @@ function runSeason(c,opts={}){
   let D=Math.min(N,255,opts.detailWorlds??100),detail=new Uint8Array(D?1<<20:0),nRows=0,ri=0,w=0,ws=0,rec=false;
   const mdA=i=>(i*R+ri)*MF,row16=()=>{if((nRows+1)*DETAIL_BYTES>detail.length){let d=new Uint8Array(detail.length*2);d.set(detail);detail=d}return nRows++*DETAIL_BYTES};
   let roster=teams.map(()=>[]);players.forEach((p,i)=>roster[p.team].push(i));
-  let gkOrder=roster.map(ix=>ix.filter(i=>players[i].role==='P').sort((x,y)=>players[y].start-players[x].start)); // keeper pecking order
+  const order=()=>roster.map(ix=>ix.filter(i=>players[i].role==='P').sort((x,y)=>players[y].start-players[x].start));
+  let gkOrder=order(); // keeper pecking order
+  // Bootstrap: opts.replicates = leagues refitted on resampled history (same players and clubs, same order);
+  // world w uses replicate w % K, so parameter uncertainty comes from the data instead of teamSd / playerSd
+  const reps=(opts.replicates||[]).map(L=>{if(L.players.length!==P||L.players.some((p,i)=>p.id!==players[i].id))throw Error('Bootstrap replicate has different players');
+    let m=merge(merge(MODEL,opts.model||{}),L.model||{});return{teams:L.teams,players:L.players,M:m,VP:PROVIDERS.map(pr=>merge(m.vote,(m.voteByProvider||{})[pr]||{}))}});
   // Per-world state
   let injured=new Int16Array(P),banned=new Int8Array(P),yellows=new Int16Array(P),q=new Float64Array(P),att=new Float64Array(T),def=new Float64Array(T);
   let mins=new Float64Array(P),g=new Int16Array(P),a=new Int16Array(P),yel=new Int8Array(P),red=new Int8Array(P),starter=new Int8Array(P);
@@ -272,6 +277,7 @@ function runSeason(c,opts={}){
 
   for(w=0;w<burnIn+N;w++){
     rec=w>=burnIn;ws=w-burnIn;
+    if(reps.length){let b=reps[w%reps.length];teams=b.teams;players=b.players;M=b.M;VP=b.VP;gkOrder=order()}
     // per-world strength uncertainty, mean-preserving (log-normal with mean 1) unless teamSdMeanFix is off
     let tc=M.teamSdMeanFix?Math.exp(-M.teamSd*M.teamSd/2):1;
     teams.forEach((t,k)=>{att[k]=t.att*tc*Math.exp(normal(r)*M.teamSd);def[k]=t.def*tc*Math.exp(normal(r)*M.teamSd)});

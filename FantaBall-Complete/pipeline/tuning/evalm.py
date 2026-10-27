@@ -20,8 +20,9 @@ def metrics(df):
         gv = g[g.rated]; m[f'brier_{r}'] = ((g.p - g.rated) ** 2).mean(); m[f'fvmae_{r}'] = (gv.xfm - gv.fv).abs().mean(); m[f'fvbias_{r}'] = (gv.xfm - gv.fv).mean()
         m[f'pbias_{r}'] = (g.p - g.rated).mean()
     return m
-def run(tag, st, label, ov=None, engine=ENGINE, keep=False):
+def run(tag, st, label, ov=None, engine=ENGINE, keep=False, only=None):
     files = sorted(str(f) for f in (CACHE / tag / st).glob('*.json'))
+    if only: files = [f for f in files if pathlib.Path(f).stem in only]
     shards = [files[i::4] for i in range(4)]
     with tempfile.TemporaryDirectory() as d:
         d = pathlib.Path(d); ovf = d / 'ov.json'; ovf.write_text(json.dumps(ov or {}))
