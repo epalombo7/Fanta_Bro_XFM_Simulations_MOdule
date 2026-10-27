@@ -1,0 +1,5 @@
+,points per matchday,season total (mean),season total (P10),season total (P90),model beats it: matchdays,model beats it: seasons,model gain per matchday
+model,66.0727,2510.7615,2339.15,2652.05,,,
+model_xfm,63.8179,2425.081,2206.5,2617.6,0.6162,0.875,2.2548
+form,65.5866,2492.2905,2327.5,2630.55,0.5276,0.678,0.4861
+random,57.4534,2183.2285,1969.95,2379.5,0.8413,1.0,8.6193
