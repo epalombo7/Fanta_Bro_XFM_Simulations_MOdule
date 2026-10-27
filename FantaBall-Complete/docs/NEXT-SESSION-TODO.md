@@ -59,6 +59,11 @@ State at the end of the session on 25 October 2026 (branch `claude/confident-gal
   goal rates toward the role average more for high scorers, then re-check the slope. Keepers: model ignores the win effect
   (own attack +10% → real +0.047, model 0).
 
+- [x] **Bootstrap (27 Oct)**: each forecast refits the model on 20 matchday-resampled histories (Poisson weights per
+  matchday, `calibrate.bootstrap_leagues`); each simulated season uses one refit, replacing the guessed per-world team /
+  player wobble. Backtest (30 rounds, 2021-24): Brier 0.1674 → 0.1668, points RMSE 2.686 → 2.682, ranking 0.549 → 0.551.
+  Injuries (FotMob model) are not resampled yet.
+
 ## 26 Oct tuning loop (stopped after 3 tries in a row without gain; log: `data/backtest/tuning_results.csv`, harness: `pipeline/tuning/`)
 
 Tuned on 2021-22 to 2023-24, checked on 2024-25 and 2025-26.

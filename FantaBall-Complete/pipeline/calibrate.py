@@ -446,3 +446,27 @@ if __name__ == '__main__':
     rnd = int(sys.argv[2]) if len(sys.argv) > 2 else 0
     lg = build_league(season, rnd, verbose=True)
     print(json.dumps(lg['model'], indent=1)[:1500])
+
+
+# ---------------------------------------------------------------- bootstrap refits
+BOOT_K = 20     # refits per forecast; each simulated season uses one of them
+
+
+def _boot_one(a):
+    season, as_of_round, k = a
+    global BOOT
+    BOOT = k + 1
+    import io, contextlib
+    with contextlib.redirect_stdout(io.StringIO()):
+        lg = build_league(season, as_of_round)
+    BOOT = None
+    # parameter uncertainty now comes from the refits: no extra per-world wobble on team strength or player rates
+    lg['model'].update({'teamSd': 0, 'playerSd': 0})
+    return lg
+
+
+def bootstrap_leagues(season, as_of_round, k=BOOT_K, workers=4):
+    """k leagues, each calibrated on the history resampled by matchday (Poisson weights)."""
+    import multiprocessing as mp
+    with mp.Pool(workers) as p:
+        return p.map(_boot_one, [(season, as_of_round, i) for i in range(k)], chunksize=1)

@@ -51,7 +51,10 @@ def main(n=SIMULATIONS):
     sim_dir = DATA / 'sim'; sim_dir.mkdir(exist_ok=True)
     season_file = sim_dir / f'season_{CURRENT}_after_round_{played}.fbsim.br'
     d = DATA / 'forecasts'; d.mkdir(exist_ok=True)
-    B.run_season(lg, season_file, summary=d / 'matchday_simulation_latest.csv.gz', n=n, burn_in=BURN_IN, detail=DETAIL)   # module 1's matchday table
+    # Bootstrap: the history resampled by matchday and the model refitted BOOT_K times; each simulated season uses one refit
+    reps = C.bootstrap_leagues(CURRENT, played)
+    (d / 'bootstrap_leagues.json').write_text(json.dumps(reps, separators=(',', ':')))   # also used by the next-match correlations
+    B.run_season(lg, season_file, summary=d / 'matchday_simulation_latest.csv.gz', n=n, burn_in=BURN_IN, detail=DETAIL, replicates=reps)   # module 1's matchday table
     (sim_dir / 'season_latest.fbsim.br').write_bytes(season_file.read_bytes())   # identical content: stored once by git
     prune_season_files(sim_dir)
     # Module 2: xFM under the standard rules (any league's rules: pipeline/score_season.js)
@@ -64,7 +67,8 @@ def main(n=SIMULATIONS):
     out.to_csv(d / f'xfm_{stamp}.csv', index=False); out.to_csv(d / 'xfm_latest.csv', index=False)
     # Next matchday only: correlations across 15,000 draws of that one round (teammates and the two opposing clubs)
     subprocess.run(['node', '--max-old-space-size=8000', str(pathlib.Path(__file__).parent / 'match_correlations.js'), str(APP),
-                    str(d / 'correlation_next_match.json'), str(n)], check=True)
+                    str(d / 'correlation_next_match.json'), str(n), str(d / 'bootstrap_leagues.json')], check=True)
+    (d / 'bootstrap_leagues.json').unlink()
     print(f'forecast {CURRENT} after round {played}: {len(out)} players, rounds left {38 - played}')
     print(out.groupby('role').head(3)[['name', 'team', 'role', 'xfm', 'rated', 'expected']].to_string(index=False))
 

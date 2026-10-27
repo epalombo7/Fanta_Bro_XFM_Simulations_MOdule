@@ -70,12 +70,14 @@ def benchmarks(season, roster):
     return out
 
 
-def run_season(league, season_file, summary=None, n=None, burn_in=0, detail=None):
+def run_season(league, season_file, summary=None, n=None, burn_in=0, detail=None, replicates=None):
     """Module 1: simulate burn_in + n seasons, save the last n to the season file (rules-independent);
     optionally the per-player per-matchday summary table as CSV."""
     with tempfile.TemporaryDirectory() as d:
         lf = pathlib.Path(d) / 'league.json'; lf.write_text(json.dumps(league))
         extra = (['--summary', str(summary)] if summary else []) + ['--burn-in', str(burn_in)] + (['--detail', str(detail)] if detail else [])
+        if replicates:
+            rf = pathlib.Path(d) / 'boot.json'; rf.write_text(json.dumps(replicates)); extra += ['--replicates', str(rf)]
         out = subprocess.run(['node', '--max-old-space-size=12000', str(HERE / 'run_season.js'), str(lf), str(CONFIG['rounds']), str(n or N), str(season_file), *extra],
                              check=True, capture_output=True, text=True)
         print(out.stdout.strip())
