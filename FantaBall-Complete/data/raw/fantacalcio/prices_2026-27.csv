@@ -1,324 +1,329 @@
 season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_mantra,qa_mantra,fvm_mantra
-2026-27,5585,Malen,roma,malen,ROM,A,pc,34.0,35.0,415.0,34.0,35.0,415.0
-2026-27,2764,Martinez L.,inter,martinez-l,INT,A,pc,35.0,34.0,375.0,35.0,34.0,375.0
-2026-27,4871,Thuram,inter,thuram,INT,A,pc,29.0,34.0,330.0,29.0,34.0,330.0
-2026-27,2194,Calhanoglu,inter,calhanoglu,INT,C,m|c,27.0,29.0,215.0,28.0,30.0,245.0
-2026-27,6875,Paz N.,como,paz-n,COM,C,t|a,30.0,28.0,235.0,28.0,26.0,235.0
-2026-27,2379,Rabiot,milan,rabiot,MIL,C,c|t,22.0,27.0,200.0,22.0,27.0,200.0
+2026-27,5585,Malen,roma,malen,ROM,A,pc,34.0,36.0,415.0,34.0,36.0,415.0
+2026-27,2764,Martinez L.,inter,martinez-l,INT,A,pc,35.0,34.0,355.0,35.0,34.0,355.0
+2026-27,4871,Thuram,inter,thuram,INT,A,pc,29.0,34.0,335.0,29.0,34.0,335.0
+2026-27,6875,Paz N.,como,paz-n,COM,C,t|a,30.0,30.0,235.0,28.0,28.0,235.0
+2026-27,2194,Calhanoglu,inter,calhanoglu,INT,C,m|c,27.0,29.0,210.0,28.0,30.0,240.0
 2026-27,7017,Douvikas,como,douvikas,COM,A,pc,20.0,26.0,150.0,20.0,26.0,150.0
-2026-27,254,Dimarco,inter,dimarco,INT,D,e|w,32.0,26.0,170.0,30.0,24.0,170.0
-2026-27,2423,Pulisic,milan,pulisic,MIL,C,t|a,25.0,26.0,163.0,23.0,25.0,163.0
+2026-27,2379,Rabiot,milan,rabiot,MIL,C,c|t,22.0,26.0,195.0,22.0,26.0,195.0
+2026-27,2423,Pulisic,milan,pulisic,MIL,C,t|a,25.0,25.0,155.0,23.0,24.0,155.0
+2026-27,6052,Hojlund,napoli,hojlund,NAP,A,pc,28.0,25.0,210.0,28.0,25.0,210.0
 2026-27,6435,Krstovic,atalanta,krstovic,ATA,A,pc,18.0,24.0,170.0,17.0,23.0,170.0
-2026-27,4777,McTominay,napoli,mctominay,NAP,C,c|t,28.0,24.0,141.0,28.0,24.0,141.0
-2026-27,6052,Hojlund,napoli,hojlund,NAP,A,pc,28.0,24.0,200.0,28.0,24.0,200.0
-2026-27,6397,Ramos G.,milan,ramos-g,MIL,A,pc,27.0,22.0,200.0,27.0,22.0,200.0
-2026-27,2167,Orsolini,bologna,orsolini,BOL,C,w|a,26.0,21.0,125.0,25.0,20.0,125.0
-2026-27,7126,Baturina,como,baturina,COM,C,t,19.0,20.0,160.0,18.0,19.0,160.0
-2026-27,1870,Barella,inter,barella,INT,C,c,17.0,20.0,70.0,17.0,20.0,70.0
-2026-27,5951,Kolo Muani,juventus,kolo-muani,JUV,A,pc,26.0,20.0,100.0,26.0,20.0,100.0
-2026-27,632,Zaccagni,lazio,zaccagni,LAZ,C,w|a,16.0,20.0,115.0,15.0,19.0,115.0
-2026-27,2517,De Bruyne,napoli,de-bruyne,NAP,C,t,15.0,20.0,90.0,14.0,19.0,90.0
-2026-27,6752,Woltemade,juventus,woltemade,JUV,A,a,23.0,20.0,44.0,23.0,20.0,44.0
-2026-27,2097,Kean,como,kean,COM,A,pc,25.0,19.0,75.0,25.0,19.0,72.0
-2026-27,7071,Esposito F.P.,inter,esposito-f-p,INT,A,pc,16.0,19.0,100.0,16.0,19.0,100.0
-2026-27,2788,Bremer,juventus,bremer,JUV,D,dc,15.0,19.0,73.0,15.0,19.0,73.0
-2026-27,7556,Mora,roma,mora,ROM,C,t,19.0,19.0,35.0,18.0,18.0,35.0
+2026-27,254,Dimarco,inter,dimarco,INT,D,e|w,32.0,24.0,150.0,30.0,23.0,150.0
+2026-27,4777,McTominay,napoli,mctominay,NAP,C,c|t,28.0,23.0,150.0,28.0,23.0,150.0
+2026-27,7126,Baturina,como,baturina,COM,C,t,19.0,22.0,160.0,18.0,21.0,160.0
+2026-27,2517,De Bruyne,napoli,de-bruyne,NAP,C,t,15.0,22.0,120.0,14.0,21.0,120.0
+2026-27,632,Zaccagni,lazio,zaccagni,LAZ,C,w|a,16.0,21.0,115.0,15.0,21.0,115.0
+2026-27,7556,Mora,roma,mora,ROM,C,t,19.0,21.0,35.0,18.0,20.0,35.0
+2026-27,2167,Orsolini,bologna,orsolini,BOL,C,w|a,26.0,20.0,125.0,25.0,19.0,125.0
+2026-27,7071,Esposito F.P.,inter,esposito-f-p,INT,A,pc,16.0,20.0,90.0,16.0,20.0,87.0
+2026-27,6397,Ramos G.,milan,ramos-g,MIL,A,pc,27.0,20.0,180.0,27.0,20.0,180.0
+2026-27,1870,Barella,inter,barella,INT,C,c,17.0,19.0,63.0,17.0,19.0,63.0
+2026-27,5951,Kolo Muani,juventus,kolo-muani,JUV,A,pc,26.0,19.0,80.0,26.0,19.0,77.0
+2026-27,5734,Soulè,roma,soul&#xE8;,ROM,A,a,12.0,19.0,80.0,13.0,20.0,80.0
+2026-27,6752,Woltemade,juventus,woltemade,JUV,A,a,23.0,19.0,36.0,23.0,19.0,38.0
+2026-27,2097,Kean,como,kean,COM,A,pc,25.0,18.0,75.0,25.0,18.0,72.0
+2026-27,7472,Calò,frosinone,cal&#xF2;,FRO,C,m|c,7.0,18.0,75.0,8.0,19.0,85.0
+2026-27,5436,Raimondo,frosinone,raimondo,FRO,A,pc,7.0,18.0,102.0,6.0,17.0,102.0
+2026-27,2788,Bremer,juventus,bremer,JUV,D,dc,15.0,18.0,65.0,15.0,18.0,65.0
 2026-27,4510,Leao,milan,leao,MIL,A,a,18.0,18.0,75.0,19.0,19.0,75.0
-2026-27,5841,Svilar,roma,svilar,ROM,P,por,18.0,18.0,75.0,18.0,18.0,75.0
-2026-27,7181,Wesley,roma,wesley,ROM,D,e,17.0,18.0,84.0,16.0,18.0,84.0
-2026-27,5734,Soulè,roma,soul&#xE8;,ROM,A,a,12.0,18.0,80.0,13.0,19.0,80.0
-2026-27,531,Berardi,sassuolo,berardi,SAS,A,a,18.0,18.0,95.0,19.0,19.0,95.0
-2026-27,2137,Scamacca,atalanta,scamacca,ATA,A,pc,19.0,17.0,70.0,18.0,16.0,67.0
-2026-27,6434,Yildiz,juventus,yildiz,JUV,A,a,23.0,17.0,60.0,24.0,17.0,60.0
+2026-27,7523,Varela G.,monza,varela-g,MON,A,pc,3.0,18.0,125.0,3.0,18.0,125.0
+2026-27,531,Berardi,sassuolo,berardi,SAS,A,a,18.0,18.0,95.0,19.0,17.0,95.0
+2026-27,4463,Esposito Se.,sassuolo,esposito-se,SAS,A,a,13.0,17.0,38.0,14.0,18.0,38.0
+2026-27,6869,Ramon,como,ramon,COM,D,dc,10.0,17.0,41.0,10.0,17.0,41.0
+2026-27,5841,Svilar,roma,svilar,ROM,P,por,18.0,17.0,75.0,18.0,17.0,75.0
+2026-27,7181,Wesley,roma,wesley,ROM,D,e,17.0,17.0,84.0,16.0,17.0,84.0
 2026-27,309,Dybala,roma,dybala,ROM,A,a,14.0,17.0,96.0,15.0,18.0,96.0
 2026-27,2061,Simeone,torino,simeone,TOR,A,pc,15.0,17.0,73.0,15.0,17.0,70.0
-2026-27,5637,Davis K.,udinese,davis-k,UDI,A,pc,19.0,17.0,92.0,19.0,17.0,89.0
-2026-27,6372,Moreira,milan,moreira,MIL,C,e|w,12.0,17.0,65.0,12.0,17.0,67.0
-2026-27,5559,Da Cunha,como,da-cunha,COM,C,c|t,18.0,16.0,50.0,18.0,16.0,50.0
-2026-27,7472,Calò,frosinone,cal&#xF2;,FRO,C,m|c,7.0,16.0,75.0,8.0,17.0,85.0
-2026-27,5436,Raimondo,frosinone,raimondo,FRO,A,pc,7.0,16.0,102.0,6.0,15.0,102.0
-2026-27,152,Zielinski,inter,zielinski,INT,C,c,10.0,16.0,50.0,10.0,16.0,50.0
+2026-27,7078,Mastantuono,fiorentina,mastantuono,FIO,C,w|t,12.0,17.0,71.0,12.0,17.0,71.0
+2026-27,7551,Schmid,frosinone,schmid,FRO,C,w|t,8.0,17.0,60.0,8.0,17.0,60.0
+2026-27,2137,Scamacca,atalanta,scamacca,ATA,A,pc,19.0,16.0,70.0,18.0,15.0,67.0
+2026-27,5877,Carlos Augusto,inter,carlos-augusto,INT,D,b|ds|e,7.0,16.0,47.0,8.0,16.0,50.0
+2026-27,152,Zielinski,inter,zielinski,INT,C,c,10.0,16.0,43.0,10.0,16.0,43.0
+2026-27,6434,Yildiz,juventus,yildiz,JUV,A,a,23.0,16.0,60.0,24.0,16.0,60.0
 2026-27,6482,Mandas,lazio,mandas,LAZ,P,por,9.0,16.0,60.0,9.0,16.0,60.0
-2026-27,7523,Varela G.,monza,varela-g,MON,A,pc,3.0,16.0,125.0,3.0,16.0,125.0
+2026-27,7314,Taylor K.,lazio,taylor-k,LAZ,C,c|t,13.0,16.0,43.0,13.0,16.0,43.0
+2026-27,6398,Isaksen,lazio,isaksen,LAZ,C,w|a,9.0,16.0,36.0,8.0,15.0,36.0
+2026-27,6556,Noslin,lazio,noslin,LAZ,A,a,6.0,16.0,48.0,6.0,16.0,48.0
+2026-27,536,Politano,napoli,politano,NAP,C,w,10.0,16.0,52.0,9.0,15.0,52.0
+2026-27,6646,Adams C.,torino,adams-c,TOR,A,a,9.0,16.0,36.0,10.0,17.0,36.0
 2026-27,6684,Ekkelenkamp,udinese,ekkelenkamp,UDI,C,c|t,10.0,16.0,72.0,10.0,16.0,72.0
-2026-27,7078,Mastantuono,fiorentina,mastantuono,FIO,C,w|t,12.0,16.0,71.0,12.0,16.0,71.0
-2026-27,7551,Schmid,frosinone,schmid,FRO,C,w|t,8.0,16.0,60.0,8.0,16.0,60.0
-2026-27,4431,Carnesecchi,atalanta,carnesecchi,ATA,P,por,16.0,15.0,40.0,16.0,15.0,40.0
-2026-27,4463,Esposito Se.,sassuolo,esposito-se,SAS,A,a,13.0,15.0,38.0,14.0,16.0,38.0
-2026-27,6869,Ramon,como,ramon,COM,D,dc,10.0,15.0,41.0,10.0,15.0,41.0
-2026-27,6217,Bisseck,inter,bisseck,INT,D,dc,11.0,15.0,34.0,11.0,15.0,34.0
-2026-27,5877,Carlos Augusto,inter,carlos-augusto,INT,D,b|ds|e,7.0,15.0,45.0,8.0,15.0,47.0
-2026-27,2848,Frattesi,lazio,frattesi,LAZ,C,c|t,7.0,15.0,112.0,7.0,15.0,112.0
-2026-27,6884,Conceicao,juventus,conceicao,JUV,C,w|a,12.0,15.0,60.0,11.0,14.0,60.0
-2026-27,4312,Maignan,milan,maignan,MIL,P,por,15.0,15.0,55.0,15.0,15.0,55.0
-2026-27,6572,Castro S.,roma,castro-s,ROM,A,pc,14.0,15.0,35.0,13.0,14.0,32.0
-2026-27,6646,Adams C.,torino,adams-c,TOR,A,a,9.0,15.0,36.0,10.0,15.0,36.0
+2026-27,5637,Davis K.,udinese,davis-k,UDI,A,pc,19.0,16.0,92.0,19.0,16.0,89.0
+2026-27,7554,Romero D.,parma,romero-d,PAR,A,pc,10.0,16.0,40.0,10.0,16.0,37.0
+2026-27,6372,Moreira,milan,moreira,MIL,C,e|w,12.0,16.0,57.0,12.0,16.0,60.0
+2026-27,4896,Maldini,cagliari,maldini,CAG,A,t|a,5.0,15.0,55.0,6.0,16.0,55.0
+2026-27,5995,De Ketelaere,atalanta,de-ketelaere,ATA,A,a,17.0,15.0,59.0,18.0,16.0,59.0
+2026-27,4734,Miranda J.,bologna,miranda-j,BOL,D,ds|e,8.0,15.0,30.0,8.0,15.0,30.0
+2026-27,184,Bernardeschi,bologna,bernardeschi,BOL,C,w|t,9.0,15.0,40.0,9.0,15.0,40.0
+2026-27,5559,Da Cunha,como,da-cunha,COM,C,c|t,18.0,15.0,50.0,18.0,15.0,50.0
+2026-27,6531,Jimenez A.,fiorentina,jimenez-a,FIO,D,dd|ds|e,8.0,15.0,40.0,9.0,15.0,40.0
+2026-27,6204,Kvernadze,frosinone,kvernadze,FRO,A,w|a,4.0,15.0,53.0,5.0,16.0,55.0
+2026-27,6217,Bisseck,inter,bisseck,INT,D,dc,11.0,15.0,31.0,11.0,15.0,31.0
+2026-27,6274,Diouf,inter,diouf,INT,C,e|c,8.0,15.0,65.0,9.0,15.0,67.0
+2026-27,5620,Tavares N.,lazio,tavares-n,LAZ,D,ds|e,6.0,15.0,90.0,6.0,15.0,90.0
 2026-27,4998,Molina N.,roma,molina-n,ROM,D,e,18.0,15.0,40.0,18.0,15.0,40.0
-2026-27,7554,Romero D.,parma,romero-d,PAR,A,pc,10.0,15.0,40.0,10.0,15.0,37.0
-2026-27,5995,De Ketelaere,atalanta,de-ketelaere,ATA,A,a,17.0,14.0,59.0,18.0,14.0,59.0
-2026-27,4734,Miranda J.,bologna,miranda-j,BOL,D,ds|e,8.0,14.0,30.0,8.0,14.0,30.0
-2026-27,184,Bernardeschi,bologna,bernardeschi,BOL,C,w|t,9.0,14.0,40.0,9.0,14.0,40.0
-2026-27,4360,Caprile,cagliari,caprile,CAG,P,por,9.0,14.0,28.0,9.0,14.0,28.0
-2026-27,6966,Butez,como,butez,COM,P,por,16.0,14.0,55.0,16.0,14.0,55.0
-2026-27,6967,Diao,como,diao,COM,A,w|a,11.0,14.0,45.0,12.0,14.0,47.0
-2026-27,6531,Jimenez A.,fiorentina,jimenez-a,FIO,D,dd|ds|e,8.0,14.0,40.0,9.0,14.0,40.0
+2026-27,7414,Kaiki,como,kaiki,COM,D,ds|e,7.0,14.0,22.0,7.0,14.0,22.0
 2026-27,1933,Mandragora,torino,mandragora,TOR,C,c,9.0,14.0,34.0,9.0,14.0,34.0
-2026-27,6204,Kvernadze,frosinone,kvernadze,FRO,A,w|a,4.0,14.0,53.0,5.0,14.0,55.0
-2026-27,6274,Diouf,inter,diouf,INT,C,e|c,8.0,14.0,67.0,9.0,15.0,69.0
-2026-27,4973,McKennie,juventus,mckennie,JUV,C,c|t,17.0,14.0,62.0,17.0,14.0,62.0
-2026-27,5620,Tavares N.,lazio,tavares-n,LAZ,D,ds|e,6.0,14.0,90.0,6.0,14.0,90.0
-2026-27,7314,Taylor K.,lazio,taylor-k,LAZ,C,c|t,13.0,14.0,43.0,13.0,14.0,43.0
-2026-27,6398,Isaksen,lazio,isaksen,LAZ,C,w|a,9.0,14.0,36.0,8.0,13.0,36.0
-2026-27,5833,Gila,milan,gila,MIL,D,dc,12.0,14.0,39.0,12.0,14.0,39.0
-2026-27,4287,Lobotka,napoli,lobotka,NAP,C,m|c,7.0,14.0,22.0,8.0,14.0,27.0
-2026-27,7023,Pellegrino M.,fiorentina,pellegrino-m,FIO,A,pc,15.0,14.0,28.0,15.0,14.0,25.0
-2026-27,4807,Hermoso,roma,hermoso,ROM,D,dc,10.0,14.0,40.0,10.0,14.0,40.0
-2026-27,2296,Mancini,roma,mancini,ROM,D,dc,15.0,14.0,50.0,15.0,14.0,50.0
-2026-27,6060,Laurientè,sassuolo,laurient&#xE8;,SAS,A,a,15.0,14.0,51.0,16.0,14.0,51.0
-2026-27,7484,Adams A.,venezia,adams-a,VEN,A,pc,12.0,14.0,30.0,11.0,13.0,27.0
-2026-27,4964,Vicario,juventus,vicario,JUV,P,por,16.0,14.0,58.0,16.0,14.0,58.0
-2026-27,5792,Ederson D.S.,atalanta,ederson-d-s,ATA,C,m|c,12.0,13.0,42.0,13.0,13.0,47.0
-2026-27,5119,Samardzic,atalanta,samardzic,ATA,C,c|t,12.0,13.0,30.0,12.0,13.0,30.0
-2026-27,4896,Maldini,cagliari,maldini,CAG,A,t|a,5.0,13.0,55.0,6.0,14.0,55.0
-2026-27,4371,Raspadori,atalanta,raspadori,ATA,A,a,13.0,13.0,14.0,14.0,13.0,14.0
-2026-27,7414,Kaiki,como,kaiki,COM,D,ds|e,7.0,13.0,22.0,7.0,13.0,22.0
-2026-27,6530,Ghedjemis,frosinone,ghedjemis,FRO,A,w|a,9.0,13.0,35.0,10.0,13.0,37.0
-2026-27,6556,Noslin,lazio,noslin,LAZ,A,a,6.0,13.0,48.0,6.0,13.0,48.0
-2026-27,2606,Modric,milan,modric,MIL,C,m|c,12.0,13.0,50.0,13.0,14.0,60.0
+2026-27,6530,Ghedjemis,frosinone,ghedjemis,FRO,A,w|a,9.0,14.0,35.0,10.0,14.0,37.0
+2026-27,2848,Frattesi,lazio,frattesi,LAZ,C,c|t,7.0,14.0,112.0,7.0,14.0,112.0
+2026-27,6884,Conceicao,juventus,conceicao,JUV,C,w|a,12.0,14.0,50.0,11.0,14.0,50.0
+2026-27,5833,Gila,milan,gila,MIL,D,dc,12.0,14.0,35.0,12.0,14.0,35.0
+2026-27,7485,Mangas,monza,mangas,MON,D,ds|e,6.0,14.0,25.0,6.0,14.0,25.0
+2026-27,6572,Castro S.,roma,castro-s,ROM,A,pc,14.0,14.0,35.0,13.0,14.0,32.0
+2026-27,7484,Adams A.,venezia,adams-a,VEN,A,pc,12.0,14.0,30.0,11.0,14.0,27.0
+2026-27,7600,Osmajic,genoa,osmajic,GEN,A,pc,8.0,14.0,60.0,7.0,13.0,57.0
+2026-27,4431,Carnesecchi,atalanta,carnesecchi,ATA,P,por,16.0,13.0,40.0,16.0,13.0,40.0
+2026-27,5298,Pobega,bologna,pobega,BOL,C,m|c,6.0,13.0,15.0,7.0,13.0,20.0
+2026-27,4360,Caprile,cagliari,caprile,CAG,P,por,9.0,13.0,28.0,9.0,13.0,28.0
+2026-27,7311,Romano,cagliari,romano,CAG,C,m|c,5.0,13.0,25.0,6.0,13.0,30.0
+2026-27,6966,Butez,como,butez,COM,P,por,16.0,13.0,55.0,16.0,13.0,55.0
+2026-27,6967,Diao,como,diao,COM,A,w|a,11.0,13.0,45.0,12.0,14.0,47.0
+2026-27,6238,Oyono A.,frosinone,oyono-a,FRO,D,dd|e,5.0,13.0,12.0,5.0,13.0,12.0
+2026-27,7070,Sucic P.,inter,sucic-p,INT,C,c,8.0,13.0,20.0,8.0,13.0,20.0
+2026-27,6669,Bonny,inter,bonny,INT,A,pc,7.0,13.0,22.0,6.0,12.0,19.0
+2026-27,4973,McKennie,juventus,mckennie,JUV,C,c|t,17.0,13.0,57.0,17.0,13.0,57.0
+2026-27,4312,Maignan,milan,maignan,MIL,P,por,15.0,13.0,48.0,15.0,13.0,48.0
+2026-27,2606,Modric,milan,modric,MIL,C,m|c,12.0,13.0,47.0,13.0,13.0,52.0
 2026-27,4728,Nkunku,milan,nkunku,MIL,A,a,13.0,13.0,20.0,14.0,14.0,20.0
-2026-27,7485,Mangas,monza,mangas,MON,D,ds|e,6.0,13.0,25.0,6.0,13.0,25.0
-2026-27,536,Politano,napoli,politano,NAP,C,w,10.0,13.0,40.0,9.0,13.0,40.0
+2026-27,4287,Lobotka,napoli,lobotka,NAP,C,m|c,7.0,13.0,15.0,8.0,14.0,20.0
+2026-27,7023,Pellegrino M.,fiorentina,pellegrino-m,FIO,A,pc,15.0,13.0,28.0,15.0,13.0,25.0
+2026-27,4807,Hermoso,roma,hermoso,ROM,D,dc,10.0,13.0,40.0,10.0,13.0,40.0
+2026-27,2296,Mancini,roma,mancini,ROM,D,dc,15.0,13.0,50.0,15.0,13.0,50.0
 2026-27,5589,Konè M.,roma,kon&#xE8;-m,ROM,C,m|c,10.0,13.0,40.0,11.0,14.0,45.0
-2026-27,7347,Bowie,sassuolo,bowie,SAS,A,pc,10.0,13.0,20.0,9.0,12.0,20.0
+2026-27,6060,Laurientè,sassuolo,laurient&#xE8;,SAS,A,a,15.0,13.0,51.0,16.0,13.0,51.0
 2026-27,2038,Pinamonti,lazio,pinamonti,LAZ,A,pc,13.0,13.0,39.0,12.0,13.0,36.0
-2026-27,2766,Zaniolo,udinese,zaniolo,UDI,C,t|a,18.0,13.0,45.0,17.0,12.0,45.0
-2026-27,7600,Osmajic,genoa,osmajic,GEN,A,pc,8.0,13.0,60.0,7.0,12.0,57.0
-2026-27,4179,Gonzalez N.,juventus,gonzalez-n,JUV,C,w|a,11.0,13.0,40.0,10.0,12.0,40.0
+2026-27,5555,Kamara H.,udinese,kamara-h,UDI,D,ds|e,6.0,13.0,17.0,6.0,13.0,17.0
+2026-27,4964,Vicario,juventus,vicario,JUV,P,por,16.0,13.0,52.0,16.0,13.0,52.0
 2026-27,4705,Balerdi,roma,balerdi,ROM,D,dc,6.0,13.0,35.0,6.0,13.0,35.0
-2026-27,5298,Pobega,bologna,pobega,BOL,C,m|c,6.0,12.0,15.0,7.0,12.0,20.0
-2026-27,6675,Dovbyk,bologna,dovbyk,BOL,A,pc,16.0,12.0,15.0,16.0,12.0,12.0
-2026-27,7311,Romano,cagliari,romano,CAG,C,m|c,5.0,12.0,25.0,6.0,13.0,30.0
-2026-27,7374,Mendy P.,cagliari,mendy-p,CAG,A,pc,4.0,12.0,21.0,3.0,11.0,18.0
-2026-27,6908,Atta,fiorentina,atta,FIO,C,c|t,17.0,12.0,45.0,17.0,12.0,45.0
-2026-27,6238,Oyono A.,frosinone,oyono-a,FRO,D,dd|e,5.0,12.0,12.0,5.0,12.0,12.0
-2026-27,5116,Martinez Jo.,inter,martinez-jo,INT,P,por,17.0,12.0,55.0,17.0,12.0,55.0
-2026-27,4159,Akanji,inter,akanji,INT,D,dc,16.0,12.0,31.0,16.0,12.0,31.0
-2026-27,7070,Sucic P.,inter,sucic-p,INT,C,c,8.0,12.0,23.0,8.0,12.0,23.0
-2026-27,6669,Bonny,inter,bonny,INT,A,pc,7.0,12.0,24.0,6.0,12.0,21.0
+2026-27,5792,Ederson D.S.,atalanta,ederson-d-s,ATA,C,m|c,12.0,12.0,42.0,13.0,13.0,47.0
+2026-27,5119,Samardzic,atalanta,samardzic,ATA,C,c|t,12.0,12.0,30.0,12.0,12.0,30.0
+2026-27,5422,Zalewski,atalanta,zalewski,ATA,C,w,6.0,12.0,11.0,5.0,11.0,11.0
+2026-27,4371,Raspadori,atalanta,raspadori,ATA,A,a,13.0,12.0,14.0,14.0,13.0,14.0
+2026-27,4436,Cambiaghi,bologna,cambiaghi,BOL,C,w|a,8.0,12.0,30.0,7.0,12.0,30.0
+2026-27,7374,Mendy P.,cagliari,mendy-p,CAG,A,pc,4.0,12.0,21.0,3.0,12.0,18.0
+2026-27,4970,Messias,genoa,messias,GEN,C,w|t,3.0,12.0,16.0,3.0,12.0,16.0
+2026-27,4159,Akanji,inter,akanji,INT,D,dc,16.0,12.0,30.0,16.0,12.0,30.0
 2026-27,6989,Tiago Gabriel,lecce,tiago-gabriel,LEC,D,dc,7.0,12.0,21.0,7.0,12.0,21.0
-2026-27,5504,Coulibaly L.,lecce,coulibaly-l,LEC,C,m|c,6.0,12.0,16.0,7.0,12.0,21.0
-2026-27,5022,Pavlovic,milan,pavlovic,MIL,D,dc,14.0,12.0,52.0,14.0,12.0,52.0
 2026-27,4409,Rrahmani,napoli,rrahmani,NAP,D,dc,14.0,12.0,48.0,14.0,12.0,48.0
+2026-27,2816,Di Lorenzo,napoli,di-lorenzo,NAP,D,dd|e,12.0,12.0,37.0,12.0,12.0,37.0
+2026-27,6190,Pisilli,roma,pisilli,ROM,C,c,5.0,12.0,26.0,5.0,12.0,26.0
 2026-27,6677,Adzic,sassuolo,adzic,SAS,C,c|t,5.0,12.0,38.0,5.0,12.0,38.0
-2026-27,5687,Vlasic,torino,vlasic,TOR,C,t,14.0,12.0,61.0,13.0,12.0,61.0
-2026-27,5555,Kamara H.,udinese,kamara-h,UDI,D,ds|e,6.0,12.0,17.0,6.0,12.0,17.0
-2026-27,5694,Beto,fiorentina,beto,FIO,A,pc,14.0,12.0,25.0,14.0,12.0,22.0
-2026-27,4436,Cambiaghi,bologna,cambiaghi,BOL,C,w|a,8.0,11.0,30.0,7.0,11.0,30.0
-2026-27,6151,Perrone,como,perrone,COM,C,m|c,10.0,11.0,23.0,11.0,11.0,28.0
-2026-27,5800,Gudmundsson A.,lazio,gudmundsson-a,LAZ,C,t|a,13.0,11.0,20.0,12.0,11.0,20.0
+2026-27,7347,Bowie,sassuolo,bowie,SAS,A,pc,10.0,12.0,20.0,9.0,12.0,20.0
+2026-27,5687,Vlasic,torino,vlasic,TOR,C,t,14.0,12.0,61.0,13.0,11.0,61.0
+2026-27,7349,Kulenovic,torino,kulenovic,TOR,A,pc,4.0,12.0,18.0,3.0,11.0,15.0
+2026-27,2766,Zaniolo,udinese,zaniolo,UDI,C,t|a,18.0,12.0,45.0,17.0,11.0,45.0
+2026-27,6821,Hainaut,venezia,hainaut,VEN,D,dd|e,3.0,12.0,21.0,3.0,12.0,21.0
+2026-27,7546,Robinson J.,monza,robinson-j,MON,A,a,4.0,12.0,20.0,4.0,12.0,20.0
+2026-27,4179,Gonzalez N.,juventus,gonzalez-n,JUV,C,w|a,11.0,12.0,35.0,10.0,11.0,35.0
+2026-27,6675,Dovbyk,bologna,dovbyk,BOL,A,pc,16.0,11.0,15.0,16.0,11.0,12.0
+2026-27,5036,Caqueret,como,caqueret,COM,C,c|t,6.0,11.0,20.0,6.0,11.0,20.0
+2026-27,6908,Atta,fiorentina,atta,FIO,C,c|t,17.0,11.0,45.0,17.0,11.0,45.0
+2026-27,5800,Gudmundsson A.,lazio,gudmundsson-a,LAZ,C,t|a,13.0,11.0,20.0,12.0,10.0,20.0
+2026-27,6415,Palmisani,frosinone,palmisani,FRO,P,por,4.0,11.0,17.0,4.0,11.0,17.0
 2026-27,7469,Bracaglia,frosinone,bracaglia,FRO,D,ds|dc,5.0,11.0,15.0,5.0,11.0,17.0
-2026-27,4970,Messias,genoa,messias,GEN,C,w|t,3.0,11.0,16.0,3.0,11.0,16.0
-2026-27,2120,Bastoni,inter,bastoni,INT,D,dc,14.0,11.0,36.0,14.0,11.0,36.0
-2026-27,4976,Kalulu,juventus,kalulu,JUV,D,dd|dc,13.0,11.0,34.0,14.0,12.0,36.0
-2026-27,5761,Zhegrova,juventus,zhegrova,JUV,C,w,6.0,11.0,21.0,5.0,11.0,21.0
-2026-27,7436,Alajbegovic,juventus,alajbegovic,JUV,C,w|t,12.0,11.0,35.0,12.0,11.0,35.0
-2026-27,4856,Chukwueze,milan,chukwueze,MIL,C,e|w,6.0,11.0,24.0,5.0,10.0,26.0
-2026-27,5882,Mota,monza,mota,MON,A,a,5.0,11.0,15.0,5.0,11.0,15.0
-2026-27,2816,Di Lorenzo,napoli,di-lorenzo,NAP,D,dd|e,12.0,11.0,33.0,12.0,11.0,33.0
+2026-27,5823,Baldanzi,genoa,baldanzi,GEN,C,t,11.0,11.0,12.0,10.0,10.0,12.0
+2026-27,5116,Martinez Jo.,inter,martinez-jo,INT,P,por,17.0,11.0,50.0,17.0,11.0,50.0
+2026-27,5761,Zhegrova,juventus,zhegrova,JUV,C,w,6.0,11.0,15.0,5.0,11.0,15.0
+2026-27,7436,Alajbegovic,juventus,alajbegovic,JUV,C,w|t,12.0,11.0,25.0,12.0,11.0,25.0
+2026-27,6191,Belahyane,lazio,belahyane,LAZ,C,m|c,1.0,11.0,13.0,1.0,11.0,16.0
+2026-27,5500,Cancellieri,lazio,cancellieri,LAZ,C,w|a,9.0,11.0,13.0,8.0,11.0,13.0
+2026-27,5504,Coulibaly L.,lecce,coulibaly-l,LEC,C,m|c,6.0,11.0,16.0,7.0,12.0,21.0
+2026-27,5022,Pavlovic,milan,pavlovic,MIL,D,dc,14.0,11.0,49.0,14.0,11.0,49.0
+2026-27,4856,Chukwueze,milan,chukwueze,MIL,C,e|w,6.0,11.0,20.0,5.0,10.0,22.0
+2026-27,7223,Vergara,napoli,vergara,NAP,C,w|t,8.0,11.0,12.0,8.0,11.0,12.0
 2026-27,5851,Doig,sassuolo,doig,SAS,D,ds|e,4.0,11.0,12.0,4.0,11.0,12.0
 2026-27,2528,Matic,sassuolo,matic,SAS,C,m|c,5.0,11.0,15.0,6.0,11.0,20.0
 2026-27,7036,Bakola,sassuolo,bakola,SAS,C,c|t,5.0,11.0,17.0,5.0,11.0,17.0
-2026-27,7349,Kulenovic,torino,kulenovic,TOR,A,pc,4.0,11.0,18.0,3.0,10.0,15.0
-2026-27,6821,Hainaut,venezia,hainaut,VEN,D,dd|e,3.0,11.0,21.0,3.0,11.0,21.0
-2026-27,7546,Robinson J.,monza,robinson-j,MON,A,a,4.0,11.0,20.0,4.0,11.0,20.0
 2026-27,1850,Kessiè,atalanta,kessi&#xE8;,ATA,C,c,12.0,11.0,26.0,12.0,11.0,26.0
-2026-27,4870,Adopo,cagliari,adopo,CAG,C,m|c,6.0,10.0,13.0,7.0,10.0,16.0
-2026-27,5036,Caqueret,como,caqueret,COM,C,c|t,6.0,10.0,20.0,6.0,10.0,20.0
-2026-27,4359,Piccoli,bologna,piccoli,BOL,A,pc,8.0,10.0,25.0,7.0,10.0,22.0
-2026-27,6415,Palmisani,frosinone,palmisani,FRO,P,por,4.0,10.0,17.0,4.0,10.0,17.0
+2026-27,7220,Belghali,torino,belghali,TOR,D,dd|e,7.0,11.0,20.0,7.0,11.0,20.0
+2026-27,5694,Beto,fiorentina,beto,FIO,A,pc,14.0,11.0,25.0,14.0,11.0,22.0
+2026-27,4364,Gaetano,atalanta,gaetano,ATA,C,m|c,7.0,10.0,15.0,8.0,10.0,20.0
+2026-27,6151,Perrone,como,perrone,COM,C,m|c,10.0,10.0,23.0,11.0,10.0,28.0
 2026-27,6917,Masini,frosinone,masini,FRO,C,m|c,2.0,10.0,17.0,2.0,10.0,22.0
-2026-27,5500,Cancellieri,lazio,cancellieri,LAZ,C,w|a,9.0,10.0,13.0,8.0,10.0,13.0
+2026-27,2120,Bastoni,inter,bastoni,INT,D,dc,14.0,10.0,33.0,14.0,10.0,33.0
+2026-27,4976,Kalulu,juventus,kalulu,JUV,D,dd|dc,13.0,10.0,27.0,14.0,10.0,29.0
+2026-27,5685,Koopmeiners,juventus,koopmeiners,JUV,C,c|t,5.0,10.0,12.0,5.0,10.0,12.0
+2026-27,6629,Dele-Bashiru,lazio,dele-bashiru,LAZ,C,c|t,5.0,10.0,5.0,5.0,10.0,5.0
 2026-27,5672,Dia,lazio,dia,LAZ,A,a,10.0,10.0,20.0,11.0,11.0,20.0
 2026-27,4892,Saelemaekers,milan,saelemaekers,MIL,C,e|w,10.0,10.0,20.0,11.0,11.0,20.0
-2026-27,6593,Akinsanmiro,monza,akinsanmiro,MON,C,c,6.0,10.0,13.0,6.0,10.0,13.0
-2026-27,572,Meret,napoli,meret,NAP,P,por,11.0,10.0,54.0,11.0,10.0,54.0
-2026-27,7223,Vergara,napoli,vergara,NAP,C,w|t,8.0,10.0,16.0,8.0,10.0,16.0
-2026-27,7351,Santos A.,napoli,santos-a,NAP,A,w|a,14.0,10.0,20.0,15.0,11.0,22.0
+2026-27,5882,Mota,monza,mota,MON,A,a,5.0,10.0,15.0,5.0,10.0,15.0
+2026-27,572,Meret,napoli,meret,NAP,P,por,11.0,10.0,50.0,11.0,10.0,50.0
+2026-27,5131,Gilmour,napoli,gilmour,NAP,C,m|c,3.0,10.0,11.0,3.0,10.0,14.0
+2026-27,7351,Santos A.,napoli,santos-a,NAP,A,w|a,14.0,10.0,20.0,15.0,10.0,22.0
+2026-27,7120,Lang,napoli,lang,NAP,A,a,3.0,10.0,27.0,3.0,10.0,27.0
 2026-27,2531,Lukaku,napoli,lukaku,NAP,A,pc,10.0,10.0,45.0,9.0,9.0,41.0
 2026-27,4317,N'Dicka,roma,n-dicka,ROM,D,dc,13.0,10.0,30.0,13.0,10.0,30.0
 2026-27,779,Cristante,roma,cristante,ROM,C,m|c,8.0,10.0,27.0,9.0,10.0,32.0
-2026-27,6190,Pisilli,roma,pisilli,ROM,C,c,5.0,10.0,26.0,5.0,10.0,26.0
-2026-27,5844,Thorstvedt,sassuolo,thorstvedt,SAS,C,c|t,10.0,10.0,22.0,10.0,10.0,22.0
 2026-27,6495,Comuzzo,torino,comuzzo,TOR,D,dc,6.0,10.0,11.0,6.0,10.0,11.0
 2026-27,7060,Cacciamani,torino,cacciamani,TOR,C,e|w,5.0,10.0,22.0,6.0,10.0,22.0
-2026-27,6956,Solet,udinese,solet,UDI,D,dc,13.0,10.0,23.0,13.0,10.0,23.0
+2026-27,7535,Fitz-Jim,torino,fitz-jim,TOR,C,m|c,4.0,10.0,17.0,5.0,10.0,22.0
 2026-27,6680,Karlstrom,udinese,karlstrom,UDI,C,m|c,6.0,10.0,17.0,7.0,10.0,22.0
 2026-27,7561,Lontani,parma,lontani,PAR,A,a,1.0,10.0,16.0,1.0,10.0,16.0
-2026-27,5172,Jones C.,inter,jones-c,INT,C,c,12.0,10.0,20.0,12.0,10.0,20.0
-2026-27,6534,Perri,torino,perri,TOR,P,por,9.0,10.0,15.0,9.0,10.0,15.0
-2026-27,7220,Belghali,torino,belghali,TOR,D,dd|e,7.0,10.0,20.0,7.0,10.0,20.0
-2026-27,7625,Goncalves P.,fiorentina,goncalves-p,FIO,C,w|t,12.0,10.0,25.0,12.0,10.0,25.0
-2026-27,2404,Alaba,udinese,alaba,UDI,D,dc,10.0,10.0,14.0,10.0,10.0,14.0
-2026-27,4364,Gaetano,atalanta,gaetano,ATA,C,m|c,7.0,9.0,15.0,8.0,10.0,20.0
-2026-27,5422,Zalewski,atalanta,zalewski,ATA,C,w,6.0,9.0,11.0,5.0,8.0,11.0
+2026-27,7618,Hutchinson,milan,hutchinson,MIL,C,w|a,8.0,10.0,22.0,7.0,9.0,22.0
+2026-27,6833,Mbangula,bologna,mbangula,BOL,C,w|a,8.0,10.0,10.0,8.0,10.0,10.0
+2026-27,7624,Braganca,torino,braganca,TOR,C,c,6.0,10.0,17.0,6.0,10.0,17.0
 2026-27,5858,Ferguson,bologna,ferguson,BOL,C,m|c,7.0,9.0,21.0,8.0,10.0,26.0
-2026-27,4260,Winks,cagliari,winks,CAG,C,m|c,6.0,9.0,14.0,7.0,8.0,17.0
+2026-27,4870,Adopo,cagliari,adopo,CAG,C,m|c,6.0,9.0,13.0,7.0,10.0,16.0
 2026-27,6867,Valle,como,valle,COM,D,ds|e,6.0,9.0,22.0,6.0,9.0,22.0
-2026-27,7129,Rodriguez Je.,como,rodriguez-je,COM,C,w|a,12.0,9.0,15.0,11.0,8.0,15.0
-2026-27,4465,Fagioli,fiorentina,fagioli,FIO,C,m|c,8.0,9.0,25.0,9.0,10.0,30.0
+2026-27,7412,Milla,como,milla,COM,C,m|c,5.0,9.0,23.0,5.0,9.0,28.0
+2026-27,4359,Piccoli,bologna,piccoli,BOL,A,pc,8.0,9.0,25.0,7.0,10.0,22.0
+2026-27,7332,Bijlow,genoa,bijlow,GEN,P,por,8.0,9.0,13.0,8.0,9.0,13.0
 2026-27,5750,Ostigard,genoa,ostigard,GEN,D,dc,11.0,9.0,25.0,11.0,9.0,25.0
-2026-27,4923,Colombo,genoa,colombo,GEN,A,pc,11.0,9.0,24.0,10.0,8.0,21.0
+2026-27,6020,Ellertsson,genoa,ellertsson,GEN,C,e|c,6.0,9.0,18.0,7.0,9.0,20.0
 2026-27,5876,Di Gregorio,juventus,di-gregorio,JUV,P,por,9.0,9.0,10.0,9.0,9.0,10.0
-2026-27,5685,Koopmeiners,juventus,koopmeiners,JUV,C,c|t,5.0,9.0,13.0,5.0,9.0,13.0
-2026-27,6191,Belahyane,lazio,belahyane,LAZ,C,m|c,1.0,9.0,13.0,1.0,9.0,16.0
 2026-27,7313,Ratkov,lazio,ratkov,LAZ,A,pc,10.0,9.0,22.0,9.0,8.0,19.0
-2026-27,6990,Veiga D.,lecce,veiga-d,LEC,D,dd|e,5.0,9.0,12.0,5.0,9.0,12.0
-2026-27,5878,Colpani,monza,colpani,MON,C,t,8.0,9.0,11.0,7.0,9.0,11.0
+2026-27,7001,N'Dri,lecce,n-dri,LEC,A,w|a,3.0,9.0,13.0,4.0,9.0,13.0
+2026-27,6593,Akinsanmiro,monza,akinsanmiro,MON,C,c,6.0,9.0,13.0,6.0,9.0,13.0
+2026-27,5878,Colpani,monza,colpani,MON,C,t,8.0,9.0,11.0,7.0,8.0,11.0
 2026-27,4220,Zambo Anguissa,napoli,zambo-anguissa,NAP,C,c,11.0,9.0,25.0,11.0,9.0,25.0
+2026-27,5844,Thorstvedt,sassuolo,thorstvedt,SAS,C,c|t,10.0,9.0,22.0,10.0,9.0,22.0
 2026-27,5735,Volpato,sassuolo,volpato,SAS,C,w|t,7.0,9.0,15.0,7.0,9.0,15.0
-2026-27,6642,Coco,torino,coco,TOR,D,dc,7.0,9.0,13.0,7.0,9.0,13.0
+2026-27,6827,Njie,fiorentina,njie,FIO,C,w|a,4.0,9.0,27.0,3.0,8.0,27.0
+2026-27,6956,Solet,udinese,solet,UDI,D,dc,13.0,9.0,23.0,13.0,9.0,23.0
+2026-27,6021,Abankwah,udinese,abankwah,UDI,D,dd|dc,1.0,9.0,12.0,1.0,9.0,14.0
 2026-27,6248,Stankovic F.,venezia,stankovic-f,VEN,P,por,6.0,9.0,9.0,6.0,9.0,9.0
 2026-27,6904,Yeboah J.,venezia,yeboah-j,VEN,A,a,8.0,9.0,23.0,8.0,9.0,23.0
-2026-27,5641,Chalobah T.,como,chalobah-t,COM,D,dd|dc,9.0,9.0,22.0,10.0,10.0,24.0
-2026-27,7624,Braganca,torino,braganca,TOR,C,c,6.0,9.0,17.0,6.0,9.0,17.0
-2026-27,5526,Scalvini,atalanta,scalvini,ATA,D,dc,10.0,8.0,17.0,10.0,8.0,17.0
+2026-27,6727,Couto,como,couto,COM,D,dd|e,8.0,9.0,24.0,8.0,9.0,24.0
+2026-27,5641,Chalobah T.,como,chalobah-t,COM,D,dd|dc,9.0,9.0,22.0,10.0,9.0,24.0
+2026-27,6618,Cissè A.,milan,ciss&#xE8;-a,MIL,C,w|t,3.0,9.0,50.0,3.0,9.0,50.0
+2026-27,5172,Jones C.,inter,jones-c,INT,C,c,12.0,9.0,15.0,12.0,9.0,15.0
+2026-27,7599,Lulli,roma,lulli,ROM,D,e,1.0,9.0,17.0,1.0,9.0,17.0
+2026-27,7602,Fatah,lecce,fatah,LEC,A,w|a,4.0,9.0,9.0,5.0,9.0,11.0
+2026-27,6534,Perri,torino,perri,TOR,P,por,9.0,9.0,15.0,9.0,9.0,15.0
+2026-27,7625,Goncalves P.,fiorentina,goncalves-p,FIO,C,w|t,12.0,9.0,25.0,12.0,9.0,25.0
+2026-27,2404,Alaba,udinese,alaba,UDI,D,dc,10.0,9.0,14.0,10.0,9.0,14.0
 2026-27,133,Skorupski,bologna,skorupski,BOL,P,por,10.0,8.0,15.0,10.0,8.0,15.0
-2026-27,6844,Rowe,atalanta,rowe,ATA,C,w|t,11.0,8.0,30.0,11.0,8.0,30.0
+2026-27,4433,Zortea,bologna,zortea,BOL,D,dd|e,6.0,8.0,16.0,6.0,8.0,16.0
 2026-27,6643,Dallinga,bologna,dallinga,BOL,A,pc,8.0,8.0,10.0,7.0,7.0,10.0
-2026-27,4210,Mina,cagliari,mina,CAG,D,dc,8.0,8.0,12.0,8.0,8.0,12.0
-2026-27,7274,Zè Pedro,cagliari,z&#xE8;-pedro,CAG,D,dd|dc,5.0,8.0,13.0,6.0,8.0,15.0
-2026-27,7412,Milla,como,milla,COM,C,m|c,5.0,8.0,23.0,5.0,8.0,28.0
+2026-27,4260,Winks,cagliari,winks,CAG,C,m|c,6.0,8.0,14.0,7.0,8.0,17.0
+2026-27,6893,Kempf,como,kempf,COM,D,dc,5.0,8.0,12.0,5.0,8.0,12.0
+2026-27,7129,Rodriguez Je.,como,rodriguez-je,COM,C,w|a,12.0,8.0,15.0,11.0,8.0,15.0
 2026-27,2521,De Gea,fiorentina,de-gea,FIO,P,por,13.0,8.0,18.0,13.0,8.0,18.0
+2026-27,4465,Fagioli,fiorentina,fagioli,FIO,C,m|c,8.0,8.0,25.0,9.0,9.0,30.0
 2026-27,7467,Calvani,frosinone,calvani,FRO,D,dc,4.0,8.0,12.0,4.0,8.0,12.0
 2026-27,6814,Norton-Cuffy,genoa,norton-cuffy,GEN,D,dd|e,8.0,8.0,15.0,8.0,8.0,15.0
-2026-27,6020,Ellertsson,genoa,ellertsson,GEN,C,e|c,6.0,8.0,18.0,7.0,8.0,20.0
-2026-27,5823,Baldanzi,genoa,baldanzi,GEN,C,t,11.0,8.0,12.0,10.0,7.0,12.0
-2026-27,2514,Stones,inter,stones,INT,D,dc,12.0,8.0,10.0,12.0,8.0,10.0
-2026-27,4657,Celik,juventus,celik,JUV,D,b|dd|e,8.0,8.0,15.0,9.0,8.0,17.0
+2026-27,4923,Colombo,genoa,colombo,GEN,A,pc,11.0,8.0,24.0,10.0,7.0,21.0
+2026-27,2514,Stones,inter,stones,INT,D,dc,12.0,8.0,8.0,12.0,8.0,8.0
 2026-27,4911,Douglas Luiz,juventus,douglas-luiz,JUV,C,c,4.0,8.0,25.0,4.0,8.0,25.0
 2026-27,5544,David,juventus,david,JUV,A,pc,9.0,8.0,25.0,8.0,7.0,25.0
 2026-27,6320,Doekhi,lazio,doekhi,LAZ,D,dc,7.0,8.0,11.0,7.0,8.0,11.0
 2026-27,7012,Provstgaard,lazio,provstgaard,LAZ,D,dc,3.0,8.0,18.0,3.0,8.0,18.0
 2026-27,4817,Pedraza,lazio,pedraza,LAZ,D,ds|e,5.0,8.0,8.0,5.0,8.0,8.0
-2026-27,6629,Dele-Bashiru,lazio,dele-bashiru,LAZ,C,c|t,5.0,8.0,5.0,5.0,8.0,5.0
-2026-27,4502,Gallo,lecce,gallo,LEC,D,ds|e,6.0,8.0,12.0,6.0,8.0,12.0
-2026-27,7001,N'Dri,lecce,n-dri,LEC,A,w|a,3.0,8.0,13.0,4.0,9.0,13.0
+2026-27,6990,Veiga D.,lecce,veiga-d,LEC,D,dd|e,5.0,8.0,12.0,5.0,8.0,12.0
+2026-27,4751,Tomori,milan,tomori,MIL,D,dc,7.0,8.0,10.0,7.0,8.0,10.0
 2026-27,7238,Kouadio,monza,kouadio,MON,D,dd|dc,3.0,8.0,16.0,3.0,8.0,18.0
 2026-27,5838,Birindelli,monza,birindelli,MON,D,dd|ds|e,4.0,8.0,12.0,5.0,8.0,14.0
+2026-27,2170,Milinkovic-Savic V.,napoli,milinkovic-savic-v,NAP,P,por,5.0,8.0,10.0,5.0,8.0,10.0
 2026-27,5427,Gutierrez,napoli,gutierrez,NAP,D,ds|e,8.0,8.0,26.0,8.0,8.0,26.0
-2026-27,1852,Spinazzola,napoli,spinazzola,NAP,D,ds|e,8.0,8.0,20.0,8.0,8.0,20.0
-2026-27,5131,Gilmour,napoli,gilmour,NAP,C,m|c,3.0,8.0,10.0,3.0,8.0,10.0
-2026-27,7120,Lang,napoli,lang,NAP,A,a,3.0,8.0,18.0,3.0,8.0,18.0
 2026-27,5862,Valeri,parma,valeri,PAR,D,ds|e,8.0,8.0,20.0,8.0,8.0,20.0
-2026-27,7535,Fitz-Jim,torino,fitz-jim,TOR,C,m|c,4.0,8.0,17.0,5.0,9.0,22.0
-2026-27,6021,Abankwah,udinese,abankwah,UDI,D,dd|dc,1.0,8.0,12.0,1.0,8.0,14.0
-2026-27,6727,Couto,como,couto,COM,D,dd|e,8.0,8.0,24.0,8.0,8.0,24.0
-2026-27,6229,Tourè E.,parma,tour&#xE8;-e,PAR,A,pc,11.0,8.0,22.0,11.0,8.0,19.0
-2026-27,7547,Kevin Carlos,cagliari,kevin-carlos,CAG,A,pc,13.0,8.0,11.0,12.0,8.0,10.0
+2026-27,6642,Coco,torino,coco,TOR,D,dc,7.0,8.0,13.0,7.0,8.0,13.0
+2026-27,6462,Okoye,udinese,okoye,UDI,P,por,9.0,8.0,15.0,9.0,8.0,15.0
+2026-27,7198,Piotrowski,udinese,piotrowski,UDI,C,m|c,5.0,8.0,12.0,6.0,8.0,15.0
+2026-27,7547,Kevin Carlos,cagliari,kevin-carlos,CAG,A,pc,13.0,8.0,11.0,12.0,7.0,10.0
+2026-27,4375,Terzic,frosinone,terzic,FRO,D,ds|e,4.0,8.0,3.0,4.0,8.0,3.0
 2026-27,5982,Spence,inter,spence,INT,D,e,12.0,8.0,10.0,11.0,7.0,10.0
+2026-27,6537,Goglichidze,monza,goglichidze,MON,D,dd|dc,2.0,8.0,5.0,3.0,9.0,7.0
 2026-27,7564,Leysen F.,sassuolo,leysen-f,SAS,D,ds|dc,5.0,8.0,8.0,6.0,9.0,8.0
 2026-27,4479,Elmas,atalanta,elmas,ATA,C,w|t,7.0,8.0,23.0,7.0,8.0,23.0
-2026-27,7580,Sutalo J.,lazio,sutalo-j,LAZ,D,dc,7.0,8.0,12.0,7.0,8.0,12.0
-2026-27,7602,Fatah,lecce,fatah,LEC,A,w|a,4.0,8.0,9.0,5.0,9.0,11.0
-2026-27,5675,Theate,bologna,theate,BOL,D,ds|dc,8.0,8.0,14.0,9.0,9.0,17.0
-2026-27,7618,Hutchinson,milan,hutchinson,MIL,C,w|a,8.0,8.0,18.0,7.0,7.0,18.0
-2026-27,795,El Shaarawy,genoa,el-shaarawy,GEN,C,w,7.0,8.0,20.0,6.0,8.0,20.0
+2026-27,7620,Zeballos,monza,zeballos,MON,A,a,6.0,8.0,10.0,6.0,8.0,10.0
+2026-27,6344,Sanchez Ro.,como,sanchez-ro,COM,P,por,8.0,8.0,5.0,8.0,8.0,5.0
+2026-27,795,El Shaarawy,genoa,el-shaarawy,GEN,C,w,7.0,8.0,20.0,6.0,7.0,20.0
 2026-27,787,Djimsiti,atalanta,djimsiti,ATA,D,dc,7.0,7.0,16.0,7.0,7.0,16.0
-2026-27,554,Zappacosta,atalanta,zappacosta,ATA,D,dd|e,8.0,7.0,14.0,8.0,7.0,14.0
+2026-27,5526,Scalvini,atalanta,scalvini,ATA,D,dc,10.0,7.0,17.0,10.0,7.0,17.0
 2026-27,5498,Casale,bologna,casale,BOL,D,dc,3.0,7.0,7.0,3.0,7.0,7.0
-2026-27,6042,Lucumì,juventus,lucum&#xEC;,JUV,D,dc,8.0,7.0,21.0,8.0,7.0,21.0
-2026-27,4433,Zortea,bologna,zortea,BOL,D,dd|e,6.0,7.0,16.0,6.0,7.0,16.0
-2026-27,6893,Kempf,como,kempf,COM,D,dc,5.0,7.0,12.0,5.0,7.0,12.0
+2026-27,6844,Rowe,atalanta,rowe,ATA,C,w|t,11.0,7.0,30.0,11.0,7.0,30.0
+2026-27,4210,Mina,cagliari,mina,CAG,D,dc,8.0,7.0,12.0,8.0,7.0,12.0
+2026-27,7274,Zè Pedro,cagliari,z&#xE8;-pedro,CAG,D,dd|dc,5.0,7.0,13.0,6.0,8.0,15.0
 2026-27,6678,Liberali,como,liberali,COM,C,t,6.0,7.0,20.0,5.0,6.0,20.0
-2026-27,5365,Dragusin,fiorentina,dragusin,FIO,D,dc,8.0,7.0,13.0,8.0,7.0,13.0
-2026-27,5603,Pongracic,fiorentina,pongracic,FIO,D,dc,4.0,7.0,8.0,4.0,7.0,8.0
-2026-27,6294,Ndour,fiorentina,ndour,FIO,C,c,8.0,7.0,18.0,8.0,7.0,18.0
-2026-27,7332,Bijlow,genoa,bijlow,GEN,P,por,8.0,7.0,13.0,8.0,7.0,13.0
+2026-27,4952,Monterisi,frosinone,monterisi,FRO,D,dc,6.0,7.0,8.0,6.0,7.0,8.0
+2026-27,7473,Cichella,frosinone,cichella,FRO,C,m|c,4.0,7.0,6.0,4.0,7.0,7.0
 2026-27,5514,Vasquez,genoa,vasquez,GEN,D,ds|dc,9.0,7.0,20.0,10.0,8.0,21.0
-2026-27,5791,Frendrup,genoa,frendrup,GEN,C,m|c,7.0,7.0,16.0,8.0,7.0,21.0
-2026-27,2529,Mkhitaryan,inter,mkhitaryan,INT,C,c,5.0,7.0,13.0,5.0,7.0,13.0
-2026-27,827,Locatelli,juventus,locatelli,JUV,C,m|c,8.0,7.0,15.0,9.0,8.0,20.0
+2026-27,5791,Frendrup,genoa,frendrup,GEN,C,m|c,7.0,7.0,16.0,8.0,8.0,21.0
+2026-27,2529,Mkhitaryan,inter,mkhitaryan,INT,C,c,5.0,7.0,15.0,5.0,7.0,15.0
+2026-27,5831,Gatti,juventus,gatti,JUV,D,dc,4.0,7.0,12.0,4.0,7.0,12.0
+2026-27,4657,Celik,juventus,celik,JUV,D,b|dd|e,8.0,7.0,13.0,9.0,8.0,15.0
+2026-27,827,Locatelli,juventus,locatelli,JUV,C,m|c,8.0,7.0,15.0,9.0,7.0,20.0
+2026-27,7131,Floriani Mussolini,lazio,floriani-mussolini,LAZ,D,dd|e,3.0,7.0,16.0,3.0,7.0,16.0
 2026-27,7240,Siebert,lecce,siebert,LEC,D,dc,4.0,7.0,12.0,4.0,7.0,12.0
-2026-27,5739,De Winter,milan,de-winter,MIL,D,dd|dc,3.0,7.0,22.0,4.0,8.0,24.0
-2026-27,5295,Musah,milan,musah,MIL,C,c|w,2.0,7.0,17.0,2.0,7.0,16.0
+2026-27,4502,Gallo,lecce,gallo,LEC,D,ds|e,6.0,7.0,12.0,6.0,7.0,12.0
+2026-27,5739,De Winter,milan,de-winter,MIL,D,dd|dc,3.0,7.0,17.0,4.0,7.0,19.0
+2026-27,5295,Musah,milan,musah,MIL,C,c|w,2.0,7.0,16.0,2.0,7.0,16.0
+2026-27,1852,Spinazzola,napoli,spinazzola,NAP,D,ds|e,8.0,7.0,18.0,8.0,7.0,18.0
 2026-27,6641,Suzuki,parma,suzuki,PAR,P,por,7.0,7.0,20.0,7.0,7.0,20.0
-2026-27,6207,Almqvist,parma,almqvist,PAR,C,w|a,4.0,7.0,7.0,3.0,7.0,7.0
+2026-27,6207,Almqvist,parma,almqvist,PAR,C,w|a,4.0,7.0,7.0,3.0,6.0,7.0
+2026-27,610,Gollini,roma,gollini,ROM,P,por,1.0,7.0,14.0,1.0,7.0,14.0
 2026-27,5010,Ismajli,torino,ismajli,TOR,D,dc,7.0,7.0,9.0,7.0,7.0,9.0
-2026-27,7198,Piotrowski,udinese,piotrowski,UDI,C,m|c,5.0,7.0,12.0,6.0,8.0,15.0
-2026-27,530,Pellegrini Lo.,roma,pellegrini-lo,ROM,C,c|t,10.0,7.0,12.0,10.0,7.0,12.0
-2026-27,6537,Goglichidze,monza,goglichidze,MON,D,dd|dc,2.0,7.0,5.0,3.0,8.0,7.0
-2026-27,7612,Bobcek,frosinone,bobcek,FRO,A,pc,9.0,7.0,7.0,9.0,7.0,6.0
-2026-27,6344,Sanchez Ro.,como,sanchez-ro,COM,P,por,8.0,7.0,5.0,8.0,7.0,5.0
-2026-27,2640,Kolasinac,atalanta,kolasinac,ATA,D,ds|dc,5.0,6.0,10.0,6.0,6.0,12.0
+2026-27,6229,Tourè E.,parma,tour&#xE8;-e,PAR,A,pc,11.0,7.0,22.0,11.0,7.0,19.0
+2026-27,7154,Odenthal,sassuolo,odenthal,SAS,D,dc,1.0,7.0,6.0,1.0,7.0,6.0
+2026-27,7580,Sutalo J.,lazio,sutalo-j,LAZ,D,dc,7.0,7.0,12.0,7.0,7.0,12.0
+2026-27,7610,Birligea,frosinone,birligea,FRO,A,pc,5.0,7.0,1.0,5.0,7.0,1.0
+2026-27,5675,Theate,bologna,theate,BOL,D,ds|dc,8.0,7.0,14.0,9.0,8.0,17.0
+2026-27,7619,Monteiro J.,lecce,monteiro-j,LEC,C,w|a,7.0,7.0,12.0,6.0,7.0,12.0
 2026-27,6916,Ahanor,atalanta,ahanor,ATA,D,b|ds|e,6.0,6.0,13.0,7.0,6.0,15.0
 2026-27,4887,Bellanova,atalanta,bellanova,ATA,D,dd|e,6.0,6.0,20.0,6.0,6.0,20.0
-2026-27,22,De Roon,roma,de-roon,ROM,C,m|c,4.0,6.0,8.0,5.0,5.0,10.0
-2026-27,7326,Helland,bologna,helland,BOL,D,dd|dc,2.0,6.0,11.0,2.0,6.0,11.0
+2026-27,554,Zappacosta,atalanta,zappacosta,ATA,D,dd|e,8.0,6.0,14.0,8.0,6.0,14.0
+2026-27,22,De Roon,roma,de-roon,ROM,C,m|c,4.0,6.0,8.0,5.0,6.0,10.0
+2026-27,6042,Lucumì,juventus,lucum&#xEC;,JUV,D,dc,8.0,6.0,18.0,8.0,6.0,18.0
+2026-27,2765,Odgaard,bologna,odgaard,BOL,C,t,8.0,6.0,11.0,7.0,5.0,11.0
 2026-27,6895,Dominguez B.,sassuolo,dominguez-b,SAS,C,w|a,3.0,6.0,10.0,2.0,5.0,10.0
 2026-27,5701,Obert,cagliari,obert,CAG,D,b|ds|e,7.0,6.0,14.0,7.0,6.0,15.0
-2026-27,6010,Fazzini,cagliari,fazzini,CAG,C,c|t,7.0,6.0,12.0,8.0,6.0,12.0
 2026-27,6598,Mutandwa,cagliari,mutandwa,CAG,A,pc,6.0,6.0,7.0,6.0,6.0,7.0
+2026-27,5365,Dragusin,fiorentina,dragusin,FIO,D,dc,8.0,6.0,13.0,8.0,6.0,13.0
+2026-27,5603,Pongracic,fiorentina,pongracic,FIO,D,dc,4.0,6.0,8.0,4.0,6.0,8.0
 2026-27,5885,Dodò,fiorentina,dod&#xF2;,FIO,D,dd|e,10.0,6.0,7.0,10.0,6.0,7.0
-2026-27,4952,Monterisi,frosinone,monterisi,FRO,D,dc,6.0,6.0,8.0,6.0,6.0,8.0
-2026-27,6506,Fini,frosinone,fini,FRO,C,w,3.0,6.0,10.0,2.0,5.0,10.0
+2026-27,6294,Ndour,fiorentina,ndour,FIO,C,c,8.0,6.0,18.0,8.0,6.0,18.0
+2026-27,6506,Fini,frosinone,fini,FRO,C,w,3.0,6.0,10.0,2.0,6.0,10.0
 2026-27,5998,Zerbin,frosinone,zerbin,FRO,C,w,5.0,6.0,9.0,4.0,6.0,9.0
 2026-27,218,Perin,juventus,perin,JUV,P,por,6.0,6.0,5.0,6.0,6.0,5.0
-2026-27,5831,Gatti,juventus,gatti,JUV,D,dc,4.0,6.0,15.0,4.0,6.0,15.0
-2026-27,5520,Cambiaso,juventus,cambiaso,JUV,D,dd|ds|e,9.0,6.0,11.0,10.0,7.0,13.0
-2026-27,5562,Thuram K.,juventus,thuram-k,JUV,C,c,10.0,6.0,14.0,10.0,6.0,14.0
 2026-27,460,Romagnoli,lazio,romagnoli,LAZ,D,dc,7.0,6.0,20.0,7.0,6.0,20.0
-2026-27,2134,Falcone,lecce,falcone,LEC,P,por,8.0,6.0,20.0,8.0,6.0,20.0
-2026-27,4751,Tomori,milan,tomori,MIL,D,dc,7.0,6.0,5.0,7.0,6.0,5.0
-2026-27,6496,Bartesaghi,milan,bartesaghi,MIL,D,ds|e,8.0,6.0,12.0,8.0,6.0,12.0
 2026-27,7203,Jashari,milan,jashari,MIL,C,m|c,4.0,6.0,11.0,4.0,6.0,14.0
 2026-27,7008,Gimenez,milan,gimenez,MIL,A,pc,6.0,6.0,10.0,5.0,5.0,10.0
-2026-27,2155,Cutrone,monza,cutrone,MON,A,pc,9.0,6.0,11.0,8.0,6.0,10.0
-2026-27,2170,Milinkovic-Savic V.,napoli,milinkovic-savic-v,NAP,P,por,5.0,6.0,5.0,5.0,6.0,5.0
-2026-27,7162,Giovane,napoli,giovane,NAP,A,a,4.0,6.0,5.0,4.0,6.0,5.0
+2026-27,2155,Cutrone,monza,cutrone,MON,A,pc,9.0,6.0,11.0,8.0,5.0,10.0
+2026-27,6638,Marin R.,napoli,marin-r,NAP,D,dc,2.0,6.0,25.0,2.0,6.0,25.0
+2026-27,7411,Daffara,parma,daffara,PAR,P,por,7.0,6.0,1.0,7.0,6.0,1.0
 2026-27,6663,Circati,parma,circati,PAR,D,dc,6.0,6.0,18.0,6.0,6.0,18.0
 2026-27,6664,Delprato,parma,delprato,PAR,D,b|dd|e,8.0,6.0,18.0,8.0,6.0,20.0
-2026-27,6666,Bernabè,parma,bernab&#xE8;,PAR,C,c,7.0,6.0,23.0,7.0,6.0,23.0
-2026-27,610,Gollini,roma,gollini,ROM,P,por,1.0,6.0,14.0,1.0,6.0,14.0
+2026-27,6631,Ghilardi,roma,ghilardi,ROM,D,dc,4.0,6.0,10.0,4.0,6.0,10.0
+2026-27,6170,Gineitis,torino,gineitis,TOR,C,m|c,5.0,6.0,10.0,6.0,6.0,13.0
 2026-27,5888,Casadei,torino,casadei,TOR,C,c|t,10.0,6.0,10.0,10.0,6.0,10.0
-2026-27,6827,Njie,fiorentina,njie,FIO,C,w|a,4.0,6.0,27.0,3.0,5.0,27.0
 2026-27,4994,Vojvoda,udinese,vojvoda,UDI,D,dd|e,8.0,6.0,17.0,8.0,6.0,17.0
 2026-27,7272,Gueye,udinese,gueye,UDI,A,pc,4.0,6.0,5.0,3.0,6.0,5.0
-2026-27,5507,Busio,venezia,busio,VEN,C,m|c,5.0,6.0,13.0,6.0,7.0,16.0
-2026-27,5946,Sow,genoa,sow,GEN,C,m|c,7.0,6.0,12.0,8.0,6.0,15.0
-2026-27,4375,Terzic,frosinone,terzic,FRO,D,ds|e,4.0,6.0,3.0,4.0,6.0,3.0
-2026-27,7154,Odenthal,sassuolo,odenthal,SAS,D,dc,1.0,6.0,6.0,1.0,6.0,6.0
-2026-27,7563,Favasuli,napoli,favasuli,NAP,D,dd|ds|e,4.0,6.0,10.0,5.0,6.0,12.0
+2026-27,5507,Busio,venezia,busio,VEN,C,m|c,5.0,6.0,13.0,6.0,6.0,16.0
+2026-27,6994,Perez K.,venezia,perez-k,VEN,C,c|t,5.0,6.0,13.0,5.0,6.0,13.0
+2026-27,530,Pellegrini Lo.,roma,pellegrini-lo,ROM,C,c|t,10.0,6.0,12.0,10.0,6.0,12.0
 2026-27,7069,Fortini,torino,fortini,TOR,D,e,5.0,6.0,5.0,4.0,5.0,5.0
-2026-27,4664,Badiashile,napoli,badiashile,NAP,D,dc,7.0,6.0,10.0,7.0,6.0,10.0
-2026-27,7599,Lulli,roma,lulli,ROM,D,e,1.0,6.0,17.0,1.0,6.0,17.0
-2026-27,7619,Monteiro J.,lecce,monteiro-j,LEC,C,w|a,7.0,6.0,12.0,6.0,5.0,12.0
+2026-27,7573,Cinquegrano,sassuolo,cinquegrano,SAS,D,dd|e,1.0,6.0,10.0,1.0,6.0,10.0
+2026-27,7612,Bobcek,frosinone,bobcek,FRO,A,pc,9.0,6.0,7.0,9.0,6.0,6.0
 2026-27,4137,Diego Carlos,parma,diego-carlos,PAR,D,dc,8.0,6.0,12.0,8.0,6.0,12.0
-2026-27,5680,Sarr P.,juventus,sarr-p,JUV,C,m|c,7.0,6.0,17.0,8.0,7.0,22.0
-2026-27,7620,Zeballos,monza,zeballos,MON,A,a,6.0,6.0,10.0,6.0,6.0,10.0
+2026-27,5680,Sarr P.,juventus,sarr-p,JUV,C,m|c,7.0,6.0,12.0,8.0,6.0,15.0
 2026-27,7621,Sugawara,cagliari,sugawara,CAG,D,dd|e,6.0,6.0,8.0,6.0,6.0,8.0
-2026-27,6833,Mbangula,bologna,mbangula,BOL,C,w|a,8.0,6.0,10.0,8.0,6.0,10.0
-2026-27,7623,Gnonto,fiorentina,gnonto,FIO,A,w|a,7.0,6.0,13.0,8.0,7.0,13.0
-2026-27,6319,Leite,lazio,leite,LAZ,D,dc,6.0,6.0,8.0,6.0,6.0,8.0
-2026-27,6046,Hien,atalanta,hien,ATA,D,dc,8.0,5.0,10.0,8.0,5.0,10.0
+2026-27,7623,Gnonto,fiorentina,gnonto,FIO,A,w|a,7.0,6.0,13.0,8.0,6.0,13.0
+2026-27,5336,Nzola,cagliari,nzola,CAG,A,pc,4.0,6.0,10.0,4.0,6.0,10.0
+2026-27,6047,Ehizibue,genoa,ehizibue,GEN,D,dd|e,4.0,6.0,10.0,4.0,6.0,10.0
+2026-27,2640,Kolasinac,atalanta,kolasinac,ATA,D,ds|dc,5.0,5.0,10.0,6.0,6.0,12.0
 2026-27,2077,Pasalic,atalanta,pasalic,ATA,C,c|t,9.0,5.0,14.0,9.0,5.0,14.0
+2026-27,7326,Helland,bologna,helland,BOL,D,dd|dc,2.0,5.0,11.0,2.0,5.0,11.0
 2026-27,5678,Holm,bologna,holm,BOL,D,dd|e,5.0,5.0,5.0,5.0,5.0,5.0
-2026-27,2765,Odgaard,bologna,odgaard,BOL,C,t,8.0,5.0,11.0,7.0,4.0,11.0
-2026-27,7268,Rodriguez Ju.,cagliari,rodriguez-ju,CAG,D,ds|dc,3.0,5.0,11.0,4.0,6.0,13.0
+2026-27,7268,Rodriguez Ju.,cagliari,rodriguez-ju,CAG,D,ds|dc,3.0,5.0,11.0,4.0,5.0,13.0
+2026-27,6010,Fazzini,cagliari,fazzini,CAG,C,c|t,7.0,5.0,12.0,8.0,6.0,12.0
 2026-27,7301,Tornqvist,monza,tornqvist,MON,P,por,1.0,5.0,7.0,1.0,5.0,7.0
-2026-27,6815,Fadera,cagliari,fadera,CAG,C,w,2.0,5.0,10.0,2.0,5.0,9.0
+2026-27,7127,Addai,como,addai,COM,C,w|a,5.0,5.0,8.0,4.0,4.0,8.0
+2026-27,7175,Joao Mario,fiorentina,joao-mario,FIO,D,dd|e,3.0,5.0,10.0,3.0,5.0,10.0
 2026-27,6660,Marcandalli,genoa,marcandalli,GEN,D,dc,6.0,5.0,11.0,6.0,5.0,11.0
+2026-27,7341,Amorim,genoa,amorim,GEN,C,m|c,4.0,5.0,6.0,5.0,5.0,6.0
 2026-27,6164,Vitinha O.,genoa,vitinha-o,GEN,A,a,8.0,5.0,10.0,8.0,5.0,10.0
-2026-27,5301,Luis Henrique,inter,luis-henrique,INT,C,e|w,4.0,5.0,11.0,5.0,5.0,13.0
+2026-27,5520,Cambiaso,juventus,cambiaso,JUV,D,dd|ds|e,9.0,5.0,8.0,10.0,6.0,10.0
+2026-27,5562,Thuram K.,juventus,thuram-k,JUV,C,c,10.0,5.0,10.0,10.0,5.0,10.0
 2026-27,2832,Boga,juventus,boga,JUV,A,w|a,6.0,5.0,13.0,7.0,5.0,13.0
-2026-27,7131,Floriani Mussolini,lazio,floriani-mussolini,LAZ,D,dd|e,3.0,5.0,16.0,3.0,5.0,16.0
 2026-27,4459,Rovella,lazio,rovella,LAZ,C,m|c,6.0,5.0,12.0,7.0,6.0,15.0
-2026-27,6632,Gaspar K.,lecce,gaspar-k,LEC,D,dc,5.0,5.0,11.0,5.0,5.0,11.0
+2026-27,2134,Falcone,lecce,falcone,LEC,P,por,8.0,5.0,20.0,8.0,5.0,20.0
 2026-27,5457,Maleh,lecce,maleh,LEC,C,m|c,2.0,5.0,7.0,2.0,5.0,9.0
-2026-27,6549,Pierotti,lecce,pierotti,LEC,C,w,6.0,5.0,13.0,5.0,5.0,12.0
-2026-27,5029,Geubbels,lecce,geubbels,LEC,A,pc,9.0,5.0,13.0,8.0,5.0,10.0
-2026-27,4199,Loftus-Cheek,milan,loftus-cheek,MIL,C,c|t,4.0,5.0,10.0,4.0,5.0,10.0
-2026-27,4925,Carboni A.,monza,carboni-a,MON,D,ds|dc,3.0,5.0,10.0,4.0,5.0,12.0
+2026-27,5029,Geubbels,lecce,geubbels,LEC,A,pc,9.0,5.0,13.0,8.0,4.0,10.0
+2026-27,6496,Bartesaghi,milan,bartesaghi,MIL,D,ds|e,8.0,5.0,10.0,8.0,5.0,10.0
+2026-27,5840,Olivera,napoli,olivera,NAP,D,b|ds|e,5.0,5.0,10.0,6.0,5.0,12.0
+2026-27,7162,Giovane,napoli,giovane,NAP,A,a,4.0,5.0,6.0,4.0,5.0,6.0
 2026-27,6662,Corvi,parma,corvi,PAR,P,por,1.0,5.0,7.0,1.0,5.0,7.0
+2026-27,7235,Troilo,parma,troilo,PAR,D,dc,3.0,5.0,12.0,3.0,5.0,12.0
 2026-27,6898,Keita M.,parma,keita-m,PAR,C,m|c,5.0,5.0,12.0,6.0,5.0,15.0
 2026-27,6984,Ondrejka,parma,ondrejka,PAR,C,w|a,5.0,5.0,18.0,4.0,4.0,16.0
 2026-27,7529,Koulierakis,roma,koulierakis,ROM,D,dc,8.0,5.0,9.0,8.0,5.0,9.0
@@ -326,148 +331,146 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,6717,Konè I.,sassuolo,kon&#xE8;-i,SAS,C,c,9.0,5.0,20.0,9.0,5.0,20.0
 2026-27,7526,Comert,torino,comert,TOR,D,dc,4.0,5.0,8.0,4.0,5.0,8.0
 2026-27,6426,Pedersen,torino,pedersen,TOR,D,dd|e,5.0,5.0,12.0,5.0,5.0,12.0
-2026-27,6170,Gineitis,torino,gineitis,TOR,C,m|c,5.0,5.0,10.0,6.0,6.0,13.0
-2026-27,6462,Okoye,udinese,okoye,UDI,P,por,9.0,5.0,15.0,9.0,5.0,15.0
-2026-27,6783,Unai Gomez,udinese,unai-gomez,UDI,C,t,7.0,5.0,12.0,6.0,5.0,12.0
 2026-27,4845,Correia T.,venezia,correia-t,VEN,D,dd|ds|e,4.0,5.0,7.0,4.0,5.0,7.0
 2026-27,6681,Sagrado,venezia,sagrado,VEN,D,dd|e,2.0,5.0,3.0,2.0,5.0,3.0
 2026-27,5695,Haps,venezia,haps,VEN,D,ds|e,5.0,5.0,9.0,5.0,5.0,9.0
+2026-27,5674,Basic,venezia,basic,VEN,C,m|c,6.0,5.0,13.0,7.0,5.0,16.0
 2026-27,5319,Sohm,venezia,sohm,VEN,C,c,5.0,5.0,10.0,5.0,5.0,10.0
-2026-27,6994,Perez K.,venezia,perez-k,VEN,C,c|t,5.0,5.0,13.0,5.0,5.0,13.0
-2026-27,7449,Rrahmani Al.,venezia,rrahmani-al,VEN,A,pc,8.0,5.0,6.0,7.0,5.0,6.0
-2026-27,7329,Obrador,sassuolo,obrador,SAS,D,ds|e,6.0,5.0,5.0,6.0,5.0,5.0
-2026-27,6618,Cissè A.,milan,ciss&#xE8;-a,MIL,C,w|t,3.0,5.0,27.0,3.0,5.0,27.0
-2026-27,7574,Foe Ondoa,monza,foe-ondoa,MON,C,c,1.0,5.0,10.0,1.0,5.0,10.0
+2026-27,7449,Rrahmani Al.,venezia,rrahmani-al,VEN,A,pc,8.0,5.0,6.0,7.0,4.0,6.0
+2026-27,5946,Sow,genoa,sow,GEN,C,m|c,7.0,5.0,12.0,8.0,5.0,15.0
+2026-27,7563,Favasuli,napoli,favasuli,NAP,D,dd|ds|e,4.0,5.0,8.0,5.0,6.0,10.0
+2026-27,4664,Badiashile,napoli,badiashile,NAP,D,dc,7.0,5.0,10.0,7.0,5.0,10.0
 2026-27,256,Juan Jesus,venezia,juan-jesus,VEN,D,ds|dc,4.0,5.0,11.0,5.0,6.0,13.0
-2026-27,4147,Caleta-Car,sassuolo,caleta-car,SAS,D,dc,6.0,5.0,12.0,6.0,5.0,12.0
-2026-27,2169,Rodriguez R.,torino,rodriguez-r,TOR,D,b|ds|e,5.0,5.0,8.0,6.0,6.0,8.0
-2026-27,2525,Darmian,bologna,darmian,BOL,D,b|dd|e,3.0,5.0,10.0,4.0,5.0,12.0
+2026-27,6319,Leite,lazio,leite,LAZ,D,dc,6.0,5.0,8.0,6.0,5.0,8.0
+2026-27,6046,Hien,atalanta,hien,ATA,D,dc,8.0,4.0,10.0,8.0,4.0,10.0
 2026-27,7219,Bernasconi,atalanta,bernasconi,ATA,D,ds|e,6.0,4.0,11.0,6.0,4.0,11.0
-2026-27,7212,Heggem,bologna,heggem,BOL,D,ds|dc,6.0,4.0,10.0,7.0,5.0,11.0
+2026-27,7212,Heggem,bologna,heggem,BOL,D,ds|dc,6.0,4.0,10.0,7.0,4.0,11.0
 2026-27,6054,Moro N.,bologna,moro-n,BOL,C,m|c,4.0,4.0,12.0,4.0,4.0,15.0
-2026-27,7532,Kofler,cagliari,kofler,CAG,D,dc,5.0,4.0,3.0,5.0,4.0,3.0
 2026-27,4461,Zappa,cagliari,zappa,CAG,D,b|dd|e,4.0,4.0,7.0,4.0,4.0,9.0
 2026-27,1871,Deiola,cagliari,deiola,CAG,C,m|c,3.0,4.0,10.0,3.0,4.0,13.0
 2026-27,6424,Prati,cagliari,prati,CAG,C,m|c,4.0,4.0,7.0,4.0,4.0,7.0
 2026-27,6243,Borrelli,cagliari,borrelli,CAG,A,pc,4.0,4.0,9.0,3.0,3.0,7.0
-2026-27,7127,Addai,como,addai,COM,C,w|a,5.0,4.0,8.0,4.0,4.0,8.0
+2026-27,6815,Fadera,cagliari,fadera,CAG,C,w,2.0,4.0,10.0,2.0,4.0,9.0
 2026-27,313,Morata,como,morata,COM,A,pc,4.0,4.0,7.0,3.0,3.0,7.0
-2026-27,7294,Valdepenas,fiorentina,valdepenas,FIO,D,ds|dc,6.0,4.0,11.0,7.0,4.0,13.0
 2026-27,7410,Viery,fiorentina,viery,FIO,D,ds|dc,6.0,4.0,10.0,7.0,4.0,10.0
-2026-27,7464,Oulai,fiorentina,oulai,FIO,C,m|c,6.0,4.0,11.0,7.0,4.0,14.0
+2026-27,7464,Oulai,fiorentina,oulai,FIO,C,m|c,6.0,4.0,11.0,7.0,5.0,14.0
 2026-27,4947,Brescianini,fiorentina,brescianini,FIO,C,c|t,3.0,4.0,7.0,3.0,4.0,7.0
 2026-27,6206,Fabbian,parma,fabbian,PAR,C,c|t,4.0,4.0,13.0,4.0,4.0,13.0
 2026-27,5757,Cittadini,frosinone,cittadini,FRO,D,dc,3.0,4.0,10.0,3.0,4.0,10.0
-2026-27,7473,Cichella,frosinone,cichella,FRO,C,m|c,4.0,4.0,6.0,4.0,4.0,7.0
 2026-27,7474,Koutsoupias,frosinone,koutsoupias,FRO,C,c,4.0,4.0,11.0,4.0,4.0,11.0
 2026-27,2593,Martin,genoa,martin,GEN,D,ds|e,5.0,4.0,8.0,5.0,4.0,8.0
 2026-27,2857,Traorè Hj.,genoa,traor&#xE8;-hj,GEN,C,w|t,5.0,4.0,10.0,5.0,4.0,10.0
-2026-27,4177,Pavard,inter,pavard,INT,D,dd|dc,6.0,4.0,10.0,7.0,5.0,12.0
-2026-27,2188,Marusic,lazio,marusic,LAZ,D,dd|ds|e,6.0,4.0,10.0,6.0,4.0,12.0
+2026-27,2814,Provedel,inter,provedel,INT,P,por,2.0,4.0,10.0,2.0,4.0,10.0
+2026-27,4177,Pavard,inter,pavard,INT,D,dd|dc,6.0,4.0,10.0,7.0,4.0,12.0
+2026-27,5301,Luis Henrique,inter,luis-henrique,INT,C,e|w,4.0,4.0,10.0,5.0,5.0,12.0
+2026-27,6632,Gaspar K.,lecce,gaspar-k,LEC,D,dc,5.0,4.0,11.0,5.0,4.0,11.0
+2026-27,7248,Gorter,lecce,gorter,LEC,C,m|c,1.0,4.0,8.0,1.0,4.0,10.0
 2026-27,7322,Ngom,lecce,ngom,LEC,C,m|c,4.0,4.0,9.0,5.0,4.0,10.0
+2026-27,6549,Pierotti,lecce,pierotti,LEC,C,w,6.0,4.0,13.0,5.0,5.0,12.0
 2026-27,7252,Stulic,lecce,stulic,LEC,A,pc,7.0,4.0,9.0,6.0,4.0,9.0
-2026-27,4401,Gabbia,milan,gabbia,MIL,D,dc,7.0,4.0,10.0,7.0,4.0,10.0
-2026-27,5273,Estupinan,milan,estupinan,MIL,D,ds|e,3.0,4.0,10.0,3.0,4.0,10.0
+2026-27,4401,Gabbia,milan,gabbia,MIL,D,dc,7.0,4.0,7.0,7.0,4.0,7.0
+2026-27,5273,Estupinan,milan,estupinan,MIL,D,ds|e,3.0,4.0,9.0,3.0,4.0,9.0
 2026-27,4686,Fofana Y.,milan,fofana-y,MIL,C,m|c,5.0,4.0,10.0,6.0,6.0,12.0
+2026-27,4199,Loftus-Cheek,milan,loftus-cheek,MIL,C,c|t,4.0,4.0,8.0,4.0,4.0,8.0
 2026-27,2115,Delli Carri,monza,delli-carri,MON,D,dc,4.0,4.0,11.0,4.0,4.0,11.0
-2026-27,2741,Pessina,monza,pessina,MON,C,m|c,7.0,4.0,14.0,8.0,5.0,19.0
-2026-27,6202,Beukema,napoli,beukema,NAP,D,dc,6.0,4.0,7.0,6.0,4.0,7.0
-2026-27,2724,Buongiorno,napoli,buongiorno,NAP,D,dc,7.0,4.0,10.0,7.0,4.0,10.0
-2026-27,5840,Olivera,napoli,olivera,NAP,D,b|ds|e,5.0,4.0,10.0,6.0,5.0,12.0
+2026-27,4925,Carboni A.,monza,carboni-a,MON,D,ds|dc,3.0,4.0,10.0,4.0,5.0,12.0
 2026-27,6252,Folorunsho,monza,folorunsho,MON,C,c|t,4.0,4.0,12.0,4.0,4.0,12.0
-2026-27,6831,Neres,napoli,neres,NAP,A,w|a,6.0,4.0,12.0,7.0,5.0,12.0
-2026-27,7411,Daffara,parma,daffara,PAR,P,por,7.0,4.0,1.0,7.0,4.0,1.0
-2026-27,7235,Troilo,parma,troilo,PAR,D,dc,3.0,4.0,12.0,3.0,4.0,12.0
-2026-27,7255,Britschgi,parma,britschgi,PAR,D,dd|ds|e,3.0,4.0,10.0,4.0,4.0,11.0
+2026-27,6831,Neres,napoli,neres,NAP,A,w|a,6.0,4.0,11.0,7.0,4.0,11.0
+2026-27,6666,Bernabè,parma,bernab&#xE8;,PAR,C,c,7.0,4.0,23.0,7.0,4.0,23.0
 2026-27,7213,Frigan,parma,frigan,PAR,A,a,5.0,4.0,3.0,5.0,4.0,3.0
 2026-27,7342,Elphege,parma,elphege,PAR,A,pc,3.0,4.0,5.0,3.0,4.0,5.0
-2026-27,6631,Ghilardi,roma,ghilardi,ROM,D,dc,4.0,4.0,10.0,4.0,4.0,10.0
 2026-27,6986,Rensch,roma,rensch,ROM,D,b|dd|e,5.0,4.0,12.0,6.0,4.0,14.0
 2026-27,6271,El Aynaoui,roma,el-aynaoui,ROM,C,m|c,4.0,4.0,13.0,5.0,4.0,16.0
 2026-27,4236,Muric,sassuolo,muric,SAS,P,por,7.0,4.0,4.0,7.0,4.0,4.0
+2026-27,4867,Turati,sassuolo,turati,SAS,P,por,1.0,4.0,1.0,1.0,4.0,1.0
 2026-27,6005,Ilkhan,torino,ilkhan,TOR,C,m|c,4.0,4.0,7.0,5.0,4.0,8.0
 2026-27,5007,Ilic,lecce,ilic,LEC,C,m|c,1.0,4.0,12.0,1.0,4.0,15.0
 2026-27,6218,Oristanio,torino,oristanio,TOR,C,w|t,7.0,4.0,8.0,7.0,4.0,10.0
 2026-27,608,Zapata D.,torino,zapata-d,TOR,A,pc,7.0,4.0,4.0,6.0,3.0,4.0
-2026-27,6485,Kristensen T.,atalanta,kristensen-t,ATA,D,dd|dc,7.0,4.0,12.0,8.0,5.0,14.0
-2026-27,5527,Zanoli,udinese,zanoli,UDI,D,dd|e,4.0,4.0,8.0,4.0,4.0,8.0
+2026-27,4263,Kabasele,udinese,kabasele,UDI,D,dc,4.0,4.0,7.0,4.0,4.0,7.0
+2026-27,6485,Kristensen T.,atalanta,kristensen-t,ATA,D,dd|dc,7.0,4.0,12.0,8.0,4.0,14.0
+2026-27,5994,Ebosse,udinese,ebosse,UDI,D,ds|dc,2.0,4.0,5.0,2.0,4.0,5.0
 2026-27,7208,Miller L.,udinese,miller-l,UDI,C,m|c,3.0,4.0,12.0,3.0,4.0,15.0
-2026-27,7538,Halhal,venezia,halhal,VEN,D,dc,4.0,4.0,7.0,4.0,4.0,7.0
-2026-27,6890,Moreno M.,venezia,moreno-m,VEN,D,dc,5.0,4.0,6.0,5.0,4.0,6.0
-2026-27,5674,Basic,venezia,basic,VEN,C,m|c,6.0,4.0,13.0,7.0,5.0,16.0
-2026-27,7573,Cinquegrano,sassuolo,cinquegrano,SAS,D,dd|e,1.0,4.0,10.0,1.0,4.0,10.0
+2026-27,6783,Unai Gomez,udinese,unai-gomez,UDI,C,t,7.0,4.0,12.0,6.0,4.0,12.0
+2026-27,7329,Obrador,sassuolo,obrador,SAS,D,ds|e,6.0,4.0,5.0,6.0,4.0,5.0
+2026-27,7574,Foe Ondoa,monza,foe-ondoa,MON,C,c,1.0,4.0,10.0,1.0,4.0,10.0
 2026-27,6145,Ngonge,monza,ngonge,MON,A,a,5.0,4.0,8.0,5.0,4.0,8.0
 2026-27,7579,Massolin,cagliari,massolin,CAG,C,c|t,4.0,4.0,7.0,4.0,4.0,7.0
-2026-27,5751,Patterson,torino,patterson,TOR,D,dd|e,5.0,4.0,4.0,5.0,4.0,4.0
-2026-27,5336,Nzola,cagliari,nzola,CAG,A,pc,4.0,4.0,10.0,4.0,4.0,10.0
-2026-27,7627,Enem,bologna,enem,BOL,A,pc,2.0,4.0,10.0,2.0,4.0,10.0
-2026-27,6047,Ehizibue,genoa,ehizibue,GEN,D,dd|e,4.0,4.0,10.0,4.0,4.0,10.0
-2026-27,5578,Kossounou,atalanta,kossounou,ATA,D,dd|dc,3.0,3.0,11.0,3.0,3.0,11.0
+2026-27,4147,Caleta-Car,sassuolo,caleta-car,SAS,D,dc,6.0,4.0,12.0,6.0,4.0,12.0
+2026-27,2169,Rodriguez R.,torino,rodriguez-r,TOR,D,b|ds|e,5.0,4.0,8.0,6.0,5.0,8.0
+2026-27,2525,Darmian,bologna,darmian,BOL,D,b|dd|e,3.0,4.0,10.0,4.0,5.0,12.0
 2026-27,5918,Sulemana K.,atalanta,sulemana-k,ATA,A,a,6.0,3.0,3.0,6.0,3.0,3.0
+2026-27,7068,Vitik,bologna,vitik,BOL,D,dc,5.0,3.0,5.0,5.0,3.0,5.0
 2026-27,7528,Amondarain,bologna,amondarain,BOL,C,m|c,5.0,3.0,8.0,6.0,4.0,10.0
+2026-27,7532,Kofler,cagliari,kofler,CAG,D,dc,5.0,3.0,3.0,5.0,3.0,3.0
 2026-27,6640,Felici,cagliari,felici,CAG,C,w,5.0,3.0,5.0,4.0,3.0,5.0
 2026-27,7014,Smolcic I.,como,smolcic-i,COM,D,dd|e,4.0,3.0,8.0,4.0,3.0,8.0
 2026-27,7128,Kuhn,como,kuhn,COM,A,w|a,3.0,3.0,5.0,4.0,4.0,7.0
-2026-27,7341,Amorim,genoa,amorim,GEN,C,m|c,4.0,3.0,6.0,5.0,3.0,6.0
-2026-27,6766,Kelly L.,juventus,kelly-l,JUV,D,ds|dc,5.0,3.0,12.0,6.0,4.0,13.0
+2026-27,7294,Valdepenas,fiorentina,valdepenas,FIO,D,ds|dc,6.0,3.0,11.0,7.0,4.0,13.0
+2026-27,7537,Mitaj,genoa,mitaj,GEN,D,ds|e,4.0,3.0,6.0,4.0,3.0,6.0
+2026-27,7409,Meichtry,genoa,meichtry,GEN,C,w|t,5.0,3.0,6.0,5.0,3.0,6.0
+2026-27,6766,Kelly L.,juventus,kelly-l,JUV,D,ds|dc,5.0,3.0,12.0,6.0,3.0,13.0
 2026-27,5813,Miretti,juventus,miretti,JUV,C,c|t,3.0,3.0,7.0,3.0,3.0,7.0
+2026-27,2263,Lazzari,lazio,lazzari,LAZ,D,dd|e,2.0,3.0,4.0,2.0,3.0,4.0
+2026-27,2188,Marusic,lazio,marusic,LAZ,D,dd|ds|e,6.0,3.0,10.0,6.0,3.0,12.0
 2026-27,7211,Athekame,milan,athekame,MIL,D,dd|e,3.0,3.0,8.0,3.0,3.0,8.0
 2026-27,6659,Lucchesi,monza,lucchesi,MON,D,dc,4.0,3.0,11.0,4.0,3.0,11.0
 2026-27,7476,Bakoune,monza,bakoune,MON,D,dd|e,1.0,3.0,3.0,1.0,3.0,3.0
-2026-27,6638,Marin R.,napoli,marin-r,NAP,D,dc,2.0,3.0,14.0,2.0,3.0,14.0
-2026-27,6215,Lucca,napoli,lucca,NAP,A,pc,3.0,3.0,12.0,3.0,3.0,10.0
+2026-27,2741,Pessina,monza,pessina,MON,C,m|c,7.0,3.0,14.0,8.0,4.0,19.0
+2026-27,6202,Beukema,napoli,beukema,NAP,D,dc,6.0,3.0,7.0,6.0,3.0,7.0
+2026-27,2724,Buongiorno,napoli,buongiorno,NAP,D,dc,7.0,3.0,7.0,7.0,3.0,7.0
+2026-27,5481,Mazzocchi,venezia,mazzocchi,VEN,D,dd|ds|e,1.0,3.0,10.0,1.0,3.0,12.0
+2026-27,6215,Lucca,napoli,lucca,NAP,A,pc,3.0,3.0,10.0,3.0,3.0,10.0
 2026-27,5307,Valenti,parma,valenti,PAR,D,dc,4.0,3.0,9.0,4.0,3.0,9.0
-2026-27,4349,Nicolussi Caviglia,parma,nicolussi-caviglia,PAR,C,m|c,6.0,3.0,10.0,7.0,4.0,13.0
+2026-27,7255,Britschgi,parma,britschgi,PAR,D,dd|ds|e,3.0,3.0,10.0,4.0,4.0,11.0
+2026-27,4349,Nicolussi Caviglia,parma,nicolussi-caviglia,PAR,C,m|c,6.0,3.0,10.0,7.0,3.0,13.0
 2026-27,7209,Sorensen O.,parma,sorensen-o,PAR,C,c,3.0,3.0,12.0,3.0,3.0,12.0
 2026-27,7536,Diallo O.,parma,diallo-o,PAR,C,w|a,3.0,3.0,4.0,2.0,2.0,4.0
 2026-27,4772,Angelino,roma,angelino,ROM,D,e,3.0,3.0,12.0,3.0,3.0,12.0
 2026-27,6246,Lipani,sassuolo,lipani,SAS,C,m|c,2.0,3.0,3.0,2.0,3.0,3.0
-2026-27,7183,Aboukhlal,torino,aboukhlal,TOR,C,w|a,3.0,3.0,1.0,2.0,2.0,1.0
-2026-27,4263,Kabasele,udinese,kabasele,UDI,D,dc,4.0,3.0,7.0,4.0,3.0,7.0
-2026-27,5994,Ebosse,udinese,ebosse,UDI,D,ds|dc,2.0,3.0,5.0,2.0,3.0,5.0
+2026-27,6925,Palma,udinese,palma,UDI,D,dc,2.0,3.0,6.0,2.0,3.0,6.0
 2026-27,5820,Bertola,udinese,bertola,UDI,D,dd|ds|dc,4.0,3.0,7.0,6.0,4.0,8.0
+2026-27,5527,Zanoli,udinese,zanoli,UDI,D,dd|e,4.0,3.0,8.0,4.0,3.0,8.0
 2026-27,7418,Chakvetadze,udinese,chakvetadze,UDI,C,w|t,2.0,3.0,9.0,2.0,3.0,9.0
 2026-27,7253,Bella-Kotchap,venezia,bella-kotchap,VEN,D,dc,6.0,3.0,10.0,6.0,3.0,10.0
-2026-27,6892,Schingtienne,venezia,schingtienne,VEN,D,dc,3.0,3.0,8.0,3.0,3.0,8.0
+2026-27,7538,Halhal,venezia,halhal,VEN,D,dc,4.0,3.0,7.0,4.0,3.0,7.0
+2026-27,6890,Moreno M.,venezia,moreno-m,VEN,D,dc,5.0,3.0,6.0,5.0,3.0,6.0
 2026-27,5872,Helgason,venezia,helgason,VEN,C,c|t,3.0,3.0,3.0,3.0,3.0,3.0
-2026-27,7146,Tourè I.,monza,tour&#xE8;-i,MON,C,e|m,6.0,3.0,5.0,8.0,5.0,5.0
-2026-27,7610,Birligea,frosinone,birligea,FRO,A,pc,5.0,3.0,1.0,5.0,3.0,1.0
-2026-27,7232,Fernandez T.,venezia,fernandez-t,VEN,C,t|a,3.0,3.0,5.0,2.0,2.0,5.0
-2026-27,7608,Wiafe,genoa,wiafe,GEN,C,c|t,1.0,3.0,3.0,1.0,3.0,3.0
+2026-27,7146,Tourè I.,monza,tour&#xE8;-i,MON,C,e|m,6.0,3.0,5.0,8.0,4.0,5.0
+2026-27,5751,Patterson,torino,patterson,TOR,D,dd|e,5.0,3.0,4.0,5.0,3.0,4.0
+2026-27,7627,Enem,bologna,enem,BOL,A,pc,2.0,3.0,10.0,2.0,3.0,10.0
+2026-27,5578,Kossounou,atalanta,kossounou,ATA,D,dd|dc,3.0,2.0,11.0,3.0,2.0,11.0
 2026-27,6024,Sulemana I.,sassuolo,sulemana-i,SAS,C,m|c,3.0,2.0,5.0,3.0,2.0,5.0
 2026-27,7172,Pessina Mas.,bologna,pessina-mas,BOL,P,por,1.0,2.0,2.0,1.0,2.0,2.0
-2026-27,7068,Vitik,bologna,vitik,BOL,D,dc,5.0,2.0,5.0,5.0,2.0,5.0
 2026-27,487,De Silvestri,bologna,de-silvestri,BOL,D,dd|e,1.0,2.0,2.0,1.0,2.0,2.0
 2026-27,7483,Alhassane,bologna,alhassane,BOL,D,ds|e,2.0,2.0,5.0,2.0,2.0,5.0
 2026-27,4378,Ranieri L.,fiorentina,ranieri-l,FIO,D,ds|dc,3.0,2.0,11.0,3.0,2.0,12.0
 2026-27,5449,Parisi,fiorentina,parisi,FIO,D,ds|e,5.0,2.0,7.0,5.0,2.0,7.0
 2026-27,6903,Hasa,frosinone,hasa,FRO,C,c|t,2.0,2.0,1.0,2.0,2.0,1.0
 2026-27,6977,Otoa,genoa,otoa,GEN,D,dc,2.0,2.0,7.0,2.0,2.0,7.0
-2026-27,7537,Mitaj,genoa,mitaj,GEN,D,ds|e,4.0,2.0,6.0,4.0,2.0,6.0
-2026-27,7413,Puczka,genoa,puczka,GEN,D,ds|e,2.0,2.0,1.0,2.0,2.0,1.0
 2026-27,791,Sabelli,genoa,sabelli,GEN,D,dd|ds|e,2.0,2.0,5.0,2.0,2.0,5.0
-2026-27,7409,Meichtry,genoa,meichtry,GEN,C,w|t,5.0,2.0,6.0,5.0,2.0,6.0
-2026-27,2814,Provedel,inter,provedel,INT,P,por,2.0,2.0,3.0,2.0,2.0,3.0
-2026-27,6503,Stankovic A.,inter,stankovic-a,INT,C,m|c,3.0,2.0,7.0,3.0,2.0,9.0
+2026-27,6503,Stankovic A.,inter,stankovic-a,INT,C,m|c,3.0,2.0,6.0,3.0,2.0,9.0
 2026-27,6039,Cabal,juventus,cabal,JUV,D,b|ds|e,1.0,2.0,3.0,1.0,2.0,3.0
-2026-27,2263,Lazzari,lazio,lazzari,LAZ,D,dd|e,2.0,2.0,4.0,2.0,2.0,4.0
 2026-27,7182,Ndaba,lecce,ndaba,LEC,D,ds|e,1.0,2.0,4.0,1.0,2.0,4.0
-2026-27,7248,Gorter,lecce,gorter,LEC,C,m|c,1.0,2.0,8.0,1.0,2.0,10.0
 2026-27,6410,Kaba,lecce,kaba,LEC,C,m|c,1.0,2.0,2.0,1.0,2.0,2.0
 2026-27,6015,Berisha M.,lecce,berisha-m,LEC,C,c|t,5.0,2.0,7.0,5.0,2.0,7.0
 2026-27,7318,Gandelman,lecce,gandelman,LEC,C,c|t,5.0,2.0,9.0,5.0,2.0,9.0
-2026-27,7525,Diawara S.,milan,diawara-s,MIL,D,ds|dc,2.0,2.0,2.0,2.0,2.0,2.0
+2026-27,7525,Diawara S.,milan,diawara-s,MIL,D,ds|dc,2.0,2.0,5.0,2.0,2.0,5.0
 2026-27,5453,Ricci S.,como,ricci-s,COM,C,m|c,4.0,2.0,10.0,4.0,2.0,13.0
 2026-27,6519,Camarda,milan,camarda,MIL,A,pc,5.0,2.0,5.0,4.0,1.0,5.0
 2026-27,4485,Thiam,monza,thiam,MON,P,por,5.0,2.0,1.0,5.0,2.0,1.0
+2026-27,5399,Antov,monza,antov,MON,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
 2026-27,383,Petagna,monza,petagna,MON,A,pc,2.0,2.0,5.0,2.0,2.0,5.0
-2026-27,5481,Mazzocchi,venezia,mazzocchi,VEN,D,dd|ds|e,1.0,2.0,10.0,1.0,2.0,12.0
+2026-27,6809,Marianucci,napoli,marianucci,NAP,D,dc,1.0,2.0,2.0,1.0,2.0,3.0
+2026-27,6149,Carboni F.,parma,carboni-f,PAR,D,ds|e,1.0,2.0,3.0,1.0,2.0,3.0
 2026-27,7276,Cremaschi,parma,cremaschi,PAR,C,e|c,1.0,2.0,2.0,1.0,2.0,2.0
 2026-27,7138,Ordonez C.,parma,ordonez-c,PAR,C,m|c,2.0,2.0,8.0,2.0,2.0,8.0
-2026-27,6925,Palma,udinese,palma,UDI,D,dc,2.0,2.0,6.0,2.0,2.0,6.0
+2026-27,6985,Candè,sassuolo,cand&#xE8;,SAS,D,ds|dc,3.0,2.0,1.0,3.0,2.0,1.0
+2026-27,7183,Aboukhlal,torino,aboukhlal,TOR,C,w|a,3.0,2.0,1.0,2.0,2.0,1.0
 2026-27,7312,Arizala,udinese,arizala,UDI,D,ds|e,4.0,2.0,7.0,4.0,2.0,7.0
 2026-27,6212,Zarraga,udinese,zarraga,UDI,C,m|c,1.0,2.0,4.0,1.0,2.0,4.0
 2026-27,7249,Buksa,udinese,buksa,UDI,A,pc,2.0,2.0,4.0,2.0,2.0,4.0
+2026-27,6892,Schingtienne,venezia,schingtienne,VEN,D,dc,3.0,2.0,8.0,3.0,2.0,8.0
 2026-27,7481,Dagasso,venezia,dagasso,VEN,C,c,1.0,2.0,1.0,1.0,2.0,1.0
 2026-27,4387,Adorante,venezia,adorante,VEN,A,pc,5.0,2.0,1.0,4.0,1.0,1.0
 2026-27,7482,Lauberbach,venezia,lauberbach,VEN,A,pc,1.0,2.0,1.0,1.0,2.0,1.0
@@ -476,11 +479,12 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,7553,Omar Fayed,frosinone,omar-fayed,FRO,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
 2026-27,6601,Kambwala,como,kambwala,COM,D,dd|dc,3.0,2.0,4.0,4.0,3.0,4.0
 2026-27,7615,Drobnic,parma,drobnic,PAR,D,dc,1.0,2.0,1.0,1.0,2.0,1.0
-2026-27,801,Gagliardini,cagliari,gagliardini,CAG,C,m|c,3.0,2.0,7.0,4.0,3.0,8.0
+2026-27,801,Gagliardini,cagliari,gagliardini,CAG,C,m|c,3.0,2.0,7.0,4.0,2.0,8.0
 2026-27,7092,Jovanovic,udinese,jovanovic,UDI,C,w|t,2.0,2.0,3.0,2.0,2.0,3.0
-2026-27,5742,Drameh,genoa,drameh,GEN,D,dd|ds|e,3.0,2.0,3.0,4.0,3.0,3.0
+2026-27,7232,Fernandez T.,venezia,fernandez-t,VEN,C,t|a,3.0,2.0,5.0,2.0,1.0,5.0
 2026-27,7628,Sierro,parma,sierro,PAR,C,m|c,1.0,2.0,10.0,1.0,2.0,10.0
 2026-27,7629,Libra,bologna,libra,BOL,C,c|t,1.0,2.0,2.0,1.0,2.0,2.0
+2026-27,7608,Wiafe,genoa,wiafe,GEN,C,c|t,1.0,2.0,3.0,1.0,2.0,3.0
 2026-27,7647,Esteban,lecce,esteban,LEC,A,pc,1.0,2.0,6.0,1.0,2.0,6.0
 2026-27,2297,Rossi F.,atalanta,rossi-f,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,4,Sportiello,atalanta,sportiello,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
@@ -501,7 +505,6 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,7027,Azon,como,azon,COM,A,pc,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,6403,Christensen O.,fiorentina,christensen-o,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,158,Lezzerini,fiorentina,lezzerini,FIO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
-2026-27,7175,Joao Mario,fiorentina,joao-mario,FIO,D,dd|e,3.0,1.0,10.0,3.0,1.0,10.0
 2026-27,7463,Desplanches,frosinone,desplanches,FRO,P,por,2.0,1.0,1.0,2.0,1.0,1.0
 2026-27,7466,Lolic,frosinone,lolic,FRO,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7540,Akpoguma,frosinone,akpoguma,FRO,D,dc,3.0,1.0,4.0,3.0,1.0,4.0
@@ -516,6 +519,7 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,6569,Stolz,genoa,stolz,GEN,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,6245,Vogliacco,genoa,vogliacco,GEN,D,dd|dc,1.0,1.0,2.0,1.0,1.0,2.0
 2026-27,6244,Matturro,genoa,matturro,GEN,D,ds|dc,1.0,1.0,2.0,1.0,1.0,2.0
+2026-27,7413,Puczka,genoa,puczka,GEN,D,ds|e,2.0,1.0,1.0,2.0,1.0,1.0
 2026-27,6980,Venturino,genoa,venturino,GEN,C,w,2.0,1.0,2.0,2.0,1.0,2.0
 2026-27,7453,Havel,genoa,havel,GEN,A,pc,4.0,1.0,1.0,3.0,1.0,1.0
 2026-27,1926,Di Gennaro,inter,di-gennaro,INT,P,por,1.0,1.0,1.0,1.0,1.0,1.0
@@ -537,20 +541,15 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,6813,Torriani,milan,torriani,MIL,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,6682,Pizzignacco,monza,pizzignacco,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7475,Strajnar,monza,strajnar,MON,P,por,1.0,1.0,1.0,1.0,1.0,1.0
-2026-27,5399,Antov,monza,antov,MON,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,5880,Ciurria,monza,ciurria,MON,C,e|w,2.0,1.0,2.0,2.0,1.0,2.0
 2026-27,7477,Colombo L.,monza,colombo-l,MON,C,m|c,3.0,1.0,1.0,3.0,1.0,1.0
 2026-27,2845,Contini,napoli,contini,NAP,P,por,1.0,1.0,1.0,1.0,1.0,1.0
-2026-27,6809,Marianucci,napoli,marianucci,NAP,D,dc,1.0,1.0,2.0,1.0,1.0,3.0
 2026-27,7202,Ndiaye,parma,ndiaye,PAR,D,dc,1.0,1.0,4.0,1.0,1.0,4.0
-2026-27,6149,Carboni F.,parma,carboni-f,PAR,D,ds|e,1.0,1.0,3.0,1.0,1.0,3.0
 2026-27,7048,De Marzi,roma,de-marzi,ROM,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7260,Ziolkowski,monza,ziolkowski,MON,D,dc,1.0,1.0,3.0,1.0,1.0,3.0
 2026-27,6981,Vaz,roma,vaz,ROM,A,pc,1.0,1.0,4.0,1.0,1.0,3.0
 2026-27,4518,Russo A.,sassuolo,russo-a,SAS,P,por,1.0,1.0,1.0,1.0,1.0,1.0
-2026-27,4867,Turati,sassuolo,turati,SAS,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,4374,Walukiewicz,sassuolo,walukiewicz,SAS,D,dd|dc,4.0,1.0,9.0,4.0,1.0,10.0
-2026-27,6985,Candè,sassuolo,cand&#xE8;,SAS,D,ds|dc,3.0,1.0,1.0,3.0,1.0,1.0
 2026-27,6189,Missori,sassuolo,missori,SAS,D,dd|e,1.0,1.0,2.0,1.0,1.0,2.0
 2026-27,7156,Pieragnolo,sassuolo,pieragnolo,SAS,D,ds|e,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,6219,Boloca,sassuolo,boloca,SAS,C,m|c,2.0,1.0,1.0,2.0,1.0,1.0
@@ -588,7 +587,7 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,7572,Comotto,milan,comotto,MIL,C,m|c,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7396,Macchioni,sassuolo,macchioni,SAS,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7575,Mout,monza,mout,MON,C,c,1.0,1.0,5.0,1.0,1.0,5.0
-2026-27,5812,Terracciano F.,milan,terracciano-f,MIL,D,b|dd|ds,2.0,1.0,3.0,3.0,1.0,4.0
+2026-27,5812,Terracciano F.,milan,terracciano-f,MIL,D,b|dd|ds,2.0,1.0,2.0,3.0,1.0,3.0
 2026-27,5462,Ciervo,cagliari,ciervo,CAG,C,w,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7603,Grabara,juventus,grabara,JUV,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7604,Maye,monza,maye,MON,D,ds|dc,1.0,1.0,1.0,1.0,1.0,1.0
@@ -597,6 +596,7 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,6826,Dembelè A.,lecce,dembel&#xE8;-a,LEC,D,dd|e,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,2874,Ghidotti,parma,ghidotti,PAR,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7622,Robinho Junior,genoa,robinho-junior,GEN,A,a,1.0,1.0,1.0,1.0,1.0,1.0
+2026-27,5742,Drameh,genoa,drameh,GEN,D,dd|ds|e,3.0,1.0,3.0,4.0,2.0,3.0
 2026-27,7626,Pompei,atalanta,pompei,ATA,P,por,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,5850,Lovric,udinese,lovric,UDI,C,c,1.0,1.0,1.0,1.0,1.0,1.0
 2026-27,7633,Obric,atalanta,obric,ATA,D,dc,1.0,1.0,1.0,1.0,1.0,1.0
