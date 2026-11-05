@@ -3,7 +3,7 @@ builds up for a later backtest (the API keeps no free history of player markets)
 
   python pipeline/fetch_odds.py          # matches kicking off in the next 8 days
 
-Needs the ODDS_API_KEY environment variable (environment settings > Network secrets / environment variables);
+Needs ODDS_API_KEY: an environment variable, or a line ODDS_API_KEY=... in FantaBall-Complete/.env (not committed);
 without it the step is skipped. Cost: 1 request per match (UK bookmakers; free plan 500 requests a month)."""
 import datetime, os
 import pandas as pd
@@ -22,8 +22,21 @@ def call(path, key, **params):
     return r.json(), r.headers.get('x-requests-remaining')
 
 
+def api_key():
+    """ODDS_API_KEY from the environment, else from a .env file in the project folder (KEY=value lines; never committed)."""
+    if os.environ.get('ODDS_API_KEY'):
+        return os.environ['ODDS_API_KEY']
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '.env')
+    if os.path.exists(env):
+        for line in open(env):
+            k, _, v = line.strip().partition('=')
+            if k.strip() == 'ODDS_API_KEY' and v.strip():
+                return v.strip().strip('"').strip("'")
+    return None
+
+
 def goalscorer_snapshot():
-    key = os.environ.get('ODDS_API_KEY')
+    key = api_key()
     if not key:
         print('odds: ODDS_API_KEY not set, goalscorer odds skipped')
         return None
