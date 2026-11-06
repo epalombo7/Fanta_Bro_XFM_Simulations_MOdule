@@ -2,6 +2,10 @@
 
 State at the end of the session on 25 October 2026 (branch `claude/confident-galileo-knceb5`).
 
+## 0. App sections (players, my team, league rules, next round)
+
+- [ ] See `docs/APP-ROADMAP.md` for the full to-do list.
+
 ## 1. Finish what was started
 
 - [x] **Run 20,000 simulated seasons, discard the first 5,000** — done; matchday intervals use all 15,000 (outcome counts).
