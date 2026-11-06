@@ -223,14 +223,59 @@ function best(t,outSet,home){const R=t.rules,pool=prep(t.players,R,outSet).filte
     for(const g of by.P.slice(0,2))for(const dd of comb(by.D.slice(0,7),nd))for(const cc of comb(by.C.slice(0,7),nc))for(const aa of comb(by.A.slice(0,6),na)){
       const xi=[g,...dd,...cc,...aa];cand.push({f,xi,pre:xi.reduce((s,x)=>s+x.exp,0)})}}
   cand.sort((a,b)=>b.pre-a.pre);const top=cand.slice(0,600);if(!top.length)return null;
-  for(const c of top){const s=new Set(c.xi),bench={P:by.P.filter(x=>!s.has(x)),D:by.D.filter(x=>!s.has(x)),C:by.C.filter(x=>!s.has(x)),A:by.A.filter(x=>!s.has(x))};
+  for(const c of top)evalLineup(c,by,R,home);
+  return{top,by,pool,R,home}}
+// full-rules score of one lineup on every simulated matchday (bench substitutions, modifiers)
+function evalLineup(c,by,R,home){{const s=new Set(c.xi),bench={P:by.P.filter(x=>!s.has(x)),D:by.D.filter(x=>!s.has(x)),C:by.C.filter(x=>!s.has(x)),A:by.A.filter(x=>!s.has(x))};
     bench.all=[...bench.D,...bench.C,...bench.A].sort((a,b)=>b.exp-a.exp);const cap=[...c.xi].sort((a,b)=>b.exp-a.exp).slice(0,2);
     const pts=new Float64Array(D);let mm=0,cc=0;for(let w=0;w<D;w++){const r=play(c.xi,bench,R,w,cap);pts[w]=r.pts+(home?R.homeBonus:0);mm+=r.m;cc+=r.c}
     const mean=pts.reduce((a,b)=>a+b,0)/D;let vr=0,up=0,dn=0,gs=0;const gd=new Array(5).fill(0);
     for(let w=0;w<D;w++){const e=pts[w]-mean;vr+=e*e;if(e>0)up+=e*e;else dn+=e*e;const g=fGoals(pts[w],R);gs+=g;gd[Math.min(4,g)]++}
     const srt=Float64Array.from(pts).sort();
     Object.assign(c,{bench,cap,pts,mean,sd:Math.sqrt(vr/D),upV:up/D,dnV:dn/D,p10:srt[Math.floor((D-1)*.1)],p90:srt[Math.floor((D-1)*.9)],goals:gs/D,gd,mod:mm/D,capB:cc/D})}
-  return{top}}
+  return c}
+
+// ---------- Markowitz / CAPM: variance-covariance optimiser ----------
+// Each available player is an asset whose return is his points in a simulated matchday (0 without a vote).
+// μ = expected points, Σ = covariance between players across the same draws. Maximise μ·w − λ·wᵀΣw over every
+// valid lineup (w = the 11 starters). β to the team = cov(player, lineup)/var(lineup); CAPM β to the market =
+// cov(player, market)/var(market), the market being the average points of all likely starters in the league.
+let MKT=null;
+function market(R){const key=JSON.stringify(R);if(MKT&&MKT.key===key)return MKT.m;const S=stats(R),reg=P.filter(p=>S.get(p.id).pVote>=.6),m=new Float64Array(D);
+  for(const p of reg){const dr=drawsOf(p);for(let w=0;w<D;w++){const o=U(dr[w]);const x=o.any?fv(o,p.role,R):null;if(x!=null)m[w]+=x}}
+  for(let w=0;w<D;w++)m[w]/=reg.length;MKT={key,m};return m}
+function capm(res,lam){const {pool,by,R}=res,n=pool.length,X=pool.map(x=>{const a=new Float64Array(D);for(let w=0;w<D;w++){const v=x.f[w];a[w]=v===v?v:0}return a});
+  const mu=X.map(a=>a.reduce((s,v)=>s+v,0)/D),idx=new Map(pool.map((x,i)=>[x,i])),C=[...Array(n)].map(()=>new Float64Array(n));
+  for(let i=0;i<n;i++)for(let j=i;j<n;j++){let s=0;const a=X[i],b=X[j];for(let w=0;w<D;w++)s+=(a[w]-mu[i])*(b[w]-mu[j]);C[i][j]=C[j][i]=s/D}
+  const m=market(R),mm=m.reduce((s,v)=>s+v,0)/D;let vm=0;for(let w=0;w<D;w++)vm+=(m[w]-mm)**2;vm/=D;
+  const betaM=X.map((a,i)=>{let s=0;for(let w=0;w<D;w++)s+=(a[w]-mu[i])*(m[w]-mm);return s/D/vm});
+  // investable universe: players with at least a 50% chance of a vote (topped up by expected points if a role is short),
+  // otherwise a player who never plays looks like a riskless asset (always 0 points) and a high λ would field him
+  const S=stats(R),uni={};for(const r of ROLES){const need={P:1,D:5,C:5,A:3}[r],a=by[r].filter(x=>S.get(x.p.id).pVote>=.5);uni[r]=a.length>=need?a:by[r].slice(0,Math.max(need,a.length))}
+  const all=[];
+  for(const f of R.forms){const [nd,nc,na]=f.split('-').map(Number);if(uni.P.length<1||uni.D.length<nd||uni.C.length<nc||uni.A.length<na)continue;
+    for(const g of uni.P.slice(0,2))for(const dd of comb(uni.D.slice(0,8),nd))for(const cc of comb(uni.C.slice(0,8),nc))for(const aa of comb(uni.A.slice(0,6),na)){
+      const ix=[g,...dd,...cc,...aa].map(x=>idx.get(x));let e=0,v=0;for(const i of ix){e+=mu[i];const r=C[i];for(const j of ix)v+=r[j]}
+      all.push({f,ix,e,v})}}
+  all.sort((a,b)=>(b.e-lam*b.v)-(a.e-lam*a.v));const bestC=all[0];
+  // efficient frontier: lineups not beaten on both expected points and risk
+  const sample=all.length>4000?all.filter((_,k)=>k<1500||k%Math.ceil(all.length/2500)===0):all;
+  const byRisk=[...sample].sort((a,b)=>a.v-b.v);const front=[];let hi=-Infinity;for(const c of byRisk)if(c.e>hi){front.push(c);hi=c.e}
+  const xi=bestC.ix.map(i=>pool[i]),c=evalLineup({f:bestC.f,xi},by,R,res.home);
+  const tv=bestC.v,contrib=bestC.ix.map(i=>{let s=0;for(const j of bestC.ix)s+=C[i][j];return{x:pool[i],mu:mu[i],sd:Math.sqrt(C[i][i]),share:s/tv,beta:s/tv*bestC.ix.length,betaM:betaM[i]}});
+  // average correlation inside the lineup (diversification)
+  let rs=0,rn=0;for(const i of bestC.ix)for(const j of bestC.ix)if(i<j){rs+=C[i][j]/Math.sqrt(C[i][i]*C[j][j]);rn++}
+  return Object.assign(c,{capm:{e:bestC.e,sd:Math.sqrt(bestC.v),contrib,sample,front,chosen:bestC,avgCorr:rn?rs/rn:0,n:all.length}})}
+function frontierSvg(cp){const W=320,H=190,pl=38,pb=28,pt=10,pr=10,pts=cp.sample,xs=pts.map(c=>Math.sqrt(c.v)),ys=pts.map(c=>c.e);
+  const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),X=v=>pl+(v-x0)/((x1-x0)||1)*(W-pl-pr),Y=v=>H-pb-(v-y0)/((y1-y0)||1)*(H-pb-pt);
+  const tick=(a,b,k)=>[...Array(k+1)].map((_,i)=>a+(b-a)*i/k);
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Frontiera efficiente: rischio sull'asse orizzontale, punti attesi su quello verticale">
+    ${tick(y0,y1,4).map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--sep)" stroke-width="1"/><text x="${pl-4}" y="${Y(v)+3}" font-size="9" text-anchor="end" fill="var(--label2)">${it(v,1)}</text>`).join('')}
+    ${tick(x0,x1,4).map(v=>`<text x="${X(v)}" y="${H-pb+12}" font-size="9" text-anchor="middle" fill="var(--label2)">${it(v,1)}</text>`).join('')}
+    <text x="${(W+pl)/2}" y="${H-4}" font-size="9" text-anchor="middle" fill="var(--label2)">rischio σ (punti)</text>
+    ${pts.map(c=>`<circle cx="${X(Math.sqrt(c.v)).toFixed(1)}" cy="${Y(c.e).toFixed(1)}" r="1.6" fill="var(--label3)" fill-opacity=".45"/>`).join('')}
+    <polyline points="${cp.front.map(c=>`${X(Math.sqrt(c.v)).toFixed(1)},${Y(c.e).toFixed(1)}`).join(' ')}" fill="none" stroke="var(--blue)" stroke-width="2"/>
+    <circle cx="${X(Math.sqrt(cp.chosen.v))}" cy="${Y(cp.chosen.e)}" r="5" fill="var(--orange)" stroke="var(--card)" stroke-width="1.5"/></svg>`}
 // the three ways to choose: highest average points, most fantasy goals, mean-variance (average − λ × variance)
 // ways to choose the lineup, all on the same simulated matchdays:
 //  mean    highest average points
@@ -243,7 +288,8 @@ const pTarget=(c,x)=>{let n=0;for(const v of c.pts)if(v>=x)n++;return n/D};
 const CRIT={mean:{lab:'Punti',sc:c=>c.mean},goals:{lab:'Gol fanta',sc:c=>c.goals+c.mean*1e-4},
   risk:{lab:'Rischio',sc:(c,o)=>o.lam>=0?c.mean-o.lam*c.dnV:c.mean-o.lam*c.upV},
   target:{lab:'Obiettivo',sc:(c,o)=>pTarget(c,o.target)+c.mean*1e-5},
-  win:{lab:'Battere avv.',sc:(c,o)=>o.opp?matchPts(c,o.opp).mp+c.mean*1e-5:c.mean}};
+  win:{lab:'Battere avv.',sc:(c,o)=>o.opp?matchPts(c,o.opp).mp+c.mean*1e-5:c.mean},
+  capm:{lab:'Markowitz',sc:c=>c.mean}};
 function matchPts(c,oppPts){if(c._mpFor===oppPts)return c._mp;let W=0,Dr=0;const R=team().rules;
   for(let w=0;w<D;w++){const a=fGoals(c.pts[w],R),b=fGoals(oppPts[w],R);a>b?W++:a===b&&Dr++}
   c._mpFor=oppPts;return c._mp={w:W/D,d:Dr/D,l:1-(W+Dr)/D,mp:(3*W+Dr)/D}}
@@ -399,8 +445,9 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   if(ot){const outs2=new Set((store.out[ot.id]||[]).concat(ot.players.filter(id=>byId.get(id)?.out>0)));const r2x=best({...ot,rules:R},outs2,false);if(r2x)oppBest=pick(r2x.top,'mean',{})[0]}
   let crit=store.crit?.[t.id]||'mean';if(crit==='win'&&!oppBest)crit='mean';if(crit==='mv')crit='risk';
   const thr=[0,1,2,3].map(k=>R.goalFirst+k*R.goalStep),o={lam:Math.round((store.lam?.[t.id]??0)*10)/10,target:store.target?.[t.id]??thr[1],opp:oppBest?.pts};
-  const ranked=pick(res.top,crit,o),b=ranked[0],S=stats(R),gd=b.gd;
-  const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).filter(k=>k!=='win'||oppBest).map(k=>[k,pick(res.top,k,o)[0]]);
+  const lamC=Math.min(1,Math.round((store.lamC?.[t.id]??0)*10)/10),mk=capm(res,lamC);
+  const ranked=crit==='capm'?[mk,...pick(res.top,'mean',o)]:pick(res.top,crit,o),b=ranked[0],S=stats(R),gd=b.gd;
+  const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).filter(k=>k!=='win'||oppBest).map(k=>[k,k==='capm'?mk:pick(res.top,k,o)[0]]);
   const sorted=Float64Array.from(b.pts).sort(),q=f=>sorted[Math.floor((D-1)*f)];
   let oppHtml='';
   if(oppBest){const m=matchPts(b,oppBest.pts);
@@ -411,11 +458,13 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   const benchList=R.formationChange?[...b.bench.P,...b.bench.all]:ROLES.flatMap(r=>b.bench[r]);
   const help={mean:'La formazione con il punteggio medio più alto.',goals:'La formazione con più gol fanta in media (primo gol a '+R.goalFirst+', poi uno ogni '+R.goalStep+').',
     risk:'Rischio a un lato solo. Verso destra (prudente): penalizza solo le giornate andate peggio della media. Verso sinistra (audace): premia solo le giornate andate meglio della media. Al centro: solo la media.',
-    target:'La formazione con la probabilità più alta di arrivare almeno al punteggio scelto.',win:'La formazione che rende più punti in classifica contro '+(ot?esc(ot.name):'l\'avversario')+' (3 vittoria, 1 pareggio), sulle stesse giornate simulate.'};
+    target:'La formazione con la probabilità più alta di arrivare almeno al punteggio scelto.',
+    capm:'Ottimizzatore varianza-covarianza (Markowitz, stile CAPM): ogni giocatore è un titolo con rendimento atteso μ (punti) e covarianze Σ con gli altri, stimate sulle stesse giornate simulate. Massimizza μ·w − λ·wᵀΣw tra tutte le formazioni valide, con titolari scelti tra chi ha almeno il 50% di probabilità di voto. Panchina e modificatore non entrano in Σ: la formazione scelta è poi ricalcolata con le regole complete. Attenzione: la varianza conta come rischio anche le giornate con gol, quindi con λ alto può togliere i bomber; per scelte di tutti i giorni usa «Rischio».',win:'La formazione che rende più punti in classifica contro '+(ot?esc(ot.name):'l\'avversario')+' (3 vittoria, 1 pareggio), sulle stesse giornate simulate.'};
   $('#rres').innerHTML=`<div class="sec-h"><span>Criterio di scelta</span></div><div class="grp" style="padding:12px 14px;display:grid;gap:10px">
     <div class="seg" id="crit" style="width:100%;grid-auto-columns:1fr">${Object.entries(CRIT).filter(([k])=>k!=='win'||oppBest).map(([k,v])=>`<button type="button" data-c="${k}" aria-pressed="${crit===k}" style="padding:5px 4px">${v.lab}</button>`).join('')}</div>
     <div class="note" style="padding:0">${help[crit]}${!oppBest?' Scegli un avversario più sotto per il criterio «Battere avv.».':''}</div>
     ${crit==='risk'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">${o.lam<0?'Audace':o.lam>0?'Prudente':'Neutrale'} <b>λ ${it(o.lam,1)}</b><small>sinistra = cerca il colpo grosso · destra = più regolare</small></span><input id="lam" type="range" min="-0.3" max="0.3" step="0.1" value="${o.lam}" list="lamticks" style="width:45%"><datalist id="lamticks">${[-.3,-.2,-.1,0,.1,.2,.3].map(v=>`<option value="${v}"></option>`).join('')}</datalist></label>`:''}
+    ${crit==='capm'?`<label class="li" style="padding:0;min-height:0" for="lamC"><span class="k">Avversione al rischio <b>λ ${it(lamC,2)}</b><small>0 = solo μ · 1 = portafoglio molto prudente</small></span><input id="lamC" type="range" min="0" max="1" step="0.1" value="${lamC}" style="width:45%"></label>`:''}
     ${crit==='target'?`<div class="li" style="padding:0;min-height:0"><span class="k">Arrivare ad almeno<small>soglie gol: ${thr.join(', ')}</small></span><span class="filters">${thr.map((x,k)=>`<button type="button" class="chipbtn" data-tg="${x}" aria-pressed="${o.target===x}">${x}</button>`).join('')}<input class="inp" id="tgx" type="number" step="1" value="${o.target}" aria-label="Punteggio obiettivo"></span></div>`:''}</div>
   <div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
     <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)} · σ ${it(b.sd,1)}</span></div>
@@ -424,6 +473,13 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   <div class="grp" style="margin-top:8px"><div class="li"><span class="k">Giornata storta (peggior 10%)</span><span class="v">${it(b.p10,1)}</span></div><div class="li"><span class="k">Giornata top (miglior 10%)</span><span class="v">${it(b.p90,1)}</span></div>
     <div class="li"><span class="k">Arrivare a ${o.target} punti</span><span class="v">${pct(pTarget(b,o.target))}</span></div></div>
   <div class="sec-h"><span>Quanti gol fai</span><span>${D} giornate simulate</span></div><div class="grp bars">${gd.map((c,i)=>`<div class="barrow"><span>${i===4?'4+ gol':i+(i===1?' gol':' gol')}</span><span class="tr"><i style="width:${(c/D*100).toFixed(1)}%"></i></span><span>${pct(c/D)}</span></div>`).join('')}</div>
+  ${crit==='capm'?`<div class="sec-h"><span>Frontiera efficiente</span><span>${mk.capm.n.toLocaleString('it-IT')} formazioni</span></div>
+  <div class="grp" style="padding:10px 12px">${frontierSvg(mk.capm)}<div class="legend"><span style="--c:var(--label3)">formazioni possibili</span><span style="--c:var(--blue)">frontiera efficiente</span><span style="--c:var(--orange)">scelta (μ ${it(mk.capm.e,1)}, σ ${it(mk.capm.sd,1)})</span></div></div>
+  <div class="sec-h"><span>Rischio per giocatore</span><span>correlazione media ${it(Math.abs(mk.capm.avgCorr)<0.005?0:mk.capm.avgCorr,2)}</span></div>
+  <div class="grp" style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums">
+    <thead><tr style="color:var(--label2);text-align:right"><th style="text-align:left;padding:8px 12px;font-weight:600">Giocatore</th><th style="padding:8px 6px;font-weight:600">μ</th><th style="padding:8px 6px;font-weight:600">σ</th><th style="padding:8px 6px;font-weight:600">% rischio</th><th style="padding:8px 6px;font-weight:600">β squadra</th><th style="padding:8px 12px 8px 6px;font-weight:600">β mercato</th></tr></thead>
+    <tbody>${mk.capm.contrib.map(r=>`<tr style="border-top:.5px solid var(--sep);text-align:right"><td style="text-align:left;padding:7px 12px">${esc(r.x.p.name)} <span style="color:var(--label2)">${r.x.role}</span></td><td style="padding:7px 6px">${it(r.mu,2)}</td><td style="padding:7px 6px">${it(r.sd,2)}</td><td style="padding:7px 6px">${pct(r.share)}</td><td style="padding:7px 6px">${it(r.beta,2)}</td><td style="padding:7px 12px 7px 6px">${it(r.betaM,2)}</td></tr>`).join('')}</tbody></table></div>
+  <p class="note">% rischio: quota della varianza della formazione dovuta al giocatore (contributo marginale). β squadra &gt; 1: aumenta il rischio della formazione; &lt; 1: lo diversifica. β mercato: quanto segue l'andamento medio della giornata in Serie A (il «mercato» è la media di tutti i titolari probabili).</p>`:''}
   <div class="sec-h"><span>Titolari${capOn}</span></div><div class="list xi">${b.xi.map(x=>{const s=S.get(x.p.id);return `<div class="row" style="cursor:default"><div class="role ${x.role}">${x.role}</div><div class="who"><div class="nm"><span>${esc(x.p.name)}</span>${badge(x.p)}</div><div class="mt">${esc(x.p.team)} · ${x.p.home?'vs':'a'} ${esc(x.p.opp||'–')}</div></div>
     <div class="num"><div class="xfm">${it(s.xfm,2)}<small>xFM</small></div><div class="vp">${pct(s.pVote)}<span class="meter"><i style="width:${Math.round(s.pVote*100)}%;background:${meterColor(s.pVote)}"></i></span></div></div></div>`}).join('')}</div>
   <div class="sec-h"><span>Panchina, in ordine${R.formationChange?' (cambio modulo)':' per ruolo'}</span></div><div class="grp">${benchList.map((x,i)=>`<div class="li"><span class="k">${i+1}. ${esc(x.p.name)} <small>${x.role} · ${esc(x.p.team)}</small></span><span class="v">${pct(S.get(x.p.id).pVote)}</span></div>`).join('')||'<div class="empty">Nessuno</div>'}</div>
@@ -439,6 +495,7 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   $('#opp').onchange=e=>{opp=e.target.value;computeRound(t)};
   $('#howto').onclick=()=>{store.tab='benvenuto';window.scrollTo(0,0);render()};
   $('#crit').onclick=e=>{const x=e.target.closest('button');if(!x)return;store.crit={...(store.crit||{}),[t.id]:x.dataset.c};save();computeRound(t)};
+  $('#lamC')&&($('#lamC').onchange=e=>{store.lamC={...(store.lamC||{}),[t.id]:+e.target.value};save();computeRound(t)});
   $('#lam')&&($('#lam').onchange=e=>{store.lam={...(store.lam||{}),[t.id]:+e.target.value};save();computeRound(t)});
   document.querySelectorAll('[data-tg]').forEach(x=>x.onclick=()=>{store.target={...(store.target||{}),[t.id]:+x.dataset.tg};save();computeRound(t)});
   $('#tgx')&&($('#tgx').onchange=e=>{const v=+e.target.value;if(v>0){store.target={...(store.target||{}),[t.id]:v};save();computeRound(t)}});
