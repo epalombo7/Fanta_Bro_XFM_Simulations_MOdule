@@ -104,8 +104,11 @@ Expo Go, TestFlight or a store.
 Web prototype of the four sections, from the existing season file (no new simulation): `pipeline/page/build_app_data.js`
 → `pipeline/page/assemble_app.py` (template `app_template.html`). Player chances and xFM under any rules come from the
 exact outcome counts (15,000 seasons); lineup, fantasy goals and opponent use the 255 complete simulated rounds stored in
-the season file (about ±0.5 points of noise). Teams and rules stay in the phone's browser storage. Not yet: decisive
-goals, player of the match, set-piece assist; weekly automatic data for the Expo app.
+the season file (about ±0.5 points of noise). Teams and rules stay in the phone's browser storage. Lineup criteria: average points, fantasy goals, one-sided risk (downside semivariance when cautious, upside when bold —
+plain variance was dropped because it rewarded extra downside), chance of reaching a target score, and match points
+against a chosen opponent. The round is re-simulated for the app with 2,550 complete matchdays (10 × 255, bootstrap
+refits: `build_app_data.js --draws`), noise about ±0.25 points. Not yet: decisive goals, player of the match,
+set-piece assist; weekly automatic data for the Expo app.
 
 ## Suggested order
 
