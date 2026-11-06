@@ -8,7 +8,7 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,7017,Douvikas,como,douvikas,COM,A,pc,20.0,27.0,146.0,20.0,27.0,146.0
 2026-27,2423,Pulisic,milan,pulisic,MIL,C,t|a,25.0,26.0,165.0,23.0,26.0,165.0
 2026-27,6435,Krstovic,atalanta,krstovic,ATA,A,pc,18.0,24.0,167.0,17.0,23.0,167.0
-2026-27,6052,Hojlund,napoli,hojlund,NAP,A,pc,28.0,24.0,200.0,28.0,24.0,200.0
+2026-27,6052,Hojlund,napoli,hojlund,NAP,A,pc,28.0,24.0,190.0,28.0,24.0,190.0
 2026-27,254,Dimarco,inter,dimarco,INT,D,e|w,32.0,23.0,135.0,30.0,22.0,135.0
 2026-27,7556,Mora,roma,mora,ROM,C,t,19.0,23.0,55.0,18.0,22.0,53.0
 2026-27,7126,Baturina,como,baturina,COM,C,t,19.0,22.0,160.0,18.0,22.0,160.0
@@ -18,8 +18,8 @@ season,player_id,name,team_slug,player_slug,team,role,role_mantra,qi,qa,fvm,qi_m
 2026-27,5734,Soulè,roma,soul&#xE8;,ROM,A,a,12.0,21.0,87.0,13.0,22.0,87.0
 2026-27,7472,Calò,frosinone,cal&#xF2;,FRO,C,m|c,7.0,20.0,100.0,8.0,20.0,120.0
 2026-27,7071,Esposito F.P.,inter,esposito-f-p,INT,A,pc,16.0,20.0,83.0,16.0,20.0,80.0
-2026-27,6397,Ramos G.,milan,ramos-g,MIL,A,pc,27.0,20.0,175.0,27.0,20.0,175.0
-2026-27,7523,Varela G.,monza,varela-g,MON,A,pc,3.0,20.0,140.0,3.0,20.0,140.0
+2026-27,6397,Ramos G.,milan,ramos-g,MIL,A,pc,27.0,20.0,180.0,27.0,20.0,180.0
+2026-27,7523,Varela G.,monza,varela-g,MON,A,pc,3.0,20.0,170.0,3.0,20.0,170.0
 2026-27,7078,Mastantuono,fiorentina,mastantuono,FIO,C,w|t,12.0,19.0,85.0,12.0,19.0,85.0
 2026-27,6372,Moreira,milan,moreira,MIL,C,e|w,12.0,19.0,80.0,12.0,19.0,82.0
 2026-27,6752,Woltemade,juventus,woltemade,JUV,A,a,23.0,19.0,38.0,23.0,19.0,38.0
