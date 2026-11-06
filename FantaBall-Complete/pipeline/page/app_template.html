@@ -206,23 +206,25 @@ const fGoals=(x,R)=>x<R.goalFirst?0:1+Math.floor((x-R.goalFirst)/R.goalStep);
 function prep(ids,R,out){const S=stats(R);return ids.map(id=>byId.get(id)).filter(p=>p&&!out.has(p.id)).map(p=>{const dr=drawsOf(p),f=new Float32Array(D),v=new Float32Array(D);
   for(let w=0;w<D;w++){const o=U(dr[w]);const x=o.any?fv(o,p.role,R):null;f[w]=x==null?NaN:x;v[w]=o.rated?o.vote2[R.provider]/2:NaN}
   return{p,role:p.role,f,v,exp:S.get(p.id).exp}})}
-function play(xi,bench,R,w,cap){let subs=0,used=new Set(),pts=0,gk=null,dv=[],cnt={P:0,D:0,C:0,A:0},capV=null,vcV=null;xi.forEach(x=>cnt[x.role]++);
+function play(xi,bench,R,w,cap,rec){let subs=0,used=new Set(),pts=0,gk=null,dv=[],cnt={P:0,D:0,C:0,A:0},capV=null,vcV=null;xi.forEach(x=>cnt[x.role]++);
   const ok=new Set(R.forms),max=R.maxSubs<0?99:R.maxSubs;
   for(const s of xi){let p=s,x=s.f[w];
     if(x!==x&&subs<max){const cands=R.formationChange?bench.all:bench[s.role];
       for(const b of cands){if(used.has(b)||(b.role==='P')!==(s.role==='P'))continue;const y=b.f[w];if(y!==y)continue;
         if(b.role!==s.role){const c2={...cnt};c2[s.role]--;c2[b.role]++;if(!ok.has(`${c2.D}-${c2.C}-${c2.A}`))continue;cnt[s.role]--;cnt[b.role]++}
         used.add(b);subs++;p=b;x=y;break}}
+    if(rec)rec.push(x===x?x:0);
     if(x===x){pts+=x;const v=p.v[w];if(p.role==='P')gk=v===v?v:null;else if(p.role==='D'&&v===v)dv.push(v);if(cap){if(s===cap[0]&&p===s)capV=v;if(s===cap[1]&&p===s)vcV=v}}}
   let m=0;if(R.defMod.on&&gk!=null&&dv.length>=R.defMod.min){const best=dv.sort((a,b)=>b-a).slice(0,3),avg=(gk+best.reduce((a,b)=>a+b,0))/(1+best.length);for(const [t,b] of [...R.defMod.bands].sort((a,b)=>a[0]-b[0]))if(avg>=t)m=b}
   let c=0;if(cap&&R.captain.on){const cv=capV===capV&&capV!=null?capV:vcV;if(cv!=null&&cv===cv)for(const [t,b] of [...R.captain.bands].sort((a,b)=>a[0]-b[0]))if(cv>=t)c=b}
+  if(rec)rec.push(m,c);
   return{pts:pts+m+c,m,c}}
 const comb=(a,k)=>k===0?[[]]:a.flatMap((x,i)=>comb(a.slice(i+1),k-1).map(r=>[x,...r]));
 function best(t,outSet,home){const R=t.rules,pool=prep(t.players,R,outSet).filter(x=>x.exp>0.01),by={P:[],D:[],C:[],A:[]};pool.forEach(x=>by[x.role].push(x));for(const r of ROLES)by[r].sort((a,b)=>b.exp-a.exp);
   const cand=[];for(const f of R.forms){const [nd,nc,na]=f.split('-').map(Number);if(by.P.length<1||by.D.length<nd||by.C.length<nc||by.A.length<na)continue;
     for(const g of by.P.slice(0,2))for(const dd of comb(by.D.slice(0,7),nd))for(const cc of comb(by.C.slice(0,7),nc))for(const aa of comb(by.A.slice(0,6),na)){
       const xi=[g,...dd,...cc,...aa];cand.push({f,xi,pre:xi.reduce((s,x)=>s+x.exp,0)})}}
-  cand.sort((a,b)=>b.pre-a.pre);const top=cand.slice(0,600);if(!top.length)return null;
+  cand.sort((a,b)=>b.pre-a.pre);const top=cand.slice(0,1000);if(!top.length)return null;
   for(const c of top)evalLineup(c,by,R,home);
   return{top,by,pool,R,home}}
 // full-rules score of one lineup on every simulated matchday (bench substitutions, modifiers)
@@ -244,28 +246,23 @@ let MKT=null;
 function market(R){const key=JSON.stringify(R);if(MKT&&MKT.key===key)return MKT.m;const S=stats(R),reg=P.filter(p=>S.get(p.id).pVote>=.6),m=new Float64Array(D);
   for(const p of reg){const dr=drawsOf(p);for(let w=0;w<D;w++){const o=U(dr[w]);const x=o.any?fv(o,p.role,R):null;if(x!=null)m[w]+=x}}
   for(let w=0;w<D;w++)m[w]/=reg.length;MKT={key,m};return m}
-function capm(res,lam){const {pool,by,R}=res,n=pool.length,X=pool.map(x=>{const a=new Float64Array(D);for(let w=0;w<D;w++){const v=x.f[w];a[w]=v===v?v:0}return a});
-  const mu=X.map(a=>a.reduce((s,v)=>s+v,0)/D),idx=new Map(pool.map((x,i)=>[x,i])),C=[...Array(n)].map(()=>new Float64Array(n));
-  for(let i=0;i<n;i++)for(let j=i;j<n;j++){let s=0;const a=X[i],b=X[j];for(let w=0;w<D;w++)s+=(a[w]-mu[i])*(b[w]-mu[j]);C[i][j]=C[j][i]=s/D}
-  const m=market(R),mm=m.reduce((s,v)=>s+v,0)/D;let vm=0;for(let w=0;w<D;w++)vm+=(m[w]-mm)**2;vm/=D;
-  const betaM=X.map((a,i)=>{let s=0;for(let w=0;w<D;w++)s+=(a[w]-mu[i])*(m[w]-mm);return s/D/vm});
-  // investable universe: players with at least a 50% chance of a vote (topped up by expected points if a role is short),
-  // otherwise a player who never plays looks like a riskless asset (always 0 points) and a high λ would field him
-  const S=stats(R),uni={};for(const r of ROLES){const need={P:1,D:5,C:5,A:3}[r],a=by[r].filter(x=>S.get(x.p.id).pVote>=.5);uni[r]=a.length>=need?a:by[r].slice(0,Math.max(need,a.length))}
-  const all=[];
-  for(const f of R.forms){const [nd,nc,na]=f.split('-').map(Number);if(uni.P.length<1||uni.D.length<nd||uni.C.length<nc||uni.A.length<na)continue;
-    for(const g of uni.P.slice(0,2))for(const dd of comb(uni.D.slice(0,8),nd))for(const cc of comb(uni.C.slice(0,8),nc))for(const aa of comb(uni.A.slice(0,6),na)){
-      const ix=[g,...dd,...cc,...aa].map(x=>idx.get(x));let e=0,v=0;for(const i of ix){e+=mu[i];const r=C[i];for(const j of ix)v+=r[j]}
-      all.push({f,ix,e,v})}}
-  all.sort((a,b)=>(b.e-lam*b.v)-(a.e-lam*a.v));const bestC=all[0];
-  // efficient frontier: lineups not beaten on both expected points and risk
-  const sample=all.length>4000?all.filter((_,k)=>k<1500||k%Math.ceil(all.length/2500)===0):all;
-  const byRisk=[...sample].sort((a,b)=>a.v-b.v);const front=[];let hi=-Infinity;for(const c of byRisk)if(c.e>hi){front.push(c);hi=c.e}
-  const xi=bestC.ix.map(i=>pool[i]),c=evalLineup({f:bestC.f,xi},by,R,res.home);
-  const tv=bestC.v,contrib=bestC.ix.map(i=>{let s=0;for(const j of bestC.ix)s+=C[i][j];return{x:pool[i],mu:mu[i],sd:Math.sqrt(C[i][i]),share:s/tv,beta:s/tv*bestC.ix.length,betaM:betaM[i]}});
-  // average correlation inside the lineup (diversification)
-  let rs=0,rn=0;for(const i of bestC.ix)for(const j of bestC.ix)if(i<j){rs+=C[i][j]/Math.sqrt(C[i][i]*C[j][j]);rn++}
-  return Object.assign(c,{capm:{e:bestC.e,sd:Math.sqrt(bestC.v),contrib,sample,front,chosen:bestC,avgCorr:rn?rs/rn:0,n:all.length}})}
+function capm(res,lam){const {top,R}=res,home=res.home;
+  // every shortlisted lineup is already played in full on every simulated matchday: its μ and σ are the formation's own
+  const all=top.map(c=>({c,e:c.mean,v:c.sd*c.sd}));
+  const chosen=all.reduce((a,b)=>(b.e-lam*b.v)>(a.e-lam*a.v)?b:a),c=chosen.c;
+  const byRisk=[...all].sort((a,b)=>a.v-b.v);const front=[];let hi=-Infinity;for(const x of byRisk)if(x.e>hi){front.push(x);hi=x.e}
+  // decomposition of the chosen lineup: assets = its 11 slots (starter or the substitute who came on), the modifier, the captain bonus
+  const nA=c.xi.length+2,X=[...Array(nA)].map(()=>new Float64Array(D)),rec=[];
+  for(let w=0;w<D;w++){rec.length=0;play(c.xi,c.bench,R,w,c.cap,rec);for(let k=0;k<nA;k++)X[k][w]=rec[k]}
+  const mu=X.map(a=>a.reduce((s,v)=>s+v,0)/D),tot=new Float64Array(D);for(let w=0;w<D;w++)for(let k=0;k<nA;k++)tot[w]+=X[k][w];
+  const tm=tot.reduce((s,v)=>s+v,0)/D;let tv=0;for(let w=0;w<D;w++)tv+=(tot[w]-tm)**2;tv/=D;
+  const cov=(a,ma,b,mb)=>{let s=0;for(let w=0;w<D;w++)s+=(a[w]-ma)*(b[w]-mb);return s/D};
+  const m=market(R),mm=m.reduce((s,v)=>s+v,0)/D,vm=cov(m,mm,m,mm);
+  const names=[...c.xi.map(x=>({name:x.p.name,role:x.role})),{name:'Modificatore difesa',role:''},{name:'Capitano',role:''}];
+  const contrib=X.map((a,k)=>({x:names[k],mu:mu[k],sd:Math.sqrt(cov(a,mu[k],a,mu[k])),share:tv?cov(a,mu[k],tot,tm)/tv:0,betaM:vm?cov(a,mu[k],m,mm)/vm:0}))
+    .map(r=>({...r,beta:r.share*(c.xi.length)})).filter((r,k)=>k<c.xi.length||r.sd>1e-9);
+  let rs=0,rn=0;for(let i=0;i<c.xi.length;i++)for(let j=i+1;j<c.xi.length;j++){const a=contrib[i],b=contrib[j];if(a.sd>0&&b.sd>0){rs+=cov(X[i],mu[i],X[j],mu[j])/(a.sd*b.sd);rn++}}
+  return Object.assign(c,{capm:{e:c.mean,sd:c.sd,contrib,sample:all,front,chosen,avgCorr:rn?rs/rn:0,n:all.length}})}
 function frontierSvg(cp){const W=320,H=190,pl=38,pb=28,pt=10,pr=10,pts=cp.sample,xs=pts.map(c=>Math.sqrt(c.v)),ys=pts.map(c=>c.e);
   const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),X=v=>pl+(v-x0)/((x1-x0)||1)*(W-pl-pr),Y=v=>H-pb-(v-y0)/((y1-y0)||1)*(H-pb-pt);
   const tick=(a,b,k)=>[...Array(k+1)].map((_,i)=>a+(b-a)*i/k);
@@ -445,7 +442,7 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   if(ot){const outs2=new Set((store.out[ot.id]||[]).concat(ot.players.filter(id=>byId.get(id)?.out>0)));const r2x=best({...ot,rules:R},outs2,false);if(r2x)oppBest=pick(r2x.top,'mean',{})[0]}
   let crit=store.crit?.[t.id]||'mean';if(crit==='win'&&!oppBest)crit='mean';if(crit==='mv')crit='risk';
   const thr=[0,1,2,3].map(k=>R.goalFirst+k*R.goalStep),o={lam:Math.round((store.lam?.[t.id]??0)*10)/10,target:store.target?.[t.id]??thr[1],opp:oppBest?.pts};
-  const lamC=Math.min(1,Math.round((store.lamC?.[t.id]??0)*10)/10),mk=capm(res,lamC);
+  const lamC=Math.min(.5,Math.round((store.lamC?.[t.id]??0)*20)/20),mk=capm(res,lamC);
   const ranked=crit==='capm'?[mk,...pick(res.top,'mean',o)]:pick(res.top,crit,o),b=ranked[0],S=stats(R),gd=b.gd;
   const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).filter(k=>k!=='win'||oppBest).map(k=>[k,k==='capm'?mk:pick(res.top,k,o)[0]]);
   const sorted=Float64Array.from(b.pts).sort(),q=f=>sorted[Math.floor((D-1)*f)];
@@ -459,12 +456,12 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   const help={mean:'La formazione con il punteggio medio più alto.',goals:'La formazione con più gol fanta in media (primo gol a '+R.goalFirst+', poi uno ogni '+R.goalStep+').',
     risk:'Rischio a un lato solo. Verso destra (prudente): penalizza solo le giornate andate peggio della media. Verso sinistra (audace): premia solo le giornate andate meglio della media. Al centro: solo la media.',
     target:'La formazione con la probabilità più alta di arrivare almeno al punteggio scelto.',
-    capm:'Ottimizzatore varianza-covarianza (Markowitz, stile CAPM): ogni giocatore è un titolo con rendimento atteso μ (punti) e covarianze Σ con gli altri, stimate sulle stesse giornate simulate. Massimizza μ·w − λ·wᵀΣw tra tutte le formazioni valide, con titolari scelti tra chi ha almeno il 50% di probabilità di voto. Panchina e modificatore non entrano in Σ: la formazione scelta è poi ricalcolata con le regole complete. Attenzione: la varianza conta come rischio anche le giornate con gol, quindi con λ alto può togliere i bomber; per scelte di tutti i giorni usa «Rischio».',win:'La formazione che rende più punti in classifica contro '+(ot?esc(ot.name):'l\'avversario')+' (3 vittoria, 1 pareggio), sulle stesse giornate simulate.'};
+    capm:'Ottimizzatore varianza-covarianza (Markowitz, stile CAPM). Ogni posto in formazione è un titolo: rende i punti di chi lo occupa (il titolare o il panchinaro che entra), più il modificatore difesa come titolo a sé. μ e Σ sono stimati sulle stesse giornate simulate, con le regole complete, quindi media e rischio coincidono con quelli della formazione. Massimizza μ − λ·σ² tra le '+res.top.length+' formazioni migliori. Attenzione: la varianza conta come rischio anche le giornate con gol; per scelte di tutti i giorni usa «Rischio».',win:'La formazione che rende più punti in classifica contro '+(ot?esc(ot.name):'l\'avversario')+' (3 vittoria, 1 pareggio), sulle stesse giornate simulate.'};
   $('#rres').innerHTML=`<div class="sec-h"><span>Criterio di scelta</span></div><div class="grp" style="padding:12px 14px;display:grid;gap:10px">
     <div class="seg" id="crit" style="width:100%;grid-auto-columns:1fr">${Object.entries(CRIT).filter(([k])=>k!=='win'||oppBest).map(([k,v])=>`<button type="button" data-c="${k}" aria-pressed="${crit===k}" style="padding:5px 4px">${v.lab}</button>`).join('')}</div>
     <div class="note" style="padding:0">${help[crit]}${!oppBest?' Scegli un avversario più sotto per il criterio «Battere avv.».':''}</div>
     ${crit==='risk'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">${o.lam<0?'Audace':o.lam>0?'Prudente':'Neutrale'} <b>λ ${it(o.lam,1)}</b><small>sinistra = cerca il colpo grosso · destra = più regolare</small></span><input id="lam" type="range" min="-0.3" max="0.3" step="0.1" value="${o.lam}" list="lamticks" style="width:45%"><datalist id="lamticks">${[-.3,-.2,-.1,0,.1,.2,.3].map(v=>`<option value="${v}"></option>`).join('')}</datalist></label>`:''}
-    ${crit==='capm'?`<label class="li" style="padding:0;min-height:0" for="lamC"><span class="k">Avversione al rischio <b>λ ${it(lamC,2)}</b><small>0 = solo μ · 1 = portafoglio molto prudente</small></span><input id="lamC" type="range" min="0" max="1" step="0.1" value="${lamC}" style="width:45%"></label>`:''}
+    ${crit==='capm'?`<label class="li" style="padding:0;min-height:0" for="lamC"><span class="k">Avversione al rischio <b>λ ${it(lamC,2)}</b><small>0 = solo μ · 0,5 = portafoglio molto prudente</small></span><input id="lamC" type="range" min="0" max="0.5" step="0.05" value="${lamC}" style="width:45%"></label>`:''}
     ${crit==='target'?`<div class="li" style="padding:0;min-height:0"><span class="k">Arrivare ad almeno<small>soglie gol: ${thr.join(', ')}</small></span><span class="filters">${thr.map((x,k)=>`<button type="button" class="chipbtn" data-tg="${x}" aria-pressed="${o.target===x}">${x}</button>`).join('')}<input class="inp" id="tgx" type="number" step="1" value="${o.target}" aria-label="Punteggio obiettivo"></span></div>`:''}</div>
   <div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
     <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)} · σ ${it(b.sd,1)}</span></div>
@@ -478,8 +475,8 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   <div class="sec-h"><span>Rischio per giocatore</span><span>correlazione media ${it(Math.abs(mk.capm.avgCorr)<0.005?0:mk.capm.avgCorr,2)}</span></div>
   <div class="grp" style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums">
     <thead><tr style="color:var(--label2);text-align:right"><th style="text-align:left;padding:8px 12px;font-weight:600">Giocatore</th><th style="padding:8px 6px;font-weight:600">μ</th><th style="padding:8px 6px;font-weight:600">σ</th><th style="padding:8px 6px;font-weight:600">% rischio</th><th style="padding:8px 6px;font-weight:600">β squadra</th><th style="padding:8px 12px 8px 6px;font-weight:600">β mercato</th></tr></thead>
-    <tbody>${mk.capm.contrib.map(r=>`<tr style="border-top:.5px solid var(--sep);text-align:right"><td style="text-align:left;padding:7px 12px">${esc(r.x.p.name)} <span style="color:var(--label2)">${r.x.role}</span></td><td style="padding:7px 6px">${it(r.mu,2)}</td><td style="padding:7px 6px">${it(r.sd,2)}</td><td style="padding:7px 6px">${pct(r.share)}</td><td style="padding:7px 6px">${it(r.beta,2)}</td><td style="padding:7px 12px 7px 6px">${it(r.betaM,2)}</td></tr>`).join('')}</tbody></table></div>
-  <p class="note">% rischio: quota della varianza della formazione dovuta al giocatore (contributo marginale). β squadra &gt; 1: aumenta il rischio della formazione; &lt; 1: lo diversifica. β mercato: quanto segue l'andamento medio della giornata in Serie A (il «mercato» è la media di tutti i titolari probabili).</p>`:''}
+    <tbody>${mk.capm.contrib.map(r=>`<tr style="border-top:.5px solid var(--sep);text-align:right"><td style="text-align:left;padding:7px 12px">${esc(r.x.name)} <span style="color:var(--label2)">${r.x.role}</span></td><td style="padding:7px 6px">${it(r.mu,2)}</td><td style="padding:7px 6px">${it(r.sd,2)}</td><td style="padding:7px 6px">${pct(r.share)}</td><td style="padding:7px 6px">${it(r.beta,2)}</td><td style="padding:7px 12px 7px 6px">${it(r.betaM,2)}</td></tr>`).join('')}</tbody></table></div>
+  <p class="note">Ogni riga è un posto in formazione: i suoi punti includono il panchinaro che entra quando il titolare non ha voto. Le righe sommano esattamente la media (μ) e la varianza della formazione. % rischio: quota della varianza della formazione dovuta a quel posto. β squadra &gt; 1: aumenta il rischio della formazione; &lt; 1: lo diversifica. β mercato: quanto segue l'andamento medio della giornata in Serie A (il «mercato» è la media di tutti i titolari probabili).</p>`:''}
   <div class="sec-h"><span>Titolari${capOn}</span></div><div class="list xi">${b.xi.map(x=>{const s=S.get(x.p.id);return `<div class="row" style="cursor:default"><div class="role ${x.role}">${x.role}</div><div class="who"><div class="nm"><span>${esc(x.p.name)}</span>${badge(x.p)}</div><div class="mt">${esc(x.p.team)} · ${x.p.home?'vs':'a'} ${esc(x.p.opp||'–')}</div></div>
     <div class="num"><div class="xfm">${it(s.xfm,2)}<small>xFM</small></div><div class="vp">${pct(s.pVote)}<span class="meter"><i style="width:${Math.round(s.pVote*100)}%;background:${meterColor(s.pVote)}"></i></span></div></div></div>`}).join('')}</div>
   <div class="sec-h"><span>Panchina, in ordine${R.formationChange?' (cambio modulo)':' per ruolo'}</span></div><div class="grp">${benchList.map((x,i)=>`<div class="li"><span class="k">${i+1}. ${esc(x.p.name)} <small>${x.role} · ${esc(x.p.team)}</small></span><span class="v">${pct(S.get(x.p.id).pVote)}</span></div>`).join('')||'<div class="empty">Nessuno</div>'}</div>
