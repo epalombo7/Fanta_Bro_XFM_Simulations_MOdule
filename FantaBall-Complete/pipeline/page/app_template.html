@@ -213,12 +213,16 @@ function best(t,outSet,home){const R=t.rules,pool=prep(t.players,R,outSet).filte
   const cand=[];for(const f of R.forms){const [nd,nc,na]=f.split('-').map(Number);if(by.P.length<1||by.D.length<nd||by.C.length<nc||by.A.length<na)continue;
     for(const g of by.P.slice(0,2))for(const dd of comb(by.D.slice(0,7),nd))for(const cc of comb(by.C.slice(0,7),nc))for(const aa of comb(by.A.slice(0,6),na)){
       const xi=[g,...dd,...cc,...aa];cand.push({f,xi,pre:xi.reduce((s,x)=>s+x.exp,0)})}}
-  cand.sort((a,b)=>b.pre-a.pre);const top=cand.slice(0,250);if(!top.length)return null;
+  cand.sort((a,b)=>b.pre-a.pre);const top=cand.slice(0,400);if(!top.length)return null;
   for(const c of top){const s=new Set(c.xi),bench={P:by.P.filter(x=>!s.has(x)),D:by.D.filter(x=>!s.has(x)),C:by.C.filter(x=>!s.has(x)),A:by.A.filter(x=>!s.has(x))};
     bench.all=[...bench.D,...bench.C,...bench.A].sort((a,b)=>b.exp-a.exp);const cap=[...c.xi].sort((a,b)=>b.exp-a.exp).slice(0,2);
     const pts=new Float64Array(D);let mm=0,cc=0;for(let w=0;w<D;w++){const r=play(c.xi,bench,R,w,cap);pts[w]=r.pts+(home?R.homeBonus:0);mm+=r.m;cc+=r.c}
-    Object.assign(c,{bench,cap,pts,mean:pts.reduce((a,b)=>a+b,0)/D,mod:mm/D,capB:cc/D})}
-  top.sort((a,b)=>b.mean-a.mean);return{best:top[0],perForm:R.forms.map(f=>top.find(c=>c.f===f)).filter(Boolean)}}
+    const mean=pts.reduce((a,b)=>a+b,0)/D;let vr=0,gs=0;const gd=new Array(5).fill(0);for(let w=0;w<D;w++){vr+=(pts[w]-mean)**2;const g=fGoals(pts[w],R);gs+=g;gd[Math.min(4,g)]++}
+    Object.assign(c,{bench,cap,pts,mean,sd:Math.sqrt(vr/D),goals:gs/D,gd,mod:mm/D,capB:cc/D})}
+  return{top}}
+// the three ways to choose: highest average points, most fantasy goals, mean-variance (average − λ × variance)
+const CRIT={mean:{lab:'Punti attesi',sc:c=>c.mean},goals:{lab:'Gol fanta',sc:c=>c.goals+c.mean*1e-4},mv:{lab:'Media-varianza',sc:(c,l)=>c.mean-l*c.sd*c.sd}};
+const pick=(top,crit,lam)=>[...top].sort((a,b)=>CRIT[crit].sc(b,lam)-CRIT[crit].sc(a,lam));
 
 // ---------- shared UI ----------
 const S0=()=>stats(team()?.rules||RULES0);
@@ -366,31 +370,40 @@ function viewRound(){const t=team();
 function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).concat(t.players.filter(id=>byId.get(id)?.out>0)));const home=!!(store.home?.[t.id]);
   if(t.players.length<11){$('#rres').innerHTML='<div class="empty">Servono almeno 11 giocatori: aggiungili in Squadre.</div>';return}
   const res=best(t,outs,home);if(!res){$('#rres').innerHTML='<div class="empty">Nessuna formazione valida con i moduli consentiti e i giocatori disponibili.</div>';return}
-  const b=res.best,S=stats(R),gd=new Array(5).fill(0);b.pts.forEach(x=>gd[Math.min(4,fGoals(x,R))]++);
+  const crit=store.crit?.[t.id]||'mean',lam=store.lam?.[t.id]??0.05,ranked=pick(res.top,crit,lam),b=ranked[0],S=stats(R),gd=b.gd;
+  const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).map(k=>[k,pick(res.top,k,lam)[0]]);
   const sorted=Float64Array.from(b.pts).sort(),q=f=>sorted[Math.floor((D-1)*f)];
   let oppHtml='';const ot=store.teams.find(x=>x.id===opp&&x.id!==t.id);
-  if(ot){const outs2=new Set((store.out[ot.id]||[]).concat(ot.players.filter(id=>byId.get(id)?.out>0)));const r2=best({...ot,rules:R},outs2,false);
+  if(ot){const outs2=new Set((store.out[ot.id]||[]).concat(ot.players.filter(id=>byId.get(id)?.out>0)));const r2x=best({...ot,rules:R},outs2,false),r2=r2x&&{best:pick(r2x.top,'mean',0)[0]};
     if(r2){let w=0,d=0,l=0;for(let i=0;i<D;i++){const a=fGoals(b.pts[i],R),c=fGoals(r2.best.pts[i],R);a>c?w++:a<c?l++:d++}
       oppHtml=`<div class="grp split"><div class="seg2"><i style="width:${w/D*100}%;background:var(--green)"></i><i style="width:${d/D*100}%;background:var(--label3)"></i><i style="width:${l/D*100}%;background:var(--red)"></i></div>
       <div class="legend"><span style="--c:var(--green)">Vittoria ${pct(w/D)}</span><span style="--c:var(--label3)">Pareggio ${pct(d/D)}</span><span style="--c:var(--red)">Sconfitta ${pct(l/D)}</span></div>
       <div class="note" style="padding:0">${esc(ot.name)}: ${it(r2.best.mean,1)} punti attesi con ${r2.best.f}, con le regole di ${esc(t.name)}.</div></div>`}}
   const capOn=R.captain.on?` · capitano ${esc(b.cap[0].p.name)}, vice ${esc(b.cap[1].p.name)}`:'';
   const benchList=R.formationChange?[...b.bench.P,...b.bench.all]:ROLES.flatMap(r=>b.bench[r]);
-  $('#rres').innerHTML=`<div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
-    <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)}</span></div>
+  $('#rres').innerHTML=`<div class="sec-h"><span>Criterio di scelta</span></div><div class="grp" style="padding:12px 14px;display:grid;gap:10px">
+    <div class="seg" id="crit" style="width:100%;grid-auto-columns:1fr">${Object.entries(CRIT).map(([k,v])=>`<button type="button" data-c="${k}" aria-pressed="${crit===k}">${v.lab}</button>`).join('')}</div>
+    <div class="note" style="padding:0">${crit==='mean'?'La formazione con il punteggio medio più alto.':crit==='goals'?'La formazione con più gol fanta in media (primo gol a '+R.goalFirst+', poi uno ogni '+R.goalStep+'): premia chi supera le soglie più spesso.':'Portafoglio media-varianza: massimizza media − λ × varianza del punteggio. λ più alto = formazione più regolare, meno rischiosa.'}</div>
+    ${crit==='mv'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">Avversione al rischio λ <b>${it(lam,2)}</b><small>0 = solo media · 0,05 bilanciato · 0,2 prudente</small></span><input id="lam" type="range" min="0" max="0.3" step="0.01" value="${lam}" style="width:45%"></label>`:''}</div>
+  <div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
+    <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)} · σ ${it(b.sd,1)}</span></div>
     <div class="big"><span class="k">Modulo</span><span class="v">${b.f}</span><span class="s">${R.defMod.on?'modificatore +'+it(b.mod,1):'senza modificatore'}</span></div>
-    <div class="big"><span class="k">Gol attesi</span><span class="v">${it(gd.reduce((s,c,i)=>s+c*i,0)/D,2)}</span><span class="s">primo a ${R.goalFirst}, poi ogni ${R.goalStep}</span></div></div>
+    <div class="big"><span class="k">Gol attesi</span><span class="v">${it(b.goals,2)}</span><span class="s">primo a ${R.goalFirst}, poi ogni ${R.goalStep}</span></div></div>
   <div class="sec-h"><span>Quanti gol fai</span><span>${D} giornate simulate</span></div><div class="grp bars">${gd.map((c,i)=>`<div class="barrow"><span>${i===4?'4+ gol':i+(i===1?' gol':' gol')}</span><span class="tr"><i style="width:${(c/D*100).toFixed(1)}%"></i></span><span>${pct(c/D)}</span></div>`).join('')}</div>
   <div class="sec-h"><span>Titolari${capOn}</span></div><div class="list xi">${b.xi.map(x=>{const s=S.get(x.p.id);return `<div class="row" style="cursor:default"><div class="role ${x.role}">${x.role}</div><div class="who"><div class="nm"><span>${esc(x.p.name)}</span>${badge(x.p)}</div><div class="mt">${esc(x.p.team)} · ${x.p.home?'vs':'a'} ${esc(x.p.opp||'–')}</div></div>
     <div class="num"><div class="xfm">${it(s.xfm,2)}<small>xFM</small></div><div class="vp">${pct(s.pVote)}<span class="meter"><i style="width:${Math.round(s.pVote*100)}%;background:${meterColor(s.pVote)}"></i></span></div></div></div>`}).join('')}</div>
   <div class="sec-h"><span>Panchina, in ordine${R.formationChange?' (cambio modulo)':' per ruolo'}</span></div><div class="grp">${benchList.map((x,i)=>`<div class="li"><span class="k">${i+1}. ${esc(x.p.name)} <small>${x.role} · ${esc(x.p.team)}</small></span><span class="v">${pct(S.get(x.p.id).pVote)}</span></div>`).join('')||'<div class="empty">Nessuno</div>'}</div>
-  <div class="sec-h"><span>Altri moduli</span></div><div class="grp">${res.perForm.sort((a,b2)=>b2.mean-a.mean).map(c=>`<div class="li"><span class="k">${c.f}</span><span class="v">${it(c.mean,1)}</span></div>`).join('')}</div>
+  <div class="sec-h"><span>Confronto dei tre criteri</span></div><div class="list">${three.map(([k,c])=>`<div class="li" style="flex-wrap:wrap"><span class="k"><b>${CRIT[k].lab}</b>${k===crit?' · scelto':''}<small>${c.f} · ${esc(c.xi.filter(x=>!b.xi.includes(x)).map(x=>x.p.name).join(', ')||'stessi titolari')}${c.xi.some(x=>!b.xi.includes(x))?' al posto di '+esc(b.xi.filter(x=>!c.xi.includes(x)).map(x=>x.p.name).join(', ')):''}</small></span>
+    <span class="v">${it(c.mean,1)} pt · σ ${it(c.sd,1)} · ${it(c.goals,2)} gol<br><small>≥ 2 gol ${pct((c.gd[2]+c.gd[3]+c.gd[4])/D)}</small></span></div>`).join('')}</div>
+  <div class="sec-h"><span>Altri moduli (stesso criterio)</span></div><div class="grp">${perForm.map(c=>`<div class="li"><span class="k">${c.f}</span><span class="v">${it(c.mean,1)} pt · ${it(c.goals,2)} gol · σ ${it(c.sd,1)}</span></div>`).join('')}</div>
   <div class="sec-h"><span>Avversario</span></div><div class="grp">${'<div class="li"><span class="k">Gioca contro</span><select class="sel" id="opp"><option value="">Nessuno</option>'+store.teams.filter(x=>x.id!==t.id).map(x=>`<option value="${x.id}" ${opp===x.id?'selected':''}>${esc(x.name)}</option>`).join('')+'</select></div>'}
     <div class="li"><span class="k">Gioco in casa<small>fattore campo ${it(R.homeBonus,1)}</small></span><input class="tg" type="checkbox" id="home" ${store.home?.[t.id]?'checked':''}></div></div>${oppHtml}
   <div class="sec-h"><span>Indisponibili (ultime notizie)</span></div><div class="grp">${t.players.map(id=>byId.get(id)).filter(Boolean).sort((a,b2)=>ROLES.indexOf(a.role)-ROLES.indexOf(b2.role)).map(p=>{const auto=p.out>0,on=auto||(store.out[t.id]||[]).includes(p.id);
     return `<div class="li"><span class="k">${esc(p.name)} <small>${p.role} · ${esc(p.team)}${auto?' · infortunato (lista Fantacalcio)':''}</small></span><input class="tg" type="checkbox" data-out="${p.id}" ${on?'checked':''} ${auto?'disabled':''} aria-label="${esc(p.name)} fuori"></div>`}).join('')}</div>
-  <p class="note">Formazione scelta tra tutte quelle possibili, simulando ${D} giornate complete (stessa partita reale per tutti i giocatori): cambi dalla panchina${R.maxSubs<0?'':' (max '+R.maxSubs+')'}, modificatore difesa e capitano come da Regole. Con ${D} giornate le medie hanno un margine di circa ±0,5 punti. Probabilità e xFM dei singoli giocatori usano tutte le ${N.toLocaleString('it-IT')} stagioni simulate.</p>`;
+  <p class="note">Formazione scelta con il criterio indicato tra tutte quelle possibili, simulando ${D} giornate complete (stessa partita reale per tutti i giocatori): cambi dalla panchina${R.maxSubs<0?'':' (max '+R.maxSubs+')'}, modificatore difesa e capitano come da Regole. Con ${D} giornate le medie hanno un margine di circa ±0,5 punti. Probabilità e xFM dei singoli giocatori usano tutte le ${N.toLocaleString('it-IT')} stagioni simulate.</p>`;
   $('#opp').onchange=e=>{opp=e.target.value;computeRound(t)};
+  $('#crit').onclick=e=>{const x=e.target.closest('button');if(!x)return;store.crit={...(store.crit||{}),[t.id]:x.dataset.c};save();computeRound(t)};
+  $('#lam')&&($('#lam').onchange=e=>{store.lam={...(store.lam||{}),[t.id]:+e.target.value};save();computeRound(t)});
   $('#home').onchange=e=>{store.home={...(store.home||{}),[t.id]:e.target.checked};save();computeRound(t)};
   document.querySelectorAll('[data-out]').forEach(c=>c.onchange=()=>{const id=+c.dataset.out,a=new Set(store.out[t.id]||[]);c.checked?a.add(id):a.delete(id);store.out[t.id]=[...a];save();$('#rres').innerHTML='<div class="empty">Ricalcolo…</div>';setTimeout(()=>computeRound(t),20)})}
 
