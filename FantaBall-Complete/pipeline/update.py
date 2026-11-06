@@ -16,8 +16,11 @@ HERE = pathlib.Path(__file__).parent
 def main():
     history = '--history' in sys.argv
     fetch_matches.football_data(); fetch_matches.openfootball()
-    ids, active = fetch_understat.league()
-    fetch_understat.player_logs(ids, active)
+    try:                                          # Understat feeds no forecast input yet: an outage must not stop the weekly run
+        ids, active = fetch_understat.league()
+        fetch_understat.player_logs(ids, active)
+    except Exception as e:
+        print('understat: skipped,', type(e).__name__, e)
     fetch_fantacalcio.run(SEASONS[::-1] if history else [CURRENT])
     fetch_fotmob.run(range(fetch_fotmob.LAST, fetch_fotmob.FIRST - 1, -1) if history else [fetch_fotmob.LAST])
     fetch_fantacalcio.injuries_snapshot(); fetch_fantacalcio.lineups_snapshot()
