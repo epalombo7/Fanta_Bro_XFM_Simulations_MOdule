@@ -1,0 +1,23 @@
+{
+  "_about": "The user's fantasy squads and each league's lineup rules, used by pipeline/best_lineup.js. Names as on Fantacalcio. Update when the squad changes.",
+  "teams": [
+    {
+      "name": "Febbre da Rabiot",
+      "rules": {"defenceModifier": true, "keeperCleanSheet": true, "formationChange": true, "maxSubs": 3},
+      "_rules_note": "modificatore difesa, imbattibilità (keeper +1 with no goals conceded), cambio modulo (a substitute may change the formation)",
+      "players": ["Perri", "Gollini", "Svilar",
+                  "Valeri", "Bastoni", "Miranda J.", "Coco", "Dragusin", "Tiago Gabriel", "Gila", "Ismajli",
+                  "Rabiot", "Vlasic", "Taylor K.", "Ferguson", "Pellegrini Lo.", "Cristante", "Pessina", "Basic",
+                  "Kolo Muani", "Yeboah J.", "Adams A.", "Dybala", "Gueye", "Milik"]
+    },
+    {
+      "name": "Second team",
+      "rules": {"defenceModifier": false, "keeperCleanSheet": false, "formationChange": false, "maxSubs": 3},
+      "_rules_note": "no defence modifier, no clean-sheet bonus, substitutes role for role",
+      "players": ["Gollini", "De Marzi", "Svilar",
+                  "Wesley", "Gallo", "Couto", "Marcandalli", "Bellanova", "Provstgaard", "Joao Mario", "Drameh",
+                  "Barella", "Cacciamani", "Frattesi", "Gaetano", "Calò", "Basic", "Busio", "Zaniolo",
+                  "Malen", "Krstovic", "Beto", "Geubbels", "Castro S.", "Ghedjemis"]
+    }
+  ]
+}
