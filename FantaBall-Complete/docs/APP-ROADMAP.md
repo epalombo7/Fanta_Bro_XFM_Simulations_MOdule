@@ -1,6 +1,6 @@
 # FantaBall app — to-do list
 
-Goal: one page (the Giornata page, later the phone app) with four sections:
+Goal: the **phone app** (`mobile/`, Expo, engine in a webview) with four sections:
 **Players** (event chances next to xFM) · **My team** (import by picking players) · **League rules** (how scoring works)
 · **Next round** (best lineup, expected score, chance of each number of fantasy goals).
 
@@ -29,25 +29,42 @@ What already exists and is reused:
 
 ## 2 · My team: import by picking players
 
-- [ ] Player picker: search by name / club, tap to add; role counts shown live (3 P · 8 D · 8 C · 6 A, or the
-  league's own numbers); warns when a role is full or a player is in no squad list.
-- [ ] Several teams per person, each with a name and its league (rules from section 3).
-- [ ] Storage: on the device (works offline, private) plus **export / import as a short code or file**, so a team can
-  be moved to another phone or sent to Claude. Seed with the two stored squads.
-- [ ] Auto-flag players who left Serie A or changed club when the weekly price list updates.
-- [ ] Decide: shared storage so friends see each other's teams? (needs the page's shared database; see Decisions).
+- [ ] Player picker: search by name / club, tap to add; role counts shown live (the league's squad numbers, default
+  3 P · 8 D · 8 C · 6 A); warns when a role is full.
+- [ ] Several teams per person, each with a name and its league rules (section 3).
+- [ ] **Private on each phone** (decided): stored on the device only (app storage), nothing sent to a server. Export /
+  import as a short code or file to move a team to another phone or send it to Claude. Seed with the two stored squads.
+- [ ] Flag players who left Serie A or changed club when the weekly price list updates.
 
-## 3 · League rules (how scoring works)
+## 3 · League rules: every usual Fantacalcio Classic option (no Mantra), set by the user
 
-- [ ] Form over every rule the engine supports: bonus per goal by role, assist, penalty scored / missed / saved,
-  own goal, yellow, red, keeper per goal conceded, clean sheet by role (imbattibilità), fantavoto of a sent-off /
-  booked player without a vote, vote provider (Fantacalcio / Statistico / Italia).
-- [ ] Lineup rules: **defence modifier** on/off and its bands, **cambio modulo** on/off, allowed formations, number of
-  substitutions, bench size.
-- [ ] Match rules: fantasy goal thresholds (66 = 1 goal, +1 every 6 by default), optional "goal at 60/64", home bonus.
-- [ ] Presets: Classic standard, the two current leagues; validate and explain each field in one line.
-- [ ] Every number on the page follows the chosen rules (xFM, ranges, expected points): module 2 must run in the
-  page. Today the page carries numbers under the standard rules only.
+Scoring (each value editable; "by role" = separate value for P, D, C, A):
+- [ ] Goal, by role (standard +3) · penalty scored (often its own value, e.g. +2.5 or +3) · penalty missed (−3) ·
+  penalty saved (P, +3) · own goal (−2)
+- [ ] Assist (+1) · assist from a set piece (often a separate value) · *needs data: the votes we download record
+  assists without saying which were from a set piece — check Fantacalcio's pages; until then one value for both*
+- [ ] Yellow (−0.5) · red (−1)
+- [ ] Keeper: per goal conceded (−1) · clean sheet / imbattibilità (+1; optionally also for defenders)
+- [ ] Decisive goal: winning goal and equalising goal bonuses (off by default) · *engine work: record the order of
+  goals in each simulated match so the winning / equalising scorer is known*
+- [ ] Player of the match (Fantacalcio's "migliore in campo"; the votes data has it) · *engine work: simulate it*
+- [ ] Captain modifier: bonus / malus by the captain's vote (the user picks a captain and a vice) · *engine work*
+- [ ] Vote provider: Fantacalcio / Statistico / Italia
+- [ ] No vote (s.v.): substitute the player, or give an official vote (and from how many minutes); keeper without a
+  vote; booked or sent-off player without a vote
+
+Lineup:
+- [ ] Defence modifier on / off, its bands (default average ≥ 6 +1, ≥ 6.5 +3, ≥ 7 +6) and minimum defenders
+- [ ] Allowed formations · cambio modulo on / off · number of substitutions (3 / 5 / unlimited) · substitutions role
+  for role or free · bench size and order
+- [ ] Home advantage (fattore campo): +0.5 to +5 to the home side of the fantasy match, off by default
+
+Match:
+- [ ] **Fantasy goal thresholds set by the user** (decided): first goal at (default 66), one more every (default 6);
+  optional half-goal / custom bands
+- [ ] Presets: Classic standard, Febbre da Rabiot's league, the second team's league; one-line help per field
+- [ ] Every number in the app follows the chosen rules (xFM, ranges, expected points, lineup): module 2 runs on the
+  phone from the per-draw data (section 5)
 
 ## 4 · Next round: best lineup and expected score
 
@@ -61,25 +78,29 @@ What already exists and is reused:
 
 ## 5 · Data and engine work the sections need
 
-- [ ] **Per-draw data in the page.** Sections 3–4 need each player's simulated outcomes per draw (vote, goals,
-  assists, cards, goals conceded), so any rules and any lineup can be scored in the browser. 603 players × 15,000
-  draws is too big for a page: ship a packed sample (e.g. 2,000 draws ≈ a few MB, the same draws for every player so
-  correlations hold) and check its noise against the full run.
+- [ ] **Per-draw data on the phone.** Sections 3–4 need each player's simulated outcomes per draw (vote, goals,
+  assists, cards, goals conceded, and for the new rules: goal order, player of the match), so any rules and any lineup
+  can be scored on the device. 603 players × 15,000 draws is too big to download weekly: ship a packed sample (e.g.
+  2,000 draws, a few MB, the same draws for every player so correlations hold), check its noise against the full run.
+- [ ] Weekly download: the Friday run publishes the data file (e.g. to the GitHub repo); the app fetches it on open
+  and keeps the last one offline. Team and rules never leave the phone.
 - [ ] Move the lineup search from `best_lineup.js` into the engine (shared by page and pipeline); keep it fast on a
   phone (pre-rank by expected points, simulate the best few hundred).
-- [ ] Weekly run (Friday) publishes the new page data automatically.
 - [ ] Tests: rules form → engine (every field changes the score as expected), optimiser vs the Node version,
   page under 16 MB and usable on a phone.
 
-## 6 · Decisions needed from you
+## 6 · Decisions (6 November 2026)
 
-1. **Where it lives:** the web page (link you can share, works today) or the phone app (Expo build, `mobile/`)?
-   Recommended: web page first, app later from the same engine.
-2. **Who sees teams:** each person on their own device, or a shared list visible to friends?
-3. **Other leagues' rules** you want as presets (send the rule pages or screenshots).
-4. **Fantasy goal thresholds** in your leagues, if not 66 + 6.
+1. **Phone app** (Expo, `mobile/`), not the web page. The Giornata web page stays as the weekly share link.
+2. **Teams private on each phone.**
+3. **Rules:** all usual Fantacalcio Classic options (section 3); **no Mantra**.
+4. **Fantasy goal thresholds set by each user.**
+
+Still open: a phone to test the Expo build on (iPhone / Android), and whether the app is distributed through
+Expo Go, TestFlight or a store.
 
 ## Suggested order
 
-1 (event chances, small) → 3 (rules form) → 5 (per-draw data in the page) → 2 (team import) → 4 (best lineup and
-goals) → opponent and late news.
+1 (event chances, small) → 5 (per-draw data file + weekly download) → 3 (rules form, then the new engine rules:
+decisive goals, player of the match, captain) → 2 (team import) → 4 (best lineup and fantasy goals) → opponent and
+late news → test on a real phone.
