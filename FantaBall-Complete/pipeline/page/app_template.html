@@ -370,7 +370,7 @@ function viewRound(){const t=team();
 function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).concat(t.players.filter(id=>byId.get(id)?.out>0)));const home=!!(store.home?.[t.id]);
   if(t.players.length<11){$('#rres').innerHTML='<div class="empty">Servono almeno 11 giocatori: aggiungili in Squadre.</div>';return}
   const res=best(t,outs,home);if(!res){$('#rres').innerHTML='<div class="empty">Nessuna formazione valida con i moduli consentiti e i giocatori disponibili.</div>';return}
-  const crit=store.crit?.[t.id]||'mean',lam=store.lam?.[t.id]??0.05,ranked=pick(res.top,crit,lam),b=ranked[0],S=stats(R),gd=b.gd;
+  const crit=store.crit?.[t.id]||'mean',lam=Math.round((store.lam?.[t.id]??0)*10)/10,ranked=pick(res.top,crit,lam),b=ranked[0],S=stats(R),gd=b.gd;
   const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).map(k=>[k,pick(res.top,k,lam)[0]]);
   const sorted=Float64Array.from(b.pts).sort(),q=f=>sorted[Math.floor((D-1)*f)];
   let oppHtml='';const ot=store.teams.find(x=>x.id===opp&&x.id!==t.id);
@@ -384,7 +384,7 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   $('#rres').innerHTML=`<div class="sec-h"><span>Criterio di scelta</span></div><div class="grp" style="padding:12px 14px;display:grid;gap:10px">
     <div class="seg" id="crit" style="width:100%;grid-auto-columns:1fr">${Object.entries(CRIT).map(([k,v])=>`<button type="button" data-c="${k}" aria-pressed="${crit===k}">${v.lab}</button>`).join('')}</div>
     <div class="note" style="padding:0">${crit==='mean'?'La formazione con il punteggio medio più alto.':crit==='goals'?'La formazione con più gol fanta in media (primo gol a '+R.goalFirst+', poi uno ogni '+R.goalStep+'): premia chi supera le soglie più spesso.':'Portafoglio media-varianza: massimizza media − λ × varianza del punteggio. λ positivo = formazione più regolare (avverso al rischio); λ negativo = premia la variabilità, per quando serve un punteggio alto (amante del rischio).'}</div>
-    ${crit==='mv'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">Avversione al rischio λ <b>${it(lam,2)}</b><small>${lam<0?"amante del rischio":lam>0?"avverso al rischio":"neutrale"} · negativo = cerca il colpo grosso · 0 = solo media · positivo = più regolare</small></span><input id="lam" type="range" min="-0.3" max="0.3" step="0.01" value="${lam}" style="width:45%"></label>`:''}</div>
+    ${crit==='mv'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">Avversione al rischio λ <b>${it(lam,2)}</b><small>${lam<0?"amante del rischio":lam>0?"avverso al rischio":"neutrale"} · negativo = cerca il colpo grosso · 0 = solo media · positivo = più regolare</small></span><input id="lam" type="range" min="-0.3" max="0.3" step="0.1" value="${lam}" list="lamticks"><datalist id="lamticks"><option value="-0.3"></option><option value="-0.2"></option><option value="-0.1"></option><option value="0"></option><option value="0.1"></option><option value="0.2"></option><option value="0.3"></option></datalist style="width:45%"></label>`:''}</div>
   <div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
     <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)} · σ ${it(b.sd,1)}</span></div>
     <div class="big"><span class="k">Modulo</span><span class="v">${b.f}</span><span class="s">${R.defMod.on?'modificatore +'+it(b.mod,1):'senza modificatore'}</span></div>
