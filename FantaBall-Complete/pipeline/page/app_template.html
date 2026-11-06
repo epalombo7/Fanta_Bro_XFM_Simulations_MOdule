@@ -125,6 +125,13 @@ textarea{width:100%;min-height:88px;border:0;border-radius:10px;background:var(-
 .add.on{background:var(--blue);color:#fff}
 .teams{display:flex;gap:6px;flex-wrap:wrap}
 .xi .li{padding:8px 14px}
+.welcome{display:grid;gap:14px;padding-block:28px 8px}
+.welcome .steps{display:grid;gap:10px}
+.step{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start;background:var(--card);border-radius:14px;padding:14px}
+.step svg{width:28px;height:28px;color:var(--blue)}
+.step b{display:block;font-size:16px;margin-bottom:2px}.step span{color:var(--label2);font-size:14px;line-height:1.4}
+.cta{border:0;background:var(--blue);color:#fff;font:inherit;font-size:17px;font-weight:600;padding:14px;border-radius:14px;cursor:pointer;width:100%}
+.infobtn{border:0;background:transparent;color:var(--blue);font:inherit;font-size:15px;font-weight:600;cursor:pointer;padding:12px 4px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -400,16 +407,35 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
     <div class="li"><span class="k">Gioco in casa<small>fattore campo ${it(R.homeBonus,1)}</small></span><input class="tg" type="checkbox" id="home" ${store.home?.[t.id]?'checked':''}></div></div>${oppHtml}
   <div class="sec-h"><span>Indisponibili (ultime notizie)</span></div><div class="grp">${t.players.map(id=>byId.get(id)).filter(Boolean).sort((a,b2)=>ROLES.indexOf(a.role)-ROLES.indexOf(b2.role)).map(p=>{const auto=p.out>0,on=auto||(store.out[t.id]||[]).includes(p.id);
     return `<div class="li"><span class="k">${esc(p.name)} <small>${p.role} · ${esc(p.team)}${auto?' · infortunato (lista Fantacalcio)':''}</small></span><input class="tg" type="checkbox" data-out="${p.id}" ${on?'checked':''} ${auto?'disabled':''} aria-label="${esc(p.name)} fuori"></div>`}).join('')}</div>
+  <button class="infobtn" type="button" id="howto">Come funziona l'app</button>
   <p class="note">Formazione scelta con il criterio indicato tra tutte quelle possibili, simulando ${D} giornate complete (stessa partita reale per tutti i giocatori): cambi dalla panchina${R.maxSubs<0?'':' (max '+R.maxSubs+')'}, modificatore difesa e capitano come da Regole. Con ${D} giornate le medie hanno un margine di circa ±0,5 punti. Probabilità e xFM dei singoli giocatori usano tutte le ${N.toLocaleString('it-IT')} stagioni simulate.</p>`;
   $('#opp').onchange=e=>{opp=e.target.value;computeRound(t)};
+  $('#howto').onclick=()=>{store.tab='benvenuto';window.scrollTo(0,0);render()};
   $('#crit').onclick=e=>{const x=e.target.closest('button');if(!x)return;store.crit={...(store.crit||{}),[t.id]:x.dataset.c};save();computeRound(t)};
   $('#lam')&&($('#lam').onchange=e=>{store.lam={...(store.lam||{}),[t.id]:+e.target.value};save();computeRound(t)});
   $('#home').onchange=e=>{store.home={...(store.home||{}),[t.id]:e.target.checked};save();computeRound(t)};
   document.querySelectorAll('[data-out]').forEach(c=>c.onchange=()=>{const id=+c.dataset.out,a=new Set(store.out[t.id]||[]);c.checked?a.add(id):a.delete(id);store.out[t.id]=[...a];save();$('#rres').innerHTML='<div class="empty">Ricalcolo…</div>';setTimeout(()=>computeRound(t),20)})}
 
+// ---------- welcome ----------
+const ICON={g:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>',
+  s:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4l-4 3 2 3 2-1v11h10V9l2 1 2-3-4-3h-3a2 2 0 0 1-4 0z"/></svg>',
+  r:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>',
+  f:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>'};
+function viewWelcome(){$('#view').innerHTML=`<section class="welcome"><div class="eyebrow">Serie A ${M.season} · giornata ${M.round}</div><h1>Benvenuto in FantaBall</h1>
+  <div class="sub">Simuliamo la prossima giornata di Serie A ${N.toLocaleString('it-IT')} volte, partita per partita, e ti diciamo chi schierare.</div>
+  <div class="steps">
+    <div class="step">${ICON.g}<div><b>Giocatori</b><span>Per ognuno: probabilità di prendere il voto, xFM (fantavoto atteso se gioca) e, separate, le probabilità di gol, assist e cartellini.</span></div></div>
+    <div class="step">${ICON.s}<div><b>Squadre</b><span>Crea la tua rosa aggiungendo i giocatori. Resta salvata solo su questo telefono.</span></div></div>
+    <div class="step">${ICON.r}<div><b>Regole</b><span>Imposta bonus, malus, modificatore difesa, cambio modulo e soglie dei gol della tua lega.</span></div></div>
+    <div class="step">${ICON.f}<div><b>Giornata</b><span>La formazione migliore con le tue regole, i punti attesi e quanti gol fanta puoi fare. Scegli il criterio: punti, gol o rischio.</span></div></div>
+  </div>
+  <div class="note" style="padding:0">Le probabilità vengono da un modello calibrato su voti, risultati e infortuni delle ultime stagioni. Sono stime: il calcio resta imprevedibile.</div>
+  <button class="cta" type="button" id="start">Inizia</button></section>`;
+  $('#start').onclick=()=>{store.seen=true;store.tab='giornata';save();window.scrollTo(0,0);render()}}
+
 // ---------- router ----------
-const VIEWS={giocatori:viewPlayers,squadre:viewTeams,regole:viewRules,giornata:viewRound};
-function render(){const tab=VIEWS[store.tab]?store.tab:'giornata';document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-current',b.dataset.tab===tab?'page':'false'));VIEWS[tab]()}
+const VIEWS={giocatori:viewPlayers,squadre:viewTeams,regole:viewRules,giornata:viewRound,benvenuto:viewWelcome};
+function render(){if(!store.seen&&store.tab!=='benvenuto')store.tab='benvenuto';$('.tabs').hidden=store.tab==='benvenuto';const tab=VIEWS[store.tab]?store.tab:'giornata';document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-current',b.dataset.tab===tab?'page':'false'));VIEWS[tab]()}
 document.querySelector('.tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;store.tab=b.dataset.tab;save();window.scrollTo(0,0);render()};
 load();if(location.hash&&VIEWS[location.hash.slice(1)])store.tab=location.hash.slice(1);render();
 </script>
