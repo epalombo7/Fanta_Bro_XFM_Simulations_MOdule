@@ -7,3 +7,5 @@ mobile/assets/webview.html
 data/cache/
 pipeline/page/data.json
 pipeline/page/fantaball-matchday.html
+pipeline/page/fantaball-app.html
+pipeline/page/app_data.json

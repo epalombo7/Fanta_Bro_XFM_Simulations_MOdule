@@ -99,6 +99,14 @@ Match:
 Still open: a phone to test the Expo build on (iPhone / Android), and whether the app is distributed through
 Expo Go, TestFlight or a store.
 
+## Prototype (6 November 2026, giornata 11)
+
+Web prototype of the four sections, from the existing season file (no new simulation): `pipeline/page/build_app_data.js`
+→ `pipeline/page/assemble_app.py` (template `app_template.html`). Player chances and xFM under any rules come from the
+exact outcome counts (15,000 seasons); lineup, fantasy goals and opponent use the 255 complete simulated rounds stored in
+the season file (about ±0.5 points of noise). Teams and rules stay in the phone's browser storage. Not yet: decisive
+goals, player of the match, set-piece assist; weekly automatic data for the Expo app.
+
 ## Suggested order
 
 1 (event chances, small) → 5 (per-draw data file + weekly download) → 3 (rules form, then the new engine rules:
