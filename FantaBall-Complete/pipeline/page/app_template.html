@@ -442,7 +442,7 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
   if(ot){const outs2=new Set((store.out[ot.id]||[]).concat(ot.players.filter(id=>byId.get(id)?.out>0)));const r2x=best({...ot,rules:R},outs2,false);if(r2x)oppBest=pick(r2x.top,'mean',{})[0]}
   let crit=store.crit?.[t.id]||'mean';if(crit==='win'&&!oppBest)crit='mean';if(crit==='mv')crit='risk';
   const thr=[0,1,2,3].map(k=>R.goalFirst+k*R.goalStep),o={lam:Math.round((store.lam?.[t.id]??0)*10)/10,target:store.target?.[t.id]??thr[1],opp:oppBest?.pts};
-  const lamC=Math.min(.5,Math.round((store.lamC?.[t.id]??0)*20)/20),mk=capm(res,lamC);
+  const lamC=Math.max(-.5,Math.min(.5,Math.round((store.lamC?.[t.id]??0)*20)/20)),mk=capm(res,lamC);
   const ranked=crit==='capm'?[mk,...pick(res.top,'mean',o)]:pick(res.top,crit,o),b=ranked[0],S=stats(R),gd=b.gd;
   const perForm=R.forms.map(f=>ranked.find(c=>c.f===f)).filter(Boolean),three=Object.keys(CRIT).filter(k=>k!=='win'||oppBest).map(k=>[k,k==='capm'?mk:pick(res.top,k,o)[0]]);
   const sorted=Float64Array.from(b.pts).sort(),q=f=>sorted[Math.floor((D-1)*f)];
@@ -461,7 +461,7 @@ function computeRound(t){const R=t.rules,outs=new Set((store.out[t.id]||[]).conc
     <div class="seg" id="crit" style="width:100%;grid-auto-columns:1fr">${Object.entries(CRIT).filter(([k])=>k!=='win'||oppBest).map(([k,v])=>`<button type="button" data-c="${k}" aria-pressed="${crit===k}" style="padding:5px 4px">${v.lab}</button>`).join('')}</div>
     <div class="note" style="padding:0">${help[crit]}${!oppBest?' Scegli un avversario più sotto per il criterio «Battere avv.».':''}</div>
     ${crit==='risk'?`<label class="li" style="padding:0;min-height:0" for="lam"><span class="k">${o.lam<0?'Audace':o.lam>0?'Prudente':'Neutrale'} <b>λ ${it(o.lam,1)}</b><small>sinistra = cerca il colpo grosso · destra = più regolare</small></span><input id="lam" type="range" min="-0.3" max="0.3" step="0.1" value="${o.lam}" list="lamticks" style="width:45%"><datalist id="lamticks">${[-.3,-.2,-.1,0,.1,.2,.3].map(v=>`<option value="${v}"></option>`).join('')}</datalist></label>`:''}
-    ${crit==='capm'?`<label class="li" style="padding:0;min-height:0" for="lamC"><span class="k">Avversione al rischio <b>λ ${it(lamC,2)}</b><small>0 = solo μ · 0,5 = portafoglio molto prudente</small></span><input id="lamC" type="range" min="0" max="0.5" step="0.05" value="${lamC}" style="width:45%"></label>`:''}
+    ${crit==='capm'?`<label class="li" style="padding:0;min-height:0" for="lamC"><span class="k">${lamC<0?'Amante del rischio':lamC>0?'Avverso al rischio':'Neutrale'} <b>λ ${it(lamC,2)}</b><small>negativo = premia la varianza (cerca il colpo) · 0 = solo μ · positivo = prudente</small></span><input id="lamC" type="range" min="-0.5" max="0.5" step="0.05" value="${lamC}" style="width:45%"></label>`:''}
     ${crit==='target'?`<div class="li" style="padding:0;min-height:0"><span class="k">Arrivare ad almeno<small>soglie gol: ${thr.join(', ')}</small></span><span class="filters">${thr.map((x,k)=>`<button type="button" class="chipbtn" data-tg="${x}" aria-pressed="${o.target===x}">${x}</button>`).join('')}<input class="inp" id="tgx" type="number" step="1" value="${o.target}" aria-label="Punteggio obiettivo"></span></div>`:''}</div>
   <div class="sec-h"><span>Risultato atteso</span></div><div class="hero2">
     <div class="big"><span class="k">Punti attesi</span><span class="v main">${it(b.mean,1)}</span><span class="s">range ${it(q(.25),1)}–${it(q(.75),1)} · σ ${it(b.sd,1)}</span></div>
